@@ -1,0 +1,18 @@
+{
+  "watch": [
+    "server.js",
+    "public/",
+    "questions/"
+  ],
+  "ext": "js,json,html,css",
+  "ignore": [
+    "node_modules/",
+    "data/",
+    "*.pdf"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "exec": "node server.js",
+  "delay": "1000"
+} 

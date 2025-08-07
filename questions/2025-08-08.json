@@ -1,0 +1,510 @@
+{
+    "testId": "IELTS_STARTER_1_4",
+    "testDate": "2025-08-08",
+    "testTitle": "IELTS Starter 1.4 Practice Test",
+    "totalQuestions": 50,
+    "sections": {
+      "grammar": {
+        "title": "Section A: Grammar & Vocabulary",
+        "description": "30 multiple-choice questions • Choose ONE answer (A, B, C or D)",
+        "totalQuestions": 30,
+        "questions": [
+          {
+            "id": 1,
+            "question": "Had I known about the roadworks, I ___ earlier.",
+            "questionVi": "Nếu tôi biết có sửa đường, tôi ___ sớm hơn.",
+            "options": ["would leave", "would have left", "will leave", "left"],
+            "optionsVi": ["sẽ rời", "đã rời", "sẽ rời (tương lai)", "rời"],
+            "correct": 1,
+            "explanation": "Third-conditional inversion → 'would have left'.",
+            "explanationVi": "Đảo ngữ điều kiện loại 3 dùng 'would have + V3'."
+          },
+          {
+            "id": 2,
+            "question": "By the end of 2025, our team ___ the prototype for eighteen months.",
+            "questionVi": "Đến cuối 2025, nhóm chúng tôi ___ nguyên mẫu được 18 tháng.",
+            "options": ["will work on", "will have been working on", "have been working on", "will be working on"],
+            "optionsVi": ["sẽ làm", "sẽ đã làm liên tục", "đã làm liên tục", "sẽ đang làm"],
+            "correct": 1,
+            "explanation": "Future perfect continuous for duration before a future point.",
+            "explanationVi": "Tương lai hoàn thành tiếp diễn diễn tả khoảng thời gian trước mốc tương lai."
+          },
+          {
+            "id": 3,
+            "question": "He acted as though he ___ the decision single-handedly.",
+            "questionVi": "Anh ta cư xử như thể mình ___ quyết định một mình.",
+            "options": ["made", "has made", "had made", "would make"],
+            "optionsVi": ["đã làm", "đã làm (HTHT)", "đã làm (QKHT)", "sẽ làm"],
+            "correct": 2,
+            "explanation": "'As though' + past perfect for unreal past.",
+            "explanationVi": "'As though' (không có thật quá khứ) → QKHT."
+          },
+          {
+            "id": 4,
+            "question": "Only after the audit ___ the accounting error.",
+            "questionVi": "Chỉ sau cuộc kiểm toán, ___ lỗi kế toán.",
+            "options": ["the team discovered", "did the team discover", "the team had discovered", "was discovered by the team"],
+            "correct": 1,
+            "explanation": "Negative / limiting adverbials require inversion ('Only after... did').",
+            "explanationVi": "Sau 'Only after' phải đảo trợ động từ trước chủ ngữ."
+          },
+          {
+            "id": 5,
+            "question": "The board insisted that the CEO ___ the findings publicly.",
+            "questionVi": "Hội đồng yêu cầu CEO ___ công bố phát hiện.",
+            "options": ["publishes", "published", "publish", "to publish"],
+            "correct": 2,
+            "explanation": "Mandative subjunctive: base verb without ‘to’.",
+            "explanationVi": "Câu mệnh lệnh dạng giả định dùng động từ nguyên mẫu không 'to'."
+          },
+          {
+            "id": 6,
+            "question": "She was on the ___ of accepting the offer when another email arrived.",
+            "questionVi": "Cô ấy đang trên ___ chấp nhận lời mời thì một email khác tới.",
+            "options": ["brim", "edge", "verge", "border"],
+            "correct": 2,
+            "explanation": "Collocation: 'on the verge of' + V-ing.",
+            "explanationVi": "Cụm cố định: 'on the verge of'."
+          },
+          {
+            "id": 7,
+            "question": "We’d better leave now; it looks as if it ___ any minute.",
+            "options": ["is raining", "will rain", "is going to rain", "rains"],
+            "correct": 2,
+            "explanation": "'As if' for imminent weather → 'is going to rain'."
+          },
+          {
+            "id": 8,
+            "question": "No sooner ___ the webinar than the server crashed.",
+            "options": ["we had started", "had we started", "did we start", "we started"],
+            "correct": 1,
+            "explanation": "Inversion with 'No sooner… than'."
+          },
+          {
+            "id": 9,
+            "question": "The article was so densely written that few readers could make ___ of it.",
+            "options": ["out", "up", "sense", "head"],
+            "correct": 3,
+            "explanation": "Idiom: 'make head or tail of'."
+          },
+          {
+            "id": 10,
+            "question": "Her proposal, together with several charts, ___ forwarded to the committee.",
+            "options": ["were", "was", "have been", "are"],
+            "correct": 1,
+            "explanation": "‘Together with’ ≠ plural subject; verb agrees with 'proposal'."
+          },
+          {
+            "id": 11,
+            "question": "If he ___ more assertive during negotiations, we might have secured a higher budget.",
+            "options": ["were", "had been", "would be", "was being"],
+            "correct": 1,
+            "explanation": "Mixed third/second conditional about past = 'had been'."
+          },
+          {
+            "id": 12,
+            "question": "The consultant advised ___ market trends before investing.",
+            "options": ["to analysing", "analyse", "analysing", "having analysed"],
+            "correct": 2,
+            "explanation": "‘Advise’ + gerund when no object stated: 'advised analysing'."
+          },
+          {
+            "id": 13,
+            "question": "Hardly any of the data ___ reliable enough for publication.",
+            "options": ["is", "are", "have been", "were"],
+            "correct": 0,
+            "explanation": "'Data' treated as uncountable here → singular verb."
+          },
+          {
+            "id": 14,
+            "question": "The sooner we finish the draft, ___ it can be sent to reviewers.",
+            "options": ["the faster", "the soon", "the sooner", "sooner"],
+            "correct": 2,
+            "explanation": "Comparative correlative structure: 'The sooner..., the sooner...'."
+          },
+          {
+            "id": 15,
+            "question": "You mustn’t reveal the password to anyone, ___?",
+            "options": ["must you", "can you", "should you", "mustn’t you"],
+            "correct": 0,
+            "explanation": "Negative statement → positive tag 'must you?'."
+          },
+          {
+            "id": 16,
+            "question": "We were surprised at how few attendees showed up, ___ the extensive advertising campaign.",
+            "options": ["despite", "because", "owing to", "although"],
+            "correct": 0,
+            "explanation": "'Despite' + noun phrase."
+          },
+          {
+            "id": 17,
+            "question": "The finance manager objected to the figures ___ adjusted without approval.",
+            "options": ["being", "to be", "having been", "been"],
+            "correct": 0,
+            "explanation": "'Object to' + gerund/passive 'being adjusted'."
+          },
+          {
+            "id": 18,
+            "question": "The report is confidential and should ___ under any circumstances be shared externally.",
+            "options": ["in no way", "on no account", "no longer", "by no means"],
+            "correct": 1,
+            "explanation": "Stronger emphatic negative: 'on no account'."
+          },
+          {
+            "id": 19,
+            "question": "She speaks three languages fluently, ___ English and Japanese.",
+            "options": ["namely", "alike", "unlike", "besides"],
+            "correct": 0,
+            "explanation": "'Namely' introduces specific examples."
+          },
+          {
+            "id": 20,
+            "question": "Little ___ that their proposal had already been accepted.",
+            "options": ["did they know", "they knew", "had they known", "they had known"],
+            "correct": 0,
+            "explanation": "Inversion after 'Little'."
+          },
+          {
+            "id": 21,
+            "question": "Our manager prefers that all leave requests ___ through the HR portal.",
+            "options": ["submit", "be submitted", "are submitting", "submitted"],
+            "correct": 1,
+            "explanation": "Subjunctive: 'that … be + V3'."
+          },
+          {
+            "id": 22,
+            "question": "The documentary provided a rarely-seen ___ into the daily life of deep-sea researchers.",
+            "options": ["insight", "oversight", "foresight", "hindsight"],
+            "correct": 0,
+            "explanation": "Correct collocation: 'insight into'."
+          },
+          {
+            "id": 23,
+            "question": "I wish you ___ me before ordering the parts; we could have saved on shipping.",
+            "options": ["consult", "had consulted", "consulted", "would consult"],
+            "correct": 1,
+            "explanation": "Wish about past regret → past perfect."
+          },
+          {
+            "id": 24,
+            "question": "Neither the interns nor the project lead ___ aware of the schedule change.",
+            "options": ["were", "are", "is", "have been"],
+            "correct": 2,
+            "explanation": "Verb agrees with nearest subject 'project lead' (singular)."
+          },
+          {
+            "id": 25,
+            "question": "The research team could have avoided several pitfalls had they paid closer ___ to earlier studies.",
+            "options": ["regard", "attention", "notice", "concern"],
+            "correct": 1
+          },
+          {
+            "id": 26,
+            "question": "He eventually came ___ with a solution that satisfied both sides.",
+            "options": ["up", "out", "round", "down"],
+            "correct": 0,
+            "explanation": "Phrasal verb 'come up with'."
+          },
+          {
+            "id": 27,
+            "question": "Under no circumstances ___ personal devices be connected to the secure network.",
+            "options": ["should", "shall", "must", "ought"],
+            "correct": 0,
+            "explanation": "Inversion: modal before subject."
+          },
+          {
+            "id": 28,
+            "question": "The project took longer than expected, ___ not having sufficient staff.",
+            "options": ["owing to", "so that", "in order to", "whereas"],
+            "correct": 0
+          },
+          {
+            "id": 29,
+            "question": "After months of preparation, we are finally on the ___ of launching our first app.",
+            "options": ["edge", "threshold", "limit", "margin"],
+            "correct": 1
+          },
+          {
+            "id": 30,
+            "question": "The committee will meet next week, by which time the survey results ___ analysed.",
+            "options": ["are", "will have been", "have been", "will be"],
+            "correct": 1,
+            "explanation": "Future perfect passive."
+          }
+        ]
+      },
+      "reading": {
+        "title": "Section B: Reading Comprehension",
+        "description": "20 multiple-choice questions • Read passages and choose the best answer",
+        "totalQuestions": 20,
+        "passages": [
+          {
+            "id": 1,
+            "title": "Passage 1 – Offshore Wind Farm Debate",
+            "content": "Plans for an offshore wind farm 15 kilometres off the Verdant Coast have divided local residents. Proponents argue the 60-turbine array will supply one-third of the region’s electricity and create 120 construction jobs. Critics, however, warn that the installation could disrupt migratory bird routes and deter tourists who value the unbroken sea horizon. An independent environmental impact assessment concluded that blade-related bird fatalities would be ‘statistically negligible’ but did recommend a seasonal shutdown during peak migration weeks. Meanwhile, the regional tourism board commissioned a study showing that visitors cared more about hotel prices and beach cleanliness than distant turbines. A final vote by the coastal council is scheduled for October; if approved, the farm could be operational by 2029.",
+            "questions": [
+              {
+                "id": 31,
+                "question": "What proportion of regional electricity would the farm supply?",
+                "options": ["One-quarter", "One-third", "One-half", "Two-thirds"],
+                "correct": 1
+              },
+              {
+                "id": 32,
+                "question": "Opponents of the project are MOST concerned about:",
+                "options": ["construction noise", "bird migration and tourism", "job losses in fishing", "higher energy prices"],
+                "correct": 1
+              },
+              {
+                "id": 33,
+                "question": "What did the environmental assessment recommend?",
+                "options": ["Moving turbines further offshore", "Reducing the number of turbines", "Seasonal shutdowns", "Installing bird-deterring lights"],
+                "correct": 2
+              },
+              {
+                "id": 34,
+                "question": "According to the tourism study, visitors prioritise:",
+                "options": ["unbroken sea views", "beach cleanliness", "sailing facilities", "wildlife tours"],
+                "correct": 1
+              },
+              {
+                "id": 35,
+                "question": "If approved, the wind farm could be operational by:",
+                "options": ["2027", "2028", "2029", "2031"],
+                "correct": 2
+              },
+              {
+                "id": 36,
+                "question": "The word 'array' in line 2 is closest in meaning to:",
+                "options": ["display", "sequence", "collection", "network"],
+                "correct": 3
+              },
+              {
+                "id": 37,
+                "question": "Which group commissioned a study on tourist preferences?",
+                "options": ["Environmental NGOs", "Regional tourism board", "Energy ministry", "Local fishermen"],
+                "correct": 1
+              },
+              {
+                "id": 38,
+                "question": "How many construction jobs are projected?",
+                "options": ["60", "120", "240", "360"],
+                "correct": 1
+              },
+              {
+                "id": 39,
+                "question": "The tone of the passage can best be described as:",
+                "options": ["persuasive", "balanced", "critical", "celebratory"],
+                "correct": 1
+              },
+              {
+                "id": 40,
+                "question": "Which of the following is NOT mentioned as a potential impact?",
+                "options": ["Bird fatalities", "Tourist numbers", "Local employment", "Shipping lane obstruction"],
+                "correct": 3
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Passage 2 – Community Broadband Cooperative",
+            "content": "Frustrated by slow internet speeds, residents of Cedar Valley established a cooperative to build their own fibre-optic network. Members contributed an initial fee of $300 and agreed to volunteer eight hours for cable-laying. Within nine months, 78 percent of households were connected, enjoying average download speeds of 800 Mbps—ten times faster than the previous service. The project’s break-even model relies on reinvesting surplus subscription revenue to extend the fibre to outlying farms, thereby lowering each member’s long-term costs. While the cooperative has been praised for digital inclusivity, critics note that residents who cannot afford the upfront fee must wait until a hardship fund—currently half-funded—covers their connection. Nonetheless, regional planners view the scheme as a template for other underserved areas.",
+            "questions": [
+              {
+                "id": 41,
+                "question": "What was the upfront membership fee?",
+                "options": ["$150", "$250", "$300", "$500"],
+                "correct": 2
+              },
+              {
+                "id": 42,
+                "question": "Members were also required to:",
+                "options": ["buy their own fibre cable", "volunteer labour hours", "attend monthly meetings", "train as network engineers"],
+                "correct": 1
+              },
+              {
+                "id": 43,
+                "question": "Average download speeds after installation are approximately:",
+                "options": ["80 Mbps", "100 Mbps", "800 Mbps", "1 Gbps"],
+                "correct": 2
+              },
+              {
+                "id": 44,
+                "question": "Surplus revenue is used to:",
+                "options": ["issue dividends", "extend fibre to rural farms", "upgrade routers annually", "refund membership fees"],
+                "correct": 1
+              },
+              {
+                "id": 45,
+                "question": "Why do some residents still lack a connection?",
+                "options": ["Technical faults", "Lack of volunteers", "Inability to pay upfront fee", "Regulatory barriers"],
+                "correct": 2
+              },
+              {
+                "id": 46,
+                "question": "The hardship fund is currently:",
+                "options": ["fully funded", "half-funded", "unfunded", "over-funded"],
+                "correct": 1
+              },
+              {
+                "id": 47,
+                "question": "What percentage of households are connected after nine months?",
+                "options": ["68 %", "78 %", "88 %", "98 %"],
+                "correct": 1
+              },
+              {
+                "id": 48,
+                "question": "Critics of the cooperative focus mainly on:",
+                "options": ["network reliability", "financial accessibility", "environmental impact", "data privacy"],
+                "correct": 1
+              },
+              {
+                "id": 49,
+                "question": "Regional planners view the project as:",
+                "options": ["unrealistic", "a temporary fix", "a possible template", "financially risky"],
+                "correct": 2
+              },
+              {
+                "id": 50,
+                "question": "The word 'underserved' in the final sentence means:",
+                "options": ["wealthy", "neglected", "over-supplied", "well-connected"],
+                "correct": 1
+              }
+            ]
+          }
+        ]
+      },
+      "listening": {
+        "title": "Section C: Listening Comprehension",
+        "description": "10 multiple-choice questions • Listen to audio scripts and choose the best answer",
+        "totalQuestions": 10,
+        "scripts": [
+          {
+            "id": 1,
+            "title": "Script 1 – Conference Call Reminder",
+            "content": "Good morning, team. This is a reminder that our quarterly R&D call is tomorrow, Friday the 9th, at 08:00 London time, which is 3 p.m. in Ho Chi Minh City. The Zoom link in the agenda will activate ten minutes early for sound checks. Please upload your slide decks to the shared folder by 6 p.m. today so I can merge them. Remember to keep individual updates under five minutes; we have a hard stop at 09:15 because the finance department needs the room.",
+            "questions": [
+              {
+                "id": 51,
+                "question": "When does the call begin in Ho Chi Minh City?",
+                "options": ["8 a.m.", "10 a.m.", "3 p.m.", "5 p.m."],
+                "correct": 2
+              },
+              {
+                "id": 52,
+                "question": "How early will the Zoom room open?",
+                "options": ["5 minutes", "10 minutes", "15 minutes", "20 minutes"],
+                "correct": 1
+              },
+              {
+                "id": 53,
+                "question": "By what time must slides be uploaded?",
+                "options": ["Noon today", "4 p.m. today", "6 p.m. today", "8 a.m. tomorrow"],
+                "correct": 2
+              },
+              {
+                "id": 54,
+                "question": "What is the maximum length for each update?",
+                "options": ["3 minutes", "5 minutes", "7 minutes", "10 minutes"],
+                "correct": 1
+              },
+              {
+                "id": 55,
+                "question": "Why must the meeting finish by 09:15 London time?",
+                "options": ["Room booked by finance", "Time-zone conflict", "Server maintenance", "Speaker flight schedule"],
+                "correct": 0
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Script 2 – Library Closure Announcement",
+            "content": "Attention patrons: Due to a scheduled software upgrade, the self-service checkout kiosks will be offline from 6 p.m. this evening until noon tomorrow. The reading rooms will remain open, but items must be borrowed through the main desk before 8 p.m. Tonight’s author talk has been relocated to Conference Hall B, which you can access via the east entrance. For real-time updates, follow the library’s social media channels.",
+            "questions": [
+              {
+                "id": 56,
+                "question": "When will the kiosks go offline?",
+                "options": ["4 p.m.", "5 p.m.", "6 p.m.", "8 p.m."],
+                "correct": 2
+              },
+              {
+                "id": 57,
+                "question": "How long is the outage expected to last?",
+                "options": ["6 hours", "12 hours", "18 hours", "24 hours"],
+                "correct": 1
+              },
+              {
+                "id": 58,
+                "question": "Until what time can items be borrowed at the main desk?",
+                "options": ["6 p.m.", "7 p.m.", "8 p.m.", "9 p.m."],
+                "correct": 2
+              },
+              {
+                "id": 59,
+                "question": "Where will the author talk take place?",
+                "options": ["Reading Room A", "Conference Hall B", "Main lobby", "Outdoor terrace"],
+                "correct": 1
+              },
+              {
+                "id": 60,
+                "question": "Which entrance should attendees use for the talk?",
+                "options": ["West", "South", "East", "North"],
+                "correct": 2
+              }
+            ]
+          }
+        ]
+      },
+      "writing": {
+        "title": "Section D: Writing",
+        "description": "3 writing tasks • Suggested timing: 50–65 minutes total",
+        "totalTasks": 3,
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Task 1 (120–140 words)",
+            "instruction": "Write an email to your university’s accommodation office requesting an extension to your dormitory lease for an additional month. Explain your situation, propose a payment plan, and ask what documentation is needed.",
+            "wordLimit": { "min": 120, "max": 140 },
+            "type": "formal_email",
+            "topic": "lease_extension"
+          },
+          {
+            "id": 2,
+            "title": "Task 2 (170–200 words)",
+            "instruction": "“University degrees are becoming less relevant in a world of online certificates and micro-credentials.” To what extent do you agree or disagree? Provide one main argument and support it with an example.",
+            "wordLimit": { "min": 170, "max": 200 },
+            "type": "opinion_essay",
+            "topic": "higher_education_value"
+          },
+          {
+            "id": 3,
+            "title": "Task 3 (190–220 words)",
+            "instruction": "A bar chart compares monthly subscriptions to three music-streaming platforms (StreamX, AudioWave, MelodyHub) from January to June: StreamX rises from 1.2 M to 2 M; AudioWave remains flat at ~1.1 M; MelodyHub climbs from 0.6 M to 1.3 M after a steep jump in April. Summarise the main trends and give one possible reason for MelodyHub’s sudden growth.",
+            "wordLimit": { "min": 190, "max": 220 },
+            "type": "data_description",
+            "topic": "music_streaming_trends",
+            "chartData": {
+              "title": "Monthly Music-Streaming Subscriptions (Jan–Jun)",
+              "series": [
+                { "month": "Jan", "StreamX_M": 1.2, "AudioWave_M": 1.1, "MelodyHub_M": 0.6 },
+                { "month": "Feb", "StreamX_M": 1.4, "AudioWave_M": 1.1, "MelodyHub_M": 0.7 },
+                { "month": "Mar", "StreamX_M": 1.6, "AudioWave_M": 1.1, "MelodyHub_M": 0.8 },
+                { "month": "Apr", "StreamX_M": 1.7, "AudioWave_M": 1.1, "MelodyHub_M": 1.1 },
+                { "month": "May", "StreamX_M": 1.8, "AudioWave_M": 1.1, "MelodyHub_M": 1.2 },
+                { "month": "Jun", "StreamX_M": 2.0, "AudioWave_M": 1.1, "MelodyHub_M": 1.3 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "createdBy": "IELTS Practice System",
+      "version": "1.4.0",
+      "lastUpdated": "2025-08-08",
+      "difficulty": "intermediate-",
+      "estimatedTime": "65–80 minutes",
+      "tags": ["grammar", "vocabulary", "reading", "listening", "writing", "ielts", "practice", "level1.4"]
+    }
+  }
+  

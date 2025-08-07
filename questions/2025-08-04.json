@@ -1,0 +1,727 @@
+{
+  "testId": "IELTS_STARTER_1_0",
+  "testDate": "2025-08-04",
+  "testTitle": "IELTS Starter 1.0 Practice Test",
+  "totalQuestions": 50,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary",
+      "description": "30 multiple-choice questions • Choose ONE answer (A, B, C or D)",
+      "totalQuestions": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "I ___ a student.",
+          "questionVi": "Tôi ___ một học sinh.",
+          "options": ["is", "are", "am", "be"],
+          "optionsVi": ["là", "là", "là", "là"],
+          "correct": 2,
+          "explanation": "The correct answer is 'am' because 'I' is a first-person singular pronoun and requires the verb 'am'.",
+          "explanationVi": "Đáp án đúng là 'am' vì 'I' là đại từ ngôi thứ nhất số ít và cần động từ 'am'."
+        },
+        {
+          "id": 2,
+          "question": "She goes to work ___ bus.",
+          "questionVi": "Cô ấy đi làm ___ xe buýt.",
+          "options": ["in", "by", "on", "at"],
+          "optionsVi": ["trong", "bằng", "trên", "tại"],
+          "correct": 1,
+          "explanation": "The correct answer is 'by' because we use 'by' to indicate the means of transportation.",
+          "explanationVi": "Đáp án đúng là 'by' vì chúng ta dùng 'by' để chỉ phương tiện đi lại."
+        },
+        {
+          "id": 3,
+          "question": "\"Book\" → plural is ___.",
+          "questionVi": "\"Sách\" → số nhiều là ___.",
+          "options": ["books", "bookes", "book's", "book"],
+          "optionsVi": ["books", "bookes", "book's", "book"],
+          "correct": 0,
+          "explanation": "The correct answer is 'books' because most nouns form their plural by adding 's'.",
+          "explanationVi": "Đáp án đúng là 'books' vì hầu hết danh từ chuyển sang số nhiều bằng cách thêm 's'."
+        },
+        {
+          "id": 4,
+          "question": "Which word is an adjective?",
+          "questionVi": "Từ nào là tính từ?",
+          "options": ["quickly", "teacher", "red", "water"],
+          "optionsVi": ["nhanh", "giáo viên", "màu đỏ", "nước"],
+          "correct": 2,
+          "explanation": "The correct answer is 'red' because it describes a quality or characteristic of a noun.",
+          "explanationVi": "Đáp án đúng là 'red' vì đây là từ mô tả đặc điểm của danh từ."
+        },
+        {
+          "id": 5,
+          "question": "He ___ coffee every morning.",
+          "questionVi": "Anh ấy ___ cà phê mỗi sáng.",
+          "options": ["drink", "drinks", "drinking", "drank"],
+          "optionsVi": ["uống", "uống", "đang uống", "đã uống"],
+          "correct": 1,
+          "explanation": "The correct answer is 'drinks' because it's the third-person singular present tense form.",
+          "explanationVi": "Đáp án đúng là 'drinks' vì đây là dạng hiện tại đơn ngôi thứ ba số ít."
+        },
+        {
+          "id": 6,
+          "question": "___ apple a day is healthy.",
+          "questionVi": "___ quả táo mỗi ngày thì tốt cho sức khỏe.",
+          "options": ["A", "An", "The", "—"],
+          "optionsVi": ["Một", "Một", "Này", "—"],
+          "correct": 1,
+          "explanation": "The correct answer is 'An' because 'apple' starts with a vowel sound.",
+          "explanationVi": "Đáp án đúng là 'An' vì 'apple' bắt đầu bằng âm nguyên âm."
+        },
+        {
+          "id": 7,
+          "question": "Which is the past form of \"go\"?",
+          "questionVi": "Dạng quá khứ của \"go\" là gì?",
+          "options": ["goed", "went", "gone", "going"],
+          "optionsVi": ["goed", "went", "gone", "going"],
+          "correct": 1,
+          "explanation": "The correct answer is 'went' because it's the irregular past tense form of 'go'.",
+          "explanationVi": "Đáp án đúng là 'went' vì đây là dạng quá khứ bất quy tắc của 'go'."
+        },
+        {
+          "id": 8,
+          "question": "We ___ TV now.",
+          "questionVi": "Chúng tôi ___ TV ngay bây giờ.",
+          "options": ["watch", "watched", "are watching", "watches"],
+          "optionsVi": ["xem", "đã xem", "đang xem", "xem"],
+          "correct": 2,
+          "explanation": "The correct answer is 'are watching' because it is present continuous for an action happening now.",
+          "explanationVi": "Đáp án đúng là 'are watching' vì đây là thì hiện tại tiếp diễn cho hành động đang diễn ra."
+        },
+        {
+          "id": 9,
+          "question": "Choose the correct comparative:\n\"Today is ___ than yesterday.\"",
+          "questionVi": "Chọn so sánh đúng:\n\"Hôm nay ___ hôm qua.\"",
+          "options": ["hot", "hotter", "hottest", "more hot"],
+          "optionsVi": ["nóng", "nóng hơn", "nóng nhất", "nóng hơn"],
+          "correct": 1,
+          "explanation": "The correct answer is 'hotter' because it's the comparative form of 'hot'.",
+          "explanationVi": "Đáp án đúng là 'hotter' vì đây là dạng so sánh hơn của 'hot'."
+        },
+        {
+          "id": 10,
+          "question": "He ___ in Ho Chi Minh City since 2020.",
+          "questionVi": "Anh ấy ___ ở TP.HCM từ năm 2020.",
+          "options": ["lives", "lived", "has lived", "living"],
+          "optionsVi": ["sống", "đã sống", "đã sống", "đang sống"],
+          "correct": 2,
+          "explanation": "The correct answer is 'has lived' because it's the present perfect showing an action that started in the past and continues.",
+          "explanationVi": "Đáp án đúng là 'has lived' vì đây là thì hiện tại hoàn thành, diễn tả hành động bắt đầu trong quá khứ và còn tiếp tục."
+        },
+        {
+          "id": 11,
+          "question": "Which pronoun replaces \"the children\"?",
+          "questionVi": "Đại từ nào thay thế \"the children\"?",
+          "options": ["he", "she", "they", "it"],
+          "optionsVi": ["anh ấy", "cô ấy", "họ", "nó"],
+          "correct": 2,
+          "explanation": "The correct answer is 'they' because 'children' is plural.",
+          "explanationVi": "Đáp án đúng là 'they' vì 'children' là danh từ số nhiều."
+        },
+        {
+          "id": 12,
+          "question": "The opposite of cheap is ___.",
+          "questionVi": "Trái nghĩa với 'cheap' là ___.",
+          "options": ["expensive", "large", "bright", "slow"],
+          "optionsVi": ["đắt", "lớn", "sáng", "chậm"],
+          "correct": 0,
+          "explanation": "The correct answer is 'expensive'.",
+          "explanationVi": "Đáp án đúng là 'expensive' (đắt)."
+        },
+        {
+          "id": 13,
+          "question": "\"There are ___ chairs in the room.\"",
+          "questionVi": "\"Có ___ ghế trong phòng.\"",
+          "options": ["much", "many", "a", "any"],
+          "optionsVi": ["nhiều", "nhiều", "một", "bất kỳ"],
+          "correct": 1,
+          "explanation": "The correct answer is 'many' because 'chairs' is a countable plural noun.",
+          "explanationVi": "Đáp án đúng là 'many' vì 'chairs' là danh từ đếm được số nhiều."
+        },
+        {
+          "id": 14,
+          "question": "You ___ open the window; it's cold outside.",
+          "questionVi": "Bạn ___ mở cửa sổ; bên ngoài lạnh.",
+          "options": ["must", "should", "shouldn't", "can"],
+          "optionsVi": ["phải", "nên", "không nên", "có thể"],
+          "correct": 2,
+          "explanation": "The correct answer is 'shouldn't' because it's advice not to do something.",
+          "explanationVi": "Đáp án đúng là 'shouldn't' vì đây là lời khuyên không nên làm."
+        },
+        {
+          "id": 15,
+          "question": "Which phrasal verb means \"continue\"?",
+          "questionVi": "Cụm động từ nào nghĩa là \"tiếp tục\"?",
+          "options": ["carry on", "give up", "look after", "take off"],
+          "optionsVi": ["tiếp tục", "bỏ cuộc", "chăm sóc", "cất cánh"],
+          "correct": 0,
+          "explanation": "The correct answer is 'carry on'.",
+          "explanationVi": "Đáp án đúng là 'carry on'."
+        },
+        {
+          "id": 16,
+          "question": "___ you like some tea?",
+          "questionVi": "___ bạn muốn uống trà không?",
+          "options": ["Do", "Would", "Are", "Have"],
+          "optionsVi": ["Bạn có", "Bạn có muốn", "Bạn có đang", "Bạn có"],
+          "correct": 1,
+          "explanation": "The correct answer is 'Would' to make a polite offer.",
+          "explanationVi": "Đáp án đúng là 'Would' để đưa ra lời mời/đề nghị lịch sự."
+        },
+        {
+          "id": 17,
+          "question": "My birthday is ___ 26 June.",
+          "questionVi": "Sinh nhật tôi vào ngày ___ 26 tháng 6.",
+          "options": ["at", "in", "on", "by"],
+          "optionsVi": ["vào", "trong", "vào", "trước"],
+          "correct": 2,
+          "explanation": "The correct answer is 'on' because we use 'on' with specific dates.",
+          "explanationVi": "Đáp án đúng là 'on' vì chúng ta dùng 'on' với ngày/tháng cụ thể."
+        },
+        {
+          "id": 18,
+          "question": "Which word correctly completes the sentence?\n\"He drives ___ car.\"",
+          "questionVi": "Từ nào hoàn thành câu sau?\n\"Anh ấy lái xe ___.\"",
+          "options": ["fast", "fastly", "faster", "fast ly"],
+          "optionsVi": ["nhanh", "nhanhly ", "nhanh hơn", "fast ly "],
+          "correct": 0,
+          "explanation": "The correct answer is 'fast' (adverb).",
+          "explanationVi": "Đáp án đúng là 'fast' (trạng từ chỉ cách thức)."
+        },
+        {
+          "id": 19,
+          "question": "I'm busy today, but I ___ help tomorrow.",
+          "questionVi": "Hôm nay tôi bận, nhưng tôi ___ giúp ngày mai.",
+          "options": ["can", "cans", "could", "can to"],
+          "optionsVi": ["có thể", "có thể", "có thể", "can to "],
+          "correct": 0,
+          "explanation": "The correct answer is 'can' for ability in the near future.",
+          "explanationVi": "Đáp án đúng là 'can' thể hiện khả năng ở tương lai gần."
+        },
+        {
+          "id": 20,
+          "question": "The synonym of \"begin\" is ___.",
+          "questionVi": "Từ đồng nghĩa của \"begin\" là ___.",
+          "options": ["stop", "finish", "start", "close"],
+          "optionsVi": ["dừng", "kết thúc", "bắt đầu", "đóng"],
+          "correct": 2,
+          "explanation": "The correct answer is 'start'.",
+          "explanationVi": "Đáp án đúng là 'start'."
+        },
+        {
+          "id": 21,
+          "question": "We ___ dinner when the phone rang.",
+          "questionVi": "Chúng tôi ___ bữa tối khi điện thoại reo.",
+          "options": ["cook", "cooked", "were cooking", "had cooked"],
+          "optionsVi": ["nấu", "đã nấu", "đang nấu", "đã nấu xong"],
+          "correct": 2,
+          "explanation": "The correct answer is 'were cooking' (past continuous).",
+          "explanationVi": "Đáp án đúng là 'were cooking' (quá khứ tiếp diễn)."
+        },
+        {
+          "id": 22,
+          "question": "Which sentence is correct?",
+          "questionVi": "Câu nào đúng ngữ pháp?",
+          "options": ["She don't like fish.", "She doesn't likes fish.", "She doesn't like fish.", "She not like fish."],
+          "optionsVi": ["Cô ấy không thích cá. ", "Cô ấy không thích cá. ", "Cô ấy không thích cá.", "Cô ấy không thích cá. "],
+          "correct": 2,
+          "explanation": "The correct structure is 'She doesn't like fish.'",
+          "explanationVi": "Cấu trúc đúng: 'She doesn't like fish.'"
+        },
+        {
+          "id": 23,
+          "question": "He is taller ___ his brother.",
+          "questionVi": "Anh ấy cao ___ anh trai của anh ấy.",
+          "options": ["than", "then", "as", "to"],
+          "optionsVi": ["hơn", "sau đó", "như", "đến"],
+          "correct": 0,
+          "explanation": "Use 'than' for comparisons.",
+          "explanationVi": "Dùng 'than' trong câu so sánh."
+        },
+        {
+          "id": 24,
+          "question": "The meeting will start ___ 9 a.m.",
+          "questionVi": "Cuộc họp sẽ bắt đầu ___ 9 giờ sáng.",
+          "options": ["in", "on", "at", "to"],
+          "optionsVi": ["trong", "vào", "lúc", "đến"],
+          "correct": 2,
+          "explanation": "We use 'at' with clock times.",
+          "explanationVi": "Dùng 'at' với giờ cụ thể."
+        },
+        {
+          "id": 25,
+          "question": "I have ___ homework tonight.",
+          "questionVi": "Tối nay tôi có ___ bài tập về nhà.",
+          "options": ["much", "many", "a", "some of"],
+          "optionsVi": ["nhiều", "nhiều", "một", "một ít của"],
+          "correct": 0,
+          "explanation": "Use 'much' with uncountable nouns like homework.",
+          "explanationVi": "Dùng 'much' với danh từ không đếm được như homework."
+        },
+        {
+          "id": 26,
+          "question": "Which word fits?\n\"Please ___ the lights when you leave.\"",
+          "questionVi": "Từ nào phù hợp?\n\"Vui lòng ___ đèn khi bạn ra ngoài.\"",
+          "options": ["turn up", "turn down", "turn off", "turn into"],
+          "optionsVi": ["vặn to", "vặn nhỏ", "tắt", "biến thành"],
+          "correct": 2,
+          "explanation": "The correct answer is 'turn off'.",
+          "explanationVi": "Đáp án đúng là 'turn off' (tắt)."
+        },
+        {
+          "id": 27,
+          "question": "___ book on the desk is mine.",
+          "questionVi": "___ cuốn sách trên bàn là của tôi.",
+          "options": ["A", "An", "The", "One"],
+          "optionsVi": ["Một", "Một", "Cuốn", "Một"],
+          "correct": 2,
+          "explanation": "'The' because it refers to a specific book.",
+          "explanationVi": "Dùng 'The' vì nói đến một quyển sách cụ thể."
+        },
+        {
+          "id": 28,
+          "question": "If it rains, we ___ at home.",
+          "questionVi": "Nếu trời mưa, chúng tôi ___ ở nhà.",
+          "options": ["stay", "will stay", "stayed", "staying"],
+          "optionsVi": ["ở", "sẽ ở", "đã ở", "đang ở"],
+          "correct": 1,
+          "explanation": "First conditional: If + present, will + V.",
+          "explanationVi": "Câu điều kiện loại 1: If + hiện tại, will + V."
+        },
+        {
+          "id": 29,
+          "question": "Which suffix makes a noun from \"teach\"?",
+          "questionVi": "Hậu tố nào tạo danh từ từ \"teach\"?",
+          "options": ["-er", "-ing", "-ly", "-est"],
+          "optionsVi": ["-er", "-ing", "-ly", "-est"],
+          "correct": 0,
+          "explanation": "'Teacher' is the noun form.",
+          "explanationVi": "'Teacher' là danh từ."
+        },
+        {
+          "id": 30,
+          "question": "Choose the correct sentence.",
+          "questionVi": "Chọn câu đúng.",
+          "options": ["Where is the bank nearest?", "Where nearest is the bank?", "Where is the nearest bank?", "The nearest bank where is?"],
+          "optionsVi": [
+            "Ngân hàng gần nhất ở đâu? ",
+            "Ngân hàng gần nhất ở đâu? ",
+            "Ngân hàng gần nhất ở đâu?",
+            "Ngân hàng gần nhất ở đâu? "
+          ],
+          "correct": 2,
+          "explanation": "Correct question order: Where + is + the nearest bank?",
+          "explanationVi": "Trật tự câu hỏi đúng: Where + is + the nearest bank?"
+        }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension",
+      "description": "20 multiple-choice questions • Read passages and choose the best answer",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1",
+          "content": "A small coffee shop called \"Morning Bean\" opened last month in Minh's neighbourhood. The owner, Lan, sells Vietnamese drip coffee and fresh sandwiches. The shop opens at 6 a.m. on weekdays because many office workers stop for breakfast. Prices are lower before 8 a.m.; customers get a 20 percent discount if they bring their own cup. At lunchtime the place is full, so Lan plans to add outdoor tables next week. She also wants to create an online menu so people can order ahead and pick up their food quickly.",
+          "contentVi": "Một quán cà phê nhỏ tên \"Morning Bean\" đã mở tháng trước trong khu phố của Minh. Chủ quán, chị Lan, bán cà phê phin Việt Nam và bánh mì kẹp tươi. Quán mở cửa lúc 6 giờ sáng các ngày trong tuần vì nhiều nhân viên văn phòng ghé ăn sáng. Giá rẻ hơn trước 8 giờ sáng; khách sẽ được giảm 20% nếu mang ly của riêng mình. Giờ trưa quán rất đông nên tuần tới Lan dự định đặt thêm bàn ngoài trời. Chị cũng muốn tạo thực đơn online để khách đặt trước và lấy đồ nhanh hơn.",
+          "questions": [
+            {
+              "id": 31,
+              "question": "When did the shop open?",
+              "questionVi": "Quán mở khi nào?",
+              "options": ["Last week", "Last month", "Last year", "Next week"],
+              "optionsVi": ["Tuần trước", "Tháng trước", "Năm ngoái", "Tuần tới"],
+              "correct": 1,
+              "explanation": "The passage says 'opened last month'.",
+              "explanationVi": "Đoạn văn nêu 'mở tháng trước'."
+            },
+            {
+              "id": 32,
+              "question": "What does Lan sell?",
+              "questionVi": "Lan bán gì?",
+              "options": ["Only coffee", "Coffee and sandwiches", "Only sandwiches", "Coffee and cakes"],
+              "optionsVi": ["Chỉ cà phê", "Cà phê và bánh mì kẹp", "Chỉ bánh mì kẹp", "Cà phê và bánh ngọt"],
+              "correct": 1,
+              "explanation": "She sells 'Vietnamese drip coffee and fresh sandwiches'.",
+              "explanationVi": "Cô bán 'cà phê phin và bánh mì kẹp tươi'."
+            },
+            {
+              "id": 33,
+              "question": "What time does the shop open on weekdays?",
+              "questionVi": "Quán mở mấy giờ các ngày trong tuần?",
+              "options": ["5 a.m.", "6 a.m.", "7 a.m.", "8 a.m."],
+              "optionsVi": ["5 giờ", "6 giờ", "7 giờ", "8 giờ"],
+              "correct": 1,
+              "explanation": "Opens at 6 a.m.",
+              "explanationVi": "Mở lúc 6 giờ sáng."
+            },
+            {
+              "id": 34,
+              "question": "What discount do customers get before 8 a.m.?",
+              "questionVi": "Khách được giảm bao nhiêu trước 8 giờ sáng?",
+              "options": ["10%", "15%", "20%", "25%"],
+              "optionsVi": ["10%", "15%", "20%", "25%"],
+              "correct": 2,
+              "explanation": "20 percent discount.",
+              "explanationVi": "Giảm 20%."
+            },
+            {
+              "id": 35,
+              "question": "What condition applies to the discount?",
+              "questionVi": "Điều kiện để được giảm giá là gì?",
+              "options": ["Bring your own cup", "Order online", "Come before 7 a.m.", "Buy more than one item"],
+              "optionsVi": ["Mang ly riêng", "Đặt online", "Đến trước 7h", "Mua hơn 1 món"],
+              "correct": 0,
+              "explanation": "Must bring own cup.",
+              "explanationVi": "Phải mang ly riêng."
+            },
+            {
+              "id": 36,
+              "question": "What does Lan plan to add next week?",
+              "questionVi": "Lan dự định thêm gì vào tuần tới?",
+              "options": ["More staff", "Outdoor tables", "New menu items", "Delivery service"],
+              "optionsVi": ["Thêm nhân viên", "Bàn ngoài trời", "Món mới", "Dịch vụ giao hàng"],
+              "correct": 1,
+              "explanation": "She will add outdoor tables.",
+              "explanationVi": "Cô sẽ đặt bàn ngoài trời."
+            },
+            {
+              "id": 37,
+              "question": "Why does Lan want an online menu?",
+              "questionVi": "Tại sao Lan muốn có thực đơn online?",
+              "options": ["To save money", "To attract more customers", "For faster service", "To compete with other shops"],
+              "optionsVi": ["Để tiết kiệm tiền", "Thu hút khách hơn", "Phục vụ nhanh hơn", "Cạnh tranh với quán khác"],
+              "correct": 2,
+              "explanation": "So customers can order ahead and pick up quickly.",
+              "explanationVi": "Để khách đặt trước và lấy đồ nhanh."
+            },
+            {
+              "id": 38,
+              "question": "When is the shop busiest?",
+              "questionVi": "Quán đông nhất khi nào?",
+              "options": ["Morning", "Lunchtime", "Afternoon", "Evening"],
+              "optionsVi": ["Buổi sáng", "Giờ trưa", "Buổi chiều", "Buổi tối"],
+              "correct": 1,
+              "explanation": "At lunchtime the place is full.",
+              "explanationVi": "Giờ trưa quán kín chỗ."
+            },
+            {
+              "id": 39,
+              "question": "What type of coffee does Lan sell?",
+              "questionVi": "Lan bán loại cà phê nào?",
+              "options": ["Espresso", "Vietnamese drip coffee", "Instant coffee", "Filter coffee"],
+              "optionsVi": ["Espresso", "Cà phê phin Việt Nam", "Cà phê hòa tan", "Cà phê lọc"],
+              "correct": 1,
+              "explanation": "Vietnamese drip coffee.",
+              "explanationVi": "Cà phê phin."
+            },
+            {
+              "id": 40,
+              "question": "Who are the main morning customers?",
+              "questionVi": "Khách chính buổi sáng là ai?",
+              "options": ["Students", "Office workers", "Tourists", "Families"],
+              "optionsVi": ["Sinh viên", "Nhân viên văn phòng", "Khách du lịch", "Gia đình"],
+              "correct": 1,
+              "explanation": "Many office workers stop for breakfast.",
+              "explanationVi": "Nhiều nhân viên văn phòng ghé ăn sáng."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2",
+          "content": "Last year, a small town planted 500 young trees along its main streets to reduce air pollution. Volunteers watered the trees twice a week during the dry season. After six months, nearly 90 percent of the trees were still healthy. The town council measured air quality and found that dust levels dropped by five percent compared to the previous year. Because of this success, the council will plant 300 more trees next spring and set up wooden benches under the largest ones. Local schools will use the project to teach students about climate change and environmental protection.",
+          "contentVi": "Năm ngoái, một thị trấn nhỏ đã trồng 500 cây non dọc các con đường chính để giảm ô nhiễm không khí. Tình nguyện viên tưới cây hai lần mỗi tuần trong mùa khô. Sau sáu tháng, gần 90% số cây vẫn khỏe mạnh. Hội đồng thị trấn đo chất lượng không khí và nhận thấy bụi giảm 5% so với năm trước. Nhờ thành công này, mùa xuân tới hội đồng sẽ trồng thêm 300 cây và đặt băng ghế gỗ dưới những cây lớn nhất. Trường học địa phương sẽ dùng dự án để dạy học sinh về biến đổi khí hậu và bảo vệ môi trường.",
+          "questions": [
+            {
+              "id": 41,
+              "question": "How many trees were planted last year?",
+              "questionVi": "Bao nhiêu cây đã được trồng năm ngoái?",
+              "options": ["300", "400", "500", "600"],
+              "optionsVi": ["300", "400", "500", "600"],
+              "correct": 2,
+              "explanation": "500 young trees were planted.",
+              "explanationVi": "500 cây non đã được trồng."
+            },
+            {
+              "id": 42,
+              "question": "What was the main purpose of planting trees?",
+              "questionVi": "Mục đích chính của việc trồng cây là gì?",
+              "options": ["To provide shade", "To reduce air pollution", "To create parks", "To attract birds"],
+              "optionsVi": ["Tạo bóng mát", "Giảm ô nhiễm không khí", "Tạo công viên", "Thu hút chim"],
+              "correct": 1,
+              "explanation": "To reduce air pollution.",
+              "explanationVi": "Để giảm ô nhiễm không khí."
+            },
+            {
+              "id": 43,
+              "question": "How often did volunteers water the trees?",
+              "questionVi": "Tình nguyện viên tưới cây bao lâu một lần?",
+              "options": ["Once a week", "Twice a week", "Three times a week", "Every day"],
+              "optionsVi": ["Một lần/tuần", "Hai lần/tuần", "Ba lần/tuần", "Mỗi ngày"],
+              "correct": 1,
+              "explanation": "They watered twice a week.",
+              "explanationVi": "Tưới hai lần mỗi tuần."
+            },
+            {
+              "id": 44,
+              "question": "What percentage of trees survived after six months?",
+              "questionVi": "Bao nhiêu phần trăm cây còn sống sau 6 tháng?",
+              "options": ["80%", "85%", "90%", "95%"],
+              "optionsVi": ["80%", "85%", "90%", "95%"],
+              "correct": 2,
+              "explanation": "Nearly 90 percent survived.",
+              "explanationVi": "Gần 90% cây sống."
+            },
+            {
+              "id": 45,
+              "question": "How much did dust levels decrease?",
+              "questionVi": "Mức độ bụi giảm bao nhiêu phần trăm?",
+              "options": ["3%", "5%", "7%", "10%"],
+              "optionsVi": ["3%", "5%", "7%", "10%"],
+              "correct": 1,
+              "explanation": "Dust dropped by 5 percent.",
+              "explanationVi": "Bụi giảm 5%."
+            },
+            {
+              "id": 46,
+              "question": "How many more trees will be planted next spring?",
+              "questionVi": "Bao nhiêu cây sẽ được trồng thêm vào mùa xuân tới?",
+              "options": ["200", "300", "400", "500"],
+              "optionsVi": ["200", "300", "400", "500"],
+              "correct": 1,
+              "explanation": "300 more trees.",
+              "explanationVi": "Thêm 300 cây."
+            },
+            {
+              "id": 47,
+              "question": "What will be added under the largest trees?",
+              "questionVi": "Sẽ thêm gì dưới những cây lớn nhất?",
+              "options": ["Playground equipment", "Wooden benches", "Flower gardens", "Water fountains"],
+              "optionsVi": ["Dụng cụ vui chơi", "Ghế gỗ", "Vườn hoa", "Đài phun nước"],
+              "correct": 1,
+              "explanation": "Wooden benches will be set up.",
+              "explanationVi": "Sẽ đặt ghế gỗ."
+            },
+            {
+              "id": 48,
+              "question": "How will schools use this project?",
+              "questionVi": "Trường học sẽ sử dụng dự án này như thế nào?",
+              "options": ["For art classes", "For science lessons", "For teaching about climate change", "For physical education"],
+              "optionsVi": ["Cho lớp mỹ thuật", "Cho bài học khoa học", "Dạy về biến đổi khí hậu", "Cho thể dục"],
+              "correct": 2,
+              "explanation": "To teach about climate change & environmental protection.",
+              "explanationVi": "Để dạy về biến đổi khí hậu và bảo vệ môi trường."
+            },
+            {
+              "id": 49,
+              "question": "When did the tree planting project start?",
+              "questionVi": "Dự án trồng cây bắt đầu khi nào?",
+              "options": ["This year", "Last year", "Two years ago", "Three years ago"],
+              "optionsVi": ["Năm nay", "Năm ngoái", "Hai năm trước", "Ba năm trước"],
+              "correct": 1,
+              "explanation": "It started last year.",
+              "explanationVi": "Bắt đầu năm ngoái."
+            },
+            {
+              "id": 50,
+              "question": "What was the result of the project?",
+              "questionVi": "Kết quả của dự án là gì?",
+              "options": ["Complete failure", "Partial success", "Great success", "No change"],
+              "optionsVi": ["Thất bại hoàn toàn", "Thành công một phần", "Thành công lớn", "Không thay đổi"],
+              "correct": 2,
+              "explanation": "High tree survival & lower pollution = great success.",
+              "explanationVi": "Tỷ lệ sống cao, ô nhiễm giảm -> thành công lớn."
+            }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension",
+      "description": "10 multiple-choice questions • Listen to audio scripts and choose the best answer",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 - Library Announcement",
+          "content": "Good afternoon, library members. Today, Monday 12 June, the main reading room will close at 6 p.m. for air-conditioning repairs. The second-floor study desks will remain open until 9 p.m., and the computer lab will stay open until 8 p.m. If you need a book after 6 p.m., please ask at the information desk. Remember, e-books are available online 24 hours a day. Thank you for your understanding.",
+          "contentVi": "Chào buổi chiều, các thành viên thư viện. Hôm nay, thứ Hai ngày 12 tháng 6, phòng đọc chính sẽ đóng cửa lúc 6 giờ tối để sửa máy lạnh. Bàn học tầng hai sẽ mở đến 9 giờ tối và phòng máy tính mở đến 8 giờ tối. Nếu bạn cần sách sau 6 giờ, vui lòng đến quầy thông tin. Sách điện tử luôn sẵn 24/7. Xin cảm ơn.",
+          "questions": [
+            {
+              "id": 51,
+              "question": "What date is the announcement for?",
+              "questionVi": "Thông báo dành cho ngày nào?",
+              "options": ["10 June", "11 June", "12 June", "13 June"],
+              "optionsVi": ["10/6", "11/6", "12/6", "13/6"],
+              "correct": 2,
+              "explanation": "It says 'Today, Monday 12 June'.",
+              "explanationVi": "Thông báo ghi 'Hôm nay, thứ Hai 12/6'."
+            },
+            {
+              "id": 52,
+              "question": "Why is the main reading room closing early?",
+              "questionVi": "Tại sao phòng đọc chính đóng cửa sớm?",
+              "options": ["Staff meeting", "Repairs", "Cleaning", "Private event"],
+              "optionsVi": ["Họp nhân viên", "Sửa chữa", "Dọn dẹp", "Sự kiện riêng"],
+              "correct": 1,
+              "explanation": "For air-conditioning repairs.",
+              "explanationVi": "Để sửa máy lạnh."
+            },
+            {
+              "id": 53,
+              "question": "Which facility closes at 8 p.m.?",
+              "questionVi": "Khu vực nào đóng cửa lúc 8 giờ tối?",
+              "options": ["Reading room", "Study desks", "Computer lab", "Café"],
+              "optionsVi": ["Phòng đọc", "Bàn học", "Phòng máy tính", "Quán cà phê"],
+              "correct": 2,
+              "explanation": "The computer lab closes at 8 p.m.",
+              "explanationVi": "Phòng máy tính đóng lúc 8 giờ."
+            },
+            {
+              "id": 54,
+              "question": "Where should users go for a book after 6 p.m.?",
+              "questionVi": "Sau 6 giờ người dùng nên đến đâu để mượn sách?",
+              "options": ["Security desk", "Information desk", "Café counter", "Online chat"],
+              "optionsVi": ["Bàn bảo vệ", "Bàn thông tin", "Quầy cà phê", "Chat online"],
+              "correct": 1,
+              "explanation": "Ask at the information desk.",
+              "explanationVi": "Đến bàn thông tin."
+            },
+            {
+              "id": 55,
+              "question": "What service is available 24 hours?",
+              "questionVi": "Dịch vụ nào có 24 giờ?",
+              "options": ["Printing", "E-book borrowing", "Study desks", "Computer lab"],
+              "optionsVi": ["In ấn", "Mượn sách điện tử", "Bàn học", "Phòng máy tính"],
+              "correct": 1,
+              "explanation": "E-books available online 24/7.",
+              "explanationVi": "Sách điện tử sẵn 24/7."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 - Phone Message",
+          "content": "Hi Linh, it's Tom. My number 45 bus broke down on King Street, so I'm running late. Instead of the café, let's meet at Bookmark Bookshop next to the cinema. I'll arrive in about twenty minutes, so roughly 4 p.m. Call me if you can't find it. See you soon!",
+          "contentVi": "Chào Linh, Tom đây. Xe buýt số 45 của mình hỏng trên đường King nên mình đến muộn. Thay vì quán cà phê, gặp nhau ở hiệu sách Bookmark cạnh rạp chiếu phim nhé. Mình sẽ tới khoảng 20 phút nữa, tầm 4 giờ. Không tìm thấy thì gọi mình nhé. Gặp sau!",
+          "questions": [
+            {
+              "id": 56,
+              "question": "What caused Tom's delay?",
+              "questionVi": "Điều gì khiến Tom đến muộn?",
+              "options": ["Heavy rain", "Lost wallet", "Broken bus", "Traffic jam"],
+              "optionsVi": ["Mưa to", "Mất ví", "Xe buýt hỏng", "Kẹt xe"],
+              "correct": 2,
+              "explanation": "His bus broke down.",
+              "explanationVi": "Xe buýt bị hỏng."
+            },
+            {
+              "id": 57,
+              "question": "Which street is Tom currently on?",
+              "questionVi": "Tom đang ở đường nào?",
+              "options": ["Queen Street", "King Street", "River Road", "Market Lane"],
+              "optionsVi": ["Đường Queen", "Đường King", "Đường River", "Hẻm Market"],
+              "correct": 1,
+              "explanation": "On King Street.",
+              "explanationVi": "Trên đường King."
+            },
+            {
+              "id": 58,
+              "question": "Where will the meeting take place?",
+              "questionVi": "Gặp nhau ở đâu?",
+              "options": ["In the café", "At the cinema entrance", "Inside Bookmark Bookshop", "Bus station"],
+              "optionsVi": ["Trong quán cà phê", "Cổng rạp phim", "Trong hiệu sách Bookmark", "Bến xe"],
+              "correct": 2,
+              "explanation": "At Bookmark Bookshop.",
+              "explanationVi": "Tại hiệu sách Bookmark."
+            },
+            {
+              "id": 59,
+              "question": "How long will Tom take to reach the bookshop?",
+              "questionVi": "Tom sẽ mất bao lâu để tới hiệu sách?",
+              "options": ["10 min", "15 min", "20 min", "30 min"],
+              "optionsVi": ["10 phút", "15 phút", "20 phút", "30 phút"],
+              "correct": 2,
+              "explanation": "He says 'about twenty minutes'.",
+              "explanationVi": "Anh ấy nói 'khoảng 20 phút'."
+            },
+            {
+              "id": 60,
+              "question": "Approximately what time will Tom arrive?",
+              "questionVi": "Tom sẽ tới khoảng mấy giờ?",
+              "options": ["3 p.m.", "4 p.m.", "4:30 p.m.", "5 p.m."],
+              "optionsVi": ["3 giờ", "4 giờ", "4:30", "5 giờ"],
+              "correct": 1,
+              "explanation": "Roughly 4 p.m.",
+              "explanationVi": "Khoảng 4 giờ."
+            }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing",
+      "description": "3 writing tasks • Suggested timing: 40 minutes total",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (80-100 words)",
+          "titleVi": "Bài 1 (80-100 từ)",
+          "instruction": "Your friend plans to visit your city. Write an email recommending two places to see and one local food to try. Give reasons.",
+          "instructionVi": "Bạn của bạn sắp đến thăm thành phố bạn. Hãy viết email gợi ý 2 địa điểm nên đi và 1 món ăn địa phương nên thử, kèm lý do.",
+          "wordLimit": { "min": 80, "max": 100 },
+          "type": "email",
+          "topic": "travel_recommendations"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (100-120 words)",
+          "titleVi": "Bài 2 (100-120 từ)",
+          "instruction": "\"Learning English online is better than in a classroom.\" Do you agree or disagree? Give one advantage and one disadvantage.",
+          "instructionVi": "\"Học tiếng Anh trực tuyến tốt hơn học trong lớp.\" Bạn đồng ý hay không? Nêu 1 lợi ích và 1 bất lợi.",
+          "wordLimit": { "min": 100, "max": 120 },
+          "type": "opinion_essay",
+          "topic": "online_education"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (120-140 words)",
+          "titleVi": "Bài 3 (120-140 từ)",
+          "instruction": "Describe the data in the chart below and make one comparison.",
+          "instructionVi": "Mô tả biểu đồ dưới đây và so sánh 1 điểm.",
+          "wordLimit": { "min": 120, "max": 140 },
+          "type": "data_description",
+          "topic": "study_methods",
+          "chartData": {
+            "title": "Study Methods Used by 100 Language Learners",
+            "data": [
+              { "method": "Watching YouTube lessons", "learners": 60, "percentage": 60 },
+              { "method": "Using mobile apps", "learners": 50, "percentage": 50 },
+              { "method": "Attending evening classes", "learners": 30, "percentage": 30 }
+            ]
+          },
+          "chartDataVi": {
+            "title": "Phương pháp học của 100 người học ngôn ngữ",
+            "data": [
+              { "method": "Xem bài học YouTube", "learners": 60, "percentage": 60 },
+              { "method": "Dùng ứng dụng di động", "learners": 50, "percentage": 50 },
+              { "method": "Tham gia lớp buổi tối", "learners": 30, "percentage": 30 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "1.0.0",
+    "lastUpdated": "2025-08-04",
+    "difficulty": "beginner",
+    "estimatedTime": "60 minutes",
+    "tags": ["grammar", "vocabulary", "reading", "writing", "ielts", "practice"]
+  }
+}
