@@ -1,721 +1,171 @@
 {
-    "testId": "IELTS_STARTER_1_2",
-    "testDate": "2025-08-07",
-    "testTitle": "IELTS Starter 1.2 Practice Test",
-    "totalQuestions": 50,
-    "sections": {
-      "grammar": {
-        "title": "Section A: Grammar & Vocabulary",
-        "description": "30 multiple-choice questions • Choose ONE answer (A, B, C or D)",
-        "totalQuestions": 30,
-        "questions": [
-          {
-            "id": 1,
-            "question": "You were supposed to send the report by noon, ___?",
-            "questionVi": "Bạn lẽ ra phải gửi báo cáo trước trưa, ___?",
-            "options": ["weren't you", "didn't you", "haven't you", "wasn't you"],
-            "optionsVi": ["phải không", "đã không à", "chưa à", "wasn't you "],
-            "correct": 0,
-            "explanation": "Tag question for 'were supposed' → 'weren't you'.",
-            "explanationVi": "Câu hỏi đuôi cho 'were supposed' là 'weren't you'."
-          },
-          {
-            "id": 2,
-            "question": "There is too ___ traffic to cross now.",
-            "questionVi": "Hiện có quá ___ xe cộ để băng qua.",
-            "options": ["many", "much", "few", "little"],
-            "optionsVi": ["nhiều", "nhiều", "ít", "ít"],
-            "correct": 1,
-            "explanation": "'Traffic' is uncountable → 'much'.",
-            "explanationVi": "'Traffic' là không đếm được nên dùng 'much'."
-          },
-          {
-            "id": 3,
-            "question": "I'm not used to ___ up so early.",
-            "questionVi": "Tôi không quen ___ dậy sớm như vậy.",
-            "options": ["get", "getting", "got", "to get"],
-            "optionsVi": ["get ", "getting", "got ", "to get"],
-            "correct": 1,
-            "explanation": "'Be used to' + V-ing.",
-            "explanationVi": "Cấu trúc 'be used to' + V-ing."
-          },
-          {
-            "id": 4,
-            "question": "If you finish early, ___ me a message.",
-            "questionVi": "Nếu bạn xong sớm, ___ cho tôi một tin nhắn.",
-            "options": ["send", "sent", "sending", "to send"],
-            "optionsVi": ["hãy gửi", "đã gửi", "đang gửi", "để gửi"],
-            "correct": 0,
-            "explanation": "Imperative form after condition.",
-            "explanationVi": "Dạng mệnh lệnh sau mệnh đề điều kiện."
-          },
-          {
-            "id": 5,
-            "question": "By the time we get there, the store ___ .",
-            "questionVi": "Khi chúng ta đến nơi thì cửa hàng ___ .",
-            "options": ["will close", "will have closed", "closed", "has closed"],
-            "optionsVi": ["sẽ đóng", "sẽ đã đóng", "đã đóng", "đã đóng"],
-            "correct": 1,
-            "explanation": "Future perfect for an action completed before another future time.",
-            "explanationVi": "Thì tương lai hoàn thành cho hành động xong trước mốc tương lai."
-          },
-          {
-            "id": 6,
-            "question": "The offer is valid ___ Friday.",
-            "questionVi": "Ưu đãi có hiệu lực ___ thứ Sáu.",
-            "options": ["by", "until", "for", "since"],
-            "optionsVi": ["đến", "đến", "trong", "từ"],
-            "correct": 1,
-            "explanation": "'Valid until Friday' = up to and including Friday.",
-            "explanationVi": "'Valid until Friday' = đến (và gồm) thứ Sáu."
-          },
-          {
-            "id": 7,
-            "question": "She would rather stay at home ___ go out.",
-            "questionVi": "Cô ấy thà ở nhà ___ đi chơi.",
-            "options": ["than", "to", "rather", "then"],
-            "optionsVi": ["hơn là", "để", "rather", "sau đó"],
-            "correct": 0,
-            "explanation": "'Would rather A than B'.",
-            "explanationVi": "Cấu trúc 'would rather A than B'."
-          },
-          {
-            "id": 8,
-            "question": "The meeting, ___ was scheduled for 3 p.m., has been postponed.",
-            "questionVi": "Cuộc họp, ___ được lên lịch lúc 3 giờ chiều, đã bị hoãn.",
-            "options": ["which", "that", "where", "what"],
-            "optionsVi": ["which", "that", "where", "what"],
-            "correct": 0,
-            "explanation": "Non-defining relative clause → 'which'.",
-            "explanationVi": "Mệnh đề quan hệ không xác định dùng 'which'."
-          },
-          {
-            "id": 9,
-            "question": "There were only a ___ people at the talk.",
-            "questionVi": "Chỉ có ___ người tại buổi nói chuyện.",
-            "options": ["few", "little", "a little", "much"],
-            "optionsVi": ["vài", "ít", "một ít", "nhiều"],
-            "correct": 0,
-            "explanation": "'a few people' is correct with countable nouns.",
-            "explanationVi": "'a few' dùng với danh từ đếm được: 'a few people'."
-          },
-          {
-            "id": 10,
-            "question": "Let me know if you have ___ questions.",
-            "questionVi": "Hãy cho tôi biết nếu bạn có ___ câu hỏi.",
-            "options": ["some", "any", "no", "few"],
-            "optionsVi": ["một vài", "bất kỳ", "không", "ít"],
-            "correct": 1,
-            "explanation": "Use 'any' in conditionals and negatives.",
-            "explanationVi": "Dùng 'any' trong câu điều kiện/phủ định."
-          },
-          {
-            "id": 11,
-            "question": "We managed to finish the task, ___ it was challenging.",
-            "questionVi": "Chúng tôi đã hoàn thành nhiệm vụ, ___ nó khá khó.",
-            "options": ["because", "although", "so", "unless"],
-            "optionsVi": ["bởi vì", "mặc dù", "vì vậy", "trừ khi"],
-            "correct": 1,
-            "explanation": "'Although' contrasts two facts.",
-            "explanationVi": "'Although' dùng để tương phản hai ý."
-          },
-          {
-            "id": 12,
-            "question": "The new policy will affect ___ employees in customer support.",
-            "questionVi": "Chính sách mới sẽ ảnh hưởng ___ nhân viên bộ phận CSKH.",
-            "options": ["the most", "most of", "most", "almost"],
-            "optionsVi": ["nhiều nhất", "phần lớn", "hầu hết", "gần như"],
-            "correct": 2,
-            "explanation": "General statement → 'most employees' (no 'of').",
-            "explanationVi": "Câu chung chung dùng 'most employees' (không có 'of')."
-          },
-          {
-            "id": 13,
-            "question": "I had my phone ___ yesterday.",
-            "questionVi": "Tôi đã ___ điện thoại hôm qua.",
-            "options": ["repair", "to repair", "repaired", "repairing"],
-            "optionsVi": ["sửa", "để sửa", "được sửa", "việc sửa"],
-            "correct": 2,
-            "explanation": "Causative: 'have + object + past participle'.",
-            "explanationVi": "Cấu trúc sai khiến: 'have + O + V3'."
-          },
-          {
-            "id": 14,
-            "question": "He speaks English ___ than his brother.",
-            "questionVi": "Anh ấy nói tiếng Anh ___ hơn anh trai.",
-            "options": ["more fluently", "most fluently", "fluent", "more fluent"],
-            "optionsVi": ["trôi chảy hơn", "trôi chảy nhất", "trôi chảy", "more fluent"],
-            "correct": 0,
-            "explanation": "Use adverb 'fluently' for 'speaks'.",
-            "explanationVi": "Dùng trạng từ 'fluently' với động từ 'speaks'."
-          },
-          {
-            "id": 15,
-            "question": "Not only ___ the tickets, but we also booked the hotel.",
-            "questionVi": "Không chỉ ___ vé, mà chúng tôi còn đặt cả khách sạn.",
-            "options": ["we bought", "did we buy", "have we bought", "we had bought"],
-            "optionsVi": ["we bought", "did we buy", "have we bought", "we had bought "],
-            "correct": 1,
-            "explanation": "Inversion after 'Not only' → auxiliary before subject.",
-            "explanationVi": "Đảo ngữ sau 'Not only' → trợ động từ đứng trước chủ ngữ."
-          },
-          {
-            "id": 16,
-            "question": "There’s a slight delay because the parts ___ yet.",
-            "questionVi": "Có chậm trễ nhẹ vì các linh kiện vẫn chưa ___.",
-            "options": ["didn't arrive", "haven't arrived", "aren't arriving", "won't arrive"],
-            "optionsVi": ["không đến", "chưa đến", "không đang đến", "sẽ không đến"],
-            "correct": 1,
-            "explanation": "Present perfect with 'yet'.",
-            "explanationVi": "Dùng hiện tại hoàn thành với 'yet'."
-          },
-          {
-            "id": 17,
-            "question": "She asked me ___ the presentation slides.",
-            "questionVi": "Cô ấy nhờ tôi ___ slide thuyết trình.",
-            "options": ["to send her", "to send to her", "that I send her", "for sending her"],
-            "optionsVi": ["gửi cho cô ấy", "gửi đến cho cô ấy", "rằng tôi gửi cho cô ấy", "để gửi cho cô ấy "],
-            "correct": 0,
-            "explanation": "Verb + object + to-infinitive.",
-            "explanationVi": "Động từ + tân ngữ + to-V."
-          },
-          {
-            "id": 18,
-            "question": "The restaurant is popular; you’d better ___ a table.",
-            "questionVi": "Nhà hàng rất đông; bạn nên ___ bàn.",
-            "options": ["book", "to book", "booking", "booked"],
-            "optionsVi": ["đặt", "để đặt", "việc đặt", "đã đặt"],
-            "correct": 0,
-            "explanation": "'Had better' + base verb.",
-            "explanationVi": "'Had better' + động từ nguyên mẫu."
-          },
-          {
-            "id": 19,
-            "question": "We’re short ___ time, so keep your answers brief.",
-            "questionVi": "Chúng ta đang thiếu ___ thời gian, nên trả lời ngắn gọn.",
-            "options": ["for", "with", "of", "on"],
-            "optionsVi": ["cho", "với", "thiếu", "trên"],
-            "correct": 2,
-            "explanation": "Fixed phrase: 'short of time'.",
-            "explanationVi": "Cụm cố định: 'short of time'."
-          },
-          {
-            "id": 20,
-            "question": "The laptop is too heavy ___ in one hand.",
-            "questionVi": "Chiếc laptop quá nặng để ___ bằng một tay.",
-            "options": ["to carry", "for carry", "for carrying", "carrying"],
-            "optionsVi": ["mang", "cho mang ", "cho việc mang", "mang"],
-            "correct": 0,
-            "explanation": "Pattern: 'too + adj + to V'.",
-            "explanationVi": "Mẫu: 'too + tính từ + to V'."
-          },
-          {
-            "id": 21,
-            "question": "Hardly ___ the station when the train left.",
-            "questionVi": "Vừa mới ___ ga thì tàu rời đi.",
-            "options": ["we reached", "had we reached", "did we reach", "we had reached"],
-            "optionsVi": ["chúng tôi đến", "chúng tôi vừa đến", "chúng tôi có đến", "chúng tôi đã đến"],
-            "correct": 1,
-            "explanation": "Inversion with 'Hardly … when' + past perfect.",
-            "explanationVi": "Đảo ngữ với 'Hardly … when' + QK hoàn thành."
-          },
-          {
-            "id": 22,
-            "question": "I’d rather you ___ the package tomorrow.",
-            "questionVi": "Tôi muốn bạn ___ gói hàng vào ngày mai.",
-            "options": ["deliver", "delivered", "will deliver", "had delivered"],
-            "optionsVi": ["giao", "giao", "sẽ giao", "đã giao"],
-            "correct": 1,
-            "explanation": "After 'I'd rather you', use past simple (subjunctive) for present/future.",
-            "explanationVi": "Sau 'I'd rather you' dùng QK đơn (giả định) cho hiện/tương lai."
-          },
-          {
-            "id": 23,
-            "question": "The report is due next week, ___?",
-            "questionVi": "Báo cáo hạn tuần tới, ___?",
-            "options": ["is it", "isn't it", "does it", "isn't the report"],
-            "optionsVi": ["đúng không", "không phải sao", "có không", "không phải bản báo cáo"],
-            "correct": 1,
-            "explanation": "Positive statement → negative tag 'isn't it?'.",
-            "explanationVi": "Mệnh đề khẳng định → đuôi phủ định 'isn't it?'."
-          },
-          {
-            "id": 24,
-            "question": "We stopped ___ a coffee on the way.",
-            "questionVi": "Chúng tôi dừng lại ___ cà phê trên đường.",
-            "options": ["to have", "having", "for having", "to having"],
-            "optionsVi": ["để uống", "đang uống", "cho việc uống", "để việc có "],
-            "correct": 0,
-            "explanation": "'Stop to do' = stop in order to do something.",
-            "explanationVi": "'Stop to do' = dừng lại để làm gì."
-          },
-          {
-            "id": 25,
-            "question": "There is ___ evidence to support the claim.",
-            "questionVi": "Có ___ bằng chứng để hỗ trợ khẳng định.",
-            "options": ["few", "a few", "little", "a little"],
-            "optionsVi": ["ít", "một vài", "ít", "một ít"],
-            "correct": 2,
-            "explanation": "'Evidence' is uncountable → 'little'.",
-            "explanationVi": "'Evidence' là không đếm được nên dùng 'little'."
-          },
-          {
-            "id": 26,
-            "question": "She works as ___ accountant at a startup.",
-            "questionVi": "Cô ấy làm ___ kế toán tại một công ty khởi nghiệp.",
-            "options": ["the", "a", "an", "—"],
-            "optionsVi": ["the ", "a", "an", "—"],
-            "correct": 2,
-            "explanation": "Use 'an' before vowel sound in 'accountant'.",
-            "explanationVi": "Dùng 'an' trước âm bắt đầu bằng nguyên âm (accountant)."
-          },
-          {
-            "id": 27,
-            "question": "He apologized ___ the mistake.",
-            "questionVi": "Anh ấy xin lỗi ___ sai sót.",
-            "options": ["about", "for", "of", "to"],
-            "optionsVi": ["về", "vì", "của", "tới"],
-            "correct": 1,
-            "explanation": "Collocation: 'apologize for + thing'.",
-            "explanationVi": "Cụm: 'apologize for + sự việc'."
-          },
-          {
-            "id": 28,
-            "question": "If you had told me earlier, I ___ you.",
-            "questionVi": "Nếu bạn nói với tôi sớm hơn, tôi ___ bạn.",
-            "options": ["would help", "will help", "would have helped", "helped"],
-            "optionsVi": ["sẽ giúp", "sẽ giúp", "đã có thể giúp", "đã giúp"],
-            "correct": 2,
-            "explanation": "Third conditional: If + past perfect → would have + V3.",
-            "explanationVi": "Điều kiện loại 3: If + QKHT → would have + V3."
-          },
-          {
-            "id": 29,
-            "question": "The man to ___ you spoke is our new manager.",
-            "questionVi": "Người đàn ông mà bạn đã nói chuyện ___ là quản lý mới.",
-            "options": ["who", "whom", "which", "whose"],
-            "optionsVi": ["who", "whom", "which", "whose"],
-            "correct": 1,
-            "explanation": "After a preposition, use 'whom' for people.",
-            "explanationVi": "Sau giới từ, dùng 'whom' cho người."
-          },
-          {
-            "id": 30,
-            "question": "We’ll need to figure out ___ to handle the delay.",
-            "questionVi": "Chúng ta cần tìm cách ___ xử lý việc trì hoãn.",
-            "options": ["what", "how", "which", "that"],
-            "optionsVi": ["cái gì", "như thế nào", "cái nào", "rằng"],
-            "correct": 1,
-            "explanation": "Embedded question 'how to + V'.",
-            "explanationVi": "Câu gián tiếp 'how to + V'."
-          }
-        ]
-      },
-      "reading": {
-        "title": "Section B: Reading Comprehension",
-        "description": "20 multiple-choice questions • Read passages and choose the best answer",
-        "totalQuestions": 20,
-        "passages": [
-          {
-            "id": 1,
-            "title": "Passage 1 – Community Kitchen",
-            "content": "After a successful three-month pilot, the Riverside Community Kitchen is expanding its operations. Initially, volunteers cooked twice a week using donated ingredients; now, with a small city grant, the kitchen will open four evenings and add a Saturday lunch. Demand has risen partly because the kitchen introduced a pre-order app that lets users reserve portions before they arrive. To reduce food waste, meals are cooked in batches based on confirmed reservations, and any surplus is offered to local shelters by 9 p.m. Surveys show that first-time visitors value the friendly atmosphere as much as the low cost. In response to feedback about accessibility, the kitchen is testing a quiet dining hour with softer lighting for guests who prefer a calmer space.",
-            "contentVi": "Sau khi thí điểm thành công ba tháng, Bếp Cộng Đồng Riverside đang mở rộng hoạt động. Ban đầu, tình nguyện viên nấu ăn hai lần mỗi tuần bằng nguyên liệu quyên tặng; nay, với khoản tài trợ nhỏ của thành phố, bếp sẽ mở bốn buổi tối và thêm bữa trưa thứ Bảy. Nhu cầu tăng một phần vì bếp giới thiệu ứng dụng đặt trước cho phép người dùng giữ suất trước khi đến. Để giảm lãng phí, bữa ăn được nấu theo mẻ dựa trên đặt chỗ xác nhận, và phần dư sẽ chuyển cho các mái ấm địa phương trước 9 giờ tối. Khảo sát cho thấy khách lần đầu đánh giá cao bầu không khí thân thiện không kém chi phí thấp. Đáp lại góp ý về khả năng tiếp cận, bếp đang thử khung giờ ăn yên tĩnh với ánh sáng dịu cho khách thích không gian tĩnh lặng.",
-            "questions": [
-              {
-                "id": 31,
-                "question": "What change is being made to opening times?",
-                "questionVi": "Sự thay đổi nào đang được áp dụng cho thời gian mở cửa?",
-                "options": ["From two to four evenings, plus a Saturday lunch", "From four evenings to weekends only", "Closing earlier at 7 p.m.", "Serving breakfast daily"],
-                "optionsVi": ["Từ 2 lên 4 buổi tối, thêm trưa thứ Bảy", "Từ 4 buổi tối chuyển sang chỉ cuối tuần", "Đóng sớm lúc 7 giờ", "Phục vụ bữa sáng hằng ngày"],
-                "correct": 0,
-                "explanation": "The passage states four evenings and a Saturday lunch.",
-                "explanationVi": "Đoạn văn nêu 4 buổi tối và trưa thứ Bảy."
-              },
-              {
-                "id": 32,
-                "question": "Why has demand increased?",
-                "questionVi": "Tại sao nhu cầu tăng?",
-                "options": ["Higher prices elsewhere", "A new pre-order app", "More volunteers joined", "The menu changed weekly"],
-                "optionsVi": ["Giá nơi khác tăng", "Ứng dụng đặt trước mới", "Nhiều tình nguyện viên hơn", "Thực đơn đổi theo tuần"],
-                "correct": 1,
-                "explanation": "The pre-order app helps users reserve portions.",
-                "explanationVi": "Ứng dụng đặt trước giúp giữ suất."
-              },
-              {
-                "id": 33,
-                "question": "How does the kitchen reduce food waste?",
-                "questionVi": "Bếp giảm lãng phí thực phẩm bằng cách nào?",
-                "options": ["Buying cheaper ingredients", "Cooking in batches from reservations", "Smaller portion sizes", "Closing earlier"],
-                "optionsVi": ["Mua nguyên liệu rẻ", "Nấu theo mẻ dựa trên đặt chỗ", "Giảm khẩu phần", "Đóng cửa sớm"],
-                "correct": 1,
-                "explanation": "Meals are cooked based on confirmed reservations.",
-                "explanationVi": "Nấu theo đặt chỗ đã xác nhận."
-              },
-              {
-                "id": 34,
-                "question": "Where does surplus food go?",
-                "questionVi": "Thức ăn dư được chuyển đi đâu?",
-                "options": ["Sold the next day", "Given to local shelters", "Stored for staff", "Thrown away"],
-                "optionsVi": ["Bán ngày hôm sau", "Cho các mái ấm địa phương", "Để cho nhân viên", "Bỏ đi"],
-                "correct": 1,
-                "explanation": "Surplus is offered to shelters by 9 p.m.",
-                "explanationVi": "Phần dư chuyển cho mái ấm trước 9 giờ."
-              },
-              {
-                "id": 35,
-                "question": "What do first-time visitors value?",
-                "questionVi": "Khách lần đầu đánh giá cao điều gì?",
-                "options": ["Large portions", "Live music", "Friendly atmosphere and low cost", "Delivery service"],
-                "optionsVi": ["Khẩu phần lớn", "Nhạc sống", "Không khí thân thiện và chi phí thấp", "Dịch vụ giao hàng"],
-                "correct": 2,
-                "explanation": "They value the atmosphere as much as the price.",
-                "explanationVi": "Họ coi trọng không khí và giá rẻ."
-              },
-              {
-                "id": 36,
-                "question": "What accessibility feature is being tested?",
-                "questionVi": "Tính năng hỗ trợ tiếp cận nào đang được thử nghiệm?",
-                "options": ["Wheelchair ramps", "Sign-language interpreters", "Quiet dining hour with softer lighting", "Audio menus"],
-                "optionsVi": ["Đường dốc xe lăn", "Phiên dịch ngôn ngữ ký hiệu", "Giờ ăn yên tĩnh với ánh sáng dịu", "Thực đơn âm thanh"],
-                "correct": 2,
-                "explanation": "A quiet hour with softer lighting is being tested.",
-                "explanationVi": "Thử giờ ăn yên tĩnh với ánh sáng dịu."
-              },
-              {
-                "id": 37,
-                "question": "What funded the expansion?",
-                "questionVi": "Điều gì tài trợ cho việc mở rộng?",
-                "options": ["A national program", "A small city grant", "Private investors", "Membership fees"],
-                "optionsVi": ["Chương trình quốc gia", "Tài trợ nhỏ của thành phố", "Nhà đầu tư tư nhân", "Phí thành viên"],
-                "correct": 1,
-                "explanation": "A small city grant funded it.",
-                "explanationVi": "Khoản tài trợ nhỏ từ thành phố."
-              },
-              {
-                "id": 38,
-                "question": "The pre-order app allows users to:",
-                "questionVi": "Ứng dụng đặt trước cho phép người dùng:",
-                "options": ["Order delivery to home", "Reserve portions before arrival", "Choose volunteer shifts", "Donate money directly"],
-                "optionsVi": ["Đặt giao tận nhà", "Giữ suất trước khi tới", "Chọn ca tình nguyện", "Quyên tiền trực tiếp"],
-                "correct": 1,
-                "explanation": "It lets users reserve portions.",
-                "explanationVi": "Cho phép giữ suất trước."
-              },
-              {
-                "id": 39,
-                "question": "What is the main purpose of the quiet dining hour?",
-                "questionVi": "Mục đích chính của giờ ăn yên tĩnh là gì?",
-                "options": ["Speed up service", "Save electricity", "Support guests who prefer calm spaces", "Reduce staff workload"],
-                "optionsVi": ["Tăng tốc phục vụ", "Tiết kiệm điện", "Hỗ trợ khách thích không gian yên tĩnh", "Giảm tải nhân viên"],
-                "correct": 2,
-                "explanation": "It’s for guests preferring a calmer space.",
-                "explanationVi": "Dành cho khách thích sự yên tĩnh."
-              },
-              {
-                "id": 40,
-                "question": "Overall, the passage is mainly about:",
-                "questionVi": "Tổng thể, đoạn văn chủ yếu nói về:",
-                "options": ["A restaurant review", "Operational growth and accessibility steps", "A fundraising campaign", "A volunteer recruitment drive"],
-                "optionsVi": ["Bài đánh giá nhà hàng", "Mở rộng hoạt động và cải thiện tiếp cận", "Chiến dịch gây quỹ", "Chiến dịch tuyển tình nguyện viên"],
-                "correct": 1,
-                "explanation": "It outlines expansion and new practices.",
-                "explanationVi": "Tóm lược mở rộng và thực hành mới."
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "title": "Passage 2 – Startup Internship Program",
-            "content": "NovaTech launched an internship program to address its growing backlog of support tickets. Rather than assigning interns to shadow engineers, the company designed a ticket triage system that routes common issues to supervised intern teams. Over six weeks, average response time fell from 36 hours to 14, while customer satisfaction edged up by four points on a 100-point scale. The improvement, however, came with constraints: senior staff needed to create step-by-step playbooks and hold daily stand-ups with interns. To prevent burnout, NovaTech capped intern shifts at four hours and limited weekend work to emergencies. The program will continue next quarter, focusing on automation; interns will help label historical tickets to train a model that suggests solutions for repetitive problems.",
-            "contentVi": "NovaTech triển khai chương trình thực tập để xử lý lượng lớn vé hỗ trợ tồn đọng. Thay vì cho thực tập sinh theo sát kỹ sư, công ty thiết kế hệ thống phân loại vé, điều hướng vấn đề phổ biến cho các nhóm thực tập dưới giám sát. Sau sáu tuần, thời gian phản hồi trung bình giảm từ 36 xuống 14 giờ, trong khi mức hài lòng khách hàng tăng thêm 4 điểm trên thang 100. Tuy nhiên, cải thiện này đi kèm ràng buộc: nhân sự cấp cao phải viết hướng dẫn từng bước và họp nhanh hằng ngày với thực tập sinh. Để tránh kiệt sức, NovaTech giới hạn ca làm của thực tập sinh ở 4 giờ và chỉ làm cuối tuần khi khẩn cấp. Chương trình sẽ tiếp tục quý sau, tập trung vào tự động hóa; thực tập sinh sẽ giúp gắn nhãn vé cũ để huấn luyện mô hình gợi ý giải pháp cho vấn đề lặp lại.",
-            "questions": [
-              {
-                "id": 41,
-                "question": "Why did NovaTech create the program?",
-                "questionVi": "Vì sao NovaTech tạo chương trình này?",
-                "options": ["To reduce hiring costs", "To handle a backlog of support tickets", "To train engineers in management", "To expand into new markets"],
-                "optionsVi": ["Giảm chi phí tuyển dụng", "Xử lý tồn đọng vé hỗ trợ", "Đào tạo kỹ sư quản lý", "Mở rộng thị trường"],
-                "correct": 1,
-                "explanation": "It was to address a growing backlog.",
-                "explanationVi": "Để giải quyết vé hỗ trợ tồn đọng."
-              },
-              {
-                "id": 42,
-                "question": "How were interns involved in ticket handling?",
-                "questionVi": "Thực tập sinh tham gia xử lý vé như thế nào?",
-                "options": ["Shadow engineers", "Managed all tickets alone", "Handled common issues via triage under supervision", "Worked only on weekends"],
-                "optionsVi": ["Theo sát kỹ sư", "Tự xử lý tất cả vé", "Xử lý vấn đề phổ biến dưới giám sát", "Chỉ làm cuối tuần"],
-                "correct": 2,
-                "explanation": "They handled common issues under supervision.",
-                "explanationVi": "Họ xử lý vấn đề phổ biến có giám sát."
-              },
-              {
-                "id": 43,
-                "question": "What was the change in average response time?",
-                "questionVi": "Thời gian phản hồi trung bình thay đổi thế nào?",
-                "options": ["48 → 24 hours", "36 → 14 hours", "24 → 12 hours", "14 → 36 hours"],
-                "optionsVi": ["48 → 24 giờ", "36 → 14 giờ", "24 → 12 giờ", "14 → 36 giờ"],
-                "correct": 1,
-                "explanation": "It fell from 36 to 14 hours.",
-                "explanationVi": "Giảm từ 36 xuống 14 giờ."
-              },
-              {
-                "id": 44,
-                "question": "Customer satisfaction changed by:",
-                "questionVi": "Mức hài lòng khách hàng thay đổi:",
-                "options": ["4 points up", "10 points up", "No change", "4 points down"],
-                "optionsVi": ["Tăng 4 điểm", "Tăng 10 điểm", "Không đổi", "Giảm 4 điểm"],
-                "correct": 0,
-                "explanation": "It edged up by four points.",
-                "explanationVi": "Tăng thêm 4 điểm."
-              },
-              {
-                "id": 45,
-                "question": "Which constraint affected senior staff?",
-                "questionVi": "Hạn chế nào ảnh hưởng nhân sự cấp cao?",
-                "options": ["Longer weekend shifts", "Creating playbooks and daily stand-ups", "Cutting budgets", "Hiring more managers"],
-                "optionsVi": ["Ca cuối tuần dài hơn", "Viết hướng dẫn và họp nhanh hằng ngày", "Cắt ngân sách", "Thuê thêm quản lý"],
-                "correct": 1,
-                "explanation": "They needed to produce playbooks and hold daily stand-ups.",
-                "explanationVi": "Phải viết hướng dẫn và họp nhanh mỗi ngày."
-              },
-              {
-                "id": 46,
-                "question": "How did NovaTech address burnout risk?",
-                "questionVi": "NovaTech giảm rủi ro kiệt sức bằng cách nào?",
-                "options": ["Paid bonuses", "Allowed remote work only", "Capped shifts at four hours and limited weekends", "Hired more interns"],
-                "optionsVi": ["Thưởng tiền", "Chỉ làm từ xa", "Giới hạn ca 4 giờ và hạn chế cuối tuần", "Tuyển thêm thực tập"],
-                "correct": 2,
-                "explanation": "They capped shifts and limited weekend work.",
-                "explanationVi": "Giới hạn ca và hạn chế làm cuối tuần."
-              },
-              {
-                "id": 47,
-                "question": "What is the next focus of the program?",
-                "questionVi": "Trọng tâm tiếp theo của chương trình là gì?",
-                "options": ["Marketing", "Automation using labeled tickets", "International expansion", "New pricing"],
-                "optionsVi": ["Tiếp thị", "Tự động hóa dùng vé gắn nhãn", "Mở rộng quốc tế", "Giá mới"],
-                "correct": 1,
-                "explanation": "They will train a model using labeled tickets.",
-                "explanationVi": "Huấn luyện mô hình bằng vé gắn nhãn."
-              },
-              {
-                "id": 48,
-                "question": "Which method best describes the new workflow?",
-                "questionVi": "Phương pháp nào mô tả đúng quy trình mới?",
-                "options": ["Random assignment", "Ticket triage system", "Manual escalation only", "Engineer-only queue"],
-                "optionsVi": ["Phân công ngẫu nhiên", "Hệ thống phân loại vé", "Chỉ leo thang thủ công", "Chỉ hàng đợi kỹ sư"],
-                "correct": 1,
-                "explanation": "A triage system routes common issues.",
-                "explanationVi": "Hệ thống phân loại điều hướng vấn đề phổ biến."
-              },
-              {
-                "id": 49,
-                "question": "What trade-off is implied in the passage?",
-                "questionVi": "Đoạn văn gợi ý đánh đổi nào?",
-                "options": ["Faster replies required more senior guidance", "Higher satisfaction but longer response time", "Lower costs but worse service", "More automation but less accuracy"],
-                "optionsVi": ["Phản hồi nhanh hơn nhưng cần hướng dẫn nhiều từ cấp cao", "Hài lòng cao hơn nhưng chậm hơn", "Chi phí thấp hơn nhưng kém chất lượng", "Tự động hóa nhiều hơn nhưng kém chính xác"],
-                "correct": 0,
-                "explanation": "Speed gains required senior staff effort.",
-                "explanationVi": "Tăng tốc cần công sức của nhân sự cấp cao."
-              },
-              {
-                "id": 50,
-                "question": "The overall tone of the passage is best described as:",
-                "questionVi": "Giọng điệu chung của đoạn văn được mô tả là:",
-                "options": ["Promotional", "Critical", "Balanced and analytical", "Humorous"],
-                "optionsVi": ["Quảng bá", "Chỉ trích", "Cân bằng và phân tích", "Hài hước"],
-                "correct": 2,
-                "explanation": "It reports benefits and constraints objectively.",
-                "explanationVi": "Trình bày lợi ích và hạn chế một cách khách quan."
-              }
-            ]
-          }
-        ]
-      },
-      "listening": {
-        "title": "Section C: Listening Comprehension",
-        "description": "10 multiple-choice questions • Listen to audio scripts and choose the best answer",
-        "totalQuestions": 10,
-        "scripts": [
-          {
-            "id": 1,
-            "title": "Script 1 – Workshop Logistics",
-            "content": "Thanks for registering for the Project Basics workshop. Please arrive by 8:45 a.m. to sign in; the first session begins at 9:00 sharp. Coffee and tea will be available until 9:20. We’ll break at 10:30 for fifteen minutes, then continue until noon. After lunch, which is not provided, we’ll have two group activities in Rooms B and C. If you need a certificate of attendance, sign the sheet at the exit before you leave.",
-            "contentVi": "Cảm ơn bạn đã đăng ký hội thảo Cơ bản về Dự án. Vui lòng đến lúc 8:45 sáng để điểm danh; phiên đầu bắt đầu đúng 9:00. Cà phê và trà phục vụ đến 9:20. Chúng ta nghỉ lúc 10:30 trong 15 phút, rồi học đến trưa. Sau bữa trưa (không cung cấp), sẽ có hai hoạt động nhóm tại Phòng B và C. Nếu cần giấy chứng nhận tham dự, ký vào bảng tại lối ra trước khi rời đi.",
-            "questions": [
-              {
-                "id": 51,
-                "question": "What time does the first session start?",
-                "questionVi": "Phiên đầu bắt đầu lúc mấy giờ?",
-                "options": ["8:45 a.m.", "9:00 a.m.", "9:20 a.m.", "10:30 a.m."],
-                "optionsVi": ["8:45 sáng", "9:00 sáng", "9:20 sáng", "10:30 sáng"],
-                "correct": 1,
-                "explanation": "It begins at 9:00 sharp.",
-                "explanationVi": "Bắt đầu đúng 9:00."
-              },
-              {
-                "id": 52,
-                "question": "Until when are drinks available?",
-                "questionVi": "Đồ uống phục vụ đến khi nào?",
-                "options": ["9:00 a.m.", "9:15 a.m.", "9:20 a.m.", "10:30 a.m."],
-                "optionsVi": ["9:00 sáng", "9:15 sáng", "9:20 sáng", "10:30 sáng"],
-                "correct": 2,
-                "explanation": "Coffee/tea available until 9:20.",
-                "explanationVi": "Cà phê/trà phục vụ đến 9:20."
-              },
-              {
-                "id": 53,
-                "question": "How long is the morning break?",
-                "questionVi": "Giờ nghỉ sáng kéo dài bao lâu?",
-                "options": ["10 minutes", "15 minutes", "20 minutes", "30 minutes"],
-                "optionsVi": ["10 phút", "15 phút", "20 phút", "30 phút"],
-                "correct": 1,
-                "explanation": "Break at 10:30 for fifteen minutes.",
-                "explanationVi": "Nghỉ 15 phút lúc 10:30."
-              },
-              {
-                "id": 54,
-                "question": "Where will the afternoon group activities take place?",
-                "questionVi": "Hoạt động nhóm buổi chiều diễn ra ở đâu?",
-                "options": ["Room A", "Rooms B and C", "Lobby", "Cafeteria"],
-                "optionsVi": ["Phòng A", "Phòng B và C", "Sảnh", "Căn tin"],
-                "correct": 1,
-                "explanation": "They’re in Rooms B and C.",
-                "explanationVi": "Ở Phòng B và C."
-              },
-              {
-                "id": 55,
-                "question": "What must attendees do to receive a certificate?",
-                "questionVi": "Người tham dự phải làm gì để nhận chứng nhận?",
-                "options": ["Pay a fee", "Email the organizer", "Sign at the exit", "Attend the lunch"],
-                "optionsVi": ["Trả phí", "Email ban tổ chức", "Ký ở lối ra", "Tham gia bữa trưa"],
-                "correct": 2,
-                "explanation": "Sign the sheet at the exit.",
-                "explanationVi": "Ký vào bảng tại lối ra."
-              }
-            ]
-          },
-          {
-            "id": 2,
-            "title": "Script 2 – Apartment Viewing",
-            "content": "Hi Sam, just confirming our apartment viewing for Tuesday at 5:30 p.m. The building is on Oak Street, opposite the small post office. Buzz number 402 when you arrive; the elevator is to the left. The unit is on the fifth floor and faces the courtyard, so it’s quiet. Please note there’s no parking on-site after 5 p.m., but there’s a public garage on Hill Lane. If you need to reschedule, text me before 3 p.m. on the day.",
-            "contentVi": "Chào Sam, xác nhận lịch xem căn hộ vào Thứ Ba lúc 5:30 chiều. Tòa nhà ở đường Oak, đối diện bưu điện nhỏ. Nhấn chuông số 402 khi đến; thang máy ở bên trái. Căn ở tầng năm hướng vào sân trong nên yên tĩnh. Lưu ý sau 5 giờ chiều không có chỗ đậu xe trong tòa nhà, nhưng có bãi công cộng trên Hill Lane. Nếu cần dời lịch, nhắn tin cho tôi trước 3 giờ chiều trong ngày.",
-            "questions": [
-              {
-                "id": 56,
-                "question": "What time is the viewing?",
-                "questionVi": "Xem nhà lúc mấy giờ?",
-                "options": ["5:00 p.m.", "5:30 p.m.", "6:00 p.m.", "6:30 p.m."],
-                "optionsVi": ["5:00 chiều", "5:30 chiều", "6:00 chiều", "6:30 chiều"],
-                "correct": 1,
-                "explanation": "It’s at 5:30 p.m. on Tuesday.",
-                "explanationVi": "Lúc 5:30 chiều Thứ Ba."
-              },
-              {
-                "id": 57,
-                "question": "Where is the building located?",
-                "questionVi": "Tòa nhà ở đâu?",
-                "options": ["Next to a bank on Oak Street", "Opposite a small post office on Oak Street", "On Hill Lane beside a garage", "Near the train station on Oak Street"],
-                "optionsVi": ["Cạnh ngân hàng trên đường Oak", "Đối diện bưu điện nhỏ trên đường Oak", "Trên Hill Lane cạnh bãi xe", "Gần ga tàu trên đường Oak"],
-                "correct": 1,
-                "explanation": "Opposite the small post office on Oak Street.",
-                "explanationVi": "Đối diện bưu điện nhỏ trên đường Oak."
-              },
-              {
-                "id": 58,
-                "question": "What should Sam do on arrival?",
-                "questionVi": "Khi đến nơi Sam cần làm gì?",
-                "options": ["Call the agent's phone", "Wait in the courtyard", "Buzz number 402", "Go to the fifth floor directly"],
-                "optionsVi": ["Gọi điện cho môi giới", "Chờ ở sân trong", "Nhấn chuông số 402", "Lên thẳng tầng 5"],
-                "correct": 2,
-                "explanation": "Buzz 402 and then use the elevator.",
-                "explanationVi": "Nhấn chuông 402 rồi dùng thang máy."
-              },
-              {
-                "id": 59,
-                "question": "Which statement about parking is TRUE?",
-                "questionVi": "Phát biểu nào về đậu xe là ĐÚNG?",
-                "options": ["Free parking on-site after 5 p.m.", "No parking on-site after 5 p.m.", "Street parking is unlimited", "Residents must use Hill Lane only"],
-                "optionsVi": ["Đậu xe miễn phí trong tòa nhà sau 5 giờ", "Không có chỗ đậu xe trong tòa nhà sau 5 giờ", "Đậu xe đường phố không giới hạn", "Cư dân chỉ được dùng Hill Lane"],
-                "correct": 1,
-                "explanation": "No on-site parking after 5 p.m.",
-                "explanationVi": "Không có chỗ đậu xe tại chỗ sau 5 giờ."
-              },
-              {
-                "id": 60,
-                "question": "By when should Sam text to reschedule?",
-                "questionVi": "Sam phải nhắn tin dời lịch trước khi nào?",
-                "options": ["1 p.m. on the day", "2 p.m. on the day", "3 p.m. on the day", "5 p.m. the day before"],
-                "optionsVi": ["1 giờ chiều trong ngày", "2 giờ chiều trong ngày", "3 giờ chiều trong ngày", "5 giờ chiều ngày hôm trước"],
-                "correct": 2,
-                "explanation": "Text before 3 p.m. on the day.",
-                "explanationVi": "Nhắn trước 3 giờ chiều trong ngày."
-              }
-            ]
-          }
-        ]
-      },
-      "writing": {
-        "title": "Section D: Writing",
-        "description": "3 writing tasks • Suggested timing: 45–60 minutes total",
-        "totalTasks": 3,
-        "tasks": [
-          {
-            "id": 1,
-            "title": "Task 1 (110–130 words)",
-            "titleVi": "Bài 1 (110–130 từ)",
-            "instruction": "Write a semi-formal email to a customer support team describing a recurring billing error on your account. Explain what happened, include dates/amounts, and politely request a refund and confirmation of the fix.",
-            "instructionVi": "Viết email bán trang trọng cho bộ phận hỗ trợ khách hàng mô tả lỗi tính phí lặp lại trên tài khoản của bạn. Giải thích sự việc, nêu ngày/thành tiền, và lịch sự yêu cầu hoàn tiền cùng xác nhận đã khắc phục.",
-            "wordLimit": { "min": 110, "max": 130 },
-            "type": "email_complaint",
-            "topic": "billing_issue"
-          },
-          {
-            "id": 2,
-            "title": "Task 2 (150–180 words)",
-            "titleVi": "Bài 2 (150–180 từ)",
-            "instruction": "“Flexible working (remote or hybrid) should be available to most employees.” Do you agree or disagree? Give one clear reason and one example from study or work.",
-            "instructionVi": "“Làm việc linh hoạt (từ xa hoặc lai) nên áp dụng cho hầu hết nhân viên.” Bạn đồng ý hay không? Nêu một lý do rõ ràng và một ví dụ từ học tập hoặc công việc.",
-            "wordLimit": { "min": 150, "max": 180 },
-            "type": "opinion_essay",
-            "topic": "flexible_work"
-          },
-          {
-            "id": 3,
-            "title": "Task 3 (160–190 words)",
-            "titleVi": "Bài 3 (160–190 từ)",
-            "instruction": "Describe a small table comparing two delivery options used by a local shop over one month: Courier A (average delivery 2.5 days; cost $4 per order; 5% late) and Courier B (average 3.2 days; cost $3; 8% late). Summarise the main differences and make at least one recommendation.",
-            "instructionVi": "Mô tả một bảng nhỏ so sánh hai lựa chọn giao hàng của một cửa hàng địa phương trong một tháng: Hãng A (giao trung bình 2,5 ngày; chi phí $4/đơn; trễ 5%) và Hãng B (trung bình 3,2 ngày; chi phí $3; trễ 8%). Tóm tắt khác biệt chính và đưa ít nhất một khuyến nghị.",
-            "wordLimit": { "min": 160, "max": 190 },
-            "type": "data_description",
-            "topic": "courier_comparison",
-            "chartData": {
-              "title": "Courier Performance (One Month)",
-              "data": [
-                { "courier": "Courier A", "avg_days": 2.5, "cost_usd": 4, "late_percent": 5 },
-                { "courier": "Courier B", "avg_days": 3.2, "cost_usd": 3, "late_percent": 8 }
-              ]
-            },
-            "chartDataVi": {
-              "title": "Hiệu suất giao hàng (1 tháng)",
-              "data": [
-                { "courier": "Hãng A", "avg_days": 2.5, "cost_usd": 4, "late_percent": 5 },
-                { "courier": "Hãng B", "avg_days": 3.2, "cost_usd": 3, "late_percent": 8 }
-              ]
-            }
-          }
-        ]
-      }
+  "testId": "IELTS_STARTER_1_2",
+  "testDate": "2025-08-07",
+  "testTitle": "IELTS Starter 1.2 Practice Test (Fully Renewed)",
+  "totalQuestions": 50,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary",
+      "description": "30 multiple-choice questions • Choose ONE answer (A, B, C or D)",
+      "totalQuestions": 30,
+      "questions": [
+        { "id": 1,  "question": "I haven’t seen Mai ___ she moved to Hanoi.", "options": ["since", "for", "during", "by"], "correct": 0 },
+        { "id": 2,  "question": "The meeting was postponed ___ the CEO was ill.", "options": ["because", "although", "but", "so"], "correct": 0 },
+        { "id": 3,  "question": "Please remember ___ your laptop to the workshop.", "options": ["bring", "to bring", "bringing", "brought"], "correct": 1 },
+        { "id": 4,  "question": "My brother is ___ interested in maths than history.", "options": ["much", "more", "most", "very"], "correct": 1 },
+        { "id": 5,  "question": "We’ll miss the bus if we don’t leave right ___.", "options": ["now", "already", "yet", "soon"], "correct": 0 },
+        { "id": 6,  "question": "She asked me where the cinema ___.", "options": ["is", "was", "will be", "were"], "correct": 1 },
+        { "id": 7,  "question": "They ___ dinner when the lights went out.", "options": ["cook", "were cooking", "have cooked", "had cooked"], "correct": 1 },
+        { "id": 8,  "question": "A new bridge ___ next year.", "options": ["builds", "is building", "will be built", "built"], "correct": 2 },
+        { "id": 9,  "question": "Neither the teacher nor the students ___ happy about the delay.", "options": ["was", "were", "is", "has been"], "correct": 1 },
+        { "id": 10, "question": "This coffee is too hot ___ drink.", "options": ["for", "to", "than", "so"], "correct": 1 },
+        { "id": 11, "question": "She is the woman ___ won the scholarship.", "options": ["which", "whose", "who", "whom"], "correct": 2 },
+        { "id": 12, "question": "If I ___ enough money, I would buy that laptop.", "options": ["have", "had", "will have", "am having"], "correct": 1 },
+        { "id": 13, "question": "Let’s go out, ___ ?", "options": ["shall we", "will we", "do we", "don’t we"], "correct": 0 },
+        { "id": 14, "question": "The faster you type, ___ mistakes you make.", "options": ["few", "fewer", "fewest", "less"], "correct": 1 },
+        { "id": 15, "question": "I’m responsible ___ locking the office.", "options": ["for", "to", "with", "about"], "correct": 0 },
+        { "id": 16, "question": "We arrived ___ the airport just in time.", "options": ["at", "in", "on", "to"], "correct": 0 },
+        { "id": 17, "question": "How ___ people are coming to the workshop?", "options": ["much", "many", "few", "little"], "correct": 1 },
+        { "id": 18, "question": "She prefers reading ___ watching TV.", "options": ["than", "to", "over", "with"], "correct": 1 },
+        { "id": 19, "question": "I’d rather you ___ here at 8 a.m. tomorrow.", "options": ["arrive", "arrived", "will arrive", "have arrived"], "correct": 1 },
+        { "id": 20, "question": "A surgeon is a doctor ___ operates on patients.", "options": ["who", "which", "where", "whose"], "correct": 0 },
+        { "id": 21, "question": "We are short ___ paper; could you buy some?", "options": ["in", "on", "of", "with"], "correct": 2 },
+        { "id": 22, "question": "My phone battery is flat. Can I use ___ ?", "options": ["your", "yours", "yourself", "you"], "correct": 1 },
+        { "id": 23, "question": "The film was so sad that I couldn’t stop ___.", "options": ["cry", "to cry", "crying", "cried"], "correct": 2 },
+        { "id": 24, "question": "He drives ___ than his brother.", "options": ["careful", "more carefully", "carefully", "most carefully"], "correct": 1 },
+        { "id": 25, "question": "We have lived here ___ 2021.", "options": ["for", "since", "from", "during"], "correct": 1 },
+        { "id": 26, "question": "I don’t have ___ free time this week.", "options": ["many", "much", "few", "a few"], "correct": 1 },
+        { "id": 27, "question": "The book, ___ cover is blue, is mine.", "options": ["which", "whose", "who", "that"], "correct": 1 },
+        { "id": 28, "question": "Would you mind ___ the window?", "options": ["close", "to close", "closing", "closed"], "correct": 2 },
+        { "id": 29, "question": "Tom is the ___ student in our class.", "options": ["taller", "tallest", "most tall", "more tall"], "correct": 1 },
+        { "id": 30, "question": "He couldn’t fix the computer by ___ .", "options": ["him", "himself", "his", "he"], "correct": 1 }
+      ]
     },
-    "metadata": {
-      "createdBy": "IELTS Practice System",
-      "version": "1.2.0",
-      "lastUpdated": "2025-08-07",
-      "difficulty": "pre-intermediate",
-      "estimatedTime": "60–75 minutes",
-      "tags": ["grammar", "vocabulary", "reading", "listening", "writing", "ielts", "practice", "level1.2"]
+
+    "reading": {
+      "title": "Section B: Reading Comprehension",
+      "description": "20 multiple-choice questions • Read passages and choose the best answer",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 – Community Bike Repair Shed",
+          "content": "Five volunteers in Lakeside opened a small bike-repair shed beside the railway station. Anyone can borrow tools to fix a puncture, oil a chain or adjust brakes. A simple honesty box suggests a one-dollar donation for using the kit, but payment is optional. In its first month, the shed logged 220 users; half were commuters who discovered the service after missing their trains due to flat tyres. Local mechanics rotate each Saturday morning to give advice, and the town council will soon add solar lighting so cyclists can work after dark.",
+          "questions": [
+            { "id": 31, "question": "Where is the repair shed located?", "options": ["Next to a park", "Beside the railway station", "Near the school", "Inside the library"], "correct": 1 },
+            { "id": 32, "question": "The suggested donation for tool use is:", "options": ["Free", "50 cents", "One dollar", "Five dollars"], "correct": 2 },
+            { "id": 33, "question": "How many users visited in the first month?", "options": ["120", "150", "200", "220"], "correct": 3 },
+            { "id": 34, "question": "Why did many commuters discover the shed?", "options": ["Roadworks", "Missed trains due to flat tyres", "Weather warnings", "Advertising posters"], "correct": 1 },
+            { "id": 35, "question": "Who offers advice on Saturdays?", "options": ["Train staff", "Local mechanics", "High-school students", "Tourist guides"], "correct": 1 },
+            { "id": 36, "question": "What improvement is planned next?", "options": ["Vending machine", "Solar lighting", "Security cameras", "Extra parking"], "correct": 1 },
+            { "id": 37, "question": "The honesty box is described as:", "options": ["Mandatory", "Optional", "Expensive", "Hidden"], "correct": 1 },
+            { "id": 38, "question": "Which service is NOT mentioned?", "options": ["Fixing punctures", "Charging e-bikes", "Oiling chains", "Adjusting brakes"], "correct": 1 },
+            { "id": 39, "question": "The phrase 'rotate each Saturday' means mechanics:", "options": ["work every day", "take turns weekly", "stop working", "get paid overtime"], "correct": 1 },
+            { "id": 40, "question": "The main purpose of the shed is to:", "options": ["Sell bike parts", "Provide free tools for cyclists", "Train professional mechanics", "Store lost bicycles"], "correct": 1 }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 – Remote-Work Survey",
+          "content": "A regional survey of 600 office workers found that 68 percent preferred a hybrid schedule: three days at home and two in the office. Respondents reported saving an average of forty minutes per day on commuting. However, 41 percent said they felt less connected to colleagues, and 29 percent had difficulty separating work and personal time. As a result, several companies now organise monthly in-person social events and have set a mandatory ‘offline hour’ between 6 p.m. and 7 p.m. to discourage after-hours emails. Early data show a ten-percent drop in reported stress levels since these measures were introduced.",
+          "questions": [
+            { "id": 41, "question": "How many workers were surveyed?", "options": ["400", "500", "600", "800"], "correct": 2 },
+            { "id": 42, "question": "The preferred hybrid schedule is:", "options": ["2 home / 3 office", "3 home / 2 office", "4 home / 1 office", "Full-time office"], "correct": 1 },
+            { "id": 43, "question": "Average commuting time saved per day is:", "options": ["20 minutes", "40 minutes", "60 minutes", "90 minutes"], "correct": 1 },
+            { "id": 44, "question": "What percentage felt less connected to colleagues?", "options": ["29 %", "32 %", "41 %", "68 %"], "correct": 2 },
+            { "id": 45, "question": "Companies introduced a mandatory offline hour between:", "options": ["5–6 p.m.", "6–7 p.m.", "7–8 p.m.", "8–9 p.m."], "correct": 1 },
+            { "id": 46, "question": "One new measure to improve connection is:", "options": ["Monthly social events", "Higher salaries", "Free gym passes", "Daily video calls"], "correct": 0 },
+            { "id": 47, "question": "Reported stress levels dropped by:", "options": ["5 %", "8 %", "10 %", "15 %"], "correct": 2 },
+            { "id": 48, "question": "Which challenge affected 29 percent of respondents?", "options": ["Poor internet", "Work-life separation", "Noise at home", "Childcare costs"], "correct": 1 },
+            { "id": 49, "question": "The word ‘mandatory’ is closest in meaning to:", "options": ["optional", "required", "temporary", "flexible"], "correct": 1 },
+            { "id": 50, "question": "The passage mainly discusses:", "options": ["Office rent prices", "Employee views on hybrid work", "Public transport delays", "Online security risks"], "correct": 1 }
+          ]
+        }
+      ]
+    },
+
+    "listening": {
+      "title": "Section C: Listening Comprehension",
+      "description": "10 multiple-choice questions • Listen to audio scripts and choose the best answer",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 – Severe-Weather Alert",
+          "content": "Good afternoon. A thunderstorm warning is in effect from 3 p.m. until 8 p.m. Wind gusts could reach 70 kilometres an hour, and heavy rain may cause local flooding. All outdoor sports fields will close at 2:30, and tonight’s food-truck market is postponed to next Friday. If you must travel, allow extra time and avoid low-lying roads.",
+          "questions": [
+            { "id": 51, "question": "When does the storm warning start?", "options": ["2 p.m.", "3 p.m.", "5 p.m.", "8 p.m."], "correct": 1 },
+            { "id": 52, "question": "Maximum wind gusts may reach:", "options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"], "correct": 2 },
+            { "id": 53, "question": "What closes at 2:30 p.m.?", "options": ["Shopping mall", "Sports fields", "Train station", "Swimming pool"], "correct": 1 },
+            { "id": 54, "question": "The food-truck market is moved to:", "options": ["this evening", "tomorrow", "next Friday", "next month"], "correct": 2 },
+            { "id": 55, "question": "Travellers are advised to avoid:", "options": ["high bridges", "tunnels", "low-lying roads", "motorways"], "correct": 2 }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 – Bookstore Weekend Sale",
+          "content": "Hi everyone. Just a reminder that our annual weekend sale starts this Saturday at 9 a.m. All fiction is half-price, and customers who buy three books receive a free reusable tote bag. The children’s storytelling session begins at 11 and repeats at 2. Parking behind the store is limited, so we suggest using Maple Street Garage, which is free on weekends.",
+          "questions": [
+            { "id": 56, "question": "When does the sale begin?", "options": ["Friday 9 a.m.", "Saturday 9 a.m.", "Saturday 11 a.m.", "Sunday 10 a.m."], "correct": 1 },
+            { "id": 57, "question": "Discount on fiction books is:", "options": ["25 %", "40 %", "50 %", "75 %"], "correct": 2 },
+            { "id": 58, "question": "What bonus comes with three books?", "options": ["Coffee voucher", "Free bookmark", "Reusable tote bag", "Gift card"], "correct": 2 },
+            { "id": 59, "question": "Storytelling sessions happen at 11 a.m. and:", "options": ["1 p.m.", "2 p.m.", "3 p.m.", "4 p.m."], "correct": 1 },
+            { "id": 60, "question": "Parking behind the store is described as:", "options": ["free", "limited", "closed", "reserved"], "correct": 1 }
+          ]
+        }
+      ]
+    },
+
+    "writing": {
+      "title": "Section D: Writing",
+      "description": "3 writing tasks • Suggested timing: 45–60 minutes total",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (110 – 130 words)",
+          "instruction": "Your apartment block will have noisy roof repairs for two weeks. Write an email to the building manager asking for the exact schedule and suggesting one measure to reduce disruption for residents who work from home.",
+          "wordLimit": { "min": 110, "max": 130 },
+          "type": "formal_email",
+          "topic": "noise_disruption"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (150 – 180 words)",
+          "instruction": "“Teenagers should have part-time jobs while studying.” Do you agree or disagree? Give ONE reason and ONE relevant example to support your view.",
+          "wordLimit": { "min": 150, "max": 180 },
+          "type": "opinion_essay",
+          "topic": "teen_part_time_work"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (160 – 190 words)",
+          "instruction": "A bar chart compares monthly online and in-store sales for a clothing brand from January to June. Online sales rise steadily from $20 k to $38 k; in-store sales fall from $50 k to $32 k. Summarise the main trends and suggest ONE reason for the change.",
+          "wordLimit": { "min": 160, "max": 190 },
+          "type": "data_description",
+          "topic": "sales_trends",
+          "chartData": {
+            "title": "Monthly Sales (Jan – Jun)",
+            "series": [
+              { "month": "Jan", "online_k": 20, "instore_k": 50 },
+              { "month": "Feb", "online_k": 24, "instore_k": 48 },
+              { "month": "Mar", "online_k": 28, "instore_k": 44 },
+              { "month": "Apr", "online_k": 32, "instore_k": 40 },
+              { "month": "May", "online_k": 35, "instore_k": 35 },
+              { "month": "Jun", "online_k": 38, "instore_k": 32 }
+            ]
+          }
+        }
+      ]
     }
+  },
+
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "1.2.2",
+    "lastUpdated": "2025-08-07",
+    "difficulty": "pre-intermediate",
+    "estimatedTime": "60 – 75 minutes",
+    "tags": ["grammar", "vocabulary", "reading", "listening", "writing", "ielts", "practice", "level1.2", "full-refresh"]
   }
-  
+}

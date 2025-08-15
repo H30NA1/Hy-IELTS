@@ -554,17 +554,6 @@ textarea:focus {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-.word-count {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 1rem;
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-    background: white;
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--border-radius-sm);
-}
-
 /* Chart */
 .chart-container {
     background: white;
@@ -2138,4 +2127,242 @@ textarea:focus {
         padding: 0.75rem;
         font-size: 0.9rem;
     }
+} 
+
+/* Warning Modals */
+.warning-options {
+    background-color: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-radius: var(--border-radius-sm);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.warning-options p {
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    color: #92400e;
+}
+
+.warning-options ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.warning-options li {
+    margin: 0.25rem 0;
+    color: #92400e;
+    font-size: 0.9rem;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    border: none;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-warning:hover:not(:disabled) {
+    background: linear-gradient(135deg, #d97706, #b45309);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-warning:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Word count styles - Positioned in bottom-right corner, very subtle */
+.word-count {
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 0.15rem 0.3rem;
+    border-radius: var(--border-radius-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    z-index: 5;
+    opacity: 0;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.word-count::before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+.word-count.low {
+    background: rgba(254, 243, 199, 0.9);
+    border-color: #f59e0b;
+    color: #92400e;
+}
+
+.word-count.low::before {
+    background: #f59e0b;
+}
+
+.word-count.good {
+    background: rgba(209, 250, 229, 0.9);
+    border-color: #10b981;
+    color: #065f46;
+}
+
+.word-count.good::before {
+    background: #10b981;
+}
+
+.word-count.high {
+    background: rgba(254, 226, 226, 0.9);
+    border-color: #ef4444;
+    color: #991b1b;
+}
+
+.word-count.high::before {
+    background: #ef4444;
+}
+
+/* Show word count when there's content or when textarea is focused */
+.word-count[data-words]:not([data-words="0"]),
+.writing-area:focus-within .word-count {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+
+/* Default state - hidden */
+.word-count {
+    opacity: 0;
+    transform: translateY(0.25rem);
+}
+
+/* Hover effect to make it more visible when needed */
+.word-count:hover {
+    opacity: 1;
+    transform: translateY(0) scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    pointer-events: auto;
+}
+
+/* Responsive word count */
+@media (max-width: 768px) {
+    .word-count {
+        bottom: 0.2rem;
+        right: 0.2rem;
+        padding: 0.1rem 0.25rem;
+        font-size: 0.65rem;
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .word-count {
+        bottom: 0.15rem;
+        right: 0.15rem;
+        padding: 0.1rem 0.2rem;
+        font-size: 0.6rem;
+        max-width: 50px;
+    }
+}
+
+/* Inactivity warning modal */
+#inactivity-warning-modal .modal-content {
+    max-width: 500px;
+}
+
+#inactivity-warning-modal h3 {
+    color: #f59e0b;
+}
+
+#inactivity-warning-modal p {
+    margin: 0.75rem 0;
+}
+
+/* Activity tracking indicators */
+.activity-indicator {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(37, 99, 235, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-sm);
+    font-size: 0.875rem;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.activity-indicator.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.activity-indicator.warning {
+    background: rgba(245, 158, 11, 0.9);
+}
+
+.activity-indicator.danger {
+    background: rgba(239, 68, 68, 0.9);
+} 
+
+/* Review Mode Indicator */
+.review-mode-indicator {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    animation: slideInRight 0.3s ease-out;
+}
+
+.review-mode-indicator i {
+    font-size: 1rem;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Ensure navigation buttons are visible in review mode */
+.review-mode .nav-btn,
+.review-mode #prev-btn,
+.review-mode #next-btn {
+    display: inline-flex !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
 } 

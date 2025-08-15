@@ -28,6 +28,15 @@ class IELTSTest {
         this.totalTimeSeconds = 9600; // 2 hours 40 minutes
         this.remainingTimeSeconds = this.totalTimeSeconds;
         
+        // Page leave detection settings
+        this.pageLeaveTimeout = null;
+        this.pageLeaveGracePeriod = 30000; // 30 seconds grace period
+        this.isListeningActive = false; // Track if listening is active
+        this.isWritingActive = false; // Track if writing is active
+        this.lastActivityTime = Date.now();
+        this.activityTimeout = 300000; // 5 minutes of inactivity before warning
+        this.inactivityTimeout = null; // Timeout for inactivity checking
+        
         // Setup debug functions
         this.setupGlobalDebugFunctions();
         
@@ -408,27 +417,44 @@ class IELTSTest {
             btn.addEventListener('click', (e) => {
                 const section = e.currentTarget.dataset.section;
                 this.switchSection(section);
+                this.updateActivity();
             });
         });
         
         // Footer buttons
-        document.getElementById('prev-btn').addEventListener('click', () => this.previousSection());
-        document.getElementById('next-btn').addEventListener('click', () => this.nextSection());
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            this.previousSection();
+            this.updateActivity();
+        });
+        document.getElementById('next-btn').addEventListener('click', () => {
+            this.nextSection();
+            this.updateActivity();
+        });
         
         // Writing word count - improved with better error handling
         ['writing-task1', 'writing-task2', 'writing-task3'].forEach(id => {
             const textarea = document.getElementById(id);
             if (textarea) {
+                // Initialize word count for existing content
+                this.updateWordCount(id, textarea.value);
+                
                 textarea.addEventListener('input', (e) => {
+                    console.log(`Textarea input detected: ${id}, value length: ${e.target.value.length}`);
                     this.updateWordCount(e.target.id, e.target.value);
                     this.answers.writing[id.replace('writing-', '')] = e.target.value;
                     
                     // Add real-time writing check (debounced)
                     this.debouncedWritingCheck(e.target.id, e.target.value);
+                    this.updateActivity();
                 });
                 
-                // Initialize word count for existing content
-                this.updateWordCount(id, textarea.value);
+                // Also listen for paste events
+                textarea.addEventListener('paste', (e) => {
+                    setTimeout(() => {
+                        console.log(`Textarea paste detected: ${id}, value length: ${textarea.value.length}`);
+                        this.updateWordCount(id, textarea.value);
+                    }, 100);
+                });
             } else {
                 console.warn(`Textarea with id ${id} not found`);
             }
@@ -441,6 +467,7 @@ class IELTSTest {
                 const taskId = btn.dataset.task;
                 if (taskId) {
                     this.checkWritingTask(taskId);
+                    this.updateActivity();
                 }
             }
         });
@@ -452,6 +479,7 @@ class IELTSTest {
                 const taskId = btn.dataset.task;
                 if (taskId) {
                     this.translateWritingTask(taskId);
+                    this.updateActivity();
                 }
             }
         });
@@ -463,6 +491,7 @@ class IELTSTest {
                 const btn = e.target.closest('.passage-translate-btn');
                 const passageId = btn.dataset.passage;
                 this.translatePassage(passageId);
+                this.updateActivity();
             }
             
             // Question translation buttons
@@ -471,6 +500,7 @@ class IELTSTest {
                 const questionId = btn.dataset.question;
                 if (questionId) {
                     this.translateQuestion(questionId);
+                    this.updateActivity();
                 }
             }
         });
@@ -488,11 +518,19 @@ class IELTSTest {
             acknowledgeBtn.addEventListener('click', () => this.acknowledgeRules());
         }
         
-        // Page visibility monitoring
+        // Page visibility monitoring with improved detection
         document.addEventListener('visibilitychange', () => this.handleVisibilityChange());
         
+        // Activity tracking
+        ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click'].forEach(event => {
+            document.addEventListener(event, () => this.updateActivity(), { passive: true });
+        });
+        
         // Keyboard navigation
-        document.addEventListener('keydown', (e) => this.handleKeyboard(e));
+        document.addEventListener('keydown', (e) => {
+            this.handleKeyboard(e);
+            this.updateActivity();
+        });
         
         // Prevent accidental navigation
         window.addEventListener('beforeunload', (e) => {
@@ -500,6 +538,64 @@ class IELTSTest {
                 e.preventDefault();
                 e.returnValue = '';
             }
+        });
+    }
+    
+    // Update activity timestamp
+    updateActivity() {
+        this.lastActivityTime = Date.now();
+        
+        // Clear any existing inactivity timeout
+        if (this.inactivityTimeout) {
+            clearTimeout(this.inactivityTimeout);
+        }
+        
+        // Set new inactivity timeout
+        this.inactivityTimeout = setTimeout(() => {
+            this.checkInactivity();
+        }, this.activityTimeout);
+    }
+    
+    // Check for inactivity and provide warning
+    checkInactivity() {
+        const timeSinceLastActivity = Date.now() - this.lastActivityTime;
+        const minutesInactive = Math.floor(timeSinceLastActivity / 60000);
+        
+        if (minutesInactive >= 5 && !this.testSubmitted) {
+            // Show inactivity warning
+            this.showInactivityWarning(minutesInactive);
+        }
+    }
+    
+    // Show inactivity warning
+    showInactivityWarning(minutesInactive) {
+        const warningModal = document.createElement('div');
+        warningModal.className = 'modal active';
+        warningModal.id = 'inactivity-warning-modal';
+        warningModal.innerHTML = `
+            <div class="modal-content">
+                <h3><i class="fas fa-clock"></i> Inactivity Warning</h3>
+                <p><strong>You have been inactive for ${minutesInactive} minutes.</strong></p>
+                <p>If you continue to be inactive, your test may be marked as invalid.</p>
+                <p><strong>Current section:</strong> ${this.currentSection.charAt(0).toUpperCase() + this.currentSection.slice(1)}</p>
+                <div class="modal-actions">
+                    <button class="btn btn-primary" id="continue-activity">Continue Test</button>
+                    <button class="btn btn-secondary" id="submit-inactive">Submit Test</button>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(warningModal);
+        
+        // Add event listeners
+        document.getElementById('continue-activity').addEventListener('click', () => {
+            this.closeModal('inactivity-warning-modal');
+            this.updateActivity();
+        });
+        
+        document.getElementById('submit-inactive').addEventListener('click', () => {
+            this.closeModal('inactivity-warning-modal');
+            this.submitInvalidTest();
         });
     }
     
@@ -783,6 +879,9 @@ class IELTSTest {
             icon.classList.add('fa-pause');
             this.updateButtonText(playBtn, 'Pause Script');
             
+            // Mark listening as active
+            this.isListeningActive = true;
+            
             // Use Web Speech API for TTS
             if ('speechSynthesis' in window) {
                 try {
@@ -816,6 +915,7 @@ class IELTSTest {
                     utterance.onstart = () => {
                         // Show minimal feedback without settings details
                         this.showMessage(`Playing Script ${scriptId}...`, 'info');
+                        this.isListeningActive = true;
                     };
                     
                     utterance.onend = () => {
@@ -824,6 +924,7 @@ class IELTSTest {
                             icon.classList.add('fa-play');
                             this.updateButtonText(playBtn, 'Play Script');
                             this.showMessage(`Script ${scriptId} finished`, 'info');
+                            this.isListeningActive = false;
                         }
                     };
                     
@@ -834,14 +935,17 @@ class IELTSTest {
                         icon.classList.remove('fa-pause');
                         icon.classList.add('fa-play');
                         this.updateButtonText(playBtn, 'Play Script');
+                        this.isListeningActive = false;
                     };
                     
                     utterance.onpause = () => {
                         this.showMessage('Script paused', 'info');
+                        this.isListeningActive = false;
                     };
                     
                     utterance.onresume = () => {
                         this.showMessage('Script resumed', 'info');
+                        this.isListeningActive = true;
                     };
                     
                     // Start speaking
@@ -854,16 +958,19 @@ class IELTSTest {
                     icon.classList.remove('fa-pause');
                     icon.classList.add('fa-play');
                     this.updateButtonText(playBtn, 'Play Script');
+                    this.isListeningActive = false;
                 }
             } else {
                 // Fallback to simulation if TTS not available
                 this.showMessage(`Playing Script ${scriptId}... (Audio simulation)`, 'info');
+                this.isListeningActive = true;
                 setTimeout(() => {
                     if (icon.classList.contains('fa-pause')) {
                         icon.classList.remove('fa-pause');
                         icon.classList.add('fa-play');
                         this.updateButtonText(playBtn, 'Play Script');
                         this.showMessage(`Script ${scriptId} finished`, 'info');
+                        this.isListeningActive = false;
                     }
                 }, scriptId === 1 ? 45000 : 35000);
             }
@@ -878,6 +985,7 @@ class IELTSTest {
                 window.speechSynthesis.cancel();
             }
             
+            this.isListeningActive = false;
             this.showMessage('Script stopped', 'info');
         }
     }
@@ -1072,7 +1180,7 @@ class IELTSTest {
         const penaltyDisplay = document.getElementById('translation-penalty-display');
         if (penaltyDisplay) {
             const totalPenalty = Object.values(this.translationPenalties).reduce((sum, penalty) => sum + penalty, 0);
-            penaltyDisplay.textContent = `Total Translation Penalty: -${totalPenalty} marks`;
+            penaltyDisplay.textContent = `Total Translation Penalty: -${Math.abs(totalPenalty)} marks`;
         }
     }
     
@@ -1114,6 +1222,9 @@ class IELTSTest {
         
         // Mark as translated and apply penalty
         this.translatedQuestions.add(questionId);
+        
+        // Add translation penalty to the penalties object
+        this.translationPenalties[`question-${questionId}`] = -0.5;
         
         try {
             // Get question data
@@ -1209,6 +1320,13 @@ class IELTSTest {
     
     async translateWritingTask(taskId) {
         try {
+            // Check if already translated
+            const translationKey = `writing-task-${taskId}`;
+            if (this.translationPenalties[translationKey]) {
+                this.showMessage('Translation already applied for this task', 'warning');
+                return;
+            }
+            
             // Get the instruction text
             const instructionElement = document.getElementById(`task${taskId}-instruction`);
             if (!instructionElement) return;
@@ -1235,8 +1353,19 @@ class IELTSTest {
                 translationText.textContent = translatedInstruction;
             }
             
+            // Apply translation penalty (-0.5 points)
+            this.translationPenalties[translationKey] = -0.5;
+            
             // Show penalty notification
-            this.showTranslationPenalty(`writing-task-${taskId}`);
+            this.showTranslationPenalty(translationKey);
+            
+            // Update penalty display if it exists
+            const penaltyDisplay = document.getElementById('translation-penalty-display');
+            if (penaltyDisplay) {
+                this.updatePenaltyDisplay();
+            }
+            
+            console.log(`Translation penalty applied for writing task ${taskId}: -0.5 points`);
             
         } catch (error) {
             console.error('Translation error:', error);
@@ -1407,6 +1536,12 @@ class IELTSTest {
     }
     
     showTranslationPenalty(questionId) {
+        // Remove any existing notification for this question first
+        const existingNotification = document.querySelector(`[data-question="${questionId}"] .translation-penalty-notification`);
+        if (existingNotification) {
+            existingNotification.remove();
+        }
+        
         // Create a temporary notification
         const notification = document.createElement('div');
         notification.className = 'translation-penalty-notification';
@@ -1430,25 +1565,58 @@ class IELTSTest {
     }
     
     switchSection(section) {
-        if (this.testSubmitted) return;
+        if (this.testSubmitted && !this.reviewMode) return;
         
-        // Hide all sections
-        document.querySelectorAll('.test-section').forEach(s => {
-            s.classList.remove('active');
-        });
-        
-        // Show target section
-        document.getElementById(section).classList.add('active');
-        
-        // Update navigation
-        document.querySelectorAll('.nav-btn').forEach(btn => {
-            btn.classList.remove('active');
-        });
-        document.querySelector(`[data-section="${section}"]`).classList.add('active');
-        
-        this.currentSection = section;
-        this.updateNavigation();
-        this.updateProgress();
+        if (this.sections.includes(section)) {
+            this.currentSection = section;
+            
+            // Update section-specific tracking
+            this.isListeningActive = section === 'listening';
+            this.isWritingActive = section === 'writing';
+            
+            // Hide all sections
+            document.querySelectorAll('.test-section').forEach(s => {
+                s.classList.remove('active');
+            });
+            
+            // Show target section
+            const targetSection = document.getElementById(section);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            } else {
+                console.warn(`Section element not found: ${section}`);
+            }
+            
+            // Update navigation
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            const activeNavBtn = document.querySelector(`[data-section="${section}"]`);
+            if (activeNavBtn) {
+                activeNavBtn.classList.add('active');
+            }
+            
+            // Update progress
+            this.updateProgress();
+            
+            // Clear any existing page leave timeout when switching sections
+            if (this.pageLeaveTimeout) {
+                clearTimeout(this.pageLeaveTimeout);
+                this.pageLeaveTimeout = null;
+            }
+            
+            // Update activity
+            this.updateActivity();
+            
+            // Force update navigation to ensure buttons are properly enabled
+            this.updateNavigation();
+            
+            console.log(`Switched to section: ${section}`, {
+                reviewMode: this.reviewMode,
+                testSubmitted: this.testSubmitted
+            });
+        }
     }
     
     previousSection() {
@@ -1482,7 +1650,8 @@ class IELTSTest {
             currentIndex: currentIndex,
             sections: this.sections,
             isLastSection: currentIndex === this.sections.length - 1,
-            reviewMode: this.reviewMode
+            reviewMode: this.reviewMode,
+            testSubmitted: this.testSubmitted
         });
         
         // Update section indicator
@@ -1492,41 +1661,64 @@ class IELTSTest {
             'listening': 'Section C',
             'writing': 'Section D'
         };
-        document.getElementById('current-section').textContent = sectionNames[this.currentSection];
+        
+        const currentSectionElement = document.getElementById('current-section');
+        if (currentSectionElement) {
+            currentSectionElement.textContent = sectionNames[this.currentSection];
+        }
         
         // Update button states
         if (this.reviewMode) {
             // In review mode, always enable both buttons for navigation
-            prevBtn.disabled = false;
-            nextBtn.disabled = false;
-            nextBtn.innerHTML = currentIndex === this.sections.length - 1 ? 
-                'First Section <i class="fas fa-chevron-right"></i>' : 
-                'Next <i class="fas fa-chevron-right"></i>';
+            if (prevBtn) {
+                prevBtn.disabled = false;
+                prevBtn.style.display = 'inline-flex';
+            }
+            if (nextBtn) {
+                nextBtn.disabled = false;
+                nextBtn.style.display = 'inline-flex';
+                nextBtn.innerHTML = currentIndex === this.sections.length - 1 ? 
+                    'First Section <i class="fas fa-chevron-right"></i>' : 
+                    'Next <i class="fas fa-chevron-right"></i>';
+            }
         } else {
-            // Normal test mode - remove restrictions to allow incomplete submissions
-            prevBtn.disabled = currentIndex === 0;
-            nextBtn.disabled = false; // Always enable submit button
-            nextBtn.innerHTML = currentIndex === this.sections.length - 1 ? 
-                'Submit <i class="fas fa-check"></i>' : 
-                'Next <i class="fas fa-chevron-right"></i>';
+            // Normal test mode
+            if (prevBtn) {
+                prevBtn.disabled = currentIndex === 0;
+                prevBtn.style.display = 'inline-flex';
+            }
+            if (nextBtn) {
+                nextBtn.disabled = false; // Always enable submit button
+                nextBtn.style.display = 'inline-flex';
+                nextBtn.innerHTML = currentIndex === this.sections.length - 1 ? 
+                    'Submit <i class="fas fa-check"></i>' : 
+                    'Next <i class="fas fa-chevron-right"></i>';
+            }
         }
         
         // Debug logging for button states
         console.log('Button states:', {
-            prevBtnDisabled: prevBtn.disabled,
-            nextBtnDisabled: nextBtn.disabled,
-            nextBtnText: nextBtn.innerHTML
+            prevBtnDisabled: prevBtn ? prevBtn.disabled : 'N/A',
+            nextBtnDisabled: nextBtn ? nextBtn.disabled : 'N/A',
+            nextBtnText: nextBtn ? nextBtn.innerHTML : 'N/A'
         });
         
-        // Force enable the submit button if we're on the last section
-        if (currentIndex === this.sections.length - 1) {
-            nextBtn.disabled = false;
-            console.log('Forced enable submit button');
+        // Force enable the submit button if we're on the last section (not in review mode)
+        if (currentIndex === this.sections.length - 1 && !this.reviewMode) {
+            if (nextBtn) {
+                nextBtn.disabled = false;
+                console.log('Forced enable submit button');
+            }
         }
         
         // Update navigation buttons
         document.querySelectorAll('.nav-btn').forEach((btn, index) => {
             btn.classList.toggle('active', btn.dataset.section === this.currentSection);
+            // Enable all nav buttons in review mode
+            if (this.reviewMode) {
+                btn.disabled = false;
+                btn.style.display = 'inline-flex';
+            }
         });
         
         // Additional check to ensure submit button is enabled
@@ -1687,24 +1879,52 @@ class IELTSTest {
     }
     
     updateWordCount(textareaId, text) {
-        const taskId = textareaId.replace('writing-', '');
+        // Extract the task number from the textarea ID (e.g., "writing-task1" -> "1")
+        const taskNumber = textareaId.replace('writing-task', '');
+        const wordCountElement = document.getElementById(`word-count-${taskNumber}`);
         
-        // Improved word counting that handles multiple spaces, special characters, and empty text
-        let wordCount = 0;
-        if (text && text.trim()) {
-            // Split by whitespace and filter out empty strings
-            const words = text.trim().split(/\s+/).filter(word => word.length > 0);
-            wordCount = words.length;
+        if (!wordCountElement) {
+            console.warn(`Word count element not found for ${textareaId}`);
+            return;
         }
         
-        // Check if the word count element exists before trying to update it
-        const wordCountElement = document.getElementById(`word-count-${taskId}`);
-        if (wordCountElement) {
-            wordCountElement.textContent = wordCount;
-            console.log(`Updated word count for task ${taskId}: ${wordCount} words`);
+        const words = text.trim().split(/\s+/).filter(word => word.length > 0);
+        const wordCount = words.length;
+        
+        // Track writing activity
+        if (wordCount > 0) {
+            this.isWritingActive = true;
+            this.updateActivity();
+        }
+        
+        // Calculate score based on word count
+        let score = 0;
+        let scoreText = '';
+        
+        if (wordCount >= 80) {
+            score = 5;
+            scoreText = 'Full points';
+            wordCountElement.className = 'word-count good';
+        } else if (wordCount >= 50) {
+            score = 2.5;
+            scoreText = 'Half points';
+            wordCountElement.className = 'word-count low';
         } else {
-            console.warn(`Word count element not found for task ${taskId}`);
+            score = 0;
+            scoreText = 'No points';
+            wordCountElement.className = 'word-count low';
         }
+        
+        // Update the word count display with cleaner format
+        wordCountElement.textContent = `${wordCount} words`;
+        
+        // Add data attribute for CSS to show/hide based on content
+        wordCountElement.setAttribute('data-words', wordCount.toString());
+        
+        // Add tooltip or title for score information
+        wordCountElement.title = `${wordCount} words - ${scoreText} (${score}/5)`;
+        
+        console.log(`Updated word count for ${textareaId}: ${wordCount} words - ${scoreText}`);
     }
     
     showSubmitModal() {
@@ -1808,9 +2028,39 @@ class IELTSTest {
     reviewTest() {
         this.closeModal('results-modal');
         this.reviewMode = true; // Enable review mode
+        this.testSubmitted = false; // Allow navigation in review mode
+        
+        // Switch to first section and highlight answers
         this.switchSection('grammar');
         this.highlightAnswers();
-        this.updateNavigation(); // Update navigation to reflect review mode
+        
+        // Force update navigation to enable all buttons
+        this.updateNavigation();
+        
+        // Show review mode indicator
+        this.showReviewModeIndicator();
+        
+        console.log('Review mode activated:', {
+            reviewMode: this.reviewMode,
+            currentSection: this.currentSection,
+            testSubmitted: this.testSubmitted
+        });
+    }
+    
+    showReviewModeIndicator() {
+        // Create or update review mode indicator
+        let indicator = document.getElementById('review-mode-indicator');
+        if (!indicator) {
+            indicator = document.createElement('div');
+            indicator.id = 'review-mode-indicator';
+            indicator.className = 'review-mode-indicator';
+            indicator.innerHTML = `
+                <i class="fas fa-eye"></i>
+                <span>Review Mode - You can navigate between sections</span>
+            `;
+            document.body.appendChild(indicator);
+        }
+        indicator.style.display = 'block';
     }
     
     highlightAnswers() {
@@ -1985,8 +2235,34 @@ class IELTSTest {
 
     handleVisibilityChange() {
         if (document.hidden && !this.testSubmitted) {
-            // User has left the page - this is a violation
-            this.showCheatingWarning();
+            // Clear any existing timeout
+            if (this.pageLeaveTimeout) {
+                clearTimeout(this.pageLeaveTimeout);
+            }
+            
+            // Check if we're in listening or writing section (more lenient)
+            const isLenientSection = this.currentSection === 'listening' || this.currentSection === 'writing';
+            const gracePeriod = isLenientSection ? this.pageLeaveGracePeriod * 2 : this.pageLeaveGracePeriod; // Double grace period for listening/writing
+            
+            // Set timeout for page leave detection with grace period
+            this.pageLeaveTimeout = setTimeout(() => {
+                if (document.hidden && !this.testSubmitted) {
+                    // Only show warning if still hidden after grace period
+                    this.showCheatingWarning();
+                }
+            }, gracePeriod);
+            
+            // Update last activity time
+            this.lastActivityTime = Date.now();
+        } else if (!document.hidden) {
+            // Page is visible again - clear the timeout
+            if (this.pageLeaveTimeout) {
+                clearTimeout(this.pageLeaveTimeout);
+                this.pageLeaveTimeout = null;
+            }
+            
+            // Update last activity time
+            this.lastActivityTime = Date.now();
         }
     }
 
@@ -1996,13 +2272,23 @@ class IELTSTest {
         warningModal.id = 'cheating-warning-modal';
         warningModal.innerHTML = `
             <div class="modal-content">
-                <h3><i class="fas fa-exclamation-triangle"></i> WARNING: Page Left</h3>
-                <p><strong>You have left the test page!</strong></p>
-                <p>According to IELTS exam rules, leaving the page or using external tools results in immediate disqualification.</p>
-                <p>Your test will be marked as invalid with a score of 0.</p>
+                <h3><i class="fas fa-exclamation-triangle"></i> Page Leave Detected</h3>
+                <p><strong>You have been away from the test page for an extended period.</strong></p>
+                <p>This may be considered a violation of IELTS exam rules if you were using external resources or getting help.</p>
+                <p><strong>Current section:</strong> ${this.currentSection.charAt(0).toUpperCase() + this.currentSection.slice(1)}</p>
+                <p><strong>Time away:</strong> ${Math.round(this.pageLeaveGracePeriod / 1000)} seconds</p>
+                <div class="warning-options">
+                    <p><strong>If you were:</strong></p>
+                    <ul>
+                        <li>Listening to audio content - This is acceptable</li>
+                        <li>Taking notes or using legitimate study aids - This is acceptable</li>
+                        <li>Using external resources or getting help - This is a violation</li>
+                    </ul>
+                </div>
                 <div class="modal-actions">
-                    <button class="btn btn-primary" id="submit-test">Submit Test</button>
-                    <button class="btn btn-secondary" id="restart-test">Restart Test</button>
+                    <button class="btn btn-primary" id="continue-test">Continue Test (No Violation)</button>
+                    <button class="btn btn-secondary" id="submit-test">Submit Test as Invalid</button>
+                    <button class="btn btn-warning" id="restart-test">Restart Test</button>
                 </div>
             </div>
         `;
@@ -2010,6 +2296,11 @@ class IELTSTest {
         document.body.appendChild(warningModal);
         
         // Add event listeners
+        document.getElementById('continue-test').addEventListener('click', () => {
+            this.closeModal('cheating-warning-modal');
+            this.lastActivityTime = Date.now();
+        });
+        
         document.getElementById('submit-test').addEventListener('click', () => {
             this.submitInvalidTest();
         });
@@ -2078,12 +2369,12 @@ class IELTSTest {
             clearTimeout(this.writingCheckTimeouts[taskId]);
         }
         
-        // Set new timeout for debounced check
+        // Set new timeout for debounced check (increased from 2 seconds to 5 seconds)
         this.writingCheckTimeouts[taskId] = setTimeout(() => {
             if (text.trim().length > 10) { // Only check if there's substantial text
                 this.checkWritingTask(taskId, text);
             }
-        }, 2000); // 2 second delay
+        }, 5000); // Increased from 2000ms to 5000ms for better user experience
     }
 
     async checkWritingTask(taskId, text = null) {
@@ -2332,6 +2623,58 @@ class IELTSTest {
             const modals = document.querySelectorAll('.modal');
             console.log('Active modals:', Array.from(modals).map(m => ({ id: m.id, active: m.classList.contains('active') })));
         };
+        window.debugWordCount = () => this.debugWordCount();
+        window.debugReviewMode = () => this.debugReviewMode();
+    }
+
+    // Debug method to test word count functionality
+    debugWordCount() {
+        console.log('=== Word Count Debug ===');
+        ['writing-task1', 'writing-task2', 'writing-task3'].forEach(id => {
+            const textarea = document.getElementById(id);
+            const taskNumber = id.replace('writing-task', '');
+            const wordCountElement = document.getElementById(`word-count-${taskNumber}`);
+            
+            console.log(`${id}:`, {
+                textareaExists: !!textarea,
+                textareaValue: textarea ? textarea.value : 'N/A',
+                wordCountElementExists: !!wordCountElement,
+                wordCountElementText: wordCountElement ? wordCountElement.textContent : 'N/A'
+            });
+        });
+    }
+
+    // Debug method to test review mode functionality
+    debugReviewMode() {
+        console.log('=== Review Mode Debug ===');
+        console.log({
+            reviewMode: this.reviewMode,
+            testSubmitted: this.testSubmitted,
+            currentSection: this.currentSection,
+            sections: this.sections
+        });
+        
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        
+        console.log('Navigation buttons:', {
+            prevBtnExists: !!prevBtn,
+            prevBtnDisabled: prevBtn ? prevBtn.disabled : 'N/A',
+            prevBtnDisplay: prevBtn ? prevBtn.style.display : 'N/A',
+            nextBtnExists: !!nextBtn,
+            nextBtnDisabled: nextBtn ? nextBtn.disabled : 'N/A',
+            nextBtnDisplay: nextBtn ? nextBtn.style.display : 'N/A'
+        });
+        
+        // Check all nav buttons
+        document.querySelectorAll('.nav-btn').forEach((btn, index) => {
+            console.log(`Nav button ${index}:`, {
+                section: btn.dataset.section,
+                disabled: btn.disabled,
+                display: btn.style.display,
+                active: btn.classList.contains('active')
+            });
+        });
     }
 }
 

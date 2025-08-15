@@ -226,10 +226,10 @@ app.get('/api/test-data', async (req, res) => {
     try {
         console.log('API /api/test-data called');
         
-        // Set a shorter timeout
+        // Set a longer timeout for better user experience
         const timeout = setTimeout(() => {
             res.status(408).json({ error: 'Request timeout' });
-        }, 5000); // Reduced from 10 seconds to 5 seconds
+        }, 15000); // Increased from 5 seconds to 15 seconds
         
         if (!testData) {
             clearTimeout(timeout);
@@ -513,20 +513,38 @@ function calculateResults(answers) {
     let translationPenalty = 0;
     
     if (!testData) {
-        return { grammar: 0, reading: 0, listening: 0, writing: 0, total: 0, grammarTotal: 30, readingTotal: 20, listeningTotal: 35, writingTotal: 15, translationPenalty: 0 };
+        return { grammar: 0, reading: 0, listening: 0, writing: 0, total: 0, grammarTotal: 30, readingTotal: 20, listeningTotal: 10, writingTotal: 15, translationPenalty: 0 };
     }
     
-    // Calculate grammar score (30 points)
+    // Calculate grammar score (30 points - 1 point per question)
     if (answers.grammar) {
         Object.entries(answers.grammar).forEach(([questionId, selectedOption]) => {
             const question = testData.sections.grammar.questions.find(q => q.id === parseInt(questionId));
-            if (question && selectedOption === question.correct) {
-                grammarScore++;
+            if (question) {
+                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(parseInt(questionId));
+                const isCorrect = selectedOption === question.correct;
+                
+                if (isTranslated) {
+                    // Translation used: 0.5 penalty, then 0.5 for wrong answer
+                    if (isCorrect) {
+                        grammarScore += 0.5; // 1 point - 0.5 translation penalty
+                    } else {
+                        grammarScore += 0; // 0 points - 0.5 translation penalty - 0.5 wrong answer
+                    }
+                    translationPenalty += 0.5;
+                } else {
+                    // No translation: 1 point for correct, 0 for wrong
+                    if (isCorrect) {
+                        grammarScore += 1;
+                    } else {
+                        grammarScore += 0;
+                    }
+                }
             }
         });
     }
     
-    // Calculate reading score (20 points)
+    // Calculate reading score (20 points - 1 point per question)
     if (answers.reading) {
         const allReadingQuestions = [
             ...testData.sections.reading.passages[0].questions,
@@ -534,57 +552,135 @@ function calculateResults(answers) {
         ];
         Object.entries(answers.reading).forEach(([questionId, selectedOption]) => {
             const question = allReadingQuestions.find(q => q.id === parseInt(questionId));
-            if (question && selectedOption === question.correct) {
-                readingScore++;
+            if (question) {
+                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(parseInt(questionId));
+                const isCorrect = selectedOption === question.correct;
+                
+                if (isTranslated) {
+                    // Translation used: 0.5 penalty, then 0.5 for wrong answer
+                    if (isCorrect) {
+                        readingScore += 0.5; // 1 point - 0.5 translation penalty
+                    } else {
+                        readingScore += 0; // 0 points - 0.5 translation penalty - 0.5 wrong answer
+                    }
+                    translationPenalty += 0.5;
+                } else {
+                    // No translation: 1 point for correct, 0 for wrong
+                    if (isCorrect) {
+                        readingScore += 1;
+                    } else {
+                        readingScore += 0;
+                    }
+                }
             }
         });
     }
     
-    // Calculate listening score (35 points - increased weight)
+    // Calculate listening score (10 points - 2 points per question)
     if (answers.listening) {
         const allListeningQuestions = [
             ...testData.sections.listening.scripts[0].questions,
             ...testData.sections.listening.scripts[1].questions
         ];
+        
+        // Check for transcript usage first
+        const transcriptUsed = answers.translationPenalties && 
+            Object.keys(answers.translationPenalties).some(key => key.startsWith('transcript-') && !key.includes('translation'));
+        
+        if (transcriptUsed) {
+            translationPenalty += 1; // Add transcript penalty once
+        }
+        
         Object.entries(answers.listening).forEach(([questionId, selectedOption]) => {
             const question = allListeningQuestions.find(q => q.id === parseInt(questionId));
-            if (question && selectedOption === question.correct) {
-                listeningScore++;
+            if (question) {
+                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(parseInt(questionId));
+                const isCorrect = selectedOption === question.correct;
+                
+                if (transcriptUsed) {
+                    if (isTranslated) {
+                        // Transcript + Translation used
+                        translationPenalty += 0.5; // Additional translation penalty
+                        
+                        if (isCorrect) {
+                            listeningScore += 0.5; // 2 points - 1 transcript penalty - 0.5 translation penalty
+                        } else {
+                            listeningScore += 0; // 0 points - 1 transcript penalty - 0.5 translation penalty - 0.5 wrong answer
+                        }
+                    } else {
+                        // Only transcript used
+                        if (isCorrect) {
+                            listeningScore += 1; // 2 points - 1 transcript penalty
+                        } else {
+                            listeningScore += 0; // 0 points - 1 transcript penalty - 1 wrong answer
+                        }
+                    }
+                } else {
+                    if (isTranslated) {
+                        // Only translation used
+                        translationPenalty += 0.5;
+                        
+                        if (isCorrect) {
+                            listeningScore += 1.5; // 2 points - 0.5 translation penalty
+                        } else {
+                            listeningScore += 0; // 0 points - 0.5 translation penalty - 1.5 wrong answer
+                        }
+                    } else {
+                        // No penalties
+                        if (isCorrect) {
+                            listeningScore += 2; // 2 points
+                        } else {
+                            listeningScore += 0; // 0 points
+                        }
+                    }
+                }
             }
         });
     }
     
-    // Calculate writing score (15 points - 5 points per task)
+    // Calculate writing score (15 points - based on word count)
     if (answers.writing) {
         Object.entries(answers.writing).forEach(([taskKey, text]) => {
-            if (text && text.trim().length > 10) { // Only count if substantial text is written
-                writingScore += 5;
+            if (text && text.trim().length > 0) {
+                const words = text.trim().split(/\s+/).filter(word => word.length > 0);
+                const wordCount = words.length;
+                
+                // Word count scoring: above 50 words = 0.5, above 80 words = 1 point
+                // Each task can earn up to 5 points (15 total / 3 tasks)
+                let taskScore = 0;
+                if (wordCount >= 80) {
+                    taskScore = 5; // Full points for 80+ words
+                } else if (wordCount >= 50) {
+                    taskScore = 2.5; // Half points for 50-79 words
+                } else {
+                    taskScore = 0; // No points for less than 50 words
+                }
+                
+                writingScore += taskScore;
             }
         });
     }
     
-    // Calculate translation penalty
+    // Calculate total translation penalty
     if (answers.translationPenalties) {
         // Sum all penalties from the translationPenalties object
-        translationPenalty = Object.values(answers.translationPenalties).reduce((sum, penalty) => sum + penalty, 0);
-    } else if (answers.translatedQuestions) {
-        // Fallback for old format (0.5 per translated question)
-        translationPenalty = answers.translatedQuestions.length * 0.5;
+        const penaltySum = Object.values(answers.translationPenalties).reduce((sum, penalty) => sum + penalty, 0);
+        translationPenalty += penaltySum;
     }
     
-    const totalScore = grammarScore + readingScore + listeningScore + writingScore - translationPenalty;
+    const totalScore = grammarScore + readingScore + listeningScore + writingScore;
     
     return {
-        grammar: grammarScore,
-        reading: readingScore,
-        listening: listeningScore,
-        writing: writingScore,
-        total: Math.max(0, totalScore), // Ensure total doesn't go below 0
+        grammar: Math.round(grammarScore * 100) / 100,
+        reading: Math.round(readingScore * 100) / 100,
+        listening: Math.round(listeningScore * 100) / 100,
+        writing: Math.round(writingScore * 100) / 100,
+        total: Math.max(0, Math.round(totalScore * 100) / 100), // Ensure total doesn't go below 0
         grammarTotal: 30, // 30 grammar questions
         readingTotal: 20, // 20 reading questions
-        listeningTotal: 35, // 35 listening questions (increased weight)
+        listeningTotal: 10, // 10 listening questions (2 points each)
         writingTotal: 15, // 15 writing points (5 per task)
-        translationPenalty: translationPenalty
+        translationPenalty: Math.round(translationPenalty * 100) / 100
     };
 }
 
