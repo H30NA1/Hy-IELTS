@@ -1,0 +1,118 @@
+{
+  "id": "medshjb2gg2s3cnbuw",
+  "timestamp": "2025-08-16T05:01:10.526Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-08-16T05:01:10.014Z",
+    "submittedBy": "user"
+  },
+  "userName": "Leenamhi",
+  "answers": {
+    "grammar": {
+      "1": 0,
+      "2": 1,
+      "3": 1,
+      "4": 0,
+      "5": 0,
+      "6": 1,
+      "7": 1,
+      "8": 0,
+      "9": 1,
+      "10": 1,
+      "11": 0,
+      "12": 2,
+      "13": 0,
+      "14": 0,
+      "15": 1,
+      "16": 2,
+      "17": 1,
+      "18": 0,
+      "19": 1,
+      "20": 2,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 1,
+      "27": 0,
+      "28": 2,
+      "29": 0,
+      "30": 0
+    },
+    "reading": {
+      "31": 1,
+      "32": 1,
+      "33": 1,
+      "34": 1,
+      "35": 1,
+      "36": 1,
+      "37": 1,
+      "38": 1,
+      "39": 2,
+      "40": 2,
+      "41": 2,
+      "42": 2,
+      "43": 1,
+      "44": 2,
+      "45": 1,
+      "46": 1,
+      "47": 1,
+      "48": 1,
+      "49": 0,
+      "50": 0
+    },
+    "listening": {
+      "51": 1,
+      "52": 1,
+      "53": 1,
+      "54": 2,
+      "55": 2,
+      "56": 1,
+      "57": 1,
+      "58": 1,
+      "59": 1,
+      "60": 2
+    },
+    "writing": {
+      "task1": "Dear Residents \nThe water supply will be turned off for maintenance on Monday, 21 August 2025, from 9:00 a.m. to 5:00 p.m., affecting the 5th–12th floors. Please store enough water in advance for drinking, cooking, and washing, avoid using taps during the shutdown, and let the water run briefly once service resumes. For assistance, contact the management office at 0123456789 or office@building.com. We apologise for the inconvenience and thank you for your understanding",
+      "task2": "I agree that AI writing tools should be allowed in language classes, provided that students openly disclose their use. The main reason is that these tools can serve as a learning aid rather than a replacement for original work. For example, a student may use AI to generate feedback on grammar and vocabulary, then revise their own essay based on those suggestions. This not only helps them identify mistakes but also accelerates their learning process. As long as the use is transparent, teachers can monitor how much support the student received and ensure that real progress is being made",
+      "task3": "The bar chart shows average study hours and satisfaction scores for four resources used by 200 learners in one month. Instructor-led courses had the most hours (8) and a high score of 8.4, while speaking partners took fewer hours (5) but gained the highest rating (8.7). In contrast, learners spent 7 hours on YouTube lessons and 6 on a mobile app, yet both had lower satisfaction (7.2 and 7.5). Overall, interactive methods such as teachers or partners appear more effective and enjoyable than self-study tools"
+    },
+    "translatedQuestions": [
+      24,
+      "24",
+      30,
+      "30",
+      35,
+      "35",
+      50,
+      "50"
+    ],
+    "translationPenalties": {
+      "question-24": -0.5,
+      "question-30": -0.5,
+      "question-35": -0.5,
+      "question-50": -0.5,
+      "transcript-1": -1
+    }
+  },
+  "results": {
+    "grammar": 18.5,
+    "reading": 19,
+    "listening": 10,
+    "writing": 12.5,
+    "total": 60,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": 0
+  },
+  "timeSpent": "27:34",
+  "testData": {
+    "testId": "IELTS_STARTER_2_0",
+    "testDate": "2025-08-12",
+    "testTitle": "IELTS Starter 2.0 Practice Test (EN–VI)"
+  }
+}

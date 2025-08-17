@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo Tổng Kết Tuần 2 - Lee Nam Hi</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { margin: 0; padding: 20px; }
+            .page-break { page-break-before: always; }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #007bff;
+        }
+        
+        .header h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header h2 {
+            color: #6c757d;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+        
+        .header h3 {
+            color: #495057;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        .section h2 {
+            color: #007bff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .section h3 {
+            color: #495057;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            padding-left: 15px;
+            border-left: 4px solid #007bff;
+        }
+        
+        .section h4 {
+            color: #6c757d;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .score-high {
+            color: #28a745;
+            font-weight: 700;
+        }
+        
+        .score-medium {
+            color: #ffc107;
+            font-weight: 700;
+        }
+        
+        .score-low {
+            color: #dc3545;
+            font-weight: 700;
+        }
+        
+        .skill-icon {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        
+        .strength {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .improvement {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        
+        .progress {
+            color: #007bff;
+            font-weight: 600;
+        }
+        
+        .comparison-highlight {
+            background-color: #e8f5e8;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #28a745;
+        }
+        
+        .day-breakdown {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #007bff;
+        }
+        
+        .export-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+        
+        .export-btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .export-btn:first-child {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+        }
+        
+        .export-btn.secondary {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+            color: white;
+        }
+        
+        .export-btn:last-child {
+            background: linear-gradient(135deg, #f44336, #d32f2f);
+            color: white;
+        }
+        
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="export-buttons no-print">
+        <button class="export-btn" onclick="window.print()">🖨️ In PDF</button>
+        <button class="export-btn secondary" onclick="downloadPDF()">📄 Tải PDF</button>
+        <button class="export-btn secondary" onclick="window.close()">❌ Đóng</button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Báo Cáo Tổng Kết Tuần 2 - Bài Thi Thử IELTS Starter</h1>
+            <h2>Học Viên: Lee Nam Hi</h2>
+            <h3>Thời Gian: Ngày 11-16 tháng 8 năm 2025</h3>
+        </div>
+
+        <div class="section">
+            <h2>Tóm Tắt Tổng Quan</h2>
+            <p>Lee Nam Hi đã hoàn thành <strong>6 bài thi thử IELTS Starter</strong> trong Tuần 2, thể hiện sự tiến bộ đáng kể so với Tuần 1. Học viên đã chuyển từ cấp độ Starter 1.x lên Starter 2.0, cho thấy khả năng thích ứng và phát triển kỹ năng tốt.</p>
+            
+            <div class="comparison-highlight">
+                <h4>🎯 So Sánh Với Tuần 1</h4>
+                <ul>
+                    <li><strong>Tuần 1:</strong> Trung bình 53.9 điểm, cấp độ Sơ cấp+</li>
+                    <li><strong>Tuần 2:</strong> Trung bình 56.3 điểm, cấp độ Sơ cấp+ đến Trung cấp-</li>
+                    <li><strong>Tiến bộ:</strong> +2.4 điểm, nâng cấp độ bài thi từ 1.x lên 2.0</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Tổng Quan Kết Quả Bài Thi Tuần 2</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ngày</th>
+                            <th>Mã Bài Thi</th>
+                            <th>Tên Bài Thi</th>
+                            <th>Tổng Điểm</th>
+                            <th>Ngữ Pháp</th>
+                            <th>Đọc Hiểu</th>
+                            <th>Nghe Hiểu</th>
+                            <th>Viết</th>
+                            <th>Cấp Độ</th>
+                            <th>Điểm Dự Đoán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-08-11</td>
+                            <td>IELTS_STARTER_1_8</td>
+                            <td>IELTS Starter 1.8 (EN-VI)</td>
+                            <td class="score-low"><strong>47.5/75</strong></td>
+                            <td>9/30</td>
+                            <td>19.5/20</td>
+                            <td>9/10</td>
+                            <td>10/15</td>
+                            <td>Sơ Cấp</td>
+                            <td>3.5-4.0</td>
+                        </tr>
+                        <tr>
+                            <td>2025-08-12</td>
+                            <td>IELTS_STARTER_2_0</td>
+                            <td>IELTS Starter 2.0 (EN-VI)</td>
+                            <td class="score-high"><strong>60/75</strong></td>
+                            <td>18.5/30</td>
+                            <td>19/20</td>
+                            <td>10/10</td>
+                            <td>12.5/15</td>
+                            <td>Trung Cấp-</td>
+                            <td>4.5-5.0</td>
+                        </tr>
+                        <tr>
+                            <td>2025-08-13</td>
+                            <td>IELTS_STARTER_2_0B</td>
+                            <td>IELTS Starter 2.0B (EN-VI)</td>
+                            <td class="score-low"><strong>49/75</strong></td>
+                            <td>11.5/30</td>
+                            <td>17/20</td>
+                            <td>8/10</td>
+                            <td>12.5/15</td>
+                            <td>Sơ Cấp+</td>
+                            <td>4.0-4.5</td>
+                        </tr>
+                        <tr>
+                            <td>2025-08-14</td>
+                            <td>IELTS_STARTER_2_0C</td>
+                            <td>IELTS Starter 2.0C (EN-VI)</td>
+                            <td class="score-low"><strong>54.5/75</strong></td>
+                            <td>24/30</td>
+                            <td>15.5/20</td>
+                            <td>7.5/10</td>
+                            <td>7.5/15</td>
+                            <td>Sơ Cấp+</td>
+                            <td>4.0-4.5</td>
+                        </tr>
+                        <tr>
+                            <td>2025-08-15</td>
+                            <td>IELTS_STARTER_2_0D</td>
+                            <td>IELTS Starter 2.0D (EN-VI)</td>
+                            <td class="score-medium"><strong>59.5/75</strong></td>
+                            <td>16.5/30</td>
+                            <td>18/20</td>
+                            <td>10/10</td>
+                            <td>15/15</td>
+                            <td>Trung Cấp-</td>
+                            <td>4.5-5.0</td>
+                        </tr>
+                        <tr>
+                            <td>2025-08-16</td>
+                            <td>IELTS_STARTER_2_0E</td>
+                            <td>IELTS Starter 2.0E (EN-VI)</td>
+                            <td class="score-high"><strong>66.5/75</strong></td>
+                            <td>22.5/30</td>
+                            <td>19/20</td>
+                            <td>10/10</td>
+                            <td>15/15</td>
+                            <td>Trung Cấp</td>
+                            <td>5.0-5.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Phân Tích Hiệu Suất Theo Kỹ Năng</h2>
+            
+            <h3><span class="skill-icon">📚</span>Ngữ Pháp (30 điểm tối đa)</h3>
+            <ul>
+                <li><strong>Hiệu Suất Tốt Nhất:</strong> 24/30 (Ngày 14) - <span class="score-medium">80%</span></li>
+                <li><strong>Hiệu Suất Thấp Nhất:</strong> 9/30 (Ngày 11) - <span class="score-low">30%</span></li>
+                <li><strong>Trung Bình Tuần 2:</strong> 16.8/30 - <span class="score-medium">56%</span></li>
+                <li><strong>So Với Tuần 1:</strong> <span class="strength">+1.0 điểm (+6.3%)</span></li>
+                <li><strong>Xu Hướng:</strong> Cải thiện đáng kể, đặc biệt trong các bài thi cuối tuần</li>
+            </ul>
+
+            <h3><span class="skill-icon">📖</span>Đọc Hiểu (20 điểm tối đa)</h3>
+            <ul>
+                <li><strong>Hiệu Suất Tốt Nhất:</strong> 19.5/20 (Ngày 11) - <span class="score-high">97.5%</span></li>
+                <li><strong>Hiệu Suất Thấp Nhất:</strong> 15.5/20 (Ngày 14) - <span class="score-medium">77.5%</span></li>
+                <li><strong>Trung Bình Tuần 2:</strong> 17.8/20 - <span class="score-high">89%</span></li>
+                <li><strong>So Với Tuần 1:</strong> <span class="strength">+0.9 điểm (+5.3%)</span></li>
+                <li><strong>Xu Hướng:</strong> Duy trì hiệu suất cao, ổn định</li>
+            </ul>
+
+            <h3><span class="skill-icon">🎧</span>Nghe Hiểu (10 điểm tối đa)</h3>
+            <ul>
+                <li><strong>Hiệu Suất Tốt Nhất:</strong> 10/10 (Ngày 12, 15, 16) - <span class="score-high">100%</span></li>
+                <li><strong>Hiệu Suất Thấp Nhất:</strong> 7.5/10 (Ngày 14) - <span class="score-medium">75%</span></li>
+                <li><strong>Trung Bình Tuần 2:</strong> 9.1/10 - <span class="score-high">91%</span></li>
+                <li><strong>So Với Tuần 1:</strong> <span class="improvement">-7.4 điểm (-44.8%)</span> (do thay đổi thang điểm)</li>
+                <li><strong>Xu Hướng:</strong> Hiệu suất xuất sắc, ổn định</li>
+            </ul>
+
+            <h3><span class="skill-icon">✍️</span>Viết (15 điểm tối đa)</h3>
+            <ul>
+                <li><strong>Hiệu Suất Tốt Nhất:</strong> 15/15 (Ngày 15 & 16) - <span class="score-high">100%</span></li>
+                <li><strong>Hiệu Suất Thấp Nhất:</strong> 7.5/15 (Ngày 14) - <span class="score-medium">50%</span></li>
+                <li><strong>Trung Bình Tuần 2:</strong> 12.1/15 - <span class="score-high">80.7%</span></li>
+                <li><strong>So Với Tuần 1:</strong> <span class="strength">+5.8 điểm (+92.1%)</span></li>
+                <li><strong>Xu Hướng:</strong> Cải thiện đột phá, đạt hiệu suất xuất sắc</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>So Sánh Chi Tiết Tuần 1 vs Tuần 2</h2>
+            
+            <div class="comparison-highlight">
+                <h4>📊 Bảng So Sánh Tổng Quan</h4>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Chỉ Số</th>
+                                <th>Tuần 1</th>
+                                <th>Tuần 2</th>
+                                <th>Thay Đổi</th>
+                                <th>Đánh Giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tổng Điểm Trung Bình</strong></td>
+                                <td>53.9/75</td>
+                                <td>56.3/75</td>
+                                <td class="strength">+2.4 (+4.5%)</td>
+                                <td class="strength">Tiến bộ</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ngữ Pháp</strong></td>
+                                <td>15.8/30</td>
+                                <td>16.8/30</td>
+                                <td class="strength">+1.0 (+6.3%)</td>
+                                <td class="strength">Cải thiện</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Đọc Hiểu</strong></td>
+                                <td>16.9/20</td>
+                                <td>17.8/20</td>
+                                <td class="strength">+0.9 (+5.3%)</td>
+                                <td class="strength">Cải thiện</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Nghe Hiểu</strong></td>
+                                <td>16.5/10</td>
+                                <td>9.1/10</td>
+                                <td class="improvement">-7.4 (-44.8%)</td>
+                                <td class="improvement">Giảm (thang điểm khác)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Viết</strong></td>
+                                <td>6.3/15</td>
+                                <td>12.1/15</td>
+                                <td class="strength">+5.8 (+92.1%)</td>
+                                <td class="strength">Đột phá</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cấp Độ Cao Nhất</strong></td>
+                                <td>Trung Cấp-</td>
+                                <td>Trung Cấp</td>
+                                <td class="strength">+1 cấp</td>
+                                <td class="strength">Nâng cấp</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Phân Tích Chi Tiết Hiệu Suất Tuần 2</h2>
+            
+            <div class="day-breakdown">
+                <h4>Ngày 1 (11 tháng 8) - IELTS Starter 1.8</h4>
+                <ul>
+                    <li><strong>Tổng Điểm:</strong> 47.5/75 (63.3%)</li>
+                    <li><strong>Cấp Độ:</strong> <span class="improvement">Sơ Cấp</span></li>
+                    <li><strong>Điểm Dự Đoán:</strong> 3.5-4.0</li>
+                    <li><strong>Điểm Mạnh:</strong> Đọc hiểu xuất sắc (19.5/20), viết tốt (10/15)</li>
+                    <li><strong>Lĩnh Vực Cần Cải Thiện:</strong> Ngữ pháp (9/30), nghe hiểu (9/10)</li>
+                    <li><strong>Ghi Chú:</strong> Bài thi cuối cùng của cấp độ 1.x, chuẩn bị chuyển lên 2.0</li>
+                </ul>
+            </div>
+
+            <div class="day-breakdown">
+                <h4>Ngày 2 (12 tháng 8) - IELTS Starter 2.0</h4>
+                <ul>
+                    <li><strong>Tổng Điểm:</strong> 60/75 (80%)</li>
+                    <li><strong>Cấp Độ:</strong> <span class="strength">Trung Cấp-</span></li>
+                    <li><strong>Điểm Dự Đoán:</strong> 4.5-5.0</li>
+                    <li><strong>Điểm Mạnh:</strong> Nghe hiểu xuất sắc (10/10), đọc hiểu mạnh (19/20)</li>
+                    <li><strong>Lĩnh Vực Cần Cải Thiện:</strong> Ngữ pháp (18.5/30)</li>
+                    <li><strong>Ghi Chú:</strong> Bài thi đầu tiên cấp độ 2.0, thể hiện khả năng thích ứng tốt</li>
+                </ul>
+            </div>
+
+            <div class="day-breakdown">
+                <h4>Ngày 3 (13 tháng 8) - IELTS Starter 2.0B</h4>
+                <ul>
+                    <li><strong>Tổng Điểm:</strong> 49/75 (65.3%)</li>
+                    <li><strong>Cấp Độ:</strong> <span class="strength">Sơ Cấp+</span></li>
+                    <li><strong>Điểm Dự Đoán:</strong> 4.0-4.5</li>
+                    <li><strong>Điểm Mạnh:</strong> Viết tốt (12.5/15), đọc hiểu ổn định (17/20)</li>
+                    <li><strong>Lĩnh Vực Cần Cải Thiện:</strong> Ngữ pháp (11.5/30), nghe hiểu (8/10)</li>
+                    <li><strong>Ghi Chú:</strong> Bài thi thứ hai cấp độ 2.0, cần thời gian thích ứng</li>
+                </ul>
+            </div>
+
+            <div class="day-breakdown">
+                <h4>Ngày 4 (14 tháng 8) - IELTS Starter 2.0C</h4>
+                <ul>
+                    <li><strong>Tổng Điểm:</strong> 54.5/75 (72.7%)</li>
+                    <li><strong>Cấp Độ:</strong> <span class="strength">Sơ Cấp+</span></li>
+                    <li><strong>Điểm Dự Đoán:</strong> 4.0-4.5</li>
+                    <li><strong>Điểm Mạnh:</strong> Ngữ pháp tốt (24/30), đọc hiểu ổn định (15.5/20)</li>
+                    <li><strong>Lĩnh Vực Cần Cải Thiện:</strong> Viết (7.5/15), nghe hiểu (7.5/10)</li>
+                    <li><strong>Ghi Chú:</strong> Ngữ pháp cải thiện đáng kể, nhưng viết giảm sút</li>
+                </ul>
+            </div>
+
+            <div class="day-breakdown">
+                <h4>Ngày 5 (15 tháng 8) - IELTS Starter 2.0D</h4>
+                <ul>
+                    <li><strong>Tổng Điểm:</strong> 59.5/75 (79.3%)</li>
+                    <li><strong>Cấp Độ:</strong> <span class="strength">Trung Cấp-</span></li>
+                    <li><strong>Điểm Dự Đoán:</strong> 4.5-5.0</li>
+                    <li><strong>Điểm Mạnh:</strong> Viết xuất sắc (15/15), nghe hiểu hoàn hảo (10/10)</li>
+                    <li><strong>Lĩnh Vực Cần Cải Thiện:</strong> Ngữ pháp (16.5/30)</li>
+                    <li><strong>Ghi Chú:</strong> Viết đạt điểm tối đa, thể hiện sự tiến bộ vượt bậc</li>
+                </ul>
+            </div>
+
+            <div class="day-breakdown">
+                <h4>Ngày 6 (16 tháng 8) - IELTS Starter 2.0E</h4>
+                <ul>
+                    <li><strong>Tổng Điểm:</strong> 66.5/75 (88.7%)</li>
+                    <li><strong>Cấp Độ:</strong> <span class="strength">Trung Cấp</span></li>
+                    <li><strong>Điểm Dự Đoán:</strong> 5.0-5.5</li>
+                    <li><strong>Điểm Mạnh:</strong> Tất cả kỹ năng đều xuất sắc</li>
+                    <li><strong>Lĩnh Vực Cần Cải Thiện:</strong> Không có</li>
+                    <li><strong>Ghi Chú:</strong> Kết quả tốt nhất tuần, đạt cấp độ Trung Cấp</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Đánh Giá Tiến Bộ và Xếp Hạng</h2>
+            
+            <h3>🎯 Tiến Bộ Chính</h3>
+            <ol>
+                <li><strong>Kỹ Năng Viết:</strong> Cải thiện từ 42% lên 80.7% (+92.1%)</li>
+                <li><strong>Ngữ Pháp:</strong> Cải thiện từ 53% lên 56% (+6.3%)</li>
+                <li><strong>Đọc Hiểu:</strong> Cải thiện từ 85% lên 89% (+5.3%)</li>
+                <li><strong>Cấp Độ Bài Thi:</strong> Nâng từ Starter 1.x lên Starter 2.0</li>
+                <li><strong>Điểm Cao Nhất:</strong> Tăng từ 60/75 lên 66.5/75 (+10.8%)</li>
+            </ol>
+
+            <h3>📈 Xếp Hạng Hiện Tại</h3>
+            <ul>
+                <li><strong>Cấp Độ Cao Nhất Tuần 2:</strong> <span class="strength">Trung Cấp</span> (Bài thi 2.0E) - Ngày 16 tháng 8</li>
+                <li><strong>Cấp Độ Cao Nhất Tuần 1:</strong> <span class="progress">Trung Cấp-</span> (Bài thi 1.2) - Ngày 7 tháng 8</li>
+                <li><strong>Tiến Bộ Cấp Độ:</strong> <span class="strength">+1 cấp</span> (từ Trung Cấp- lên Trung Cấp)</li>
+                <li><strong>Trung Bình Tuần 2:</strong> <span class="progress">Sơ Cấp+ đến Trung Cấp-</span></li>
+                <li><strong>Đánh Giá Tổng Thể:</strong> <span class="strength">Tiến bộ đáng kể, sẵn sàng cho cấp độ cao hơn</span></li>
+            </ul>
+
+            <h3>🏆 So Sánh Với Tuần 1</h3>
+            <div class="comparison-highlight">
+                <h4>Bảng Xếp Hạng Cấp Độ</h4>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tuần</th>
+                                <th>Cấp Độ Cao Nhất</th>
+                                <th>Điểm Cao Nhất</th>
+                                <th>Trung Bình</th>
+                                <th>Đánh Giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tuần 1</strong></td>
+                                <td>Trung Cấp-</td>
+                                <td>60/75</td>
+                                <td>53.9/75</td>
+                                <td>Sơ Cấp+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tuần 2</strong></td>
+                                <td class="strength">Trung Cấp</td>
+                                <td class="strength">66.5/75</td>
+                                <td class="strength">56.3/75</td>
+                                <td class="strength">Sơ Cấp+ đến Trung Cấp-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tiến Bộ</strong></td>
+                                <td class="strength">+1 cấp</td>
+                                <td class="strength">+6.5 điểm</td>
+                                <td class="strength">+2.4 điểm</td>
+                                <td class="strength">Nâng cấp</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Khuyến Nghị Cho Tuần 3</h2>
+            
+            <h3>🎓 Hành Động Ngay Lập Tức</h3>
+            <ol>
+                <li><strong>Duy Trì Kỹ Năng Viết:</strong> Tiếp tục thực hành để giữ hiệu suất cao</li>
+                <li><strong>Củng Cố Ngữ Pháp:</strong> Tập trung vào các mẫu lỗi còn lại</li>
+                <li><strong>Chuẩn Bị Cấp Độ Cao Hơn:</strong> Sẵn sàng cho Starter 2.1+</li>
+            </ol>
+
+            <h3>📚 Lĩnh Vực Tập Trung Học Tập</h3>
+            <ol>
+                <li><strong>Ngữ Pháp:</strong> Xem xét các cấu trúc phức tạp hơn</li>
+                <li><strong>Viết:</strong> Thực hành các chủ đề học thuật nâng cao</li>
+                <li><strong>Từ Vựng:</strong> Mở rộng từ vựng cấp độ Trung Cấp</li>
+            </ol>
+
+            <h3>🎯 Mục Tiêu Cho Tuần 3</h3>
+            <ul>
+                <li><strong>Ngữ Pháp:</strong> Đạt được 25+ điểm ổn định</li>
+                <li><strong>Viết:</strong> Duy trì 15/15 điểm</li>
+                <li><strong>Tổng Thể:</strong> Đạt 65+ điểm trên tất cả các bài thi</li>
+                <li><strong>Cấp Độ:</strong> Duy trì Trung Cấp- đến Trung Cấp</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Kết Luận</h2>
+            <p>Lee Nam Hi đã thể hiện sự tiến bộ đáng kể trong Tuần 2, đặc biệt là kỹ năng viết với sự cải thiện 92.1%. Học viên đã thành công chuyển từ cấp độ Starter 1.x lên Starter 2.0 và đạt được cấp độ Trung Cấp trong bài thi cuối tuần. Với sự cải thiện ổn định này, học viên có vị trí tốt để tiếp tục phát triển và đạt được điểm IELTS mục tiêu cao hơn.</p>
+            
+            <ul>
+                <li><strong>Đánh Giá Tổng Thể:</strong> Tiến bộ xuất sắc với cải thiện đa kỹ năng</li>
+                <li><strong>Mục Tiêu Điểm Đề Xuất:</strong> 5.5-6.0 (với cải thiện tập trung trong ngữ pháp)</li>
+                <li><strong>Ưu Tiên Học Tập:</strong> Củng cố ngữ pháp và duy trì kỹ năng viết</li>
+                <li><strong>Triển Vọng:</strong> Có khả năng đạt cấp độ Trung Cấp ổn định</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Báo Cáo Được Tạo:</strong> Ngày 17 tháng 8 năm 2025</p>
+            <p><strong>Nguồn Dữ Liệu:</strong> Kết Quả Bài Thi Thử IELTS Starter (Ngày 11-16 tháng 8 năm 2025)</p>
+            <p><em>Lưu ý: Đây là điểm số bài thi thực hành, không phải điểm IELTS chính thức</em></p>
+        </div>
+    </div>
+
+    <script>
+        let { jsPDF } = window.jspdf;
+        
+        async function downloadPDF() {
+            try {
+                const element = document.querySelector('.container');
+                const canvas = await html2canvas(element, {
+                    scale: 2,
+                    useCORS: true,
+                    allowTaint: true,
+                    backgroundColor: '#ffffff'
+                });
+                
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                const imgWidth = 210;
+                const pageHeight = 295;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                let heightLeft = imgHeight;
+                let position = 0;
+                
+                pdf.addImage(canvas, 'JPEG', 0, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+                
+                while (heightLeft >= 0) {
+                    position = heightLeft - imgHeight;
+                    pdf.addPage();
+                    pdf.addImage(canvas, 'JPEG', 0, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight;
+                }
+                
+                pdf.save('Bao_Cao_Tuan_2_Lee_Nam_Hi.pdf');
+                alert('PDF đã được tải xuống thành công!');
+                
+            } catch (error) {
+                console.error('Error generating PDF:', error);
+                alert('Có lỗi khi tạo PDF. Vui lòng thử lại.');
+            }
+        }
+    </script>
+</body>
+</html>

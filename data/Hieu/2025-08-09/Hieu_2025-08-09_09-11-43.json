@@ -1,0 +1,40 @@
+{
+  "id": "me3mco1vi17vu6oftb",
+  "timestamp": "2025-08-09T02:11:43.939Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "timestamp": "2025-08-09T02:11:43.904Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hieu",
+  "answers": {
+    "grammar": {},
+    "reading": {},
+    "listening": {},
+    "writing": {
+      "task1": "",
+      "task2": "",
+      "task3": ""
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {}
+  },
+  "results": {
+    "grammar": 0,
+    "reading": 0,
+    "listening": 0,
+    "writing": 0,
+    "total": 0,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": 0
+  },
+  "timeSpent": "00:39",
+  "testData": {
+    "testId": "IELTS_STARTER_1_1",
+    "testDate": "2025-08-05",
+    "testTitle": "IELTS Starter 1.1 Practice Test"
+  }
+}

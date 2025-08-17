@@ -1,0 +1,111 @@
+{
+  "id": "me3spd3ybwlbe9amexa",
+  "timestamp": "2025-08-09T05:09:33.982Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-08-09T05:09:33.732Z",
+    "submittedBy": "user"
+  },
+  "userName": "Lee Nam Hi",
+  "answers": {
+    "grammar": {
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 3,
+      "5": 0,
+      "6": 3,
+      "7": 1,
+      "8": 2,
+      "9": 2,
+      "10": 0,
+      "11": 1,
+      "12": 3,
+      "13": 0,
+      "14": 0,
+      "15": 2,
+      "16": 1,
+      "17": 0,
+      "18": 3,
+      "19": 1,
+      "20": 0,
+      "21": 0,
+      "22": 3,
+      "23": 1,
+      "24": 0,
+      "25": 1,
+      "26": 1,
+      "27": 0,
+      "28": 1,
+      "29": 0,
+      "30": 0
+    },
+    "reading": {
+      "31": 1,
+      "32": 2,
+      "33": 1,
+      "34": 1,
+      "35": 1,
+      "36": 0,
+      "37": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "41": 1,
+      "42": 0,
+      "43": 1,
+      "44": 2,
+      "45": 1,
+      "46": 2,
+      "47": 2,
+      "48": 3,
+      "49": 1,
+      "50": 2
+    },
+    "listening": {
+      "51": 1,
+      "52": 2,
+      "53": 1,
+      "54": 2,
+      "55": 1,
+      "56": 2,
+      "57": 2,
+      "58": 1,
+      "59": 2,
+      "60": 2
+    },
+    "writing": {
+      "task1": "Dear Manager\nI am writting in conection with request a temporary schedule change for two weeks so I should attend an evening English course which a important for my university curriculum. I will ensure cover my work in the morning free time. I hope get your accept and response soon\nThank you",
+      "task2": "I don’t agree. I belive a print book help develop reading culture, so many literary work should be populared for young people. For example, Nguyễn Nhật Ánh is a writter have a big bookcase, in there, every book is a memory child horizon, just not for children, adulst can reading it",
+      "task3": "The line chart showing the main trends of the number of users of a language-learning app from 2018 to 2025. That is a great development shows the importance of froeign languages had be populared. From 2018 to 2025, the users of a language-learning app develop 11milions, is a big number"
+    },
+    "translatedQuestions": [
+      6,
+      "6",
+      11,
+      "11"
+    ],
+    "translationPenalties": {
+      "question-6": -0.5,
+      "question-11": -0.5
+    }
+  },
+  "results": {
+    "grammar": 12.5,
+    "reading": 18,
+    "listening": 20,
+    "writing": 7.5,
+    "total": 58,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": 0
+  },
+  "timeSpent": "23:42",
+  "testData": {
+    "testId": "IELTS_STARTER_1_1",
+    "testDate": "2025-08-05",
+    "testTitle": "IELTS Starter 1.1 Practice Test"
+  }
+}
