@@ -1,0 +1,122 @@
+{
+  "id": "mei3irvps7zl18tg9bp",
+  "timestamp": "2025-08-19T05:21:08.773Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-08-19T05:21:10.936Z",
+    "submittedBy": "user"
+  },
+  "userName": "Leenamhi",
+  "answers": {
+    "grammar": {
+      "1": 0,
+      "2": 1,
+      "3": 2,
+      "4": 0,
+      "5": 1,
+      "6": 1,
+      "7": 0,
+      "8": 2,
+      "9": 1,
+      "10": 1,
+      "11": 0,
+      "12": 2,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 0,
+      "20": 0,
+      "21": 1,
+      "22": 0,
+      "23": 1,
+      "24": 1,
+      "25": 2,
+      "26": 0,
+      "27": 3,
+      "28": 2,
+      "29": 0,
+      "30": 0
+    },
+    "reading": {
+      "31": 1,
+      "32": 2,
+      "33": 1,
+      "34": 2,
+      "35": 1,
+      "36": 1,
+      "37": 2,
+      "38": 1,
+      "39": 2,
+      "40": 1,
+      "41": 2,
+      "42": 1,
+      "43": 1,
+      "44": 1,
+      "45": 1,
+      "46": 1,
+      "47": 1,
+      "48": 1,
+      "49": 1,
+      "50": 1
+    },
+    "listening": {
+      "51": 1,
+      "52": 2,
+      "53": 2,
+      "54": 1,
+      "55": 1,
+      "56": 0,
+      "57": 1,
+      "58": 2,
+      "59": 1,
+      "60": 2
+    },
+    "writing": {
+      "task1": "Dear Parking Office\nI am writing because my reserved parking space booked for August 19, 2025 at 9:00 AM was cancelled the night before my medical appointment, which caused me stress and difficulty finding another place to park. I kindly request compensation or a guaranteed alternative space in future to avoid such inconvenience\nThank you",
+      "task2": "I agree that public transport should be free in city centres on weekends because it reduces traffic congestion and pollution. For example, when Autria introduced free weekend buses, car usage in the city dropped and local businesses saw more visitors. A possible drawback is the loss of ticket revenue, but this can be balanced by the economic benefits of increased shopping and tourism",
+      "task3": "The chart shows that the air-conditioner used the most energy, starting at 180 kWh in January, peaking at 300 kWh in July, and then going down again. The refrigerator stayed almost the same at about 95–98 kWh each month, while the washing machine was the lowest, between 22 and 28 kWh. Overall, the big changes came from the air-conditioner, which went up a lot in hot summer months because people needed more cooling"
+    },
+    "translatedQuestions": [
+      10,
+      "10",
+      16,
+      "16",
+      22,
+      "22",
+      43,
+      "43",
+      60,
+      "60"
+    ],
+    "translationPenalties": {
+      "question-10": -0.5,
+      "question-16": -0.5,
+      "question-22": -0.5,
+      "question-43": -0.5,
+      "transcript-1": -1,
+      "transcript-2": -1,
+      "question-60": -0.5
+    }
+  },
+  "results": {
+    "grammar": 20.5,
+    "reading": 19.5,
+    "listening": 7.5,
+    "writing": 7.5,
+    "total": 55,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -1
+  },
+  "timeSpent": "28:16",
+  "testData": {
+    "testId": "IELTS_STARTER_2_0_G",
+    "testDate": "2025-08-19",
+    "testTitle": "IELTS Starter 2.0 Practice Test (EN–VI) — Paper G"
+  }
+}
