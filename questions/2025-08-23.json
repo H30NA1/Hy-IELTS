@@ -1,0 +1,605 @@
+{
+    "testId": "IELTS_STARTER_2_0_K",
+    "testDate": "2025-08-23",
+    "testTitle": "IELTS Starter 2.0 Practice Test (EN–VI) — Paper K",
+    "totalQuestions": 50,
+    "sections": {
+      "grammar": {
+        "title": "Section A: Grammar & Vocabulary",
+        "titleVi": "Phần A: Ngữ pháp & Từ vựng",
+        "description": "30 multiple-choice questions · Choose ONE answer (A, B, C or D)",
+        "descriptionVi": "30 câu trắc nghiệm · Chọn MỘT đáp án (A, B, C hoặc D)",
+        "totalQuestions": 30,
+        "questions": [
+          {
+            "id": 1,
+            "question": "Not until the final audit ___ the discrepancy become obvious.",
+            "questionVi": "Mãi đến cuộc kiểm toán cuối cùng ___ sai lệch mới lộ rõ.",
+            "options": ["did", "had", "did we see", "we saw"],
+            "optionsVi": ["đã", "đã", "chúng tôi mới thấy (đảo ngữ)", "chúng tôi thấy"],
+            "correct": 2
+          },
+          {
+            "id": 2,
+            "question": "It’s high time we ___ the onboarding materials.",
+            "questionVi": "Đã đến lúc chúng ta ___ tài liệu hướng dẫn nhân viên mới.",
+            "options": ["review", "reviewed", "have reviewed", "would review"],
+            "optionsVi": ["xem lại", "đã xem lại (QK cho lời khuyên hiện tại)", "đã xem lại", "sẽ xem lại"],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "They insisted that access ___ for all candidates.",
+            "questionVi": "Họ khăng khăng yêu cầu quyền truy cập ___ cho tất cả ứng viên.",
+            "options": ["granted", "be granted", "is granted", "to be granted"],
+            "optionsVi": ["được cấp", "được cấp (giả định)", "được cấp (HTĐ)", "để được cấp"],
+            "correct": 1
+          },
+          {
+            "id": 4,
+            "question": "No sooner ___ the doors than the queue moved inside.",
+            "questionVi": "Vừa mới ___ cửa thì hàng người di chuyển vào trong.",
+            "options": ["we opened", "did we open", "had we opened", "we had opened"],
+            "optionsVi": ["chúng tôi mở", "chúng tôi mở (đảo ngữ sai thì)", "chúng tôi vừa mở (đảo ngữ QKHT)", "chúng tôi đã mở"],
+            "correct": 2
+          },
+          {
+            "id": 5,
+            "question": "By the time we land, the paperwork ___ by operations.",
+            "questionVi": "Khi chúng ta hạ cánh, giấy tờ sẽ ___ bởi bộ phận vận hành.",
+            "options": ["will process", "will have processed", "will have been processed", "is processing"],
+            "optionsVi": ["sẽ xử lý", "sẽ đã xử lý", "sẽ đã được xử lý", "đang xử lý"],
+            "correct": 2
+          },
+          {
+            "id": 6,
+            "question": "Were you to decline the offer, we ___ approach the next candidate.",
+            "questionVi": "Nếu bạn từ chối đề nghị, chúng tôi ___ liên hệ ứng viên tiếp theo.",
+            "options": ["will", "would", "would have", "had to"],
+            "optionsVi": ["sẽ", "sẽ", "đã có thể", "đã phải"],
+            "correct": 1
+          },
+          {
+            "id": 7,
+            "question": "I’d rather you ___ email the client until we confirm pricing.",
+            "questionVi": "Tôi muốn bạn ___ email cho khách cho đến khi xác nhận giá.",
+            "options": ["don’t", "didn’t", "wouldn’t", "hadn’t"],
+            "optionsVi": ["đừng", "đừng (QK giả định)", "đừng", "đã không"],
+            "correct": 1
+          },
+          {
+            "id": 8,
+            "question": "Provided (that) he ___ on time, the briefing will begin at nine.",
+            "questionVi": "Miễn là anh ấy ___ đúng giờ, buổi phổ biến sẽ bắt đầu lúc 9 giờ.",
+            "options": ["arrives", "arrive", "arrived", "has arrived"],
+            "optionsVi": ["đến", "đến", "đã đến", "đã đến"],
+            "correct": 0
+          },
+          {
+            "id": 9,
+            "question": "Scarcely ___ down when the fire alarm sounded.",
+            "questionVi": "Vừa mới ___ ngồi xuống thì chuông báo cháy vang lên.",
+            "options": ["I sat", "had I sat", "did I sit", "I had sat"],
+            "optionsVi": ["tôi ngồi", "tôi vừa ngồi (đảo ngữ QKHT)", "tôi ngồi (đảo ngữ HTĐ)", "tôi đã ngồi"],
+            "correct": 1
+          },
+          {
+            "id": 10,
+            "question": "Little ___ the board know about the outage risk.",
+            "questionVi": "Hầu như hội đồng ___ biết về rủi ro mất điện.",
+            "options": ["do", "does", "did", "has"],
+            "optionsVi": ["có", "có (ngôi 3S)", "đã", "đã"],
+            "correct": 1
+          },
+          {
+            "id": 11,
+            "question": "Under no circumstances ___ customer data be shared externally.",
+            "questionVi": "Tuyệt đối không ___ chia sẻ dữ liệu khách hàng ra bên ngoài.",
+            "options": ["should", "should the", "should be", "should any"],
+            "optionsVi": ["nên", "nên (the?)", "nên được", "bất kỳ nên"],
+            "correct": 3
+          },
+          {
+            "id": 12,
+            "question": "By next March, we ___ in the new office for eight months.",
+            "questionVi": "Đến tháng Ba năm sau, chúng tôi sẽ ___ ở văn phòng mới tám tháng.",
+            "options": ["will work", "will have worked", "will have been working", "have worked"],
+            "optionsVi": ["sẽ làm việc", "sẽ đã làm việc", "sẽ đã làm việc liên tục", "đã làm việc"],
+            "correct": 2
+          },
+          {
+            "id": 13,
+            "question": "So severe ___ that the event was moved online.",
+            "questionVi": "___ nghiêm trọng đến mức sự kiện chuyển sang trực tuyến.",
+            "options": ["the storm was", "was the storm", "it was the storm", "the storm it was"],
+            "optionsVi": ["cơn bão đã", "cơn bão đã (đảo ngữ)", "đó là cơn bão", "cơn bão đó"],
+            "correct": 1
+          },
+          {
+            "id": 14,
+            "question": "She had the presentation ___ professionally.",
+            "questionVi": "Cô ấy đã cho bài thuyết trình được ___ một cách chuyên nghiệp.",
+            "options": ["design", "designed", "to design", "designing"],
+            "optionsVi": ["thiết kế", "thiết kế (bị động)", "để thiết kế", "việc thiết kế"],
+            "correct": 1
+          },
+          {
+            "id": 15,
+            "question": "No matter how ___ the task seems, break it into steps.",
+            "questionVi": "Dù nhiệm vụ có ___ đến đâu, hãy chia thành các bước.",
+            "options": ["overwhelming", "overwhelmed", "overwhelm", "overwhelmingly"],
+            "optionsVi": ["quá sức", "bị quá sức", "làm quá sức", "một cách quá mức"],
+            "correct": 0
+          },
+          {
+            "id": 16,
+            "question": "Only after reviewing the logs ___ the root cause.",
+            "questionVi": "Chỉ sau khi xem nhật ký chúng tôi mới ___ nguyên nhân gốc.",
+            "options": ["we found", "did we find", "have we found", "we have found"],
+            "optionsVi": ["tìm ra", "mới tìm ra (đảo ngữ)", "đã tìm ra", "chúng tôi đã tìm ra"],
+            "correct": 1
+          },
+          {
+            "id": 17,
+            "question": "I wish it ___ easier to reschedule flights.",
+            "questionVi": "Ước gì việc đổi lịch bay ___ dễ hơn.",
+            "options": ["is", "were", "would be", "has been"],
+            "optionsVi": ["là", "là (giả định)", "sẽ là", "đã là"],
+            "correct": 1
+          },
+          {
+            "id": 18,
+            "question": "The more feedback you gather, the ___ your revisions.",
+            "questionVi": "Bạn thu thập càng nhiều phản hồi, bản chỉnh sửa càng ___.",
+            "options": ["accurate", "more accurate", "most accurate", "the most accurate"],
+            "optionsVi": ["chính xác", "chính xác hơn", "chính xác nhất", "chính xác nhất"],
+            "correct": 1
+          },
+          {
+            "id": 19,
+            "question": "Barely ___ the survey than the first 100 responses arrived.",
+            "questionVi": "Vừa mới ___ khảo sát thì 100 phản hồi đầu tiên đã đến.",
+            "options": ["we launched", "did we launch", "had we launched", "we had launched"],
+            "optionsVi": ["chúng tôi mở", "chúng tôi mở (đảo ngữ HTĐ)", "chúng tôi vừa mở (đảo ngữ QKHT)", "chúng tôi đã mở"],
+            "correct": 2
+          },
+          {
+            "id": 20,
+            "question": "Had I known the venue changed, I ___ you sooner.",
+            "questionVi": "Nếu tôi biết địa điểm đã đổi, tôi ___ bạn sớm hơn.",
+            "options": ["would call", "will have called", "would have called", "had called"],
+            "optionsVi": ["sẽ gọi", "sẽ đã gọi", "đã có thể gọi", "đã gọi"],
+            "correct": 2
+          },
+          {
+            "id": 21,
+            "question": "As long as the seals ___ intact, the shipment is accepted.",
+            "questionVi": "Miễn là niêm phong ___ nguyên vẹn, lô hàng được chấp nhận.",
+            "options": ["remain", "remains", "remaining", "remained"],
+            "optionsVi": ["giữ", "giữ (ngôi 3S)", "đang giữ", "đã giữ"],
+            "correct": 0
+          },
+          {
+            "id": 22,
+            "question": "Rarely ___ such a concise abstract from first-year students.",
+            "questionVi": "Hiếm khi chúng tôi ___ bản tóm tắt súc tích như vậy từ sinh viên năm nhất.",
+            "options": ["we receive", "receive we", "do we receive", "we have received"],
+            "optionsVi": ["nhận", "nhận (đảo sai)", "nhận (đảo đúng)", "đã nhận"],
+            "correct": 2
+          },
+          {
+            "id": 23,
+            "question": "By 2030, urban emissions ___ by at least 30 percent if the plan holds.",
+            "questionVi": "Đến 2030, khí thải đô thị ___ ít nhất 30% nếu kế hoạch đúng.",
+            "options": ["fall", "will fall", "will have fallen", "have fallen"],
+            "optionsVi": ["giảm", "sẽ giảm", "sẽ đã giảm", "đã giảm"],
+            "correct": 2
+          },
+          {
+            "id": 24,
+            "question": "There is too ___ bureaucracy to approve small grants quickly.",
+            "questionVi": "Có quá ___ thủ tục để duyệt các khoản tài trợ nhỏ nhanh chóng.",
+            "options": ["many", "much", "few", "little"],
+            "optionsVi": ["nhiều (đếm được)", "nhiều (không đếm được)", "ít (đếm được)", "ít (không đếm được)"],
+            "correct": 1
+          },
+          {
+            "id": 25,
+            "question": "But for your prompt message, we ___ the deadline.",
+            "questionVi": "Nếu không có tin nhắn kịp thời của bạn, chúng tôi ___ hạn chót.",
+            "options": ["miss", "missed", "would miss", "would have missed"],
+            "optionsVi": ["lỡ", "đã lỡ", "sẽ lỡ", "đã có thể lỡ"],
+            "correct": 3
+          },
+          {
+            "id": 26,
+            "question": "He suggested that we ___ the agenda to three items.",
+            "questionVi": "Anh ấy đề nghị chúng ta ___ chương trình nghị sự còn ba mục.",
+            "options": ["limit", "limited", "to limit", "will limit"],
+            "optionsVi": ["giới hạn", "đã giới hạn", "để giới hạn", "sẽ giới hạn"],
+            "correct": 0
+          },
+          {
+            "id": 27,
+            "question": "Difficult though it ___, remote coordination saved time.",
+            "questionVi": "Dù ___ khó, phối hợp từ xa đã tiết kiệm thời gian.",
+            "options": ["seems", "seemed", "had seemed", "is seeming"],
+            "optionsVi": ["có vẻ", "đã có vẻ", "đã có vẻ", "đang có vẻ"],
+            "correct": 1
+          },
+          {
+            "id": 28,
+            "question": "Only by documenting assumptions ___ prevent scope creep.",
+            "questionVi": "Chỉ bằng cách ghi lại giả định chúng ta mới ___ tránh trượt phạm vi.",
+            "options": ["we can", "can we", "we could", "are we able to"],
+            "optionsVi": ["có thể", "mới có thể (đảo ngữ)", "có thể", "có thể"],
+            "correct": 1
+          },
+          {
+            "id": 29,
+            "question": "Lest anyone ___ the protocol, a checklist will be posted.",
+            "questionVi": "Kẻo ai đó ___ quy trình, sẽ đăng danh sách kiểm.",
+            "options": ["forget", "forgets", "forgot", "should forgetting"],
+            "optionsVi": ["quên", "quên (ngôi 3S)", "đã quên", "nên đang quên"],
+            "correct": 0
+          },
+          {
+            "id": 30,
+            "question": "By the time the gates open, the crowd ___ around the plaza.",
+            "questionVi": "Khi cổng mở, đám đông sẽ ___ quanh quảng trường.",
+            "options": ["will gather", "will have gathered", "is gathering", "has gathered"],
+            "optionsVi": ["sẽ tụ", "sẽ đã tụ", "đang tụ", "đã tụ"],
+            "correct": 1
+          }
+        ]
+      },
+      "reading": {
+        "title": "Section B: Reading Comprehension",
+        "titleVi": "Phần B: Đọc hiểu",
+        "description": "20 multiple-choice questions · Read passages and choose the best answer",
+        "descriptionVi": "20 câu trắc nghiệm · Đọc đoạn văn và chọn đáp án đúng",
+        "totalQuestions": 20,
+        "passages": [
+          {
+            "id": 1,
+            "title": "Passage 1 – Community Sports Complex Overhaul",
+            "content": "After a survey of 1,200 residents, the Riverside Sports Complex replaced its pay-per-visit model with tiered memberships and extended weekday hours. The gym now opens from 6 a.m. to 10 p.m. Monday through Friday, and 8 a.m. to 8 p.m. on weekends. A low-cost ‘Off-Peak’ tier allows access before 3 p.m., while ‘Plus’ members can book courts seven days in advance instead of three. Within two months, total visits rose 22 percent and injuries during peak hours fell by 17 percent after staff added a five-minute warm-up briefing to group classes. To curb crowding, the complex capped basketball court bookings at 90 minutes and installed a live-occupancy dashboard. A maintenance closure on two Tuesdays delayed the launch of an aquatics class, but a pop-up lane-swim extended hours until 10:30 p.m. on those days. If monthly membership reaches 4,000 (currently 3,600), the director plans to open a satellite studio on the east side.",
+            "contentVi": "Sau khảo sát 1.200 cư dân, Tổ hợp Thể thao Riverside thay mô hình trả theo lượt bằng hội viên theo bậc và kéo dài giờ ngày thường. Phòng gym nay mở 6:00–22:00 từ Thứ Hai đến Thứ Sáu và 8:00–20:00 cuối tuần. Gói ‘Giờ thấp điểm’ giá rẻ cho phép vào trước 15:00, còn gói ‘Plus’ có thể đặt sân trước 7 ngày thay vì 3. Trong hai tháng, tổng lượt ghé tăng 22% và chấn thương giờ cao điểm giảm 17% sau khi nhân viên thêm 5 phút khởi động vào lớp nhóm. Để hạn chế quá tải, tổ hợp giới hạn đặt sân bóng rổ 90 phút và lắp bảng hiển thị mật độ theo thời gian thực. Việc bảo trì vào hai Thứ Ba làm chậm khai giảng lớp bơi, nhưng dịch vụ bơi làn mở rộng đến 22:30 trong những ngày đó. Nếu số hội viên hàng tháng đạt 4.000 (hiện 3.600), giám đốc dự định mở studio vệ tinh ở phía đông.",
+            "questions": [
+              {
+                "id": 31,
+                "question": "What are the new weekday hours?",
+                "questionVi": "Giờ mở cửa ngày thường mới là gì?",
+                "options": ["5 a.m.–11 p.m.", "6 a.m.–10 p.m.", "7 a.m.–9 p.m.", "8 a.m.–8 p.m."],
+                "optionsVi": ["5:00–23:00", "6:00–22:00", "7:00–21:00", "8:00–20:00"],
+                "correct": 1
+              },
+              {
+                "id": 32,
+                "question": "How far in advance can ‘Plus’ members book courts?",
+                "questionVi": "Hội viên ‘Plus’ có thể đặt sân trước bao lâu?",
+                "options": ["3 days", "5 days", "7 days", "10 days"],
+                "optionsVi": ["3 ngày", "5 ngày", "7 ngày", "10 ngày"],
+                "correct": 2
+              },
+              {
+                "id": 33,
+                "question": "Total visits changed by:",
+                "questionVi": "Tổng lượt ghé thay đổi:",
+                "options": ["+12%", "+17%", "+22%", "+28%"],
+                "optionsVi": ["+12%", "+17%", "+22%", "+28%"],
+                "correct": 2
+              },
+              {
+                "id": 34,
+                "question": "Injuries during peak hours fell after adding:",
+                "questionVi": "Chấn thương giờ cao điểm giảm sau khi thêm:",
+                "options": ["New flooring", "Five-minute warm-up briefing", "More staff", "Lower prices"],
+                "optionsVi": ["Sàn mới", "Phần khởi động 5 phút", "Thêm nhân viên", "Giảm giá"],
+                "correct": 1
+              },
+              {
+                "id": 35,
+                "question": "How long is each basketball booking capped at?",
+                "questionVi": "Mỗi lượt đặt sân bóng rổ bị giới hạn bao lâu?",
+                "options": ["60 minutes", "75 minutes", "90 minutes", "120 minutes"],
+                "optionsVi": ["60 phút", "75 phút", "90 phút", "120 phút"],
+                "correct": 2
+              },
+              {
+                "id": 36,
+                "question": "What tool helps manage crowding?",
+                "questionVi": "Công cụ nào giúp quản lý quá tải?",
+                "options": ["Ticket scanners", "Live-occupancy dashboard", "Paper sign-in sheets", "Turnstiles"],
+                "optionsVi": ["Máy quét vé", "Bảng mật độ thời gian thực", "Phiếu điểm danh giấy", "Cổng xoay"],
+                "correct": 1
+              },
+              {
+                "id": 37,
+                "question": "Which issue delayed the aquatics class?",
+                "questionVi": "Vấn đề nào làm chậm lớp bơi?",
+                "options": ["Instructor illness", "Maintenance closures on two Tuesdays", "Low enrollment", "Equipment shortage"],
+                "optionsVi": ["Huấn luyện viên ốm", "Bảo trì vào hai Thứ Ba", "Ít người đăng ký", "Thiếu thiết bị"],
+                "correct": 1
+              },
+              {
+                "id": 38,
+                "question": "What temporary change occurred on maintenance days?",
+                "questionVi": "Thay đổi tạm thời nào diễn ra vào ngày bảo trì?",
+                "options": ["Free entry", "Extended lane-swim hours to 10:30 p.m.", "Court bookings removed", "No group classes"],
+                "optionsVi": ["Vào cửa miễn phí", "Bơi làn kéo dài đến 22:30", "Hủy đặt sân", "Không có lớp nhóm"],
+                "correct": 1
+              },
+              {
+                "id": 39,
+                "question": "Current monthly membership is:",
+                "questionVi": "Số hội viên hàng tháng hiện tại là:",
+                "options": ["3,200", "3,400", "3,600", "4,000"],
+                "optionsVi": ["3.200", "3.400", "3.600", "4.000"],
+                "correct": 2
+              },
+              {
+                "id": 40,
+                "question": "What triggers opening a satellite studio?",
+                "questionVi": "Điều gì kích hoạt mở studio vệ tinh?",
+                "options": ["Visits +20%", "Injuries −15%", "Membership reaches 4,000", "Court bookings full"],
+                "optionsVi": ["Lượt ghé +20%", "Chấn thương −15%", "Hội viên đạt 4.000", "Đặt sân kín"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Passage 2 – River Bus Service Trial",
+            "content": "To relieve congestion on the east-west corridor, the city launched a six-week river bus trial with five piers. Boats depart every 12 minutes at rush hour and every 20 minutes off-peak. The average journey between Dock A and Dock E is 24 minutes, ten minutes faster than the same trip by bus during evening traffic. Fares match the metro, and contactless payment speeds boarding. During week two, strong winds forced a brief suspension; otherwise, on-time performance averaged 93 percent. Ridership grew from 1,100 to 1,560 daily trips by week six, aided by a pop-up bike park at Dock C and a shaded waiting area at Dock D. If daily demand exceeds 1,800 trips on five consecutive weekdays, the operator will add a sixth boat and extend the service to 10 p.m.",
+            "contentVi": "Để giảm ùn tắc trên trục đông–tây, thành phố triển khai thử nghiệm tàu buýt đường sông trong 6 tuần với 5 bến. Thuyền rời bến mỗi 12 phút giờ cao điểm và mỗi 20 phút giờ thấp điểm. Hành trình trung bình giữa Bến A và Bến E là 24 phút, nhanh hơn 10 phút so với xe buýt vào giờ chiều. Giá vé bằng tàu điện ngầm, thanh toán không tiếp xúc giúp lên thuyền nhanh. Tuần thứ hai gió mạnh khiến tạm dừng ngắn; ngoài ra, đúng giờ trung bình đạt 93%. Lượng khách tăng từ 1.100 lên 1.560 chuyến/ngày đến tuần thứ sáu, nhờ bãi đỗ xe đạp tạm tại Bến C và khu chờ có mái tại Bến D. Nếu nhu cầu hằng ngày vượt 1.800 chuyến trong 5 ngày làm việc liên tiếp, nhà vận hành sẽ bổ sung thuyền thứ sáu và kéo dài phục vụ đến 22:00.",
+            "questions": [
+              {
+                "id": 41,
+                "question": "Rush-hour frequency is every:",
+                "questionVi": "Tần suất giờ cao điểm là mỗi:",
+                "options": ["8 minutes", "10 minutes", "12 minutes", "15 minutes"],
+                "optionsVi": ["8 phút", "10 phút", "12 phút", "15 phút"],
+                "correct": 2
+              },
+              {
+                "id": 42,
+                "question": "Average Dock A–E journey time is:",
+                "questionVi": "Thời gian đi trung bình từ Bến A đến E là:",
+                "options": ["18 minutes", "20 minutes", "24 minutes", "30 minutes"],
+                "optionsVi": ["18 phút", "20 phút", "24 phút", "30 phút"],
+                "correct": 2
+              },
+              {
+                "id": 43,
+                "question": "The river bus is ___ than the evening bus on the same route.",
+                "questionVi": "Tàu buýt sông ___ so với xe buýt chiều tối trên cùng tuyến.",
+                "options": ["10 minutes faster", "5 minutes faster", "Same speed", "10 minutes slower"],
+                "optionsVi": ["nhanh hơn 10 phút", "nhanh hơn 5 phút", "tốc độ như nhau", "chậm hơn 10 phút"],
+                "correct": 0
+              },
+              {
+                "id": 44,
+                "question": "On-time performance averaged:",
+                "questionVi": "Tỷ lệ đúng giờ trung bình là:",
+                "options": ["88%", "90%", "93%", "96%"],
+                "optionsVi": ["88%", "90%", "93%", "96%"],
+                "correct": 2
+              },
+              {
+                "id": 45,
+                "question": "Ridership by week six reached:",
+                "questionVi": "Đến tuần thứ sáu, lượng khách đạt:",
+                "options": ["1,300 trips/day", "1,560 trips/day", "1,700 trips/day", "1,800 trips/day"],
+                "optionsVi": ["1.300 chuyến/ngày", "1.560 chuyến/ngày", "1.700 chuyến/ngày", "1.800 chuyến/ngày"],
+                "correct": 1
+              },
+              {
+                "id": 46,
+                "question": "Which infrastructure supported growth?",
+                "questionVi": "Hạ tầng nào hỗ trợ tăng trưởng?",
+                "options": ["New ticket office at Dock A", "Bike park at Dock C", "Parking garage at Dock E", "Taxi stand at Dock B"],
+                "optionsVi": ["Quầy vé mới tại Bến A", "Bãi đỗ xe đạp tại Bến C", "Garage tại Bến E", "Bến taxi tại Bến B"],
+                "correct": 1
+              },
+              {
+                "id": 47,
+                "question": "Service was briefly suspended due to:",
+                "questionVi": "Dịch vụ tạm dừng ngắn vì:",
+                "options": ["Fog", "Rain", "Strong winds", "Mechanical fault"],
+                "optionsVi": ["Sương mù", "Mưa", "Gió mạnh", "Lỗi kỹ thuật"],
+                "correct": 2
+              },
+              {
+                "id": 48,
+                "question": "When will a sixth boat be added?",
+                "questionVi": "Khi nào sẽ bổ sung thuyền thứ sáu?",
+                "options": ["If daily demand exceeds 1,800 trips for five weekdays", "If on-time falls below 90%", "If average trip exceeds 30 minutes", "If fares rise"],
+                "optionsVi": ["Nếu nhu cầu vượt 1.800 chuyến trong 5 ngày làm việc", "Nếu đúng giờ dưới 90%", "Nếu hành trình trung bình vượt 30 phút", "Nếu giá vé tăng"],
+                "correct": 0
+              },
+              {
+                "id": 49,
+                "question": "What payment method speeds boarding?",
+                "questionVi": "Phương thức thanh toán nào giúp lên thuyền nhanh?",
+                "options": ["Cash", "Smartcards only", "Contactless payment", "Paper tokens"],
+                "optionsVi": ["Tiền mặt", "Chỉ thẻ thông minh", "Thanh toán không tiếp xúc", "Phiếu giấy"],
+                "correct": 2
+              },
+              {
+                "id": 50,
+                "question": "Service hours will extend to:",
+                "questionVi": "Giờ phục vụ sẽ kéo dài đến:",
+                "options": ["9 p.m.", "10 p.m.", "11 p.m.", "Midnight"],
+                "optionsVi": ["21:00", "22:00", "23:00", "0:00"],
+                "correct": 1
+              }
+            ]
+          }
+        ]
+      },
+      "listening": {
+        "title": "Section C: Listening Comprehension",
+        "titleVi": "Phần C: Nghe hiểu",
+        "description": "10 multiple-choice questions · Listen to audio scripts and choose the best answer",
+        "descriptionVi": "10 câu trắc nghiệm · Nghe đoạn băng và chọn đáp án đúng",
+        "totalQuestions": 10,
+        "scripts": [
+          {
+            "id": 1,
+            "title": "Script 1 – Museum Timed Entry Update",
+            "content": "Attention visitors: timed entry for the ‘Ancient Rivers’ exhibit has been adjusted. Tickets for the 11:00 a.m. slot will now be scanned at Gate 3 instead of Gate 2. Please arrive ten minutes early. Large backpacks must be stored in lockers near the café, and photography is allowed without flash. The curator’s talk begins at 11:20 in Theater B.",
+            "contentVi": "Kính thưa quý khách: khung giờ vào tham quan triển lãm ‘Dòng Sông Cổ’ được điều chỉnh. Vé khung 11:00 sáng sẽ quét tại Cổng 3 thay vì Cổng 2. Vui lòng đến sớm 10 phút. Ba lô lớn phải gửi ở tủ gần quán cà phê, và được chụp ảnh không dùng flash. Buổi nói chuyện của giám tuyển bắt đầu lúc 11:20 tại Rạp B.",
+            "questions": [
+              {
+                "id": 51,
+                "question": "Which gate will scan 11:00 a.m. tickets?",
+                "questionVi": "Cổng nào quét vé khung 11:00?",
+                "options": ["Gate 1", "Gate 2", "Gate 3", "Gate 4"],
+                "optionsVi": ["Cổng 1", "Cổng 2", "Cổng 3", "Cổng 4"],
+                "correct": 2
+              },
+              {
+                "id": 52,
+                "question": "How early should visitors arrive?",
+                "questionVi": "Khách nên đến sớm bao lâu?",
+                "options": ["5 minutes", "10 minutes", "15 minutes", "20 minutes"],
+                "optionsVi": ["5 phút", "10 phút", "15 phút", "20 phút"],
+                "correct": 1
+              },
+              {
+                "id": 53,
+                "question": "What must be stored in lockers?",
+                "questionVi": "Vật gì phải gửi ở tủ?",
+                "options": ["Cameras", "Large backpacks", "Coats", "Strollers"],
+                "optionsVi": ["Máy ảnh", "Ba lô lớn", "Áo khoác", "Xe đẩy"],
+                "correct": 1
+              },
+              {
+                "id": 54,
+                "question": "Is photography allowed?",
+                "questionVi": "Có được chụp ảnh không?",
+                "options": ["No", "Yes, with flash", "Yes, without flash", "Only video allowed"],
+                "optionsVi": ["Không", "Có, dùng flash", "Có, không flash", "Chỉ quay video"],
+                "correct": 2
+              },
+              {
+                "id": 55,
+                "question": "When does the curator’s talk start?",
+                "questionVi": "Buổi nói chuyện của giám tuyển bắt đầu lúc nào?",
+                "options": ["11:00", "11:10", "11:20", "11:30"],
+                "optionsVi": ["11:00", "11:10", "11:20", "11:30"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Script 2 – Pharmacy Early Closure",
+            "content": "Good evening. Due to inventory counting, Maple Street Pharmacy will close at 7 p.m. tonight, one hour earlier than usual. Prescription refills can still be requested online; select ‘curbside pickup’ if you need your medication before 8 p.m. tomorrow. For urgent queries, call 012-445-7789 and press 2 to reach the on-call pharmacist.",
+            "contentVi": "Xin chào buổi tối. Do kiểm kê hàng, Nhà thuốc Maple Street sẽ đóng cửa lúc 19:00 tối nay, sớm hơn thường lệ một giờ. Quý khách vẫn có thể yêu cầu cấp thuốc trực tuyến; chọn ‘nhận tại lề đường’ nếu cần thuốc trước 20:00 ngày mai. Với vấn đề khẩn, gọi 012-445-7789 và bấm phím 2 để gặp dược sĩ trực.",
+            "questions": [
+              {
+                "id": 56,
+                "question": "What time will the pharmacy close?",
+                "questionVi": "Nhà thuốc sẽ đóng lúc mấy giờ?",
+                "options": ["6 p.m.", "7 p.m.", "8 p.m.", "9 p.m."],
+                "optionsVi": ["18:00", "19:00", "20:00", "21:00"],
+                "correct": 1
+              },
+              {
+                "id": 57,
+                "question": "How much earlier is this than usual?",
+                "questionVi": "Sớm hơn thường lệ bao lâu?",
+                "options": ["30 minutes", "1 hour", "90 minutes", "2 hours"],
+                "optionsVi": ["30 phút", "1 giờ", "90 phút", "2 giờ"],
+                "correct": 1
+              },
+              {
+                "id": 58,
+                "question": "How can refills be requested?",
+                "questionVi": "Có thể yêu cầu cấp thuốc bằng cách nào?",
+                "options": ["Phone only", "In person only", "Online", "Fax"],
+                "optionsVi": ["Chỉ gọi điện", "Chỉ trực tiếp", "Trực tuyến", "Fax"],
+                "correct": 2
+              },
+              {
+                "id": 59,
+                "question": "Which option helps if you need medication before 8 p.m. tomorrow?",
+                "questionVi": "Tuỳ chọn nào hữu ích nếu cần thuốc trước 20:00 ngày mai?",
+                "options": ["Overnight mail", "Curbside pickup", "Home delivery", "Locker pickup"],
+                "optionsVi": ["Gửi nhanh qua đêm", "Nhận tại lề đường", "Giao tận nhà", "Nhận tại tủ khoá"],
+                "correct": 1
+              },
+              {
+                "id": 60,
+                "question": "Which number and menu option reach the on-call pharmacist?",
+                "questionVi": "Gọi số nào và bấm phím mấy để gặp dược sĩ trực?",
+                "options": ["012-445-7789, press 1", "012-445-7789, press 2", "012-445-7889, press 2", "012-455-7789, press 2"],
+                "optionsVi": ["012-445-7789, bấm 1", "012-445-7789, bấm 2", "012-445-7889, bấm 2", "012-455-7789, bấm 2"],
+                "correct": 1
+              }
+            ]
+          }
+        ]
+      },
+      "writing": {
+        "title": "Section D: Writing",
+        "titleVi": "Phần D: Viết",
+        "description": "3 writing tasks · Suggested timing: 65–90 minutes total",
+        "descriptionVi": "3 bài viết · Gợi ý thời gian: 65–90 phút",
+        "totalTasks": 3,
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Task 1 (170–190 words)",
+            "titleVi": "Bài 1 (170–190 từ)",
+            "instruction": "Your courier delivered a laptop to the wrong address and the item shows as ‘signed for’. Write a formal email to customer support explaining the timeline, evidence (door camera screenshot, tracking events), and request a replacement or refund.",
+            "instructionVi": "Hãng chuyển phát giao nhầm laptop đến địa chỉ khác và hệ thống hiển thị ‘đã ký nhận’. Hãy viết email trang trọng cho bộ phận hỗ trợ, trình bày dòng thời gian, bằng chứng (ảnh camera cửa, lịch sử tracking) và yêu cầu đổi hàng hoặc hoàn tiền.",
+            "wordLimit": { "min": 170, "max": 190 },
+            "type": "formal_email",
+            "topic": "misdelivery_claim"
+          },
+          {
+            "id": 2,
+            "title": "Task 2 (240–270 words)",
+            "titleVi": "Bài 2 (240–270 từ)",
+            "instruction": "“Universities should limit reliance on recorded lectures and require more interactive sessions.” To what extent do you agree or disagree? Present one main argument, an example, and briefly acknowledge a counter-argument.",
+            "instructionVi": "“Các trường đại học nên hạn chế phụ thuộc vào bài giảng thu sẵn và yêu cầu nhiều buổi tương tác hơn.” Bạn đồng ý đến mức nào? Nêu một luận điểm chính, một ví dụ và phản biện ngắn một ý kiến đối lập.",
+            "wordLimit": { "min": 240, "max": 270 },
+            "type": "opinion_essay",
+            "topic": "interactive_learning"
+          },
+          {
+            "id": 3,
+            "title": "Task 3 (240–270 words)",
+            "titleVi": "Bài 3 (240–270 từ)",
+            "instruction": "A table shows two fitness apps over one quarter: App X — DAU 42k→47k; 7-day retention 34%→38%; average session 12→14 min; ad spend $18k→$22k. App Y — DAU 39k→45k; 7-day retention 31%→35%; average session 11→13 min; ad spend $20k→$20k. Summarise trends, compare efficiency, and suggest one strategic change for each app.",
+            "instructionVi": "Bảng dữ liệu hai ứng dụng thể dục trong một quý: Ứng dụng X — DAU 42k→47k; giữ chân 7 ngày 34%→38%; phiên dùng TB 12→14 phút; chi quảng cáo $18k→$22k. Ứng dụng Y — DAU 39k→45k; giữ chân 31%→35%; phiên TB 11→13 phút; chi quảng cáo $20k→$20k. Hãy tóm tắt xu hướng, so sánh hiệu quả và đề xuất một thay đổi chiến lược cho mỗi ứng dụng.",
+            "wordLimit": { "min": 240, "max": 270 },
+            "type": "data_description",
+            "topic": "fitness_app_metrics",
+            "chartData": {
+              "title": "Quarterly Fitness App Metrics",
+              "titleVi": "Chỉ số ứng dụng thể dục theo quý",
+              "data": [
+                { "metric": "DAU (X→Y)", "appX_start": 42000, "appX_end": 47000, "appY_start": 39000, "appY_end": 45000 },
+                { "metric": "7-day retention % (X→Y)", "appX_start": 34, "appX_end": 38, "appY_start": 31, "appY_end": 35 },
+                { "metric": "Avg session (min) (X→Y)", "appX_start": 12, "appX_end": 14, "appY_start": 11, "appY_end": 13 },
+                { "metric": "Ad spend USD (X→Y)", "appX_start": 18000, "appX_end": 22000, "appY_start": 20000, "appY_end": 20000 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "createdBy": "IELTS Practice System",
+      "version": "2.0.10",
+      "lastUpdated": "2025-08-23",
+      "difficulty": "intermediate",
+      "estimatedTime": "75–90 minutes",
+      "tags": ["grammar", "vocabulary", "reading", "listening", "writing", "ielts", "practice", "level2.0", "bilingual"]
+    }
+  }
+  
