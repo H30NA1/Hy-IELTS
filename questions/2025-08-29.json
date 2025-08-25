@@ -1,0 +1,603 @@
+{
+  "testId": "IELTS_STARTER_2_8_A",
+  "testDate": "2025-08-29",
+  "testTitle": "IELTS Starter 2.8 Practice Test (EN–VI) — Paper A",
+  "totalQuestions": 50,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary",
+      "titleVi": "Phần A: Ngữ pháp & Từ vựng",
+      "description": "30 multiple-choice questions · Choose ONE answer (A, B, C or D)",
+      "descriptionVi": "30 câu trắc nghiệm · Chọn MỘT đáp án (A, B, C hoặc D)",
+      "totalQuestions": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Hardly ___ we finished the audit when a new request arrived.",
+          "questionVi": "Vừa mới ___ xong cuộc kiểm toán thì có yêu cầu mới.",
+          "options": ["have", "had", "had we", "we had"],
+          "optionsVi": ["đã", "đã", "chúng tôi đã (đảo ngữ)", "chúng tôi đã"],
+          "correct": 2
+        },
+        {
+          "id": 2,
+          "question": "It’s about time we ___ stricter code reviews.",
+          "questionVi": "Đã đến lúc chúng ta ___ việc rà soát mã nghiêm ngặt hơn.",
+          "options": ["introduce", "introduced", "introduces", "had introduced"],
+          "optionsVi": ["áp dụng", "đã áp dụng (QK giả định)", "áp dụng", "đã áp dụng"],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "question": "The committee insisted that the data ___ anonymized.",
+          "questionVi": "Uỷ ban yêu cầu dữ liệu ___ được ẩn danh.",
+          "options": ["are", "be", "to be", "were"],
+          "optionsVi": ["là", "được (thức giả định)", "để được", "đã"],
+          "correct": 1
+        },
+        {
+          "id": 4,
+          "question": "Only by monitoring overnight ___ the memory leak.",
+          "questionVi": "Chỉ bằng cách giám sát qua đêm chúng tôi mới ___ rò rỉ bộ nhớ.",
+          "options": ["we detected", "did we detect", "we had detected", "were we detecting"],
+          "optionsVi": ["phát hiện", "đã phát hiện (đảo ngữ)", "đã phát hiện", "đang phát hiện"],
+          "correct": 1
+        },
+        {
+          "id": 5,
+          "question": "By next June, I ___ for eight months.",
+          "questionVi": "Đến tháng Sáu năm sau, tôi ___ được tám tháng.",
+          "options": ["will tutor", "will have tutored", "will have been tutoring", "have been tutoring"],
+          "optionsVi": ["sẽ dạy kèm", "sẽ đã dạy kèm", "sẽ đã dạy kèm liên tục", "đã dạy kèm"],
+          "correct": 2
+        },
+        {
+          "id": 6,
+          "question": "If she ___ accept the offer, we’d launch next week.",
+          "questionVi": "Nếu cô ấy ___ nhận đề nghị, chúng ta sẽ ra mắt tuần tới.",
+          "options": ["was to", "were to", "will", "would"],
+          "optionsVi": ["được", "giả sử", "sẽ", "sẽ"],
+          "correct": 1
+        },
+        {
+          "id": 7,
+          "question": "I wish you ___ me earlier about the outage.",
+          "questionVi": "Ước gì bạn ___ cho tôi biết sớm hơn về sự cố mất dịch vụ.",
+          "options": ["told", "had told", "have told", "would tell"],
+          "optionsVi": ["đã nói", "đã nói (QKHT)", "đã nói", "sẽ nói"],
+          "correct": 1
+        },
+        {
+          "id": 8,
+          "question": "___ it may seem, the bug occurs on clean installs.",
+          "questionVi": "Dù có ___ đi nữa, lỗi vẫn xuất hiện trên bản cài sạch.",
+          "options": ["Strange though", "Although strange", "As strange", "However strange is"],
+          "optionsVi": ["Lạ là vậy", "Mặc dù lạ", "Như lạ", "Tuy lạ là"],
+          "correct": 0
+        },
+        {
+          "id": 9,
+          "question": "Scarcely anyone objected, ___?",
+          "questionVi": "Hầu như không ai phản đối, ___?",
+          "options": ["did they", "didn’t they", "do they", "does anyone"],
+          "optionsVi": ["phải không", "không phải sao", "phải không", "có ai không"],
+          "correct": 0
+        },
+        {
+          "id": 10,
+          "question": "We can proceed ___ the terms are clear.",
+          "questionVi": "Chúng ta có thể tiếp tục ___ điều khoản rõ ràng.",
+          "options": ["as far as", "so long as", "as soon as", "in case"],
+          "optionsVi": ["miễn là (không đúng)", "miễn là", "ngay khi", "trong trường hợp"],
+          "correct": 1
+        },
+        {
+          "id": 11,
+          "question": "The fewer moving parts we add, the ___ failures become.",
+          "questionVi": "Càng ít bộ phận chuyển động, xác suất lỗi càng ___.",
+          "options": ["less likely", "less", "fewer likely", "least likely"],
+          "optionsVi": ["ít xảy ra hơn", "ít hơn", "ít có khả năng (sai)", "ít khả năng nhất"],
+          "correct": 0
+        },
+        {
+          "id": 12,
+          "question": "Not once ___ responsibility for the error.",
+          "questionVi": "Không lần nào anh ấy ___ trách nhiệm cho sai sót.",
+          "options": ["he admitted", "did he admit", "he did admit", "was he admit"],
+          "optionsVi": ["anh ấy thừa nhận", "anh ấy đã thừa nhận (đảo ngữ)", "anh ấy đã thừa nhận", "anh ấy đã thừa nhận"],
+          "correct": 1
+        },
+        {
+          "id": 13,
+          "question": "She had her laptop ___ yesterday.",
+          "questionVi": "Cô ấy đã cho máy tính xách tay được ___ hôm qua.",
+          "options": ["repair", "repaired", "to repair", "repairing"],
+          "optionsVi": ["sửa", "sửa (bị động)", "để sửa", "đang sửa"],
+          "correct": 1
+        },
+        {
+          "id": 14,
+          "question": "The survey results, many of ___ were inconclusive, require a follow-up.",
+          "questionVi": "Kết quả khảo sát, mà nhiều ___ chưa ngã ngũ, cần được tiếp tục.",
+          "options": ["that", "which", "whom", "whose"],
+          "optionsVi": ["rằng", "mà", "người mà", "mà…của"],
+          "correct": 1
+        },
+        {
+          "id": 15,
+          "question": "No matter how carefully you ___, delays can still happen.",
+          "questionVi": "Dù bạn ___ kỹ thế nào, trì hoãn vẫn có thể xảy ra.",
+          "options": ["plan", "will plan", "planned", "are planning"],
+          "optionsVi": ["lập kế hoạch", "sẽ lập", "đã lập", "đang lập"],
+          "correct": 0
+        },
+        {
+          "id": 16,
+          "question": "At the ___ of sounding pedantic, the term is misapplied.",
+          "questionVi": "Nguy cơ nghe có vẻ rườm rà, thuật ngữ này đang dùng sai.",
+          "options": ["risk", "cost", "expense", "edge"],
+          "optionsVi": ["nguy cơ", "chi phí", "đánh đổi", "cạnh"],
+          "correct": 0
+        },
+        {
+          "id": 17,
+          "question": "The presentation ran long, ___ the shortened Q&A.",
+          "questionVi": "Bài trình bày kéo dài, ___ phần hỏi đáp rút gọn.",
+          "options": ["therefore", "hence", "so", "because of"],
+          "optionsVi": ["vì vậy", "do đó (đúng cấu trúc: hence + danh từ)", "nên", "vì"],
+          "correct": 1
+        },
+        {
+          "id": 18,
+          "question": "Such ___ his credibility that the board approved the proposal.",
+          "questionVi": "___ là uy tín của anh ấy đến mức hội đồng phê duyệt đề xuất.",
+          "options": ["was", "were", "is", "has been"],
+          "optionsVi": ["đã", "đã", "là", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 19,
+          "question": "Were it not for your guidance, I ___ the interview last week.",
+          "questionVi": "Nếu không có sự hướng dẫn của bạn, tôi ___ buổi phỏng vấn tuần trước.",
+          "options": ["would fail", "would have failed", "failed", "had failed"],
+          "optionsVi": ["sẽ trượt", "đã có thể trượt", "đã trượt", "đã trượt"],
+          "correct": 1
+        },
+        {
+          "id": 20,
+          "question": "He objected ___ the report being published without peer review.",
+          "questionVi": "Anh ấy phản đối việc báo cáo được công bố mà không có phản biện ngang hàng.",
+          "options": ["to", "about", "for", "on"],
+          "optionsVi": ["đối với", "về", "cho", "trên"],
+          "correct": 0
+        },
+        {
+          "id": 21,
+          "question": "Little ___ how costly the rebrand would be.",
+          "questionVi": "Họ ít ___ việc tái định vị thương hiệu sẽ tốn kém thế nào.",
+          "options": ["they realized", "did they realize", "they did realize", "was realized"],
+          "optionsVi": ["họ nhận ra", "họ đã nhận ra (đảo ngữ)", "họ có nhận ra", "được nhận ra"],
+          "correct": 1
+        },
+        {
+          "id": 22,
+          "question": "Between you and ___, the vendor quote looks inflated.",
+          "questionVi": "Giữa tôi và ___, báo giá của nhà cung cấp có vẻ bị đội lên.",
+          "options": ["I", "me", "myself", "mine"],
+          "optionsVi": ["tôi", "tôi (tân cách)", "bản thân tôi", "của tôi"],
+          "correct": 1
+        },
+        {
+          "id": 23,
+          "question": "He spoke as though the decision ___ already been made.",
+          "questionVi": "Anh ấy nói như thể quyết định ___ được đưa ra rồi.",
+          "options": ["has", "had", "would have", "having"],
+          "optionsVi": ["đã", "đã (QKHT)", "sẽ đã", "đang"],
+          "correct": 1
+        },
+        {
+          "id": 24,
+          "question": "She is the only one of the interns who ___ access to the dashboard.",
+          "questionVi": "Cô ấy là người duy nhất trong nhóm thực tập sinh ___ quyền truy cập bảng điều khiển.",
+          "options": ["have", "has", "having", "had"],
+          "optionsVi": ["có", "có", "đang có", "đã có"],
+          "correct": 1
+        },
+        {
+          "id": 25,
+          "question": "The app uses far ___ memory than it used to.",
+          "questionVi": "Ứng dụng sử dụng ___ bộ nhớ hơn trước rất nhiều.",
+          "options": ["fewer", "less", "few", "little"],
+          "optionsVi": ["ít (đếm được)", "ít (không đếm được)", "ít", "ít"],
+          "correct": 1
+        },
+        {
+          "id": 26,
+          "question": "We may need to relocate staff at ___ notice.",
+          "questionVi": "Chúng ta có thể phải điều chuyển nhân sự trong thời gian ___.",
+          "options": ["short", "a short", "the short", "shortly"],
+          "optionsVi": ["ngắn", "một ngắn", "ngắn đó", "ngay sau"],
+          "correct": 0
+        },
+        {
+          "id": 27,
+          "question": "He recommended that she ___ sign the contract yet.",
+          "questionVi": "Anh ấy khuyến nghị cô ấy ___ ký hợp đồng lúc này.",
+          "options": ["not", "doesn't", "not to", "didn't"],
+          "optionsVi": ["không", "không", "không để", "không"],
+          "correct": 0
+        },
+        {
+          "id": 28,
+          "question": "Sooner rather than later, we need to ___ the legacy API.",
+          "questionVi": "Càng sớm càng tốt, chúng ta cần ___ API cũ.",
+          "options": ["retire", "retiring", "to retiring", "be retired"],
+          "optionsVi": ["ngừng/loại bỏ", "việc loại bỏ", "để việc loại bỏ", "bị loại bỏ"],
+          "correct": 0
+        },
+        {
+          "id": 29,
+          "question": "Hardly had the doors ___ when the hall filled up.",
+          "questionVi": "Vừa mới cửa ___ thì hội trường đã kín chỗ.",
+          "options": ["opens", "opened", "been opening", "open"],
+          "optionsVi": ["mở (HTĐ)", "mở (QKĐ)", "đang mở", "mở"],
+          "correct": 1
+        },
+        {
+          "id": 30,
+          "question": "Under no circumstances ___ forwarded outside the team.",
+          "questionVi": "Tuyệt đối không ___ chuyển tiếp ra ngoài nhóm.",
+          "options": ["should this document be", "this document should be", "ought this document to", "this document must"],
+          "optionsVi": ["tài liệu này nên được", "tài liệu này nên được", "liệu tài liệu này nên", "tài liệu này phải"],
+          "correct": 0
+        }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension",
+      "titleVi": "Phần B: Đọc hiểu",
+      "description": "20 multiple-choice questions · Read passages and choose the best answer",
+      "descriptionVi": "20 câu trắc nghiệm · Đọc đoạn văn và chọn đáp án đúng",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 – Pop-up Repair Cafés",
+          "content": "To cut e-waste without adding fees, the city ran pop-up ‘Repair Cafés’ over ten weekends across four neighbourhoods. Volunteers arrived with tool carts and offered free diagnostics and supervised fixes for small appliances and bikes. A booking portal opened each Wednesday, but 60 percent of slots were reserved for walk-ins to reduce digital barriers. A micro-grant reimbursed up to 120,000 VND per device for spare parts; anything costlier required owner approval. Of 620 items presented, 54 percent were fixed on-site, 19 percent referred to partner workshops, 11 percent awaited parts, and 16 percent were not repairable. Before leaving, owners completed a ‘teach-back’: they explained the steps of their own repair. Surveys linked this to a 30 percent drop in repeat visits for the same issue. Throughput dipped on rainy days, and battery-disposal procedures were unclear until labelled bins were added. The program will add two more sites if landfill diversion exceeds 400 kilograms in a quarter and the repeat-visit rate stays below 12 percent; early estimates show 380 kilograms diverted with two weekends remaining.",
+          "contentVi": "Để giảm rác thải điện tử mà không thu phí, thành phố tổ chức các ‘Quán sửa chữa’ lưu động trong mười cuối tuần tại bốn khu dân cư. Tình nguyện viên mang xe dụng cụ, cung cấp chẩn đoán miễn phí và hỗ trợ sửa các thiết bị nhỏ và xe đạp. Cổng đặt chỗ mở vào thứ Tư hằng tuần, nhưng 60% suất dành cho khách đến trực tiếp để giảm rào cản số. Quỹ nhỏ hoàn tiền tối đa 120.000 VND/thiết bị cho linh kiện; chi phí cao hơn cần chủ sở hữu chấp thuận. Trong 620 món mang tới, 54% được sửa tại chỗ, 19% chuyển đến xưởng đối tác, 11% chờ linh kiện, và 16% không thể sửa. Trước khi rời đi, chủ sở hữu thực hiện ‘teach-back’: tự trình bày các bước sửa của chính mình. Khảo sát cho thấy điều này giúp giảm 30% lượt quay lại vì cùng một lỗi. Năng suất giảm vào ngày mưa, và quy trình xử lý pin chưa rõ cho tới khi bổ sung thùng dán nhãn. Chương trình sẽ mở thêm hai điểm nếu lượng chất thải tránh chôn lấp vượt 400 kg trong một quý và tỷ lệ quay lại dưới 12%; ước tính ban đầu cho thấy đã tránh chôn lấp 380 kg khi còn hai cuối tuần.",
+          "questions": [
+            {
+              "id": 31,
+              "question": "How many neighbourhoods hosted the pop-ups?",
+              "questionVi": "Có bao nhiêu khu dân cư tổ chức điểm lưu động?",
+              "options": ["Two", "Three", "Four", "Five"],
+              "optionsVi": ["Hai", "Ba", "Bốn", "Năm"],
+              "correct": 2
+            },
+            {
+              "id": 32,
+              "question": "What share of slots was kept for walk-ins?",
+              "questionVi": "Tỷ lệ suất dành cho khách đến trực tiếp là bao nhiêu?",
+              "options": ["40%", "50%", "60%", "75%"],
+              "optionsVi": ["40%", "50%", "60%", "75%"],
+              "correct": 2
+            },
+            {
+              "id": 33,
+              "question": "Maximum spare-parts reimbursement per device:",
+              "questionVi": "Mức hoàn tiền linh kiện tối đa cho mỗi thiết bị:",
+              "options": ["80,000 VND", "100,000 VND", "120,000 VND", "150,000 VND"],
+              "optionsVi": ["80.000 VND", "100.000 VND", "120.000 VND", "150.000 VND"],
+              "correct": 2
+            },
+            {
+              "id": 34,
+              "question": "What proportion of items were fixed on-site?",
+              "questionVi": "Tỷ lệ món được sửa ngay tại chỗ là bao nhiêu?",
+              "options": ["54%", "62%", "19%", "16%"],
+              "optionsVi": ["54%", "62%", "19%", "16%"],
+              "correct": 0
+            },
+            {
+              "id": 35,
+              "question": "What did owners do before leaving?",
+              "questionVi": "Chủ sở hữu làm gì trước khi rời đi?",
+              "options": ["Sign a waiver", "Complete a ‘teach-back’", "Pay a deposit", "Book a follow-up"],
+              "optionsVi": ["Ký miễn trừ", "Thực hiện ‘teach-back’", "Đặt cọc", "Đặt lịch tái khám"],
+              "correct": 1
+            },
+            {
+              "id": 36,
+              "question": "Which factor reduced throughput?",
+              "questionVi": "Yếu tố nào làm giảm năng suất?",
+              "options": ["Tool shortages", "Rainy days", "Volunteer strikes", "Power cuts"],
+              "optionsVi": ["Thiếu dụng cụ", "Ngày mưa", "Đình công tình nguyện", "Mất điện"],
+              "correct": 1
+            },
+            {
+              "id": 37,
+              "question": "What operational gap required labelled bins?",
+              "questionVi": "Lỗ hổng vận hành nào cần thùng dán nhãn?",
+              "options": ["Metal recycling", "Paper sorting", "Battery disposal", "Glass collection"],
+              "optionsVi": ["Tái chế kim loại", "Phân loại giấy", "Xử lý pin", "Thu gom kính"],
+              "correct": 2
+            },
+            {
+              "id": 38,
+              "question": "Expansion depends on meeting which joint condition?",
+              "questionVi": "Mở rộng phụ thuộc vào điều kiện kết hợp nào?",
+              "options": ["≥400 kg diversion OR repeat visits <12%", "≥400 kg diversion AND repeat visits <12%", "≥300 kg diversion only", "Repeat visits <10% only"],
+              "optionsVi": ["≥400 kg hoặc <12% quay lại", "≥400 kg và <12% quay lại", "Chỉ ≥300 kg", "Chỉ <10% quay lại"],
+              "correct": 1
+            },
+            {
+              "id": 39,
+              "question": "How much diversion had been estimated with two weekends left?",
+              "questionVi": "Ước tính đã tránh chôn lấp bao nhiêu khi còn hai cuối tuần?",
+              "options": ["320 kg", "350 kg", "380 kg", "420 kg"],
+              "optionsVi": ["320 kg", "350 kg", "380 kg", "420 kg"],
+              "correct": 2
+            },
+            {
+              "id": 40,
+              "question": "The 30% drop in repeat visits is linked to:",
+              "questionVi": "Mức giảm 30% lượt quay lại gắn với:",
+              "options": ["Partner workshops", "Teach-back requirement", "More volunteers", "Better weather"],
+              "optionsVi": ["Xưởng đối tác", "Yêu cầu ‘teach-back’", "Nhiều tình nguyện viên hơn", "Thời tiết tốt hơn"],
+              "correct": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 – Fare Capping on Public Transport",
+          "content": "The transit agency introduced contactless fare capping so riders never pay more than a daily or weekly limit. A single fare remains 9,000 VND on buses and 15,000 VND on metro lines; transfers within 90 minutes are free after the first tap, and capping applies across bus and metro combined. The daily cap is 60,000 VND and the weekly cap 220,000 VND. Cash payments are still accepted but do not qualify for capping. After eight weeks, the average rider paid 11 percent less while revenue stayed roughly neutral, thanks to higher ridership and lower cash-handling costs. Two issues emerged: some riders used multiple cards, unintentionally resetting their cap, and seniors adopted the system more slowly than smartphone users. The agency’s app now pilots account linking so taps from several cards count toward one cap. Concession riders on half-price plans keep their discounts unchanged. If tap-in speed rises by 18 percent at three busy stations and cash fares fall below 15 percent of trips, the agency will retire paper transfer slips. A storm knocked out network links for an afternoon, but validators stored taps locally and synced once back online.",
+          "contentVi": "Cơ quan vận tải triển khai giới hạn giá vé (fare capping) bằng thanh toán không tiếp xúc để hành khách không trả quá mức trần theo ngày hoặc tuần. Giá vé lẻ giữ nguyên: 9.000 VND cho xe buýt và 15.000 VND cho tàu điện; chuyển tuyến trong 90 phút được miễn phí sau lần quẹt đầu, và việc tính trần áp dụng gộp cả xe buýt lẫn tàu. Mức trần ngày là 60.000 VND và trần tuần là 220.000 VND. Vẫn chấp nhận tiền mặt nhưng không được tính vào trần. Sau tám tuần, chi phí trung bình mỗi hành khách giảm 11% trong khi doanh thu gần như trung tính nhờ lượng khách tăng và chi phí xử lý tiền mặt giảm. Hai vấn đề xuất hiện: một số người dùng nhiều thẻ nên vô tình đặt lại ngưỡng trần, và người cao tuổi tiếp nhận chậm hơn so với người dùng điện thoại thông minh. Ứng dụng của cơ quan đang thí điểm liên kết tài khoản để gộp lần quẹt từ nhiều thẻ vào cùng một ngưỡng trần. Hành khách ưu đãi nửa giá vẫn giữ nguyên mức giảm. Nếu tốc độ quẹt vào tăng 18% tại ba ga đông và tỷ lệ thanh toán tiền mặt xuống dưới 15% chuyến đi, cơ quan sẽ bỏ phiếu chuyển tuyến giấy. Một cơn bão làm mất kết nối mạng trong buổi chiều, nhưng máy quét lưu tạm dữ liệu và đồng bộ khi trực tuyến lại.",
+          "questions": [
+            {
+              "id": 41,
+              "question": "What is the daily cap under the new system?",
+              "questionVi": "Mức trần theo ngày trong hệ thống mới là bao nhiêu?",
+              "options": ["50,000 VND", "60,000 VND", "200,000 VND", "220,000 VND"],
+              "optionsVi": ["50.000 VND", "60.000 VND", "200.000 VND", "220.000 VND"],
+              "correct": 1
+            },
+            {
+              "id": 42,
+              "question": "The weekly cap is set at:",
+              "questionVi": "Mức trần theo tuần được đặt ở:",
+              "options": ["180,000 VND", "200,000 VND", "220,000 VND", "250,000 VND"],
+              "optionsVi": ["180.000 VND", "200.000 VND", "220.000 VND", "250.000 VND"],
+              "correct": 2
+            },
+            {
+              "id": 43,
+              "question": "Fare capping applies to:",
+              "questionVi": "Giới hạn giá vé áp dụng cho:",
+              "options": ["Bus only", "Metro only", "Bus and metro combined", "Cash fares only"],
+              "optionsVi": ["Chỉ xe buýt", "Chỉ tàu điện", "Gộp cả xe buýt và tàu điện", "Chỉ tiền mặt"],
+              "correct": 2
+            },
+            {
+              "id": 44,
+              "question": "Average rider payments changed by:",
+              "questionVi": "Chi phí trung bình của hành khách thay đổi:",
+              "options": ["+11%", "−11%", "0%", "Varied widely"],
+              "optionsVi": ["+11%", "−11%", "0%", "Biến thiên lớn"],
+              "correct": 1
+            },
+            {
+              "id": 45,
+              "question": "Why did revenue stay roughly neutral?",
+              "questionVi": "Vì sao doanh thu gần như trung tính?",
+              "options": ["Fare increases offset discounts", "Higher ridership and lower cash-handling costs", "Government subsidy", "Reduced service frequency"],
+              "optionsVi": ["Tăng giá bù giảm giá", "Khách tăng và chi phí tiền mặt giảm", "Trợ cấp nhà nước", "Giảm tần suất dịch vụ"],
+              "correct": 1
+            },
+            {
+              "id": 46,
+              "question": "What problem occurred with multiple cards?",
+              "questionVi": "Vấn đề gì xảy ra khi dùng nhiều thẻ?",
+              "options": ["Double-charging", "Cap resetting unintentionally", "Reader failures", "Lost transfers"],
+              "optionsVi": ["Tính tiền hai lần", "Vô tình đặt lại ngưỡng trần", "Máy quét hỏng", "Mất quyền chuyển tuyến"],
+              "correct": 1
+            },
+            {
+              "id": 47,
+              "question": "Which group kept their discounts unchanged?",
+              "questionVi": "Nhóm nào giữ nguyên mức ưu đãi?",
+              "options": ["Students on standard plans", "Tourists with day passes", "Half-price concession riders", "Monthly pass holders"],
+              "optionsVi": ["Sinh viên gói thường", "Khách du lịch vé ngày", "Hành khách ưu đãi nửa giá", "Người dùng vé tháng"],
+              "correct": 2
+            },
+            {
+              "id": 48,
+              "question": "Retiring paper transfer slips depends on:",
+              "questionVi": "Việc bỏ phiếu chuyển tuyến giấy phụ thuộc vào:",
+              "options": ["App downloads", "Tap-in speed + low cash share", "Fare rise approval", "Vendor change"],
+              "optionsVi": ["Lượt tải ứng dụng", "Tốc độ quẹt vào + tỷ lệ tiền mặt thấp", "Phê duyệt tăng giá", "Thay nhà cung cấp"],
+              "correct": 1
+            },
+            {
+              "id": 49,
+              "question": "During the storm, validators:",
+              "questionVi": "Trong cơn bão, máy quét:",
+              "options": ["Shut down entirely", "Stored taps locally and synced later", "Charged maximum fares", "Switched to cash-only mode"],
+              "optionsVi": ["Tắt hoàn toàn", "Lưu tạm dữ liệu và đồng bộ sau", "Tính mức giá tối đa", "Chỉ nhận tiền mặt"],
+              "correct": 1
+            },
+            {
+              "id": 50,
+              "question": "Which group adopted the system more slowly?",
+              "questionVi": "Nhóm nào tiếp nhận hệ thống chậm hơn?",
+              "options": ["Commuters", "Seniors", "Students", "Tourists"],
+              "optionsVi": ["Người đi làm", "Người cao tuổi", "Sinh viên", "Khách du lịch"],
+              "correct": 1
+            }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension",
+      "titleVi": "Phần C: Nghe hiểu",
+      "description": "10 multiple-choice questions · Listen to audio scripts and choose the best answer",
+      "descriptionVi": "10 câu trắc nghiệm · Nghe đoạn băng và chọn đáp án đúng",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 – University Lab Orientation",
+          "content": "Welcome to today’s bio-lab orientation. We begin at 2:00 p.m. in Room 5B; please arrive ten minutes early to sign the safety register. Wear closed-toe shoes; lab coats are issued at the door, and long hair must be tied back. After a twenty-five-minute briefing, groups will rotate through stations A and C; Station B is closed for fume-hood service until 3:10. To access the chemical store, bring your ID; the door code was emailed at 1:30. Food and drink are allowed only in the lounge. At 3:30 we’ll run a fire drill—assemble in Parking Lot D.",
+          "contentVi": "Chào mừng đến buổi định hướng phòng thí nghiệm sinh học hôm nay. Chúng ta bắt đầu lúc 14:00 tại Phòng 5B; vui lòng đến sớm mười phút để ký sổ an toàn. Hãy mang giày bít mũi; áo khoác phòng thí nghiệm phát tại cửa và tóc dài phải buộc gọn. Sau phần hướng dẫn 25 phút, các nhóm luân chuyển qua trạm A và C; Trạm B đóng để bảo dưỡng tủ hút đến 15:10. Để vào kho hoá chất, mang theo thẻ ID; mã cửa đã được gửi email lúc 13:30. Chỉ được ăn uống tại phòng chờ. Lúc 15:30 chúng ta diễn tập phòng cháy—tập kết tại Bãi đỗ D.",
+          "questions": [
+            {
+              "id": 51,
+              "question": "What time does the orientation start?",
+              "questionVi": "Buổi định hướng bắt đầu lúc mấy giờ?",
+              "options": ["1:30 p.m.", "2:00 p.m.", "3:10 p.m.", "3:30 p.m."],
+              "optionsVi": ["13:30", "14:00", "15:10", "15:30"],
+              "correct": 1
+            },
+            {
+              "id": 52,
+              "question": "Which station is closed and until when?",
+              "questionVi": "Trạm nào đóng và đến khi nào?",
+              "options": ["A until 3:10", "B until 3:10", "C until 3:30", "B until 3:30"],
+              "optionsVi": ["A đến 15:10", "B đến 15:10", "C đến 15:30", "B đến 15:30"],
+              "correct": 1
+            },
+            {
+              "id": 53,
+              "question": "Where should attendees assemble for the fire drill?",
+              "questionVi": "Người tham dự tập kết ở đâu khi diễn tập cháy?",
+              "options": ["Room 5B", "The lounge", "Parking Lot D", "Station A"],
+              "optionsVi": ["Phòng 5B", "Phòng chờ", "Bãi đỗ D", "Trạm A"],
+              "correct": 2
+            },
+            {
+              "id": 54,
+              "question": "When was the chemical store door code sent?",
+              "questionVi": "Mã cửa kho hoá chất được gửi lúc nào?",
+              "options": ["12:30", "1:30", "2:00", "3:10"],
+              "optionsVi": ["12:30", "13:30", "14:00", "15:10"],
+              "correct": 1
+            },
+            {
+              "id": 55,
+              "question": "Which clothing rule is mentioned?",
+              "questionVi": "Quy định trang phục nào được nêu?",
+              "options": ["Open-toe sandals are allowed", "Closed-toe shoes are required", "Coats are optional", "Hats must be worn"],
+              "optionsVi": ["Được mang dép hở mũi", "Phải mang giày bít mũi", "Áo khoác tuỳ chọn", "Phải đội mũ"],
+              "correct": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 – Coworking Maintenance Notice",
+          "content": "Heads up for tomorrow: the sixth floor will be offline from 7:00 to 11:00 a.m. for air-conditioning maintenance. All hot desks move to Floor 4, and phone booths there remain bookable in thirty-minute slots. If you have a meeting room on six before eleven, it will be auto-relocated to Room 2.12 on Floor 2; you’ll receive a calendar update. The café opens at 8:00 as usual, but the espresso machine is down—drip coffee only. Showers are available on Floor 3, and bike storage closes at 6:45 sharp for inspection.",
+          "contentVi": "Lưu ý cho ngày mai: tầng 6 sẽ tạm ngưng từ 7:00 đến 11:00 sáng để bảo trì điều hoà. Tất cả bàn linh hoạt chuyển về Tầng 4, và buồng điện thoại tại đó vẫn đặt được theo khung 30 phút. Nếu bạn đặt phòng họp ở tầng 6 trước 11 giờ, hệ thống sẽ tự chuyển sang Phòng 2.12 tại Tầng 2; bạn sẽ nhận cập nhật lịch. Quán cà phê mở lúc 8:00 như thường lệ, nhưng máy espresso hỏng—chỉ có cà phê phin. Phòng tắm vòi sen mở ở Tầng 3, và khu để xe đạp đóng lúc 6:45 đúng giờ để kiểm tra.",
+          "questions": [
+            {
+              "id": 56,
+              "question": "When will the sixth floor be offline?",
+              "questionVi": "Tầng 6 tạm ngưng vào thời gian nào?",
+              "options": ["6:45–11:00", "7:00–11:00", "8:00–noon", "7:00–noon"],
+              "optionsVi": ["6:45–11:00", "7:00–11:00", "8:00–12:00", "7:00–12:00"],
+              "correct": 1
+            },
+            {
+              "id": 57,
+              "question": "Where are hot desks moved to?",
+              "questionVi": "Bàn linh hoạt chuyển tới đâu?",
+              "options": ["Floor 2", "Floor 3", "Floor 4", "Floor 6"],
+              "optionsVi": ["Tầng 2", "Tầng 3", "Tầng 4", "Tầng 6"],
+              "correct": 2
+            },
+            {
+              "id": 58,
+              "question": "Meetings booked on Floor 6 before 11:00 will be moved to:",
+              "questionVi": "Cuộc họp đặt ở Tầng 6 trước 11:00 sẽ chuyển tới:",
+              "options": ["Room 3.05 (Floor 3)", "Room 4.20 (Floor 4)", "Room 2.12 (Floor 2)", "Room 1.10 (Floor 1)"],
+              "optionsVi": ["Phòng 3.05 (Tầng 3)", "Phòng 4.20 (Tầng 4)", "Phòng 2.12 (Tầng 2)", "Phòng 1.10 (Tầng 1)"],
+              "correct": 2
+            },
+            {
+              "id": 59,
+              "question": "What beverage limitation is mentioned?",
+              "questionVi": "Hạn chế đồ uống nào được nêu?",
+              "options": ["No coffee available", "Only drip coffee (espresso machine down)", "Tea only", "Cold drinks only"],
+              "optionsVi": ["Không có cà phê", "Chỉ cà phê phin (máy espresso hỏng)", "Chỉ trà", "Chỉ đồ lạnh"],
+              "correct": 1
+            },
+            {
+              "id": 60,
+              "question": "What time does bike storage close for inspection?",
+              "questionVi": "Khu để xe đạp đóng lúc mấy giờ để kiểm tra?",
+              "options": ["6:30", "6:45", "7:00", "8:00"],
+              "optionsVi": ["6:30", "6:45", "7:00", "8:00"],
+              "correct": 1
+            }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing",
+      "titleVi": "Phần D: Viết",
+      "description": "3 writing tasks · Suggested timing: 95–120 minutes total",
+      "descriptionVi": "3 bài viết · Gợi ý thời gian: 95–120 phút",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (220–250 words)",
+          "titleVi": "Bài 1 (220–250 từ)",
+          "instruction": "Write a formal email to the conference organizer. Yesterday your panel time was moved forward by 45 minutes without notice, and two accessibility features (live captions and a ramp to the stage) were unavailable. Explain the impact on your attendees, list any evidence you can provide (photos, schedule screenshots), and politely request (a) a written explanation, (b) a corrected schedule for Day 3, and (c) a concrete plan to guarantee accessibility for all sessions.",
+          "instructionVi": "Viết email trang trọng cho ban tổ chức hội nghị. Hôm qua giờ phiên thảo luận của bạn bị đẩy lên 45 phút mà không báo trước, và hai hạng mục hỗ trợ tiếp cận (phụ đề trực tiếp và đường dốc lên sân khấu) không có. Giải thích tác động tới người tham dự, liệt kê bằng chứng có thể cung cấp (ảnh, ảnh chụp lịch), và lịch sự yêu cầu (a) văn bản giải thích, (b) lịch đã chỉnh cho Ngày 3, và (c) kế hoạch cụ thể bảo đảm tiếp cận cho mọi phiên.",
+          "wordLimit": { "min": 220, "max": 250 },
+          "type": "formal_email",
+          "topic": "conference_accessibility_issue"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (320–350 words)",
+          "titleVi": "Bài 2 (320–350 từ)",
+          "instruction": "“Every secondary school should require a year-long, credit-bearing community project integrated into coursework.” To what extent do you agree or disagree? Present one central argument, develop it with a concrete example, acknowledge a serious counter-argument (e.g., workload or equity), and respond to it.",
+          "instructionVi": "“Mọi trường THPT nên yêu cầu một dự án cộng đồng kéo dài một năm, có tính tín chỉ và tích hợp vào môn học.” Bạn đồng ý tới mức nào? Nêu một luận điểm trung tâm, phát triển bằng ví dụ cụ thể, thừa nhận một phản biện đáng kể (ví dụ: khối lượng việc hoặc công bằng), và phản hồi lại.",
+          "wordLimit": { "min": 320, "max": 350 },
+          "type": "opinion_essay",
+          "topic": "community_projects_in_schools"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (320–360 words)",
+          "titleVi": "Bài 3 (320–360 từ)",
+          "instruction": "Describe and compare three fulfilment models used by a mid-size e-commerce shop over one quarter: In-house Fulfilment (avg processing 14.2 hours; cost $3.40/order; late shipments 4.1%; returns 6.0%; CSAT 4.32/5), Third-Party Logistics—3PL (10.5 hours; $4.10; late 3.2%; returns 5.2%; CSAT 4.45), and Marketplace-Fulfilled (8.8 hours; $4.60; late 2.7%; returns 5.9%; CSAT 4.51). Summarise key differences, evaluate cost-effectiveness versus speed and quality, and recommend one budget shift.",
+          "instructionVi": "Mô tả và so sánh ba mô hình hoàn tất đơn hàng của một cửa hàng thương mại điện tử tầm trung trong một quý: Tự xử lý (thời gian xử lý TB 14,2 giờ; chi phí $3,40/đơn; trễ 4,1%; trả hàng 6,0%; CSAT 4,32/5), Bên thứ ba—3PL (10,5 giờ; $4,10; trễ 3,2%; trả hàng 5,2%; CSAT 4,45), và Do sàn thực hiện (8,8 giờ; $4,60; trễ 2,7%; trả hàng 5,9%; CSAT 4,51). Tóm tắt khác biệt, đánh giá hiệu quả chi phí so với tốc độ và chất lượng, và đề xuất điều chỉnh ngân sách.",
+          "wordLimit": { "min": 320, "max": 360 },
+          "type": "data_description",
+          "topic": "ecommerce_fulfilment_models",
+          "chartData": {
+            "title": "Fulfilment KPIs — One Quarter",
+            "titleVi": "Chỉ số hoàn tất đơn — 1 quý",
+            "data": [
+              { "model": "In-house", "avg_hours": 14.2, "cost_usd_per_order": 3.40, "late_ship_percent": 4.1, "return_percent": 6.0, "csat_out_of_5": 4.32 },
+              { "model": "3PL", "avg_hours": 10.5, "cost_usd_per_order": 4.10, "late_ship_percent": 3.2, "return_percent": 5.2, "csat_out_of_5": 4.45 },
+              { "model": "Marketplace Fulfilled", "avg_hours": 8.8, "cost_usd_per_order": 4.60, "late_ship_percent": 2.7, "return_percent": 5.9, "csat_out_of_5": 4.51 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "2.8.0",
+    "lastUpdated": "2025-08-29",
+    "difficulty": "upper-intermediate++",
+    "estimatedTime": "100–125 minutes",
+    "tags": ["grammar", "vocabulary", "reading", "listening", "writing", "ielts", "practice", "bilingual", "level2.8"]
+  }
+}

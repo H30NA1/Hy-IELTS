@@ -1,0 +1,112 @@
+{
+  "id": "meqrrf13rdya4bdua0i",
+  "timestamp": "2025-08-25T07:01:52.215Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-08-25T07:01:50.300Z",
+    "submittedBy": "user"
+  },
+  "userName": "Leenamhi",
+  "answers": {
+    "grammar": {
+      "1": 1,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 2,
+      "6": 2,
+      "7": 1,
+      "8": 1,
+      "9": 2,
+      "10": 3,
+      "11": 2,
+      "12": 2,
+      "13": 1,
+      "14": 0,
+      "15": 3,
+      "16": 2,
+      "17": 0,
+      "18": 0,
+      "19": 1,
+      "20": 1,
+      "21": 1,
+      "22": 0,
+      "23": 1,
+      "24": 3,
+      "25": 1,
+      "26": 2,
+      "27": 1,
+      "28": 1,
+      "29": 0,
+      "30": 2
+    },
+    "reading": {
+      "31": 2,
+      "32": 1,
+      "33": 2,
+      "34": 2,
+      "35": 1,
+      "36": 2,
+      "37": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "41": 1,
+      "42": 1,
+      "43": 2,
+      "44": 2,
+      "45": 2,
+      "46": 1,
+      "47": 1,
+      "48": 1,
+      "49": 1,
+      "50": 1
+    },
+    "listening": {
+      "51": 2,
+      "52": 1,
+      "53": 1,
+      "54": 1,
+      "55": 1,
+      "56": 1,
+      "57": 1,
+      "58": 0,
+      "59": 2,
+      "60": 0
+    },
+    "writing": {
+      "task1": "Dear Hotel Manager\nI write to connect with you regarding my recent booking at your hotel, which shows a “non-refundable” charge. My flight was unfortunately cancelled, and I have attached the official cancellation proof. I understand that the city has introduced a tourist tax refund for cancelled flights, and therefore I kindly request a refund of the tourist tax and my deposit. I appreciate your understanding and assistance in this matter\nThank you\n",
+      "task2": "I strongly agree that a four-day workweek can improve productivity without harming customer service because shorter workweeks increase employee focus and efficiency. For example, a New Zealand company trialed a four-day week and found staff completed the same work in less time while keeping customers satisfied. However, industries with constant customer demand, like retail or healthcare, may struggle to reduce hours without affecting service",
+      "task3": " The small table compares two delivery routes over one month show Route North is faster (28 min vs 32 min) and more punctual (92% vs 88%) than Route South, but consumes slightly more fuel (6.1 vs 5.6 L/100 km). The trade-off is between speed and reliability versus fuel efficiency. To balance these factors, the company could adjust South route scheduling or optimize traffic patterns to improve punctuality without significantly increasing fuel use"
+    },
+    "translatedQuestions": [
+      24,
+      "24"
+    ],
+    "translationPenalties": {
+      "question-24": -0.5,
+      "transcript-1": -1,
+      "writing-task-1": -0.5,
+      "writing-task-2": -0.5,
+      "writing-task-3": -0.5
+    }
+  },
+  "results": {
+    "grammar": 19,
+    "reading": 20,
+    "listening": 8,
+    "writing": 7.5,
+    "total": 54.5,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -1.5
+  },
+  "timeSpent": "35:50",
+  "testData": {
+    "testId": "IELTS_STARTER_2_0_L",
+    "testDate": "2025-08-25",
+    "testTitle": "IELTS Starter 2.0 Practice Test (EN–VI) — Paper L"
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "testId": "IELTS_STARTER_2_4_A",
+  "testDate": "2025-08-27",
+  "testTitle": "IELTS Starter 2.4 Practice Test (EN–VI) — Paper A",
+  "totalQuestions": 50,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary",
+      "titleVi": "Phần A: Ngữ pháp & Từ vựng",
+      "description": "30 multiple-choice questions · Choose ONE answer (A, B, C or D)",
+      "descriptionVi": "30 câu trắc nghiệm · Chọn MỘT đáp án (A, B, C hoặc D)",
+      "totalQuestions": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Rarely ___ we seen such sustained growth across all regions.",
+          "questionVi": "Hiếm khi ___ chúng tôi thấy tăng trưởng bền vững trên mọi khu vực như vậy.",
+          "options": ["we have", "have", "have we", "did we"],
+          "optionsVi": ["chúng tôi đã", "đã", "chúng tôi đã (đảo ngữ)", "chúng tôi đã"],
+          "correct": 2
+        },
+        {
+          "id": 2,
+          "question": "It’s high time the committee ___ a transparent promotion policy.",
+          "questionVi": "Đã đến lúc uỷ ban ___ chính sách thăng tiến minh bạch.",
+          "options": ["adopt", "adopts", "adopted", "has adopted"],
+          "optionsVi": ["thông qua", "thông qua", "đã thông qua (giả định QK)", "đã thông qua"],
+          "correct": 2
+        },
+        {
+          "id": 3,
+          "question": "I’d rather you ___ the press release until legal approves it.",
+          "questionVi": "Tôi muốn bạn ___ thông cáo báo chí cho đến khi bộ phận pháp lý duyệt.",
+          "options": ["don’t publish", "didn’t publish", "wouldn’t publish", "hadn’t published"],
+          "optionsVi": ["đừng công bố", "đừng công bố (QK giả định)", "không nên công bố", "đã không công bố"],
+          "correct": 1
+        },
+        {
+          "id": 4,
+          "question": "No sooner ___ the new pricing than churn decreased.",
+          "questionVi": "Vừa mới ___ mức giá mới thì tỷ lệ rời bỏ đã giảm.",
+          "options": ["we introduced", "did we introduce", "had we introduced", "we had introduced"],
+          "optionsVi": ["chúng tôi áp dụng", "chúng tôi áp dụng (đảo HTĐ)", "chúng tôi vừa áp dụng (đảo QKHT)", "chúng tôi đã áp dụng"],
+          "correct": 2
+        },
+        {
+          "id": 5,
+          "question": "By this time next quarter, our interns ___ the onboarding bootcamp for six weeks.",
+          "questionVi": "Đến thời điểm này quý sau, thực tập sinh của chúng tôi sẽ ___ khóa nhập môn được sáu tuần.",
+          "options": ["will attend", "will have attended", "will have been attending", "have been attending"],
+          "optionsVi": ["sẽ tham gia", "sẽ đã tham gia", "sẽ đã tham gia liên tục", "đã tham gia"],
+          "correct": 2
+        },
+        {
+          "id": 6,
+          "question": "If he had read the terms, he ___ paying the penalty now.",
+          "questionVi": "Nếu anh ấy đã đọc điều khoản, thì giờ anh ấy ___ trả tiền phạt.",
+          "options": ["won’t be", "wouldn’t be", "wouldn’t have been", "isn’t"],
+          "optionsVi": ["sẽ không", "sẽ không đang", "đã không thể", "không"],
+          "correct": 1
+        },
+        {
+          "id": 7,
+          "question": "Were the shipment to arrive today, we ___ the installation tonight.",
+          "questionVi": "Nếu lô hàng đến hôm nay, chúng tôi ___ lắp đặt tối nay.",
+          "options": ["will start", "would start", "would have started", "had started"],
+          "optionsVi": ["sẽ bắt đầu", "sẽ bắt đầu", "đã có thể bắt đầu", "đã bắt đầu"],
+          "correct": 1
+        },
+        {
+          "id": 8,
+          "question": "Lest anyone ___ the emergency exits, extra signage has been added.",
+          "questionVi": "Kẻo ai đó ___ lối thoát hiểm, đã bổ sung thêm biển chỉ dẫn.",
+          "options": ["forget", "forgets", "forgot", "should forgetting"],
+          "optionsVi": ["quên", "quên", "đã quên", "nên đang quên"],
+          "correct": 0
+        },
+        {
+          "id": 9,
+          "question": "Not until the invoices ___ did finance release the funds.",
+          "questionVi": "Mãi đến khi hoá đơn ___ thì bộ phận tài chính mới giải ngân.",
+          "options": ["were verified", "had verified", "verified", "are verifying"],
+          "optionsVi": ["được xác minh", "đã xác minh", "đã xác minh", "đang xác minh"],
+          "correct": 0
+        },
+        {
+          "id": 10,
+          "question": "Only after we ___ the assumptions did the model converge.",
+          "questionVi": "Chỉ sau khi chúng tôi ___ các giả định thì mô hình mới hội tụ.",
+          "options": ["revisit", "revisited", "had revisited", "were revisiting"],
+          "optionsVi": ["xem lại", "đã xem lại", "đã xem lại", "đang xem lại"],
+          "correct": 2
+        },
+        {
+          "id": 11,
+          "question": "A number of applicants ___ missing references, but the number of offers ___ unchanged.",
+          "questionVi": "Một số ứng viên ___ thiếu thư giới thiệu, nhưng số lượng đề nghị ___ không đổi.",
+          "options": ["is / remain", "are / remains", "are / remain", "is / remains"],
+          "optionsVi": ["là / vẫn", "là / vẫn", "là / vẫn", "là / vẫn"],
+          "correct": 1
+        },
+        {
+          "id": 12,
+          "question": "There were far ___ complaints this month than last month.",
+          "questionVi": "Tháng này có ___ khiếu nại hơn nhiều so với tháng trước.",
+          "options": ["less", "fewer", "few", "little"],
+          "optionsVi": ["ít hơn (không đếm được)", "ít hơn (đếm được)", "ít", "ít (không đếm được)"],
+          "correct": 1
+        },
+        {
+          "id": 13,
+          "question": "Despite ___ the reminders, a subset of users missed the deadline.",
+          "questionVi": "Mặc dù ___ các lời nhắc, một nhóm người dùng vẫn lỡ hạn.",
+          "options": ["send", "sending", "to send", "having send"],
+          "optionsVi": ["gửi", "đã gửi", "để gửi", "đã gửi"],
+          "correct": 1
+        },
+        {
+          "id": 14,
+          "question": "He speaks as if he ___ the results already, but they’re due tomorrow.",
+          "questionVi": "Anh ta nói như thể anh ta ___ kết quả rồi, nhưng phải đến ngày mai mới có.",
+          "options": ["knows", "knew", "had known", "would know"],
+          "optionsVi": ["biết", "biết (giả định QK)", "đã biết", "sẽ biết"],
+          "correct": 2
+        },
+        {
+          "id": 15,
+          "question": "The proposal was rejected owing ___ insufficient evidence.",
+          "questionVi": "Đề xuất bị từ chối do ___ thiếu bằng chứng.",
+          "options": ["to", "for", "of", "by"],
+          "optionsVi": ["vì", "vì", "của", "bởi"],
+          "correct": 0
+        },
+        {
+          "id": 16,
+          "question": "This is the only candidate ___ portfolio impressed the whole panel.",
+          "questionVi": "Đây là ứng viên duy nhất có ___ hồ sơ gây ấn tượng với cả hội đồng.",
+          "options": ["who", "whom", "which", "whose"],
+          "optionsVi": ["người", "người", "cái", "mà…của"],
+          "correct": 3
+        },
+        {
+          "id": 17,
+          "question": "We got the server room ___ by a certified contractor.",
+          "questionVi": "Chúng tôi đã cho phòng máy được ___ bởi nhà thầu được chứng nhận.",
+          "options": ["re-cable", "re-cabling", "re-cabled", "to re-cable"],
+          "optionsVi": ["đi lại cáp", "đi lại cáp", "đi lại cáp (bị động)", "đi lại cáp"],
+          "correct": 2
+        },
+        {
+          "id": 18,
+          "question": "They staggered start times so that teams ___ avoid rush-hour traffic.",
+          "questionVi": "Họ so le giờ bắt đầu để các nhóm ___ tránh kẹt xe giờ cao điểm.",
+          "options": ["can", "could", "would", "had better"],
+          "optionsVi": ["có thể", "có thể (mục đích QK)", "sẽ", "nên"],
+          "correct": 1
+        },
+        {
+          "id": 19,
+          "question": "Such ___ the backlog that weekend shifts became necessary.",
+          "questionVi": "Tồn đọng ___ đến mức ca cuối tuần trở nên cần thiết.",
+          "options": ["is", "was", "had been", "were"],
+          "optionsVi": ["là", "đã", "đã", "đã"],
+          "correct": 1
+        },
+        {
+          "id": 20,
+          "question": "By the time the keynote starts, over 800 attendees ___ in.",
+          "questionVi": "Đến khi phiên khai mạc bắt đầu, hơn 800 người tham dự sẽ ___ vào.",
+          "options": ["will check", "will be checking", "will have checked", "have checked"],
+          "optionsVi": ["sẽ đăng ký", "sẽ đang đăng ký", "sẽ đã đăng ký", "đã đăng ký"],
+          "correct": 2
+        },
+        {
+          "id": 21,
+          "question": "But for your backup generator, production ___ yesterday.",
+          "questionVi": "Nếu không có máy phát dự phòng của bạn, sản xuất hôm qua ___ .",
+          "options": ["stops", "would stop", "would have stopped", "had stopped"],
+          "optionsVi": ["dừng", "sẽ dừng", "đã có thể dừng", "đã dừng"],
+          "correct": 2
+        },
+        {
+          "id": 22,
+          "question": "Management decided to ___ paper forms gradually over six months.",
+          "questionVi": "Ban quản lý quyết định ___ biểu mẫu giấy dần trong sáu tháng.",
+          "options": ["phase in", "roll up", "phase out", "break out"],
+          "optionsVi": ["đưa vào dần", "cuộn lên", "loại bỏ dần", "bùng phát"],
+          "correct": 2
+        },
+        {
+          "id": 23,
+          "question": "Either option has drawbacks, but neither ___ a deal-breaker.",
+          "questionVi": "Mỗi lựa chọn đều có điểm trừ, nhưng không cái nào ___ yếu tố huỷ thỏa thuận.",
+          "options": ["are", "were", "is", "have been"],
+          "optionsVi": ["là (số nhiều)", "đã là", "là (số ít)", "đã là"],
+          "correct": 2
+        },
+        {
+          "id": 24,
+          "question": "At no time ___ customers’ card details stored on our servers.",
+          "questionVi": "Không lúc nào ___ thông tin thẻ của khách hàng được lưu trên máy chủ chúng tôi.",
+          "options": ["were", "are", "did", "have"],
+          "optionsVi": ["đã", "đang", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 25,
+          "question": "He invested a large ___ of time in revising the syllabus.",
+          "questionVi": "Anh ấy đầu tư một ___ thời gian lớn vào việc sửa giáo trình.",
+          "options": ["number", "amount", "quantity", "sum"],
+          "optionsVi": ["số lượng (đếm được)", "lượng (không đếm được)", "lượng", "tổng"],
+          "correct": 1
+        },
+        {
+          "id": 26,
+          "question": "The contract will be renewed provided (that) all milestones ___ on schedule.",
+          "questionVi": "Hợp đồng sẽ được gia hạn miễn là tất cả cột mốc ___ đúng tiến độ.",
+          "options": ["meet", "are met", "met", "had met"],
+          "optionsVi": ["đạt", "được đạt", "đã đạt", "đã đạt"],
+          "correct": 1
+        },
+        {
+          "id": 27,
+          "question": "No matter how complex the feedback ___, keep summaries to one page.",
+          "questionVi": "Dù phản hồi có phức tạp đến đâu ___ , hãy giữ phần tóm tắt trong một trang.",
+          "options": ["is", "are", "may be", "might be"],
+          "optionsVi": ["là", "là", "có thể là", "có thể là"],
+          "correct": 2
+        },
+        {
+          "id": 28,
+          "question": "She apologized ___ the delay and promised a revised delivery window.",
+          "questionVi": "Cô ấy xin lỗi ___ sự chậm trễ và hứa mốc giao mới.",
+          "options": ["about", "for", "of", "over"],
+          "optionsVi": ["về", "vì", "của", "vì"],
+          "correct": 1
+        },
+        {
+          "id": 29,
+          "question": "The project to ___ the payment gateway is ahead of schedule.",
+          "questionVi": "Dự án ___ cổng thanh toán đang vượt tiến độ.",
+          "options": ["roll in", "roll back", "roll out", "roll over"],
+          "optionsVi": ["đưa vào", "hoàn nguyên", "triển khai", "gia hạn/chuyển"],
+          "correct": 2
+        },
+        {
+          "id": 30,
+          "question": "You’d better ___ a backup before editing the registry.",
+          "questionVi": "Bạn nên ___ một bản sao lưu trước khi chỉnh sổ đăng ký.",
+          "options": ["to make", "make", "making", "made"],
+          "optionsVi": ["để tạo", "tạo", "việc tạo", "đã tạo"],
+          "correct": 1
+        }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension",
+      "titleVi": "Phần B: Đọc hiểu",
+      "description": "20 multiple-choice questions · Read passages and choose the best answer",
+      "descriptionVi": "20 câu trắc nghiệm · Đọc đoạn văn và chọn đáp án đúng",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 – “Borrow an Expert” at the City Library",
+          "content": "To update its role beyond book lending, the City Library launched “Borrow an Expert,” a program that lets patrons book one-on-one, 30-minute consultations with volunteers in areas like small-business basics, resume reviews, and smartphone safety. Sessions are free and capped at two per person per month. A scheduling portal opens each Monday at 9 a.m.; popular topics fill within minutes. Early feedback shows high satisfaction but flags two constraints: demand outstrips evening availability, and some patrons expect legal or tax advice, which the program disallows. To manage expectations, the library added topic descriptions and a pre-screening checklist. A pilot with local colleges now grants internship credit to students who volunteer, increasing the supply of mentors by 25 percent. If no-show rates drop below 8 percent for eight consecutive weeks—thanks to reminder texts and a two-strike policy—the library will add weekend hours and expand into two branch locations.",
+          "contentVi": "Để làm mới vai trò ngoài việc cho mượn sách, Thư viện Thành phố ra mắt chương trình “Mượn Chuyên Gia”, cho phép bạn đọc đặt lịch tư vấn 1-1 trong 30 phút với tình nguyện viên về các chủ đề như kiến thức khởi sự kinh doanh, rà soát hồ sơ xin việc và an toàn điện thoại thông minh. Buổi tư vấn miễn phí và giới hạn tối đa hai lần mỗi người mỗi tháng. Cổng đặt lịch mở lúc 9 giờ sáng thứ Hai hằng tuần; các chủ đề phổ biến kín chỗ trong vài phút. Phản hồi ban đầu cho thấy mức hài lòng cao nhưng nêu hai hạn chế: nhu cầu vượt khung giờ buổi tối, và một số bạn đọc kỳ vọng tư vấn pháp lý hoặc thuế, điều chương trình không cho phép. Để quản lý kỳ vọng, thư viện bổ sung mô tả chủ đề và bảng kiểm sàng lọc trước. Thí điểm với các trường cao đẳng địa phương cho phép sinh viên tình nguyện nhận tín chỉ thực tập, tăng nguồn cố vấn thêm 25%. Nếu tỷ lệ vắng mặt không thông báo giảm dưới 8% trong tám tuần liên tiếp — nhờ tin nhắn nhắc và chính sách hai lần vi phạm — thư viện sẽ bổ sung giờ cuối tuần và mở rộng ra hai chi nhánh.",
+          "questions": [
+            {
+              "id": 31,
+              "question": "How many sessions can a patron book per month?",
+              "questionVi": "Mỗi bạn đọc có thể đặt tối đa bao nhiêu buổi mỗi tháng?",
+              "options": ["One", "Two", "Three", "Unlimited"],
+              "optionsVi": ["Một", "Hai", "Ba", "Không giới hạn"],
+              "correct": 1
+            },
+            {
+              "id": 32,
+              "question": "When does the scheduling portal open?",
+              "questionVi": "Cổng đặt lịch mở khi nào?",
+              "options": ["Daily at 8 a.m.", "Mondays at 9 a.m.", "Fridays at noon", "First day of each month"],
+              "optionsVi": ["Mỗi ngày 8:00", "Thứ Hai lúc 9:00", "Thứ Sáu 12:00", "Ngày đầu mỗi tháng"],
+              "correct": 1
+            },
+            {
+              "id": 33,
+              "question": "Which type of advice is NOT allowed?",
+              "questionVi": "Loại tư vấn NÀO không được phép?",
+              "options": ["Resume tips", "Small-business basics", "Legal or tax advice", "Smartphone safety"],
+              "optionsVi": ["Mẹo hồ sơ xin việc", "Kiến thức khởi sự kinh doanh", "Tư vấn pháp lý hoặc thuế", "An toàn điện thoại"],
+              "correct": 2
+            },
+            {
+              "id": 34,
+              "question": "What was added to manage expectations?",
+              "questionVi": "Điều gì được bổ sung để quản lý kỳ vọng?",
+              "options": ["Higher fees", "Topic descriptions and a pre-screening checklist", "Longer sessions", "Paid mentors"],
+              "optionsVi": ["Phí cao hơn", "Mô tả chủ đề và bảng kiểm sàng lọc", "Buổi dài hơn", "Cố vấn trả phí"],
+              "correct": 1
+            },
+            {
+              "id": 35,
+              "question": "What effect did the college pilot have?",
+              "questionVi": "Thí điểm với cao đẳng mang lại tác động gì?",
+              "options": ["Reduced demand", "25% more mentors", "Weekend hours added", "Longer appointments"],
+              "optionsVi": ["Giảm nhu cầu", "Thêm 25% cố vấn", "Thêm giờ cuối tuần", "Hẹn dài hơn"],
+              "correct": 1
+            },
+            {
+              "id": 36,
+              "question": "Which metric triggers weekend expansion?",
+              "questionVi": "Chỉ số nào kích hoạt mở rộng giờ cuối tuần?",
+              "options": ["Satisfaction above 95%", "No-show rate below 8% for eight weeks", "100 volunteers onboarded", "Portal uptime 99.9%"],
+              "optionsVi": ["Hài lòng trên 95%", "Vắng mặt < 8% trong 8 tuần", "100 tình nguyện viên", "Uptime cổng 99,9%"],
+              "correct": 1
+            },
+            {
+              "id": 37,
+              "question": "What problem most affects evening slots?",
+              "questionVi": "Vấn đề nào ảnh hưởng mạnh nhất đến khung giờ buổi tối?",
+              "options": ["Low demand", "Over-demand versus availability", "System errors", "Mentor cancellations"],
+              "optionsVi": ["Nhu cầu thấp", "Nhu cầu vượt quá khả dụng", "Lỗi hệ thống", "Huỷ của cố vấn"],
+              "correct": 1
+            },
+            {
+              "id": 38,
+              "question": "Why were topic descriptions necessary?",
+              "questionVi": "Vì sao cần mô tả chủ đề?",
+              "options": ["To market paid services", "To prevent requests for disallowed advice", "To lengthen sessions", "To collect donations"],
+              "optionsVi": ["Để quảng bá dịch vụ trả phí", "Để tránh yêu cầu tư vấn bị cấm", "Để kéo dài buổi", "Để gây quỹ"],
+              "correct": 1
+            },
+            {
+              "id": 39,
+              "question": "The overall tone of the passage is best described as:",
+              "questionVi": "Giọng điệu chung của đoạn văn được mô tả là:",
+              "options": ["Critical and pessimistic", "Balanced and solution-oriented", "Highly promotional", "Skeptical of libraries"],
+              "optionsVi": ["Chỉ trích và bi quan", "Cân bằng và hướng giải pháp", "Quảng bá", "Hoài nghi thư viện"],
+              "correct": 1
+            },
+            {
+              "id": 40,
+              "question": "What primarily drives rapid slot fill-ups?",
+              "questionVi": "Điều gì chủ yếu khiến chỗ trống kín nhanh?",
+              "options": ["Shorter sessions", "Popular topics and limited evening slots", "High fees", "Walk-in demand"],
+              "optionsVi": ["Buổi ngắn hơn", "Chủ đề hot và ít suất buổi tối", "Phí cao", "Nhu cầu đến trực tiếp"],
+              "correct": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 – Outpatient Reminder System at Riverside Hospital",
+          "content": "Riverside Hospital piloted an automated reminder system for outpatient appointments after no-shows peaked at 17 percent. Three days before the visit, patients received a text with a confirm / cancel link and a phone number for rescheduling. Confirmed slots locked in; cancelled ones returned to a waitlist that auto-notified patients within five kilometres. Over twelve weeks, no-shows fell to 9.8 percent, and the clinic filled 62 percent of cancelled slots from the waitlist. The exception was early-morning physiotherapy, where responses were slower and few people could come on short notice. A multilingual option increased engagement among older patients when family members managed the messages. Staff raised two concerns: messages sometimes arrived during prayer times, and not all insurance plans recognized text-based confirmations. The hospital plans to add time-window preferences and push confirmations into the insurer portal via an API.",
+          "contentVi": "Bệnh viện Riverside thí điểm hệ thống nhắc lịch tự động cho khám ngoại trú sau khi tỷ lệ vắng không báo trước lên đỉnh 17%. Ba ngày trước lịch, bệnh nhân nhận tin nhắn có liên kết xác nhận / huỷ và số điện thoại để dời lịch. Suất đã xác nhận sẽ được giữ; suất huỷ trả về danh sách chờ và hệ thống tự động thông báo cho bệnh nhân trong bán kính năm ki-lô-mét. Trong mười hai tuần, tỷ lệ vắng giảm còn 9,8%, và phòng khám lấp đầy 62% suất huỷ từ danh sách chờ. Ngoại lệ là vật lý trị liệu sáng sớm, phản hồi chậm và ít người có thể đến gấp. Tuỳ chọn đa ngôn ngữ tăng tương tác ở nhóm lớn tuổi khi người thân hỗ trợ quản lý tin nhắn. Nhân viên nêu hai lo ngại: tin nhắn đôi lúc rơi vào giờ cầu nguyện, và không phải gói bảo hiểm nào cũng công nhận xác nhận qua tin nhắn. Bệnh viện dự định thêm tuỳ chọn khung giờ nhận tin và đẩy xác nhận vào cổng bảo hiểm qua API.",
+          "questions": [
+            {
+              "id": 41,
+              "question": "What was the initial no-show rate that triggered the pilot?",
+              "questionVi": "Tỷ lệ vắng ban đầu dẫn tới thí điểm là bao nhiêu?",
+              "options": ["9.8%", "12%", "15%", "17%"],
+              "optionsVi": ["9,8%", "12%", "15%", "17%"],
+              "correct": 3
+            },
+            {
+              "id": 42,
+              "question": "How long before the appointment were reminders sent?",
+              "questionVi": "Tin nhắn nhắc được gửi trước lịch bao lâu?",
+              "options": ["1 day", "2 days", "3 days", "1 week"],
+              "optionsVi": ["1 ngày", "2 ngày", "3 ngày", "1 tuần"],
+              "correct": 2
+            },
+            {
+              "id": 43,
+              "question": "What happened to cancelled slots?",
+              "questionVi": "Suất bị huỷ được xử lý thế nào?",
+              "options": ["Held for 24 hours", "Given to walk-ins", "Returned to a waitlist with auto-notify", "Deleted from the schedule"],
+              "optionsVi": ["Giữ 24 giờ", "Dành cho bệnh nhân đến trực tiếp", "Trả về danh sách chờ, tự động báo", "Xoá khỏi lịch"],
+              "correct": 2
+            },
+            {
+              "id": 44,
+              "question": "Which clinic time remained problematic?",
+              "questionVi": "Khung giờ phòng khám nào vẫn có vấn đề?",
+              "options": ["Late evening dermatology", "Early-morning physiotherapy", "Weekend dentistry", "Afternoon paediatrics"],
+              "optionsVi": ["Da liễu buổi tối muộn", "Vật lý trị liệu sáng sớm", "Nha cuối tuần", "Nhi buổi chiều"],
+              "correct": 1
+            },
+            {
+              "id": 45,
+              "question": "What proportion of cancelled slots were refilled?",
+              "questionVi": "Tỷ lệ suất huỷ được lấp đầy là bao nhiêu?",
+              "options": ["38%", "50%", "62%", "75%"],
+              "optionsVi": ["38%", "50%", "62%", "75%"],
+              "correct": 2
+            },
+            {
+              "id": 46,
+              "question": "Why did multilingual messaging help older patients?",
+              "questionVi": "Vì sao nhắn tin đa ngôn ngữ giúp nhóm lớn tuổi?",
+              "options": ["Cheaper plans", "Family could manage the messages", "Bigger fonts used", "Voice calls added"],
+              "optionsVi": ["Gói rẻ hơn", "Người thân có thể quản lý tin nhắn", "Phông chữ lớn hơn", "Thêm cuộc gọi thoại"],
+              "correct": 1
+            },
+            {
+              "id": 47,
+              "question": "Which concern related to religious practice?",
+              "questionVi": "Mối lo nào liên quan đến việc hành lễ?",
+              "options": ["Insurance rejection", "Messages during prayer times", "Clinic closed on Fridays", "Lack of female staff"],
+              "optionsVi": ["Bảo hiểm từ chối", "Tin nhắn vào giờ cầu nguyện", "Phòng khám đóng cửa thứ Sáu", "Thiếu nhân viên nữ"],
+              "correct": 1
+            },
+            {
+              "id": 48,
+              "question": "What technical integration is planned next?",
+              "questionVi": "Tích hợp kỹ thuật nào được lên kế hoạch tiếp theo?",
+              "options": ["Kiosk check-in", "Insurer portal API confirmations", "Biometric ID", "Chatbot triage"],
+              "optionsVi": ["Quầy tự đăng ký", "Đẩy xác nhận vào cổng bảo hiểm qua API", "Nhận diện sinh trắc", "Phân loại bằng chatbot"],
+              "correct": 1
+            },
+            {
+              "id": 49,
+              "question": "What geographic filter was used for waitlist notifications?",
+              "questionVi": "Bộ lọc địa lý nào được dùng khi báo danh sách chờ?",
+              "options": ["Same postcode", "Within 5 km", "Same doctor only", "Public transport access"],
+              "optionsVi": ["Cùng mã vùng", "Trong bán kính 5 km", "Cùng bác sĩ", "Có phương tiện công cộng"],
+              "correct": 1
+            },
+            {
+              "id": 50,
+              "question": "Overall, the passage suggests the program is:",
+              "questionVi": "Nhìn chung, đoạn văn cho thấy chương trình:",
+              "options": ["Ineffective and costly", "Partially successful with noted gaps", "Unnecessary and complex", "Ready for nationwide rollout without changes"],
+              "optionsVi": ["Kém hiệu quả và tốn kém", "Thành công một phần, còn khoảng trống", "Không cần thiết và phức tạp", "Sẵn sàng triển khai toàn quốc không cần chỉnh"],
+              "correct": 1
+            }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension",
+      "titleVi": "Phần C: Nghe hiểu",
+      "description": "10 multiple-choice questions · Listen to audio scripts and choose the best answer",
+      "descriptionVi": "10 câu trắc nghiệm · Nghe đoạn băng và chọn đáp án đúng",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 – Museum Timed-Entry Update",
+          "content": "Visitors for the Impressionism exhibit: your timed entry at 2:30 will now use the South Entrance due to scaffolding in the main hall. Please arrive five minutes early for bag checks. Audio guides are collected beside the gift shop, and lockers are available on Level B. If you have a stroller, use the elevator near the café. The gallery is cool; consider a light jacket.",
+          "contentVi": "Khách tham quan triển lãm Ấn Tượng: vé giờ 14:30 của bạn nay vào từ Cổng Nam do giàn giáo trong sảnh chính. Vui lòng đến sớm năm phút để kiểm tra túi. Máy thuyết minh nhận tại quầy cạnh cửa hàng quà tặng; tủ khoá ở Tầng B. Nếu có xe nôi, dùng thang máy gần quán cà phê. Phòng trưng bày khá mát; nên mang áo khoác nhẹ.",
+          "questions": [
+            {
+              "id": 51,
+              "question": "Which entrance should 2:30 visitors use?",
+              "questionVi": "Khách 14:30 nên dùng cổng nào?",
+              "options": ["Main Entrance", "North Entrance", "South Entrance", "East Entrance"],
+              "optionsVi": ["Cổng chính", "Cổng Bắc", "Cổng Nam", "Cổng Đông"],
+              "correct": 2
+            },
+            {
+              "id": 52,
+              "question": "Where are audio guides collected?",
+              "questionVi": "Nhận máy thuyết minh ở đâu?",
+              "options": ["At the café", "Beside the gift shop", "At Level B lockers", "At the South Entrance"],
+              "optionsVi": ["Tại quán cà phê", "Cạnh cửa hàng quà tặng", "Tại tủ khoá Tầng B", "Tại Cổng Nam"],
+              "correct": 1
+            },
+            {
+              "id": 53,
+              "question": "What advice is given about strollers?",
+              "questionVi": "Lời khuyên nào dành cho xe nôi?",
+              "options": ["Use the stairs", "Leave at the gift shop", "Use the elevator near the café", "Not allowed in the gallery"],
+              "optionsVi": ["Dùng cầu thang bộ", "Để ở cửa hàng quà", "Dùng thang máy gần quán cà phê", "Không được vào phòng trưng bày"],
+              "correct": 2
+            },
+            {
+              "id": 54,
+              "question": "Why was the entrance changed?",
+              "questionVi": "Vì sao cổng vào bị đổi?",
+              "options": ["Security drill", "VIP visit", "Scaffolding in main hall", "Power cut"],
+              "optionsVi": ["Diễn tập an ninh", "Khách VIP", "Giàn giáo trong sảnh chính", "Mất điện"],
+              "correct": 2
+            },
+            {
+              "id": 55,
+              "question": "What clothing suggestion is made?",
+              "questionVi": "Gợi ý trang phục là gì?",
+              "options": ["Wear boots", "Bring a light jacket", "Wear a hat", "Bring gloves"],
+              "optionsVi": ["Đi ủng", "Mang áo khoác nhẹ", "Đội mũ", "Đeo găng"],
+              "correct": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 – Community Pool Closure Notice",
+          "content": "Good evening. The community pool will be closed tomorrow from 6 a.m. to noon for a filter replacement. Morning lap swim is cancelled, but water-aerobics at 12:30 will go ahead as planned. The shallow play area reopens first, followed by the diving well at 1 p.m. Locker rooms remain open, and memberships will be credited automatically for the lost hours.",
+          "contentVi": "Chào buổi tối. Hồ bơi cộng đồng sẽ đóng cửa ngày mai từ 6:00 đến 12:00 để thay bộ lọc. Suất bơi đường buổi sáng bị huỷ, nhưng lớp thể dục dưới nước lúc 12:30 vẫn diễn ra như kế hoạch. Khu vui chơi nước nông mở lại trước, sau đó giếng nhảy mở lúc 13:00. Phòng thay đồ vẫn mở, và hội viên sẽ được cộng bù tự động cho giờ mất.",
+          "questions": [
+            {
+              "id": 56,
+              "question": "When is the pool closed?",
+              "questionVi": "Hồ bơi đóng cửa khi nào?",
+              "options": ["6 a.m.–10 a.m.", "6 a.m.–noon", "7 a.m.–noon", "All day"],
+              "optionsVi": ["6:00–10:00", "6:00–12:00", "7:00–12:00", "Cả ngày"],
+              "correct": 1
+            },
+            {
+              "id": 57,
+              "question": "Which activity is cancelled?",
+              "questionVi": "Hoạt động nào bị huỷ?",
+              "options": ["Water-aerobics 12:30", "Family swim 2 p.m.", "Morning lap swim", "Diving practice 1 p.m."],
+              "optionsVi": ["Thể dục nước 12:30", "Bơi gia đình 14:00", "Bơi đường buổi sáng", "Tập nhảy cầu 13:00"],
+              "correct": 2
+            },
+            {
+              "id": 58,
+              "question": "What reopens first?",
+              "questionVi": "Khu nào mở lại trước?",
+              "options": ["Diving well", "Locker rooms", "Shallow play area", "Main lanes"],
+              "optionsVi": ["Giếng nhảy", "Phòng thay đồ", "Khu vui chơi nông", "Đường bơi chính"],
+              "correct": 2
+            },
+            {
+              "id": 59,
+              "question": "When will the diving well reopen?",
+              "questionVi": "Giếng nhảy sẽ mở lại lúc mấy giờ?",
+              "options": ["Noon", "12:30", "1 p.m.", "2 p.m."],
+              "optionsVi": ["12:00", "12:30", "13:00", "14:00"],
+              "correct": 2
+            },
+            {
+              "id": 60,
+              "question": "How will members be compensated?",
+              "questionVi": "Hội viên sẽ được bù như thế nào?",
+              "options": ["Free guest passes", "Automatic credit for lost hours", "Cash refund at desk", "Extra class added"],
+              "optionsVi": ["Vé khách miễn phí", "Cộng bù tự động cho giờ mất", "Hoàn tiền mặt tại quầy", "Thêm lớp học"],
+              "correct": 1
+            }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing",
+      "titleVi": "Phần D: Viết",
+      "description": "3 writing tasks · Suggested timing: 75–100 minutes total",
+      "descriptionVi": "3 bài viết · Gợi ý thời gian: 75–100 phút",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (190–220 words)",
+          "titleVi": "Bài 1 (190–220 từ)",
+          "instruction": "Write a formal complaint to a courier company: your fragile parcel arrived two days late and damaged despite a ‘handle with care’ label. Describe the timeline, evidence (photos, tracking), and request a refund plus process improvements.",
+          "instructionVi": "Viết thư khiếu nại trang trọng gửi công ty chuyển phát: kiện hàng dễ vỡ của bạn đến trễ hai ngày và bị hư dù có nhãn ‘handle with care’. Mô tả dòng thời gian, bằng chứng (ảnh, mã theo dõi) và yêu cầu hoàn tiền kèm cải tiến quy trình.",
+          "wordLimit": { "min": 190, "max": 220 },
+          "type": "formal_email",
+          "topic": "damaged_delivery_claim"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (270–300 words)",
+          "titleVi": "Bài 2 (270–300 từ)",
+          "instruction": "“Social media platforms should require robust age verification to access public content.” To what extent do you agree or disagree? Present one main argument, a real-world example, and one counter-argument you address.",
+          "instructionVi": "“Các nền tảng mạng xã hội nên yêu cầu xác minh tuổi mạnh để truy cập nội dung công khai.” Bạn đồng ý đến mức nào? Trình bày một luận điểm chính, ví dụ thực tế và một phản biện mà bạn xử lý.",
+          "wordLimit": { "min": 270, "max": 300 },
+          "type": "opinion_essay",
+          "topic": "age_verification_online"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (270–310 words)",
+          "titleVi": "Bài 3 (270–310 từ)",
+          "instruction": "A small table compares two marketing channels over one quarter: Search Ads — 1.8M impressions; CTR 2.4%; CPC $0.65; Conv. rate 3.1%. Social Ads — 1.2M impressions; CTR 3.8%; CPC $0.52; Conv. rate 2.2%. Summarise key differences, discuss cost-effectiveness vs. conversion quality, and recommend one budget shift.",
+          "instructionVi": "Bảng nhỏ so sánh hai kênh marketing trong một quý: Quảng cáo Tìm kiếm — 1,8M lượt hiển thị; CTR 2,4%; CPC $0,65; Tỷ lệ chuyển đổi 3,1%. Quảng cáo Mạng Xã hội — 1,2M hiển thị; CTR 3,8%; CPC $0,52; Chuyển đổi 2,2%. Hãy tóm tắt khác biệt, bàn về hiệu quả chi phí so với chất lượng chuyển đổi, và đề xuất điều chỉnh ngân sách.",
+          "wordLimit": { "min": 270, "max": 310 },
+          "type": "data_description",
+          "topic": "ad_channel_performance",
+          "chartData": {
+            "title": "Marketing Channel Metrics (One Quarter)",
+            "titleVi": "Chỉ số kênh marketing (1 quý)",
+            "data": [
+              { "channel": "Search Ads", "impressions": 1800000, "ctr_percent": 2.4, "cpc_usd": 0.65, "conversion_rate_percent": 3.1 },
+              { "channel": "Social Ads", "impressions": 1200000, "ctr_percent": 3.8, "cpc_usd": 0.52, "conversion_rate_percent": 2.2 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "2.4.0",
+    "lastUpdated": "2025-08-27",
+    "difficulty": "upper-intermediate",
+    "estimatedTime": "85–105 minutes",
+    "tags": ["grammar", "vocabulary", "reading", "listening", "writing", "ielts", "practice", "bilingual", "level2.4"]
+  }
+}
