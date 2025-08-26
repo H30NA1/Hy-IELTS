@@ -1,0 +1,117 @@
+{
+  "id": "mes4xi2xgff1kvqsg1t",
+  "timestamp": "2025-08-26T05:58:17.289Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-08-26T05:58:16.564Z",
+    "submittedBy": "user"
+  },
+  "userName": "Leenamhi",
+  "answers": {
+    "grammar": {
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 1,
+      "5": 2,
+      "6": 1,
+      "7": 1,
+      "8": 2,
+      "9": 2,
+      "10": 0,
+      "11": 1,
+      "12": 1,
+      "13": 2,
+      "14": 1,
+      "15": 2,
+      "16": 2,
+      "17": 2,
+      "18": 2,
+      "19": 1,
+      "20": 3,
+      "21": 1,
+      "22": 3,
+      "23": 2,
+      "24": 1,
+      "25": 1,
+      "26": 1,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0
+    },
+    "reading": {
+      "31": 1,
+      "32": 2,
+      "33": 1,
+      "34": 2,
+      "35": 1,
+      "36": 2,
+      "37": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "41": 1,
+      "42": 3,
+      "43": 1,
+      "44": 0,
+      "45": 1,
+      "46": 1,
+      "47": 1,
+      "48": 1,
+      "49": 1,
+      "50": 1
+    },
+    "listening": {
+      "51": 1,
+      "52": 1,
+      "53": 0,
+      "54": 0,
+      "55": 2,
+      "56": 2,
+      "57": 1,
+      "58": 1,
+      "59": 2,
+      "60": 2
+    },
+    "writing": {
+      "task1": "Dear Customer Care\nMy baggage was delayed for three days on flight VN123 from HCM city to Singapore on August 20, 2025. I only received my bag on August 26, 2025. During this time, I had to buy essential items (clothes, toiletries, basic personal care). I have attached the receipts for your review. Please confirm the process for reimbursement under your delayed-baggage policy. I would appreciate your assistance in settling this claim\nThank you for your support",
+      "task2": "I do not agree that cities need to regulate AI images in ads. Most AI pictures look fake or low quality, so they already fail to attract customers. For example, an AI-made fashion ad often shows strange faces or wrong body shapes, which makes people not trust the brand. Some argue that rules are needed to stop false ads, but weak AI images are easy to notice and do not really fool the public",
+      "task3": "Email was cheapest ($1.60/ticket) but slowest (6.5h) with the lowest satisfaction (4.1). Live Chat handled the most cases (4,000), with fast replies (1.2h), good satisfaction (4.4), and moderate cost. Phone was fastest (0.4h) and highest rated (4.6) but costly ($3.80) and low volume. Overall, Email is efficient but weak in quality, Phone gives top service but is expensive, and Live Chat offers the best balance. Recommendation: expand Live Chat, keep Phone for urgent issues, and use Email for low-priority tickets"
+    },
+    "translatedQuestions": [
+      8,
+      "8",
+      16,
+      "16",
+      42,
+      "42"
+    ],
+    "translationPenalties": {
+      "question-8": -0.5,
+      "question-16": -0.5,
+      "question-42": -0.5,
+      "transcript-1": -1,
+      "transcript-2": -1,
+      "writing-task-2": -0.5
+    }
+  },
+  "results": {
+    "grammar": 14,
+    "reading": 18,
+    "listening": 9,
+    "writing": 10,
+    "total": 51,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -1.5
+  },
+  "timeSpent": "36:07",
+  "testData": {
+    "testId": "IELTS_STARTER_2_2_A",
+    "testDate": "2025-08-26",
+    "testTitle": "IELTS Starter 2.2 Practice Test (EN–VI) — Paper A"
+  }
+}
