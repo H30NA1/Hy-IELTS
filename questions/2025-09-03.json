@@ -1,0 +1,607 @@
+{
+  "testId": "IELTS_STARTER_3_0",
+  "testDate": "2025-09-03",
+  "testTitle": "IELTS Starter 3.0 Practice Test (EN–VI) — Grammar & Meaning Focus",
+  "totalQuestions": 50,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Meaning",
+      "titleVi": "Phần A: Ngữ pháp & Nghĩa từ vựng",
+      "description": "30 multiple-choice questions · Heavier focus on structure, nuance, and meaning",
+      "descriptionVi": "30 câu trắc nghiệm · Tập trung nhiều vào cấu trúc, sắc thái và nghĩa",
+      "totalQuestions": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Not until the data had been cleaned ___ the model stabilize.",
+          "questionVi": "Mãi đến khi dữ liệu được làm sạch thì mô hình mới ___ ổn định.",
+          "options": ["have", "had", "did", "was"],
+          "optionsVi": ["đã", "đã", "mới", "đã"],
+          "correct": 2
+        },
+        {
+          "id": 2,
+          "question": "It’s high time you ___ the draft.",
+          "questionVi": "Đã đến lúc bạn ___ bản nháp.",
+          "options": ["revise", "revised", "should revise", "would revise"],
+          "optionsVi": ["sửa", "đã sửa", "nên sửa", "muốn sửa"],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "question": "I’d rather you ___ any files without a backup.",
+          "questionVi": "Tôi muốn bạn ___ xóa tệp khi chưa sao lưu.",
+          "options": ["don’t delete", "didn’t delete", "haven’t deleted", "wouldn’t delete"],
+          "optionsVi": ["đừng xóa", "đừng có xóa (giả định)", "chưa xóa", "không xóa"],
+          "correct": 1
+        },
+        {
+          "id": 4,
+          "question": "No sooner ___ the announcement than the site crashed.",
+          "questionVi": "Vừa mới ___ thông báo thì trang web sập.",
+          "options": ["they had posted", "had they posted", "they posted", "had posted they"],
+          "optionsVi": ["họ đã đăng", "họ đã đăng (đảo ngữ)", "họ đăng", "đã đăng họ"],
+          "correct": 1
+        },
+        {
+          "id": 5,
+          "question": "Should you need assistance, ___ 0.",
+          "questionVi": "Nếu cần hỗ trợ, hãy ___ số 0.",
+          "options": ["pressing", "to press", "press", "you press"],
+          "optionsVi": ["nhấn", "để nhấn", "nhấn", "bạn nhấn"],
+          "correct": 2
+        },
+        {
+          "id": 6,
+          "question": "The proposal, ___ aims to reduce churn, requires board approval.",
+          "questionVi": "Đề xuất, ___ nhằm giảm rời bỏ, cần hội đồng phê duyệt.",
+          "options": ["which", "that", "whom", "where"],
+          "optionsVi": ["mà", "rằng", "người mà", "nơi mà"],
+          "correct": 0
+        },
+        {
+          "id": 7,
+          "question": "Scarcely anyone objected, ___?",
+          "questionVi": "Hầu như không ai phản đối, ___?",
+          "options": ["did they", "didn’t they", "do they", "does anyone"],
+          "optionsVi": ["phải không", "không phải sao", "phải không", "có ai không"],
+          "correct": 0
+        },
+        {
+          "id": 8,
+          "question": "He speaks ___ fluent English that negotiations are easy.",
+          "questionVi": "Anh ấy nói tiếng Anh ___ trôi chảy đến mức đàm phán rất dễ.",
+          "options": ["such", "so", "too", "very"],
+          "optionsVi": ["quá", "rất", "quá mức", "rất"],
+          "correct": 0
+        },
+        {
+          "id": 9,
+          "question": "Hardly any of the advice ___ practical.",
+          "questionVi": "Hầu như không lời khuyên nào ___ thực tế.",
+          "options": ["are", "is", "were", "have been"],
+          "optionsVi": ["là (số nhiều)", "là (số ít)", "đã là", "đã"],
+          "correct": 1
+        },
+        {
+          "id": 10,
+          "question": "The fewer bugs we ship, the ___ our support costs become.",
+          "questionVi": "Lỗi xuất xưởng càng ít thì chi phí hỗ trợ càng ___.",
+          "options": ["lower", "lesser", "fewer", "least"],
+          "optionsVi": ["thấp hơn", "ít hơn (sai ngữ pháp)", "ít hơn", "thấp nhất"],
+          "correct": 0
+        },
+        {
+          "id": 11,
+          "question": "I object to ___ recorded without consent.",
+          "questionVi": "Tôi phản đối việc ___ ghi âm khi chưa có đồng ý.",
+          "options": ["be", "being", "to be", "been"],
+          "optionsVi": ["được", "đang được", "được", "đã được"],
+          "correct": 1
+        },
+        {
+          "id": 12,
+          "question": "Not only ___ the targets, but we also cut costs.",
+          "questionVi": "Không chỉ ___ các chỉ tiêu mà chúng tôi còn giảm chi phí.",
+          "options": ["we met", "did we meet", "have we meeting", "did we met"],
+          "optionsVi": ["chúng tôi đạt", "chúng tôi đã đạt (đảo ngữ)", "chúng tôi đang họp", "chúng tôi đã đạt"],
+          "correct": 1
+        },
+        {
+          "id": 13,
+          "question": "By this time next year, the team ___ the migration.",
+          "questionVi": "Đến thời điểm này năm sau, nhóm ___ việc chuyển đổi.",
+          "options": ["completes", "will complete", "will have completed", "will be completing"],
+          "optionsVi": ["hoàn tất", "sẽ hoàn tất", "sẽ đã hoàn tất", "sẽ đang hoàn tất"],
+          "correct": 2
+        },
+        {
+          "id": 14,
+          "question": "Each of the trainees ___ a badge.",
+          "questionVi": "Mỗi thực tập sinh ___ một thẻ tên.",
+          "options": ["have", "has", "are", "were"],
+          "optionsVi": ["có (số nhiều)", "có (số ít)", "là", "đã"],
+          "correct": 1
+        },
+        {
+          "id": 15,
+          "question": "Were it not for your map, we ___ lost.",
+          "questionVi": "Nếu không có bản đồ của bạn, chúng tôi ___ đã lạc.",
+          "options": ["would get", "would have got", "got", "had got"],
+          "optionsVi": ["sẽ lạc", "đã có thể lạc", "đã lạc", "đã lạc"],
+          "correct": 1
+        },
+        {
+          "id": 16,
+          "question": "She insisted that he ___ present at the briefing.",
+          "questionVi": "Cô ấy khăng khăng rằng anh ấy ___ có mặt trong buổi họp.",
+          "options": ["is", "be", "was", "should be"],
+          "optionsVi": ["là", "phải (thức giả định)", "đã", "nên"],
+          "correct": 1
+        },
+        {
+          "id": 17,
+          "question": "At no point ___ the terms disclosed to customers.",
+          "questionVi": "Không lúc nào ___ các điều khoản được thông báo cho khách.",
+          "options": ["the terms were", "were the terms", "had the terms been", "are the terms"],
+          "optionsVi": ["các điều khoản đã", "các điều khoản đã (đảo ngữ)", "các điều khoản đã được", "các điều khoản đang"],
+          "correct": 1
+        },
+        {
+          "id": 18,
+          "question": "He was accused of ___ the results.",
+          "questionVi": "Anh ấy bị cáo buộc đã ___ kết quả.",
+          "options": ["falsify", "falsifying", "to falsify", "having falsified"],
+          "optionsVi": ["làm giả", "làm giả (V-ing)", "để làm giả", "đã làm giả"],
+          "correct": 1
+        },
+        {
+          "id": 19,
+          "question": "Little ___ the committee realize the scope of the risks.",
+          "questionVi": "Uỷ ban ít ___ phạm vi rủi ro.",
+          "options": ["the committee realized", "did the committee realize", "the committee did realize", "was realized"],
+          "optionsVi": ["uỷ ban nhận ra", "uỷ ban đã nhận ra (đảo ngữ)", "uỷ ban có nhận ra", "được nhận ra"],
+          "correct": 1
+        },
+        {
+          "id": 20,
+          "question": "None of the equipment ___ new.",
+          "questionVi": "Không có thiết bị nào ___ mới.",
+          "options": ["are", "is", "were", "have been"],
+          "optionsVi": ["là (số nhiều)", "là (số ít)", "đã là", "đã"],
+          "correct": 1
+        },
+        {
+          "id": 21,
+          "question": "The report reads as though it ___ by someone else.",
+          "questionVi": "Bản báo cáo đọc lên như thể nó ___ bởi người khác.",
+          "options": ["is written", "was written", "had written", "wrote"],
+          "optionsVi": ["được viết", "đã được viết", "đã viết", "đã viết"],
+          "correct": 1
+        },
+        {
+          "id": 22,
+          "question": "He denied ___ the message.",
+          "questionVi": "Anh ấy phủ nhận đã ___ tin nhắn.",
+          "options": ["to send", "sending", "to have sent", "having send"],
+          "optionsVi": ["đã gửi", "việc gửi", "đã gửi", "đã gửi (sai)"],
+          "correct": 1
+        },
+        {
+          "id": 23,
+          "question": "So complicated ___ that few could implement it.",
+          "questionVi": "___ phức tạp đến mức ít người có thể triển khai.",
+          "options": ["the procedure was", "was the procedure", "were the procedure", "is the procedure"],
+          "optionsVi": ["quy trình thì", "quy trình đã (đảo ngữ)", "quy trình đã (số nhiều)", "quy trình là"],
+          "correct": 1
+        },
+        {
+          "id": 24,
+          "question": "Between you and ___, the figures look optimistic.",
+          "questionVi": "Giữa tôi và ___, các con số có vẻ lạc quan.",
+          "options": ["I", "me", "myself", "mine"],
+          "optionsVi": ["tôi (chủ cách)", "tôi (tân cách)", "bản thân tôi", "của tôi"],
+          "correct": 1
+        },
+        {
+          "id": 25,
+          "question": "Our suppliers, many of ___ are family-run, offered discounts.",
+          "questionVi": "Các nhà cung cấp của chúng tôi, nhiều ___ là hộ gia đình, đã giảm giá.",
+          "options": ["whom", "which", "of whom", "whose"],
+          "optionsVi": ["người mà", "cái mà", "trong số đó", "mà…của"],
+          "correct": 2
+        },
+        {
+          "id": 26,
+          "question": "Despite ___ training, errors persist.",
+          "questionVi": "Mặc dù đào tạo ___, lỗi vẫn còn.",
+          "options": ["extensively", "extensive", "extent", "extension"],
+          "optionsVi": ["nhiều (trạng từ)", "nhiều (tính từ)", "mức độ", "sự mở rộng"],
+          "correct": 1
+        },
+        {
+          "id": 27,
+          "question": "He is ___ to finish by Friday.",
+          "questionVi": "Anh ấy ___ hoàn thành trước thứ Sáu.",
+          "options": ["unlike", "unlikely", "unlikable", "unlikelihood"],
+          "optionsVi": ["không giống", "khó có khả năng", "đáng mến", "sự không khả dĩ"],
+          "correct": 1
+        },
+        {
+          "id": 28,
+          "question": "The CEO’s remarks were more ___ than informative.",
+          "questionVi": "Phát biểu của CEO mang tính ___ hơn là cung cấp thông tin.",
+          "options": ["rhetoric", "rhetorical", "rhetorically", "rhetoricized"],
+          "optionsVi": ["tu từ (danh từ)", "tu từ (tính từ)", "một cách tu từ", "được tu từ hoá"],
+          "correct": 1
+        },
+        {
+          "id": 29,
+          "question": "We need a solution that is both practical and ___.",
+          "questionVi": "Chúng ta cần giải pháp vừa thực tế vừa ___.",
+          "options": ["elegancy", "elegant", "elegance", "elegantly"],
+          "optionsVi": ["sự thanh nhã", "thanh nhã", "tính thanh nhã", "một cách thanh nhã"],
+          "correct": 1
+        },
+        {
+          "id": 30,
+          "question": "I can’t overstate how ___ it is to back up your code.",
+          "questionVi": "Tôi không thể nhấn mạnh đủ mức ___ việc sao lưu mã nguồn.",
+          "options": ["crucial", "crucially", "crucialness", "cruciality"],
+          "optionsVi": ["cực kỳ quan trọng", "một cách quan trọng", "tính quan trọng", "tính quan trọng"],
+          "correct": 0
+        }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension (Meaning-in-Context)",
+      "titleVi": "Phần B: Đọc hiểu (Nghĩa trong ngữ cảnh)",
+      "description": "20 multiple-choice questions · Inference, paraphrase, and vocabulary-in-context",
+      "descriptionVi": "20 câu trắc nghiệm · Suy luận, diễn giải, và nghĩa từ vựng theo ngữ cảnh",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 – Quiet Corridors",
+          "titleVi": "Đoạn 1 – Hành lang yên tĩnh",
+          "content": "To curb chronic traffic noise without imposing new fines, the city piloted a “quiet corridors” program along six arterial roads. Crews resurfaced bus lanes with rubberized asphalt, adjusted delivery windows, and trialed low-cost sound baffles on market fronts. Phone-based sensors gathered decibel readings every five minutes; a university team compiled noise maps and ran a difference-in-differences analysis against control streets. Median daytime levels on treated corridors fell from 71 dB to 67 dB in four months. The model attributed 3.6 dB of that drop to the interventions themselves, with the remainder explained by seasonal traffic patterns. Complaints to the hotline declined by 15 percent, though rainy weeks temporarily depressed footfall and muddied the picture. Notwithstanding early wins, one gap emerged: battery-handling rules for contractors were inconsistently communicated, and several sites lacked bins clearly marked for safe disposal. The council will scale the program if two thresholds are met: a sustained reduction of at least 3 dB and a quarterly complaint rate below last year’s baseline.",
+          "contentVi": "Để kiềm chế tiếng ồn giao thông mãn tính mà không áp dụng phạt mới, thành phố thí điểm chương trình “hành lang yên tĩnh” dọc sáu trục đường chính. Đội thi công trải lại làn buýt bằng nhựa cao su, điều chỉnh khung giờ giao hàng và thử vách chắn âm giá rẻ trước khu chợ. Cảm biến trên điện thoại thu mức đề-xi-ben mỗi 5 phút; nhóm đại học lập bản đồ tiếng ồn và chạy phân tích sai biệt—trong—sai biệt so với các đường đối chứng. Mức ồn ban ngày trung vị trên các hành lang xử lý giảm từ 71 dB xuống 67 dB trong bốn tháng. Mô hình quy cho can thiệp 3,6 dB của mức giảm này, phần còn lại do biến động giao thông theo mùa. Khiếu nại qua đường dây nóng giảm 15%, dù những tuần mưa làm giảm lượng khách bộ hành và khiến bức tranh khó đọc hơn. Dẫu có kết quả sớm, một lỗ hổng xuất hiện: quy định xử lý pin cho nhà thầu truyền đạt thiếu nhất quán và vài điểm thiếu thùng có nhãn xử lý an toàn. Hội đồng sẽ mở rộng nếu đạt hai ngưỡng: giảm bền vững ít nhất 3 dB và tỷ lệ khiếu nại theo quý thấp hơn mốc năm trước.",
+          "questions": [
+            {
+              "id": 31,
+              "question": "How many roads were included in the pilot?",
+              "questionVi": "Có bao nhiêu tuyến đường tham gia thí điểm?",
+              "options": ["Four", "Five", "Six", "Seven"],
+              "optionsVi": ["Bốn", "Năm", "Sáu", "Bảy"],
+              "correct": 2
+            },
+            {
+              "id": 32,
+              "question": "Baseline median daytime noise on treated corridors was:",
+              "questionVi": "Mức ồn ban ngày trung vị trước can thiệp là:",
+              "options": ["65 dB", "67 dB", "71 dB", "74 dB"],
+              "optionsVi": ["65 dB", "67 dB", "71 dB", "74 dB"],
+              "correct": 2
+            },
+            {
+              "id": 33,
+              "question": "The interventions themselves accounted for approximately:",
+              "questionVi": "Các biện pháp can thiệp tự thân giải thích khoảng:",
+              "options": ["1.4 dB", "3.6 dB", "4.0 dB", "7.0 dB"],
+              "optionsVi": ["1,4 dB", "3,6 dB", "4,0 dB", "7,0 dB"],
+              "correct": 1
+            },
+            {
+              "id": 34,
+              "question": "Which factor also helped explain the noise reduction?",
+              "questionVi": "Yếu tố nào cũng góp phần giải thích việc giảm tiếng ồn?",
+              "options": ["New fines", "Seasonal traffic patterns", "Longer delivery windows", "More rain sensors"],
+              "optionsVi": ["Phạt mới", "Mẫu giao thông theo mùa", "Khung giao hàng dài hơn", "Nhiều cảm biến mưa"],
+              "correct": 1
+            },
+            {
+              "id": 35,
+              "question": "Complaints to the hotline changed by about:",
+              "questionVi": "Khiếu nại qua đường dây nóng thay đổi khoảng:",
+              "options": ["+15%", "−15%", "0%", "−3%"],
+              "optionsVi": ["+15%", "−15%", "0%", "−3%"],
+              "correct": 1
+            },
+            {
+              "id": 36,
+              "question": "In the passage, “Notwithstanding early wins” most nearly means:",
+              "questionVi": "Trong đoạn văn, “Dẫu có kết quả sớm” gần nghĩa với:",
+              "options": ["Because of early wins", "Despite early wins", "Only with early wins", "Except for early wins"],
+              "optionsVi": ["Bởi vì thành công sớm", "Bất chấp thành công sớm", "Chỉ với thành công sớm", "Ngoại trừ thành công sớm"],
+              "correct": 1
+            },
+            {
+              "id": 37,
+              "question": "What operational gap is highlighted?",
+              "questionVi": "Lỗ hổng vận hành nào được nêu bật?",
+              "options": ["Lack of phone sensors", "Inconsistent battery-handling rules", "No university partner", "Missing asphalt supplies"],
+              "optionsVi": ["Thiếu cảm biến điện thoại", "Quy định xử lý pin không nhất quán", "Không có đối tác đại học", "Thiếu vật tư nhựa"],
+              "correct": 1
+            },
+            {
+              "id": 38,
+              "question": "Which best captures the council’s criteria for scaling?",
+              "questionVi": "Điều kiện mở rộng của hội đồng là gì?",
+              "options": ["Either a 3 dB drop or fewer complaints", "Both a ≥3 dB drop and lower complaint rate", "Only fewer complaints", "Only a 3 dB drop"],
+              "optionsVi": ["Hoặc giảm 3 dB hoặc ít khiếu nại", "Cả giảm ≥3 dB và giảm khiếu nại", "Chỉ ít khiếu nại", "Chỉ giảm 3 dB"],
+              "correct": 1
+            },
+            {
+              "id": 39,
+              "question": "The word “depressed” in “rainy weeks temporarily depressed footfall” most nearly means:",
+              "questionVi": "Từ “depressed” trong câu “những tuần mưa làm giảm lượng khách bộ hành” gần nghĩa với:",
+              "options": ["made sad", "lowered", "questioned", "recorded"],
+              "optionsVi": ["làm buồn", "hạ xuống", "nghi vấn", "ghi lại"],
+              "correct": 1
+            },
+            {
+              "id": 40,
+              "question": "Which statement is supported by the passage?",
+              "questionVi": "Phát biểu nào được đoạn văn ủng hộ?",
+              "options": ["All noise reduction came from resurfacing.", "Data were compared with untreated control streets.", "Complaints rose during the pilot.", "Bins for safe disposal were already standard."],
+              "optionsVi": ["Toàn bộ giảm ồn do trải mặt đường.", "Dữ liệu so với đường đối chứng chưa xử lý.", "Khiếu nại tăng trong thí điểm.", "Thùng xử lý an toàn đã là tiêu chuẩn."],
+              "correct": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 – Governing an Open Dataset",
+          "titleVi": "Đoạn 2 – Quản trị bộ dữ liệu mở",
+          "content": "A popular open dataset ballooned from a class project into infrastructure used by hundreds of labs. Three volunteer maintainers introduced a contributor license agreement and required a signed Developer Certificate of Origin to clarify provenance. Monthly releases followed semantic versioning; yet a “minor” update once altered label semantics and silently broke downstream models. In response, the maintainers now publish Requests for Comment (RFCs) for schema changes with a 14-day window, and a canary test suite flags breaking shifts before tags are cut. Revenue isn’t a goal, but sponsors cover hosting and legal review. A 48-hour “critical fix” window remains for integrity issues. Notwithstanding disclaimers, the maintainers still triage takedown notices and alleged privacy violations, which is emotionally taxing. Early metrics suggest fewer regressions, though onboarding novices to the process is slower.",
+          "contentVi": "Một bộ dữ liệu mở phổ biến đã phình từ dự án lớp học thành hạ tầng được hàng trăm phòng thí nghiệm dùng. Ba quản trị viên tình nguyện đưa vào thỏa thuận cấp phép cho người đóng góp và yêu cầu ký Chứng nhận Nguồn gốc Nhà phát triển để làm rõ nguồn gốc. Phát hành hằng tháng theo phiên bản hoá ngữ nghĩa; tuy vậy một bản cập nhật “nhỏ” từng thay đổi ngữ nghĩa nhãn và âm thầm làm hỏng các mô hình hạ nguồn. Đáp lại, nhóm quản trị nay công bố Yêu cầu Bình luận (RFC) cho thay đổi lược đồ với cửa sổ 14 ngày, và bộ kiểm thử “chim hoàng yến” đánh dấu thay đổi phá vỡ trước khi gắn thẻ phát hành. Doanh thu không phải mục tiêu, nhưng nhà tài trợ chi trả máy chủ và kiểm tra pháp lý. Cửa sổ “sửa lỗi nghiêm trọng” 48 giờ vẫn giữ cho vấn đề tính toàn vẹn. Dẫu có tuyên bố miễn trừ, quản trị viên vẫn phải phân loại thông báo gỡ bỏ và cáo buộc xâm phạm quyền riêng tư, điều này gây áp lực tinh thần. Chỉ số sớm cho thấy ít thoái lui hơn, dù việc đưa người mới vào quy trình chậm hơn.",
+          "questions": [
+            {
+              "id": 41,
+              "question": "Why did a “minor” update cause problems?",
+              "questionVi": "Vì sao một bản cập nhật “nhỏ” gây ra vấn đề?",
+              "options": ["It removed licensing.", "It changed label semantics.", "It deleted the repository.", "It slowed downloads."],
+              "optionsVi": ["Bỏ cấp phép.", "Thay đổi ngữ nghĩa nhãn.", "Xoá kho mã.", "Làm chậm tải xuống."],
+              "correct": 1
+            },
+            {
+              "id": 42,
+              "question": "What purpose does the DCO serve?",
+              "questionVi": "DCO dùng để làm gì?",
+              "options": ["Enforce payment", "Clarify provenance", "Speed up releases", "Limit contributors"],
+              "optionsVi": ["Ép trả phí", "Làm rõ nguồn gốc", "Tăng tốc phát hành", "Hạn chế người đóng góp"],
+              "correct": 1
+            },
+            {
+              "id": 43,
+              "question": "The canary test suite is intended to:",
+              "questionVi": "Bộ kiểm thử “chim hoàng yến” nhằm:",
+              "options": ["Encrypt data", "Flag breaking changes early", "Attract sponsors", "Count downloads"],
+              "optionsVi": ["Mã hoá dữ liệu", "Cảnh báo sớm thay đổi phá vỡ", "Thu hút tài trợ", "Đếm lượt tải"],
+              "correct": 1
+            },
+            {
+              "id": 44,
+              "question": "What remains in place for integrity issues?",
+              "questionVi": "Điều gì vẫn được giữ cho vấn đề tính toàn vẹn?",
+              "options": ["A 14-day window", "A 48-hour critical fix window", "Monthly hotfixes", "Quarterly audits only"],
+              "optionsVi": ["Cửa sổ 14 ngày", "Cửa sổ sửa lỗi nghiêm trọng 48 giờ", "Bản vá hằng tháng", "Chỉ kiểm toán hằng quý"],
+              "correct": 1
+            },
+            {
+              "id": 45,
+              "question": "In the passage, “Notwithstanding disclaimers” most nearly means:",
+              "questionVi": "Trong đoạn văn, “Dẫu có tuyên bố miễn trừ” gần nghĩa với:",
+              "options": ["Because of disclaimers", "Despite disclaimers", "With added disclaimers", "Without any disclaimers"],
+              "optionsVi": ["Bởi vì miễn trừ", "Bất chấp miễn trừ", "Kèm thêm miễn trừ", "Không có miễn trừ"],
+              "correct": 1
+            },
+            {
+              "id": 46,
+              "question": "Which task is described as emotionally taxing?",
+              "questionVi": "Nhiệm vụ nào bị xem là gây áp lực tinh thần?",
+              "options": ["Semantic versioning", "Sponsorship accounting", "Triage of takedowns/privacy claims", "Canary testing"],
+              "optionsVi": ["Đánh phiên bản ngữ nghĩa", "Kế toán tài trợ", "Phân loại gỡ bỏ/vi phạm riêng tư", "Kiểm thử cảnh báo"],
+              "correct": 2
+            },
+            {
+              "id": 47,
+              "question": "What trade-off is implied by the new governance?",
+              "questionVi": "Sự đánh đổi nào được ngụ ý bởi cách quản trị mới?",
+              "options": ["Fewer regressions but slower onboarding", "Faster releases but more bugs", "Higher revenue but fewer users", "Less legal review but more features"],
+              "optionsVi": ["Ít thoái lui hơn nhưng nhập cuộc chậm hơn", "Phát hành nhanh hơn nhưng nhiều lỗi", "Doanh thu cao hơn nhưng ít người dùng", "Ít rà pháp lý hơn nhưng nhiều tính năng"],
+              "correct": 0
+            },
+            {
+              "id": 48,
+              "question": "Sponsors primarily fund:",
+              "questionVi": "Nhà tài trợ chủ yếu chi trả cho:",
+              "options": ["Developer salaries", "Hosting and legal review", "Marketing", "Travel grants"],
+              "optionsVi": ["Lương nhà phát triển", "Máy chủ và kiểm tra pháp lý", "Tiếp thị", "Tài trợ đi lại"],
+              "correct": 1
+            },
+            {
+              "id": 49,
+              "question": "What mechanism invites community input on schema changes?",
+              "questionVi": "Cơ chế nào mời cộng đồng góp ý về thay đổi lược đồ?",
+              "options": ["DCO", "CLA", "RFC with a 14-day window", "Critical fix window"],
+              "optionsVi": ["DCO", "CLA", "RFC với 14 ngày", "Cửa sổ sửa lỗi nghiêm trọng"],
+              "correct": 2
+            },
+            {
+              "id": 50,
+              "question": "The tone of the passage is best described as:",
+              "questionVi": "Giọng điệu của đoạn văn được mô tả tốt nhất là:",
+              "options": ["Promotional", "Cautiously pragmatic", "Sarcastic", "Alarmist"],
+              "optionsVi": ["Quảng bá", "Thực dụng thận trọng", "Mỉa mai", "Giật gân"],
+              "correct": 1
+            }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension",
+      "titleVi": "Phần C: Nghe hiểu",
+      "description": "10 multiple-choice questions · Timing, sequencing, and inference",
+      "descriptionVi": "10 câu trắc nghiệm · Thời gian, trình tự và suy luận",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 – Grant Briefing",
+          "titleVi": "Băng 1 – Họp hướng dẫn cấp vốn",
+          "content": "Good afternoon. The research-grant briefing begins at 1:40 in Hall C; doors open at 1:30. Please sign the attendance sheet before taking a seat. The agenda runs as follows: eligibility at 1:45, budgets at 2:05, and compliance at 2:25. We’ll pause for ten minutes at 2:40, then resume with Q&A until 3:10. If you need the template, check the link we emailed at noon. Note that proposals submitted after 5:00 p.m. Friday will be marked late unless the portal suffers an outage confirmed by IT.",
+          "contentVi": "Xin chào buổi chiều. Buổi hướng dẫn cấp vốn bắt đầu lúc 13:40 tại Hội trường C; mở cửa lúc 13:30. Vui lòng ký danh sách tham dự trước khi ngồi. Chương trình: tiêu chí lúc 13:45, ngân sách 14:05 và tuân thủ 14:25. Chúng ta nghỉ 10 phút lúc 14:40 rồi tiếp tục Hỏi–Đáp đến 15:10. Nếu cần mẫu đơn, xem liên kết chúng tôi đã email lúc 12:00. Lưu ý hồ sơ nộp sau 17:00 thứ Sáu sẽ bị trễ, trừ khi cổng nộp gặp sự cố được IT xác nhận.",
+          "questions": [
+            {
+              "id": 51,
+              "question": "When do doors open for the briefing?",
+              "questionVi": "Cửa mở lúc mấy giờ?",
+              "options": ["1:20", "1:30", "1:40", "2:00"],
+              "optionsVi": ["13:20", "13:30", "13:40", "14:00"],
+              "correct": 1
+            },
+            {
+              "id": 52,
+              "question": "What is scheduled at 2:25?",
+              "questionVi": "Nội dung nào diễn ra lúc 14:25?",
+              "options": ["Eligibility", "Budgets", "Compliance", "Q&A"],
+              "optionsVi": ["Tiêu chí", "Ngân sách", "Tuân thủ", "Hỏi–Đáp"],
+              "correct": 2
+            },
+            {
+              "id": 53,
+              "question": "The break lasts for:",
+              "questionVi": "Giờ nghỉ kéo dài:",
+              "options": ["5 minutes", "10 minutes", "15 minutes", "20 minutes"],
+              "optionsVi": ["5 phút", "10 phút", "15 phút", "20 phút"],
+              "correct": 1
+            },
+            {
+              "id": 54,
+              "question": "Until what time does the Q&A run?",
+              "questionVi": "Phần Hỏi–Đáp chạy đến mấy giờ?",
+              "options": ["3:00", "3:05", "3:10", "3:20"],
+              "optionsVi": ["15:00", "15:05", "15:10", "15:20"],
+              "correct": 2
+            },
+            {
+              "id": 55,
+              "question": "Late proposals may be excused only if:",
+              "questionVi": "Hồ sơ trễ chỉ có thể được chấp nhận nếu:",
+              "options": ["The template link fails", "IT confirms a portal outage", "A supervisor emails approval", "Doors opened late"],
+              "optionsVi": ["Liên kết mẫu lỗi", "IT xác nhận cổng lỗi", "Quản lý email cho phép", "Cửa mở trễ"],
+              "correct": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 – Rail Disruption",
+          "titleVi": "Băng 2 – Gián đoạn đường sắt",
+          "content": "Attention, passengers: due to a signal fault near River Junction, trains from Platforms 3 and 4 are running every twenty minutes instead of every ten. The 5:05 to Northfield will depart at 5:15 from Platform 4. A bus shuttle operates between East Park and Mill Lane until 6:30; tickets are valid on the shuttle. For faster travel to the airport, take the 5:12 express from Platform 2. We’ll provide an update at 5:20. We apologize for the inconvenience.",
+          "contentVi": "Quý khách lưu ý: do lỗi tín hiệu gần River Junction, tàu từ Sân ga 3 và 4 chạy mỗi 20 phút thay vì 10 phút. Chuyến 17:05 đi Northfield sẽ khởi hành lúc 17:15 từ Ga số 4. Xe buýt trung chuyển hoạt động giữa East Park và Mill Lane đến 18:30; vé tàu được chấp nhận trên xe buýt. Để đi sân bay nhanh hơn, hãy đi chuyến nhanh 17:12 từ Ga số 2. Chúng tôi sẽ cập nhật lúc 17:20. Xin lỗi vì sự bất tiện.",
+          "questions": [
+            {
+              "id": 56,
+              "question": "How frequently are trains from Platforms 3 and 4 now running?",
+              "questionVi": "Tàu từ Ga 3 và 4 hiện chạy với tần suất bao lâu một chuyến?",
+              "options": ["Every 5 minutes", "Every 10 minutes", "Every 15 minutes", "Every 20 minutes"],
+              "optionsVi": ["Mỗi 5 phút", "Mỗi 10 phút", "Mỗi 15 phút", "Mỗi 20 phút"],
+              "correct": 3
+            },
+            {
+              "id": 57,
+              "question": "When will the 5:05 to Northfield depart and from which platform?",
+              "questionVi": "Chuyến 17:05 đi Northfield khởi hành khi nào và từ ga nào?",
+              "options": ["5:05 from Platform 3", "5:10 from Platform 3", "5:15 from Platform 4", "5:20 from Platform 4"],
+              "optionsVi": ["17:05 từ Ga 3", "17:10 từ Ga 3", "17:15 từ Ga 4", "17:20 từ Ga 4"],
+              "correct": 2
+            },
+            {
+              "id": 58,
+              "question": "Until what time does the bus shuttle operate?",
+              "questionVi": "Xe buýt trung chuyển hoạt động đến mấy giờ?",
+              "options": ["6:00", "6:15", "6:30", "7:00"],
+              "optionsVi": ["18:00", "18:15", "18:30", "19:00"],
+              "correct": 2
+            },
+            {
+              "id": 59,
+              "question": "Which service is recommended for faster airport travel?",
+              "questionVi": "Nên đi dịch vụ nào để đến sân bay nhanh hơn?",
+              "options": ["5:12 express from Platform 2", "5:15 from Platform 4", "Shuttle bus only", "Any train from Platform 3"],
+              "optionsVi": ["Chuyến nhanh 17:12 từ Ga 2", "17:15 từ Ga 4", "Chỉ xe buýt trung chuyển", "Bất kỳ tàu nào từ Ga 3"],
+              "correct": 0
+            },
+            {
+              "id": 60,
+              "question": "When is the next update promised?",
+              "questionVi": "Lần cập nhật tiếp theo hứa vào lúc nào?",
+              "options": ["5:12", "5:15", "5:20", "5:30"],
+              "optionsVi": ["17:12", "17:15", "17:20", "17:30"],
+              "correct": 2
+            }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing",
+      "titleVi": "Phần D: Viết",
+      "description": "3 tasks · Aim for accuracy, cohesive grammar, and lexical precision",
+      "descriptionVi": "3 bài · Chú trọng chính xác ngữ pháp, liên kết và dùng từ chuẩn",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (200–230 words) — Formal Email",
+          "titleVi": "Bài 1 (200–230 từ) — Email trang trọng",
+          "instruction": "Your signed employment offer contains an ambiguous non-compete clause that could prevent you from doing freelance work unrelated to your role. Write to HR to: (a) identify the ambiguous wording, (b) explain the potential impact with one concrete scenario, and (c) request a precise revision or addendum.",
+          "instructionVi": "Thư mời làm việc đã ký của bạn có điều khoản không cạnh tranh mơ hồ có thể ngăn bạn làm tự do không liên quan đến vai trò. Hãy viết cho bộ phận nhân sự để: (a) chỉ ra chỗ mơ hồ, (b) giải thích tác động với một tình huống cụ thể, và (c) đề nghị sửa câu chữ hoặc phụ lục rõ ràng.",
+          "wordLimit": { "min": 200, "max": 230 },
+          "type": "formal_email",
+          "topic": "contract_clarity"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (320–360 words) — Opinion Essay",
+          "titleVi": "Bài 2 (320–360 từ) — Bài luận ý kiến",
+          "instruction": "“Universities should require an ‘AI literacy’ module for all students, regardless of major.” To what extent do you agree or disagree? Present one central argument, support it with a detailed example, acknowledge a strong counter-argument (e.g., curricular overload, equity), and rebut it logically.",
+          "instructionVi": "“Các trường đại học nên bắt buộc học phần ‘hiểu biết AI’ cho mọi sinh viên, bất kể ngành.” Bạn đồng ý đến mức nào? Nêu một luận điểm trung tâm, minh hoạ bằng ví dụ chi tiết, thừa nhận một phản biện mạnh (ví dụ: quá tải chương trình, công bằng), và bác biện hợp lý.",
+          "wordLimit": { "min": 320, "max": 360 },
+          "type": "opinion_essay",
+          "topic": "ai_literacy_policy"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (260–300 words) — Data Description & Recommendation",
+          "titleVi": "Bài 3 (260–300 từ) — Mô tả dữ liệu & khuyến nghị",
+          "instruction": "A city trialed three noise-mitigation options on busy streets over one quarter: Rubberized Asphalt (avg daytime −2.4 dB; cost $220k/km; complaints −9%), Delivery Window Shift (−1.1 dB; $40k/corridor; complaints −6%), and Facade Baffles (−3.2 dB; $160k/block; complaints −12%). Summarise the main differences, compare cost-effectiveness, and recommend which option (or mix) to scale.",
+          "instructionVi": "Một thành phố thử ba phương án giảm ồn trên các tuyến phố đông trong một quý: Nhựa cao su (ban ngày TB −2,4 dB; chi phí $220k/km; khiếu nại −9%), Dời khung giờ giao hàng (−1,1 dB; $40k/hành lang; khiếu nại −6%), và Tấm chắn mặt tiền (−3,2 dB; $160k/dãy phố; khiếu nại −12%). Tóm tắt khác biệt chính, so sánh hiệu quả chi phí và đề xuất phương án (hoặc kết hợp) nên mở rộng.",
+          "wordLimit": { "min": 260, "max": 300 },
+          "type": "data_description",
+          "topic": "urban_noise_options",
+          "chartData": {
+            "title": "Noise Mitigation Trial — One Quarter",
+            "titleVi": "Thử nghiệm giảm ồn — 1 quý",
+            "data": [
+              { "option": "Rubberized Asphalt", "avg_day_reduction_db": -2.4, "cost_usd": 220000, "unit": "per km", "complaints_change_percent": -9 },
+              { "option": "Delivery Window Shift", "avg_day_reduction_db": -1.1, "cost_usd": 40000, "unit": "per corridor", "complaints_change_percent": -6 },
+              { "option": "Facade Baffles", "avg_day_reduction_db": -3.2, "cost_usd": 160000, "unit": "per block", "complaints_change_percent": -12 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "3.0.0",
+    "lastUpdated": "2025-09-03",
+    "difficulty": "advanced grammar focus",
+    "estimatedTime": "110–130 minutes",
+    "tags": ["grammar", "meaning", "vocabulary-in-context", "reading", "listening", "writing", "ielts", "bilingual", "level3.0"]
+  }
+}
