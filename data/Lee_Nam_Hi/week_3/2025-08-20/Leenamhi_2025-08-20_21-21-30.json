@@ -1,0 +1,118 @@
+{
+  "id": "mek29jg5lwbfqyg0mmb",
+  "timestamp": "2025-08-20T14:21:30.677Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-08-20T14:21:30.369Z",
+    "submittedBy": "user"
+  },
+  "userName": "Leenamhi",
+  "answers": {
+    "grammar": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 0,
+      "13": 3,
+      "14": 1,
+      "15": 2,
+      "16": 2,
+      "17": 3,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 1,
+      "23": 1,
+      "25": 2,
+      "26": 0,
+      "27": 1,
+      "28": 1,
+      "29": 1,
+      "30": 1
+    },
+    "reading": {
+      "31": 2,
+      "32": 2,
+      "33": 2,
+      "34": 3,
+      "35": 2,
+      "36": 1,
+      "37": 0,
+      "38": 1,
+      "39": 2,
+      "40": 1,
+      "41": 2,
+      "42": 1,
+      "43": 0,
+      "44": 1,
+      "45": 0,
+      "46": 0,
+      "47": 1,
+      "48": 1,
+      "49": 2,
+      "50": 2
+    },
+    "listening": {
+      "51": 1,
+      "52": 1,
+      "53": 1,
+      "54": 1,
+      "55": 1,
+      "56": 1,
+      "57": 2,
+      "58": 2,
+      "59": 1,
+      "60": 2
+    },
+    "writing": {
+      "task1": "Hello, my delivery was delayed twice and then marked as “delivered,” but it went to the wrong address. This caused problems for my plans because I needed the items on time. I ask for either redelivery to the correct address or a full refund, and please remove the delivery fee since the service was not done properly\nThank you for your help.",
+      "task2": "I agree that first-year students should take a basic digital-skills course. Most jobs and studies now need computer skills, like using spreadsheets or online research tools. For example, even art students may need to make digital portfolios. Some say students already know technology, but using social media is different from professional skills. So this course would give everyone a fair start",
+      "task3": "The table shows that average weekday commute times fell for bus and metro users but rose slightly for motorcyclists. Bus times dropped from 42 to 38 minutes, while metro fell more sharply from 35 to 30. In contrast, motorcycle times increased from 28 to 29 minutes, making it the slowest change. The new bus lanes likely improved traffic flow for public transport but may have reduced road space for motorcycles"
+    },
+    "translatedQuestions": [
+      28,
+      "28",
+      38,
+      "38",
+      45,
+      "45",
+      46,
+      "46"
+    ],
+    "translationPenalties": {
+      "question-28": -0.5,
+      "question-38": -0.5,
+      "question-45": -0.5,
+      "question-46": -0.5,
+      "transcript-1": -1,
+      "transcript-2": -1
+    }
+  },
+  "results": {
+    "grammar": 17.5,
+    "reading": 16.5,
+    "listening": 10,
+    "writing": 7.5,
+    "total": 51.5,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -1
+  },
+  "timeSpent": "01:54:00",
+  "testData": {
+    "testId": "IELTS_STARTER_2_0_H",
+    "testDate": "2025-08-20",
+    "testTitle": "IELTS Starter 2.0 Practice Test (EN–VI) — Paper H"
+  }
+}
