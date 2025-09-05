@@ -99,8 +99,7 @@ async function loadTestData(date = null) {
         console.log('=== loadTestData called ===');
         
         // If no date specified, use today's date
-        // const testDate = date || moment().format('YYYY-MM-DD');
-        const testDate = '2025-08-29';
+        const testDate = date || moment().format('YYYY-MM-DD');
         const questionsFile = path.join(questionsDir, `${testDate}.json`);
         
         console.log(`Attempting to load test data for date: ${testDate}`);
