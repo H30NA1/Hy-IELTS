@@ -1,0 +1,608 @@
+{
+    "testId": "IELTS_STARTER_3_0_PAPER_E",
+    "testDate": "2025-09-09",
+    "testTitle": "IELTS Starter 3.0 Practice Test (EN–VI) — Grammar & Meaning Focus, Paper E",
+    "totalQuestions": 50,
+    "sections": {
+      "grammar": {
+        "title": "Section A: Grammar & Meaning",
+        "titleVi": "Phần A: Ngữ pháp & Sắc thái nghĩa",
+        "description": "30 multiple-choice questions · Inversion, conditionals, subjunctive, collocations, precision",
+        "descriptionVi": "30 câu trắc nghiệm · Đảo ngữ, điều kiện, thức giả định, kết hợp từ, độ chính xác",
+        "totalQuestions": 30,
+        "questions": [
+          {
+            "id": 1,
+            "question": "Only after verifying the checksum ___ we submit the patch.",
+            "questionVi": "Chỉ sau khi kiểm tra mã tổng thì ___ chúng tôi mới nộp bản vá.",
+            "options": ["we could", "could", "could we", "we can"],
+            "optionsVi": ["chúng tôi có thể", "có thể", "chúng tôi mới có thể", "chúng tôi có thể"],
+            "correct": 2
+          },
+          {
+            "id": 2,
+            "question": "It’s essential that every participant ___ a photo ID.",
+            "questionVi": "Điều cần thiết là mọi người tham dự ___ giấy tờ có ảnh.",
+            "options": ["presents", "present", "presented", "to present"],
+            "optionsVi": ["xuất trình", "xuất trình (thức giả định)", "đã xuất trình", "để xuất trình"],
+            "correct": 1
+          },
+          {
+            "id": 3,
+            "question": "Should the figures change, we ___ notify clients at once.",
+            "questionVi": "Nếu số liệu thay đổi, chúng tôi ___ thông báo cho khách hàng ngay.",
+            "options": ["will", "would", "are", "have"],
+            "optionsVi": ["sẽ", "sẽ (giả định)", "là", "có"],
+            "correct": 0
+          },
+          {
+            "id": 4,
+            "question": "Seldom ___ such a nuanced explanation in a press release.",
+            "questionVi": "Hiếm khi ___ lời giải thích tinh tế như vậy trong thông cáo báo chí.",
+            "options": ["we see", "do we see", "we saw", "are we seeing"],
+            "optionsVi": ["chúng tôi thấy", "chúng tôi thấy (đảo ngữ)", "chúng tôi đã thấy", "chúng tôi đang thấy"],
+            "correct": 1
+          },
+          {
+            "id": 5,
+            "question": "I’d rather you ___ the announcement until legal signs off.",
+            "questionVi": "Tôi muốn bạn ___ thông báo cho đến khi bộ phận pháp lý duyệt.",
+            "options": ["don’t publish", "didn’t publish", "haven’t published", "wouldn’t publish"],
+            "optionsVi": ["đừng đăng", "đừng đăng (giả định)", "chưa đăng", "đừng đăng"],
+            "correct": 1
+          },
+          {
+            "id": 6,
+            "question": "No sooner ___ than the alerts went off.",
+            "questionVi": "Vừa mới ___ thì cảnh báo vang lên.",
+            "options": ["the test started", "had the test started", "did the test start", "the test had started"],
+            "optionsVi": ["bài kiểm tra bắt đầu", "bài kiểm tra vừa bắt đầu (đảo ngữ)", "bài kiểm tra bắt đầu (đảo ngữ)", "bài kiểm tra đã bắt đầu"],
+            "correct": 1
+          },
+          {
+            "id": 7,
+            "question": "The committee requested that the fee waiver ___ applied retroactively.",
+            "questionVi": "Uỷ ban yêu cầu miễn phí ___ được áp dụng hồi tố.",
+            "options": ["is", "be", "was", "to be"],
+            "optionsVi": ["là", "được (thức giả định)", "đã", "để được"],
+            "correct": 1
+          },
+          {
+            "id": 8,
+            "question": "The sooner we pilot the feature, the ___ feedback we’ll gather.",
+            "questionVi": "Càng thử nghiệm sớm tính năng, chúng ta sẽ thu được ___ phản hồi.",
+            "options": ["more", "most", "more the", "much"],
+            "optionsVi": ["nhiều", "nhiều nhất", "nhiều…the", "nhiều"],
+            "correct": 0
+          },
+          {
+            "id": 9,
+            "question": "Not until last quarter ___ a profit on this line.",
+            "questionVi": "Mãi đến quý trước chúng tôi mới ___ lợi nhuận ở dòng sản phẩm này.",
+            "options": ["we reported", "did we report", "we had reported", "have we reported"],
+            "optionsVi": ["chúng tôi báo cáo", "chúng tôi báo cáo (đảo ngữ)", "chúng tôi đã báo cáo", "chúng tôi đã báo cáo"],
+            "correct": 1
+          },
+          {
+            "id": 10,
+            "question": "He writes so ___ that technical readers rarely need clarifications.",
+            "questionVi": "Anh ấy viết ___ đến mức độc giả kỹ thuật hiếm khi cần làm rõ.",
+            "options": ["clear", "clearly", "more clear", "with clarity"],
+            "optionsVi": ["rõ", "một cách rõ ràng", "rõ hơn", "với sự rõ ràng"],
+            "correct": 1
+          },
+          {
+            "id": 11,
+            "question": "You can’t deploy ___ QA signs off.",
+            "questionVi": "Bạn không thể triển khai ___ QA duyệt.",
+            "options": ["unless", "until", "as long as", "in case"],
+            "optionsVi": ["trừ khi", "cho đến khi", "miễn là", "phòng khi"],
+            "correct": 1
+          },
+          {
+            "id": 12,
+            "question": "Each of the outcomes ___ to be documented separately.",
+            "questionVi": "Mỗi kết quả ___ được ghi chép riêng.",
+            "options": ["are", "is", "have", "were"],
+            "optionsVi": ["là", "là", "có", "đã"],
+            "correct": 1
+          },
+          {
+            "id": 13,
+            "question": "So few details ___ that the rumor mill exploded.",
+            "questionVi": "Quá ít chi tiết ___ nên tin đồn bùng nổ.",
+            "options": ["were shared", "shared", "has shared", "was share"],
+            "optionsVi": ["được chia sẻ", "chia sẻ", "đã chia sẻ", "được chia sẻ"],
+            "correct": 0
+          },
+          {
+            "id": 14,
+            "question": "Between Dana and ___, the budget seems optimistic.",
+            "questionVi": "Giữa Dana và ___, ngân sách có vẻ lạc quan.",
+            "options": ["I", "me", "myself", "mine"],
+            "optionsVi": ["tôi (chủ cách)", "tôi (tân cách)", "bản thân tôi", "của tôi"],
+            "correct": 1
+          },
+          {
+            "id": 15,
+            "question": "Were it not for the grant, the study ___ midway last year.",
+            "questionVi": "Nếu không có khoản tài trợ, nghiên cứu ___ giữa chừng năm ngoái.",
+            "options": ["would stall", "would have stalled", "stalled", "had stalled"],
+            "optionsVi": ["sẽ đình trệ", "đã có thể đình trệ", "đã đình trệ", "đã đình trệ"],
+            "correct": 1
+          },
+          {
+            "id": 16,
+            "question": "By this time next week, the facility ___ audited.",
+            "questionVi": "Đến giờ này tuần sau, cơ sở ___ được kiểm toán.",
+            "options": ["will have been", "will be", "has been", "is being"],
+            "optionsVi": ["sẽ đã được", "sẽ được", "đã được", "đang được"],
+            "correct": 0
+          },
+          {
+            "id": 17,
+            "question": "Not only ___ the rollout on time, but we also stayed under budget.",
+            "questionVi": "Không chỉ ___ triển khai đúng hạn, chúng tôi còn giữ dưới ngân sách.",
+            "options": ["we delivered", "did we deliver", "we had delivered", "have we delivered"],
+            "optionsVi": ["chúng tôi bàn giao", "chúng tôi bàn giao (đảo ngữ)", "chúng tôi đã bàn giao", "chúng tôi đã bàn giao"],
+            "correct": 1
+          },
+          {
+            "id": 18,
+            "question": "He objected to our ___ the pilot without a control group.",
+            "questionVi": "Anh ấy phản đối việc chúng tôi ___ thí điểm mà không có nhóm đối chứng.",
+            "options": ["launch", "to launch", "launching", "launched"],
+            "optionsVi": ["khởi chạy", "để khởi chạy", "việc khởi chạy", "đã khởi chạy"],
+            "correct": 2
+          },
+          {
+            "id": 19,
+            "question": "Scarcely had the briefing ended ___ questions flooded in.",
+            "questionVi": "Vừa khi buổi phổ biến kết thúc ___ câu hỏi tràn vào.",
+            "options": ["than", "when", "then", "while"],
+            "optionsVi": ["thì", "thì", "rồi", "trong khi"],
+            "correct": 1
+          },
+          {
+            "id": 20,
+            "question": "Data ___ to be anonymized before export.",
+            "questionVi": "Dữ liệu ___ phải được ẩn danh trước khi xuất.",
+            "options": ["is", "are", "has", "was"],
+            "optionsVi": ["là (số ít)", "là (số nhiều)", "đã", "đã"],
+            "correct": 1
+          },
+          {
+            "id": 21,
+            "question": "The issue is not so much scale ___ governance.",
+            "questionVi": "Vấn đề không hẳn là quy mô ___ là quản trị.",
+            "options": ["as", "than", "but", "and"],
+            "optionsVi": ["mà là", "hơn", "nhưng", "và"],
+            "correct": 0
+          },
+          {
+            "id": 22,
+            "question": "Had we tracked baseline churn, we ___ this quarter’s shift.",
+            "questionVi": "Nếu đã theo dõi churn cơ sở, chúng tôi ___ biến động quý này.",
+            "options": ["could explain", "could have explained", "would explain", "explained"],
+            "optionsVi": ["có thể giải thích", "đã có thể giải thích", "sẽ giải thích", "đã giải thích"],
+            "correct": 1
+          },
+          {
+            "id": 23,
+            "question": "He speaks as though he ___ on the panel.",
+            "questionVi": "Anh ta nói như thể anh ấy ___ trong ban chuyên gia.",
+            "options": ["is", "was", "were", "has been"],
+            "optionsVi": ["là", "đã là", "là (giả định: were)", "đã là"],
+            "correct": 2
+          },
+          {
+            "id": 24,
+            "question": "Few as the resources ___, we managed to meet the target.",
+            "questionVi": "Dù nguồn lực ___ ít, chúng tôi vẫn đạt mục tiêu.",
+            "options": ["are", "were", "have been", "be"],
+            "optionsVi": ["là", "đã là", "đã", "là"],
+            "correct": 1
+          },
+          {
+            "id": 25,
+            "question": "Such ___ the confusion that we postponed the vote.",
+            "questionVi": "___ là sự nhầm lẫn đến mức chúng tôi hoãn bỏ phiếu.",
+            "options": ["was", "were", "is", "has been"],
+            "optionsVi": ["đã", "đã (số nhiều)", "là", "đã"],
+            "correct": 0
+          },
+          {
+            "id": 26,
+            "question": "The protocol demands that samples ___ in triplicate.",
+            "questionVi": "Quy trình yêu cầu mẫu ___ thành ba bản.",
+            "options": ["are labeled", "be labeled", "were labeled", "to be labeled"],
+            "optionsVi": ["được dán nhãn", "được dán nhãn (thức giả định)", "đã dán nhãn", "để được dán nhãn"],
+            "correct": 1
+          },
+          {
+            "id": 27,
+            "question": "She insisted that we ___ the raw numbers public.",
+            "questionVi": "Cô ấy khăng khăng rằng chúng tôi ___ số thô công khai.",
+            "options": ["make", "made", "had made", "to make"],
+            "optionsVi": ["đưa ra", "đã đưa ra", "đã đưa ra", "để đưa ra"],
+            "correct": 0
+          },
+          {
+            "id": 28,
+            "question": "Not until after the audit ___ the misclassification detected.",
+            "questionVi": "Mãi đến sau kiểm toán ___ việc phân loại sai mới được phát hiện.",
+            "options": ["was", "were", "did", "had"],
+            "optionsVi": ["đã", "đã (số nhiều)", "mới", "đã"],
+            "correct": 0
+          },
+          {
+            "id": 29,
+            "question": "Lest anyone ___ the trial is opt-in, we added bold text.",
+            "questionVi": "Kẻo ai ___ rằng thử nghiệm là tự nguyện tham gia, chúng tôi đã in đậm.",
+            "options": ["forget", "forgets", "should forget", "forgot"],
+            "optionsVi": ["quên", "quên", "lỡ quên (sắc thái cổ)", "đã quên"],
+            "correct": 2
+          },
+          {
+            "id": 30,
+            "question": "Barely anyone understood the acronym, ___?",
+            "questionVi": "Hầu như không ai hiểu chữ viết tắt, ___?",
+            "options": ["did they", "didn’t they", "do they", "does anyone"],
+            "optionsVi": ["phải không", "không phải sao", "phải không", "có ai không"],
+            "correct": 0
+          }
+        ]
+      },
+      "reading": {
+        "title": "Section B: Reading Comprehension (Meaning-in-Context)",
+        "titleVi": "Phần B: Đọc hiểu (Nghĩa theo ngữ cảnh)",
+        "description": "20 multiple-choice questions · Inference, evidence, vocabulary-in-context",
+        "descriptionVi": "20 câu trắc nghiệm · Suy luận, bằng chứng, nghĩa theo ngữ cảnh",
+        "totalQuestions": 20,
+        "passages": [
+          {
+            "id": 1,
+            "title": "Passage 1 – Time-of-Use Tariffs & Prepaid Meters",
+            "titleVi": "Đoạn 1 – Biểu giá theo thời gian & đồng hồ trả trước",
+            "content": "To curb evening peaks without raising the average bill, the utility expanded time-of-use (TOU) tariffs to customers on prepaid smart meters. Prices were lowest from midnight to 6 a.m., highest from 6 to 9 p.m., and standard at other hours. The app displayed next-day prices at noon and suggested running washers or scooters during off-peak windows. In a randomized rollout, households on TOU shifted 12 percent of their usage to cheaper hours, cutting peak demand by 7 percent, yet the median monthly spend was flat after bill credits. Complaints spiked in week three when a heatwave made off-peak shifting harder; the utility responded with a temporary cap on peak rates and added an alert when temperatures were forecast above 36°C. A validator found small equity gaps: customers without reliable internet benefited less from prompts. The board will keep TOU if peak reductions persist above 5 percent across three hot months and if arrears do not rise among prepaid users.",
+            "contentVi": "Để giảm đỉnh tải buổi tối mà không tăng hóa đơn trung bình, công ty điện mở rộng biểu giá theo thời gian (TOU) cho khách hàng dùng đồng hồ thông minh trả trước. Giá thấp nhất từ 0–6 giờ, cao nhất 18–21 giờ, còn lại là chuẩn. Ứng dụng hiển thị giá ngày hôm sau lúc 12 giờ trưa và gợi ý chạy máy giặt hoặc sạc xe vào khung giờ rẻ. Trong triển khai ngẫu nhiên, hộ dùng TOU chuyển 12% điện năng sang giờ rẻ, giảm nhu cầu giờ cao điểm 7%, nhưng chi tiêu tháng trung vị giữ nguyên nhờ tín dụng hóa đơn. Khi nắng nóng tuần thứ ba khiến khó chuyển sang giờ rẻ, khiếu nại tăng; công ty tạm áp trần giá giờ cao điểm và thêm cảnh báo khi dự báo trên 36°C. Đơn vị thẩm định phát hiện chênh lệch nhỏ về công bằng: khách hàng thiếu internet ổn định hưởng lợi ít hơn từ nhắc nhở. Hội đồng sẽ duy trì TOU nếu mức giảm đỉnh duy trì trên 5% trong ba tháng nóng và nợ đọng không tăng ở nhóm trả trước.",
+            "questions": [
+              {
+                "id": 31,
+                "question": "What was the primary objective of the TOU expansion?",
+                "questionVi": "Mục tiêu chính của việc mở rộng TOU là gì?",
+                "options": ["Increase total revenue", "Reduce evening peak demand without raising average bills", "Move all use to midnight", "Eliminate prepaid meters"],
+                "optionsVi": ["Tăng tổng doanh thu", "Giảm đỉnh tải buổi tối mà không tăng hóa đơn trung bình", "Chuyển toàn bộ sử dụng sang nửa đêm", "Loại bỏ đồng hồ trả trước"],
+                "correct": 1
+              },
+              {
+                "id": 32,
+                "question": "Households on TOU shifted about ___ of usage to cheaper hours.",
+                "questionVi": "Các hộ dùng TOU chuyển khoảng ___ điện năng sang giờ rẻ.",
+                "options": ["5%", "7%", "12%", "20%"],
+                "optionsVi": ["5%", "7%", "12%", "20%"],
+                "correct": 2
+              },
+              {
+                "id": 33,
+                "question": "What triggered complaints in week three?",
+                "questionVi": "Điều gì gây ra khiếu nại ở tuần thứ ba?",
+                "options": ["Price display errors", "A heatwave hindering off-peak shifting", "Removal of bill credits", "Internet outage"],
+                "optionsVi": ["Lỗi hiển thị giá", "Đợt nắng nóng cản trở chuyển sang giờ rẻ", "Gỡ tín dụng hóa đơn", "Mất mạng"],
+                "correct": 1
+              },
+              {
+                "id": 34,
+                "question": "Which action did the utility take in response?",
+                "questionVi": "Công ty điện đã làm gì để phản hồi?",
+                "options": ["Raised peak rates", "Paused TOU entirely", "Capped peak rates temporarily and added heat alerts", "Switched all users to flat pricing"],
+                "optionsVi": ["Tăng giá giờ cao điểm", "Tạm dừng TOU hoàn toàn", "Áp trần tạm thời và thêm cảnh báo nóng", "Chuyển mọi người về giá cố định"],
+                "correct": 2
+              },
+              {
+                "id": 35,
+                "question": "Why did some customers benefit less?",
+                "questionVi": "Vì sao một số khách hàng hưởng lợi ít hơn?",
+                "options": ["They used more scooters", "They lacked reliable internet for prompts", "They paid in cash", "They had rooftop solar"],
+                "optionsVi": ["Họ dùng xe máy điện nhiều", "Thiếu internet ổn định nên ít nhận nhắc nhở", "Trả tiền mặt", "Có điện mặt trời mái nhà"],
+                "correct": 1
+              },
+              {
+                "id": 36,
+                "question": "The median monthly spend was flat primarily because:",
+                "questionVi": "Chi tiêu tháng trung vị giữ nguyên chủ yếu vì:",
+                "options": ["Lower base tariffs", "Generous bill credits offset shifts", "Users consumed less energy overall", "Meter errors"],
+                "optionsVi": ["Hạ giá cơ bản", "Tín dụng hóa đơn bù trừ", "Người dùng giảm tổng điện", "Lỗi đồng hồ"],
+                "correct": 1
+              },
+              {
+                "id": 37,
+                "question": "The board’s continuation criteria include:",
+                "questionVi": "Tiêu chí duy trì của hội đồng gồm:",
+                "options": ["Peak drop >10% and higher profits", "Peak drop >5% for three hot months and stable arrears among prepaid users", "No complaints for a month", "100% off-peak usage"],
+                "optionsVi": ["Giảm đỉnh >10% và tăng lợi nhuận", "Giảm đỉnh >5% trong ba tháng nóng và nợ đọng ổn định ở nhóm trả trước", "Không khiếu nại trong một tháng", "100% dùng giờ rẻ"],
+                "correct": 1
+              },
+              {
+                "id": 38,
+                "question": "In context, the app’s suggestions are best described as:",
+                "questionVi": "Trong ngữ cảnh, các gợi ý của ứng dụng được mô tả tốt nhất là:",
+                "options": ["Mandates", "Nudges", "Penalties", "Surveys"],
+                "optionsVi": ["Mệnh lệnh", "Gợi ý/nudge", "Phạt", "Khảo sát"],
+                "correct": 1
+              },
+              {
+                "id": 39,
+                "question": "Which time band had the lowest price?",
+                "questionVi": "Khung giờ nào có giá thấp nhất?",
+                "options": ["06:00–12:00", "12:00–18:00", "18:00–21:00", "00:00–06:00"],
+                "optionsVi": ["06:00–12:00", "12:00–18:00", "18:00–21:00", "00:00–06:00"],
+                "correct": 3
+              },
+              {
+                "id": 40,
+                "question": "What is the most reasonable inference about heat alerts?",
+                "questionVi": "Suy luận hợp lý nhất về cảnh báo nóng là gì?",
+                "options": ["They encourage peak use", "They help users plan around constraints", "They disable TOU temporarily", "They increase average bills"],
+                "optionsVi": ["Khuyến khích dùng giờ cao điểm", "Giúp người dùng lên kế hoạch theo ràng buộc", "Tắt TOU tạm thời", "Tăng hóa đơn trung bình"],
+                "correct": 1
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Passage 2 – Community Mesh Wi-Fi & the Digital Divide",
+            "titleVi": "Đoạn 2 – Wi-Fi lưới cộng đồng & khoảng cách số",
+            "content": "A coalition of neighborhood groups built a volunteer-run mesh Wi-Fi network to serve households left out by commercial plans. To stretch limited backhaul, routers prioritized low-bandwidth tasks like homework websites over video streaming during weekday evenings. After three months, average homework completion in partner schools rose by five percentage points, with the biggest gains among students who previously relied on phone data. However, heavy rain degraded a third of rooftop links, and a few homeowners asked to opt out when antennas became visible from the street. To address reliability, the project added signal reflectors on taller buildings and trained student “network stewards” to check nodes weekly. The city is considering a small grant if uptime hits 97% for eight consecutive weeks and if the network publishes an anonymized usage report to address privacy concerns.",
+            "contentVi": "Liên minh các nhóm khu dân cư xây dựng mạng Wi-Fi lưới do tình nguyện viên vận hành để phục vụ hộ gia đình bị bỏ lại bởi các gói thương mại. Để tiết kiệm đường truyền, bộ định tuyến ưu tiên tác vụ băng thông thấp như website bài tập về nhà hơn phát video vào buổi tối ngày thường. Sau ba tháng, tỷ lệ hoàn thành bài tập ở các trường đối tác tăng 5 điểm %, tăng mạnh nhất ở học sinh trước đây chỉ dựa vào dữ liệu điện thoại. Tuy nhiên, mưa lớn làm suy giảm một phần ba liên kết mái nhà, và một vài chủ nhà muốn rút khỏi dự án khi ăng-ten thấy rõ từ đường. Để cải thiện độ ổn định, dự án bổ sung gương phản xạ tín hiệu trên các toà nhà cao hơn và huấn luyện “quản sự mạng” là học sinh để kiểm tra nút hàng tuần. Thành phố đang cân nhắc cấp tài trợ nhỏ nếu thời gian hoạt động đạt 97% trong tám tuần liên tiếp và mạng công bố báo cáo sử dụng đã ẩn danh để giải quyết lo ngại quyền riêng tư.",
+            "questions": [
+              {
+                "id": 41,
+                "question": "What traffic did routers prioritize on weekday evenings?",
+                "questionVi": "Vào buổi tối ngày thường, bộ định tuyến ưu tiên loại lưu lượng nào?",
+                "options": ["Video streaming", "Gaming", "Homework websites", "Cloud backups"],
+                "optionsVi": ["Xem video", "Chơi game", "Website bài tập", "Sao lưu đám mây"],
+                "correct": 2
+              },
+              {
+                "id": 42,
+                "question": "Which group saw the largest gains in homework completion?",
+                "questionVi": "Nhóm nào có mức tăng hoàn thành bài tập lớn nhất?",
+                "options": ["Students with fiber", "Students using phone data previously", "Teachers", "Adult learners"],
+                "optionsVi": ["Học sinh có cáp quang", "Học sinh trước đây dùng dữ liệu điện thoại", "Giáo viên", "Người lớn học tập"],
+                "correct": 1
+              },
+              {
+                "id": 43,
+                "question": "What weather issue affected the network?",
+                "questionVi": "Vấn đề thời tiết nào ảnh hưởng mạng?",
+                "options": ["High heat", "Strong wind", "Heavy rain degrading links", "Snow accumulation"],
+                "optionsVi": ["Nắng nóng", "Gió mạnh", "Mưa lớn làm suy giảm liên kết", "Tuyết dày"],
+                "correct": 2
+              },
+              {
+                "id": 44,
+                "question": "Why did some homeowners ask to opt out?",
+                "questionVi": "Vì sao một số chủ nhà muốn rút khỏi dự án?",
+                "options": ["Noise complaints", "Antennas visible from the street", "Power bills increased", "Legal threats"],
+                "optionsVi": ["Ồn ào", "Ăng-ten thấy rõ từ đường", "Hoá đơn điện tăng", "Đe doạ pháp lý"],
+                "correct": 1
+              },
+              {
+                "id": 45,
+                "question": "Which measure improved reliability?",
+                "questionVi": "Biện pháp nào cải thiện độ ổn định?",
+                "options": ["Paid installers", "Signal reflectors and student stewards", "Unlimited streaming", "New phone towers"],
+                "optionsVi": ["Thợ lắp đặt thuê", "Gương phản xạ tín hiệu và quản sự học sinh", "Xem video không giới hạn", "Tháp điện thoại mới"],
+                "correct": 1
+              },
+              {
+                "id": 46,
+                "question": "The city may fund the project if:",
+                "questionVi": "Thành phố có thể tài trợ nếu:",
+                "options": ["Uptime hits 97% for eight weeks and an anonymized usage report is published", "All homes join", "Streaming is blocked entirely", "Backhaul is free"],
+                "optionsVi": ["Thời gian hoạt động đạt 97% trong 8 tuần và công bố báo cáo ẩn danh", "Mọi nhà cùng tham gia", "Chặn hoàn toàn video", "Đường truyền miễn phí"],
+                "correct": 0
+              },
+              {
+                "id": 47,
+                "question": "In context, “backhaul” most nearly refers to:",
+                "questionVi": "Trong ngữ cảnh, “đường truyền backhaul” gần nghĩa là:",
+                "options": ["Local Wi-Fi signal between phones", "Uplink from the mesh to the wider internet", "Battery backup for routers", "Antenna mounting brackets"],
+                "optionsVi": ["Tín hiệu Wi-Fi cục bộ giữa điện thoại", "Kết nối từ lưới lên Internet rộng", "Pin dự phòng cho router", "Giá đỡ ăng-ten"],
+                "correct": 1
+              },
+              {
+                "id": 48,
+                "question": "What problem did the baseline (pre-improvement) network face?",
+                "questionVi": "Mạng giai đoạn đầu gặp vấn đề gì?",
+                "options": ["Too many grants", "Excessive video usage at night", "Too few routers to form mesh", "Privacy regulation fines"],
+                "optionsVi": ["Quá nhiều tài trợ", "Quá nhiều video ban đêm", "Quá ít router để tạo lưới", "Phạt do quy định riêng tư"],
+                "correct": 1
+              },
+              {
+                "id": 49,
+                "question": "What is an intended effect of publishing an anonymized usage report?",
+                "questionVi": "Mục đích của việc công bố báo cáo sử dụng ẩn danh là gì?",
+                "options": ["Increase streaming quotas", "Address privacy concerns", "Identify households by name", "Reduce homework load"],
+                "optionsVi": ["Tăng hạn mức xem video", "Giải quyết lo ngại quyền riêng tư", "Xác định hộ theo tên", "Giảm lượng bài tập"],
+                "correct": 1
+              },
+              {
+                "id": 50,
+                "question": "The five-point rise is best interpreted as:",
+                "questionVi": "Mức tăng 5 điểm phần trăm được hiểu tốt nhất là:",
+                "options": ["Anecdotal change", "Measured improvement in completion rate", "Increase in grades", "Drop in absences"],
+                "optionsVi": ["Thay đổi truyền miệng", "Cải thiện đo lường ở tỷ lệ hoàn thành", "Tăng điểm số", "Giảm vắng mặt"],
+                "correct": 1
+              }
+            ]
+          }
+        ]
+      },
+      "listening": {
+        "title": "Section C: Listening Comprehension",
+        "titleVi": "Phần C: Nghe hiểu",
+        "description": "10 multiple-choice questions · Timing, rules, exceptions, logistics",
+        "descriptionVi": "10 câu trắc nghiệm · Thời gian, quy định, ngoại lệ, sắp xếp",
+        "totalQuestions": 10,
+        "scripts": [
+          {
+            "id": 1,
+            "title": "Script 1 – Museum Renovation Notice",
+            "titleVi": "Băng 1 – Thông báo cải tạo bảo tàng",
+            "content": "Good morning. The East Wing galleries will close from Wednesday the 14th until Friday the 23rd for lighting upgrades. The main entrance remains open; however, the café will stop taking orders at 4:30 p.m. during this period. Guided tours will start at 11:15 a.m. instead of 11:00, and families with strollers should use the south ramp; the elevator by the gift shop is out of service. For ticket changes, visit the desk before 5 p.m. or use the QR code posted by the map.",
+            "contentVi": "Xin chào buổi sáng. Khu trưng bày Cánh Đông sẽ đóng từ Thứ Tư ngày 14 đến Thứ Sáu ngày 23 để nâng cấp chiếu sáng. Cổng chính vẫn mở; tuy nhiên, quán cà phê ngừng nhận gọi món lúc 16:30 trong thời gian này. Tour có hướng dẫn bắt đầu lúc 11:15 thay vì 11:00, và gia đình có xe nôi dùng dốc phía nam; thang máy cạnh cửa hàng quà tặng tạm ngừng. Đổi vé, vui lòng tới quầy trước 17:00 hoặc quét mã QR cạnh bản đồ.",
+            "questions": [
+              {
+                "id": 51,
+                "question": "When will the East Wing be closed?",
+                "questionVi": "Cánh Đông đóng khi nào?",
+                "options": ["From the 10th to the 12th", "From the 14th to the 23rd", "From the 20th to the 30th", "Only on weekends"],
+                "optionsVi": ["Từ ngày 10 đến 12", "Từ ngày 14 đến 23", "Từ ngày 20 đến 30", "Chỉ cuối tuần"],
+                "correct": 1
+              },
+              {
+                "id": 52,
+                "question": "What time will guided tours begin during renovations?",
+                "questionVi": "Tour có hướng dẫn bắt đầu lúc mấy giờ trong thời gian cải tạo?",
+                "options": ["11:00 a.m.", "11:15 a.m.", "12:00 p.m.", "1:15 p.m."],
+                "optionsVi": ["11:00", "11:15", "12:00", "13:15"],
+                "correct": 1
+              },
+              {
+                "id": 53,
+                "question": "Which facility is out of service?",
+                "questionVi": "Thiết bị nào tạm ngừng hoạt động?",
+                "options": ["South ramp", "Main entrance", "Elevator by the gift shop", "Ticket desk"],
+                "optionsVi": ["Dốc phía nam", "Cổng chính", "Thang máy cạnh cửa hàng quà tặng", "Quầy vé"],
+                "correct": 2
+              },
+              {
+                "id": 54,
+                "question": "Until what time does the café take orders?",
+                "questionVi": "Quán cà phê nhận gọi món đến mấy giờ?",
+                "options": ["4:00 p.m.", "4:30 p.m.", "5:00 p.m.", "5:30 p.m."],
+                "optionsVi": ["16:00", "16:30", "17:00", "17:30"],
+                "correct": 1
+              },
+              {
+                "id": 55,
+                "question": "Where can visitors change their tickets after 5 p.m.?",
+                "questionVi": "Sau 17:00, khách có thể đổi vé ở đâu?",
+                "options": ["At the desk", "At the café", "Using the QR code", "At the East Wing"],
+                "optionsVi": ["Tại quầy", "Tại quán cà phê", "Quét mã QR", "Ở Cánh Đông"],
+                "correct": 2
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "Script 2 – Hospital Outpatient Reminder",
+            "titleVi": "Băng 2 – Nhắc hẹn khám ngoại trú",
+            "content": "This is a reminder for your outpatient appointment with Dr. Nguyen on Tuesday at 3:40 p.m. Please arrive ten minutes early to check in on Level 2. Bring your referral letter and a list of medications. If you need to reschedule, call before 1:00 p.m. on the day; a late change fee applies after that. The car park on King Street is full after 3 p.m., but the River Mall garage validates tickets for clinic visitors.",
+            "contentVi": "Đây là lời nhắc lịch khám ngoại trú với Bác sĩ Nguyễn vào Thứ Ba lúc 15:40. Vui lòng đến sớm 10 phút để làm thủ tục tại Tầng 2. Mang thư giới thiệu và danh sách thuốc đang dùng. Nếu cần dời hẹn, hãy gọi trước 13:00 trong ngày; sau thời điểm đó sẽ tính phí đổi muộn. Bãi xe trên đường King thường kín sau 15:00, nhưng nhà xe River Mall có xác nhận vé cho khách phòng khám.",
+            "questions": [
+              {
+                "id": 56,
+                "question": "What time is the appointment?",
+                "questionVi": "Cuộc hẹn lúc mấy giờ?",
+                "options": ["3:20 p.m.", "3:30 p.m.", "3:40 p.m.", "4:00 p.m."],
+                "optionsVi": ["15:20", "15:30", "15:40", "16:00"],
+                "correct": 2
+              },
+              {
+                "id": 57,
+                "question": "Where should the patient check in?",
+                "questionVi": "Bệnh nhân làm thủ tục ở đâu?",
+                "options": ["Level 1", "Level 2", "Level 3", "Ground floor"],
+                "optionsVi": ["Tầng 1", "Tầng 2", "Tầng 3", "Tầng trệt"],
+                "correct": 1
+              },
+              {
+                "id": 58,
+                "question": "By when must rescheduling be requested to avoid a fee?",
+                "questionVi": "Cần dời hẹn trước khi nào để tránh phí?",
+                "options": ["12:00 p.m.", "1:00 p.m.", "2:00 p.m.", "3:00 p.m."],
+                "optionsVi": ["12:00", "13:00", "14:00", "15:00"],
+                "correct": 1
+              },
+              {
+                "id": 59,
+                "question": "Which car park validates tickets for clinic visitors?",
+                "questionVi": "Bãi xe nào xác nhận vé cho khách phòng khám?",
+                "options": ["King Street car park", "Hospital basement", "River Mall garage", "Street parking only"],
+                "optionsVi": ["Bãi xe đường King", "Hầm bệnh viện", "Nhà xe River Mall", "Chỉ đậu ngoài đường"],
+                "correct": 2
+              },
+              {
+                "id": 60,
+                "question": "What should the patient bring?",
+                "questionVi": "Bệnh nhân cần mang gì?",
+                "options": ["Passport only", "Referral letter and medication list", "Insurance card only", "X-ray films only"],
+                "optionsVi": ["Chỉ hộ chiếu", "Thư giới thiệu và danh sách thuốc", "Chỉ thẻ bảo hiểm", "Chỉ phim X-quang"],
+                "correct": 1
+              }
+            ]
+          }
+        ]
+      },
+      "writing": {
+        "title": "Section D: Writing",
+        "titleVi": "Phần D: Viết",
+        "description": "3 tasks · Precise grammar, clear structure, nuanced vocabulary",
+        "descriptionVi": "3 bài · Ngữ pháp chuẩn, bố cục rõ, từ vựng có sắc thái",
+        "totalTasks": 3,
+        "tasks": [
+          {
+            "id": 1,
+            "title": "Task 1 (210–240 words) — Formal Complaint Email",
+            "titleVi": "Bài 1 (210–240 từ) — Email khiếu nại trang trọng",
+            "instruction": "Your parcel arrived with a cracked screen protector and a dented box, although the label says ‘Fragile — Handle with care’. Write to the courier to: (a) describe the condition with order/date details, (b) request reimbursement or replacement, and (c) propose handling improvements (e.g., padding, signature on delivery).",
+            "instructionVi": "Kiện hàng của bạn đến nơi với miếng dán màn hình bị nứt và hộp móp dù nhãn ghi ‘Hàng dễ vỡ — Xin nhẹ tay’. Hãy viết cho hãng vận chuyển để: (a) mô tả tình trạng kèm mã đơn/ngày, (b) yêu cầu hoàn tiền hoặc đổi mới, và (c) đề xuất cải thiện khâu xử lý (ví dụ: chèn đệm, ký nhận khi giao).",
+            "wordLimit": { "min": 210, "max": 240 },
+            "type": "formal_email",
+            "topic": "damaged_parcel_courier"
+          },
+          {
+            "id": 2,
+            "title": "Task 2 (320–360 words) — Opinion Essay",
+            "titleVi": "Bài 2 (320–360 từ) — Bài luận ý kiến",
+            "instruction": "“Large supermarkets should ban single-use plastic bags and charge a deposit for reusable ones.” To what extent do you agree or disagree? Present one central argument, support it with evidence or a detailed example, acknowledge one strong counter-argument (cost, convenience, hygiene), and rebut it.",
+            "instructionVi": "“Siêu thị lớn nên cấm túi nhựa dùng một lần và thu đặt cọc cho túi tái sử dụng.” Bạn đồng ý đến mức nào? Nêu một luận điểm trung tâm, hỗ trợ bằng bằng chứng hoặc ví dụ chi tiết, thừa nhận một phản biện mạnh (chi phí, tiện lợi, vệ sinh) và bác biện.",
+            "wordLimit": { "min": 320, "max": 360 },
+            "type": "opinion_essay",
+            "topic": "plastic_bag_policy"
+          },
+          {
+            "id": 3,
+            "title": "Task 3 (270–310 words) — Data Description & Recommendation",
+            "titleVi": "Bài 3 (270–310 từ) — Mô tả dữ liệu & khuyến nghị",
+            "instruction": "Compare three ride-hailing options over two weeks: Service A (median ETA 4.2 min; cancellation rate 3.5%; surge 18% of trips; cost $0.90/km), Service B (ETA 5.1; cancel 2.1%; surge 9%; $1.05/km), Service C (ETA 3.8; cancel 5.4%; surge 27%; $0.82/km). Summarise trade-offs (speed vs reliability vs price), recommend a strategy (single or mixed), and name one KPI to monitor post-rollout.",
+            "instructionVi": "So sánh ba dịch vụ gọi xe trong hai tuần: Dịch vụ A (ETA trung vị 4,2 phút; huỷ 3,5%; tăng giá 18% chuyến; $0,90/km), Dịch vụ B (ETA 5,1; huỷ 2,1%; tăng giá 9%; $1,05/km), Dịch vụ C (ETA 3,8; huỷ 5,4%; tăng giá 27%; $0,82/km). Tóm tắt đánh đổi (tốc độ–độ tin cậy–giá), đề xuất chiến lược (một hay phối hợp), và nêu một KPI cần theo dõi sau triển khai.",
+            "wordLimit": { "min": 270, "max": 310 },
+            "type": "data_description",
+            "topic": "ride_hailing_tradeoffs",
+            "chartData": {
+              "title": "Ride-Hailing Pilot — Two-Week Metrics",
+              "titleVi": "Thử nghiệm gọi xe — Chỉ số 2 tuần",
+              "data": [
+                { "service": "Service A", "median_eta_min": 4.2, "cancellation_rate_percent": 3.5, "surge_share_percent": 18, "cost_usd_per_km": 0.9 },
+                { "service": "Service B", "median_eta_min": 5.1, "cancellation_rate_percent": 2.1, "surge_share_percent": 9, "cost_usd_per_km": 1.05 },
+                { "service": "Service C", "median_eta_min": 3.8, "cancellation_rate_percent": 5.4, "surge_share_percent": 27, "cost_usd_per_km": 0.82 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "createdBy": "IELTS Practice System",
+      "version": "3.0.4",
+      "lastUpdated": "2025-09-09",
+      "difficulty": "advanced grammar focus",
+      "estimatedTime": "110–130 minutes",
+      "tags": ["grammar", "meaning", "reading", "listening", "writing", "ielts", "bilingual", "level3.0", "paperE"]
+    }
+  }
+  
