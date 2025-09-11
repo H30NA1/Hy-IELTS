@@ -1,0 +1,114 @@
+{
+  "id": "mff0aln73u8n8v2vqir",
+  "timestamp": "2025-09-11T06:07:12.403Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-09-11T06:07:12.803Z",
+    "submittedBy": "user"
+  },
+  "userName": "Leenamhi",
+  "answers": {
+    "grammar": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 2,
+      "14": 2,
+      "15": 0,
+      "16": 2,
+      "17": 1,
+      "18": 1,
+      "19": 0,
+      "20": 1,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 1,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 1,
+      "30": 1
+    },
+    "reading": {
+      "31": 1,
+      "32": 1,
+      "33": 1,
+      "34": 0,
+      "35": 1,
+      "36": 1,
+      "37": 1,
+      "38": 0,
+      "39": 1,
+      "40": 0,
+      "41": 1,
+      "42": 0,
+      "43": 1,
+      "44": 1,
+      "45": 1,
+      "46": 1,
+      "47": 0,
+      "48": 1,
+      "49": 0,
+      "50": 1
+    },
+    "listening": {
+      "51": 1,
+      "52": 2,
+      "53": 2,
+      "54": 1,
+      "55": 1,
+      "56": 2,
+      "57": 1,
+      "58": 2,
+      "59": 1,
+      "60": 1
+    },
+    "writing": {
+      "task1": "Hi Manager\nI want to report repeated problems with my meeting room booking. On Sept 10, 11, and 12, my confirmed room was given to another team. This caused big trouble for my work. I kindly ask for some compensation, like a credit or fee waiver, and please fix the process so it does not happen again. Could you also send me written confirmation of the new booking safeguards\nThank you",
+      "task2": "I agree that universities should require a methods appendix. One strong reason is transparency: when students explain how they found data or used tools, teachers can judge the quality of the work better. For example, a study at a UK university showed students who wrote short methods notes improved their research skills over time. Some say it adds extra workload, but a simple one-page appendix is not heavy, and it trains students for real academic or work projects",
+      "task3": "Live chat offers fast replies (52s) at moderate cost ($2.40) but slightly lower resolution (82%). Email is cheapest ($1.70) and resolves well (88%) but is slowest (5.8 hrs). Phone is fastest (21s) and most effective (91%) but costly ($4.30). A good mix would use live chat as the main channel, backed by email for non-urgent issues and phone for complex or high-value cases. One key KPI to monitor is customer satisfaction across channels to balance speed, quality, and cost"
+    },
+    "translatedQuestions": [
+      14,
+      "14",
+      38,
+      "38"
+    ],
+    "translationPenalties": {
+      "question-14": -0.5,
+      "question-38": -0.5,
+      "transcript-1": -1,
+      "transcript-2": -1,
+      "writing-task-2": -0.5
+    }
+  },
+  "results": {
+    "grammar": 21,
+    "reading": 18.5,
+    "listening": 9,
+    "writing": 7.5,
+    "total": 56,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -1.5
+  },
+  "timeSpent": "41:07",
+  "testData": {
+    "testId": "IELTS_STARTER_3_0_PAPER_H",
+    "testDate": "2025-09-10",
+    "testTitle": "IELTS Starter 3.0 Practice Test (EN–VI) — Grammar & Meaning Focus, Paper H"
+  }
+}

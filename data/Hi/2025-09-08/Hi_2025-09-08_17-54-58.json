@@ -1,0 +1,112 @@
+{
+  "id": "mfb094h183491d2qae9",
+  "timestamp": "2025-09-08T10:54:58.789Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-09-08T10:54:58.621Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "grammar": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1,
+      "5": 1,
+      "6": 2,
+      "7": 1,
+      "8": 0,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 0,
+      "13": 2,
+      "14": 1,
+      "15": 0,
+      "16": 0,
+      "17": 1,
+      "18": 0,
+      "19": 1,
+      "20": 3,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "24": 0,
+      "25": 0,
+      "26": 1,
+      "27": 1,
+      "28": 0,
+      "29": 1,
+      "30": 0
+    },
+    "reading": {
+      "31": 1,
+      "32": 2,
+      "33": 1,
+      "34": 2,
+      "35": 1,
+      "36": 1,
+      "37": 1,
+      "38": 0,
+      "39": 3,
+      "40": 0,
+      "41": 2,
+      "42": 1,
+      "43": 2,
+      "44": 1,
+      "45": 1,
+      "46": 0,
+      "47": 1,
+      "48": 0,
+      "49": 1,
+      "50": 1
+    },
+    "listening": {
+      "51": 1,
+      "52": 1,
+      "53": 0,
+      "54": 1,
+      "55": 2,
+      "56": 2,
+      "57": 1,
+      "58": 1,
+      "59": 0,
+      "60": 1
+    },
+    "writing": {
+      "task1": "Dear Courier Team\nI received my parcel on 8 Sept, order #45. The box was dented and the screen protector inside was cracked, even though the label said “Fragile — Handle with care.” Please reimburse me or send a replacement. For future deliveries, I suggest adding more padding inside the box and asking for a signature on delivery to make sure fragile items are handled better\nThank you",
+      "task2": "I agree that supermarkets should ban single-use plastic bags and charge a deposit for reusable ones because plastic bags cause serious pollution, harming rivers, oceans, and wildlife, while reusable bags cut waste and save resources; for instance, Ireland’s bag levy reduced usage by over 90%. Some argue reusable bags are costly, inconvenient, or unhygienic, yet stores can offer cheap washable bags and give cleaning advice, making the change practical without much burden on customers while protecting the environment",
+      "task3": "Service C is fastest (3.8 min ETA) and cheapest ($0.82/km) but least reliable with 5.4% cancellations and frequent surge (27%). Service A balances price ($0.90/km) and speed (4.2 min), though surge is moderate (18%). Service B is slowest (5.1 min) and most expensive ($1.05/km) but most reliable, with the lowest cancellation (2.1%) and surge (9%). A mixed strategy works best: default to A, use B for reliability-critical trips, and C for price-sensitive riders. Post rollout, monitor effective trip completion rate"
+    },
+    "translatedQuestions": [
+      11,
+      "11"
+    ],
+    "translationPenalties": {
+      "question-11": -0.5,
+      "transcript-1": -1,
+      "transcript-2": -1,
+      "writing-task-2": -0.5,
+      "writing-task-3": -0.5
+    }
+  },
+  "results": {
+    "grammar": 16.5,
+    "reading": 17,
+    "listening": 8,
+    "writing": 10,
+    "total": 51.5,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -2
+  },
+  "timeSpent": "24:04",
+  "testData": {
+    "testId": "IELTS_STARTER_3_0_PAPER_E",
+    "testDate": "2025-09-09",
+    "testTitle": "IELTS Starter 3.0 Practice Test (EN–VI) — Grammar & Meaning Focus, Paper E"
+  }
+}
