@@ -1,0 +1,107 @@
+{
+  "id": "mfwv01tpo7x3l49dmim",
+  "timestamp": "2025-09-23T17:58:53.245Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-09-23T17:58:54.244Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "grammar": {
+      "1": 3,
+      "2": 0,
+      "3": 0,
+      "4": 1,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 2,
+      "10": 2,
+      "11": 2,
+      "12": 0,
+      "13": 2,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 1,
+      "21": 0,
+      "22": 0,
+      "23": 1,
+      "24": 0,
+      "25": 3,
+      "26": 0,
+      "27": 0,
+      "28": 1,
+      "29": 0,
+      "30": 0
+    },
+    "reading": {
+      "31": 1,
+      "32": 1,
+      "33": 1,
+      "34": 1,
+      "35": 0,
+      "36": 1,
+      "37": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "41": 1,
+      "42": 0,
+      "43": 2,
+      "44": 1,
+      "45": 0,
+      "46": 1,
+      "47": 1,
+      "48": 1,
+      "49": 0,
+      "50": 0
+    },
+    "listening": {
+      "51": 1,
+      "52": 2,
+      "53": 1,
+      "54": 1,
+      "55": 1,
+      "56": 1,
+      "57": 0,
+      "58": 0,
+      "59": 1,
+      "60": 0
+    },
+    "writing": {
+      "task1": "Hello Casting Team\nMy self-tape upload stopped at 17:23 PDT (12 minutes in) because of a server reset, though the deadline shows 18:30. The file is named LeeNamHi-student (LAST_First_Role), with slate (LeeNamHi / CD: / 170cm) and scenes in order (Scene 2A + 10s comedic tag). May I please have either a 12-hour extension or an alternate upload link\nThank you very much",
+      "task2": "I strongly agree that productions with staged combat or intimacy should require certified coordinators and written safety protocols. In one college play, clear fight choreo and table work reduced injuries and gave actors confidence during blocking. Some argue this adds cost, time, and limits creative freedom. Yet risk management shows accidents are far more expensive, and NDAs plus rehearsal notes protect both actors and producers. Mandatory safety ensures trust, smoother previews, and responsible storytelling",
+      "task3": "We have only four weeks and little money, so we must choose carefully. A private coach helps most with lines (+17%) and confidence (+16%), but costs $90 each week. A peer circle is free and still good (+12%/+12%), though it takes 2.5 hours. Solo apps are cheap ($6) and flexible, but give the smallest gains (+9%/+8%). With a tight budget and short time, the best choice is mixing peer circle and solo apps. KPI: % lines off-book by week 3"
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {
+      "transcript-1": -1,
+      "writing-task-1": -0.5,
+      "writing-task-2": -0.5
+    }
+  },
+  "results": {
+    "grammar": 19,
+    "reading": 20,
+    "listening": 9,
+    "writing": 10,
+    "total": 58,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -1
+  },
+  "timeSpent": "27:24",
+  "testData": {
+    "testId": "IELTS_3_2_ACTING_2025_09_23",
+    "testDate": "2025-09-23",
+    "testTitle": "IELTS 3.2 — Acting Focus — Practice Test (EN–VI)"
+  }
+}
