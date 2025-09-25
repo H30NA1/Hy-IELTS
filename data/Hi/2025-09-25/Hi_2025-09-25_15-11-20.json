@@ -1,0 +1,121 @@
+{
+  "id": "mfz4w5l5hdes8kobto7",
+  "timestamp": "2025-09-25T08:11:20.009Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-09-25T08:11:20.555Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "grammar": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 1,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 1,
+      "10": 1,
+      "11": 0,
+      "12": 1,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 1,
+      "19": 0,
+      "20": 1,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 1,
+      "26": 0,
+      "27": 0,
+      "28": 2,
+      "29": 0,
+      "30": 0
+    },
+    "reading": {
+      "31": 1,
+      "32": 1,
+      "33": 0,
+      "34": 1,
+      "35": 1,
+      "36": 0,
+      "37": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "41": 1,
+      "42": 1,
+      "43": 1,
+      "44": 1,
+      "45": 1,
+      "46": 0,
+      "47": 1,
+      "48": 1,
+      "49": 0,
+      "50": 0
+    },
+    "listening": {
+      "51": 1,
+      "52": 1,
+      "53": 1,
+      "54": 1,
+      "55": 1,
+      "56": 0,
+      "57": 0,
+      "58": 1,
+      "59": 1,
+      "60": 1
+    },
+    "writing": {
+      "task1": "Hello Client Success Manager\nOur SFTP upload link expired about 40 minutes early because the server reset at 17:11 PDT. This caused the logs transfer to stop. Could we please have a 12-hour extension on the SFTP link, or get an alternate method (such as an S3 pre-signed URL or secure portal)? For clarity, our files follow the agreed naming rules and we always send a SHA-256 checksum to confirm integrity\nThank you for your help",
+      "task2": "I agree that customer-facing services should use IaC-based change control, feature flags, and quarterly chaos drills. These practices make releases safer and help teams recover faster when things break. For example, at one company, adding feature flags cut change failure rate from 12% to 4% and reduced MTTR from 2 hours to 30 minutes, lowering refund requests. A counter-argument is that this setup takes more time and slows delivery. But from a risk and SLA view, the cost of one major outage is often higher than the extra effort. Safer systems protect both the business and the clients",
+      "task3": "Standard support is cheapest at $6/user/month but slow, with 8h first response, 18h MTTR, and CSAT 4.4. Priority costs $12 and cuts MTTR to 9h, improves response to 2h, and raises CSAT to 4.6. Enterprise is fastest at $22 with 15m response, 5h MTTR, and CSAT 4.75, but the price is high. For a startup with tight funds yet contractual uptime needs, Priority offers the best balance of cost and reliability. A key KPI to track weekly is the % of tickets handled within SLA"
+    },
+    "translatedQuestions": [
+      5,
+      "5",
+      21,
+      "21",
+      23,
+      "23",
+      30,
+      "30"
+    ],
+    "translationPenalties": {
+      "question-5": -0.5,
+      "question-21": -0.5,
+      "question-23": -0.5,
+      "question-30": -0.5,
+      "transcript-1": -1,
+      "transcript-2": -1,
+      "writing-task-1": -0.5,
+      "writing-task-2": -0.5
+    }
+  },
+  "results": {
+    "grammar": 16.5,
+    "reading": 20,
+    "listening": 10,
+    "writing": 12.5,
+    "total": 59,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -2
+  },
+  "timeSpent": "32:07",
+  "testData": {
+    "testId": "IELTS_3_5_IT_SERVICES_2025_09_25",
+    "testDate": "2025-09-25",
+    "testTitle": "IELTS 3.5 — IT Services Focus — Practice Test (EN–VI)"
+  }
+}

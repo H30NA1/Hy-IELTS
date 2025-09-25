@@ -1,0 +1,187 @@
+{
+  "testId": "IELTS_3_4_ACTING_2025_09_24",
+  "testDate": "2025-09-24",
+  "testTitle": "IELTS 3.4 — Acting Focus — Practice Test (EN–VI)",
+  "totalQuestions": 60,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary in Acting Contexts",
+      "titleVi": "Phần A: Ngữ pháp & Từ vựng trong bối cảnh diễn xuất",
+      "description": "30 MCQs • Subjunctive nuance, complex inversion, mixed/3rd conditionals, clefting, quantifiers, reduced relatives, advanced collocations",
+      "descriptionVi": "30 câu trắc nghiệm • Sắc thái thức giả định, đảo ngữ phức, điều kiện hỗn hợp/loại 3, câu chẻ, lượng từ, mệnh đề rút gọn, kết hợp từ nâng cao",
+      "totalQuestions": 30,
+      "questions": [
+        { "id": 1, "question": "The AD insisted that the cast ___ on the mark before rolling.", "questionVi": "Trợ lý đạo diễn khăng khăng dàn diễn ___ đúng dấu trước khi quay.", "options": ["be", "is", "to be", "being"], "optionsVi": ["phải", "là", "để", "đang"], "correct": 0 },
+        { "id": 2, "question": "Not until the mic check finished ___ the cold read begin.", "questionVi": "Mãi đến khi kiểm tra mic xong ___ đọc lạnh mới bắt đầu.", "options": ["did", "had", "was", "could have"], "optionsVi": ["mới", "đã", "đang", "đã có thể"], "correct": 0 },
+        { "id": 3, "question": "If the props ___ on Tuesday, we wouldn’t be compressing transitions now.", "questionVi": "Nếu đạo cụ ___ vào Thứ Ba, giờ chúng ta đã không phải nén chuyển cảnh.", "options": ["had arrived", "arrived", "arrive", "would arrive"], "optionsVi": ["đã đến", "đến", "đến", "sẽ đến"], "correct": 0 },
+        { "id": 4, "question": "Hardly ___ the house opened when late seating created a break in cohesion.", "questionVi": "Vừa khi ___ mở cửa cho khán giả thì việc cho vào muộn làm vỡ nhịp gắn kết.", "options": ["had", "did", "has", "was"], "optionsVi": ["đã", "đã", "đã", "đang"], "correct": 0 },
+        { "id": 5, "question": "It is vital that combat notes ___ documented before fight choreo.", "questionVi": "Điều tối quan trọng là ghi chú đối kháng ___ được ghi lại trước vũ đạo đánh.", "options": ["be", "are", "to be", "being"], "optionsVi": ["phải", "là", "để", "đang"], "correct": 0 },
+        { "id": 6, "question": "No sooner ___ the camera reset than we lost the slate.", "questionVi": "Vừa khi ___ đặt lại máy quay thì chúng tôi mất phần giới thiệu.", "options": ["had we completed", "we completed", "did we complete", "have we completed"], "optionsVi": ["chúng tôi vừa hoàn tất", "chúng tôi hoàn tất", "chúng tôi đã hoàn tất", "chúng tôi đã hoàn tất"], "correct": 0 },
+        { "id": 7, "question": "Were the black box available, we ___ the intimacy scene there.", "questionVi": "Nếu phòng hộp đen còn trống, chúng tôi ___ cảnh thân mật ở đó.", "options": ["would stage", "staged", "will stage", "had staged"], "optionsVi": ["sẽ dàn dựng", "đã dàn dựng", "sẽ dàn dựng", "đã dàn dựng"], "correct": 0 },
+        { "id": 8, "question": "Seldom ___ the reader interrupt for tempo on a second take.", "questionVi": "Hiếm khi ___ người đọc cắt để chỉnh nhịp ở lần quay thứ hai.", "options": ["does", "do", "has", "is"], "optionsVi": ["làm", "làm", "đã", "là"], "correct": 0 },
+        { "id": 9, "question": "By the time the cue light ___, the boom had drifted.", "questionVi": "Khi đèn tín hiệu ___, cần mic đã lệch.", "options": ["came on", "had come on", "has come on", "will come on"], "optionsVi": ["bật lên", "đã bật lên", "đã bật", "sẽ bật"], "correct": 0 },
+        { "id": 10, "question": "She spoke as if she ___ the finals already.", "questionVi": "Cô ấy nói như thể đã ___ vòng cuối rồi.", "options": ["had booked", "has booked", "would book", "books"], "optionsVi": ["đã được chọn", "đã được chọn", "sẽ được chọn", "được chọn"], "correct": 0 },
+        { "id": 11, "question": "Only after the risk assessment ___ we lock the blocking.", "questionVi": "Chỉ sau khi đánh giá rủi ro ___ chúng tôi mới chốt chặn cảnh.", "options": ["did", "had", "were", "have"], "optionsVi": ["mới", "đã", "đang", "đã"], "correct": 0 },
+        { "id": 12, "question": "Far ___ feedback came from previews than from opening night.", "questionVi": "Nhiều ___ góp ý đến từ suất nháp hơn đêm công diễn.", "options": ["more", "much", "many", "few"], "optionsVi": ["nhiều hơn", "nhiều", "nhiều (đếm được)", "ít"], "correct": 0 },
+        { "id": 13, "question": "Neither the understudy nor the swings ___ confident without a warm-up.", "questionVi": "Cả diễn viên dự bị lẫn người thay thế đều không ___ tự tin nếu thiếu khởi động.", "options": ["feel", "feels", "have felt", "was feeling"], "optionsVi": ["cảm thấy", "cảm thấy (ngôi 3)", "đã cảm thấy", "đang cảm thấy"], "correct": 1 },
+        { "id": 14, "question": "Had the call time been earlier, the quick change ___ smoother.", "questionVi": "Nếu giờ tập trung sớm hơn, màn thay đồ nhanh đã ___ mượt hơn.", "options": ["would have run", "ran", "will run", "has run"], "optionsVi": ["đã sẽ chạy", "đã chạy", "sẽ chạy", "đã chạy"], "correct": 0 },
+        { "id": 15, "question": "The director suggested that he ___ the beat before the turn.", "questionVi": "Đạo diễn đề nghị anh ấy ___ nhịp trước khi xoay người.", "options": ["take", "takes", "to take", "taking"], "optionsVi": ["giữ", "giữ (ngôi 3)", "để giữ", "đang giữ"], "correct": 0 },
+        { "id": 16, "question": "Few as the notes were, ___ were non-negotiable.", "questionVi": "Dù ghi chú ít, ___ là không thể thương lượng.", "options": ["several of them", "each of them", "a few of them", "all of them"], "optionsVi": ["một vài trong số đó", "mỗi cái", "một vài cái", "tất cả"], "correct": 3 },
+        { "id": 17, "question": "Scarcely ___ the overture when a headset died on channel 3.", "questionVi": "Vừa mới ___ nhạc mở màn thì một tai nghe tắt ở kênh 3.", "options": ["had we started", "we had started", "did we start", "have we started"], "optionsVi": ["chúng tôi vừa bắt đầu", "chúng tôi đã bắt đầu", "chúng tôi bắt đầu", "chúng tôi đã bắt đầu"], "correct": 0 },
+        { "id": 18, "question": "The boom should hover ___ the mark to avoid shadow.", "questionVi": "Cần mic nên lơ lửng ___ dấu để tránh đổ bóng.", "options": ["above", "on", "at", "over"], "optionsVi": ["phía trên", "trên", "tại", "trên"], "correct": 0 },
+        { "id": 19, "question": "Were she to miss her entrance, the pacing ___ entirely.", "questionVi": "Nếu cô ấy lỡ thời điểm vào, nhịp độ sẽ ___ hoàn toàn.", "options": ["would unravel", "unraveled", "will unravel", "has unraveled"], "optionsVi": ["rối tung", "đã rối", "sẽ rối", "đã rối"], "correct": 0 },
+        { "id": 20, "question": "There is ___ time for a reset; go to the emergency cover.", "questionVi": "___ thời gian để sắp lại; chuyển sang phương án dự phòng khẩn.", "options": ["little", "a few", "few", "the little"], "optionsVi": ["rất ít", "một vài (đếm được)", "ít (đếm được)", "rất ít (xác định)"], "correct": 0 },
+        { "id": 21, "question": "It was the fight call, not the warm-ups, that ___ delayed.", "questionVi": "Chính buổi tập đối kháng chứ không phải khởi động mới ___ bị hoãn.", "options": ["was", "were", "has", "had"], "optionsVi": ["đã", "đã (số nhiều)", "đã", "đã"], "correct": 0 },
+        { "id": 22, "question": "By next Thursday, intimacy protocols ___ across both casts.", "questionVi": "Đến Thứ Năm tới, quy trình thân mật sẽ ___ cho cả hai dàn diễn.", "options": ["will have been implemented", "have implemented", "had been implemented", "would implement"], "optionsVi": ["sẽ đã được triển khai", "đã triển khai", "đã được triển khai", "sẽ triển khai"], "correct": 0 },
+        { "id": 23, "question": "Little ___ the audience realize that the pause was scripted.", "questionVi": "Khán giả hầu như không ___ rằng khoảng dừng đã được viết sẵn.", "options": ["did", "does", "had", "was"], "optionsVi": ["biết (đảo ngữ)", "biết", "đã", "đã"], "correct": 0 },
+        { "id": 24, "question": "No amount of coaching ___ a missed warm-up.", "questionVi": "Không lượng huấn luyện nào ___ việc bỏ khởi động.", "options": ["replaces", "replace", "has replaced", "replacing"], "optionsVi": ["thay thế được", "thay thế", "đã thay thế", "đang thay thế"], "correct": 0 },
+        { "id": 25, "question": "We’d rather you ___ the beat than rush it under pressure.", "questionVi": "Chúng tôi muốn bạn ___ nhịp hơn là vội dưới áp lực.", "options": ["hold", "held", "to hold", "holding"], "optionsVi": ["giữ", "đã giữ", "để giữ", "đang giữ"], "correct": 0 },
+        { "id": 26, "question": "Had it not ___ for the SM’s call, the quick change would have failed.", "questionVi": "Nếu không ___ tín hiệu của quản lý sân khấu, màn thay đồ nhanh đã thất bại.", "options": ["been", "be", "being", "to be"], "optionsVi": ["là/đã", "là", "đang là", "để là"], "correct": 0 },
+        { "id": 27, "question": "The more precisely you slate, the ___ room for error remains.", "questionVi": "Bạn giới thiệu càng chính xác, ___ khoảng trống sai sót còn lại.", "options": ["less", "fewer", "few", "lesser"], "optionsVi": ["ít hơn", "ít hơn (đếm được)", "ít", "ít hơn"], "correct": 0 },
+        { "id": 28, "question": "Actors able to improvise under pressure ___ preferred for this pilot.", "questionVi": "Những diễn viên có thể ứng tác dưới áp lực ___ được ưu tiên cho phim thử này.", "options": ["are", "being", "who are", "which are"], "optionsVi": ["được", "đang", "người mà được", "cái mà được"], "correct": 0 },
+        { "id": 29, "question": "No sooner had the modular flats arrived ___ spacing conflicts vanished.", "questionVi": "Vừa khi phông nền mô-đun đến ___ xung đột khoảng cách biến mất.", "options": ["than", "when", "that", "then"], "optionsVi": ["thì", "khi", "rằng", "rồi"], "correct": 0 },
+        { "id": 30, "question": "If you blank mid-take, continue ___ the reader feeds the line.", "questionVi": "Nếu bạn quên lời giữa cảnh, hãy tiếp tục ___ người đọc nhắc câu.", "options": ["until", "unless", "though", "despite"], "optionsVi": ["cho đến khi", "trừ khi", "mặc dù", "bất chấp"], "correct": 0 }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension — Acting & Production",
+      "titleVi": "Phần B: Đọc hiểu — Diễn xuất & Sản xuất",
+      "description": "20 MCQs • Multi-step dependencies, causal chains, purpose, vocab-in-context",
+      "descriptionVi": "20 câu trắc nghiệm • Phụ thuộc nhiều bước, chuỗi nguyên nhân, dụng ý, từ vựng theo ngữ cảnh",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 – Split Tech with Placeholder Furniture",
+          "titleVi": "Đoạn 1 – Chia buổi kỹ thuật với đồ thay thế",
+          "content": "To avoid compounded delays, a touring company split technical rehearsal into modules: lights and safety lines in the morning, sound and projections after lunch, and full transitions only after cross-department sign-offs. The shift followed last season’s finding that refunds correlated with broken audience cohesion from stop-starts and late seating, not with total run time. One week prior, transitions were prototyped using cardboard silhouettes of furniture; when the actual pieces arrived, spacing required only micro-adjustments. Although night one overran by 18 minutes due to a console reset, preview refunds fell and audience scores held above 4.6/5. The stage manager warned the method works only if ushers hold latecomers until scene breaks and departments lock notes before the transition module; otherwise, sequencing gains evaporate.",
+          "contentVi": "Để tránh trễ nải chồng lên nhau, một đoàn lưu diễn chia kỹ thuật thành các mô-đun: ánh sáng & dây an toàn buổi sáng, âm thanh & trình chiếu sau trưa, và toàn bộ chuyển cảnh chỉ sau khi có phê duyệt liên bộ phận. Bước chuyển dựa trên phát hiện mùa trước rằng hoàn vé liên quan đến gắn kết khán giả bị vỡ do dừng-chạy và cho vào muộn, chứ không phải thời lượng vở. Trước đó một tuần, chuyển cảnh được mô phỏng bằng hình bìa các-tông thay thế đồ nội thất; khi đồ thật đến, chỉ cần chỉnh nhỏ. Dù đêm đầu vượt khung 18 phút vì máy điều khiển khởi động lại, hoàn vé giảm và điểm khán giả giữ trên 4,6/5. Quản lý sân khấu cảnh báo phương pháp chỉ hiệu quả nếu tiếp tân giữ người đến muộn đến khi ngắt cảnh và các bộ phận chốt ghi chú trước mô-đun chuyển cảnh; nếu không, lợi ích trình tự sẽ mất.",
+          "questions": [
+            { "id": 31, "question": "The main driver for splitting tech was to reduce:", "questionVi": "Động lực chính để chia kỹ thuật là giảm:", "options": ["Script length", "Delays that compound across departments", "Lighting costs", "Crew size"], "optionsVi": ["Độ dài kịch bản", "Trễ nải chồng lên giữa các bộ phận", "Chi phí ánh sáng", "Quy mô ê-kíp"], "correct": 1 },
+            { "id": 32, "question": "Refunds correlated more with:", "questionVi": "Hoàn vé liên quan nhiều hơn đến:", "options": ["Run time", "Broken audience cohesion", "Ticket prices", "New directors"], "optionsVi": ["Thời lượng vở", "Gắn kết khán giả bị vỡ", "Giá vé", "Đạo diễn mới"], "correct": 1 },
+            { "id": 33, "question": "Which early step reduced rework?", "questionVi": "Bước sớm nào giảm làm lại?", "options": ["Extra previews", "Cardboard furniture silhouettes", "Cutting projections", "Adding intermissions"], "optionsVi": ["Thêm suất nháp", "Hình bìa thay đồ nội thất", "Bỏ trình chiếu", "Thêm giờ nghỉ"], "correct": 1 },
+            { "id": 34, "question": "Night one still overran due to:", "questionVi": "Đêm đầu vẫn vượt khung vì:", "options": ["Late seating", "Console reset", "Longer scenes", "Prop breakage"], "optionsVi": ["Cho vào muộn", "Khởi động lại máy điều khiển", "Cảnh dài hơn", "Hỏng đạo cụ"], "correct": 1 },
+            { "id": 35, "question": "The method depends on:", "questionVi": "Phương pháp phụ thuộc vào:", "options": ["Ushers holding latecomers and early sign-offs", "Cheaper furniture", "Shorter scripts", "More swings"], "optionsVi": ["Tiếp tân giữ người đến muộn và phê duyệt sớm", "Đồ rẻ hơn", "Kịch bản ngắn hơn", "Nhiều diễn viên thay thế"], "correct": 0 },
+            { "id": 36, "question": "“Sequencing gains evaporate” implies that:", "questionVi": "“Lợi ích trình tự biến mất” hàm ý rằng:", "options": ["Benefits vanish without prerequisites", "Run time increases automatically", "Audience scores improve", "Crew expands"], "optionsVi": ["Lợi ích mất nếu thiếu điều kiện tiên quyết", "Thời lượng vở tăng tự động", "Điểm khán giả cải thiện", "Ê-kíp mở rộng"], "correct": 0 },
+            { "id": 37, "question": "The tone is best described as:", "questionVi": "Giọng điệu được mô tả là:", "options": ["Promotional", "Operational and cautiously analytical", "Satirical", "Narrative"], "optionsVi": ["Quảng bá", "Vận hành, phân tích thận trọng", "Châm biếm", "Kể chuyện"], "correct": 1 },
+            { "id": 38, "question": "An inference supported by the passage is that:", "questionVi": "Một suy luận được hỗ trợ là:", "options": ["Run time was secretly longer", "Early prototyping smoothed later work", "Ushers caused refunds", "Projections were unnecessary"], "optionsVi": ["Thời lượng vở dài hơn ngầm", "Thử sớm làm mượt công việc về sau", "Tiếp tân gây hoàn vé", "Trình chiếu là không cần"], "correct": 1 },
+            { "id": 39, "question": "Which metric suggests success despite overrun?", "questionVi": "Chỉ số nào gợi ý thành công dù vượt khung?", "options": ["Higher costs", "Stable audience scores ≥4.6", "Fewer rehearsals", "More cues"], "optionsVi": ["Chi phí cao hơn", "Điểm khán giả ổn định ≥4,6", "Ít buổi tập hơn", "Nhiều tín hiệu hơn"], "correct": 1 },
+            { "id": 40, "question": "The best summary is that the plan:", "questionVi": "Tóm tắt tốt nhất là kế hoạch:", "options": ["Shortened the show", "Reduced refunds by protecting cohesion via staged modules", "Relied on star casting", "Eliminated transitions"], "optionsVi": ["Rút ngắn vở", "Giảm hoàn vé bằng bảo vệ gắn kết qua các mô-đun", "Dựa vào diễn viên ngôi sao", "Bỏ chuyển cảnh"], "correct": 1 }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 – Semi-Blind Notes with Anchor Clips",
+          "titleVi": "Đoạn 2 – Góp ý bán ẩn danh với clip chuẩn",
+          "content": "A platform piloted semi-blind notes: Round 1 hid names, ages, and schools so readers scored energy, choice specificity, and text accuracy against anchor clips; Round 2 revealed neutral silhouettes and height ranges to support ensemble design. Over four cycles, callbacks for non-flagship programs rose and inter-rater reliability tightened. Producers argued that fully blind processes hindered deliberate contrasts in look/height crucial to ensemble palette, but the compromise preserved early fairness while enabling later design control. Launch depends on an ethics audit showing reduced callback gaps by training background without lowering cohesion ratings or extending casting timelines.",
+          "contentVi": "Một nền tảng thử nghiệm góp ý bán ẩn danh: Vòng 1 ẩn tên, tuổi, trường để người chấm cho điểm năng lượng, mức cụ thể lựa chọn và độ chính xác văn bản đối chiếu với clip chuẩn; Vòng 2 hiện hình bóng trung tính và khoảng chiều cao để hỗ trợ thiết kế dàn diễn. Qua bốn đợt, tỷ lệ gọi lại cho các chương trình không nổi tiếng tăng và độ tin cậy giữa người chấm chặt hơn. Nhà sản xuất cho rằng ẩn danh hoàn toàn cản trở tương phản ngoại hình/chiều cao cần cho bảng màu dàn diễn; thỏa hiệp giữ công bằng sớm và cho phép kiểm soát thiết kế về sau. Việc ra mắt phụ thuộc kiểm định đạo đức chứng minh khoảng cách gọi lại theo nền tảng đào tạo giảm mà không hạ điểm gắn kết hay kéo dài tiến độ.",
+          "questions": [
+            { "id": 41, "question": "In Round 1, readers evaluated clips using:", "questionVi": "Ở Vòng 1, người chấm đánh giá clip bằng:", "options": ["Agent notes", "Anchor clips and criteria", "Headshots", "Social media"], "optionsVi": ["Ghi chú đại diện", "Clip chuẩn và tiêu chí", "Ảnh chân dung", "Mạng xã hội"], "correct": 1 },
+            { "id": 42, "question": "A sign of bias reduction was:", "questionVi": "Dấu hiệu giảm thiên kiến là:", "options": ["Fewer callbacks overall", "More callbacks for non-flagship programs", "Shorter clips", "Lower budgets"], "optionsVi": ["Ít gọi lại hơn", "Gọi lại nhiều hơn cho chương trình không nổi tiếng", "Clip ngắn hơn", "Ngân sách thấp hơn"], "correct": 1 },
+            { "id": 43, "question": "Calibration with anchor clips likely:", "questionVi": "Hiệu chỉnh với clip chuẩn có khả năng:", "options": ["Lowered reliability", "Tightened inter-rater reliability", "Eliminated criteria", "Revealed identities"], "optionsVi": ["Giảm độ tin cậy", "Siết độ tin cậy giữa người chấm", "Loại bỏ tiêu chí", "Tiết lộ danh tính"], "correct": 1 },
+            { "id": 44, "question": "Producers opposed full anonymity because it:", "questionVi": "Nhà sản xuất phản đối ẩn danh hoàn toàn vì:", "options": ["Raised cost", "Hindered intentional visual contrasts", "Violated union rules", "Slowed uploads"], "optionsVi": ["Tăng chi phí", "Cản trở tương phản hình ảnh có chủ đích", "Vi phạm quy định công đoàn", "Làm chậm tải lên"], "correct": 1 },
+            { "id": 45, "question": "The compromise revealed at Round 2 was:", "questionVi": "Nội dung công khai ở Vòng 2 là:", "options": ["Full headshots", "Silhouettes and height ranges", "Names and schools", "Agent info"], "optionsVi": ["Ảnh chân dung đầy đủ", "Hình bóng và khoảng chiều cao", "Tên và trường", "Thông tin đại diện"], "correct": 1 },
+            { "id": 46, "question": "Rollout hinges on evidence that gaps shrink without:", "questionVi": "Triển khai phụ thuộc chứng cứ khoảng cách thu hẹp mà không:", "options": ["Lowering cohesion or extending timelines", "Adding readers", "Changing genres", "Filming pilots"], "optionsVi": ["Hạ gắn kết hoặc kéo dài tiến độ", "Thêm người chấm", "Đổi thể loại", "Quay phim thử"], "correct": 0 },
+            { "id": 47, "question": "“Palette” most nearly refers to:", "questionVi": "“Bảng màu” gần nghĩa là:", "options": ["Lighting gels", "Overall ensemble look/height balance", "Wardrobe swatches only", "Color grading"], "optionsVi": ["Tấm lọc ánh sáng", "Cân bằng ngoại hình/chiều cao của dàn diễn", "Chỉ bảng mẫu trang phục", "Chỉnh màu"], "correct": 1 },
+            { "id": 48, "question": "The author’s stance is:", "questionVi": "Lập trường của tác giả là:", "options": ["Dismissive", "Balanced and procedural", "Strongly skeptical", "Promotional"], "optionsVi": ["Xem nhẹ", "Cân bằng và mang tính quy trình", "Rất hoài nghi", "Quảng bá"], "correct": 1 },
+            { "id": 49, "question": "Which dependency chain is explicit?", "questionVi": "Chuỗi phụ thuộc nào là rõ ràng?", "options": ["Audit success → platform launch", "Full anonymity → faster timelines", "More readers → less bias automatically", "Headshots → better acting"], "optionsVi": ["Kiểm định đạt → ra mắt nền tảng", "Ẩn danh hoàn toàn → tiến độ nhanh hơn", "Nhiều người chấm → tự động ít thiên kiến", "Ảnh chân dung → diễn tốt hơn"], "correct": 0 },
+            { "id": 50, "question": "A plausible secondary benefit is:", "questionVi": "Lợi ích thứ cấp hợp lý là:", "options": ["Broader discovery beyond elite schools", "Lower tech overrun risk", "Longer shows", "Fewer auditions"], "optionsVi": ["Khám phá rộng hơn ngoài trường tinh hoa", "Rủi ro vượt khung kỹ thuật thấp hơn", "Vở dài hơn", "Ít buổi thử vai hơn"], "correct": 0 }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension — Acting Logistics",
+      "titleVi": "Phần C: Nghe hiểu — Công tác diễn xuất",
+      "description": "10 MCQs • Tight windows, overlapping constraints, ambiguity traps at higher speed",
+      "descriptionVi": "10 câu trắc nghiệm • Khung thời gian chặt, ràng buộc chồng lấn, bẫy mơ hồ ở tốc độ cao",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 – Compressed Upload & Labeling",
+          "titleVi": "Băng 1 – Khung tải nén & quy tắc đặt tên",
+          "content": "Hi—NorthBridge. For ‘Breakwater Two’, slate name/rep/height; do Scene 2B only, then a 12-second comedic tag. Upload by 5:18 p.m. Pacific; the link hard-expires at 5:21 even mid-transfer, so start early. Label LAST_First_RoleD. Callbacks penciled Thursday after 1:10; note Zoom if needed. If your link dies, don’t send Drive/Dropbox—email casting@nbridge.com for a fresh window.",
+          "contentVi": "Xin chào—NorthBridge. Với ‘Breakwater Two’, giới thiệu tên/đại diện/chiều cao; diễn Cảnh 2B duy nhất, rồi đoạn gây cười 12 giây. Tải trước 17:18 giờ Pacific; liên kết hết hạn cứng lúc 17:21 dù đang truyền, nên bắt đầu sớm. Đặt tên LAST_First_RoleD. Gọi lại dự kiến Thứ Năm sau 13:10; ghi chú Zoom nếu cần. Nếu link chết, đừng gửi Drive/Dropbox—hãy email casting@nbridge.com để mở cửa sổ mới.",
+          "questions": [
+            { "id": 51, "question": "Required scene:", "questionVi": "Cảnh bắt buộc:", "options": ["2A", "2B", "1B", "Any"], "optionsVi": ["2A", "2B", "1B", "Bất kỳ"], "correct": 1 },
+            { "id": 52, "question": "Hard expiry time:", "questionVi": "Giờ hết hạn cứng:", "options": ["5:18 p.m.", "5:21 p.m.", "1:10 p.m.", "6:00 p.m."], "optionsVi": ["17:18", "17:21", "13:10", "18:00"], "correct": 1 },
+            { "id": 53, "question": "Correct file label:", "questionVi": "Đặt tên tệp đúng:", "options": ["FIRST_LAST_ROLED", "LAST_First_RoleD", "LAST_First_RoleB", "RoleD_Last_First"], "optionsVi": ["FIRST_LAST_ROLED", "LAST_First_RoleD", "LAST_First_RoleB", "RoleD_Last_First"], "correct": 1 },
+            { "id": 54, "question": "If the link fails, you should:", "questionVi": "Nếu link lỗi, bạn nên:", "options": ["Send Drive", "Send Dropbox", "Email casting for a new window", "Wait for Friday"], "optionsVi": ["Gửi Drive", "Gửi Dropbox", "Email tuyển vai để mở cửa sổ mới", "Chờ Thứ Sáu"], "correct": 2 },
+            { "id": 55, "question": "Callbacks penciled for:", "questionVi": "Gọi lại dự kiến:", "options": ["Wednesday 12:30", "Thursday after 1:10", "Friday 5:18", "Monday 11:00"], "optionsVi": ["Thứ Tư 12:30", "Thứ Năm sau 13:10", "Thứ Sáu 17:18", "Thứ Hai 11:00"], "correct": 1 }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 – Space Switch & Safety Limits",
+          "titleVi": "Băng 2 – Đổi phòng & giới hạn an toàn",
+          "content": "Good morning. Warm-ups shift to Studio C at 8:52; Scene 4 blocking moves to the black box at 9:22, not 9:40. Fight choreo is 1:02–1:44 with pads—no lifts, no throws. Hard-soled shoes only; sprung floor remains closed. Leads’ fittings slide to 3:05 in Room 2B; understudies 3:35 in 2B. If late, text stage management before call.",
+          "contentVi": "Chào buổi sáng. Khởi động dời sang Phòng C lúc 8:52; chặn Cảnh 4 chuyển sang phòng hộp đen lúc 9:22, không phải 9:40. Vũ đạo đối kháng 13:02–13:44 có đệm—không nâng, không quăng. Chỉ giày đế cứng; sàn đàn hồi vẫn đóng. Thử trang phục vai chính dời 15:05 tại Phòng 2B; diễn viên dự bị 15:35 tại 2B. Nếu đến trễ, nhắn cho quản lý sân khấu trước giờ tập trung.",
+          "questions": [
+            { "id": 56, "question": "Warm-ups start at:", "questionVi": "Khởi động bắt đầu lúc:", "options": ["8:55", "8:52", "9:22", "9:40"], "optionsVi": ["8:55", "8:52", "9:22", "9:40"], "correct": 1 },
+            { "id": 57, "question": "Scene 4 blocking time/location:", "questionVi": "Thời gian/địa điểm chặn Cảnh 4:", "options": ["9:40, black box", "9:22, black box", "9:22, Studio C", "10:00, main stage"], "optionsVi": ["9:40, phòng hộp đen", "9:22, phòng hộp đen", "9:22, Phòng C", "10:00, sân khấu chính"], "correct": 1 },
+            { "id": 58, "question": "Fight choreo window:", "questionVi": "Khung giờ vũ đạo đối kháng:", "options": ["1:02–1:44, pads, no lifts/throws", "1:30–2:15, lifts allowed", "12:30–1:15, no pads", "2:30–3:15, with throws"], "optionsVi": ["13:02–13:44, có đệm, không nâng/quăng", "13:30–14:15, cho nâng", "12:30–13:15, không đệm", "14:30–15:15, có quăng"], "correct": 0 },
+            { "id": 59, "question": "Footwear requirement:", "questionVi": "Yêu cầu giày dép:", "options": ["Soft-soled", "Hard-soled", "Barefoot", "Heels"], "optionsVi": ["Đế mềm", "Đế cứng", "Chân trần", "Cao gót"], "correct": 1 },
+            { "id": 60, "question": "Fittings schedule (leads vs understudies):", "questionVi": "Lịch thử trang phục (chính vs dự bị):", "options": ["3:05 leads; 3:35 understudies", "3:35 leads; 3:05 understudies", "Both 3:05", "Both 3:35"], "optionsVi": ["15:05 chính; 15:35 dự bị", "15:35 chính; 15:05 dự bị", "Cả hai 15:05", "Cả hai 15:35"], "correct": 0 }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing — Acting Scenarios",
+      "titleVi": "Phần D: Viết — Tình huống diễn xuất",
+      "description": "3 tasks • Stricter ranges; require timestamps, domain lexis, structured arguments with a KPI",
+      "descriptionVi": "3 bài • Giới hạn chặt; yêu cầu mốc thời gian, từ vựng chuyên ngành, lập luận có cấu trúc kèm KPI",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (185–215 words) — Formal Email to Casting (Precision & Register)",
+          "titleVi": "Bài 1 (185–215 từ) — Email trang trọng gửi tuyển vai (Chuẩn xác & Ngữ điệu)",
+          "instruction": "Your self-tape link failed at 17:09 PDT (11 minutes into a 1.5 GB upload) due to a server reset; the posted deadline is 18:30. Request either (a) a 12-hour extension or (b) an alternate upload method. Include timestamps, file name (LAST_First_RoleD.mp4), slate items (name/agency/height), scene order (2B + 12s comedic tag), and availability for Thursday after 1:10.",
+          "instructionVi": "Liên kết tự quay lỗi lúc 17:09 PDT (11 phút sau khi tải 1,5 GB) do máy chủ khởi động lại; hạn là 18:30. Hãy xin (a) gia hạn 12 giờ hoặc (b) phương thức tải khác. Bao gồm mốc thời gian, tên tệp (LAST_First_RoleD.mp4), phần giới thiệu (tên/đại diện/chiều cao), thứ tự cảnh (2B + đoạn gây cười 12s) và thời gian rảnh Thứ Năm sau 13:10.",
+          "wordLimit": { "min": 185, "max": 215 },
+          "type": "formal_email",
+          "topic": "self_tape_extension_request_v4"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (305–345 words) — Opinion Essay (Safety, Budget, Cohesion)",
+          "titleVi": "Bài 2 (305–345 từ) — Bài luận ý kiến (An toàn, Ngân sách, Gắn kết)",
+          "instruction": "“Productions with staged combat or intimacy must mandate certified coordination, documented safety protocols, and a time-boxed table-work pass before blocking.” To what extent do you agree? Provide a clear thesis, one production example with outcome metrics (e.g., tech overrun %, injuries = 0, refunds/week), a counter-argument (budget/time/creative pace), and a rebuttal grounded in risk management and audience cohesion.",
+          "instructionVi": "“Các vở có đối kháng hoặc cảnh thân mật phải bắt buộc điều phối được chứng nhận, quy trình an toàn có văn bản và một lượt bàn luận kịch bản giới hạn thời gian trước chặn cảnh.” Bạn đồng ý đến mức nào? Nêu luận điểm rõ, một ví dụ sản xuất kèm số liệu (ví dụ % vượt khung kỹ thuật, chấn thương = 0, hoàn vé/tuần), một phản biện (ngân sách/thời gian/nhịp sáng tạo) và phần phản bác dựa trên quản trị rủi ro và gắn kết khán giả.",
+          "wordLimit": { "min": 305, "max": 345 },
+          "type": "opinion_essay",
+          "topic": "safety_timebox_tradeoffs_v2"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (245–285 words) — Data Description & Recommendation (Budget vs Deadline)",
+          "titleVi": "Bài 3 (245–285 từ) — Mô tả dữ liệu & khuyến nghị (Ngân sách vs Hạn chót)",
+          "instruction": "You have four weeks until first preview; budget is tight. Compare: A) Private Coach (2×60 min/week; $50/session; line retention +19%; confidence +17%), B) Peer Circle (3×50 min/week; $0; line retention +13%; confidence +12%), C) Solo Apps (6×25 min/week; $6/week; line retention +9%; confidence +8%). Summarise trade-offs (cost/time/impact), recommend a low-budget plan that still meets the deadline, and state one KPI (e.g., “% lines off-book by week” or “scene transitions run clean without prompts”).",
+          "instructionVi": "Bạn còn bốn tuần đến suất diễn đầu; ngân sách hạn chế. So sánh: A) Huấn luyện riêng (2×60 phút/tuần; $50/buổi; nhớ lời +19%; tự tin +17%), B) Nhóm bạn (3×50 phút/tuần; $0; nhớ lời +13%; tự tin +12%), C) Ứng dụng (6×25 phút/tuần; $6/tuần; nhớ lời +9%; tự tin +8%). Tóm tắt đánh đổi (chi phí/thời gian/tác động), đề xuất kế hoạch ngân sách thấp vẫn kịp hạn và nêu một KPI (ví dụ “% thuộc lời theo tuần” hoặc “chuyển cảnh chạy mượt không cần nhắc”).",
+          "wordLimit": { "min": 245, "max": 285 },
+          "type": "data_description",
+          "topic": "prep_strategies_deadline_3_4",
+          "chartData": {
+            "title": "Four-Week Preparation — Budget vs Impact (3.4)",
+            "titleVi": "Chuẩn bị 4 tuần — Ngân sách vs Hiệu quả (3.4)",
+            "data": [
+              { "strategy": "Private Coach", "sessions_per_week": 2, "minutes_per_session": 60, "cost_per_session_usd": 50, "line_retention_delta_percent": 19, "confidence_delta_percent": 17 },
+              { "strategy": "Peer Circle", "sessions_per_week": 3, "minutes_per_session": 50, "cost_per_week_usd": 0, "line_retention_delta_percent": 13, "confidence_delta_percent": 12 },
+              { "strategy": "Solo Apps", "sessions_per_week": 6, "minutes_per_session": 25, "cost_per_week_usd": 6, "line_retention_delta_percent": 9, "confidence_delta_percent": 8 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "3.4.0",
+    "lastUpdated": "2025-09-24",
+    "difficulty": "upper-intermediate (3.4) — peak of the band",
+    "estimatedTime": "105–125 minutes",
+    "tags": ["ielts", "acting", "grammar", "reading", "listening", "writing", "bilingual", "subjunctive", "inversion", "mixed_conditionals", "stagecraft", "audience_cohesion", "risk_management"]
+  }
+}

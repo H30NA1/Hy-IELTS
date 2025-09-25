@@ -1,0 +1,187 @@
+{
+  "testId": "IELTS_3_5_IT_SERVICES_2025_09_25",
+  "testDate": "2025-09-25",
+  "testTitle": "IELTS 3.5 — IT Services Focus — Practice Test (EN–VI)",
+  "totalQuestions": 60,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary in IT Service Contexts",
+      "titleVi": "Phần A: Ngữ pháp & Từ vựng trong bối cảnh dịch vụ CNTT",
+      "description": "30 MCQs • Subjunctive nuance, complex inversion, mixed/3rd conditionals, quantifiers, reduced relatives, IT collocations (SLA, incident, rollout, failover, backlog)",
+      "descriptionVi": "30 câu trắc nghiệm • Sắc thái thức giả định, đảo ngữ phức, điều kiện hỗn hợp/loại 3, lượng từ, mệnh đề rút gọn, kết hợp từ CNTT (SLA, sự cố, triển khai, chuyển đổi dự phòng, tồn đọng)",
+      "totalQuestions": 30,
+      "questions": [
+        { "id": 1, "question": "The security lead recommended that all admins ___ MFA before Friday.", "questionVi": "Trưởng bộ phận bảo mật khuyến nghị tất cả quản trị viên ___ MFA trước thứ Sáu.", "options": ["enable", "enables", "to enable", "enabling"], "optionsVi": ["bật", "bật (ngôi 3)", "để bật", "đang bật"], "correct": 0 },
+        { "id": 2, "question": "Not until the postmortem concluded ___ the database failover policy revised.", "questionVi": "Mãi đến khi họp rút kinh nghiệm kết thúc ___ chính sách chuyển đổi dự phòng CSDL mới được sửa.", "options": ["was", "were", "did", "had"], "optionsVi": ["mới được", "mới được (số nhiều)", "mới", "đã"], "correct": 0 },
+        { "id": 3, "question": "If the patch ___ last night, the outage window would have been avoided.", "questionVi": "Nếu bản vá ___ tối qua, đã tránh được khoảng thời gian ngừng dịch vụ.", "options": ["had deployed", "deployed", "was deploying", "would deploy"], "optionsVi": ["đã triển khai", "đã triển khai", "đang triển khai", "sẽ triển khai"], "correct": 0 },
+        { "id": 4, "question": "Hardly ___ the canary release when error rates spiked.", "questionVi": "Vừa khi ___ bản phát hành canary thì tỷ lệ lỗi tăng vọt.", "options": ["had we started", "we had started", "did we start", "have we started"], "optionsVi": ["chúng tôi vừa bắt đầu", "chúng tôi đã bắt đầu", "chúng tôi bắt đầu", "chúng tôi đã bắt đầu"], "correct": 0 },
+        { "id": 5, "question": "It is essential that the vendor ___ ISO 27001 compliance.", "questionVi": "Điều thiết yếu là nhà cung cấp ___ tuân thủ ISO 27001.", "options": ["maintain", "maintains", "to maintain", "maintaining"], "optionsVi": ["duy trì", "duy trì (ngôi 3)", "để duy trì", "đang duy trì"], "correct": 0 },
+        { "id": 6, "question": "No sooner ___ the hotfix than a new regression appeared.", "questionVi": "Vừa khi ___ bản sửa nóng thì xuất hiện hồi quy mới.", "options": ["had we shipped", "we shipped", "did we ship", "have we shipped"], "optionsVi": ["chúng tôi vừa phát hành", "chúng tôi phát hành", "chúng tôi đã phát hành", "chúng tôi đã phát hành"], "correct": 0 },
+        { "id": 7, "question": "Were the budget larger, the team ___ a managed SIEM this quarter.", "questionVi": "Nếu ngân sách lớn hơn, đội ___ dịch vụ SIEM quản lý quý này.", "options": ["would onboard", "onboarded", "will onboard", "had onboarded"], "optionsVi": ["sẽ triển khai", "đã triển khai", "sẽ triển khai", "đã triển khai"], "correct": 0 },
+        { "id": 8, "question": "Seldom ___ SLAs renegotiated mid-contract.", "questionVi": "Hiếm khi ___ SLA được đàm phán lại giữa hợp đồng.", "options": ["are", "do", "have", "is"], "optionsVi": ["được", "làm", "đã", "được (số ít)"], "correct": 0 },
+        { "id": 9, "question": "By the time the alert ___, the primary node had already cordoned itself.", "questionVi": "Khi cảnh báo ___, nút chính đã tự cô lập.", "options": ["fired", "had fired", "has fired", "will fire"], "optionsVi": ["kích hoạt", "đã kích hoạt", "đã kích hoạt", "sẽ kích hoạt"], "correct": 0 },
+        { "id": 10, "question": "She writes incident updates as if she ___ the RCA already.", "questionVi": "Cô ấy viết cập nhật sự cố như thể đã ___ phân tích nguyên nhân gốc.", "options": ["had completed", "has completed", "would complete", "completes"], "optionsVi": ["hoàn tất", "đã hoàn tất", "sẽ hoàn tất", "hoàn tất"], "correct": 0 },
+        { "id": 11, "question": "Only after the DPA was signed ___ customer data exported.", "questionVi": "Chỉ sau khi ký thỏa thuận xử lý dữ liệu chúng tôi mới ___ dữ liệu khách hàng.", "options": ["was", "we", "did we", "had we"], "optionsVi": ["mới được", "chúng tôi", "mới", "đã"], "correct": 2 },
+        { "id": 12, "question": "There were far ___ tickets in backlog than last sprint.", "questionVi": "Có ___ phiếu tồn đọng hơn so với sprint trước.", "options": ["fewer", "less", "few", "little"], "optionsVi": ["ít hơn (đếm được)", "ít hơn (không đếm được)", "ít", "ít (không đếm được)"], "correct": 0 },
+        { "id": 13, "question": "Neither the CTO nor the VPs ___ willing to waive the pen-test.", "questionVi": "Cả CTO lẫn các VP đều không ___ sẵn sàng bỏ kiểm thử xâm nhập.", "options": ["are", "is", "have been", "were"], "optionsVi": ["đang/là", "đang/là", "đã", "đã"], "correct": 1 },
+        { "id": 14, "question": "Had the runbook been updated, the on-call ___ the issue faster.", "questionVi": "Nếu sổ tay vận hành được cập nhật, người trực ___ vấn đề nhanh hơn.", "options": ["would have resolved", "resolved", "will resolve", "has resolved"], "optionsVi": ["đã sẽ xử lý", "đã xử lý", "sẽ xử lý", "đã xử lý"], "correct": 0 },
+        { "id": 15, "question": "The client insisted that we ___ a rollback plan for the pilot.", "questionVi": "Khách hàng khăng khăng yêu cầu chúng tôi ___ kế hoạch quay lui cho bản thử.", "options": ["draft", "drafts", "to draft", "drafting"], "optionsVi": ["soạn", "soạn (ngôi 3)", "để soạn", "đang soạn"], "correct": 0 },
+        { "id": 16, "question": "Few as the bugs were, ___ blocked the release.", "questionVi": "Dù lỗi ít, ___ đã chặn phát hành.", "options": ["one of them", "each", "all of which", "several"], "optionsVi": ["một trong số đó", "mỗi cái", "tất cả những cái đó", "vài cái"], "correct": 2 },
+        { "id": 17, "question": "Scarcely ___ the blue/green cutover when a stale config surfaced.", "questionVi": "Vừa mới ___ chuyển đổi blue/green thì một cấu hình cũ lộ ra.", "options": ["had we executed", "we had executed", "did we execute", "have we executed"], "optionsVi": ["chúng tôi vừa thực hiện", "chúng tôi đã thực hiện", "chúng tôi thực hiện", "chúng tôi đã thực hiện"], "correct": 0 },
+        { "id": 18, "question": "The ingress should sit ___ the edge network to reduce latency.", "questionVi": "Ingress nên đặt ___ mạng biên để giảm độ trễ.", "options": ["at", "on", "in", "over"], "optionsVi": ["tại", "trên", "trong", "ở trên"], "correct": 0 },
+        { "id": 19, "question": "Were we to skip chaos drills, our mean time to recovery ___.", "questionVi": "Nếu bỏ diễn tập hỗn loạn, thời gian khôi phục trung bình của chúng ta sẽ ___.", "options": ["would increase", "increased", "will increase", "has increased"], "optionsVi": ["tăng", "đã tăng", "sẽ tăng", "đã tăng"], "correct": 0 },
+        { "id": 20, "question": "There is ___ time; freeze deployments and open a SEV-1 bridge.", "questionVi": "___ thời gian; đóng băng triển khai và mở cầu SEV-1.", "options": ["little", "a few", "few", "the little"], "optionsVi": ["rất ít", "một vài (đếm được)", "ít (đếm được)", "rất ít (xác định)"], "correct": 0 },
+        { "id": 21, "question": "It was the API gateway, not the cache, that ___ misconfigured.", "questionVi": "Chính cổng API chứ không phải bộ nhớ đệm mới ___ cấu hình sai.", "options": ["was", "were", "has", "had"], "optionsVi": ["đã", "đã (số nhiều)", "đã", "đã"], "correct": 0 },
+        { "id": 22, "question": "By next sprint, the team ___ SOC2 controls across services.", "questionVi": "Đến sprint tới, đội sẽ ___ các kiểm soát SOC2 trên toàn dịch vụ.", "options": ["will have mapped", "has mapped", "had mapped", "would map"], "optionsVi": ["sẽ đã lập sơ đồ", "đã lập sơ đồ", "đã lập sơ đồ", "sẽ lập sơ đồ"], "correct": 0 },
+        { "id": 23, "question": "Little ___ the client realize that the ‘delay’ was a risk buffer.", "questionVi": "Khách hàng hầu như không ___ rằng ‘độ trễ’ là bộ đệm rủi ro.", "options": ["did", "does", "had", "was"], "optionsVi": ["biết (đảo ngữ)", "biết", "đã", "đã"], "correct": 0 },
+        { "id": 24, "question": "No amount of caching ___ a missing index.", "questionVi": "Không mức độ lưu đệm nào ___ một chỉ mục bị thiếu.", "options": ["replaces", "replace", "has replaced", "replacing"], "optionsVi": ["thay thế được", "thay thế", "đã thay thế", "đang thay thế"], "correct": 0 },
+        { "id": 25, "question": "We would rather you ___ the query than ship an unsafe fix.", "questionVi": "Chúng tôi muốn bạn ___ truy vấn hơn là tung bản vá thiếu an toàn.", "options": ["optimize", "optimized", "to optimize", "optimizing"], "optionsVi": ["tối ưu", "đã tối ưu", "để tối ưu", "đang tối ưu"], "correct": 0 },
+        { "id": 26, "question": "Had it not ___ for the feature flag, the incident would have escalated.", "questionVi": "Nếu không ___ cờ tính năng, sự cố đã leo thang.", "options": ["been", "be", "being", "to be"], "optionsVi": ["là/đã", "là", "đang là", "để là"], "correct": 0 },
+        { "id": 27, "question": "The more precisely we define SLOs, the ___ noise we get in alerts.", "questionVi": "Chúng ta xác định SLO càng chính xác, ___ nhiễu trong cảnh báo.", "options": ["less", "fewer", "few", "lesser"], "optionsVi": ["ít hơn", "ít hơn (đếm được)", "ít", "ít hơn"], "correct": 0 },
+        { "id": 28, "question": "Engineers able to debug under pressure ___ preferred for on-call.", "questionVi": "Kỹ sư có thể gỡ lỗi dưới áp lực ___ được ưu tiên trực.", "options": ["are", "being", "who are", "which are"], "optionsVi": ["được", "đang", "người mà được", "cái mà được"], "correct": 0 },
+        { "id": 29, "question": "No sooner had the schema migrated ___ the reports loaded correctly.", "questionVi": "Vừa khi lược đồ được di chuyển ___ báo cáo mới tải đúng.", "options": ["than", "when", "that", "then"], "optionsVi": ["thì", "khi", "rằng", "rồi"], "correct": 0 },
+        { "id": 30, "question": "If you hit a deadlock, keep the bridge open ___ a rollback completes.", "questionVi": "Nếu gặp kẹt khóa, giữ cầu mở ___ hoàn tất quay lui.", "options": ["until", "unless", "though", "despite"], "optionsVi": ["cho đến khi", "trừ khi", "mặc dù", "bất chấp"], "correct": 0 }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension — IT Services & Ops",
+      "titleVi": "Phần B: Đọc hiểu — Dịch vụ & Vận hành CNTT",
+      "description": "20 MCQs • Multi-step dependencies (SLA→SLO→alerts), inference, purpose, vocab-in-context",
+      "descriptionVi": "20 câu trắc nghiệm • Phụ thuộc nhiều bước (SLA→SLO→cảnh báo), suy luận, dụng ý, từ vựng theo ngữ cảnh",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 – Phased Rollout and Refund Risk",
+          "titleVi": "Đoạn 1 – Triển khai theo pha và rủi ro hoàn tiền",
+          "content": "An e-commerce provider sought to reduce chargebacks and refund requests tied less to defects than to perceived instability during releases. Instead of a Friday ‘big bang’, the team adopted phased rollouts: 5% canary, 25% ramp, then 100% only after SLO burn rates stayed below thresholds for two consecutive hours. The change followed a quarter in which outages correlated more with compounded delays—DB migrations waiting on late index builds and missing feature flags—than with total deploy time. In the pilot, customer support contacts fell 18% while release frequency increased. However, the gains depended on early cross-team sign-offs and a rule that late arrivals (e.g., schema changes) could not join mid-flight; when that rule was broken, paging noise rose and carts failed to persist.",
+          "contentVi": "Một nhà cung cấp thương mại điện tử muốn giảm hoàn tiền và truy thu thẻ vốn ít liên quan đến lỗi thật mà nhiều hơn đến cảm nhận bất ổn khi phát hành. Thay vì ‘big bang’ thứ Sáu, đội áp dụng triển khai theo pha: canary 5%, tăng lên 25%, rồi 100% chỉ sau khi tốc độ đốt SLO dưới ngưỡng hai giờ liên tiếp. Thay đổi dựa trên quý trước, khi ngừng dịch vụ liên quan nhiều hơn đến trễ nải chồng lên nhau—di chuyển CSDL chờ tạo chỉ mục muộn và thiếu cờ tính năng—hơn là tổng thời gian deploy. Trong thử nghiệm, lượng liên hệ hỗ trợ giảm 18% trong khi tần suất phát hành tăng. Tuy nhiên, lợi ích phụ thuộc vào phê duyệt liên nhóm sớm và quy định rằng hạng mục đến muộn (ví dụ thay đổi lược đồ) không được tham gia giữa chừng; khi vi phạm quy định này, tiếng ồn cảnh báo tăng và giỏ hàng không lưu được.",
+          "questions": [
+            { "id": 31, "question": "Primary driver for phased rollouts:", "questionVi": "Động lực chính cho triển khai theo pha:", "options": ["Shorter code", "Lower perceived instability and refunds", "Cheaper hosting", "Union rules"], "optionsVi": ["Mã ngắn hơn", "Giảm cảm nhận bất ổn và hoàn tiền", "Lưu trữ rẻ hơn", "Quy định công đoàn"], "correct": 1 },
+            { "id": 32, "question": "Outages correlated more with:", "questionVi": "Ngừng dịch vụ liên quan nhiều hơn đến:", "options": ["Total deploy time", "Compounded delays (indexes/flags)", "Ad spend", "Team size"], "optionsVi": ["Tổng thời gian deploy", "Trễ chồng (chỉ mục/cờ)", "Chi tiêu quảng cáo", "Quy mô đội"], "correct": 1 },
+            { "id": 33, "question": "SLO burn-rate check required:", "questionVi": "Kiểm tra tốc độ đốt SLO yêu cầu:", "options": ["Two hours below thresholds before 100%", "Immediate 100% after 5%", "Daily freeze", "Headcount approval"], "optionsVi": ["Hai giờ dưới ngưỡng trước khi 100%", "100% ngay sau 5%", "Đóng băng hàng ngày", "Duyệt nhân sự"], "correct": 0 },
+            { "id": 34, "question": "A rule enforcing stability was that late schema changes:", "questionVi": "Quy định đảm bảo ổn định là các thay đổi lược đồ đến muộn:", "options": ["Join mid-flight", "Wait for next train", "Replace canary", "Skip tests"], "optionsVi": ["Tham gia giữa chừng", "Chờ đợt kế tiếp", "Thay canary", "Bỏ kiểm thử"], "correct": 1 },
+            { "id": 35, "question": "Which metric signaled success?", "questionVi": "Chỉ số nào báo hiệu thành công?", "options": ["More paging noise", "Support contacts fell 18%", "Longer deploys", "Fewer releases"], "optionsVi": ["Nhiều cảnh báo hơn", "Liên hệ hỗ trợ giảm 18%", "Triển khai dài hơn", "Ít phát hành hơn"], "correct": 1 },
+            { "id": 36, "question": "The approach depends on:", "questionVi": "Cách làm này phụ thuộc vào:", "options": ["Early cross-team sign-offs", "Bigger ads budget", "Shorter sprints only", "Monolith rewrite"], "optionsVi": ["Phê duyệt sớm giữa các nhóm", "Ngân sách quảng cáo lớn hơn", "Chỉ sprint ngắn hơn", "Viết lại nguyên khối"], "correct": 0 },
+            { "id": 37, "question": "Breaking the ‘no mid-flight’ rule led to:", "questionVi": "Phá vỡ quy định ‘không tham gia giữa chừng’ dẫn đến:", "options": ["Stable carts", "Higher alert noise and cart failures", "Fewer chargebacks", "Faster ramp"], "optionsVi": ["Giỏ hàng ổn định", "Nhiều cảnh báo và lỗi giỏ hàng", "Ít truy thu thẻ", "Tăng tốc nhanh hơn"], "correct": 1 },
+            { "id": 38, "question": "“Perceived instability” most nearly means:", "questionVi": "“Bất ổn cảm nhận” gần nghĩa là:", "options": ["Objective uptime", "What users feel during releases", "CPU utilization", "Log volume"], "optionsVi": ["Thời gian hoạt động khách quan", "Cảm nhận của người dùng khi phát hành", "Mức CPU", "Lượng log"], "correct": 1 },
+            { "id": 39, "question": "Tone of the passage is:", "questionVi": "Giọng điệu đoạn văn:", "options": ["Promotional", "Operational and evidence-led", "Satirical", "Narrative fiction"], "optionsVi": ["Quảng bá", "Vận hành dựa trên bằng chứng", "Châm biếm", "Hư cấu"], "correct": 1 },
+            { "id": 40, "question": "Best summary:", "questionVi": "Tóm tắt tốt nhất:", "options": ["Cut releases entirely", "Use phased gates tied to SLOs to reduce support/refunds", "Deploy only on Fridays", "Rely on big-bangs with flags"], "optionsVi": ["Bỏ phát hành", "Dùng cổng theo SLO để giảm hỗ trợ/hoàn tiền", "Chỉ phát hành thứ Sáu", "Dựa vào big-bang và cờ"], "correct": 1 }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 – Blind Triage and Reviewer Calibration",
+          "titleVi": "Đoạn 2 – Phân loại ẩn danh và hiệu chỉnh người duyệt",
+          "content": "A support platform piloted blind ticket triage: in Round 1, reviewers saw logs, steps to reproduce, severity, and anonymized environment tags—but not customer name, plan tier, or company logo. In Round 2, account tier and region were revealed to route regulatory constraints. Over four weeks, agreement among reviewers increased after calibration using anchor tickets, and resolution times improved for small-plan customers without hurting enterprise SLAs. Ops managers argued that fully blind processes made it harder to pre-warm specialist queues for large rollouts. The compromise preserved early fairness while allowing queue shaping later. A fairness audit will green-light launch if gap sizes by plan tier shrink without extending mean time to resolution (MTTR) or increasing reopen rates.",
+          "contentVi": "Một nền tảng hỗ trợ thử nghiệm phân loại phiếu ẩn danh: Ở Vòng 1, người duyệt thấy log, bước tái hiện, mức độ nghiêm trọng và thẻ môi trường được ẩn danh—nhưng không thấy tên khách, gói dịch vụ hay logo công ty. Ở Vòng 2, hiển thị gói tài khoản và khu vực để định tuyến theo quy định. Sau 4 tuần, mức độ đồng thuận giữa người duyệt tăng sau hiệu chỉnh bằng các phiếu chuẩn và thời gian xử lý cải thiện cho khách gói nhỏ mà không ảnh hưởng SLA doanh nghiệp. Quản lý vận hành cho rằng ẩn danh hoàn toàn gây khó làm nóng hàng chờ chuyên gia cho các đợt rollout lớn. Thỏa hiệp giữ công bằng sớm đồng thời cho phép định hình hàng chờ về sau. Kiểm định công bằng sẽ cho phép ra mắt nếu chênh lệch theo gói dịch vụ thu hẹp mà không kéo dài MTTR hoặc tăng tỷ lệ mở lại.",
+          "questions": [
+            { "id": 41, "question": "In Round 1, reviewers saw:", "questionVi": "Ở Vòng 1, người duyệt thấy:", "options": ["Customer names and logos", "Logs, repro steps, severity, anon env tags", "Only plan tier", "Billing history"], "optionsVi": ["Tên và logo khách", "Log, bước tái hiện, mức nghiêm trọng, thẻ môi trường ẩn danh", "Chỉ gói dịch vụ", "Lịch sử thanh toán"], "correct": 1 },
+            { "id": 42, "question": "Calibration with anchor tickets led to:", "questionVi": "Hiệu chỉnh bằng phiếu chuẩn dẫn đến:", "options": ["Lower agreement", "Higher reviewer agreement", "Longer MTTR", "More reopens"], "optionsVi": ["Đồng thuận thấp hơn", "Đồng thuận cao hơn", "MTTR dài hơn", "Mở lại nhiều hơn"], "correct": 1 },
+            { "id": 43, "question": "A fairness gain observed was:", "questionVi": "Lợi ích công bằng ghi nhận là:", "options": ["Worse enterprise SLAs", "Improved times for small-plan customers", "Fewer anchor tickets", "Lower severity counts"], "optionsVi": ["SLA doanh nghiệp tệ hơn", "Thời gian tốt hơn cho khách gói nhỏ", "Ít phiếu chuẩn hơn", "Ít mức nghiêm trọng hơn"], "correct": 1 },
+            { "id": 44, "question": "Managers’ concern about full anonymity:", "questionVi": "Lo ngại của quản lý về ẩn danh hoàn toàn:", "options": ["Costs go up", "Harder to pre-warm specialist queues", "Union constraints", "Data loss"], "optionsVi": ["Chi phí tăng", "Khó làm nóng hàng chờ chuyên gia", "Ràng buộc công đoàn", "Mất dữ liệu"], "correct": 1 },
+            { "id": 45, "question": "The compromise reveals tier/region in Round 2 to:", "questionVi": "Thỏa hiệp hiển thị gói/khu vực ở Vòng 2 để:", "options": ["Speed marketing", "Route regulatory constraints and queue shaping", "Show logos", "Set prices"], "optionsVi": ["Tăng marketing", "Định tuyến theo quy định và định hình hàng chờ", "Hiện logo", "Đặt giá"], "correct": 1 },
+            { "id": 46, "question": "Rollout depends on gaps shrinking without:", "questionVi": "Ra mắt phụ thuộc khoảng cách thu hẹp mà không:", "options": ["Extending MTTR or increasing reopens", "Adding agents", "Changing severity scales", "Reducing tickets"], "optionsVi": ["Kéo dài MTTR hoặc tăng mở lại", "Thêm nhân sự", "Đổi thang mức nghiêm trọng", "Giảm số phiếu"], "correct": 0 },
+            { "id": 47, "question": "“Queue shaping” most nearly means:", "questionVi": "“Định hình hàng chờ” gần nghĩa là:", "options": ["UI color changes", "Balancing which tickets go to which specialists", "Shortening all queues to zero", "Deleting tickets"], "optionsVi": ["Đổi màu giao diện", "Cân bằng phiếu theo chuyên gia", "Rút mọi hàng chờ về 0", "Xóa phiếu"], "correct": 1 },
+            { "id": 48, "question": "The stance of the passage is:", "questionVi": "Lập trường của đoạn văn:", "options": ["Dismissive", "Balanced and procedural", "Satirical", "Promotional"], "optionsVi": ["Xem nhẹ", "Cân bằng và quy trình", "Châm biếm", "Quảng bá"], "correct": 1 },
+            { "id": 49, "question": "Explicit dependency chain:", "questionVi": "Chuỗi phụ thuộc rõ ràng:", "options": ["Audit success → launch green-light", "Full anonymity → faster MTTR", "More agents → zero reopens", "Log volume → better fairness"], "optionsVi": ["Kiểm định đạt → cho phép ra mắt", "Ẩn danh hoàn toàn → MTTR nhanh hơn", "Nhiều nhân sự → mở lại bằng 0", "Lượng log → công bằng hơn"], "correct": 0 },
+            { "id": 50, "question": "A plausible secondary benefit is:", "questionVi": "Lợi ích thứ cấp hợp lý là:", "options": ["Broader quality for lower tiers", "Lower cloud costs", "Fewer audits", "Shorter contracts"], "optionsVi": ["Chất lượng rộng hơn cho gói thấp", "Chi phí cloud thấp hơn", "Ít kiểm định hơn", "Hợp đồng ngắn hơn"], "correct": 0 }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension — IT Logistics & Incidents",
+      "titleVi": "Phần C: Nghe hiểu — Hậu cần & Sự cố CNTT",
+      "description": "10 MCQs • Tight windows, overlapping constraints, ambiguity traps (change notices, war-room briefs)",
+      "descriptionVi": "10 câu trắc nghiệm • Khung thời gian chặt, ràng buộc chồng lấn, bẫy mơ hồ (thông báo thay đổi, tóm tắt chiến phòng)",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 – Change Window & Naming Standard",
+          "titleVi": "Băng 1 – Khung thay đổi & tiêu chuẩn đặt tên",
+          "content": "Ops here. For tonight’s rollout, tag your builds with RELEASE_2025-09-25_A, not _B. Start canary at 20:40, ramp at 21:10, and full at 22:00 only if burn rate stays green for two consecutive checks. The window closes hard at 22:15—even mid-transfer. If your artifact link expires, don’t Dropbox it; ping release@ops for a fresh slot.",
+          "contentVi": "Ops đây. Cho đợt phát hành tối nay, gắn thẻ bản dựng RELEASE_2025-09-25_A, không phải _B. Bắt đầu canary lúc 20:40, tăng lúc 21:10 và 100% lúc 22:00 chỉ nếu tốc độ đốt xanh hai lần liên tiếp. Cửa sổ đóng cứng 22:15—dù đang truyền. Nếu link artifact hết hạn, đừng gửi Dropbox; hãy ping release@ops để lấy suất mới.",
+          "questions": [
+            { "id": 51, "question": "Correct tag is:", "questionVi": "Thẻ đúng là:", "options": ["RELEASE_2025-09-25_B", "RELEASE_2025-09-25_A", "REL_2025-09-25", "A_2025-09-25_RELEASE"], "optionsVi": ["RELEASE_2025-09-25_B", "RELEASE_2025-09-25_A", "REL_2025-09-25", "A_2025-09-25_RELEASE"], "correct": 1 },
+            { "id": 52, "question": "Full rollout allowed at:", "questionVi": "Phát hành 100% lúc:", "options": ["21:10", "22:00 (if burn rate green twice)", "22:15", "20:40"], "optionsVi": ["21:10", "22:00 (nếu burn rate xanh hai lần)", "22:15", "20:40"], "correct": 1 },
+            { "id": 53, "question": "Hard window close:", "questionVi": "Đóng cửa sổ cứng:", "options": ["22:00", "22:15", "21:10", "20:40"], "optionsVi": ["22:00", "22:15", "21:10", "20:40"], "correct": 1 },
+            { "id": 54, "question": "If the artifact link expires:", "questionVi": "Nếu link artifact hết hạn:", "options": ["Use Dropbox", "Ping release@ops for a fresh slot", "Wait till tomorrow", "Skip canary"], "optionsVi": ["Dùng Dropbox", "Ping release@ops để lấy suất mới", "Chờ ngày mai", "Bỏ canary"], "correct": 1 },
+            { "id": 55, "question": "Ramp start time:", "questionVi": "Giờ tăng tải:", "options": ["20:40", "21:10", "22:00", "22:15"], "optionsVi": ["20:40", "21:10", "22:00", "22:15"], "correct": 1 }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 – War-Room Update & Safety Notes",
+          "titleVi": "Băng 2 – Cập nhật chiến phòng & ghi chú an toàn",
+          "content": "Morning team. Warm-start caches at 08:55; DB maintenance shifts to 09:25 in Cluster B, not Cluster A. Firewall ruleset push is 13:05–13:44—no ad-hoc edits. Bring hard-soled change-controls; the freeze remains in effect. Enterprise pen-tests slide to 15:05; SMB scans at 15:35. If you’ll be late to the bridge, ping the incident channel before call.",
+          "contentVi": "Chào buổi sáng. Khởi động ấm cache lúc 08:55; bảo trì DB dời 09:25 tại Cụm B, không phải Cụm A. Đẩy bộ quy tắc tường lửa 13:05–13:44—không chỉnh tay. Tuân thủ kiểm soát thay đổi nghiêm ngặt; lệnh đóng băng vẫn hiệu lực. Kiểm thử xâm nhập khối doanh nghiệp dời 15:05; quét SMB lúc 15:35. Nếu đến trễ cầu, ping kênh sự cố trước giờ gọi.",
+          "questions": [
+            { "id": 56, "question": "DB maintenance now at:", "questionVi": "Bảo trì DB lúc:", "options": ["09:25 in Cluster B", "09:25 in Cluster A", "08:55 in Cluster A", "13:05 in Cluster B"], "optionsVi": ["09:25 tại Cụm B", "09:25 tại Cụm A", "08:55 tại Cụm A", "13:05 tại Cụm B"], "correct": 0 },
+            { "id": 57, "question": "Firewall ruleset push window:", "questionVi": "Khung đẩy bộ quy tắc tường lửa:", "options": ["13:05–13:44 with no ad-hoc edits", "12:30–13:15 with edits", "1:30–2:15 test only", "3:05–3:44"], "optionsVi": ["13:05–13:44 không chỉnh tay", "12:30–13:15 có chỉnh", "13:30–14:15 chỉ thử", "15:05–15:44"], "correct": 0 },
+            { "id": 58, "question": "Change-control posture:", "questionVi": "Chế độ kiểm soát thay đổi:", "options": ["Relaxed", "Freeze remains in effect", "Editor’s choice", "Pilot only"], "optionsVi": ["Thả lỏng", "Đóng băng vẫn hiệu lực", "Tuỳ chọn", "Chỉ bản thử"], "correct": 1 },
+            { "id": 59, "question": "Enterprise pen-tests moved to:", "questionVi": "Kiểm thử xâm nhập khối DN dời đến:", "options": ["15:35", "15:05", "09:25", "13:44"], "optionsVi": ["15:35", "15:05", "09:25", "13:44"], "correct": 1 },
+            { "id": 60, "question": "If late to the bridge, you should:", "questionVi": "Nếu đến trễ cầu, bạn nên:", "options": ["Do nothing", "Ping the incident channel before call", "Edit firewall rules ad-hoc", "Skip the cache warm-start"], "optionsVi": ["Không làm gì", "Ping kênh sự cố trước giờ gọi", "Chỉnh tay tường lửa", "Bỏ khởi động ấm cache"], "correct": 1 }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing — IT Service Scenarios",
+      "titleVi": "Phần D: Viết — Tình huống dịch vụ CNTT",
+      "description": "3 tasks • Formal client email, opinion essay on architecture/policy, data description with recommendation",
+      "descriptionVi": "3 bài • Email trang trọng cho khách, luận ý kiến về kiến trúc/chính sách, mô tả dữ liệu kèm khuyến nghị",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (185–215 words) — Formal Email to Client (Expired Upload Window)",
+          "titleVi": "Bài 1 (185–215 từ) — Email trang trọng cho khách (Cửa sổ tải lên hết hạn)",
+          "instruction": "Your SFTP upload link for logs expired 40 minutes earlier than stated due to a server reset at 17:11 PDT. Write to the client success manager to (a) explain the incident with timestamps, (b) request a 12-hour extension or alternate transfer (S3 pre-signed or secure portal), and (c) confirm file naming and checksum (SHA-256) practices.",
+          "instructionVi": "Liên kết SFTP tải log của bạn hết hạn sớm hơn 40 phút do máy chủ khởi động lại lúc 17:11 PDT. Hãy viết cho quản lý thành công khách hàng để (a) giải thích sự cố kèm mốc thời gian, (b) xin gia hạn 12 giờ hoặc phương thức chuyển khác (S3 pre-signed hoặc cổng bảo mật), và (c) xác nhận quy tắc đặt tên tệp và checksum (SHA-256).",
+          "wordLimit": { "min": 185, "max": 215 },
+          "type": "formal_email",
+          "topic": "client_log_upload_extension"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (310–350 words) — Opinion Essay (Cloud Governance & Safety)",
+          "titleVi": "Bài 2 (310–350 từ) — Bài luận ý kiến (Quản trị đám mây & An toàn)",
+          "instruction": "“All customer-facing services should require IaC-based change control, feature flags for rollback, and quarterly chaos drills.” To what extent do you agree? Present a clear thesis, one concrete example with outcome metrics (e.g., MTTR, change fail %, refund rate), a counter-argument (cost/time/velocity), and your rebuttal grounded in risk management and client SLAs.",
+          "instructionVi": "“Mọi dịch vụ hướng khách nên yêu cầu kiểm soát thay đổi dựa trên IaC, cờ tính năng để quay lui và diễn tập hỗn loạn hàng quý.” Bạn đồng ý đến mức nào? Nêu luận điểm rõ, một ví dụ cụ thể kèm số đo kết quả (ví dụ MTTR, % thay đổi lỗi, tỷ lệ hoàn tiền), một phản biện (chi phí/thời gian/tốc độ) và phần phản bác dựa trên quản trị rủi ro và SLA khách hàng.",
+          "wordLimit": { "min": 310, "max": 350 },
+          "type": "opinion_essay",
+          "topic": "governance_flags_chaos_engineering"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (250–290 words) — Data Description & Recommendation (Support Tiers)",
+          "titleVi": "Bài 3 (250–290 từ) — Mô tả dữ liệu & khuyến nghị (Các gói hỗ trợ)",
+          "instruction": "Compare three IT support tiers for a SaaS vendor over four weeks: A) Standard (email only; cost $6/user/month; first-response 8h; MTTR 18h; CSAT 4.4), B) Priority (email+chat; cost $12/u/m; first-response 2h; MTTR 9h; CSAT 4.6), C) Enterprise (24/7 phone+chat; cost $22/u/m; first-response 15m; MTTR 5h; CSAT 4.75). Summarise trade-offs and recommend a plan for a startup with tight funds but contractual uptime. State one KPI to monitor weekly (e.g., % tickets within SLA).",
+          "instructionVi": "So sánh ba gói hỗ trợ IT cho nhà cung cấp SaaS trong 4 tuần: A) Standard (chỉ email; $6/người/tháng; phản hồi đầu 8h; MTTR 18h; CSAT 4.4), B) Priority (email+chat; $12/ng/th; phản hồi 2h; MTTR 9h; CSAT 4.6), C) Enterprise (điện thoại+chat 24/7; $22/ng/th; phản hồi 15p; MTTR 5h; CSAT 4.75). Tóm tắt các đánh đổi và đề xuất cho startup ngân sách hạn chế nhưng có ràng buộc uptime. Nêu 1 KPI theo dõi hằng tuần (ví dụ % phiếu trong SLA).",
+          "wordLimit": { "min": 250, "max": 290 },
+          "type": "data_description",
+          "topic": "support_tiers_recommendation",
+          "chartData": {
+            "title": "Support Tiers — Cost vs Responsiveness",
+            "titleVi": "Các gói hỗ trợ — Chi phí vs Tốc độ phản hồi",
+            "data": [
+              { "tier": "Standard", "cost_per_user_usd": 6, "channels": "email", "first_response_hours": 8, "mttr_hours": 18, "csat_score": 4.4 },
+              { "tier": "Priority", "cost_per_user_usd": 12, "channels": "email+chat", "first_response_hours": 2, "mttr_hours": 9, "csat_score": 4.6 },
+              { "tier": "Enterprise", "cost_per_user_usd": 22, "channels": "24/7 phone+chat", "first_response_minutes": 15, "mttr_hours": 5, "csat_score": 4.75 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "3.5.0",
+    "lastUpdated": "2025-09-25",
+    "difficulty": "upper-intermediate (3.5) — toughest in this series",
+    "estimatedTime": "110–130 minutes",
+    "tags": ["ielts", "it-services", "devops", "sre", "grammar", "reading", "listening", "writing", "bilingual", "subjunctive", "inversion", "mixed_conditionals", "SLA", "SLO", "incident", "rollout"]
+  }
+}
