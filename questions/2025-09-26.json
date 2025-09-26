@@ -1,0 +1,623 @@
+{
+  "testId": "IELTS_3_6_CLOUD_SECURITY_2025_09_26",
+  "testDate": "2025-09-26",
+  "testTitle": "IELTS 3.6 — Cloud Security & Governance Focus — Practice Test (EN–VI)",
+  "totalQuestions": 60,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary in Cloud Security Contexts",
+      "titleVi": "Phần A: Ngữ pháp & Từ vựng trong bối cảnh an ninh đám mây",
+      "description": "30 MCQs • Advanced subjunctive/mandative, multi-clause inversion, mixed/3rd conditionals, cleft/ellipsis, precise quantifiers, security/devops collocations",
+      "descriptionVi": "30 câu trắc nghiệm • Thức giả định/chỉ thị nâng cao, đảo ngữ nhiều mệnh đề, điều kiện hỗn hợp/loại 3, câu chẻ/lược, lượng từ chính xác, kết hợp từ an ninh/CICD",
+      "totalQuestions": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "The compliance officer demanded that all audit logs ___ immutable before handover.",
+          "questionVi": "Nhân viên tuân thủ yêu cầu tất cả log kiểm toán ___ bất biến trước khi bàn giao.",
+          "options": ["remain", "remains", "to remain", "remained"],
+          "optionsVi": ["giữ", "giữ (ngôi 3)", "để giữ", "đã giữ"],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "question": "Not until the pen-test report was published ___ the IAM policy tightened.",
+          "questionVi": "Mãi đến khi báo cáo pen-test được công bố ___ chính sách IAM mới được siết chặt.",
+          "options": ["did", "was", "had", "were"],
+          "optionsVi": ["mới", "đã", "đã", "đã (số nhiều)"],
+          "correct": 0
+        },
+        {
+          "id": 3,
+          "question": "If the key rotation ___ yesterday, the expired key would not have broken the pipeline.",
+          "questionVi": "Nếu quay vòng khoá ___ hôm qua, khoá hết hạn đã không làm hỏng pipeline.",
+          "options": ["had run", "ran", "runs", "would run"],
+          "optionsVi": ["đã chạy", "chạy", "chạy", "sẽ chạy"],
+          "correct": 0
+        },
+        {
+          "id": 4,
+          "question": "Hardly ___ the incident commander briefed when an unrelated alert fired.",
+          "questionVi": "Vừa khi ___ chỉ huy sự cố báo cáo thì cảnh báo không liên quan bật lên.",
+          "options": ["had the", "the", "did the", "has the"],
+          "optionsVi": ["vừa khi", "thì", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "question": "It is imperative that every deployment ___ a signed change ticket.",
+          "questionVi": "Bắt buộc mọi triển khai phải ___ một phiếu thay đổi đã ký.",
+          "options": ["accompany", "accompanies", "to accompany", "accompanying"],
+          "optionsVi": ["kèm theo", "kèm (ngôi 3)", "để kèm", "kèm"],
+          "correct": 0
+        },
+        {
+          "id": 6,
+          "question": "No sooner ___ the rotator finished than alerts subsided.",
+          "questionVi": "Vừa khi ___ trình quay khoá hoàn thành thì cảnh báo dịu lại.",
+          "options": ["had the", "the", "did the", "has the"],
+          "optionsVi": ["vừa khi", "thì", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 7,
+          "question": "Were budget slack, the platform ___ an outsourced compliance SME.",
+          "questionVi": "Nếu ngân sách dôi, nền tảng đã ___ chuyên gia tuân thủ thuê ngoài.",
+          "options": ["would retain", "retained", "will retain", "had retained"],
+          "optionsVi": ["sẽ thuê", "đã thuê", "sẽ thuê", "đã thuê"],
+          "correct": 0
+        },
+        {
+          "id": 8,
+          "question": "Seldom ___ an incident escalate into a cross-region outage after the new runbook.",
+          "questionVi": "Hiếm khi ___ một sự cố leo thành gián đoạn đa vùng sau sổ tay mới.",
+          "options": ["does", "do", "has", "is"],
+          "optionsVi": ["xảy ra", "xảy ra", "đã", "là"],
+          "correct": 0
+        },
+        {
+          "id": 9,
+          "question": "By the time the rotation ___, the dev branch had merged twice.",
+          "questionVi": "Khi quay vòng ___, nhánh dev đã merge hai lần.",
+          "options": ["completed", "had completed", "has completed", "will complete"],
+          "optionsVi": ["hoàn tất", "đã hoàn tất", "đã hoàn tất", "sẽ hoàn tất"],
+          "correct": 0
+        },
+        {
+          "id": 10,
+          "question": "She speaks as though she ___ the SOC playbook inside out.",
+          "questionVi": "Cô ấy nói như thể ___ thành thạo playbook SOC.",
+          "options": ["knew", "has known", "would know", "knows"],
+          "optionsVi": ["biết", "đã biết", "sẽ biết", "biết"],
+          "correct": 0
+        },
+        {
+          "id": 11,
+          "question": "Only after the DSR request cleared ___ PII exports authorized.",
+          "questionVi": "Chỉ sau khi yêu cầu DSR được phê duyệt ___ việc xuất PII mới được phép.",
+          "options": ["were", "did", "was", "have"],
+          "optionsVi": ["đã (số nhiều)", "mới", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 12,
+          "question": "There were far ___ remediation tickets this sprint than last.",
+          "questionVi": "Có ___ phiếu khắc phục trong sprint này so với trước.",
+          "options": ["more", "much", "many", "less"],
+          "optionsVi": ["nhiều hơn", "nhiều", "nhiều (đếm được)", "ít hơn"],
+          "correct": 0
+        },
+        {
+          "id": 13,
+          "question": "Neither the CISO nor the board ___ disposed to accept a loophole.",
+          "questionVi": "Cả CISO lẫn hội đồng ___ không sẵn sàng chấp nhận lỗ hổng.",
+          "options": ["is", "are", "were", "have been"],
+          "optionsVi": ["là", "là (số nhiều)", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 14,
+          "question": "Had the incident runbook been rehearsed, the bridge ___ contained faster.",
+          "questionVi": "Nếu sổ tay sự cố được diễn tập, cầu ___ được kiểm soát nhanh hơn.",
+          "options": ["would have been", "was", "will be", "has been"],
+          "optionsVi": ["đã được", "đã", "sẽ được", "đã được"],
+          "correct": 0
+        },
+        {
+          "id": 15,
+          "question": "The product team insisted that the feature ___ behind a kill switch.",
+          "questionVi": "Đội sản phẩm yêu cầu tính năng ___ sau công tắc tắt khẩn cấp.",
+          "options": ["sit", "sits", "to sit", "sitting"],
+          "optionsVi": ["đặt", "đặt (ngôi 3)", "để đặt", "đang đặt"],
+          "correct": 0
+        },
+        {
+          "id": 16,
+          "question": "Few as the exceptions were, ___ undermined compliance posture.",
+          "questionVi": "Dù ngoại lệ ít, ___ làm suy yếu tư thế tuân thủ.",
+          "options": ["one of them", "each of them", "all of which", "a couple"], 
+          "optionsVi": ["một trong số đó", "mỗi cái", "tất cả những cái đó", "một vài"], 
+          "correct": 2
+        },
+        {
+          "id": 17,
+          "question": "Scarcely ___ the mitigation begun when a separate vulnerability surfaced.",
+          "questionVi": "Vừa khi ___ biện pháp bắt đầu thì lỗ hổng khác xuất hiện.",
+          "options": ["had the", "the", "did the", "have the"],
+          "optionsVi": ["vừa khi", "thì", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 18,
+          "question": "The WAF should sit ___ the edge load balancer to filter traffic early.",
+          "questionVi": "WAF nên đặt ___ cân bằng tải biên để lọc lưu lượng sớm.",
+          "options": ["in front of", "at", "over", "inside"],
+          "optionsVi": ["ở phía trước", "tại", "trên", "bên trong"],
+          "correct": 0
+        },
+        {
+          "id": 19,
+          "question": "Were we to omit chaos drills, our MTTD and MTTR would likely ___.",
+          "questionVi": "Nếu bỏ diễn tập hỗn loạn, MTTD và MTTR của chúng ta có thể ___.",
+          "options": ["increase", "increased", "will increase", "has increased"],
+          "optionsVi": ["tăng", "đã tăng", "sẽ tăng", "đã tăng"],
+          "correct": 0
+        },
+        {
+          "id": 20,
+          "question": "There is ___ time to finish the patch cycle; escalate to the on-call lead.",
+          "questionVi": "___ thời gian để hoàn tất chu kỳ vá; báo cáo lên trưởng trực.",
+          "options": ["little", "a few", "few", "the little"],
+          "optionsVi": ["rất ít", "một vài", "ít", "rất ít (xác định)"],
+          "correct": 0
+        },
+        {
+          "id": 21,
+          "question": "It was the token service, not the CDN, that ___ misconfigured.",
+          "questionVi": "Chính dịch vụ token chứ không phải CDN đã ___ cấu hình sai.",
+          "options": ["was", "were", "has", "had"],
+          "optionsVi": ["đã", "đã (số nhiều)", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 22,
+          "question": "By next quarter, we ___ least 80% of controls evidence automated.",
+          "questionVi": "Đến quý tới, chúng ta ___ ít nhất 80% bằng chứng kiểm soát được tự động hoá.",
+          "options": ["will have", "have", "had", "would have"],
+          "optionsVi": ["sẽ đã", "đã", "đã", "sẽ đã"],
+          "correct": 0
+        },
+        {
+          "id": 23,
+          "question": "Little ___ the auditors suspect that manual exceptions were widespread.",
+          "questionVi": "Người kiểm toán hầu như không ___ rằng ngoại lệ thủ công phổ biến.",
+          "options": ["did", "does", "had", "was"],
+          "optionsVi": ["biết (đảo ngữ)", "biết", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 24,
+          "question": "No amount of token refreshes ___ a revoked credential.",
+          "questionVi": "Không lượng làm mới token nào ___ được thông tin đăng nhập bị thu hồi.",
+          "options": ["restores", "restore", "has restored", "restoring"],
+          "optionsVi": ["khôi phục được", "khôi phục", "đã khôi phục", "đang khôi phục"],
+          "correct": 0
+        },
+        {
+          "id": 25,
+          "question": "We’d rather you ___ the rollback than risk data corruption in prod.",
+          "questionVi": "Chúng tôi muốn bạn ___ quay lui hơn là rủi ro hỏng dữ liệu trên prod.",
+          "options": ["trigger", "triggered", "to trigger", "triggering"],
+          "optionsVi": ["kích hoạt", "đã kích hoạt", "để kích hoạt", "đang kích hoạt"],
+          "correct": 0
+        },
+        {
+          "id": 26,
+          "question": "Had it not ___ for the feature flag, the incident would have leaked PII.",
+          "questionVi": "Nếu không ___ cờ tính năng, sự cố đã làm lộ PII.",
+          "options": ["been", "be", "being", "to be"],
+          "optionsVi": ["là/đã", "là", "đang là", "để là"],
+          "correct": 0
+        },
+        {
+          "id": 27,
+          "question": "The more granular the alerts, the ___ actionable the noise becomes.",
+          "questionVi": "Cảnh báo càng chi tiết, nhiễu càng ___ có thể hành động được.",
+          "options": ["more", "less", "fewer", "little"],
+          "optionsVi": ["hơn", "ít hơn", "ít hơn (đếm được)", "ít"],
+          "correct": 0
+        },
+        {
+          "id": 28,
+          "question": "Engineers who can triage rapidly under pressure ___ favoured for the SOC rota.",
+          "questionVi": "Kỹ sư có thể phân loại nhanh dưới áp lực ___ được ưu tiên trong lịch trực SOC.",
+          "options": ["are", "being", "who are", "which are"],
+          "optionsVi": ["là", "đang", "người mà", "cái mà"],
+          "correct": 0
+        },
+        {
+          "id": 29,
+          "question": "No sooner had the schema change landed ___ downstream jobs started failing.",
+          "questionVi": "Vừa khi thay đổi lược đồ áp dụng ___ job hạ nguồn bắt đầu lỗi.",
+          "options": ["than", "when", "that", "then"],
+          "optionsVi": ["thì", "khi", "rằng", "rồi"],
+          "correct": 0
+        },
+        {
+          "id": 30,
+          "question": "If a leader blanks mid-brief, keep the bridge open ___ a replacement arrives.",
+          "questionVi": "Nếu người chỉ huy quên giữa buổi tóm tắt, giữ cầu mở ___ người thay đến.",
+          "options": ["until", "unless", "though", "despite"],
+          "optionsVi": ["cho đến khi", "trừ khi", "mặc dù", "bất chấp"],
+          "correct": 0
+        }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension — Cloud Security & Governance",
+      "titleVi": "Phần B: Đọc hiểu — An ninh đám mây & Quản trị",
+      "description": "20 MCQs • Complex causal chains (policy → control → monitoring), inference under constraints, purpose, vocab-in-context",
+      "descriptionVi": "20 câu trắc nghiệm • Chuỗi nhân quả phức tạp (chính sách → kiểm soát → giám sát), suy luận dưới ràng buộc, dụng ý, từ vựng theo ngữ cảnh",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 – Policy-First Controls Reduce Incident Noise",
+          "titleVi": "Đoạn 1 – Kiểm soát ưu tiên chính sách giảm nhiễu sự cố",
+          "content": "A cloud provider introduced a 'policy-first' initiative: before any rollout, teams must define policy (SLOs, retention, access windows), automate controls as IaC, and author monitoring playbooks. The move responded to a quarter where alert storms and noisy paging robbed engineers of focus; many alerts were spurious—caused by transient backend spikes rather than genuine regressions. After three months, mean time to detect (MTTD) improved and paging volume fell 27%. The product team warned that gains depended on one critical chain: clear policies → automated controls → calibrated monitoring. When teams bypassed automation and added ad-hoc alerts, noise rose again and mean time to recovery (MTTR) lengthened.",
+          "contentVi": "Một nhà cung cấp đám mây giới thiệu sáng kiến 'ưu tiên chính sách': trước mọi phát hành, các đội phải định nghĩa chính sách (SLO, lưu giữ, cửa sổ truy cập), tự động hóa kiểm soát bằng IaC và soạn playbook giám sát. Bước đi nhằm giải quyết quý trước đó khi cơn bão cảnh báo lấy mất sự tập trung của kỹ sư; nhiều cảnh báo là giả—do đột biến phụ trợ thoáng qua chứ không phải hồi quy thực sự. Sau ba tháng, MTTD cải thiện và khối lượng paging giảm 27%. Đội sản phẩm cảnh báo lợi ích phụ thuộc vào một chuỗi then chốt: chính sách rõ → kiểm soát tự động → giám sát hiệu chỉnh. Khi các đội bỏ qua tự động và thêm cảnh báo tạm, nhiễu lại tăng và MTTR kéo dài.",
+          "questions": [
+            {
+              "id": 31,
+              "question": "Primary cause of noisy paging previously:",
+              "questionVi": "Nguyên nhân chính của paging nhiễu trước đây:",
+              "options": ["Genuine regressions", "Transient backend spikes and ad-hoc alerts", "Longer deploys", "Fewer engineers"],
+              "optionsVi": ["Hồi quy thật", "Đột biến phụ trợ thoáng qua và cảnh báo tạm", "Triển khai dài hơn", "Ít kỹ sư hơn"],
+              "correct": 1
+            },
+            {
+              "id": 32,
+              "question": "Which chain is critical to success?",
+              "questionVi": "Chuỗi nào then chốt để thành công?",
+              "options": ["Automated controls → policies → monitoring", "Clear policies → automated controls → calibrated monitoring", "Monitoring → policies → controls", "Policies → manual alerts → engineers"],
+              "optionsVi": ["Kiểm soát tự động → chính sách → giám sát", "Chính sách rõ → kiểm soát tự động → giám sát hiệu chỉnh", "Giám sát → chính sách → kiểm soát", "Chính sách → cảnh báo thủ công → kỹ sư"],
+              "correct": 1
+            },
+            {
+              "id": 33,
+              "question": "After three months, paging volume:",
+              "questionVi": "Sau ba tháng, khối lượng paging:",
+              "options": ["Increased by 27%", "Fell by 27%", "Stayed the same", "Doubled"],
+              "optionsVi": ["Tăng 27%", "Giảm 27%", "Không đổi", "Tăng gấp đôi"],
+              "correct": 1
+            },
+            {
+              "id": 34,
+              "question": "What undermined gains when teams bypassed automation?",
+              "questionVi": "Điều gì làm suy yếu lợi ích khi các đội bỏ qua tự động?",
+              "options": ["Noise increased and MTTR lengthened", "Costs dropped", "Fewer alerts", "MTTD collapsed"],
+              "optionsVi": ["Nhiễu tăng và MTTR kéo dài", "Chi phí giảm", "Ít cảnh báo hơn", "MTTD sụp đổ"],
+              "correct": 0
+            },
+            {
+              "id": 35,
+              "question": "“Policy-first” most nearly means:",
+              "questionVi": "“Ưu tiên chính sách” gần nghĩa là:",
+              "options": ["Write policies after monitoring", "Define policies before rollout and implement controls", "Ignore policies", "Deploy then document"],
+              "optionsVi": ["Viết chính sách sau giám sát", "Định nghĩa chính sách trước phát hành và thực thi kiểm soát", "Bỏ qua chính sách", "Triển khai rồi ghi sổ"],
+              "correct": 1
+            },
+            {
+              "id": 36,
+              "question": "An inference supported is that:",
+              "questionVi": "Một suy luận được hỗ trợ là:",
+              "options": ["Manual alerts are more reliable", "Ad-hoc alerts often cause false positives", "IaC increases paging", "Policies slow releases always"],
+              "optionsVi": ["Cảnh báo thủ công đáng tin hơn", "Cảnh báo tạm thường gây dương tính giả", "IaC tăng paging", "Chính sách luôn làm chậm phát hành"],
+              "correct": 1
+            },
+            {
+              "id": 37,
+              "question": "Which metric improved?",
+              "questionVi": "Chỉ số nào cải thiện?",
+              "options": ["MTTD", "MTTR only", "Deploy frequency decreased", "Alert thresholds rose"],
+              "optionsVi": ["MTTD", "Chỉ MTTR", "Tần suất deploy giảm", "Ngưỡng cảnh báo tăng"],
+              "correct": 0
+            },
+            {
+              "id": 38,
+              "question": "The passage tone is:",
+              "questionVi": "Giọng điệu đoạn văn:",
+              "options": ["Prescriptive and operational", "Satirical", "Promotional", "Narrative fiction"],
+              "optionsVi": ["Chỉ đạo và vận hành", "Châm biếm", "Quảng bá", "Hư cấu"],
+              "correct": 0
+            },
+            {
+              "id": 39,
+              "question": "A likely downstream risk if teams ignore policies is:",
+              "questionVi": "Rủi ro hạ nguồn có thể nếu các đội bỏ qua chính sách là:",
+              "options": ["Reduced alert noise", "Increased false positives and slower recovery", "Lower costs", "Faster releases automatically"],
+              "optionsVi": ["Giảm nhiễu cảnh báo", "Tăng dương tính giả và phục hồi chậm", "Chi phí thấp hơn", "Phát hành nhanh hơn tự động"],
+              "correct": 1
+            },
+            {
+              "id": 40,
+              "question": "Best summary:",
+              "questionVi": "Tóm tắt tốt nhất:",
+              "options": ["Policy-first automation reduced noisy paging and improved MTTD", "Manual alerts are preferred", "Policies had no effect", "IaC caused regressions"],
+              "optionsVi": ["Tự động hoá ưu tiên chính sách giảm paging nhiễu và cải thiện MTTD", "Ưa chuộng cảnh báo thủ công", "Chính sách không hiệu quả", "IaC gây hồi quy"],
+              "correct": 0
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 – Semi-Automated Compliance & Reviewer Calibration",
+          "titleVi": "Đoạn 2 – Tuân thủ bán tự động & hiệu chỉnh người duyệt",
+          "content": "A security platform trialed semi-automated evidence collection: Round 1 required reviewers to evaluate infra snapshots and red-team notes without seeing team names or sprint context; Round 2 surfaced owner team and environment tags to route remediation tasks. Over five cycles, inter-reviewer agreement tightened after calibration with anchor cases and automated evidence capture reduced admin time by 22%. Security managers cautioned that full automation could obscure contextual risk trade-offs (business-critical exceptions). The compromise preserved objective evidence early and allowed contextual review before final sign-off. Launch depends on an audit that shows exception rates fall without delaying remediation timelines.",
+          "contentVi": "Một nền tảng an ninh thử nghiệm thu thập bằng chứng bán tự động: Vòng 1 yêu cầu người duyệt đánh giá snapshot hạ tầng và ghi chú red-team mà không thấy tên đội hay ngữ cảnh sprint; Vòng 2 hiển thị đội chủ sở hữu và thẻ môi trường để phân bổ nhiệm vụ khắc phục. Qua năm chu kỳ, độ đồng thuận giữa người duyệt tăng sau hiệu chỉnh với các trường hợp chuẩn và thu bằng chứng tự động giảm thời gian hành chính 22%. Quản lý an ninh cảnh báo tự động hoá hoàn toàn có thể che khuất các đánh đổi rủi ro theo ngữ cảnh (ngoại lệ quan trọng với kinh doanh). Thỏa hiệp giữ bằng chứng khách quan sớm và cho phép rà soát ngữ cảnh trước phê duyệt cuối. Việc ra mắt phụ thuộc kiểm định cho thấy tỷ lệ ngoại lệ giảm mà không trì hoãn tiến độ khắc phục.",
+          "questions": [
+            {
+              "id": 41,
+              "question": "What did Round 1 conceal from reviewers?",
+              "questionVi": "Vòng 1 đã ẩn điều gì khỏi người duyệt?",
+              "options": ["Infra snapshots", "Team names and sprint context", "Red-team notes", "Environment tags"],
+              "optionsVi": ["Snapshot hạ tầng", "Tên đội và ngữ cảnh sprint", "Ghi chú red-team", "Thẻ môi trường"],
+              "correct": 1
+            },
+            {
+              "id": 42,
+              "question": "Automated evidence capture resulted in:",
+              "questionVi": "Thu bằng chứng tự động dẫn tới:",
+              "options": ["More admin time", "22% less admin time", "Higher exception rates", "Longer remediation timelines"],
+              "optionsVi": ["Thêm thời gian hành chính", "Giảm 22% thời gian hành chính", "Tỷ lệ ngoại lệ cao hơn", "Tiến độ khắc phục dài hơn"],
+              "correct": 1
+            },
+            {
+              "id": 43,
+              "question": "Managers feared full automation might:",
+              "questionVi": "Quản lý e ngại tự động hoàn toàn có thể:",
+              "options": ["Eliminate context needed for risk trade-offs", "Lower costs dramatically", "Remove all exceptions", "Shorten audits"],
+              "optionsVi": ["Loại bớt ngữ cảnh cần cho đánh đổi rủi ro", "Giảm chi phí đáng kể", "Loại hết ngoại lệ", "Rút ngắn kiểm định"],
+              "correct": 0
+            },
+            {
+              "id": 44,
+              "question": "The compromise allowed:",
+              "questionVi": "Thỏa hiệp cho phép:",
+              "options": ["Only automated evidence with no review", "Objective evidence early and contextual review before sign-off", "Manual-only collection", "No sign-off required"],
+              "optionsVi": ["Chỉ bằng chứng tự động không xem lại", "Bằng chứng khách quan sớm và rà soát ngữ cảnh trước phê duyệt", "Chỉ thu thủ công", "Không cần phê duyệt"],
+              "correct": 1
+            },
+            {
+              "id": 45,
+              "question": "Rollout depends on audit proving:",
+              "questionVi": "Triển khai phụ thuộc kiểm định chứng minh:",
+              "options": ["Exceptions fall without delaying remediation timelines", "Automation doubles exceptions", "Review time increases", "No evidence collected"],
+              "optionsVi": ["Ngoại lệ giảm mà không trì hoãn khắc phục", "Tự động tăng gấp đôi ngoại lệ", "Thời gian duyệt tăng", "Không thu bằng chứng"],
+              "correct": 0
+            },
+            {
+              "id": 46,
+              "question": "Calibration used:",
+              "questionVi": "Hiệu chỉnh dùng:",
+              "options": ["Anchor cases", "Random logs", "Noisy alerts", "User surveys"],
+              "optionsVi": ["Trường hợp chuẩn", "Log ngẫu nhiên", "Cảnh báo nhiễu", "Khảo sát người dùng"],
+              "correct": 0
+            },
+            {
+              "id": 47,
+              "question": "A plausible benefit besides admin time saved is:",
+              "questionVi": "Lợi ích hợp lý ngoài tiết kiệm thời gian hành chính là:",
+              "options": ["Worse compliance", "Tighter reviewer agreement", "More exceptions", "Slower sign-offs"],
+              "optionsVi": ["Tuân thủ tệ hơn", "Đồng thuận người duyệt cao hơn", "Nhiều ngoại lệ hơn", "Phê duyệt chậm hơn"],
+              "correct": 1
+            },
+            {
+              "id": 48,
+              "question": "“Contextual risk trade-offs” most nearly means:",
+              "questionVi": "“Đánh đổi rủi ro theo ngữ cảnh” gần nghĩa là:",
+              "options": ["Only technical risk", "Balancing security against business needs in context", "Audit scheduling", "Log volume management"],
+              "optionsVi": ["Chỉ rủi ro kỹ thuật", "Cân bằng an ninh và nhu cầu kinh doanh theo ngữ cảnh", "Lên lịch kiểm định", "Quản lý lượng log"],
+              "correct": 1
+            },
+            {
+              "id": 49,
+              "question": "The passage stance is:",
+              "questionVi": "Lập trường đoạn văn là:",
+              "options": ["Evangelical about automation", "Balanced and operational", "Dismissive", "Satirical"],
+              "optionsVi": ["Nhiệt thành về tự động", "Cân bằng và vận hành", "Xem nhẹ", "Châm biếm"],
+              "correct": 1
+            },
+            {
+              "id": 50,
+              "question": "Best summary:",
+              "questionVi": "Tóm tắt tốt nhất:",
+              "options": ["Semi-automation cut admin and improved reviewer consistency while preserving contextual review", "Full automation is always best", "Automation had no effect", "Manual review only is superior"],
+              "optionsVi": ["Bán tự động giảm hành chính và cải thiện độ đồng đều người duyệt đồng thời giữ rà soát theo ngữ cảnh", "Tự động hoàn toàn luôn tốt nhất", "Tự động không tác dụng", "Chỉ duyệt thủ công tốt hơn"], 
+              "correct": 0
+            }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension — Incident Briefs & Change Windows",
+      "titleVi": "Phần C: Nghe hiểu — Tóm tắt sự cố & Khung thay đổi",
+      "description": "10 MCQs • Tight windows, ambiguity traps, fast-paced war-room language",
+      "descriptionVi": "10 câu trắc nghiệm • Khung chặt, bẫy mơ hồ, ngôn ngữ nhanh trong phòng chiến",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 – Key Rotation & Hard Expiry",
+          "titleVi": "Băng 1 – Quay khoá & Hết hạn cứng",
+          "content": "Ops — rotation window: start key-roll at 21:07 UTC, finish by 21:20; hard expiry at 21:25 even mid-transfer. Tag artifacts with KEYROT_2025-09-26_A. If your key fails, do not email keys@; instead open an incident and ping the bridge. Rollback only with on-call approval.",
+          "contentVi": "Ops — khung quay khoá: bắt đầu quay khoá 21:07 UTC, hoàn tất trước 21:20; hết hạn cứng 21:25 dù đang truyền. Gắn thẻ artifact KEYROT_2025-09-26_A. Nếu khoá lỗi, đừng email keys@; hãy mở sự cố và ping cầu. Chỉ quay lui khi có phê duyệt trực.",
+          "questions": [
+            {
+              "id": 51,
+              "question": "Key rotation must finish by:",
+              "questionVi": "Quay khoá phải hoàn tất trước:",
+              "options": ["21:07 UTC", "21:20 UTC", "21:25 UTC", "22:00 UTC"],
+              "optionsVi": ["21:07 UTC", "21:20 UTC", "21:25 UTC", "22:00 UTC"],
+              "correct": 1
+            },
+            {
+              "id": 52,
+              "question": "Hard expiry is at:",
+              "questionVi": "Hết hạn cứng lúc:",
+              "options": ["21:20", "21:25", "21:30", "21:07"],
+              "optionsVi": ["21:20", "21:25", "21:30", "21:07"],
+              "correct": 1
+            },
+            {
+              "id": 53,
+              "question": "Correct artifact tag:",
+              "questionVi": "Thẻ artifact đúng:",
+              "options": ["KEYROT_2025-09-26_A", "KEYROT_2025-09-26_B", "KEYROT_A_2025-09-26", "ROTATE_KEY_2609"],
+              "optionsVi": ["KEYROT_2025-09-26_A", "KEYROT_2025-09-26_B", "KEYROT_A_2025-09-26", "ROTATE_KEY_2609"],
+              "correct": 0
+            },
+            {
+              "id": 54,
+              "question": "If a key fails, you should:",
+              "questionVi": "Nếu khoá lỗi, bạn nên:",
+              "options": ["Email keys@", "Open an incident and ping the bridge", "Retry silently", "Wait till next day"],
+              "optionsVi": ["Email keys@", "Mở sự cố và ping cầu", "Thử lại âm thầm", "Chờ ngày mai"],
+              "correct": 1
+            },
+            {
+              "id": 55,
+              "question": "Rollback policy requires:",
+              "questionVi": "Chính sách quay lui yêu cầu:",
+              "options": ["Auto rollback always", "On-call approval before rollback", "No rollback allowed", "Manager's signature only"],
+              "optionsVi": ["Quay lui tự động luôn", "Phê duyệt trực trước khi quay lui", "Không được quay lui", "Chỉ chữ ký quản lý"],
+              "correct": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 – Bridge Update & Escalation",
+          "titleVi": "Băng 2 – Cập nhật cầu & Leo thang",
+          "content": "Morning bridge: warm caches at 08:50; DB maintenance moves to 09:30 in region-west, not region-east. MFA rollout begins 13:00–13:40—no emergency bypasses. Enterprise pen-tests shift to 15:00; developer scans at 15:30. If you cannot join bridge, ping incident channel before call.",
+          "contentVi": "Cầu sáng: khởi động ấm cache 08:50; bảo trì DB dời 09:30 ở region-west, không phải region-east. Triển khai MFA 13:00–13:40—không có bỏ qua khẩn cấp. Kiểm thử xâm nhập doanh nghiệp dời 15:00; quét dev lúc 15:30. Nếu không thể vào cầu, ping kênh sự cố trước giờ gọi.",
+          "questions": [
+            {
+              "id": 56,
+              "question": "DB maintenance is now at:",
+              "questionVi": "Bảo trì DB bây giờ lúc:",
+              "options": ["09:30 region-west", "09:30 region-east", "08:50 region-west", "13:00 region-west"],
+              "optionsVi": ["09:30 region-west", "09:30 region-east", "08:50 region-west", "13:00 region-west"],
+              "correct": 0
+            },
+            {
+              "id": 57,
+              "question": "MFA rollout window:",
+              "questionVi": "Khung triển khai MFA:",
+              "options": ["13:00–13:40 with no bypasses", "12:30–13:10 with bypass allowed", "14:00–14:40 emergency only", "15:00–15:30 developer scans"],
+              "optionsVi": ["13:00–13:40 không cho bỏ qua", "12:30–13:10 cho bỏ qua", "14:00–14:40 chỉ khẩn", "15:00–15:30 quét dev"],
+              "correct": 0
+            },
+            {
+              "id": 58,
+              "question": "Enterprise pen-tests scheduled at:",
+              "questionVi": "Kiểm thử xâm nhập doanh nghiệp lúc:",
+              "options": ["15:00", "15:30", "09:30", "08:50"],
+              "optionsVi": ["15:00", "15:30", "09:30", "08:50"],
+              "correct": 0
+            },
+            {
+              "id": 59,
+              "question": "If you can't join the bridge:",
+              "questionVi": "Nếu bạn không thể vào cầu:",
+              "options": ["Do nothing", "Ping the incident channel before call", "Edit DB directly", "Skip MFA rollout"],
+              "optionsVi": ["Không làm gì", "Ping kênh sự cố trước giờ gọi", "Sửa DB trực tiếp", "Bỏ triển khai MFA"],
+              "correct": 1
+            },
+            {
+              "id": 60,
+              "question": "Warm caches begin at:",
+              "questionVi": "Khởi động ấm cache bắt đầu lúc:",
+              "options": ["08:50", "09:30", "13:00", "15:00"],
+              "optionsVi": ["08:50", "09:30", "13:00", "15:00"],
+              "correct": 0
+            }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing — Cloud Security Scenarios",
+      "titleVi": "Phần D: Viết — Tình huống an ninh đám mây",
+      "description": "3 tasks • Formal incident email, opinion essay on governance, data description with a KPI and recommendation",
+      "descriptionVi": "3 bài • Email sự cố trang trọng, luận ý kiến về quản trị, mô tả dữ liệu kèm KPI và khuyến nghị",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (190–220 words) — Formal Incident Email to CISO (Timestamps)",
+          "titleVi": "Bài 1 (190–220 từ) — Email sự cố trang trọng gửi CISO (Mốc thời gian)",
+          "instruction": "Your key rotation failed at 21:12 UTC (13 minutes into a 1.2 GB secrets sync) due to a console reset; hard expiry was 21:25. Explain: (a) the timeline with timestamps, (b) the immediate mitigation taken, (c) request a 12-hour window for re-roll or an alternate method (secure vault ingress), and (d) confirm artifact tags and rollback policy. Use formal register and precise timestamps.",
+          "instructionVi": "Quay khoá lỗi lúc 21:12 UTC (13 phút trong quá trình sync secrets 1,2 GB) do console reset; hết hạn cứng 21:25. Giải thích: (a) dòng thời gian kèm mốc, (b) biện pháp khắc phục ngay lập tức, (c) xin cửa sổ 12 giờ để quay lại hoặc phương án khác (ingress vault bảo mật), và (d) xác nhận thẻ artifact và chính sách quay lui. Dùng văn phong trang trọng và mốc thời gian chính xác.",
+          "wordLimit": { "min": 190, "max": 220 },
+          "type": "formal_email",
+          "topic": "key_rotation_incident"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (320–360 words) — Opinion Essay (Policy-First vs Rapid Delivery)",
+          "titleVi": "Bài 2 (320–360 từ) — Bài luận ý kiến (Ưu tiên chính sách vs Giao hàng nhanh)",
+          "instruction": "“Teams that prioritise policy-first automation will sacrifice velocity but gain sustainable reliability.” To what extent do you agree? Present: a clear thesis; one production example with metrics (e.g., paging volume down 27%, MTTD improved, deploy frequency); counter-argument (time-to-market, developer velocity), and a rebuttal grounded in business risk, client SLAs, and longer-term engineering velocity.",
+          "instructionVi": "“Đội ưu tiên tự động hóa theo chính sách sẽ hy sinh tốc độ nhưng đạt độ tin cậy bền vững.” Bạn đồng ý ở mức nào? Nêu luận điểm rõ, một ví dụ thực tế kèm số liệu (ví dụ paging giảm 27%, MTTD cải thiện, tần suất deploy), phản biện (thời gian ra thị trường, tốc độ dev), và phản bác dựa trên rủi ro kinh doanh, SLA khách hàng và tốc độ kỹ thuật dài hạn.",
+          "wordLimit": { "min": 320, "max": 360 },
+          "type": "opinion_essay",
+          "topic": "policy_first_vs_velocity"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (260–300 words) — Data Description & Recommendation (Automated Evidence)",
+          "titleVi": "Bài 3 (260–300 từ) — Mô tả dữ liệu & khuyến nghị (Thu bằng chứng tự động)",
+          "instruction": "Compare three approaches to compliance evidence over four weeks: A) Manual (document uploads; admin 6h/week; error rate 8%; audit-prep time 40h), B) Semi-automated (IaC snapshots + human review; admin 2.5h/week; error rate 3%; audit-prep time 16h), C) Fully automated (end-to-end capture; admin 0.5h/week; error rate 1%; audit-prep time 6h). Summarise trade-offs (cost/time/risk), recommend a path for a mid-size company constrained by headcount but needing audit readiness in one quarter, and state one KPI to monitor weekly (e.g., % evidence capture success rate).",
+          "instructionVi": "So sánh ba phương pháp thu bằng chứng tuân thủ trong 4 tuần: A) Thủ công (tải tài liệu; admin 6h/tuần; tỉ lệ lỗi 8%; thời gian chuẩn bị kiểm định 40h), B) Bán tự động (snapshot IaC + rà soát người; admin 2,5h/tuần; lỗi 3%; thời gian chuẩn bị 16h), C) Tự động hoàn toàn (thu end-to-end; admin 0,5h/tuần; lỗi 1%; thời gian chuẩn bị 6h). Tóm tắt đánh đổi (chi phí/thời gian/rủi ro), đề xuất lộ trình cho công ty vừa hạn chế nhân sự nhưng cần sẵn sàng kiểm định trong một quý, và nêu một KPI theo dõi hằng tuần (ví dụ % thành công thu bằng chứng).",
+          "wordLimit": { "min": 260, "max": 300 },
+          "type": "data_description",
+          "topic": "compliance_evidence_strategies",
+          "chartData": {
+            "title": "Compliance Evidence Collection — Cost vs Risk",
+            "titleVi": "Thu bằng chứng tuân thủ — Chi phí vs Rủi ro",
+            "data": [
+              { "approach": "Manual", "admin_hours_per_week": 6, "error_rate_percent": 8, "audit_prep_hours": 40 },
+              { "approach": "Semi-automated", "admin_hours_per_week": 2.5, "error_rate_percent": 3, "audit_prep_hours": 16 },
+              { "approach": "Fully automated", "admin_hours_per_week": 0.5, "error_rate_percent": 1, "audit_prep_hours": 6 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "3.6.0",
+    "lastUpdated": "2025-09-26",
+    "difficulty": "upper-intermediate (3.6) — most challenging in this run",
+    "estimatedTime": "110–135 minutes",
+    "tags": [
+      "ielts",
+      "cloud-security",
+      "governance",
+      "devops",
+      "sre",
+      "grammar",
+      "reading",
+      "listening",
+      "writing",
+      "bilingual",
+      "policy-first",
+      "automation",
+      "IaC",
+      "MTTD",
+      "MTTR"
+    ]
+  }
+}
