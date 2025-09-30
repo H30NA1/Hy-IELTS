@@ -1,0 +1,190 @@
+{
+  "testId": "IELTS_4_1_ACTING_2025_10_01",
+  "testDate": "2025-10-01",
+  "testTitle": "IELTS 4.1 — Acting & Production Intensive — Practice Test (EN–VI)",
+  "totalQuestions": 60,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary — Advanced Acting Contexts",
+      "titleVi": "Phần A: Ngữ pháp & Từ vựng — Bối cảnh diễn xuất nâng cao",
+      "description": "30 multiple-choice questions • Mandative subjunctive, multi-clause inversion, mixed/3rd conditionals, cleft/relative reductions, contrastive quantifiers, performance collocations (self-tape, slate, callbacks, fight choreo, table work, blocking).",
+      "descriptionVi": "30 câu trắc nghiệm • Thức giả định mệnh lệnh, đảo ngữ đa mệnh đề, điều kiện hỗn hợp/loại 3, câu chẻ/mệnh đề rút gọn, lượng từ tương phản, kết hợp từ diễn xuất (self-tape, slate, gọi lại, fight choreo, table work, blocking).",
+      "totalQuestions": 30,
+      "questions": [
+        { "id": 1, "question": "The director insisted that the actor ___ the slate clearly before starting the take.", "questionVi": "Đạo diễn yêu cầu diễn viên ___ phần giới thiệu (slate) rõ ràng trước khi bắt đầu cảnh.", "options": ["state", "states", "to state", "stated"], "optionsVi": ["nói", "nói (ngôi 3)", "để nói", "đã nói"], "correct": 0 },
+        { "id": 2, "question": "Not until the camera ___ did the actor relax into the beat.", "questionVi": "Mãi cho tới khi máy quay ___ thì diễn viên mới thư giãn theo nhịp.", "options": ["rolled", "did it roll", "had rolled", "has rolled"], "optionsVi": ["chạy", "máy chạy", "đã chạy", "đã chạy"], "correct": 2 },
+        { "id": 3, "question": "If the self-tape ___ labelled correctly, the casting team would have found it immediately.", "questionVi": "Nếu tự quay đã ___ dán nhãn đúng, đội tuyển vai đã tìm thấy ngay.", "options": ["had been", "was", "is", "would be"], "optionsVi": ["đã được", "đã", "là", "sẽ là"], "correct": 0 },
+        { "id": 4, "question": "Hardly ___ the actor left the stage when the lighting cue changed the mood.", "questionVi": "Vừa khi diễn viên rời sân khấu thì tín hiệu đèn đã thay đổi bầu không khí.", "options": ["had", "did", "was", "has"], "optionsVi": ["vừa khi", "đã", "đang", "đã"], "correct": 0 },
+        { "id": 5, "question": "It is vital that the file transfers ___ completed before the director reviews them.", "questionVi": "Cực kỳ quan trọng là các chuyển tệp phải ___ hoàn tất trước khi đạo diễn xem.", "options": ["be", "are", "to be", "being"], "optionsVi": ["được", "đang", "để được", "đang được"], "correct": 0 },
+        { "id": 6, "question": "No sooner ___ the understudy rehearsed the scene than the lead felt confident to step down.", "questionVi": "Vừa khi diễn viên dự bị diễn thử thì diễn viên chính cảm thấy đủ tự tin để rút lui.", "options": ["had", "we had", "did", "have"], "optionsVi": ["vừa khi", "chúng tôi vừa", "đã", "đã"], "correct": 0 },
+        { "id": 7, "question": "Were the rehearsal room quieter, the director ___ the blocking notes to be audible on playback.", "questionVi": "Nếu phòng diễn tập yên tĩnh hơn, đạo diễn sẽ ___ các ghi chú chặn cảnh nghe rõ khi phát lại.", "options": ["could expect", "expects", "would have expected", "had expected"], "optionsVi": ["có thể mong", "mong", "đã mong", "đã mong"], "correct": 0 },
+        { "id": 8, "question": "Seldom ___ such a tight turnaround for self-tape callbacks.", "questionVi": "Hiếm khi ___ thời gian cấp tốc cho gọi lại tự quay như vậy.", "options": ["have we seen", "we see", "we have seen", "have seen we"], "optionsVi": ["chúng tôi thấy", "chúng tôi thấy", "chúng tôi đã thấy", "đảo"], "correct": 0 },
+        { "id": 9, "question": "By the time the slate ___, the producers had already taken notes on height and agency.", "questionVi": "Khi phần giới thiệu đã ___, nhà sản xuất đã ghi chú chiều cao và đại diện.", "options": ["was finished", "had been finished", "has finished", "will finish"], "optionsVi": ["được hoàn tất", "đã được hoàn tất", "đã hoàn tất", "sẽ hoàn tất"], "correct": 1 },
+        { "id": 10, "question": "She acted as if she ___ callbacks every week for years.", "questionVi": "Cô ấy diễn như thể đã ___ gọi lại hàng tuần trong nhiều năm.", "options": ["had been attending", "has attended", "attended", "would attend"], "optionsVi": ["đã tham dự", "đã tham dự", "tham dự", "sẽ tham dự"], "correct": 0 },
+        { "id": 11, "question": "Only after the upload link ___ did the applicant email casting about an expired window.", "questionVi": "Chỉ sau khi liên kết tải ___ thì ứng viên mới email cho bộ phận tuyển vai về cửa sổ hết hạn.", "options": ["expired", "had expired", "has expired", "will expire"], "optionsVi": ["hết hạn", "đã hết hạn", "đã hết hạn", "sẽ hết hạn"], "correct": 1 },
+        { "id": 12, "question": "There’s far ___ confusion about 'self-tape' instructions when briefs are ambiguous.", "questionVi": "Có rất nhiều ___ sự nhầm lẫn về hướng dẫn 'tự quay' khi bản tóm tắt mơ hồ.", "options": ["more", "less", "little", "many"], "optionsVi": ["nhiều hơn", "ít hơn", "ít", "nhiều"], "correct": 2 },
+        { "id": 13, "question": "Neither the casting director nor the assistant ___ sure whether the slate included agent details.", "questionVi": "Cả giám tuyển lẫn trợ lý đều không ___ chắc slate có thông tin đại diện hay không.", "options": ["is", "are", "were", "have been"], "optionsVi": ["là", "là (số nhiều)", "đã", "đã"], "correct": 0 },
+        { "id": 14, "question": "Had the server not reset, the batch upload ___ completed by 13:43.", "questionVi": "Nếu máy chủ không khởi động lại, việc tải hàng loạt đã ___ hoàn tất trước 13:43.", "options": ["would have been", "was", "is", "has been"], "optionsVi": ["đã được", "đã", "là", "đã"], "correct": 0 },
+        { "id": 15, "question": "The voice coach suggested that he ___ the vowel work before the mic test.", "questionVi": "Huấn luyện viên giọng nói đề nghị anh ấy ___ phần luyện âm trước kiểm âm.", "options": ["run through", "runs through", "to run through", "running through"], "optionsVi": ["chạy qua", "chạy qua (3)", "để chạy qua", "đang chạy qua"], "correct": 0 },
+        { "id": 16, "question": "Few as the rehearsal hours were, ___ improved the ensemble's timing dramatically.", "questionVi": "Dù giờ tập ít, ___ đã cải thiện nhịp thời của dàn đáng kể.", "options": ["one precise table work session", "each of them", "all of which", "several sessions"], "optionsVi": ["một buổi bàn luận chính xác", "mỗi buổi", "tất cả", "vài buổi"], "correct": 0 },
+        { "id": 17, "question": "Scarcely ___ the actor completed the cold read when the director asked for a second take.", "questionVi": "Vừa khi diễn viên hoàn thành đọc lạnh thì đạo diễn yêu cầu quay lại lần hai.", "options": ["had", "we had", "did", "have"], "optionsVi": ["vừa khi", "chúng tôi vừa", "đã", "đã"], "correct": 0 },
+        { "id": 18, "question": "The production manual states that stage markings should be placed ___ the sprung floor is tested.", "questionVi": "Sổ tay sản xuất nói rằng các dấu sân khấu nên được đặt ___ khi sàn đàn hồi được kiểm tra.", "options": ["after", "before", "during", "without"], "optionsVi": ["sau", "trước", "trong", "không có"], "correct": 1 },
+        { "id": 19, "question": "Were the actor to miss the cue, the stage manager warned the scene's rhythm ___ suffer.", "questionVi": "Nếu diễn viên lỡ nhịp, quản lý sân khấu cảnh báo nhịp cảnh sẽ ___ chịu ảnh hưởng.", "options": ["would", "would have", "may", "did"], "optionsVi": ["sẽ", "đã", "có thể", "đã"], "correct": 0 },
+        { "id": 20, "question": "There is ___ time to rehearse the complex fight choreo before dress; prioritise safety.", "questionVi": "___ thời gian để diễn tập vũ đạo đấu tay phức tạp trước buổi mặc; ưu tiên an toàn.", "options": ["little", "a few", "few", "the little"], "optionsVi": ["rất ít", "một vài", "ít", "rất ít (xác định)"], "correct": 0 },
+        { "id": 21, "question": "It was the mic placement, not the script, that ___ the recorded audio unclear.", "questionVi": "Chính vị trí mic, không phải kịch bản, đã khiến âm thanh ghi không rõ.", "options": ["was", "were", "has", "had"], "optionsVi": ["đã", "đã (số nhiều)", "đã", "đã"], "correct": 0 },
+        { "id": 22, "question": "By closing night, the company ___ a tight slate-to-stage workflow established.", "questionVi": "Đến đêm đóng, đoàn đã ___ quy trình slate-to-stage chặt chẽ được thiết lập.", "options": ["will have", "have", "had", "would have"], "optionsVi": ["sẽ đã", "đã", "đã", "sẽ đã"], "correct": 0 },
+        { "id": 23, "question": "Little ___ the assistant stage manager foresee that the cue stack would cascade.", "questionVi": "Trợ lý quản lý sân khấu hầu như không ___ rằng chồng tín hiệu sẽ chảy đổ.", "options": ["did", "does", "had", "was"], "optionsVi": ["biết (đảo ngữ)", "biết", "đã", "đã"], "correct": 0 },
+        { "id": 24, "question": "No amount of ad-libbing ___ the continuity errors introduced by misplaced props.", "questionVi": "Không bao nhiêu ứng biến có thể ___ các lỗi liên tục do đạo cụ đặt sai gây ra.", "options": ["will hide", "hide", "has hidden", "hiding"], "optionsVi": ["che giấu được", "che giấu", "đã che", "đang che"], "correct": 0 },
+        { "id": 25, "question": "We’d rather you ___ the self-tape checklist than risk a technical rejection.", "questionVi": "Chúng tôi muốn bạn ___ danh sách kiểm tra tự quay hơn là mạo hiểm bị loại do kỹ thuật.", "options": ["follow", "followed", "to follow", "following"], "optionsVi": ["tuân theo", "đã tuân", "để tuân", "đang tuân"], "correct": 0 },
+        { "id": 26, "question": "Had it not ___ for the understudy's quick cover, the scene would have collapsed.", "questionVi": "Nếu không ___ việc bạn diễn dự bị che kịp, cảnh đã sụp.", "options": ["been", "be", "being", "to be"], "optionsVi": ["là/đã", "là", "đang là", "để là"], "correct": 0 },
+        { "id": 27, "question": "The more precise our call-times, the ___ smoothly the nightly tech run will go.", "questionVi": "Thời gian gọi càng chính xác, buổi chạy kỹ thuật đêm càng ___ trôi chảy.", "options": ["more", "less", "fewer", "little"], "optionsVi": ["hơn", "ít hơn", "ít hơn (đếm được)", "ít"], "correct": 0 },
+        { "id": 28, "question": "Crew members who can adapt under pressure ___ favoured for emergency covers.", "questionVi": "Thành viên đội có thể thích nghi dưới áp lực ___ được ưu tiên cho việc thay người khẩn.", "options": ["are", "being", "who are", "which are"], "optionsVi": ["là", "đang", "người mà", "cái mà"], "correct": 0 },
+        { "id": 29, "question": "No sooner had the slate been recorded ___ the applicant noticed a camera glitch in playback.", "questionVi": "Vừa khi slate được ghi thì ứng viên phát hiện lỗi camera khi phát lại.", "options": ["than", "when", "that", "then"], "optionsVi": ["thì", "khi", "rằng", "rồi"], "correct": 0 },
+        { "id": 30, "question": "If the stage manager loses comms, continue the show until ___ otherwise instructed.", "questionVi": "Nếu quản lý sân khấu mất liên lạc, tiếp tục buổi diễn cho đến khi ___ được chỉ dẫn khác.", "options": ["until", "unless", "though", "despite"], "optionsVi": ["cho đến khi", "trừ khi", "mặc dù", "bất chấp"], "correct": 0 }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension — Production, Rehearsal Science & Casting Policy",
+      "titleVi": "Phần B: Đọc hiểu — Sản xuất, Khoa học diễn tập & Chính sách tuyển vai",
+      "description": "20 multiple-choice questions • Longer passages on rehearsal methodologies, bias reduction in casting, and incident-driven production changes; inference, causal chains, vocab-in-context.",
+      "descriptionVi": "20 câu trắc nghiệm • Đoạn dài về phương pháp diễn tập, giảm thiên kiến tuyển vai và thay đổi sản xuất do sự cố; suy luận, chuỗi nhân quả, nghĩa theo ngữ cảnh.",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 — 'Micro-Runs' and Cognitive Load in Rehearsal",
+          "titleVi": "Đoạn 1 — 'Diễn tập vi đoạn' và Tải nhận thức trong quá trình tập",
+          "content": "A mid-size company introduced 'micro-runs': concentrated 30–45 minute scene runs followed by focused debriefs and a 20-minute physical reset. The programme was built on cognitive-load theory—short runs prevent working-memory overload while debriefs consolidate choices. Over eight weeks, scene cohesion improved, but some actors reported a loss of extended 'entrainment' they felt during longer runs. A follow-up analysis showed that micro-runs reduced rehearsal fatigue metrics (voice strain incidents down 27%) and improved error-correction speed on blocked transitions by 22%. The director noted a dependency: micro-runs only yielded their benefits when transitions were prototyped with full props in place; late prop delivery reintroduced friction and increased set-change overruns. The company concluded: hybrid schedules (front-loaded table work, mixed-duration runs, and scheduled long runs every second week) delivered the best balance of retention and momentum.",
+          "contentVi": "Một công ty vừa áp dụng 'diễn tập vi đoạn': chạy cảnh tập trung 30–45 phút, sau đó họp rút kinh nghiệm và 20 phút thiết lập lại. Chương trình dựa trên lý thuyết tải nhận thức — các đoạn ngắn ngăn quá tải bộ nhớ làm việc trong khi họp rút kinh nghiệm củng cố lựa chọn. Sau tám tuần, mạch cảnh cải thiện, nhưng một số diễn viên báo mất cảm giác 'vào đà' khi chạy dài. Phân tích tiếp theo cho thấy vi đoạn giảm chỉ số mệt mỏi (sự cố căng giọng giảm 27%) và cải thiện tốc độ sửa lỗi trên chuyển cảnh chặn 22%. Đạo diễn lưu ý một phụ thuộc: vi đoạn chỉ có lợi khi chuyển cảnh được thử với đạo cụ đầy đủ; giao đạo cụ muộn gây ma sát và tăng quá giờ đổi cảnh. Công ty kết luận: lịch lai (bàn luận kịch bản trước, xen kẽ chạy ngắn và chạy dài mỗi hai tuần) cân bằng tốt nhất giữa nhớ và nhịp diễn.",
+          "questions": [
+            { "id": 31, "question": "Primary theoretical basis for micro-runs:", "questionVi": "Cơ sở lý thuyết chính cho diễn tập vi đoạn là:", "options": ["Cognitive-load theory", "Budget reduction", "Marketing strategy", "Lighting design"], "optionsVi": ["Lý thuyết tải nhận thức", "Giảm ngân sách", "Chiến lược tiếp thị", "Thiết kế ánh sáng"], "correct": 0 },
+            { "id": 32, "question": "Which metric improved substantially:", "questionVi": "Chỉ số nào cải thiện rõ rệt:", "options": ["Box office sales", "Voice strain incidents down 27%", "Number of props", "Scene length"], "optionsVi": ["Vé bán", "Sự cố căng giọng giảm 27%", "Số đạo cụ", "Độ dài cảnh"], "correct": 1 },
+            { "id": 33, "question": "What problem returned when props arrived late?", "questionVi": "Vấn đề gì tái xuất khi đạo cụ đến muộn?", "options": ["Increased set-change overruns", "More rehearsal cohesion", "Lower fatigue", "Better pacing"], "optionsVi": ["Tăng quá giờ đổi cảnh", "Cải thiện mạch cảnh", "Giảm mệt mỏi", "Nhịp tốt hơn"], "correct": 0 },
+            { "id": 34, "question": "Best schedule conclusion:", "questionVi": "Kết luận lịch tốt nhất:", "options": ["Hybrid: front-loaded table work + mixed runs + long runs biweekly", "Only micro-runs", "Only long runs", "Cancel table work"], "optionsVi": ["Lịch lai: bàn luận trước + chạy xen kẽ + chạy dài hai tuần/lần", "Chỉ vi đoạn", "Chỉ chạy dài", "Bỏ bàn luận"], "correct": 0 },
+            { "id": 35, "question": "Inference: debriefs help by:", "questionVi": "Suy luận: họp rút kinh nghiệm giúp bằng cách:", "options": ["Consolidating choices and reducing working-memory load", "Increasing costs", "Removing props", "Shortening scenes"], "optionsVi": ["Củng cố lựa chọn và giảm tải bộ nhớ"], "correct": 0 }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 — Blind Self-Tapes, Fairness and Casting Trade-offs",
+          "titleVi": "Đoạn 2 — Tự quay ẩn danh, công bằng và đánh đổi tuyển vai",
+          "content": "A national casting hub trialled blind self-tapes by hiding names, headshots and training background from first-round readers. Scoring rubric focused on energy, specificity, and text accuracy. After four cycles, callbacks for non-traditional training backgrounds increased and inter-reader agreement rose, suggesting de-emphasis of résumés. Producers were concerned: full anonymity made it harder to compose ensembles with intended visual contrasts. The platform compromised by revealing neutral silhouettes and declared height ranges at callback stage and by adding a vendor-assisted visual-matching review only after performance-based shortlists were finalised. The evaluation committee recommended running an equity audit across geographic and training cohorts before wide rollout; they also advised documenting which assumptions (visual casting goals vs raw performance parity) drove final composition choices so stakeholders could weigh artistic aims against fairness metrics.",
+          "contentVi": "Một trung tâm tuyển vai quốc gia thử nghiệm tự quay ẩn danh bằng cách ẩn tên, ảnh chân dung và nền tảng đào tạo khỏi người chấm vòng đầu. Tiêu chí chấm tập trung vào năng lượng, cụ thể hoá và độ chính xác văn bản. Sau bốn đợt, gọi lại cho nền tảng đào tạo không truyền thống tăng và độ đồng thuận giữa người chấm tăng, gợi ý giảm trọng số lý lịch. Nhà sản xuất lo ngại: ẩn danh hoàn toàn khiến khó dựng dàn với tương phản hình ảnh theo ý đồ. Nền tảng thỏa hiệp bằng cách hiện hình bóng trung tính và khoảng chiều cao ở vòng gọi lại và thêm đánh giá ghép hình do nhà cung cấp hỗ trợ chỉ sau khi danh sách rút gọn dựa trên diễn suất được chốt. Ủy ban đánh giá khuyến nghị tiến hành kiểm định công bằng qua khu vực và nhóm đào tạo trước khi triển khai rộng; họ cũng khuyên ghi lại giả định (mục tiêu casting về hình ảnh vs đối chiếu diễn suất thô) để các bên cân nhắc mục tiêu nghệ thuật so với chỉ số công bằng.",
+          "questions": [
+            { "id": 36, "question": "What did blind first rounds hide?", "questionVi": "Vòng đầu ẩn những gì?", "options": ["Names, headshots and training background", "Height only", "Agent contacts", "Full resumes"], "optionsVi": ["Tên, ảnh, nền tảng đào tạo", "Chỉ chiều cao", "Liên hệ đại diện", "Hồ sơ đầy đủ"], "correct": 0 },
+            { "id": 37, "question": "Observed benefit:", "questionVi": "Lợi ích quan sát được:", "options": ["More callbacks for non-traditional training and higher agreement", "Fewer callbacks", "Less agreement", "More bias"], "optionsVi": ["Gọi lại nhiều hơn cho nền tảng không truyền thống và tăng đồng thuận", "Ít gọi lại", "Ít đồng thuận", "Thiên kiến hơn"], "correct": 0 },
+            { "id": 38, "question": "Compromise used at callback stage:", "questionVi": "Thỏa hiệp vòng gọi lại là:", "options": ["Neutral silhouettes and declared height ranges", "Full headshots", "Names only", "No reveal"], "optionsVi": ["Hình bóng trung tính và khoảng chiều cao", "Ảnh chân dung đầy đủ", "Chỉ tên", "Không tiết lộ"], "correct": 0 },
+            { "id": 39, "question": "Committee recommended:", "questionVi": "Ủy ban khuyến nghị:", "options": ["Equity audit across cohorts before rollout and document assumptions", "Immediate rollout", "Stop trials", "Ignore visual aims"], "optionsVi": ["Kiểm định công bằng trước khi triển khai và ghi giả định", "Triển khai ngay", "Dừng thử nghiệm", "Bỏ mục tiêu hình ảnh"], "correct": 0 },
+            { "id": 40, "question": "Inference: performance-first shortlists followed by visual matching implies:", "questionVi": "Suy luận: rút gọn theo diễn suất trước rồi ghép hình ngụ ý:", "options": ["Prioritising acting choices then addressing ensemble visuals post-hoc", "Visuals first", "No further checks", "Single-stage selection"], "optionsVi": ["Ưu tiên diễn rồi xử lý hình ảnh sau", "Ưu tiên hình ảnh", "Không kiểm tra thêm", "Chọn một giai đoạn"], "correct": 0 }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension — Casting Notices & Rehearsal Updates",
+      "titleVi": "Phần C: Nghe hiểu — Thông báo tuyển vai & Cập nhật tập",
+      "description": "10 multiple-choice questions • Dense timestamps, file-naming traps, escalation channels, and rehearsal-room switches.",
+      "descriptionVi": "10 câu trắc nghiệm • Mốc thời gian dày đặc, bẫy đặt tên tệp, kênh leo thang, đổi phòng tập.",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 — Casting Notice & Self-Tape Requirements",
+          "titleVi": "Băng 1 — Thông báo tuyển vai & Yêu cầu tự quay",
+          "content": "Hello — NorthBridge Casting for 'Night Station'. Upload self-tapes by 18:00 Friday. Slate with name, agent (if any), height; perform Scene 2 then a 20-second dramatic close. Label files LASTNAME_First_RoleB. Callbacks scheduled Monday 10:30–16:30; in-person slots limited—indicate Zoom preference. If your upload link expires, email casting@nbridge.com with timestamp and file name for a one-time 12-hour extension. Do not re-upload to the public bucket; open a ticket first.",
+          "contentVi": "Xin chào — NorthBridge Casting cho 'Night Station'. Tải tự quay trước 18:00 thứ Sáu. Giới thiệu tên, đại diện (nếu có), chiều cao; diễn Cảnh 2 rồi đoạn đóng 20 giây. Đặt tên tệp LASTNAME_First_RoleB. Gọi lại thứ Hai 10:30–16:30; suất trực tiếp có hạn—ghi rõ nếu muốn Zoom. Nếu liên kết hết hạn, email casting@nbridge.com kèm mốc thời gian và tên tệp để xin một lần gia hạn 12 giờ. Đừng tải lại lên bucket công cộng; mở ticket trước.",
+          "questions": [
+            { "id": 51, "question": "Self-tape deadline:", "questionVi": "Hạn nộp tự quay:", "options": ["Noon Friday", "18:00 Friday", "10:30 Monday", "18:00 Monday"], "optionsVi": ["12:00 trưa thứ Sáu", "18:00 thứ Sáu", "10:30 thứ Hai", "18:00 thứ Hai"], "correct": 1 },
+            { "id": 52, "question": "Required after scene:", "questionVi": "Yêu cầu sau cảnh:", "options": ["Song clip", "20-second dramatic close", "Dance", "Physical stunt"], "optionsVi": ["Đoạn hát", "Đóng 20s", "Nhảy", "Màn đóng thế"], "correct": 1 },
+            { "id": 53, "question": "If link expires, do:", "questionVi": "Nếu link hết hạn, làm:", "options": ["Re-upload public", "Email casting with timestamp and file name for 12-hour extension", "Wait two days", "Call the director"], "optionsVi": ["Tải lại công cộng", "Email casting kèm mốc và tệp để gia hạn 12h", "Chờ hai ngày", "Gọi đạo diễn"], "correct": 1 },
+            { "id": 54, "question": "File naming convention:", "questionVi": "Quy ước đặt tên tệp:", "options": ["FIRST_LAST_ROLE", "LASTNAME_First_RoleB", "RoleB_LAST", "No convention"], "optionsVi": ["FIRST_LAST_ROLE", "LASTNAME_First_RoleB", "RoleB_LAST", "Không quy ước"], "correct": 1 },
+            { "id": 55, "question": "If upload fails, you should:", "questionVi": "Nếu tải thất bại, bạn nên:", "options": ["Open a ticket first; do not re-upload to public bucket", "Re-upload publicly immediately", "Post on social", "Ignore"], "optionsVi": ["Mở ticket trước; đừng gửi công khai", "Tải lại công khai", "Đăng mạng", "Bỏ qua"], "correct": 0 }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 — Rehearsal Day Change & Safety Notice",
+          "titleVi": "Băng 2 — Thay đổi ngày tập & Thông báo an toàn",
+          "content": "Good morning, cast. Due to sprung-floor maintenance, warm-ups move to Studio B at 09:10; blocking for Scene 5 will be in Black Box at 10:00. Fight choreo is 13:00–14:15 with padded mats; no lifts. Please bring hard-soled shoes. Costume fittings for leads now at 15:30 Room 2C. If you are late, text the stage manager before call time. For any safety incidents, alert healthandsafety@ and remain on-site until assessed.",
+          "contentVi": "Chào buổi sáng cả đoàn. Do sửa sàn đàn hồi, khởi động chuyển sang Phòng B lúc 09:10; chặn Cảnh 5 ở Hộp Đen lúc 10:00. Vũ đạo đối kháng 13:00–14:15 có thảm đệm; không nâng người. Mang giày đế cứng. Thử trang phục vai chính 15:30 Phòng 2C. Nếu muộn, nhắn quản lý sân khấu trước giờ. Với sự cố an toàn, báo healthandsafety@ và ở lại hiện trường chờ đánh giá.",
+          "questions": [
+            { "id": 56, "question": "Warm-ups time/location:", "questionVi": "Khởi động lúc/ở:", "options": ["09:00 Studio A", "09:10 Studio B", "10:00 Black Box", "13:00 Studio B"], "optionsVi": ["09:00 Phòng A", "09:10 Phòng B", "10:00 Hộp Đen", "13:00 Phòng B"], "correct": 1 },
+            { "id": 57, "question": "Fight choreo time:", "questionVi": "Vũ đạo đối kháng lúc:", "options": ["12:00–13:00", "13:00–14:15", "14:30–15:15", "15:30–16:15"], "optionsVi": ["12:00–13:00", "13:00–14:15", "14:30–15:15", "15:30–16:15"], "correct": 1 },
+            { "id": 58, "question": "What footwear is requested:", "questionVi": "Mang loại giày nào:", "options": ["Soft-soled trainers", "Hard-soled shoes", "Barefoot", "Heels"], "optionsVi": ["Giày đế mềm", "Giày đế cứng", "Chân trần", "Gót"], "correct": 1 },
+            { "id": 59, "question": "Costume fittings time:", "questionVi": "Thử trang phục lúc:", "options": ["15:00 Room 2B", "15:30 Room 2C", "15:30 Studio A", "16:00 Room 1"], "optionsVi": ["15:00 Phòng 2B", "15:30 Phòng 2C", "15:30 Phòng A", "16:00 Phòng 1"], "correct": 1 },
+            { "id": 60, "question": "If safety incident occurs:", "questionVi": "Nếu có sự cố an toàn:", "options": ["Leave site immediately", "Alert healthandsafety@ and remain on-site until assessed", "Post on social", "Resume rehearsal"], "optionsVi": ["Rời ngay", "Báo healthandsafety@ và chờ đánh giá", "Đăng MXH", "Tiếp tục"], "correct": 1 }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing — Acting Scenarios & Production Decisions",
+      "titleVi": "Phần D: Viết — Tình huống diễn xuất & Quyết định sản xuất",
+      "description": "3 tasks • Formal incident email, opinion essay on rehearsal policy, data description & recommendation with KPI — all acting-focused and requiring precise domain lexis.",
+      "descriptionVi": "3 bài • Email sự cố trang trọng, luận ý kiến về chính sách diễn tập, mô tả dữ liệu & khuyến nghị kèm KPI — đều tập trung diễn xuất và yêu cầu từ vựng chuyên ngành.",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (180–220 words) — Formal Email to Casting Coordinator (Expired Upload & Extension Request)",
+          "titleVi": "Bài 1 (180–220 từ) — Email trang trọng gửi Điều phối Tuyển vai (Liên kết hết hạn & Yêu cầu gia hạn)",
+          "instruction": "Your self-tape upload link expired at 13:43 due to a server reset. Write to the casting coordinator to: (a) give exact timestamps (attempt started 13:15; transfer stalled at 13:41; portal reset 13:42; link expired 13:43), (b) request a one-time 12-hour extension or alternate SFTP transfer, (c) confirm your file naming (NGUYEN_An_RoleA.mp4), slate contents (name, agency, height) and scene order (Scene 3 then 15-second comedic button). Use formal register and close with availability for callbacks.",
+          "instructionVi": "Liên kết tải tự quay của bạn hết hạn lúc 13:43 do máy chủ khởi động lại. Viết cho điều phối tuyển vai để: (a) nêu mốc chính xác (bắt đầu 13:15; truyền bị dừng 13:41; cổng reset 13:42; hết hạn 13:43), (b) xin gia hạn 12 giờ một lần hoặc chuyển SFTP thay thế, (c) xác nhận tên tệp (NGUYEN_An_RoleA.mp4), nội dung slate (tên, agency, chiều cao) và thứ tự cảnh (Cảnh 3 rồi đoạn gây cười 15s). Dùng văn trang trọng và kết bằng thời gian rảnh cho gọi lại.",
+          "wordLimit": { "min": 180, "max": 220 },
+          "type": "formal_email",
+          "topic": "self_tape_upload_extension"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (360–420 words) — Opinion Essay (Rehearsal Scheduling: Depth vs Breadth)",
+          "titleVi": "Bài 2 (360–420 từ) — Bài luận ý kiến (Lịch diễn tập: Sâu vs Rộng)",
+          "instruction": "“Companies should prioritise deeper long-run rehearsal blocks over many short runs because depth builds entrainment and ensemble cohesion.” To what extent do you agree? Provide: a clear thesis; one evidence-based example (cite measured outcomes: line-retention %, error-correction speed, vocal strain incidents), a counter-argument (efficiency, fatigue management, logistics), and a rebuttal recommending a hybrid policy. Use acting-specific metrics and trade-off logic.",
+          "instructionVi": "“Đoàn nên ưu tiên các khối tập dài sâu thay vì nhiều lần chạy ngắn vì chiều sâu xây dựng 'entrainment' và sự gắn kết dàn.” Bạn đồng ý tới mức nào? Nêu luận điểm, ví dụ có bằng chứng (số liệu: % nhớ lời, tốc độ sửa lỗi, sự cố căng giọng), phản biện (hiệu quả, quản lý mệt mỏi, hậu cần) và phản bác đề xuất chính sách lai. Dùng chỉ số diễn xuất và logic đánh đổi.",
+          "wordLimit": { "min": 360, "max": 420 },
+          "type": "opinion_essay",
+          "topic": "rehearsal_depth_vs_breadth"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (280–320 words) — Data Description & Recommendation (Three Prep Pathways)",
+          "titleVi": "Bài 3 (280–320 từ) — Mô tả dữ liệu & Khuyến nghị (Ba hướng chuẩn bị)",
+          "instruction": "Compare three four-week prep strategies for an actor with a strict audition date: A) Private Coach (2×75 min/week; $45/session; line retention +18%; confidence +20%), B) Peer Rehearsal Group (4×50 min/week; $0; line retention +12%; confidence +13%), C) Solo Structured Self-Tape Practice (6×30 min/week; $5/week tool subscription; line retention +10%; confidence +9%). Summarise trade-offs (cost, time, impact), recommend a plan for a moderately funded actor who cannot miss the audition date but wants maximum preservation of performance quality, and state one KPI to monitor weekly (e.g., '% lines off-book during timed runs'). Include a brief note on how to validate offline (video playback checks) and a one-line checklist for the self-tape technical bar (slate, file name, scene order, lighting, audio).",
+          "instructionVi": "So sánh ba chiến lược 4 tuần cho diễn viên có ngày thử vai cố định: A) Huấn luyện riêng (2×75 phút/tuần; $45/buổi; nhớ lời +18%; tự tin +20%), B) Nhóm bạn diễn (4×50 phút/tuần; $0; nhớ lời +12%; tự tin +13%), C) Tự luyện & tự quay có cấu trúc (6×30 phút/tuần; $5/tuần; nhớ lời +10%; tự tin +9%). Tóm tắt đánh đổi (chi phí, thời gian, tác động), đề xuất kế hoạch cho diễn viên tài chính trung bình không thể lỡ ngày thử vai nhưng muốn giữ chất lượng trình diễn tối đa, và nêu KPI theo dõi hàng tuần (ví dụ '% dòng thoại thuộc khi chạy theo thời gian'). Bao gồm chú ngắn về xác thực ngoại tuyến (kiểm tra phát lại video) và một dòng checklist kỹ thuật tự-tape (slate, tên tệp, thứ tự cảnh, ánh sáng, âm thanh).",
+          "wordLimit": { "min": 280, "max": 320 },
+          "type": "data_description",
+          "topic": "actor_prep_tradeoffs",
+          "chartData": {
+            "title": "Four-Week Actor Prep — Trade-offs",
+            "titleVi": "Chuẩn bị diễn viên 4 tuần — Đánh đổi",
+            "data": [
+              { "strategy": "Private Coach", "sessions_per_week": 2, "minutes_per_session": 75, "cost_per_session_usd": 45, "line_retention_delta_percent": 18, "confidence_delta_percent": 20 },
+              { "strategy": "Peer Rehearsal Group", "sessions_per_week": 4, "minutes_per_session": 50, "cost_per_week_usd": 0, "line_retention_delta_percent": 12, "confidence_delta_percent": 13 },
+              { "strategy": "Solo Self-Tape Practice", "sessions_per_week": 6, "minutes_per_session": 30, "cost_per_week_usd": 5, "line_retention_delta_percent": 10, "confidence_delta_percent": 9 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "4.1.0",
+    "lastUpdated": "2025-10-01",
+    "difficulty": "advanced (4.1) — emphasis on production dependencies, probabilistic reasoning & professional register",
+    "estimatedTime": "140–170 minutes",
+    "tags": [
+      "ielts",
+      "acting",
+      "self-tape",
+      "rehearsal",
+      "casting",
+      "production",
+      "grammar",
+      "reading",
+      "listening",
+      "writing",
+      "bilingual",
+      "high-density"
+    ]
+  }
+}

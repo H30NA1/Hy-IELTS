@@ -1,0 +1,620 @@
+{
+  "testId": "IELTS_3_7_ATHLETE_2025_09_27",
+  "testDate": "2025-09-27",
+  "testTitle": "IELTS 3.7 — Athlete & Sports Performance Focus — Practice Test (EN–VI)",
+  "totalQuestions": 60,
+  "sections": {
+    "grammar": {
+      "title": "Section A: Grammar & Vocabulary in Athletic Contexts",
+      "titleVi": "Phần A: Ngữ pháp & Từ vựng trong bối cảnh thể thao",
+      "description": "30 MCQs • Subjunctive/mandative, complex inversion, mixed/3rd conditionals, quantifiers, reduced relatives, sports collocations (periodisation, taper, off-season, load management)",
+      "descriptionVi": "30 câu trắc nghiệm • Thức giả định/chỉ thị, đảo ngữ phức, điều kiện hỗn hợp/loại 3, lượng từ, mệnh đề rút gọn, kết hợp từ thể thao (chu kỳ huấn luyện, giảm tải, off-season, quản lý tải)",
+      "totalQuestions": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "The coach insisted that the sprinter ___ the starting drills before trials.",
+          "questionVi": "Huấn luyện viên yêu cầu vận động viên chạy nước rút ___ các bài tập khởi động trước vòng thử.",
+          "options": ["complete", "completes", "to complete", "completed"],
+          "optionsVi": ["hoàn thành", "hoàn thành (ngôi 3)", "để hoàn thành", "đã hoàn thành"],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "question": "Not until the physiotherapist examined him ___ the swelling diagnosed properly.",
+          "questionVi": "Mãi đến khi chuyên viên vật lý trị liệu kiểm tra anh ấy ___ sưng mới được chẩn đoán đúng.",
+          "options": ["was", "did", "had", "has"],
+          "optionsVi": ["đã", "mới", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 3,
+          "question": "If the team ___ the recovery block, they would have reduced injury risk.",
+          "questionVi": "Nếu đội ___ khối hồi phục, họ đã giảm rủi ro chấn thương.",
+          "options": ["had prioritised", "prioritised", "prioritises", "would prioritise"],
+          "optionsVi": ["đã ưu tiên", "ưu tiên", "ưu tiên", "sẽ ưu tiên"],
+          "correct": 0
+        },
+        {
+          "id": 4,
+          "question": "Hardly ___ the whistle blown when the striker took the free-kick.",
+          "questionVi": "Vừa khi còi ___ thì tiền đạo đã sút phạt.",
+          "options": ["had", "did", "was", "has"],
+          "optionsVi": ["vừa khi", "đã", "đang", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "question": "It is crucial that medical notes ___ recorded after each contact session.",
+          "questionVi": "Rất quan trọng là các ghi chú y tế phải ___ sau mỗi buổi tiếp xúc.",
+          "options": ["be", "are", "to be", "being"],
+          "optionsVi": ["được", "đang", "để", "đang được"],
+          "correct": 0
+        },
+        {
+          "id": 6,
+          "question": "No sooner ___ the substitute warmed up than the starter signalled a change.",
+          "questionVi": "Vừa khi dự bị khởi động thì cầu thủ chính được ra hiệu thay người.",
+          "options": ["had", "we had", "did", "have"],
+          "optionsVi": ["vừa khi", "chúng tôi vừa", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 7,
+          "question": "Were the training budget higher, the club ___ a sports scientist.",
+          "questionVi": "Nếu ngân sách huấn luyện cao hơn, clb sẽ ___ một nhà khoa học thể thao.",
+          "options": ["would hire", "hired", "will hire", "had hired"],
+          "optionsVi": ["sẽ thuê", "đã thuê", "sẽ thuê", "đã thuê"],
+          "correct": 0
+        },
+        {
+          "id": 8,
+          "question": "Seldom ___ athletes perform well without a structured taper.",
+          "questionVi": "Hiếm khi ___ vận động viên thi đấu tốt nếu không có taper có cấu trúc.",
+          "options": ["do", "does", "has", "is"],
+          "optionsVi": ["làm", "làm", "đã", "là"],
+          "correct": 0
+        },
+        {
+          "id": 9,
+          "question": "By the time the referee ___ his card, the captain had appealed.",
+          "questionVi": "Khi trọng tài ___ thẻ, đội trưởng đã kháng cáo.",
+          "options": ["showed", "had shown", "has shown", "will show"],
+          "optionsVi": ["giơ lên", "đã giơ lên", "đã giơ", "sẽ giơ"],
+          "correct": 1
+        },
+        {
+          "id": 10,
+          "question": "She played as if she ___ the extra sessions all season.",
+          "questionVi": "Cô ấy chơi như thể đã ___ các buổi tập phụ suốt mùa.",
+          "options": ["had attended", "has attended", "attends", "would attend"],
+          "optionsVi": ["đã tham dự", "đã tham dự", "tham dự", "sẽ tham dự"],
+          "correct": 0
+        },
+        {
+          "id": 11,
+          "question": "Only after the load-monitoring data ___ did coaches reduce volume.",
+          "questionVi": "Chỉ sau khi dữ liệu theo dõi tải ___ thì huấn luyện viên mới giảm khối lượng.",
+          "options": ["arrived", "had arrived", "has arrived", "arrives"],
+          "optionsVi": ["đến", "đã đến", "đã đến", "đến"],
+          "correct": 1
+        },
+        {
+          "id": 12,
+          "question": "There’s far ___ pressure in finals than in pre-season friendlies.",
+          "questionVi": "Áp lực trong chung kết ___ so với giao hữu tiền mùa.",
+          "options": ["more", "less", "many", "few"],
+          "optionsVi": ["nhiều hơn", "ít hơn", "nhiều (đếm được)", "ít (đếm được)"],
+          "correct": 0
+        },
+        {
+          "id": 13,
+          "question": "Neither the captain nor the physiotherapist ___ certain about the return date.",
+          "questionVi": "Cả đội trưởng lẫn chuyên viên vật lý trị liệu đều không ___ chắc ngày trở lại.",
+          "options": ["is", "are", "was", "have been"],
+          "optionsVi": ["là", "là (số nhiều)", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 14,
+          "question": "Had the athlete rested, the micro-tear ___ avoided.",
+          "questionVi": "Nếu vận động viên nghỉ ngơi, rách cơ nhỏ đã ___ tránh được.",
+          "options": ["would have been", "was", "will be", "has been"],
+          "optionsVi": ["đã được", "đã", "sẽ được", "đã được"],
+          "correct": 0
+        },
+        {
+          "id": 15,
+          "question": "The coach suggested that he ___ a nutritionist for the off-season.",
+          "questionVi": "Huấn luyện viên gợi ý anh ấy ___ một chuyên gia dinh dưỡng trong off-season.",
+          "options": ["see", "sees", "to see", "seeing"],
+          "optionsVi": ["gặp", "gặp (ngôi 3)", "để gặp", "đang gặp"],
+          "correct": 0
+        },
+        {
+          "id": 16,
+          "question": "Few as the substitutions were, ___ changed the game’s momentum.",
+          "questionVi": "Dù thay người ít, ___ thay đổi nhịp độ trận đấu.",
+          "options": ["one of them", "each of them", "several of which", "all of which"],
+          "optionsVi": ["một trong số đó", "mỗi cái", "một vài trong đó", "tất cả những cái đó"],
+          "correct": 2
+        },
+        {
+          "id": 17,
+          "question": "Scarcely ___ the sprint finished when the hamstring tightened.",
+          "questionVi": "Vừa khi ___ chạy nước rút xong thì cơ đùi căng lại.",
+          "options": ["had", "we had", "did", "have"],
+          "optionsVi": ["vừa khi", "chúng tôi vừa", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 18,
+          "question": "The front squat should be performed ___ the session peak to reduce injury risk.",
+          "questionVi": "Front squat nên thực hiện ___ điểm cao buổi tập để giảm rủi ro chấn thương.",
+          "options": ["after", "before", "during", "without"],
+          "optionsVi": ["sau", "trước", "trong", "không có"],
+          "correct": 1
+        },
+        {
+          "id": 19,
+          "question": "Were she to miss the warm-up, the coach warned the pacing ___ suffer.",
+          "questionVi": "Nếu cô ấy lỡ khởi động, huấn luyện viên cảnh báo nhịp thi đấu sẽ ___.",
+          "options": ["would suffer", "suffered", "will suffer", "has suffered"],
+          "optionsVi": ["sẽ chịu ảnh hưởng", "đã chịu ảnh hưởng", "sẽ chịu", "đã chịu"],
+          "correct": 0
+        },
+        {
+          "id": 20,
+          "question": "There is ___ time to adjust tactics before kick-off; stick to Plan A.",
+          "questionVi": "___ thời gian để điều chỉnh chiến thuật trước giờ bóng lăn; giữ kế hoạch A.",
+          "options": ["little", "a few", "few", "the little"],
+          "optionsVi": ["rất ít", "một vài", "ít", "rất ít (xác định)"],
+          "correct": 0
+        },
+        {
+          "id": 21,
+          "question": "It was the conditioning, not the skill work, that ___ lacking.",
+          "questionVi": "Chính thể lực chứ không phải kỹ năng mới ___ thiếu.",
+          "options": ["was", "were", "has", "had"],
+          "optionsVi": ["đã", "đã (số nhiều)", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 22,
+          "question": "By season end, the squad ___ a cohesive periodisation plan in place.",
+          "questionVi": "Đến cuối mùa, đội đã ___ kế hoạch chu kỳ huấn luyện gắn kết.",
+          "options": ["will have", "have", "had", "would have"],
+          "optionsVi": ["sẽ đã", "đã", "đã", "sẽ đã"],
+          "correct": 0
+        },
+        {
+          "id": 23,
+          "question": "Little ___ the fans expect the manager to change formation mid-match.",
+          "questionVi": "Khán giả hầu như không ___ mong HLV đổi đội hình giữa trận.",
+          "options": ["did", "does", "had", "was"],
+          "optionsVi": ["biết (đảo ngữ)", "biết", "đã", "đã"],
+          "correct": 0
+        },
+        {
+          "id": 24,
+          "question": "No amount of hill sprints ___ a chronic overload injury.",
+          "questionVi": "Không bao nhiêu chạy dốc có thể ___ một chấn thương quá tải mãn tính.",
+          "options": ["prevents", "prevent", "has prevented", "preventing"],
+          "optionsVi": ["ngăn được", "ngăn", "đã ngăn", "đang ngăn"],
+          "correct": 0
+        },
+        {
+          "id": 25,
+          "question": "We’d rather you ___ the progression than risk a setback this camp.",
+          "questionVi": "Chúng tôi muốn bạn ___ tiến độ hơn là rủi ro lùi bước trong trại này.",
+          "options": ["slow", "slowed", "to slow", "slowing"],
+          "optionsVi": ["chậm lại", "đã chậm", "để chậm", "đang chậm"],
+          "correct": 0
+        },
+        {
+          "id": 26,
+          "question": "Had it not ___ for the physiotherapy, she would have missed the qualifiers.",
+          "questionVi": "Nếu không ___ vật lý trị liệu, cô ấy đã lỡ vòng loại.",
+          "options": ["been", "be", "being", "to be"],
+          "optionsVi": ["là/đã", "là", "đang là", "để là"],
+          "correct": 0
+        },
+        {
+          "id": 27,
+          "question": "The more precise our load metrics, the ___ targeted recovery becomes.",
+          "questionVi": "Dữ liệu tải càng chính xác, phục hồi càng ___ mục tiêu.",
+          "options": ["more", "less", "fewer", "little"],
+          "optionsVi": ["hơn", "ít hơn", "ít hơn (đếm được)", "ít"],
+          "correct": 0
+        },
+        {
+          "id": 28,
+          "question": "Players who can adapt under pressure ___ favoured for clutch minutes.",
+          "questionVi": "Cầu thủ có thể thích nghi dưới áp lực ___ được ưu tiên vào phút quyết định.",
+          "options": ["are", "being", "who are", "which are"],
+          "optionsVi": ["là", "đang", "người mà", "cái mà"],
+          "correct": 0
+        },
+        {
+          "id": 29,
+          "question": "No sooner had the equipment arrived ___ the drill sequence resumed.",
+          "questionVi": "Vừa khi thiết bị đến ___ chuỗi bài tập tiếp tục.",
+          "options": ["than", "when", "that", "then"],
+          "optionsVi": ["thì", "khi", "rằng", "rồi"],
+          "correct": 0
+        },
+        {
+          "id": 30,
+          "question": "If you blank on the cue, keep playing ___ the coach signals substitution.",
+          "questionVi": "Nếu bạn quên nhịp, hãy tiếp tục ___ khi HLV ra hiệu thay người.",
+          "options": ["until", "unless", "though", "despite"],
+          "optionsVi": ["cho đến khi", "trừ khi", "mặc dù", "bất chấp"],
+          "correct": 0
+        }
+      ]
+    },
+    "reading": {
+      "title": "Section B: Reading Comprehension — Athlete Preparation & Performance",
+      "titleVi": "Phần B: Đọc hiểu — Chuẩn bị vận động viên & Hiệu suất",
+      "description": "20 MCQs • Causal chains, periodisation, recovery science, vocab-in-context",
+      "descriptionVi": "20 câu trắc nghiệm • Chuỗi nguyên nhân, chu kỳ huấn luyện, khoa học phục hồi, từ vựng theo ngữ cảnh",
+      "totalQuestions": 20,
+      "passages": [
+        {
+          "id": 1,
+          "title": "Passage 1 – Periodisation, Tapering and Competition Readiness",
+          "titleVi": "Đoạn 1 – Chu kỳ huấn luyện, taper và sẵn sàng thi đấu",
+          "content": "A national swim programme revised its macrocycle: heavy build phases for strength and speed were followed by an aggressive taper in the final ten days before nationals. Load was tracked via session-RPE and GPS-derived stroke counts; coaches removed two high-load sets when markers suggested persistent fatigue. At nationals, personal bests outnumbered season averages and overtraining incidents fell. Athletes reported sharper race instincts, though some complained that the taper felt too short. The head coach stressed the method only worked because recovery modalities (contrast baths, sleep hygiene, nutrition) were scheduled and adhered to; when athletes skipped protocols, performance dipped. The programme will keep the model if medal conversion rate stays above 32% and illness incidence remains ≤2 per squad per month.",
+          "contentVi": "Một chương trình bơi quốc gia chỉnh lại chu kỳ tổng thể: các giai đoạn tích lũy nặng cho sức mạnh và tốc độ được theo sau bởi một taper mạnh mẽ trong mười ngày cuối trước giải quốc gia. Tải được theo dõi bằng session-RPE và số lần quạt sải do GPS; huấn luyện viên bỏ hai hiệp tải nặng khi dấu hiệu cho thấy mệt mỏi kéo dài. Ở giải quốc gia, thành tích cá nhân tốt hơn mức trung bình mùa và sự cố quá tải giảm. Vận động viên báo cáo bản năng thi đấu sắc hơn, dù một số phàn nàn taper hơi ngắn. Huấn luyện viên trưởng nhấn mạnh phương pháp chỉ hiệu quả vì các phương thức phục hồi (tắm tương phản, vệ sinh giấc ngủ, dinh dưỡng) được lên lịch và tuân thủ; khi vận động viên bỏ quy trình, hiệu suất giảm. Chương trình sẽ giữ mô hình nếu tỉ lệ đổi huy chương ≥ 32% và tỷ lệ bệnh ≤2/nguồn/ tháng.",
+          "questions": [
+            {
+              "id": 31,
+              "question": "Primary change to the programme was:",
+              "questionVi": "Thay đổi chính trong chương trình là:",
+              "options": ["Longer off-season", "Aggressive taper in final ten days", "Removing technique work", "Cutting the squad size"],
+              "optionsVi": ["Off-season dài hơn", "Taper mạnh mẽ 10 ngày cuối", "Bỏ kỹ thuật", "Cắt quy mô đội"],
+              "correct": 1
+            },
+            {
+              "id": 32,
+              "question": "Load tracking used:",
+              "questionVi": "Theo dõi tải sử dụng:",
+              "options": ["Session-RPE and GPS stroke counts", "Heart rate only", "Blood tests daily", "Coach intuition alone"],
+              "optionsVi": ["Session-RPE và số sải GPS", "Nhịp tim", "Xét nghiệm máu hàng ngày", "Trực giác huấn luyện viên"],
+              "correct": 0
+            },
+            {
+              "id": 33,
+              "question": "Why were two high-load sets removed?",
+              "questionVi": "Tại sao hai hiệp tải nặng bị bỏ?",
+              "options": ["Facilities closed", "Markers showed persistent fatigue", "Athletes requested rest", "Budget cuts"],
+              "optionsVi": ["Cơ sở đóng cửa", "Dấu hiệu mệt mỏi kéo dài", "Vận động viên xin nghỉ", "Cắt ngân sách"],
+              "correct": 1
+            },
+            {
+              "id": 34,
+              "question": "The method depended on:",
+              "questionVi": "Phương pháp phụ thuộc vào:",
+              "options": ["Scheduled recovery modalities and adherence", "More high-load sets", "Less sleep", "Fewer races"],
+              "optionsVi": ["Các phương pháp phục hồi được lên lịch và tuân thủ", "Thêm hiệp nặng", "Ít ngủ", "Ít giải đấu hơn"],
+              "correct": 0
+            },
+            {
+              "id": 35,
+              "question": "Success metric to keep the model was:",
+              "questionVi": "Chỉ số thành công để giữ mô hình là:",
+              "options": ["Medal conversion ≥32% and illness ≤2/month", "No personal bests", "More training camps", "Higher fees"],
+              "optionsVi": ["Đổi huy chương ≥32% và bệnh ≤2/tháng", "Không PB", "Thêm trại", "Phí cao hơn"],
+              "correct": 0
+            },
+            {
+              "id": 36,
+              "question": "An athlete complaint was that:",
+              "questionVi": "Một phàn nàn của vận động viên là:",
+              "options": ["Taper felt too short", "Too many rest days", "No video feedback", "Pool too cold"],
+              "optionsVi": ["Taper hơi ngắn", "Quá nhiều ngày nghỉ", "Không có phản hồi video", "Hồ lạnh quá"],
+              "correct": 0
+            },
+            {
+              "id": 37,
+              "question": "Inference: skipping recovery protocols leads to:",
+              "questionVi": "Suy luận: bỏ quy trình phục hồi dẫn tới:",
+              "options": ["Improved performance", "Performance dipped", "Shorter races", "Higher medal conversion"],
+              "optionsVi": ["Hiệu suất cải thiện", "Hiệu suất giảm", "Cửa ngắn hơn", "Tăng đổi huy chương"],
+              "correct": 1
+            },
+            {
+              "id": 38,
+              "question": "Tone of passage is:",
+              "questionVi": "Giọng điệu đoạn văn là:",
+              "options": ["Operational and evidence-led", "Romantic", "Satirical", "Humorous"],
+              "optionsVi": ["Vận hành dựa trên bằng chứng", "Lãng mạn", "Châm biếm", "Hài hước"],
+              "correct": 0
+            },
+            {
+              "id": 39,
+              "question": "Which metric improved at nationals?",
+              "questionVi": "Chỉ số nào cải thiện ở giải quốc gia?",
+              "options": ["Personal bests increased", "Injury incidents increased", "Training volume rose", "Taper lengthened"],
+              "optionsVi": ["Số PB tăng", "Sự cố chấn thương tăng", "Khối lượng tập tăng", "Taper dài hơn"],
+              "correct": 0
+            },
+            {
+              "id": 40,
+              "question": "Best overall summary:",
+              "questionVi": "Tóm tắt tổng quan tốt nhất:",
+              "options": ["Periodised build + scheduled recovery improved readiness and reduced overtraining", "Taper is ineffective", "Recovery unimportant", "Always shorter tapers are better"],
+              "optionsVi": ["Chu kỳ + phục hồi theo lịch cải thiện sẵn sàng và giảm quá tải", "Taper không hiệu quả", "Phục hồi không quan trọng", "Taper ngắn luôn tốt hơn"],
+              "correct": 0
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Passage 2 – Talent ID and Blind Trials",
+          "titleVi": "Đoạn 2 – Phát hiện tài năng và thử nghiệm ẩn danh",
+          "content": "A regional athletics federation trialled blind trials to reduce selection bias: initial rounds removed names, clubs and past results, presenting only timed runs and a short performance slate. Over two seasons, selection diversity rose: more athletes from under-represented clubs received trials. Coaches argued that some contextual data (training age, injury history) remained necessary to design appropriate training loads. The federation compromised by revealing training age bands and recent major injuries at the selection confirmation stage. An equity audit will determine whether the blind-first model narrows gaps without increasing injury rates or diluting podium potential.",
+          "contentVi": "Một liên đoàn điền kinh vùng thử nghiệm vòng loại ẩn danh để giảm thiên kiến tuyển chọn: vòng đầu loại bỏ tên, câu lạc bộ và kết quả trước, chỉ trình bày thời gian chạy và phần giới thiệu ngắn. Qua hai mùa, tính đa dạng tuyển chọn tăng: nhiều vận động viên từ CLB ít được đại diện hơn được thử. Huấn luyện viên cho rằng một số dữ liệu ngữ cảnh (tuổi tập, lịch sử chấn thương) vẫn cần để thiết kế tải phù hợp. Liên đoàn thỏa hiệp bằng cách bật băng tuổi tập và chấn thương lớn gần đây ở giai đoạn xác nhận chọn. Một kiểm định công bằng sẽ quyết định mô hình ẩn-dấu-đầu có thu hẹp khoảng cách mà không tăng tỉ lệ chấn thương hay làm giảm tiềm năng podium.",
+          "questions": [
+            {
+              "id": 41,
+              "question": "Round 1 concealed:",
+              "questionVi": "Vòng 1 ẩn:",
+              "options": ["Names, clubs and past results", "Training age bands", "Injury history", "Coach names"],
+              "optionsVi": ["Tên, CLB và kết quả trước", "Băng tuổi tập", "Lịch sử chấn thương", "Tên HLV"],
+              "correct": 0
+            },
+            {
+              "id": 42,
+              "question": "Outcome over two seasons was:",
+              "questionVi": "Kết quả qua hai mùa là:",
+              "options": ["Less diversity", "More selection diversity", "Fewer trials", "Lower performance overall"],
+              "optionsVi": ["Ít đa dạng hơn", "Đa dạng tuyển chọn hơn", "Ít vòng thử hơn", "Hiệu suất thấp hơn toàn diện"],
+              "correct": 1
+            },
+            {
+              "id": 43,
+              "question": "Coaches wanted contextual data for:",
+              "questionVi": "Huấn luyện viên muốn dữ liệu ngữ cảnh để:",
+              "options": ["Selecting new venues", "Designing appropriate training loads", "Marketing", "Ticket sales"],
+              "optionsVi": ["Chọn địa điểm mới", "Thiết kế tải tập phù hợp", "Tiếp thị", "Bán vé"],
+              "correct": 1
+            },
+            {
+              "id": 44,
+              "question": "Compromise revealed at confirmation stage:",
+              "questionVi": "Thỏa hiệp bật ở giai đoạn xác nhận là:",
+              "options": ["Full medical records", "Training age bands and recent major injuries", "Club finances", "Agent contracts"],
+              "optionsVi": ["Hồ sơ y tế đầy đủ", "Băng tuổi tập và chấn thương lớn gần đây", "Tài chính CLB", "Hợp đồng đại diện"],
+              "correct": 1
+            },
+            {
+              "id": 45,
+              "question": "Audit will check whether:",
+              "questionVi": "Kiểm định sẽ kiểm tra xem:",
+              "options": ["Gaps narrow without increasing injuries or reducing podium potential", "More seats sold", "Coaches happy", "Trials are longer"],
+              "optionsVi": ["Khoảng cách thu hẹp mà không tăng chấn thương hay giảm tiềm năng podium", "Bán được nhiều ghế hơn", "Huấn luyện viên hài lòng", "Vòng thử dài hơn"],
+              "correct": 0
+            },
+            {
+              "id": 46,
+              "question": "A plausible secondary benefit is:",
+              "questionVi": "Lợi ích thứ cấp hợp lý là:",
+              "options": ["Wider talent discovery beyond elite clubs", "Fewer training sessions", "Higher fees", "Less competition"], 
+              "optionsVi": ["Khám phá tài năng rộng hơn ngoài CLB tinh hoa", "Ít buổi tập hơn", "Phí cao hơn", "Ít cạnh tranh"], 
+              "correct": 0
+            },
+            {
+              "id": 47,
+              "question": "Author stance is:",
+              "questionVi": "Quan điểm tác giả là:",
+              "options": ["Balanced — noting gains and limits", "Strong opposition", "Promotional", "Indifferent"], 
+              "optionsVi": ["Cân bằng — nêu lợi và giới hạn", "Phản đối mạnh mẽ", "Quảng bá", "Thờ ơ"], 
+              "correct": 0
+            },
+            {
+              "id": 48,
+              "question": "Which dependency chain is explicit?",
+              "questionVi": "Chuỗi phụ thuộc nào được nêu rõ?",
+              "options": ["Blind-first → audit → wider rollout", "Names revealed → fewer trials", "Clubs fund trials → less diversity", "Agents decide selection"], 
+              "optionsVi": ["Ẩn-dấu-đầu → kiểm định → triển khai rộng", "Tiết lộ tên → ít vòng thử hơn", "CLB tài trợ → ít đa dạng", "Đại diện quyết định tuyển chọn"], 
+              "correct": 0
+            },
+            {
+              "id": 49,
+              "question": "Potential risk to monitor:",
+              "questionVi": "Rủi ro cần theo dõi là:",
+              "options": ["Increased injury rates if contextual data withheld", "Higher ticket prices", "More sponsorship", "Longer race times"], 
+              "optionsVi": ["Tăng chấn thương nếu bỏ dữ liệu bối cảnh", "Giá vé cao hơn", "Nhiều nhà tài trợ hơn", "Thời gian chạy dài hơn"], 
+              "correct": 0
+            },
+            {
+              "id": 50,
+              "question": "Best summary:",
+              "questionVi": "Tóm tắt tốt nhất:", 
+              "options": ["Blind-first selection raised diversity but needs contextual checks to avoid training-load risks", "Blind selection always best", "Context irrelevant", "Trials ineffective"], 
+              "optionsVi": ["Tuyển chọn ẩn-dấu-đầu tăng đa dạng nhưng cần kiểm tra ngữ cảnh để tránh rủi ro tải tập", "Ẩn-dấu luôn tốt nhất", "Ngữ cảnh không quan trọng", "Vòng thử vô hiệu"], 
+              "correct": 0
+            }
+          ]
+        }
+      ]
+    },
+    "listening": {
+      "title": "Section C: Listening Comprehension — Training Notices & Match Day Updates",
+      "titleVi": "Phần C: Nghe hiểu — Thông báo huấn luyện & Cập nhật ngày thi đấu",
+      "description": "10 MCQs • Tight times, venue switches, injury-trap ambiguities",
+      "descriptionVi": "10 câu trắc nghiệm • Khung chặt, đổi địa điểm, bẫy mơ hồ liên quan chấn thương",
+      "totalQuestions": 10,
+      "scripts": [
+        {
+          "id": 1,
+          "title": "Script 1 – Training Day Switch & Kit",
+          "titleVi": "Băng 1 – Đổi ngày tập & Trang phục",
+          "content": "Morning squad—note change: warm-ups now 09:20 in Gym B; strength circuit moves to Outdoor Field at 10:00 (bring hard-soled trainers). Sprint block is 11:15–12:00 with resisted starts; no plyometrics today. Physiotherapy drop-ins 14:30 in Treatment Room 1. If you are running late, text the kit manager before call.",
+          "contentVi": "Sáng cả đội—lưu ý đổi: khởi động giờ 09:20 tại Gym B; circuit sức mạnh chuyển ra Sân ngoài lúc 10:00 (mang giày đế cứng). Khối chạy nước rút 11:15–12:00 có khởi động có sức cản; hôm nay không tập plyometric. Vật lý trị liệu drop-in 14:30 tại Phòng Chăm sóc 1. Nếu trễ, nhắn cho quản lý dụng cụ trước giờ tập.",
+          "questions": [
+            {
+              "id": 51,
+              "question": "Warm-ups time/location:",
+              "questionVi": "Khởi động lúc/ở:",
+              "options": ["09:00 Gym A", "09:20 Gym B", "10:00 Outdoor Field", "11:15 Gym B"],
+              "optionsVi": ["09:00 Gym A", "09:20 Gym B", "10:00 Sân ngoài", "11:15 Gym B"],
+              "correct": 1
+            },
+            {
+              "id": 52,
+              "question": "Strength circuit location:",
+              "questionVi": "Circuit sức mạnh ở:",
+              "options": ["Gym B", "Outdoor Field", "Pool", "Treatment Room 1"],
+              "optionsVi": ["Gym B", "Sân ngoài", "Hồ bơi", "Phòng Chăm sóc 1"],
+              "correct": 1
+            },
+            {
+              "id": 53,
+              "question": "Sprint block time:",
+              "questionVi": "Khối chạy nước rút lúc:",
+              "options": ["10:00–10:45", "11:15–12:00", "14:30–15:15", "09:20–10:00"],
+              "optionsVi": ["10:00–10:45", "11:15–12:00", "14:30–15:15", "09:20–10:00"],
+              "correct": 1
+            },
+            {
+              "id": 54,
+              "question": "What to bring:",
+              "questionVi": "Mang theo gì:",
+              "options": ["Soft-soled sneakers", "Hard-soled trainers", "Cleats only", "Flippers"],
+              "optionsVi": ["Giày đế mềm", "Giày đế cứng", "Giày đinh", "Chân vịt"],
+              "correct": 1
+            },
+            {
+              "id": 55,
+              "question": "If late, you should:",
+              "questionVi": "Nếu trễ, bạn nên:",
+              "options": ["Do nothing", "Text the kit manager before call", "Skip the session", "Email physiotherapy"], 
+              "optionsVi": ["Không làm gì", "Nhắn quản lý dụng cụ trước giờ", "Bỏ buổi", "Email vật lý trị liệu"], 
+              "correct": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Script 2 – Match Day Brief & Substitution Window",
+          "titleVi": "Băng 2 – Tóm tắt ngày thi đấu & Khung thay người",
+          "content": "Team—match day notes: arrive at stadium by 15:00; kit check 15:20 in the warm-up bay. Kick-off is 17:00. Substitutions window opens minute 60–75; bench warmers should be ready at the midway point. Medical tent is Gate C; massage therapists available post-match. If you have any new niggles, tell the physio before kit check.",
+          "contentVi": "Cả đội—ghi chú ngày thi đấu: đến sân trước 15:00; kiểm tra trang phục 15:20 tại khu khởi động. Bắt đầu 17:00. Khung thay người mở phút 60–75; dự bị sẵn sàng ở giữa hiệp. Lều y tế tại Cổng C; trị liệu có sẵn sau trận. Nếu có đau nhức mới, báo cho bác sĩ vật lý trước kiểm tra trang phục.",
+          "questions": [
+            {
+              "id": 56,
+              "question": "Arrival time at stadium:",
+              "questionVi": "Thời gian đến sân:",
+              "options": ["14:30", "15:00", "15:20", "16:45"],
+              "optionsVi": ["14:30", "15:00", "15:20", "16:45"],
+              "correct": 1
+            },
+            {
+              "id": 57,
+              "question": "Kick-off time:",
+              "questionVi": "Giờ bóng lăn:",
+              "options": ["15:20", "16:00", "17:00", "18:00"],
+              "optionsVi": ["15:20", "16:00", "17:00", "18:00"],
+              "correct": 2
+            },
+            {
+              "id": 58,
+              "question": "Substitution window:",
+              "questionVi": "Khung thay người:",
+              "options": ["45–60", "60–75", "75–90", "30–45"],
+              "optionsVi": ["45–60", "60–75", "75–90", "30–45"],
+              "correct": 1
+            },
+            {
+              "id": 59,
+              "question": "Where is medical tent:",
+              "questionVi": "Lều y tế ở đâu:",
+              "options": ["Gate A", "Gate B", "Gate C", "Main Stand"],
+              "optionsVi": ["Cổng A", "Cổng B", "Cổng C", "Khán đài chính"],
+              "correct": 2
+            },
+            {
+              "id": 60,
+              "question": "If you have niggles, when tell physio:",
+              "questionVi": "Nếu có đau nhức, báo cho vật lý khi nào:",
+              "options": ["After match", "Before kit check", "During halftime", "Never"], 
+              "optionsVi": ["Sau trận", "Trước kiểm tra trang phục", "Giữa hiệp", "Không bao giờ"], 
+              "correct": 1
+            }
+          ]
+        }
+      ]
+    },
+    "writing": {
+      "title": "Section D: Writing — Athlete Scenarios",
+      "titleVi": "Phần D: Viết — Tình huống vận động viên",
+      "description": "3 tasks • Formal email to coach/medical, opinion essay on policy (load management), data description with KPI and recommendation",
+      "descriptionVi": "3 bài • Email trang trọng gửi HLV/Y tế, luận ý kiến về chính sách (quản lý tải), mô tả dữ liệu kèm KPI và khuyến nghị",
+      "totalTasks": 3,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Task 1 (185–215 words) — Formal Email to Head Coach (Missed Upload / Injury Report)",
+          "titleVi": "Bài 1 (185–215 từ) — Email trang trọng gửi HLV trưởng (Báo cáo chấn thương / tệp báo cáo hết hạn)",
+          "instruction": "Your GPS session file (ATH_Last_First_2025-09-27.gpx) failed to upload at 11:09 during a 2.1 GB transfer because the portal reset; the posted deadline was 12:00. Explain the timeline with timestamps, request a 12-hour extension or alternate transfer (SFTP), confirm that session RPE and stroke/rep counts are in the file, and state availability for an in-person physio check at 14:30.",
+          "instructionVi": "Tập tin GPS của bạn (ATH_Last_First_2025-09-27.gpx) lỗi khi tải lúc 11:09 trong quá trình truyền 2,1 GB vì cổng reset; hạn đăng là 12:00. Giải thích dòng thời gian kèm mốc, xin gia hạn 12 giờ hoặc phương thức chuyển khác (SFTP), xác nhận session RPE và số sải/rep trong tệp, và nêu thời gian rảnh kiểm tra vật lý trực tiếp lúc 14:30.",
+          "wordLimit": { "min": 185, "max": 215 },
+          "type": "formal_email",
+          "topic": "gps_session_upload_failure"
+        },
+        {
+          "id": 2,
+          "title": "Task 2 (320–360 words) — Opinion Essay (Load Management Policy)",
+          "titleVi": "Bài 2 (320–360 từ) — Bài luận ý kiến (Chính sách quản lý tải)",
+          "instruction": "“All elite squads should mandate load-management protocols, including session-RPE tracking, weekly load caps, and a mandatory recovery day.” To what extent do you agree? Provide: a clear thesis; one concrete example with outcome metrics (e.g., overtraining incidents down X%, PBs up Y%, availability %); a counter-argument (e.g., competitive edge/coach autonomy), and your rebuttal grounded in athlete longevity, performance consistency, and squad depth.",
+          "instructionVi": "“Mọi đội tinh túy nên bắt buộc quy trình quản lý tải, bao gồm theo dõi session-RPE, hạn mức tải hàng tuần và một ngày phục hồi bắt buộc.” Bạn đồng ý đến mức nào? Nêu luận điểm rõ; một ví dụ kèm số liệu (ví dụ sự cố quá tải giảm X%, PB tăng Y%, tỉ lệ sẵn sàng %); phản biện (lợi thế cạnh tranh/quyền HLV), và phản bác dựa trên tuổi thọ vận động viên, tính ổn định hiệu suất và chiều sâu đội hình.",
+          "wordLimit": { "min": 320, "max": 360 },
+          "type": "opinion_essay",
+          "topic": "load_management_policy"
+        },
+        {
+          "id": 3,
+          "title": "Task 3 (260–300 words) — Data Description & Recommendation (Three Prep Options)",
+          "titleVi": "Bài 3 (260–300 từ) — Mô tả dữ liệu & khuyến nghị (Ba lựa chọn chuẩn bị)",
+          "instruction": "Compare three four-week prep strategies for an athlete with a fixed competition date: A) Private coach (3×60 min/week; $55/session; fitness +20%; skill +18%), B) Team sessions (4×45 min/week; $0; fitness +12%; skill +14%), C) Solo structured sessions with apps (6×30 min/week; $8/week; fitness +9%; skill +7%). Summarise trade-offs (cost/time/impact), recommend a plan for an athlete with limited funds but one non-negotiable competition date, and state one KPI to monitor weekly (e.g., '% sessions hitting target RPE' or 'time on target technique reps').",
+          "instructionVi": "So sánh ba chiến lược chuẩn bị 4 tuần cho vận động viên có ngày thi cố định: A) HLV riêng (3×60 phút/tuần; $55/buổi; thể lực +20%; kỹ năng +18%), B) Buổi đội (4×45 phút/tuần; $0; thể lực +12%; kỹ năng +14%), C) Tự tập có cấu trúc với app (6×30 phút/tuần; $8/tuần; thể lực +9%; kỹ năng +7%). Tóm tắt đánh đổi (chi phí/thời gian/tác động), đề xuất kế hoạch cho vận động viên ít tiền nhưng có ngày thi không thể thay đổi, và nêu KPI theo dõi hàng tuần (ví dụ '% buổi đạt RPE mục tiêu' hoặc 'số rep kỹ thuật đạt mục tiêu').",
+          "wordLimit": { "min": 260, "max": 300 },
+          "type": "data_description",
+          "topic": "prep_options_athlete",
+          "chartData": {
+            "title": "Four-Week Athlete Prep Options",
+            "titleVi": "Các lựa chọn chuẩn bị 4 tuần cho vận động viên",
+            "data": [
+              { "strategy": "Private Coach", "sessions_per_week": 3, "minutes_per_session": 60, "cost_per_session_usd": 55, "fitness_delta_percent": 20, "skill_delta_percent": 18 },
+              { "strategy": "Team Sessions", "sessions_per_week": 4, "minutes_per_session": 45, "cost_per_week_usd": 0, "fitness_delta_percent": 12, "skill_delta_percent": 14 },
+              { "strategy": "Solo Apps", "sessions_per_week": 6, "minutes_per_session": 30, "cost_per_week_usd": 8, "fitness_delta_percent": 9, "skill_delta_percent": 7 }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdBy": "IELTS Practice System",
+    "version": "3.7.0",
+    "lastUpdated": "2025-09-27",
+    "difficulty": "upper-intermediate (3.7) — peak performance band",
+    "estimatedTime": "110–130 minutes",
+    "tags": [
+      "ielts",
+      "athlete",
+      "sports",
+      "performance",
+      "load_management",
+      "periodisation",
+      "recovery",
+      "grammar",
+      "reading",
+      "listening",
+      "writing",
+      "bilingual"
+    ]
+  }
+}
