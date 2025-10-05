@@ -1,3 +1,5 @@
 node_modules
 # pdfs
 # data
+playwright
+.playwright-mcp

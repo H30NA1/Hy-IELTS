@@ -1,0 +1,114 @@
+{
+  "id": "mfc5rm2vtlabh5l3u9",
+  "timestamp": "2025-09-09T06:17:05.671Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-09-09T06:17:02.527Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hiii",
+  "answers": {
+    "grammar": {
+      "1": 3,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 0,
+      "6": 0,
+      "7": 1,
+      "8": 0,
+      "9": 1,
+      "10": 0,
+      "11": 0,
+      "12": 1,
+      "13": 0,
+      "14": 1,
+      "15": 1,
+      "16": 2,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 1,
+      "21": 1,
+      "22": 0,
+      "23": 1,
+      "24": 1,
+      "25": 1,
+      "26": 1,
+      "27": 1,
+      "28": 1,
+      "29": 1,
+      "30": 1
+    },
+    "reading": {
+      "31": 1,
+      "32": 1,
+      "33": 2,
+      "34": 1,
+      "35": 2,
+      "36": 1,
+      "37": 2,
+      "38": 0,
+      "39": 0,
+      "40": 1,
+      "41": 1,
+      "42": 1,
+      "43": 1,
+      "44": 1,
+      "45": 2,
+      "46": 1,
+      "47": 1,
+      "48": 1,
+      "49": 1,
+      "50": 1
+    },
+    "listening": {
+      "51": 0,
+      "52": 1,
+      "53": 1,
+      "54": 1,
+      "55": 2,
+      "56": 1,
+      "57": 1,
+      "58": 2,
+      "59": 2,
+      "60": 2
+    },
+    "writing": {
+      "task1": "Dear Contractor\nOur neighborhood has had many noise problems from weekend construction. For example, loud work on Sept 2 at 7:15am and Sept 9 at 6:50am disturbed many families. We ask you to place noise barriers, begin after 8:30am, and give us one contact person for urgent calls. Please also share a clear work schedule in writing and an escalation process if problems return\nThank you",
+      "task2": "I agree that cities should stop shared e-scooters after midnight. At night people are often tired or may drink, so accidents happen more. For example, in many cities, hospitals report more scooter injuries after 11 pm. A counter-argument is that some workers need scooters to go home late, but the city can help them by giving late buses or cheaper ride-hail rides, so safety is still first while access is not lost",
+      "task3": "Cohort A showed good engagement but only moderate completion and limited community, Cohort B had the highest completion and forum activity though with lower active minutes, while Cohort C was most engaged but weakest in completion and community. Overall, Cohort B offered the best balance, so a useful intervention would be adding weekly reminders or short check-ins to boost engagement without harming completion, and the main KPI to monitor should be the completion rate"
+    },
+    "translatedQuestions": [
+      24,
+      "24",
+      25,
+      "25"
+    ],
+    "translationPenalties": {
+      "question-24": -0.5,
+      "question-25": -0.5,
+      "transcript-1": -1,
+      "transcript-2": -1,
+      "writing-task-2": -0.5
+    }
+  },
+  "results": {
+    "grammar": 20,
+    "reading": 19,
+    "listening": 9,
+    "writing": 7.5,
+    "total": 55.5,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -1.5
+  },
+  "timeSpent": "26:16",
+  "testData": {
+    "testId": "IELTS_STARTER_3_0_PAPER_G",
+    "testDate": "2025-09-09",
+    "testTitle": "IELTS Starter 3.0 Practice Test (EN–VI) — Grammar & Meaning Focus, Paper G"
+  }
+}
