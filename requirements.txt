@@ -1,0 +1,14 @@
+# Core Server Dependencies
+express
+helmet
+fs-extra
+puppeteer
+body-parser
+cors
+
+# Python TTS Dependencies (for Coqui TTS)
+# Install with: pip install -r requirements.txt
+# TTS>=0.22.0
+# torch>=2.0.0
+# numpy>=1.22.0
+

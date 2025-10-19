@@ -47,10 +47,10 @@ app.use(helmet({
             styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdnjs.cloudflare.com"],
             fontSrc: ["'self'", "https://fonts.gstatic.com", "https://cdnjs.cloudflare.com"],
             scriptSrc: ["'self'", "'unsafe-inline'"],
-            connectSrc: ["'self'"],
+            connectSrc: ["'self'", "http://localhost:5050"], // Allow local TTS server
             imgSrc: ["'self'", "data:", "https:"],
             objectSrc: ["'none'"],
-            mediaSrc: ["'self'"],
+            mediaSrc: ["'self'", "blob:"], // Allow blob URLs for audio
             frameSrc: ["'none'"],
             workerSrc: ["'none'"], // Block service workers
             childSrc: ["'none'"],
@@ -98,52 +98,69 @@ async function loadTestData(date = null) {
     try {
         console.log('=== loadTestData called ===');
         
-        // If no date specified, use today's date
-        const testDate = date || moment().format('YYYY-MM-DD');
-        const questionsFile = path.join(questionsDir, `${testDate}.json`);
+        // Get all available JSON files in questions directory (recursively)
+        async function getAllJsonFiles(dir) {
+            const files = [];
+            const items = await fs.readdir(dir, { withFileTypes: true });
+            
+            for (const item of items) {
+                const fullPath = path.join(dir, item.name);
+                if (item.isDirectory()) {
+                    // Recursively search subdirectories
+                    const subFiles = await getAllJsonFiles(fullPath);
+                    files.push(...subFiles);
+                } else if (item.isFile() && item.name.endsWith('.json')) {
+                    files.push(fullPath);
+                }
+            }
+            
+            return files;
+        }
         
-        console.log(`Attempting to load test data for date: ${testDate}`);
-        console.log(`Looking for file: ${questionsFile}`);
+        // Get all available JSON files
+        const allJsonFiles = await getAllJsonFiles(questionsDir);
+        console.log('All available JSON test files:', allJsonFiles.map(f => path.relative(questionsDir, f)));
+        
+        if (allJsonFiles.length === 0) {
+            throw new Error('No test data files found in questions directory');
+        }
+        
+        let questionsFile = null;
+        
+        // If date is specified, try to find that specific file
+        if (date) {
+            const testDate = moment(date).format('YYYY-MM-DD');
+            questionsFile = allJsonFiles.find(f => f.includes(testDate));
+            console.log(`Looking for test file with date: ${testDate}`);
+        }
+        
+        // If no specific file found, try today's date
+        if (!questionsFile) {
+            const todayDate = moment().format('YYYY-MM-DD');
+            questionsFile = allJsonFiles.find(f => f.includes(todayDate));
+            console.log(`Looking for today's test file: ${todayDate}`);
+        }
+        
+        // If still no file found, use the most recent file (sort by date in filename)
+        if (!questionsFile) {
+            // Sort files by date (newest first)
+            const sortedFiles = allJsonFiles.sort((a, b) => {
+                const dateRegex = /(\d{4}-\d{2}-\d{2})/;
+                const dateA = a.match(dateRegex)?.[1] || '0000-00-00';
+                const dateB = b.match(dateRegex)?.[1] || '0000-00-00';
+                return dateB.localeCompare(dateA); // Descending order
+            });
+            questionsFile = sortedFiles[0];
+            console.log('Using most recent test file:', path.relative(questionsDir, questionsFile));
+        }
+        
+        console.log(`Loading test file: ${questionsFile}`);
         console.log(`Questions directory: ${questionsDir}`);
         
-        // List all files in questions directory
-        try {
-            const allFiles = await fs.readdir(questionsDir);
-            console.log('Available files in questions directory:', allFiles);
-        } catch (dirError) {
-            console.error('Error reading questions directory:', dirError);
-        }
-        
-        // Check if the specific date file exists
-        const fileExists = await fs.pathExists(questionsFile);
-        console.log(`File exists check for ${questionsFile}:`, fileExists);
-        
-        if (fileExists) {
-            console.log(`Loading file: ${questionsFile}`);
-            testData = await fs.readJson(questionsFile);
-            console.log(`Successfully loaded test data from: ${questionsFile}`);
-            console.log('Test data keys:', Object.keys(testData || {}));
-        } else {
-            console.log(`File not found: ${questionsFile}, trying default file...`);
-            // Fallback to the default file (2025-08-04)
-            const defaultFile = path.join(questionsDir, '2025-08-05.json');
-            console.log(`Looking for default file: ${defaultFile}`);
-            
-            const defaultExists = await fs.pathExists(defaultFile);
-            console.log(`Default file exists: ${defaultExists}`);
-            
-            if (defaultExists) {
-                console.log(`Loading default file: ${defaultFile}`);
-                testData = await fs.readJson(defaultFile);
-                console.log(`Successfully loaded default test data from: ${defaultFile}`);
-                console.log('Test data keys:', Object.keys(testData || {}));
-            } else {
-                console.error('No test data files found. Available files:');
-                const files = await fs.readdir(questionsDir);
-                console.error('Files in questions directory:', files);
-                throw new Error('No test data files found');
-            }
-        }
+        // Load the test data
+        testData = await fs.readJson(questionsFile);
+        console.log(`Successfully loaded test data from: ${path.relative(questionsDir, questionsFile)}`);
+        console.log('Test data keys:', Object.keys(testData || {}));
         
         // Validate test data structure
         if (!testData) {
@@ -828,7 +845,9 @@ app.post('/api/generate-pdf', async (req, res) => {
             testData: testData
         };
         
-        const answersFilePath = path.join(answersDir, `answers_${testTimestamp}.json`);
+        // Clean timestamp for filename (remove colons and special chars)
+        const cleanTimestamp = testTimestamp.replace(/[:.]/g, '-');
+        const answersFilePath = path.join(answersDir, `answers_${cleanTimestamp}.json`);
         console.log('Writing answers to:', answersFilePath);
         
         try {
@@ -875,7 +894,7 @@ app.post('/api/generate-pdf', async (req, res) => {
         });
         
         // Save PDF to user directory
-        const pdfFileName = `IELTS_Test_Results_${testTimestamp}.pdf`;
+        const pdfFileName = `IELTS_Test_Results_${cleanTimestamp}.pdf`;
         const pdfFilePath = path.join(pdfsDir, pdfFileName);
         await fs.writeFile(pdfFilePath, pdfBuffer);
         
@@ -1573,28 +1592,39 @@ function generatePDFHTML(submission) {
         </div>
         
         <div class="section">
-            <h2>${currentTestData.sections.grammar.title}</h2>
-            ${currentTestData.sections.grammar.questions.map(q => {
-                const selected = answers.grammar && answers.grammar[q.id];
-                const isCorrect = selected === q.correct;
+            ${(() => {
+                const grammarSection = currentTestData.sections.find(s => s.id === 'grammar');
+                if (!grammarSection || !grammarSection.questions) return '';
                 
                 return `
-                    <div class="question">
-                        <div class="question-number">Question ${q.id}</div>
-                        <div class="question-text">${q.question}</div>
-                        <div class="options">
-                            ${q.options.map((option, index) => {
-                                let className = 'option';
-                                if (index === q.correct) className += ' correct';
-                                if (index === selected && !isCorrect) className += ' incorrect';
-                                if (index === selected) className += ' selected';
-                                
-                                return `<div class="${className}">${String.fromCharCode(65 + index)}) ${option}</div>`;
-                            }).join('')}
-                        </div>
-                    </div>
+                    <h2>${grammarSection.title || 'Grammar & Language Use'}</h2>
+                    ${grammarSection.questions.map((q, qIndex) => {
+                        const selected = answers.grammar && answers.grammar[q.id];
+                        // Convert letter answer (A, B, C, D) to index (0, 1, 2, 3)
+                        const correctIndex = q.correctAnswer ? q.correctAnswer.charCodeAt(0) - 65 : -1;
+                        const selectedIndex = selected ? selected.charCodeAt(0) - 65 : -1;
+                        const isCorrect = selected === q.correctAnswer;
+                        
+                        return `
+                            <div class="question">
+                                <div class="question-number">Question ${qIndex + 1}</div>
+                                <div class="question-text">${q.questionText || q.question}</div>
+                                <div class="options">
+                                    ${q.options.map((option, index) => {
+                                        let className = 'option';
+                                        if (index === correctIndex) className += ' correct';
+                                        if (index === selectedIndex && !isCorrect) className += ' incorrect';
+                                        if (index === selectedIndex) className += ' selected';
+                                        
+                                        return `<div class="${className}">${option}</div>`;
+                                    }).join('')}
+                                </div>
+                                ${q.explanation ? `<div class="explanation"><strong>Explanation:</strong> ${q.explanation}</div>` : ''}
+                            </div>
+                        `;
+                    }).join('')}
                 `;
-            }).join('')}
+            })()}
         </div>
         
         <div class="section">

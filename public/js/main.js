@@ -2,17 +2,18 @@
 // This file loads all modules and initializes the application
 
 // Load all modules
-const modules = [
-    'js/modules/utils.js',
-    'js/modules/grading.js',
-    'js/modules/listening.js',
-    'js/modules/reading.js',
-    'js/modules/writing.js',
-    'js/modules/speaking.js',
-    'js/modules/pdf.js',
-    'js/modules/user-data.js',
-    'js/modules/core.js'
-];
+    const modules = [
+        'js/modules/utils.js',
+        'js/modules/grading.js',
+        'js/modules/coqui-tts.js',
+        'js/modules/listening.js',
+        'js/modules/reading.js',
+        'js/modules/grammar.js',
+        'js/modules/writing.js',
+        'js/modules/pdf.js',
+        'js/modules/user-data.js',
+        'js/modules/core.js'
+    ];
 
 // Function to load scripts dynamically
 function loadScript(src) {

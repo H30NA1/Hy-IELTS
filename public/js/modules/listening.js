@@ -18,15 +18,36 @@ class IELTSListening {
         this.isProcessingQueue = false;
         this.voiceProfiles = {};
         this.testData = null;
+        this.eventsInitialized = false; // FLAG to prevent duplicate event listeners
     }
 
     async initialize() {
         await this.loadTestData();
         this.loadVoiceProfilesFromData();
-        this.initializeSpeechSynthesis();
+        await this.initializeTTSProvider(); // NEW: Initialize TTS Provider
         this.renderQuestions();
         this.setupEventListeners();
         this.generateAudioScripts();
+    }
+    
+    async initializeTTSProvider() {
+        // Try Coqui TTS first, fallback to browser
+        if (window.CoquiTTSProvider) {
+            this.coquiTTS = new CoquiTTSProvider();
+            const available = await this.coquiTTS.initialize();
+            
+            if (available) {
+                console.log('✅ Using Coqui TTS (High Quality, Local)');
+                this.useCoquiTTS = true;
+                this.loadCoquiVoices();
+                return;
+            }
+        }
+        
+        // Fallback to browser speech synthesis
+        console.log('🎤 Using Browser Speech Synthesis (Fallback)');
+        this.useCoquiTTS = false;
+        this.initializeSpeechSynthesis();
     }
 
     async loadTestData() {
@@ -156,72 +177,171 @@ class IELTSListening {
 
     initializeSpeechSynthesis() {
         if (this.speechSynthesis) {
+            console.log('🎤 Initializing Browser Speech Synthesis...');
+            
             // Load voices
             this.loadVoices();
             
-            // Handle voice loading
+            // Handle voice loading (important for Chrome which loads voices asynchronously)
             if (this.speechSynthesis.onvoiceschanged !== undefined) {
                 this.speechSynthesis.onvoiceschanged = () => this.loadVoices();
             }
+            
+            // Force load voices after a delay (Chrome fix)
+            setTimeout(() => this.loadVoices(), 100);
         }
+    }
+
+    loadCoquiVoices() {
+        // Use Coqui TTS voices
+        if (!this.coquiTTS || !this.coquiTTS.voices.length) {
+            console.warn('⚠️ No Coqui voices available');
+            return;
+        }
+
+        console.log('\n📊 ========== COQUI TTS VOICES ========== 📊');
+        console.log(`📢 Total voices available: ${this.coquiTTS.voices.length}`);
+        this.coquiTTS.voices.forEach((voice, index) => {
+            console.log(`${index + 1}. ${voice.name} (${voice.accent}) [${voice.gender}]`);
+        });
+        console.log('📊 ===================================== 📊\n');
+
+        // Assign random voices to speakers
+        this.speakers = {
+            male:     this.coquiTTS.getRandomVoiceForSpeaker('male'),
+            female:   this.coquiTTS.getRandomVoiceForSpeaker('female'),
+            narrator: this.coquiTTS.getRandomVoiceForSpeaker('narrator')
+        };
+
+        console.log(`\n🎭 ========== COQUI VOICE SELECTION ========== 🎭`);
+        console.log(`   👨 Male Voice: ${this.speakers.male.name}`);
+        console.log(`   👩 Female Voice: ${this.speakers.female.name}`);
+        console.log(`   📣 Narrator Voice: ${this.speakers.narrator.name}`);
+        console.log(`🎭 ========================================== 🎭\n`);
     }
 
     loadVoices() {
         this.voices = this.speechSynthesis.getVoices();
         
-        // Prefer English voices
+        if (this.voices.length === 0) {
+            console.log('⚠️ No voices loaded yet, waiting...');
+            return;
+        }
+        
+        // Show ALL available voices for debugging
+        console.log('\n📊 ========== ALL AVAILABLE VOICES ========== 📊');
+        console.log(`📢 Total voices available: ${this.voices.length}`);
+        this.voices.forEach((voice, index) => {
+            console.log(`${index + 1}. ${voice.name} (${voice.lang}) [${voice.localService ? 'Local' : 'Remote'}]`);
+        });
+        console.log('📊 ========================================== 📊\n');
+        
+        // Get English voices (include ALL English variants)
         const englishVoices = this.voices.filter(voice => 
             voice.lang.startsWith('en') || voice.lang.includes('English')
         );
         
+        console.log(`🌍 English voices found: ${englishVoices.length}`);
+        
         if (englishVoices.length > 0) {
-            // Select different voices for different speakers
-            this.selectSpeakerVoices(englishVoices);
+            // Select RANDOM different voices for different speakers each time
+            this.selectRandomSpeakerVoices(englishVoices);
         } else if (this.voices.length > 0) {
-            // Fallback to any available voices
-            this.speakers.male = this.voices[0];
-            this.speakers.female = this.voices[1] || this.voices[0];
-            this.speakers.narrator = this.voices[2] || this.voices[0];
+            // Fallback to any available voices with randomization
+            console.log('⚠️ No English voices found, using all available voices');
+            this.selectRandomSpeakerVoices(this.voices);
         }
         
-        console.log('Speech synthesis voices loaded:', this.voices.length);
-        console.log('Selected speakers:', {
-            male: this.speakers.male ? this.speakers.male.name : 'None',
-            female: this.speakers.female ? this.speakers.female.name : 'None',
-            narrator: this.speakers.narrator ? this.speakers.narrator.name : 'None'
-        });
+        console.log(`\n🎭 ========== VOICE RANDOMIZATION ========== 🎭`);
+        console.log(`\n🎤 RANDOMLY SELECTED SPEAKERS FOR THIS SESSION:`);
+        console.log(`   👨 Male Voice: ${this.speakers.male ? this.speakers.male.name : 'None'} (${this.speakers.male?.lang})`);
+        console.log(`   👩 Female Voice: ${this.speakers.female ? this.speakers.female.name : 'None'} (${this.speakers.female?.lang})`);
+        console.log(`   📣 Narrator Voice: ${this.speakers.narrator ? this.speakers.narrator.name : 'None'} (${this.speakers.narrator?.lang})`);
+        console.log(`🎭 ========================================== 🎭\n`);
     }
 
-    selectSpeakerVoices(englishVoices) {
-        // Find female voices
-        const femaleVoices = englishVoices.filter(voice => 
-            voice.name.toLowerCase().includes('female') || 
-            voice.name.toLowerCase().includes('woman') ||
-            voice.name.toLowerCase().includes('susan') ||
-            voice.name.toLowerCase().includes('karen') ||
-            voice.name.toLowerCase().includes('zira') ||
-            voice.name.toLowerCase().includes('hazel')
-        );
+    selectRandomSpeakerVoices(englishVoices) {
+        // Create a pool of voices for each type with extended name matching
+        const femaleVoices = englishVoices.filter(voice => {
+            const nameLower = voice.name.toLowerCase();
+            return nameLower.includes('female') || 
+                   nameLower.includes('woman') ||
+                   nameLower.includes('susan') ||
+                   nameLower.includes('karen') ||
+                   nameLower.includes('zira') ||
+                   nameLower.includes('hazel') ||
+                   nameLower.includes('samantha') ||
+                   nameLower.includes('victoria') ||
+                   nameLower.includes('catherine') ||
+                   nameLower.includes('jessica') ||
+                   nameLower.includes('linda') ||
+                   nameLower.includes('fiona') ||
+                   nameLower.includes('moira') ||
+                   nameLower.includes('tessa') ||
+                   nameLower.includes('veena') ||
+                   voice.lang.startsWith('en') && voice.voiceURI.toLowerCase().includes('female');
+        });
         
-        // Find male voices
-        const maleVoices = englishVoices.filter(voice => 
-            voice.name.toLowerCase().includes('male') || 
-            voice.name.toLowerCase().includes('man') ||
-            voice.name.toLowerCase().includes('david') ||
-            voice.name.toLowerCase().includes('mark') ||
-            voice.name.toLowerCase().includes('richard') ||
-            voice.name.toLowerCase().includes('daniel')
-        );
+        const maleVoices = englishVoices.filter(voice => {
+            const nameLower = voice.name.toLowerCase();
+            return nameLower.includes('male') || 
+                   nameLower.includes('man') ||
+                   nameLower.includes('david') ||
+                   nameLower.includes('mark') ||
+                   nameLower.includes('richard') ||
+                   nameLower.includes('daniel') ||
+                   nameLower.includes('thomas') ||
+                   nameLower.includes('james') ||
+                   nameLower.includes('michael') ||
+                   nameLower.includes('oliver') ||
+                   nameLower.includes('alex') ||
+                   nameLower.includes('fred') ||
+                   nameLower.includes('rishi') ||
+                   voice.lang.startsWith('en') && voice.voiceURI.toLowerCase().includes('male');
+        });
         
-        // Assign voices
-        this.speakers.female = femaleVoices[0] || englishVoices[0];
-        this.speakers.male = maleVoices[0] || englishVoices[1] || englishVoices[0];
-        this.speakers.narrator = englishVoices[2] || englishVoices[0];
+        console.log(`Voice pools: ${femaleVoices.length} female, ${maleVoices.length} male`);
+        
+        // Create a shuffled array to ensure variety
+        const shuffledEnglish = this.shuffleArray([...englishVoices]);
+        const shuffledFemale = this.shuffleArray([...femaleVoices]);
+        const shuffledMale = this.shuffleArray([...maleVoices]);
+        
+        // Randomly select voices from pools
+        if (shuffledFemale.length > 0) {
+            this.speakers.female = shuffledFemale[0];
+        } else {
+            this.speakers.female = shuffledEnglish[0];
+        }
+        
+        if (shuffledMale.length > 0) {
+            this.speakers.male = shuffledMale[0];
+        } else {
+            // If no male voice found, pick a different voice from English pool
+            const idx = Math.min(1, shuffledEnglish.length - 1);
+            this.speakers.male = shuffledEnglish[idx];
+        }
+        
+        // Narrator gets a third random voice
+        const narratorPool = shuffledEnglish.filter(v => 
+            v !== this.speakers.male && v !== this.speakers.female
+        );
+        this.speakers.narrator = narratorPool[0] || shuffledEnglish[Math.min(2, shuffledEnglish.length - 1)];
         
         // Ensure we have different voices for male and female
         if (this.speakers.male === this.speakers.female && englishVoices.length > 1) {
-            this.speakers.male = englishVoices[1];
+            this.speakers.male = shuffledEnglish[1];
         }
+    }
+    
+    // Helper function to shuffle array (Fisher-Yates algorithm)
+    shuffleArray(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
     }
 
     generateAudioScripts() {
@@ -529,11 +649,14 @@ Now listen carefully and answer the questions.`;
     createQuestionElementFromData(questionData, partNumber) {
         const questionDiv = IELTSUtils.createElement('div', 'question');
         
+        // Safety check: ensure options exists and is an array
+        const options = questionData.options || [];
+        
         questionDiv.innerHTML = `
             <h4>Question ${questionData.id.replace('listening-q', '')}</h4>
             <p>${questionData.questionText}</p>
             <div class="options">
-                ${questionData.options.map(option => `
+                ${options.map(option => `
                     <label>
                         <input type="radio" name="${questionData.id}" value="${option.charAt(0)}">
                         ${option}
@@ -657,10 +780,22 @@ Now listen carefully and answer the questions.`;
     }
 
     setupEventListeners() {
-        // Option selection
+        // Prevent duplicate event listener registration
+        if (this.eventsInitialized) {
+            console.log('⚠️ Listening: Event listeners already initialized, skipping...');
+            return;
+        }
+        
+        console.log('✅ Listening: Initializing event listeners...');
+        
+        // Option selection (only for listening section)
         document.addEventListener('click', (e) => {
             if (e.target.closest('.option')) {
                 const option = e.target.closest('.option');
+                // Only process if this option is in the listening section
+                const listeningSection = option.closest('#listening');
+                if (!listeningSection) return;
+                
                 const questionId = option.dataset.question;
                 const optionIndex = option.dataset.option;
                 
@@ -677,12 +812,18 @@ Now listen carefully and answer the questions.`;
             }
         });
 
-        // Audio play buttons
+        // Audio play/stop buttons
         document.addEventListener('click', (e) => {
             if (e.target.closest('.play-audio-btn')) {
                 const btn = e.target.closest('.play-audio-btn');
                 const partNumber = btn.dataset.part;
-                this.playAudio(partNumber);
+                
+                // Toggle between play and stop
+                if (btn.classList.contains('playing')) {
+                    this.stopAudio();
+                } else {
+                    this.playAudio(partNumber);
+                }
             }
         });
 
@@ -694,6 +835,10 @@ Now listen carefully and answer the questions.`;
                 this.saveListeningAnswer(questionId, selectedValue);
             }
         });
+        
+        // Mark as initialized
+        this.eventsInitialized = true;
+        console.log('✅ Listening: Event listeners initialization complete');
     }
 
     saveListeningAnswer(questionId, selectedValue) {
@@ -768,7 +913,10 @@ Now listen carefully and answer the questions.`;
     }
 
     playAudio(partNumber) {
+        console.log(`🎮 playAudio called for Part ${partNumber}, isPlaying = ${this.isPlaying}`);
+        
         if (this.isPlaying) {
+            console.log('⏸️ Already playing, stopping audio...');
             this.stopAudio();
             return;
         }
@@ -785,10 +933,12 @@ Now listen carefully and answer the questions.`;
             return;
         }
 
-        // Stop any current speech
+        // Stop any current speech and reset state
         this.speechSynthesis.cancel();
         this.speechQueue = [];
         this.isProcessingQueue = false;
+        this.isPlaying = false; // Reset to false before starting
+        this.currentUtterance = null;
 
         // Update button state
         const playBtn = document.querySelector(`[data-part="${partNumber}"]`);
@@ -797,7 +947,9 @@ Now listen carefully and answer the questions.`;
             playBtn.classList.add('playing');
         }
 
+        // Set to true AFTER reset
         this.isPlaying = true;
+        console.log(`▶️ Starting audio playback for Part ${partNumber}`);
 
         // Build speech queue
         this.buildSpeechQueue(script, partNumber);
@@ -807,15 +959,44 @@ Now listen carefully and answer the questions.`;
     }
 
     buildSpeechQueue(script, partNumber) {
-        // Add narrator introduction
+        // Add narrator introduction with pause handling
         if (script.narrator) {
             const narratorVoice = this.getVoiceForSpeaker('narrator', partNumber);
             console.log(`Part ${partNumber} - Narrator voice:`, narratorVoice?.name);
-            this.speechQueue.push({
-                text: script.narrator,
-                voice: narratorVoice,
-                speaker: 'narrator'
-            });
+            
+            // Split narrator text by [Pause] marker
+            const narratorParts = script.narrator.split('[Pause]');
+            
+            // Add first part (before pause)
+            if (narratorParts[0] && narratorParts[0].trim()) {
+                this.speechQueue.push({
+                    text: narratorParts[0].trim(),
+                    voice: narratorVoice,
+                    speaker: 'narrator',
+                    isPause: false
+                });
+            }
+            
+            // Add 60-second pause
+            if (narratorParts.length > 1) {
+                this.speechQueue.push({
+                    text: '',
+                    voice: narratorVoice,
+                    speaker: 'narrator',
+                    isPause: true,
+                    pauseDuration: 60000 // 60 seconds
+                });
+            }
+            
+            // Add second part (after pause)
+            if (narratorParts[1] && narratorParts[1].trim()) {
+                this.speechQueue.push({
+                    text: narratorParts[1].trim(),
+                    voice: narratorVoice,
+                    speaker: 'narrator',
+                    isPause: false
+                });
+            }
         }
 
         // Add conversation parts
@@ -827,7 +1008,8 @@ Now listen carefully and answer the questions.`;
                     text: part.text,
                     voice: voice,
                     speaker: part.speaker,
-                    index: index
+                    index: index,
+                    isPause: false
                 });
             });
         }
@@ -836,68 +1018,46 @@ Now listen carefully and answer the questions.`;
     }
 
     getVoiceForSpeaker(speaker, partNumber = null) {
-        // Get available voices
-        const voices = this.speechSynthesis.getVoices();
-        const englishVoices = voices.filter(voice => voice.lang.startsWith('en'));
+        // USE THE RANDOMLY SELECTED VOICES from this.speakers
+        // This ensures we use the voices that were randomized during loadVoices()
+        let selectedVoice = null;
         
-        if (englishVoices.length === 0) {
-            return this.speakers.narrator || voices[0];
-        }
-        
-        // Select different voices based on speaker type AND part number
-        let voiceIndex = 0;
-        
-        switch (speaker) {
+        switch (speaker.toLowerCase()) {
             case 'male':
-                // Try to find male-sounding voices
-                const maleVoices = englishVoices.filter(voice => 
-                    voice.name.toLowerCase().includes('male') || 
-                    voice.name.toLowerCase().includes('man') ||
-                    voice.name.toLowerCase().includes('david') ||
-                    voice.name.toLowerCase().includes('mark') ||
-                    voice.name.toLowerCase().includes('richard') ||
-                    voice.name.toLowerCase().includes('daniel') ||
-                    voice.name.toLowerCase().includes('alex')
-                );
-                
-                // Use different male voices for different parts
-                if (partNumber) {
-                    voiceIndex = (partNumber - 1) % maleVoices.length;
-                }
-                return maleVoices[voiceIndex] || englishVoices[0];
+                selectedVoice = this.speakers.male;
+                console.log(`🎤 Using male voice:`, selectedVoice?.name, selectedVoice?.lang);
+                break;
                 
             case 'female':
-                // Try to find female-sounding voices
-                const femaleVoices = englishVoices.filter(voice => 
-                    voice.name.toLowerCase().includes('female') || 
-                    voice.name.toLowerCase().includes('woman') ||
-                    voice.name.toLowerCase().includes('zira') ||
-                    voice.name.toLowerCase().includes('susan') ||
-                    voice.name.toLowerCase().includes('hazel') ||
-                    voice.name.toLowerCase().includes('catherine') ||
-                    voice.name.toLowerCase().includes('sarah')
-                );
-                
-                // Use different female voices for different parts
-                if (partNumber) {
-                    voiceIndex = (partNumber - 1) % femaleVoices.length;
-                }
-                return femaleVoices[voiceIndex] || englishVoices[1] || englishVoices[0];
+                selectedVoice = this.speakers.female;
+                console.log(`🎤 Using female voice:`, selectedVoice?.name, selectedVoice?.lang);
+                break;
                 
             case 'narrator':
             default:
-                // Use different narrator voices for different parts
-                if (partNumber) {
-                    voiceIndex = (partNumber - 1) % englishVoices.length;
-                }
-                return englishVoices[voiceIndex] || englishVoices[0];
+                selectedVoice = this.speakers.narrator;
+                console.log(`🎤 Using narrator voice:`, selectedVoice?.name, selectedVoice?.lang);
+                break;
         }
+        
+        // Fallback if no voice is selected (shouldn't happen)
+        if (!selectedVoice) {
+            console.warn(`⚠️ No voice found for ${speaker}, using fallback`);
+            const voices = this.speechSynthesis.getVoices();
+            const englishVoices = voices.filter(voice => voice.lang.startsWith('en'));
+            selectedVoice = englishVoices[0] || voices[0];
+        }
+        
+        return selectedVoice;
     }
 
-    processSpeechQueue(partNumber) {
+    async processSpeechQueue(partNumber) {
+        console.log(`📋 processSpeechQueue called: queue length = ${this.speechQueue.length}, isProcessingQueue = ${this.isProcessingQueue}, isPlaying = ${this.isPlaying}`);
+        
         if (this.isProcessingQueue || this.speechQueue.length === 0) {
             if (this.speechQueue.length === 0 && this.isPlaying) {
                 // Queue is empty, audio finished
+                console.log('✅ Queue empty, finishing audio...');
                 this.finishAudio(partNumber);
             }
             return;
@@ -905,59 +1065,171 @@ Now listen carefully and answer the questions.`;
 
         this.isProcessingQueue = true;
         const speechItem = this.speechQueue.shift();
+        console.log(`🎬 Processing speech item:`, {isPause: speechItem.isPause, speaker: speechItem.speaker, textLength: speechItem.text?.length});
 
         // Get voice profile for this part and speaker
         const voiceProfile = this.getVoiceProfile(partNumber, speechItem.speaker);
         
-        // Create speech utterance with dynamic voice characteristics
+        console.log(`🎵 Part ${partNumber} - ${speechItem.speaker}:`, {
+            voiceName: speechItem.voice?.name,
+            provider: 'Browser Speech Synthesis',
+            rate: voiceProfile.rate.toFixed(2),
+            pitch: voiceProfile.pitch.toFixed(2),
+            volume: voiceProfile.volume.toFixed(2)
+        });
+
+        // USE COQUI TTS OR BROWSER SPEECH SYNTHESIS
+        if (this.useCoquiTTS) {
+            this.processCoquiSpeech(speechItem, voiceProfile, partNumber);
+        } else {
+            this.processBrowserSpeech(speechItem, voiceProfile, partNumber);
+        }
+    }
+    
+    processCoquiSpeech(speechItem, voiceProfile, partNumber) {
+        // Handle pause items
+        if (speechItem.isPause) {
+            const pauseDuration = speechItem.pauseDuration || 60000;
+            console.log(`⏸️ Pausing for ${pauseDuration / 1000} seconds...`);
+            this.showSpeakerIndicator(partNumber, 'narrator', `Pause - ${pauseDuration / 1000}s to read questions`);
+            
+            setTimeout(() => {
+                console.log('⏸️ Pause finished, continuing...');
+                this.isProcessingQueue = false;
+                
+                if (this.isPlaying && this.speechQueue.length > 0) {
+                    this.processSpeechQueue(partNumber);
+                }
+            }, pauseDuration);
+            return;
+        }
+        
+        // Get voice ID from speechItem
+        const voiceId = speechItem.voice?.id || 'en-us';
+        
+        // Use Coqui TTS to speak
+        this.coquiTTS.speak(
+            speechItem.text,
+            voiceId,
+            () => {
+                // onStart callback
+                console.log(`🔊 Speaking (Coqui): ${speechItem.speaker} - "${speechItem.text.substring(0, 50)}..."`);
+                this.showSpeakerIndicator(partNumber, speechItem.speaker, `Now speaking: ${voiceProfile.name || speechItem.speaker}`);
+            },
+            () => {
+                // onEnd callback
+                console.log(`✅ Finished (Coqui): ${speechItem.speaker}`);
+                this.isProcessingQueue = false;
+                
+                if (this.isPlaying && this.speechQueue.length > 0) {
+                    setTimeout(() => {
+                        this.processSpeechQueue(partNumber);
+                    }, 200);
+                } else if (this.speechQueue.length === 0) {
+                    this.finishAudio(partNumber);
+                }
+            }
+        );
+    }
+    
+    processBrowserSpeech(speechItem, voiceProfile, partNumber) {
+        // Handle pause items
+        if (speechItem.isPause) {
+            const pauseDuration = speechItem.pauseDuration || 60000;
+            console.log(`⏸️ Pausing for ${pauseDuration / 1000} seconds...`);
+            this.showSpeakerIndicator(partNumber, 'narrator', `Pause - ${pauseDuration / 1000}s to read questions`);
+            
+            setTimeout(() => {
+                console.log('⏸️ Pause finished, continuing...');
+                this.isProcessingQueue = false;
+                
+                if (this.isPlaying && this.speechQueue.length > 0) {
+                    this.processSpeechQueue(partNumber);
+                }
+            }, pauseDuration);
+            return;
+        }
+        
         const utterance = new SpeechSynthesisUtterance(speechItem.text);
         
-        // Apply voice profile FIRST, then set the voice object
+        utterance.voice = speechItem.voice.nativeVoice || speechItem.voice;
         utterance.rate = voiceProfile.rate;
         utterance.pitch = voiceProfile.pitch;
         utterance.volume = voiceProfile.volume;
-        
-        // Set the voice object AFTER applying profile settings
-        utterance.voice = speechItem.voice;
 
-        // Add some randomness to make it more natural
         this.addVoiceVariation(utterance, speechItem.speaker, partNumber);
+        utterance.voice = speechItem.voice.nativeVoice || speechItem.voice;
         
-        // Debug logging
-        console.log(`Part ${partNumber} - ${speechItem.speaker}:`, {
-            voice: speechItem.voice?.name,
-            pitch: utterance.pitch,
-            rate: utterance.rate,
-            volume: utterance.volume,
-            profile: voiceProfile
-        });
+        this.currentUtterance = utterance;
 
-        // Handle speech events
         utterance.onstart = () => {
-            console.log(`Speaking: ${voiceProfile.name} (${speechItem.speaker}) - "${speechItem.text.substring(0, 50)}..."`);
+            console.log(`🔊 Speaking (Browser): ${voiceProfile.name} - "${speechItem.text.substring(0, 50)}..."`);
             this.showSpeakerIndicator(partNumber, speechItem.speaker, voiceProfile.name);
+            
+            if (this.speechSynthesis.paused) {
+                this.speechSynthesis.resume();
+            }
         };
 
         utterance.onend = () => {
-            console.log(`Finished: ${voiceProfile.name}`);
+            console.log(`✅ Finished (Browser): ${voiceProfile.name}`);
             this.isProcessingQueue = false;
+            this.currentUtterance = null;
             
-            // Add a small pause between speakers (varies by speaker type)
+            if (!this.isPlaying) {
+                console.log('Playback stopped, not processing next item');
+                return;
+            }
+            
             const pauseDuration = this.getPauseDuration(speechItem.speaker);
             setTimeout(() => {
-                this.processSpeechQueue(partNumber);
+                if (this.isPlaying) {
+                    this.processSpeechQueue(partNumber);
+                }
             }, pauseDuration);
         };
 
         utterance.onerror = (event) => {
-            console.error('Speech synthesis error:', event.error);
+            console.error('❌ Browser speech error:', event.error, event);
             this.isProcessingQueue = false;
-            this.finishAudio(partNumber);
-            IELTSUtils.showNotification('Audio playback failed. Please try again.', 'error');
+            this.currentUtterance = null;
+            
+            if (event.error === 'interrupted' || event.error === 'canceled') {
+                if (this.isPlaying && this.speechQueue.length > 0) {
+                    setTimeout(() => this.processSpeechQueue(partNumber), 100);
+                } else {
+                    this.finishAudio(partNumber);
+                }
+            } else {
+                if (this.isPlaying && this.speechQueue.length > 0) {
+                    setTimeout(() => this.processSpeechQueue(partNumber), 100);
+                } else {
+                    this.finishAudio(partNumber);
+                }
+            }
         };
 
-        // Start speaking
-        this.speechSynthesis.speak(utterance);
+        setTimeout(() => {
+            if (this.isPlaying) {
+                console.log('🗣️ Calling speechSynthesis.speak()...');
+                this.speechSynthesis.speak(utterance);
+                
+                // Periodically resume if paused (Chrome bug workaround)
+                const resumeInterval = setInterval(() => {
+                    if (!this.isPlaying || this.currentUtterance !== utterance) {
+                        clearInterval(resumeInterval);
+                        return;
+                    }
+                    
+                    // Only resume if paused, don't check if speaking
+                    // The onend event will handle completion
+                    if (this.speechSynthesis.paused && this.speechSynthesis.speaking) {
+                        console.log('🔄 Resuming paused speech...');
+                        this.speechSynthesis.resume();
+                    }
+                }, 5000);
+            }
+        }, 50);
     }
 
     getVoiceProfile(partNumber, speaker) {
@@ -1179,12 +1451,32 @@ Now listen carefully and answer the questions.`;
     }
 
     stopAudio() {
-        if (this.speechSynthesis) {
-            this.speechSynthesis.cancel();
-        }
+        // Set flags first to prevent any further processing
         this.isPlaying = false;
         this.isProcessingQueue = false;
+        
+        // Cancel current utterance
+        this.currentUtterance = null;
+        
+        // Clear the queue
         this.speechQueue = [];
+        
+        // Stop Coqui TTS if using it
+        if (this.useCoquiTTS && this.coquiTTS) {
+            this.coquiTTS.stop();
+        }
+        
+        // Cancel browser speech synthesis
+        if (this.speechSynthesis) {
+            this.speechSynthesis.cancel();
+            
+            // Additional cleanup for some browsers
+            setTimeout(() => {
+                if (this.speechSynthesis.speaking) {
+                    this.speechSynthesis.cancel();
+                }
+            }, 100);
+        }
 
         // Hide all speaker indicators
         for (let i = 1; i <= 4; i++) {
@@ -1197,6 +1489,8 @@ Now listen carefully and answer the questions.`;
             btn.innerHTML = '<i class="fas fa-play"></i> Play Part ' + partNumber + ' Audio';
             btn.classList.remove('playing');
         });
+        
+        console.log('🛑 Audio stopped and cleaned up');
     }
 
     reset() {

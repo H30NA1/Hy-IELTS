@@ -2,18 +2,14 @@
 class IELTSCore {
     constructor() {
         this.currentSection = 'listening';
-        this.sections = ['listening', 'reading', 'writing', 'speaking'];
+        this.sections = ['listening', 'reading', 'grammar', 'writing'];
         this.answers = {
             listening: {},
             reading: {},
+            grammar: {},
             writing: {
                 task1: '',
                 task2: ''
-            },
-            speaking: {
-                part1: '',
-                part2: '',
-                part3: ''
             }
         };
         this.translatedQuestions = new Set();
@@ -31,8 +27,8 @@ class IELTSCore {
         this.grading = new IELTSGrading();
         this.listening = new IELTSListening();
         this.reading = new IELTSReading();
+        this.grammar = new IELTSGrammar();
         this.writing = new IELTSWriting();
-        this.speaking = new IELTSSpeaking();
         this.pdf = new IELTSPDF();
         this.userData = new IELTSUserData();
 
@@ -45,6 +41,9 @@ class IELTSCore {
         try {
             console.log('Initializing IELTS Test application...');
             
+            // Update app title with dynamic version
+            this.updateAppTitle();
+            
             // Setup event listeners
             this.setupEventListeners();
             
@@ -54,8 +53,8 @@ class IELTSCore {
             // Initialize all modules
             await this.listening.initialize();
             await this.reading.initialize();
+            this.grammar.initialize();
             this.writing.initialize();
-            this.speaking.initialize();
             
             // Start timer and update UI
             this.startTimer();
@@ -67,6 +66,22 @@ class IELTSCore {
             console.error('Failed to initialize application:', error);
             this.showError('Failed to initialize test. Please refresh the page.');
         }
+    }
+    
+    updateAppTitle() {
+        // Generate dynamic version based on current date
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1; // 0-based
+        const version = `${year}.${month}`;
+        
+        const appTitle = document.getElementById('app-title');
+        if (appTitle) {
+            appTitle.textContent = `IELTS Mastery v${version}`;
+        }
+        
+        // Update page title
+        document.title = `IELTS Mastery v${version} - Full Exam Simulator`;
     }
 
     showNameModal() {
@@ -245,21 +260,19 @@ class IELTSCore {
     }
 
     updateProgress() {
-        const totalQuestions = 120; // 40 listening + 40 reading + 20 writing + 20 speaking
+        const totalQuestions = 100; // 40 listening + 30 reading + 20 grammar + 10 writing
         let answeredQuestions = 0;
         
         // Count answered questions from all sections
-        answeredQuestions += Object.keys(this.answers.listening).length;
-        answeredQuestions += Object.keys(this.answers.reading).length;
+        answeredQuestions += Object.keys(this.answers.listening || {}).length;
+        answeredQuestions += Object.keys(this.answers.reading || {}).length;
+        answeredQuestions += Object.keys(this.answers.grammar || {}).length;
         
         // Count writing tasks with content
-        if (this.answers.writing.task1 && this.answers.writing.task1.trim()) answeredQuestions++;
-        if (this.answers.writing.task2 && this.answers.writing.task2.trim()) answeredQuestions++;
-        
-        // Count speaking parts with content
-        if (this.answers.speaking.part1 && this.answers.speaking.part1.trim()) answeredQuestions++;
-        if (this.answers.speaking.part2 && this.answers.speaking.part2.trim()) answeredQuestions++;
-        if (this.answers.speaking.part3 && this.answers.speaking.part3.trim()) answeredQuestions++;
+        if (this.answers.writing) {
+            if (this.answers.writing.task1 && this.answers.writing.task1.trim()) answeredQuestions++;
+            if (this.answers.writing.task2 && this.answers.writing.task2.trim()) answeredQuestions++;
+        }
         
         const progress = (answeredQuestions / totalQuestions) * 100;
         const progressBar = document.getElementById('progress-bar-fill');
@@ -270,6 +283,19 @@ class IELTSCore {
 
     updateActivity() {
         this.updateProgress();
+    }
+
+    addTranslationPenalty() {
+        const questionId = event.target.closest('.translate-btn')?.dataset.question;
+        if (!questionId) return;
+        
+        // Track translation usage
+        if (!this.translationPenalties[questionId]) {
+            this.translationPenalties[questionId] = -0.5;
+            this.translatedQuestions.add(questionId);
+            console.log(`⚠️ Translation penalty added for question ${questionId}: -0.5 marks`);
+            console.log(`Total translation penalties: ${Object.keys(this.translationPenalties).length}`);
+        }
     }
 
     startTimer() {
@@ -335,25 +361,39 @@ class IELTSCore {
 
     showResults() {
         // Update raw scores
-        document.getElementById('listening-score').textContent = `${this.results.listening}/${this.results.listeningTotal}`;
-        document.getElementById('reading-score').textContent = `${this.results.reading}/${this.results.readingTotal}`;
-        document.getElementById('writing-score').textContent = `${this.results.writing}/${this.results.writingTotal}`;
-        document.getElementById('speaking-score').textContent = `${this.results.speaking}/${this.results.speakingTotal}`;
-        document.getElementById('total-score').textContent = `${this.results.total}/${this.results.listeningTotal + this.results.readingTotal + this.results.writingTotal + this.results.speakingTotal}`;
+        const listeningScore = document.getElementById('listening-score');
+        const readingScore = document.getElementById('reading-score');
+        const writingScore = document.getElementById('writing-score');
+        const grammarScore = document.getElementById('grammar-score');
+        const totalScore = document.getElementById('total-score');
+        
+        if (listeningScore) listeningScore.textContent = `${this.results.listening}/${this.results.listeningTotal}`;
+        if (readingScore) readingScore.textContent = `${this.results.reading}/${this.results.readingTotal}`;
+        if (writingScore) writingScore.textContent = `${this.results.writing}/${this.results.writingTotal}`;
+        if (grammarScore) grammarScore.textContent = `${this.results.grammar || 0}/${this.results.grammarTotal || 20}`;
+        if (totalScore) totalScore.textContent = `${this.results.total}/100`;
         
         // Update band scores
         if (this.results.bands) {
-            document.getElementById('listening-band').textContent = `Band ${this.results.bands.listening}`;
-            document.getElementById('reading-band').textContent = `Band ${this.results.bands.reading}`;
-            document.getElementById('writing-band').textContent = `Band ${this.results.bands.writing}`;
-            document.getElementById('speaking-band').textContent = `Band ${this.results.bands.speaking}`;
-            document.getElementById('overall-band').textContent = this.results.bands.overall;
+            const listeningBand = document.getElementById('listening-band');
+            const readingBand = document.getElementById('reading-band');
+            const writingBand = document.getElementById('writing-band');
+            const grammarBand = document.getElementById('grammar-band');
+            const overallBand = document.getElementById('overall-band');
+            
+            if (listeningBand) listeningBand.textContent = `Band ${this.results.bands.listening}`;
+            if (readingBand) readingBand.textContent = `Band ${this.results.bands.reading}`;
+            if (writingBand) writingBand.textContent = `Band ${this.results.bands.writing}`;
+            if (grammarBand) grammarBand.textContent = `Band ${this.results.bands.grammar || 0.0}`;
+            if (overallBand) overallBand.textContent = this.results.bands.overall;
         }
         
         // Show translation penalty if any
         if (this.results.translationPenalty > 0) {
-            document.getElementById('penalty-item').style.display = 'flex';
-            document.getElementById('penalty-score').textContent = `-${this.results.translationPenalty}`;
+            const penaltyItem = document.getElementById('penalty-item');
+            const penaltyScore = document.getElementById('penalty-score');
+            if (penaltyItem) penaltyItem.style.display = 'flex';
+            if (penaltyScore) penaltyScore.textContent = `-${this.results.translationPenalty}`;
         }
         
         // Show PDF download button

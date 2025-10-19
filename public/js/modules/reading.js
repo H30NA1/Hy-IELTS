@@ -109,10 +109,14 @@ class IELTSReading {
     }
 
     setupEventListeners() {
-        // Option selection
+        // Option selection (only for reading section)
         document.addEventListener('click', (e) => {
             if (e.target.closest('.option')) {
                 const option = e.target.closest('.option');
+                // Only process if this option is in the reading section
+                const readingSection = option.closest('#reading');
+                if (!readingSection) return;
+                
                 const questionId = option.dataset.question;
                 const optionIndex = option.dataset.option;
                 
@@ -175,22 +179,19 @@ class IELTSReading {
 
     translateQuestion(questionId) {
         const translationDiv = document.getElementById(`question-translation-${questionId}`);
-        const translationText = document.getElementById(`translation-text-${questionId}`);
         
-        if (!translationDiv || !translationText) return;
+        if (!translationDiv) {
+            console.warn(`Translation div not found for question: ${questionId}`);
+            return;
+        }
 
-        if (translationDiv.style.display === 'none') {
+        // Toggle translation visibility (translation text is already in HTML)
+        if (translationDiv.style.display === 'none' || !translationDiv.style.display) {
             translationDiv.style.display = 'block';
-            translationText.textContent = 'Translating...';
-            
-            // Simulate translation (in real implementation, this would call translation API)
-            setTimeout(() => {
-                translationText.textContent = `Vietnamese translation for question ${questionId}`;
-            }, 1000);
 
             // Add translation penalty
             if (window.ieltsTest) {
-                window.ieltsTest.translatedQuestions.add(parseInt(questionId));
+                window.ieltsTest.addTranslationPenalty();
             }
         } else {
             translationDiv.style.display = 'none';

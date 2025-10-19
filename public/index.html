@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IELTS Starter 1.0 - Practice Test</title>
+    <title>IELTS Practice Test - Full Exam Simulator</title>
     <link rel="stylesheet" href="styles.css">
+    
     <!-- Google Fonts - Inline CSS to avoid CSP issues -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -49,7 +50,7 @@
             <div class="header-content">
                 <h1 class="logo">
                     <i class="fas fa-graduation-cap"></i>
-                    IELTS Starter 1.0
+                    <span id="app-title">IELTS Practice Test</span>
                 </h1>
                 <div class="timer" id="timer">
                     <i class="fas fa-clock"></i>
@@ -152,9 +153,9 @@
                 <i class="fas fa-pen"></i>
                 <span>Writing</span>
             </button>
-            <button class="nav-btn" data-section="speaking">
-                <i class="fas fa-microphone"></i>
-                <span>Speaking</span>
+            <button class="nav-btn" data-section="grammar">
+                <i class="fas fa-language"></i>
+                <span>Grammar</span>
             </button>
         </nav>
 
@@ -342,92 +343,10 @@
                 </div>
             </section>
 
-            <!-- Speaking Section -->
-            <section id="speaking" class="test-section">
-                <div class="section-header">
-                    <h2>Section 4: Speaking</h2>
-                    <p class="section-info">3 parts • 11-14 minutes • Face-to-face interview with an examiner</p>
-                    <div class="section-description">
-                        <p>The Speaking test is a face-to-face interview with an examiner. It consists of 3 parts: Part 1 (Introduction and interview), Part 2 (Individual long turn), and Part 3 (Two-way discussion).</p>
-                        </div>
-                        </div>
-
-                <div class="speaking-tasks">
-                    <!-- Part 1 -->
-                    <div class="speaking-task">
-                        <h3>Part 1: Introduction and Interview (4-5 minutes)</h3>
-                        <div class="task-header">
-                            <p class="task-instruction">The examiner will ask you general questions about yourself and familiar topics such as home, family, work, studies and interests.</p>
-                                        </div>
-                        <div class="speaking-questions">
-                            <div class="question">
-                                <h4>Sample Questions:</h4>
-                                <ul>
-                                    <li>What is your full name?</li>
-                                    <li>Where are you from?</li>
-                                    <li>Do you work or study?</li>
-                                    <li>What do you like about your job/studies?</li>
-                                    <li>What do you do in your free time?</li>
-                                </ul>
-                                    </div>
-                                </div>
-                        <div class="speaking-area">
-                            <textarea id="speaking-part1" placeholder="Practice your answers here..." rows="6"></textarea>
-                            <div class="word-count">
-                                <span id="speaking-count-1">0</span> words
-                                        </div>
-                                    </div>
-                                </div>
-
-                    <!-- Part 2 -->
-                    <div class="speaking-task">
-                        <h3>Part 2: Individual Long Turn (3-4 minutes)</h3>
-                        <div class="task-header">
-                            <p class="task-instruction">You will be given a task card with a topic. You have 1 minute to prepare and then speak for 1-2 minutes on the topic.</p>
-                                        </div>
-                        <div class="speaking-card">
-                            <h4>Task Card:</h4>
-                            <p><strong>Describe a memorable trip you have taken.</strong></p>
-                            <p>You should say:</p>
-                            <ul>
-                                <li>where you went</li>
-                                <li>when you went there</li>
-                                <li>who you went with</li>
-                                <li>and explain why this trip was memorable for you</li>
-                            </ul>
-                                    </div>
-                        <div class="speaking-area">
-                            <textarea id="speaking-part2" placeholder="Plan and practice your 2-minute talk here..." rows="8"></textarea>
-                            <div class="word-count">
-                                <span id="speaking-count-2">0</span> words
-                                </div>
-                            </div>
-                        </div>
-
-                    <!-- Part 3 -->
-                    <div class="speaking-task">
-                        <h3>Part 3: Two-way Discussion (4-5 minutes)</h3>
-                        <div class="task-header">
-                            <p class="task-instruction">The examiner will ask you further questions connected to the topic in Part 2. These questions are more abstract and require you to discuss, analyze and speculate.</p>
-                        </div>
-                        <div class="speaking-questions">
-                            <div class="question">
-                                <h4>Sample Questions:</h4>
-                                <ul>
-                                    <li>How has tourism changed in your country over the past decade?</li>
-                                    <li>What are the benefits and drawbacks of traveling alone?</li>
-                                    <li>Do you think technology has made travel easier or more complicated?</li>
-                                    <li>How important is it for young people to travel?</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="speaking-area">
-                            <textarea id="speaking-part3" placeholder="Practice your discussion points here..." rows="6"></textarea>
-                            <div class="word-count">
-                                <span id="speaking-count-3">0</span> words
-                            </div>
-                        </div>
-                    </div>
+            <!-- Grammar Section -->
+            <section id="grammar" class="test-section">
+                <div id="grammar-questions">
+                    <!-- Grammar questions will be rendered here by grammar.js -->
                 </div>
             </section>
         </main>
@@ -488,9 +407,9 @@
                         <span class="band-score" id="writing-band">Band 0.0</span>
                     </div>
                     <div class="result-item">
-                        <span class="result-label">Speaking:</span>
-                        <span class="result-score" id="speaking-score">0/20</span>
-                        <span class="band-score" id="speaking-band">Band 0.0</span>
+                        <span class="result-label">Grammar:</span>
+                        <span class="result-score" id="grammar-score">0/20</span>
+                        <span class="band-score" id="grammar-band">Band 0.0</span>
                     </div>
                     <div class="result-item penalty" id="penalty-item" style="display: none;">
                         <span class="result-label">Translation Penalty:</span>

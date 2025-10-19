@@ -53,11 +53,33 @@ class IELTSGrading {
                 return this.getBandFromPercentage(percentage, 'reading');
             case 'writing':
                 return this.getWritingBand(percentage);
-            case 'speaking':
-                return this.getSpeakingBand(percentage);
+            case 'grammar':
+                return this.getGrammarBand(percentage);
             default:
                 return 0.0;
         }
+    }
+
+    getGrammarBand(percentage) {
+        // Grammar: Based on accuracy and range of structures
+        if (percentage >= 95) return 9.0;
+        if (percentage >= 90) return 8.5;
+        if (percentage >= 85) return 8.0;
+        if (percentage >= 80) return 7.5;
+        if (percentage >= 75) return 7.0;
+        if (percentage >= 70) return 6.5;
+        if (percentage >= 65) return 6.0;
+        if (percentage >= 60) return 5.5;
+        if (percentage >= 55) return 5.0;
+        if (percentage >= 50) return 4.5;
+        if (percentage >= 45) return 4.0;
+        if (percentage >= 40) return 3.5;
+        if (percentage >= 35) return 3.0;
+        if (percentage >= 30) return 2.5;
+        if (percentage >= 25) return 2.0;
+        if (percentage >= 20) return 1.5;
+        if (percentage >= 15) return 1.0;
+        return 0.0;
     }
 
     getBandFromPercentage(percentage, section) {
@@ -174,6 +196,10 @@ class IELTSGrading {
                         correctAnswers[question.id] = question.correctAnswer;
                     });
                 }
+            });
+        } else if (section === 'grammar' && sectionData.questions) {
+            sectionData.questions.forEach(question => {
+                correctAnswers[question.id] = question.correctAnswer;
             });
         }
         
