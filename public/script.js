@@ -1,16 +1,19 @@
 // IELTS Practice Test Application
 class IELTSTest {
     constructor() {
-        this.currentSection = 'grammar';
-        this.sections = ['grammar', 'reading', 'listening', 'writing'];
+        this.currentSection = 'listening';
+        this.sections = ['listening', 'reading', 'writing', 'speaking'];
         this.answers = {
-            grammar: {},
-            reading: {},
             listening: {},
+            reading: {},
             writing: {
                 task1: '',
-                task2: '',
-                task3: ''
+                task2: ''
+            },
+            speaking: {
+                part1: '',
+                part2: '',
+                part3: ''
             }
         };
         this.translatedQuestions = new Set(); // Track which questions have been translated
@@ -248,10 +251,10 @@ class IELTSTest {
             
             // Setup UI components
             this.setupEventListeners();
-            this.renderGrammarQuestions();
-            this.renderReadingQuestions();
             this.renderListeningQuestions();
+            this.renderReadingQuestions();
             this.renderWritingTasks();
+            this.renderSpeakingTasks();
             this.startTimer();
             this.updateProgress();
             this.updateNavigation();
@@ -432,7 +435,7 @@ class IELTSTest {
         });
         
         // Writing word count - improved with better error handling
-        ['writing-task1', 'writing-task2', 'writing-task3'].forEach(id => {
+        ['writing-task1', 'writing-task2'].forEach(id => {
             const textarea = document.getElementById(id);
             if (textarea) {
                 // Initialize word count for existing content
@@ -457,6 +460,33 @@ class IELTSTest {
                 });
             } else {
                 console.warn(`Textarea with id ${id} not found`);
+            }
+        });
+        
+        // Speaking word count - improved with better error handling
+        ['speaking-part1', 'speaking-part2', 'speaking-part3'].forEach(id => {
+            const textarea = document.getElementById(id);
+            if (textarea) {
+                // Initialize word count for existing content
+                this.updateWordCount(id, textarea.value);
+                
+                textarea.addEventListener('input', (e) => {
+                    console.log(`Speaking textarea input detected: ${id}, value length: ${e.target.value.length}`);
+                    this.updateWordCount(e.target.id, e.target.value);
+                    this.answers.speaking[id.replace('speaking-', '')] = e.target.value;
+                    this.updateActivity();
+                });
+                
+                // Also listen for paste events
+                textarea.addEventListener('paste', (e) => {
+                    setTimeout(() => {
+                        this.updateWordCount(id, textarea.value);
+                        this.answers.speaking[id.replace('speaking-', '')] = textarea.value;
+                        this.updateActivity();
+                    }, 10);
+                });
+            } else {
+                console.warn(`Speaking textarea with id ${id} not found`);
             }
         });
         
@@ -653,6 +683,11 @@ class IELTSTest {
         });
     }
     
+    renderSpeakingTasks() {
+        // Speaking tasks are already rendered in HTML, just need to initialize them
+        console.log('Speaking tasks initialized');
+    }
+    
     renderReadingQuestions() {
         if (!this.testData || !this.testData.sections || !this.testData.sections.reading) return;
         
@@ -720,38 +755,46 @@ class IELTSTest {
     renderListeningQuestions() {
         if (!this.testData || !this.testData.sections || !this.testData.sections.listening) return;
         
-        // Render Script 1 content and questions
-        const script1Content = document.getElementById('script1-content');
-        if (script1Content && this.testData.sections.listening.scripts[0]) {
-            script1Content.textContent = this.testData.sections.listening.scripts[0].content;
-        }
-        
-        const container1 = document.getElementById('listening-script1-questions');
+        // Render Part 1 questions (Questions 1-10)
+        const container1 = document.getElementById('listening-part1-questions');
         if (container1) {
             container1.innerHTML = '';
-            this.testData.sections.listening.scripts[0].questions.forEach(q => {
-                const questionDiv = this.createQuestionElement(q);
+            // Generate sample questions for Part 1 (Questions 1-10)
+            for (let i = 1; i <= 10; i++) {
+                const questionDiv = this.createListeningQuestionElement(i, 'A', 'B', 'C', 'D');
                 container1.appendChild(questionDiv);
-            });
+            }
         }
         
-        // Render Script 2 content and questions
-        const script2Content = document.getElementById('script2-content');
-        if (script2Content && this.testData.sections.listening.scripts[1]) {
-            script2Content.textContent = this.testData.sections.listening.scripts[1].content;
-        }
-        
-        const container2 = document.getElementById('listening-script2-questions');
+        // Render Part 2 questions (Questions 11-20)
+        const container2 = document.getElementById('listening-part2-questions');
         if (container2) {
             container2.innerHTML = '';
-            this.testData.sections.listening.scripts[1].questions.forEach(q => {
-                const questionDiv = this.createQuestionElement(q);
+            for (let i = 11; i <= 20; i++) {
+                const questionDiv = this.createListeningQuestionElement(i, 'A', 'B', 'C', 'D');
                 container2.appendChild(questionDiv);
-            });
+            }
         }
         
-        // Setup listening controls
-        this.setupListeningControls();
+        // Render Part 3 questions (Questions 21-30)
+        const container3 = document.getElementById('listening-part3-questions');
+        if (container3) {
+            container3.innerHTML = '';
+            for (let i = 21; i <= 30; i++) {
+                const questionDiv = this.createListeningQuestionElement(i, 'A', 'B', 'C', 'D');
+                container3.appendChild(questionDiv);
+            }
+        }
+        
+        // Render Part 4 questions (Questions 31-40)
+        const container4 = document.getElementById('listening-part4-questions');
+        if (container4) {
+            container4.innerHTML = '';
+            for (let i = 31; i <= 40; i++) {
+                const questionDiv = this.createListeningQuestionElement(i, 'A', 'B', 'C', 'D');
+                container4.appendChild(questionDiv);
+            }
+        }
     }
     
     renderWritingTasks() {
@@ -2005,11 +2048,21 @@ class IELTSTest {
     }
     
     showResults() {
-        document.getElementById('grammar-score').textContent = `${this.results.grammar}/${this.results.grammarTotal}`;
-        document.getElementById('reading-score').textContent = `${this.results.reading}/${this.results.readingTotal}`;
+        // Update raw scores
         document.getElementById('listening-score').textContent = `${this.results.listening}/${this.results.listeningTotal}`;
+        document.getElementById('reading-score').textContent = `${this.results.reading}/${this.results.readingTotal}`;
         document.getElementById('writing-score').textContent = `${this.results.writing}/${this.results.writingTotal}`;
-        document.getElementById('total-score').textContent = `${this.results.total}/${this.results.grammarTotal + this.results.readingTotal + this.results.listeningTotal + this.results.writingTotal}`;
+        document.getElementById('speaking-score').textContent = `${this.results.speaking}/${this.results.speakingTotal}`;
+        document.getElementById('total-score').textContent = `${this.results.total}/${this.results.listeningTotal + this.results.readingTotal + this.results.writingTotal + this.results.speakingTotal}`;
+        
+        // Update band scores
+        if (this.results.bands) {
+            document.getElementById('listening-band').textContent = `Band ${this.results.bands.listening}`;
+            document.getElementById('reading-band').textContent = `Band ${this.results.bands.reading}`;
+            document.getElementById('writing-band').textContent = `Band ${this.results.bands.writing}`;
+            document.getElementById('speaking-band').textContent = `Band ${this.results.bands.speaking}`;
+            document.getElementById('overall-band').textContent = this.results.bands.overall;
+        }
         
         // Show translation penalty if any
         if (this.results.translationPenalty > 0) {
@@ -2630,7 +2683,7 @@ class IELTSTest {
     // Debug method to test word count functionality
     debugWordCount() {
         console.log('=== Word Count Debug ===');
-        ['writing-task1', 'writing-task2', 'writing-task3'].forEach(id => {
+        ['writing-task1', 'writing-task2'].forEach(id => {
             const textarea = document.getElementById(id);
             const taskNumber = id.replace('writing-task', '');
             const wordCountElement = document.getElementById(`word-count-${taskNumber}`);

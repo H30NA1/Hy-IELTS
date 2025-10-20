@@ -47,10 +47,10 @@ app.use(helmet({
             styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdnjs.cloudflare.com"],
             fontSrc: ["'self'", "https://fonts.gstatic.com", "https://cdnjs.cloudflare.com"],
             scriptSrc: ["'self'", "'unsafe-inline'"],
-            connectSrc: ["'self'"],
+            connectSrc: ["'self'", "http://localhost:5050"], // Allow local TTS server
             imgSrc: ["'self'", "data:", "https:"],
             objectSrc: ["'none'"],
-            mediaSrc: ["'self'"],
+            mediaSrc: ["'self'", "blob:"], // Allow blob URLs for audio
             frameSrc: ["'none'"],
             workerSrc: ["'none'"], // Block service workers
             childSrc: ["'none'"],
@@ -98,52 +98,69 @@ async function loadTestData(date = null) {
     try {
         console.log('=== loadTestData called ===');
         
-        // If no date specified, use today's date
-        const testDate = date || moment().format('YYYY-MM-DD');
-        const questionsFile = path.join(questionsDir, `${testDate}.json`);
+        // Get all available JSON files in questions directory (recursively)
+        async function getAllJsonFiles(dir) {
+            const files = [];
+            const items = await fs.readdir(dir, { withFileTypes: true });
+            
+            for (const item of items) {
+                const fullPath = path.join(dir, item.name);
+                if (item.isDirectory()) {
+                    // Recursively search subdirectories
+                    const subFiles = await getAllJsonFiles(fullPath);
+                    files.push(...subFiles);
+                } else if (item.isFile() && item.name.endsWith('.json')) {
+                    files.push(fullPath);
+                }
+            }
+            
+            return files;
+        }
         
-        console.log(`Attempting to load test data for date: ${testDate}`);
-        console.log(`Looking for file: ${questionsFile}`);
+        // Get all available JSON files
+        const allJsonFiles = await getAllJsonFiles(questionsDir);
+        console.log('All available JSON test files:', allJsonFiles.map(f => path.relative(questionsDir, f)));
+        
+        if (allJsonFiles.length === 0) {
+            throw new Error('No test data files found in questions directory');
+        }
+        
+        let questionsFile = null;
+        
+        // If date is specified, try to find that specific file
+        if (date) {
+            const testDate = moment(date).format('YYYY-MM-DD');
+            questionsFile = allJsonFiles.find(f => f.includes(testDate));
+            console.log(`Looking for test file with date: ${testDate}`);
+        }
+        
+        // If no specific file found, try today's date
+        if (!questionsFile) {
+            const todayDate = moment().format('YYYY-MM-DD');
+            questionsFile = allJsonFiles.find(f => f.includes(todayDate));
+            console.log(`Looking for today's test file: ${todayDate}`);
+        }
+        
+        // If still no file found, use the most recent file (sort by date in filename)
+        if (!questionsFile) {
+            // Sort files by date (newest first)
+            const sortedFiles = allJsonFiles.sort((a, b) => {
+                const dateRegex = /(\d{4}-\d{2}-\d{2})/;
+                const dateA = a.match(dateRegex)?.[1] || '0000-00-00';
+                const dateB = b.match(dateRegex)?.[1] || '0000-00-00';
+                return dateB.localeCompare(dateA); // Descending order
+            });
+            questionsFile = sortedFiles[0];
+            console.log('Using most recent test file:', path.relative(questionsDir, questionsFile));
+        }
+        
+        console.log(`Loading test file: ${questionsFile}`);
         console.log(`Questions directory: ${questionsDir}`);
         
-        // List all files in questions directory
-        try {
-            const allFiles = await fs.readdir(questionsDir);
-            console.log('Available files in questions directory:', allFiles);
-        } catch (dirError) {
-            console.error('Error reading questions directory:', dirError);
-        }
-        
-        // Check if the specific date file exists
-        const fileExists = await fs.pathExists(questionsFile);
-        console.log(`File exists check for ${questionsFile}:`, fileExists);
-        
-        if (fileExists) {
-            console.log(`Loading file: ${questionsFile}`);
-            testData = await fs.readJson(questionsFile);
-            console.log(`Successfully loaded test data from: ${questionsFile}`);
-            console.log('Test data keys:', Object.keys(testData || {}));
-        } else {
-            console.log(`File not found: ${questionsFile}, trying default file...`);
-            // Fallback to the default file (2025-08-04)
-            const defaultFile = path.join(questionsDir, '2025-08-05.json');
-            console.log(`Looking for default file: ${defaultFile}`);
-            
-            const defaultExists = await fs.pathExists(defaultFile);
-            console.log(`Default file exists: ${defaultExists}`);
-            
-            if (defaultExists) {
-                console.log(`Loading default file: ${defaultFile}`);
-                testData = await fs.readJson(defaultFile);
-                console.log(`Successfully loaded default test data from: ${defaultFile}`);
-                console.log('Test data keys:', Object.keys(testData || {}));
-            } else {
-                console.error('No test data files found. Available files:');
-                const files = await fs.readdir(questionsDir);
-                console.error('Files in questions directory:', files);
-                throw new Error('No test data files found');
-            }
-        }
+        // Load the test data
+        testData = await fs.readJson(questionsFile);
+        console.log(`Successfully loaded test data from: ${path.relative(questionsDir, questionsFile)}`);
+        console.log('Test data keys:', Object.keys(testData || {}));
         
         // Validate test data structure
         if (!testData) {
@@ -237,16 +254,27 @@ app.get('/api/test-data', async (req, res) => {
         }
         
         // Validate test data structure
-        if (!testData.sections || !testData.sections.grammar) {
+        if (!testData.sections) {
             clearTimeout(timeout);
             return res.status(500).json({ error: 'Invalid test data structure' });
+        }
+        
+        // Check if it's the new IELTS structure (array) or old structure (object)
+        const isNewStructure = Array.isArray(testData.sections);
+        const hasRequiredSections = isNewStructure ? 
+            testData.sections.some(s => ['listening', 'reading', 'writing', 'speaking'].includes(s.id)) :
+            testData.sections.grammar || testData.sections.listening;
+            
+        if (!hasRequiredSections) {
+            clearTimeout(timeout);
+            return res.status(500).json({ error: 'Test data missing required sections' });
         }
         
         console.log('Test data loaded successfully, sending response');
         console.log('Test data structure:', {
             hasSections: !!testData.sections,
-            sections: Object.keys(testData.sections),
-            grammarQuestions: testData.sections.grammar?.questions?.length || 0
+            sections: Array.isArray(testData.sections) ? testData.sections.map(s => s.id) : Object.keys(testData.sections),
+            totalQuestions: testData.totalQuestions || 0
         });
         
         clearTimeout(timeout);
@@ -340,6 +368,664 @@ app.get('/api/download-pdf/:submissionId', (req, res) => {
         res.download(pdfPath);
     } else {
         res.status(404).json({ error: 'PDF not found' });
+    }
+});
+
+// PDF generation endpoint
+// Server-side PDF HTML generation function
+function generatePDFHTML(userName, results, answers, testData) {
+    const timestamp = new Date().toLocaleString();
+    
+    // Generate detailed question breakdown
+    const listeningQuestions = generateListeningQuestionsHTML(testData, answers);
+    const readingQuestions = generateReadingQuestionsHTML(testData, answers);
+    const writingAnswers = generateWritingAnswersHTML(answers);
+    const speakingAnswers = generateSpeakingAnswersHTML(answers);
+    
+    return `
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>IELTS Test Results - ${userName}</title>
+            <style>
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6;
+                    color: #333;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background-color: #f5f5f5;
+                }
+                .header {
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                .header h1 {
+                    margin: 0;
+                    font-size: 2.5em;
+                }
+                .header p {
+                    margin: 10px 0 0 0;
+                    opacity: 0.9;
+                }
+                .overall-score {
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+                .overall-score h2 {
+                    color: #667eea;
+                    margin-top: 0;
+                }
+                .band-score {
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: #667eea;
+                    margin: 20px 0;
+                }
+                .section-scores {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 20px;
+                    margin-bottom: 30px;
+                }
+                .section-score {
+                    background: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                }
+                .section-score h3 {
+                    color: #667eea;
+                    margin-top: 0;
+                }
+                .score-value {
+                    font-size: 2em;
+                    font-weight: bold;
+                    color: #333;
+                }
+                .band-value {
+                    font-size: 1.5em;
+                    color: #667eea;
+                    margin-top: 10px;
+                }
+                .questions-section {
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 30px;
+                }
+                .questions-section h3 {
+                    color: #667eea;
+                    margin-top: 0;
+                    border-bottom: 2px solid #667eea;
+                    padding-bottom: 10px;
+                }
+                .question-item {
+                    margin-bottom: 20px;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border-left: 4px solid #e5e7eb;
+                }
+                .question-item.correct {
+                    background-color: #d4edda;
+                    border-left-color: #28a745;
+                }
+                .question-item.incorrect {
+                    background-color: #f8d7da;
+                    border-left-color: #dc3545;
+                }
+                .question-item.unanswered {
+                    background-color: #fff3cd;
+                    border-left-color: #ffc107;
+                }
+                .question-text {
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    color: #333;
+                }
+                .options {
+                    margin-left: 20px;
+                }
+                .option {
+                    margin-bottom: 5px;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                }
+                .option.correct {
+                    background-color: #d4edda;
+                    color: #155724;
+                    font-weight: bold;
+                }
+                .option.incorrect {
+                    background-color: #f8d7da;
+                    color: #721c24;
+                    font-weight: bold;
+                }
+                .option.user-answer {
+                    background-color: #cce5ff;
+                    color: #004085;
+                    font-weight: bold;
+                }
+                .test-info {
+                    background: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 20px;
+                }
+                .footer {
+                    text-align: center;
+                    color: #666;
+                    margin-top: 30px;
+                    padding-top: 20px;
+                    border-top: 1px solid #ddd;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>🎓 IELTS Test Results</h1>
+                <p>Test completed on ${timestamp}</p>
+                <p>Candidate: ${userName}</p>
+            </div>
+
+            <div class="overall-score">
+                <h2>Overall IELTS Band Score</h2>
+                <div class="band-score">${results.overallBand}</div>
+                <p>Total Raw Score: ${results.totalRawScore}/120</p>
+            </div>
+
+            <div class="section-scores">
+                <div class="section-score">
+                    <h3>🎧 Listening</h3>
+                    <div class="score-value">${results.listening.score}/40</div>
+                    <div class="band-value">Band ${results.listening.band}</div>
+                </div>
+                <div class="section-score">
+                    <h3>📖 Reading</h3>
+                    <div class="score-value">${results.reading.score}/40</div>
+                    <div class="band-value">Band ${results.reading.band}</div>
+                </div>
+                <div class="section-score">
+                    <h3>✏️ Writing</h3>
+                    <div class="score-value">${results.writing.score}/20</div>
+                    <div class="band-value">Band ${results.writing.band}</div>
+                </div>
+                <div class="section-score">
+                    <h3>🗣️ Speaking</h3>
+                    <div class="score-value">${results.speaking.score}/20</div>
+                    <div class="band-value">Band ${results.speaking.band}</div>
+                </div>
+            </div>
+
+            ${listeningQuestions}
+            ${readingQuestions}
+            ${writingAnswers}
+            ${speakingAnswers}
+
+            <div class="test-info">
+                <h3>Test Information</h3>
+                <p><strong>Test Date:</strong> ${timestamp}</p>
+                <p><strong>Test Type:</strong> IELTS Practice Test</p>
+                <p><strong>Total Questions:</strong> 120</p>
+                <p><strong>Time Allocated:</strong> 3 hours 30 minutes</p>
+            </div>
+
+            <div class="footer">
+                <p>Generated by IELTS Starter 1.0 - Practice Test System</p>
+                <p>This is a practice test result. For official IELTS scores, please take the official IELTS test.</p>
+            </div>
+        </body>
+        </html>
+    `;
+}
+
+// Helper functions for generating question HTML
+function generateListeningQuestionsHTML(testData, answers) {
+    if (!testData || !testData.sections) return '';
+    
+    const listeningSection = testData.sections.find(s => s.id === 'listening');
+    if (!listeningSection || !listeningSection.parts) return '';
+
+    let html = '<div class="questions-section"><h3>🎧 Listening Section - Detailed Answers</h3>';
+    
+    listeningSection.parts.forEach((part, partIndex) => {
+        if (part.questions) {
+            html += `<h4>Part ${partIndex + 1}: ${part.title}</h4>`;
+            
+            part.questions.forEach((question, questionIndex) => {
+                const questionId = question.id;
+                const userAnswer = answers.listening ? answers.listening[questionId] : null;
+                const correctAnswer = question.correctAnswer;
+                const isCorrect = userAnswer === correctAnswer;
+                const isAnswered = userAnswer !== null && userAnswer !== undefined;
+                
+                let questionClass = 'unanswered';
+                if (isAnswered) {
+                    questionClass = isCorrect ? 'correct' : 'incorrect';
+                }
+                
+                html += `
+                    <div class="question-item ${questionClass}">
+                        <div class="question-text">Question ${questionIndex + 1}: ${question.questionText}</div>
+                        <div class="options">
+                `;
+                
+                question.options.forEach((option, optionIndex) => {
+                    const optionLetter = String.fromCharCode(65 + optionIndex); // A, B, C, D
+                    let optionClass = '';
+                    
+                    if (optionLetter === correctAnswer) {
+                        optionClass = 'correct';
+                    } else if (optionLetter === userAnswer) {
+                        optionClass = 'incorrect';
+                    }
+                    
+                    html += `<div class="option ${optionClass}">${optionLetter}) ${option}</div>`;
+                });
+                
+                html += `
+                        </div>
+                        <div style="margin-top: 10px; font-size: 0.9em;">
+                            <strong>Your Answer:</strong> ${userAnswer || 'Not answered'} | 
+                            <strong>Correct Answer:</strong> ${correctAnswer} | 
+                            <strong>Status:</strong> ${isAnswered ? (isCorrect ? '✓ Correct' : '✗ Incorrect') : 'Not answered'}
+                        </div>
+                    </div>
+                `;
+            });
+        }
+    });
+    
+    html += '</div>';
+    return html;
+}
+
+function generateReadingQuestionsHTML(testData, answers) {
+    if (!testData || !testData.sections) return '';
+    
+    const readingSection = testData.sections.find(s => s.id === 'reading');
+    if (!readingSection || !readingSection.passages) return '';
+
+    let html = '<div class="questions-section"><h3>📖 Reading Section - Detailed Answers</h3>';
+    
+    readingSection.passages.forEach((passage, passageIndex) => {
+        if (passage.questions) {
+            html += `<h4>Passage ${passageIndex + 1}: ${passage.title}</h4>`;
+            
+            passage.questions.forEach((question, questionIndex) => {
+                const questionId = question.id;
+                const userAnswer = answers.reading ? answers.reading[questionId] : null;
+                const correctAnswer = question.correctAnswer;
+                const isCorrect = userAnswer === correctAnswer;
+                const isAnswered = userAnswer !== null && userAnswer !== undefined;
+                
+                let questionClass = 'unanswered';
+                if (isAnswered) {
+                    questionClass = isCorrect ? 'correct' : 'incorrect';
+                }
+                
+                html += `
+                    <div class="question-item ${questionClass}">
+                        <div class="question-text">Question ${questionIndex + 1}: ${question.questionText}</div>
+                        <div class="options">
+                `;
+                
+                question.options.forEach((option, optionIndex) => {
+                    const optionLetter = String.fromCharCode(65 + optionIndex); // A, B, C, D
+                    let optionClass = '';
+                    
+                    if (optionLetter === correctAnswer) {
+                        optionClass = 'correct';
+                    } else if (optionLetter === userAnswer) {
+                        optionClass = 'incorrect';
+                    }
+                    
+                    html += `<div class="option ${optionClass}">${optionLetter}) ${option}</div>`;
+                });
+                
+                html += `
+                        </div>
+                        <div style="margin-top: 10px; font-size: 0.9em;">
+                            <strong>Your Answer:</strong> ${userAnswer || 'Not answered'} | 
+                            <strong>Correct Answer:</strong> ${correctAnswer} | 
+                            <strong>Status:</strong> ${isAnswered ? (isCorrect ? '✓ Correct' : '✗ Incorrect') : 'Not answered'}
+                        </div>
+                    </div>
+                `;
+            });
+        }
+    });
+    
+    html += '</div>';
+    return html;
+}
+
+function generateWritingAnswersHTML(answers) {
+    if (!answers.writing) return '';
+    
+    let html = '<div class="questions-section"><h3>✏️ Writing Section - Your Answers</h3>';
+    
+    if (answers.writing.task1) {
+        html += `
+            <div class="question-item">
+                <div class="question-text">Task 1: Describe the chart/graph</div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <strong>Word Count:</strong> ${answers.writing.task1WordCount || 0} words<br>
+                    <strong>Your Answer:</strong><br>
+                    <div style="margin-top: 10px; white-space: pre-wrap;">${answers.writing.task1 || 'No answer provided'}</div>
+                </div>
+            </div>
+        `;
+    }
+    
+    if (answers.writing.task2) {
+        html += `
+            <div class="question-item">
+                <div class="question-text">Task 2: Essay</div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <strong>Word Count:</strong> ${answers.writing.task2WordCount || 0} words<br>
+                    <strong>Your Answer:</strong><br>
+                    <div style="margin-top: 10px; white-space: pre-wrap;">${answers.writing.task2 || 'No answer provided'}</div>
+                </div>
+            </div>
+        `;
+    }
+    
+    html += '</div>';
+    return html;
+}
+
+function generateSpeakingAnswersHTML(answers) {
+    if (!answers.speaking) return '';
+    
+    let html = '<div class="questions-section"><h3>🗣️ Speaking Section - Your Answers</h3>';
+    
+    if (answers.speaking.part1) {
+        html += `
+            <div class="question-item">
+                <div class="question-text">Part 1: Introduction and Interview</div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <strong>Your Answer:</strong><br>
+                    <div style="margin-top: 10px; white-space: pre-wrap;">${answers.speaking.part1 || 'No answer provided'}</div>
+                </div>
+            </div>
+        `;
+    }
+    
+    if (answers.speaking.part2) {
+        html += `
+            <div class="question-item">
+                <div class="question-text">Part 2: Long Turn</div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <strong>Your Answer:</strong><br>
+                    <div style="margin-top: 10px; white-space: pre-wrap;">${answers.speaking.part2 || 'No answer provided'}</div>
+                </div>
+            </div>
+        `;
+    }
+    
+    if (answers.speaking.part3) {
+        html += `
+            <div class="question-item">
+                <div class="question-text">Part 3: Discussion</div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                    <strong>Your Answer:</strong><br>
+                    <div style="margin-top: 10px; white-space: pre-wrap;">${answers.speaking.part3 || 'No answer provided'}</div>
+                </div>
+            </div>
+        `;
+    }
+    
+    html += '</div>';
+    return html;
+}
+
+app.post('/api/generate-pdf', async (req, res) => {
+    try {
+        const { userName, results, answers, testData, timestamp } = req.body;
+        
+        if (!userName || !results || !answers || !testData) {
+            return res.status(400).json({ error: 'Missing required fields' });
+        }
+        
+        // Sanitize username for file system
+        const sanitizedUserName = userName.replace(/[^a-zA-Z0-9_-]/g, '_');
+        const testTimestamp = timestamp || new Date().toISOString().split('T')[0];
+        
+        // Create user-specific directory structure
+        const userDir = path.join(__dirname, 'user-data', sanitizedUserName);
+        const pdfsDir = path.join(userDir, 'pdfs');
+        const answersDir = path.join(userDir, 'answers');
+        
+        console.log('Creating directories:', { userDir, pdfsDir, answersDir });
+        
+        // Create directories with more robust approach
+        try {
+            await fs.ensureDir(userDir);
+            await fs.ensureDir(pdfsDir);
+            await fs.ensureDir(answersDir);
+            
+            // Verify directories exist
+            const userDirExists = await fs.pathExists(userDir);
+            const pdfsDirExists = await fs.pathExists(pdfsDir);
+            const answersDirExists = await fs.pathExists(answersDir);
+            
+            console.log('Directory verification:', { userDirExists, pdfsDirExists, answersDirExists });
+            
+            if (!userDirExists || !pdfsDirExists || !answersDirExists) {
+                throw new Error('Failed to create required directories');
+            }
+            
+            console.log('Directories created and verified successfully');
+        } catch (dirError) {
+            console.error('Error creating directories:', dirError);
+            throw dirError;
+        }
+        
+        // Save answers JSON
+        const answersData = {
+            userName: userName,
+            timestamp: testTimestamp,
+            results: results,
+            answers: answers,
+            testData: testData
+        };
+        
+        // Clean timestamp for filename (remove colons and special chars)
+        const cleanTimestamp = testTimestamp.replace(/[:.]/g, '-');
+        const answersFilePath = path.join(answersDir, `answers_${cleanTimestamp}.json`);
+        console.log('Writing answers to:', answersFilePath);
+        
+        try {
+            // Double-check directory exists before writing
+            const answersDirExists = await fs.pathExists(answersDir);
+            if (!answersDirExists) {
+                throw new Error(`Answers directory does not exist: ${answersDir}`);
+            }
+            
+            await fs.writeJson(answersFilePath, answersData, { spaces: 2 });
+            console.log('Answers file written successfully');
+            
+            // Verify file was written
+            const fileExists = await fs.pathExists(answersFilePath);
+            console.log('File verification:', { fileExists, filePath: answersFilePath });
+            
+        } catch (writeError) {
+            console.error('Error writing answers file:', writeError);
+            throw writeError;
+        }
+        
+        // Generate HTML content directly (server-side)
+        const htmlContent = generatePDFHTML(userName, results, answers, testData);
+        
+        // Launch browser
+        const browser = await puppeteer.launch({
+            headless: 'new',
+            args: ['--no-sandbox', '--disable-setuid-sandbox']
+        });
+        
+        const page = await browser.newPage();
+        await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
+        
+        // Generate PDF
+        const pdfBuffer = await page.pdf({
+            format: 'A4',
+            margin: {
+                top: '20mm',
+                right: '20mm',
+                bottom: '20mm',
+                left: '20mm'
+            },
+            printBackground: true
+        });
+        
+        // Save PDF to user directory
+        const pdfFileName = `IELTS_Test_Results_${cleanTimestamp}.pdf`;
+        const pdfFilePath = path.join(pdfsDir, pdfFileName);
+        await fs.writeFile(pdfFilePath, pdfBuffer);
+        
+        await browser.close();
+        
+        // Set response headers
+        res.setHeader('Content-Type', 'application/pdf');
+        res.setHeader('Content-Disposition', `attachment; filename="${pdfFileName}"`);
+        
+        // Send PDF buffer
+        res.send(pdfBuffer);
+        
+    } catch (error) {
+        console.error('Error generating PDF:', error);
+        res.status(500).json({ error: 'Failed to generate PDF' });
+    }
+});
+
+// Get user's test history
+app.get('/api/user/:userName/tests', async (req, res) => {
+    try {
+        const { userName } = req.params;
+        const sanitizedUserName = userName.replace(/[^a-zA-Z0-9_-]/g, '_');
+        const userDir = path.join(__dirname, 'user-data', sanitizedUserName);
+        const answersDir = path.join(userDir, 'answers');
+        
+        if (!await fs.pathExists(answersDir)) {
+            return res.json({ tests: [] });
+        }
+        
+        const files = await fs.readdir(answersDir);
+        const testFiles = files.filter(file => file.endsWith('.json'));
+        
+        const tests = [];
+        for (const file of testFiles) {
+            const filePath = path.join(answersDir, file);
+            const testData = await fs.readJson(filePath);
+            tests.push({
+                timestamp: testData.timestamp,
+                fileName: file,
+                results: testData.results,
+                overallBand: testData.results.overallBand
+            });
+        }
+        
+        // Sort by timestamp (newest first)
+        tests.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+        
+        res.json({ tests });
+        
+    } catch (error) {
+        console.error('Error retrieving user tests:', error);
+        res.status(500).json({ error: 'Failed to retrieve user tests' });
+    }
+});
+
+// Get specific test data for a user
+app.get('/api/user/:userName/test/:timestamp', async (req, res) => {
+    try {
+        const { userName, timestamp } = req.params;
+        const sanitizedUserName = userName.replace(/[^a-zA-Z0-9_-]/g, '_');
+        const userDir = path.join(__dirname, 'user-data', sanitizedUserName);
+        const answersDir = path.join(userDir, 'answers');
+        const filePath = path.join(answersDir, `answers_${timestamp}.json`);
+        
+        if (!await fs.pathExists(filePath)) {
+            return res.status(404).json({ error: 'Test not found' });
+        }
+        
+        const testData = await fs.readJson(filePath);
+        res.json(testData);
+        
+    } catch (error) {
+        console.error('Error retrieving test data:', error);
+        res.status(500).json({ error: 'Failed to retrieve test data' });
+    }
+});
+
+// Get user's PDF files
+app.get('/api/user/:userName/pdfs', async (req, res) => {
+    try {
+        const { userName } = req.params;
+        const sanitizedUserName = userName.replace(/[^a-zA-Z0-9_-]/g, '_');
+        const userDir = path.join(__dirname, 'user-data', sanitizedUserName);
+        const pdfsDir = path.join(userDir, 'pdfs');
+        
+        if (!await fs.pathExists(pdfsDir)) {
+            return res.json({ pdfs: [] });
+        }
+        
+        const files = await fs.readdir(pdfsDir);
+        const pdfFiles = files.filter(file => file.endsWith('.pdf'));
+        
+        const pdfs = pdfFiles.map(file => {
+            const timestamp = file.replace('IELTS_Test_Results_', '').replace('.pdf', '');
+            return {
+                fileName: file,
+                timestamp: timestamp,
+                downloadUrl: `/api/user/${userName}/pdf/${timestamp}`
+            };
+        });
+        
+        // Sort by timestamp (newest first)
+        pdfs.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+        
+        res.json({ pdfs });
+        
+    } catch (error) {
+        console.error('Error retrieving user PDFs:', error);
+        res.status(500).json({ error: 'Failed to retrieve user PDFs' });
+    }
+});
+
+// Download specific PDF for a user
+app.get('/api/user/:userName/pdf/:timestamp', async (req, res) => {
+    try {
+        const { userName, timestamp } = req.params;
+        const sanitizedUserName = userName.replace(/[^a-zA-Z0-9_-]/g, '_');
+        const userDir = path.join(__dirname, 'user-data', sanitizedUserName);
+        const pdfsDir = path.join(userDir, 'pdfs');
+        const pdfPath = path.join(pdfsDir, `IELTS_Test_Results_${timestamp}.pdf`);
+        
+        if (!await fs.pathExists(pdfPath)) {
+            return res.status(404).json({ error: 'PDF not found' });
+        }
+        
+        res.download(pdfPath);
+        
+    } catch (error) {
+        console.error('Error downloading PDF:', error);
+        res.status(500).json({ error: 'Failed to download PDF' });
     }
 });
 
@@ -504,22 +1190,99 @@ app.get('/api/writing/sample-feedback', async (req, res) => {
     }
 });
 
+// IELTS Band Score Conversion Functions
+function convertToIELTSBand(rawScore, section, totalQuestions) {
+    const percentage = (rawScore / totalQuestions) * 100;
+    
+    switch (section) {
+        case 'listening':
+            // IELTS Listening: 40 questions total
+            // Band 5: 16/40, Band 6: 23/40, Band 7: 30/40, Band 8: 35/40
+            if (percentage >= 87.5) return 9.0;
+            if (percentage >= 82.5) return 8.5;
+            if (percentage >= 77.5) return 8.0;
+            if (percentage >= 72.5) return 7.5;
+            if (percentage >= 67.5) return 7.0;
+            if (percentage >= 62.5) return 6.5;
+            if (percentage >= 57.5) return 6.0;
+            if (percentage >= 52.5) return 5.5;
+            if (percentage >= 47.5) return 5.0;
+            if (percentage >= 42.5) return 4.5;
+            if (percentage >= 37.5) return 4.0;
+            return 3.5;
+            
+        case 'reading':
+            // IELTS Reading Academic: 40 questions total
+            // Band 5: 15/40, Band 6: 23/40, Band 7: 30/40, Band 8: 35/40
+            if (percentage >= 87.5) return 9.0;
+            if (percentage >= 82.5) return 8.5;
+            if (percentage >= 77.5) return 8.0;
+            if (percentage >= 72.5) return 7.5;
+            if (percentage >= 67.5) return 7.0;
+            if (percentage >= 62.5) return 6.5;
+            if (percentage >= 57.5) return 6.0;
+            if (percentage >= 52.5) return 5.5;
+            if (percentage >= 47.5) return 5.0;
+            if (percentage >= 42.5) return 4.5;
+            if (percentage >= 37.5) return 4.0;
+            return 3.5;
+            
+        case 'writing':
+            // IELTS Writing: Based on 4 criteria, each scored 0-9
+            // Simplified conversion for our system
+            if (percentage >= 90) return 9.0;
+            if (percentage >= 80) return 8.0;
+            if (percentage >= 70) return 7.0;
+            if (percentage >= 60) return 6.0;
+            if (percentage >= 50) return 5.0;
+            if (percentage >= 40) return 4.0;
+            return 3.0;
+            
+        case 'speaking':
+            // IELTS Speaking: Based on 4 criteria (fluency, coherence, lexical resource, grammar, pronunciation)
+            if (percentage >= 90) return 9.0;
+            if (percentage >= 80) return 8.0;
+            if (percentage >= 70) return 7.0;
+            if (percentage >= 60) return 6.0;
+            if (percentage >= 50) return 5.0;
+            if (percentage >= 40) return 4.0;
+            return 3.0;
+            
+        default:
+            return 0.0;
+    }
+}
+
+function calculateOverallBandScore(listeningBand, readingBand, writingBand, speakingBand) {
+    // Calculate overall band score (average of all sections)
+    const total = listeningBand + readingBand + writingBand + speakingBand;
+    const average = total / 4;
+    
+    // Round to nearest 0.5
+    return Math.round(average * 2) / 2;
+}
+
 // Helper functions
 function calculateResults(answers) {
-    let grammarScore = 0;
-    let readingScore = 0;
     let listeningScore = 0;
+    let readingScore = 0;
     let writingScore = 0;
+    let speakingScore = 0;
     let translationPenalty = 0;
     
     if (!testData) {
-        return { grammar: 0, reading: 0, listening: 0, writing: 0, total: 0, grammarTotal: 30, readingTotal: 20, listeningTotal: 10, writingTotal: 15, translationPenalty: 0 };
+        return { 
+            listening: 0, reading: 0, writing: 0, speaking: 0, total: 0, 
+            listeningTotal: 40, readingTotal: 40, writingTotal: 20, speakingTotal: 20, 
+            translationPenalty: 0,
+            bands: { listening: 0, reading: 0, writing: 0, speaking: 0, overall: 0 }
+        };
     }
     
-    // Calculate grammar score (30 points - 1 point per question)
-    if (answers.grammar) {
-        Object.entries(answers.grammar).forEach(([questionId, selectedOption]) => {
-            const question = testData.sections.grammar.questions.find(q => q.id === parseInt(questionId));
+    // Calculate listening score (40 questions - 1 point per question)
+    if (answers.listening) {
+        Object.entries(answers.listening).forEach(([questionId, selectedOption]) => {
+            const question = testData.sections.listening.questions.find(q => q.id === parseInt(questionId));
             if (question) {
                 const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(parseInt(questionId));
                 const isCorrect = selectedOption === question.correct;
@@ -527,28 +1290,29 @@ function calculateResults(answers) {
                 if (isTranslated) {
                     // Translation used: 0.5 penalty, then 0.5 for wrong answer
                     if (isCorrect) {
-                        grammarScore += 0.5; // 1 point - 0.5 translation penalty
+                        listeningScore += 0.5; // 1 point - 0.5 translation penalty
                     } else {
-                        grammarScore += 0; // 0 points - 0.5 translation penalty - 0.5 wrong answer
+                        listeningScore += 0; // 0 points - 0.5 translation penalty - 0.5 wrong answer
                     }
                     translationPenalty += 0.5;
                 } else {
                     // No translation: 1 point for correct, 0 for wrong
                     if (isCorrect) {
-                        grammarScore += 1;
+                        listeningScore += 1;
                     } else {
-                        grammarScore += 0;
+                        listeningScore += 0;
                     }
                 }
             }
         });
     }
     
-    // Calculate reading score (20 points - 1 point per question)
+    // Calculate reading score (40 questions - 1 point per question)
     if (answers.reading) {
         const allReadingQuestions = [
             ...testData.sections.reading.passages[0].questions,
-            ...testData.sections.reading.passages[1].questions
+            ...testData.sections.reading.passages[1].questions,
+            ...testData.sections.reading.passages[2].questions
         ];
         Object.entries(answers.reading).forEach(([questionId, selectedOption]) => {
             const question = allReadingQuestions.find(q => q.id === parseInt(questionId));
@@ -576,90 +1340,95 @@ function calculateResults(answers) {
         });
     }
     
-    // Calculate listening score (10 points - 2 points per question)
-    if (answers.listening) {
-        const allListeningQuestions = [
-            ...testData.sections.listening.scripts[0].questions,
-            ...testData.sections.listening.scripts[1].questions
-        ];
-        
-        // Check for transcript usage first
-        const transcriptUsed = answers.translationPenalties && 
-            Object.keys(answers.translationPenalties).some(key => key.startsWith('transcript-') && !key.includes('translation'));
-        
-        if (transcriptUsed) {
-            translationPenalty += 1; // Add transcript penalty once
-        }
-        
-        Object.entries(answers.listening).forEach(([questionId, selectedOption]) => {
-            const question = allListeningQuestions.find(q => q.id === parseInt(questionId));
-            if (question) {
-                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(parseInt(questionId));
-                const isCorrect = selectedOption === question.correct;
-                
-                if (transcriptUsed) {
-                    if (isTranslated) {
-                        // Transcript + Translation used
-                        translationPenalty += 0.5; // Additional translation penalty
-                        
-                        if (isCorrect) {
-                            listeningScore += 0.5; // 2 points - 1 transcript penalty - 0.5 translation penalty
-                        } else {
-                            listeningScore += 0; // 0 points - 1 transcript penalty - 0.5 translation penalty - 0.5 wrong answer
-                        }
-                    } else {
-                        // Only transcript used
-                        if (isCorrect) {
-                            listeningScore += 1; // 2 points - 1 transcript penalty
-                        } else {
-                            listeningScore += 0; // 0 points - 1 transcript penalty - 1 wrong answer
-                        }
-                    }
-                } else {
-                    if (isTranslated) {
-                        // Only translation used
-                        translationPenalty += 0.5;
-                        
-                        if (isCorrect) {
-                            listeningScore += 1.5; // 2 points - 0.5 translation penalty
-                        } else {
-                            listeningScore += 0; // 0 points - 0.5 translation penalty - 1.5 wrong answer
-                        }
-                    } else {
-                        // No penalties
-                        if (isCorrect) {
-                            listeningScore += 2; // 2 points
-                        } else {
-                            listeningScore += 0; // 0 points
-                        }
-                    }
-                }
-            }
-        });
-    }
-    
-    // Calculate writing score (15 points - based on word count)
+    // Calculate writing score (2 tasks - 10 points each)
     if (answers.writing) {
         Object.entries(answers.writing).forEach(([taskKey, text]) => {
             if (text && text.trim().length > 0) {
                 const words = text.trim().split(/\s+/).filter(word => word.length > 0);
                 const wordCount = words.length;
                 
-                // Word count scoring: above 50 words = 0.5, above 80 words = 1 point
-                // Each task can earn up to 5 points (15 total / 3 tasks)
+                // Word count scoring for IELTS Writing
                 let taskScore = 0;
-                if (wordCount >= 80) {
-                    taskScore = 5; // Full points for 80+ words
-                } else if (wordCount >= 50) {
-                    taskScore = 2.5; // Half points for 50-79 words
-                } else {
-                    taskScore = 0; // No points for less than 50 words
+                if (taskKey === 'task1') {
+                    // Task 1: 150 words minimum
+                    if (wordCount >= 150) {
+                        taskScore = 10; // Full points for 150+ words
+                    } else if (wordCount >= 100) {
+                        taskScore = 7; // Partial points for 100-149 words
+                    } else if (wordCount >= 50) {
+                        taskScore = 4; // Some points for 50-99 words
+                    } else {
+                        taskScore = 0; // No points for less than 50 words
+                    }
+                } else if (taskKey === 'task2') {
+                    // Task 2: 250 words minimum
+                    if (wordCount >= 250) {
+                        taskScore = 10; // Full points for 250+ words
+                    } else if (wordCount >= 200) {
+                        taskScore = 8; // Good points for 200-249 words
+                    } else if (wordCount >= 150) {
+                        taskScore = 6; // Partial points for 150-199 words
+                    } else if (wordCount >= 100) {
+                        taskScore = 4; // Some points for 100-149 words
+                    } else {
+                        taskScore = 0; // No points for less than 100 words
+                    }
                 }
                 
                 writingScore += taskScore;
             }
         });
     }
+    
+    // Calculate speaking score (3 parts - based on content quality)
+    if (answers.speaking) {
+        Object.entries(answers.speaking).forEach(([partKey, text]) => {
+            if (text && text.trim().length > 0) {
+                const words = text.trim().split(/\s+/).filter(word => word.length > 0);
+                const wordCount = words.length;
+                
+                // Speaking scoring based on content length and quality
+                let partScore = 0;
+                if (partKey === 'part1') {
+                    // Part 1: Short answers
+                    if (wordCount >= 50) {
+                        partScore = 7; // Good response
+                    } else if (wordCount >= 30) {
+                        partScore = 5; // Adequate response
+                    } else if (wordCount >= 15) {
+                        partScore = 3; // Basic response
+                    } else {
+                        partScore = 0; // Insufficient response
+                    }
+                } else if (partKey === 'part2') {
+                    // Part 2: Long turn (1-2 minutes)
+                    if (wordCount >= 200) {
+                        partScore = 7; // Excellent long turn
+                    } else if (wordCount >= 150) {
+                        partScore = 5; // Good long turn
+                    } else if (wordCount >= 100) {
+                        partScore = 3; // Adequate long turn
+                    } else {
+                        partScore = 0; // Insufficient long turn
+                    }
+                } else if (partKey === 'part3') {
+                    // Part 3: Discussion
+                    if (wordCount >= 150) {
+                        partScore = 6; // Good discussion
+                    } else if (wordCount >= 100) {
+                        partScore = 4; // Adequate discussion
+                    } else if (wordCount >= 50) {
+                        partScore = 2; // Basic discussion
+                    } else {
+                        partScore = 0; // Insufficient discussion
+                    }
+                }
+                
+                speakingScore += partScore;
+            }
+        });
+    }
+    
     
     // Calculate total translation penalty
     if (answers.translationPenalties) {
@@ -668,19 +1437,33 @@ function calculateResults(answers) {
         translationPenalty += penaltySum;
     }
     
-    const totalScore = grammarScore + readingScore + listeningScore + writingScore;
+    // Calculate IELTS Band Scores
+    const listeningBand = convertToIELTSBand(listeningScore, 40, 'listening');
+    const readingBand = convertToIELTSBand(readingScore, 40, 'reading');
+    const writingBand = convertToIELTSBand(writingScore, 20, 'writing');
+    const speakingBand = convertToIELTSBand(speakingScore, 20, 'speaking');
+    const overallBand = calculateOverallBandScore(listeningBand, readingBand, writingBand, speakingBand);
+    
+    const totalScore = listeningScore + readingScore + writingScore + speakingScore;
     
     return {
-        grammar: Math.round(grammarScore * 100) / 100,
-        reading: Math.round(readingScore * 100) / 100,
         listening: Math.round(listeningScore * 100) / 100,
+        reading: Math.round(readingScore * 100) / 100,
         writing: Math.round(writingScore * 100) / 100,
+        speaking: Math.round(speakingScore * 100) / 100,
         total: Math.max(0, Math.round(totalScore * 100) / 100), // Ensure total doesn't go below 0
-        grammarTotal: 30, // 30 grammar questions
-        readingTotal: 20, // 20 reading questions
-        listeningTotal: 10, // 10 listening questions (2 points each)
-        writingTotal: 15, // 15 writing points (5 per task)
-        translationPenalty: Math.round(translationPenalty * 100) / 100
+        listeningTotal: 40, // 40 listening questions
+        readingTotal: 40, // 40 reading questions
+        writingTotal: 20, // 20 writing points (10 per task)
+        speakingTotal: 20, // 20 speaking points (based on content quality)
+        translationPenalty: Math.round(translationPenalty * 100) / 100,
+        bands: {
+            listening: listeningBand,
+            reading: readingBand,
+            writing: writingBand,
+            speaking: speakingBand,
+            overall: overallBand
+        }
     };
 }
 
@@ -780,22 +1563,26 @@ function generatePDFHTML(submission) {
             <h2>Test Summary</h2>
             <div class="result-item">
                 <span>Grammar & Vocabulary:</span>
-                <span>${results.grammar}/${results.grammarTotal}</span>
+                <span>${results.grammar}/${results.grammarTotal} (Band ${results.bands.grammar})</span>
             </div>
             <div class="result-item">
                 <span>Reading:</span>
-                <span>${results.reading}/${results.readingTotal}</span>
+                <span>${results.reading}/${results.readingTotal} (Band ${results.bands.reading})</span>
             </div>
             <div class="result-item">
                 <span>Listening:</span>
-                <span>${results.listening}/${results.listeningTotal}</span>
+                <span>${results.listening}/${results.listeningTotal} (Band ${results.bands.listening})</span>
             </div>
             <div class="result-item">
                 <span>Writing:</span>
-                <span>${results.writing}/${results.writingTotal}</span>
+                <span>${results.writing}/${results.writingTotal} (Band ${results.bands.writing})</span>
             </div>
             <div class="result-item total">
-                <span>Total Score:</span>
+                <span>Overall IELTS Band Score:</span>
+                <span>${results.bands.overall}</span>
+            </div>
+            <div class="result-item">
+                <span>Total Raw Score:</span>
                 <span>${results.total}/${results.grammarTotal + results.readingTotal + results.listeningTotal + results.writingTotal}</span>
             </div>
             <div class="result-item">
@@ -805,28 +1592,39 @@ function generatePDFHTML(submission) {
         </div>
         
         <div class="section">
-            <h2>${currentTestData.sections.grammar.title}</h2>
-            ${currentTestData.sections.grammar.questions.map(q => {
-                const selected = answers.grammar && answers.grammar[q.id];
-                const isCorrect = selected === q.correct;
+            ${(() => {
+                const grammarSection = currentTestData.sections.find(s => s.id === 'grammar');
+                if (!grammarSection || !grammarSection.questions) return '';
                 
                 return `
-                    <div class="question">
-                        <div class="question-number">Question ${q.id}</div>
-                        <div class="question-text">${q.question}</div>
-                        <div class="options">
-                            ${q.options.map((option, index) => {
-                                let className = 'option';
-                                if (index === q.correct) className += ' correct';
-                                if (index === selected && !isCorrect) className += ' incorrect';
-                                if (index === selected) className += ' selected';
-                                
-                                return `<div class="${className}">${String.fromCharCode(65 + index)}) ${option}</div>`;
-                            }).join('')}
-                        </div>
-                    </div>
+                    <h2>${grammarSection.title || 'Grammar & Language Use'}</h2>
+                    ${grammarSection.questions.map((q, qIndex) => {
+                        const selected = answers.grammar && answers.grammar[q.id];
+                        // Convert letter answer (A, B, C, D) to index (0, 1, 2, 3)
+                        const correctIndex = q.correctAnswer ? q.correctAnswer.charCodeAt(0) - 65 : -1;
+                        const selectedIndex = selected ? selected.charCodeAt(0) - 65 : -1;
+                        const isCorrect = selected === q.correctAnswer;
+                        
+                        return `
+                            <div class="question">
+                                <div class="question-number">Question ${qIndex + 1}</div>
+                                <div class="question-text">${q.questionText || q.question}</div>
+                                <div class="options">
+                                    ${q.options.map((option, index) => {
+                                        let className = 'option';
+                                        if (index === correctIndex) className += ' correct';
+                                        if (index === selectedIndex && !isCorrect) className += ' incorrect';
+                                        if (index === selectedIndex) className += ' selected';
+                                        
+                                        return `<div class="${className}">${option}</div>`;
+                                    }).join('')}
+                                </div>
+                                ${q.explanation ? `<div class="explanation"><strong>Explanation:</strong> ${q.explanation}</div>` : ''}
+                            </div>
+                        `;
+                    }).join('')}
                 `;
-            }).join('')}
+            })()}
         </div>
         
         <div class="section">
@@ -1062,12 +1860,12 @@ app.get('/api/test-grading', (req, res) => {
                     expected: {
                         grammar: 5,
                         reading: 10,
-                        listening: 10,
+                        listening: 20,
                         writing: 15,
-                        total: 40,
+                        total: 85,
                         grammarTotal: 30,
                         readingTotal: 20,
-                        listeningTotal: 35,
+                        listeningTotal: 20,
                         writingTotal: 15
                     }
                 },
@@ -1085,16 +1883,23 @@ app.get('/api/test-grading', (req, res) => {
                 }
             },
             gradingSystem: {
-                totalPoints: 100,
+                totalPoints: 120,
                 breakdown: {
-                    grammar: '30 points (30 questions)',
-                    reading: '20 points (20 questions)',
-                    listening: '35 points (10 questions)',
-                    writing: '15 points (3 tasks, 5 points each)'
+                    listening: '40 points (40 questions)',
+                    reading: '40 points (40 questions)',
+                    writing: '20 points (2 tasks, 10 points each)',
+                    speaking: '20 points (3 parts, based on content quality)'
                 },
                 penalties: {
                     translation: '0.5 points per translation',
                     transcript: '1.0 point per transcript use'
+                },
+                bandScores: {
+                    description: 'IELTS Band Scores are calculated based on raw scores and converted to the 9-band scale',
+                    listening: 'Based on 40-question IELTS standard',
+                    reading: 'Based on Academic Reading IELTS standard',
+                    writing: 'Based on task completion and word count',
+                    speaking: 'Based on fluency, coherence, lexical resource, grammar, and pronunciation'
                 }
             }
         });

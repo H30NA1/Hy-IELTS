@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IELTS Starter 1.0 - Practice Test</title>
+    <title>IELTS Practice Test - Full Exam Simulator</title>
     <link rel="stylesheet" href="styles.css">
+    
     <!-- Google Fonts - Inline CSS to avoid CSP issues -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -49,7 +50,7 @@
             <div class="header-content">
                 <h1 class="logo">
                     <i class="fas fa-graduation-cap"></i>
-                    IELTS Starter 1.0
+                    <span id="app-title">IELTS Practice Test</span>
                 </h1>
                 <div class="timer" id="timer">
                     <i class="fas fa-clock"></i>
@@ -140,42 +141,77 @@
 
         <!-- Navigation -->
         <nav class="section-nav">
-            <button class="nav-btn active" data-section="grammar">
-                <i class="fas fa-language"></i>
-                <span>Grammar & Vocabulary</span>
+            <button class="nav-btn active" data-section="listening">
+                <i class="fas fa-headphones"></i>
+                <span>Listening</span>
             </button>
             <button class="nav-btn" data-section="reading">
                 <i class="fas fa-book-open"></i>
                 <span>Reading</span>
             </button>
-            <button class="nav-btn" data-section="listening">
-                <i class="fas fa-headphones"></i>
-                <span>Listening</span>
-            </button>
             <button class="nav-btn" data-section="writing">
                 <i class="fas fa-pen"></i>
                 <span>Writing</span>
+            </button>
+            <button class="nav-btn" data-section="grammar">
+                <i class="fas fa-language"></i>
+                <span>Grammar</span>
             </button>
         </nav>
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- Grammar & Vocabulary Section -->
-            <section id="grammar" class="test-section active">
+            <!-- Listening Section -->
+            <section id="listening" class="test-section active">
                 <div class="section-header">
-                    <h2>Section A: Grammar & Vocabulary</h2>
-                    <p class="section-info">30 multiple-choice questions • Choose ONE answer (A, B, C or D)</p>
+                    <h2>Section 1: Listening</h2>
+                    <p class="section-info">40 questions • Approximately 30 minutes • You will hear each recording only once</p>
+                    <div class="section-description">
+                        <p>The Listening test consists of 4 parts. You will hear a variety of recordings and answer questions based on what you hear. The recordings include conversations and monologues in various contexts.</p>
+                    </div>
                 </div>
-                <div class="questions-container" id="grammar-questions">
-                    <!-- Questions will be populated by JavaScript -->
+                
+                <!-- Part 1 -->
+                <div class="listening-part">
+                    <h3>Part 1: Conversation between two people in an everyday social context</h3>
+                    <div class="questions-container" id="listening-part1-questions">
+                        <!-- Questions 1-10 -->
+                    </div>
+                </div>
+
+                <!-- Part 2 -->
+                <div class="listening-part">
+                    <h3>Part 2: Monologue in an everyday social context</h3>
+                    <div class="questions-container" id="listening-part2-questions">
+                        <!-- Questions 11-20 -->
+                    </div>
+                </div>
+
+                <!-- Part 3 -->
+                <div class="listening-part">
+                    <h3>Part 3: Conversation between up to four people in an educational or training context</h3>
+                    <div class="questions-container" id="listening-part3-questions">
+                        <!-- Questions 21-30 -->
+                    </div>
+                </div>
+
+                <!-- Part 4 -->
+                <div class="listening-part">
+                    <h3>Part 4: Monologue on an academic subject</h3>
+                    <div class="questions-container" id="listening-part4-questions">
+                        <!-- Questions 31-40 -->
+                </div>
                 </div>
             </section>
 
             <!-- Reading Section -->
             <section id="reading" class="test-section">
                 <div class="section-header">
-                    <h2>Section B: Reading Comprehension</h2>
-                    <p class="section-info">20 multiple-choice questions • Read passages and choose the best answer</p>
+                    <h2>Section 2: Reading</h2>
+                    <p class="section-info">40 questions • 60 minutes • Read passages and answer questions</p>
+                    <div class="section-description">
+                        <p>The Reading test consists of 3 passages with a variety of question types. You will read texts taken from books, journals, magazines and newspapers.</p>
+                    </div>
                 </div>
                 
                 <!-- Passage 1 -->
@@ -185,7 +221,7 @@
                         <p>A small coffee shop called "Morning Bean" opened last month in Minh's neighbourhood. The owner, Lan, sells Vietnamese drip coffee and fresh sandwiches. The shop opens at 6 a.m. on weekdays because many office workers stop for breakfast. Prices are lower before 8 a.m.; customers get a 20 percent discount if they bring their own cup. At lunchtime the place is full, so Lan plans to add outdoor tables next week. She also wants to create an online menu so people can order ahead and pick up their food quickly.</p>
                     </div>
                     <div class="questions-container" id="reading-passage1-questions">
-                        <!-- Questions 31-40 -->
+                        <!-- Questions 1-13 -->
                     </div>
                 </div>
 
@@ -196,87 +232,18 @@
                         <p>Last year, a small town planted 500 young trees along its main streets to reduce air pollution. Volunteers watered the trees twice a week during the dry season. After six months, nearly 90 percent of the trees were still healthy. The town council measured air quality and found that dust levels dropped by five percent compared to the previous year. Because of this success, the council will plant 300 more trees next spring and set up wooden benches under the largest ones. Local schools will use the project to teach students about climate change and environmental protection.</p>
                     </div>
                     <div class="questions-container" id="reading-passage2-questions">
-                        <!-- Questions 41-50 -->
-                    </div>
-                </div>
-            </section>
-
-            <!-- Listening Section -->
-            <section id="listening" class="test-section">
-                <div class="section-header">
-                    <h2>Section C: Listening Comprehension</h2>
-                    <p class="section-info">10 multiple-choice questions • Listen to audio scripts and choose the best answer</p>
-                </div>
-                
-                <!-- Script 1 -->
-                <div class="script-container">
-                    <h3>Script 1</h3>
-                    <div class="script-controls">
-                        <div class="script-info">
-                            <span class="script-duration" id="script1-duration">Duration: ~45 seconds</span>
-                            <button class="btn btn-primary play-btn" id="play-script1" data-script="1">
-                                <i class="fas fa-play"></i>
-                                Play Script
-                            </button>
-                        </div>
-                        <div class="script-actions">
-                            <button class="btn btn-secondary show-transcript-btn" id="show-transcript1" data-script="1" title="Show transcript (-1 mark penalty)">
-                                <i class="fas fa-eye"></i>
-                                Show Transcript
-                            </button>
-                        </div>
-                    </div>
-                    <div class="script-text" id="script1-text" style="display: none;">
-                        <div class="transcript-header">
-                            <p id="script1-content">Loading script...</p>
-                            <button class="translate-btn transcript-translate-btn" data-script="1" title="Translate transcript (-0.5 mark penalty)">
-                                <i class="fas fa-language"></i>
-                                <span>Translate</span>
-                            </button>
-                        </div>
-                        <div class="transcript-translation" id="script1-translation" style="display: none;">
-                            <p class="translation-label">Vietnamese Translation:</p>
-                            <p class="translation-text" id="script1-translation-text">Translating...</p>
-                        </div>
-                    </div>
-                    <div class="questions-container" id="listening-script1-questions">
-                        <!-- Questions 51-55 -->
+                        <!-- Questions 14-26 -->
                     </div>
                 </div>
 
-                <!-- Script 2 -->
-                <div class="script-container">
-                    <h3>Script 2</h3>
-                    <div class="script-controls">
-                        <div class="script-info">
-                            <span class="script-duration" id="script2-duration">Duration: ~35 seconds</span>
-                            <button class="btn btn-primary play-btn" id="play-script2" data-script="2">
-                                <i class="fas fa-play"></i>
-                                Play Script
-                            </button>
+                <!-- Passage 3 -->
+                <div class="passage-container">
+                    <h3>Passage 3</h3>
+                    <div class="passage-text">
+                        <p>Climate change is one of the most pressing issues of our time, affecting every aspect of human life and the natural world. Scientists have been studying the effects of global warming for decades, and their findings consistently show that human activities, particularly the burning of fossil fuels, are the primary cause of recent climate change. The consequences are far-reaching, including rising sea levels, more frequent extreme weather events, and threats to biodiversity. Governments and organizations worldwide are implementing various strategies to mitigate these effects and adapt to the changing climate.</p>
                         </div>
-                        <div class="script-actions">
-                            <button class="btn btn-secondary show-transcript-btn" id="show-transcript2" data-script="2" title="Show transcript (-1 mark penalty)">
-                                <i class="fas fa-eye"></i>
-                                Show Transcript
-                            </button>
-                        </div>
-                    </div>
-                    <div class="script-text" id="script2-text" style="display: none;">
-                        <div class="transcript-header">
-                            <p id="script2-content">Loading script...</p>
-                            <button class="translate-btn transcript-translate-btn" data-script="2" title="Translate transcript (-0.5 mark penalty)">
-                                <i class="fas fa-language"></i>
-                                <span>Translate</span>
-                            </button>
-                        </div>
-                        <div class="transcript-translation" id="script2-translation" style="display: none;">
-                            <p class="translation-label">Vietnamese Translation:</p>
-                            <p class="translation-text" id="script2-translation-text">Translating...</p>
-                        </div>
-                    </div>
-                    <div class="questions-container" id="listening-script2-questions">
-                        <!-- Questions 56-60 -->
+                    <div class="questions-container" id="reading-passage3-questions">
+                        <!-- Questions 27-40 -->
                     </div>
                 </div>
             </section>
@@ -284,16 +251,19 @@
             <!-- Writing Section -->
             <section id="writing" class="test-section">
                 <div class="section-header">
-                    <h2>Section C: Writing</h2>
-                    <p class="section-info">3 writing tasks • Suggested timing: 40 minutes total</p>
+                    <h2>Section 3: Writing</h2>
+                    <p class="section-info">2 tasks • 60 minutes total • Task 1: 20 minutes, Task 2: 40 minutes</p>
+                    <div class="section-description">
+                        <p>The Writing test consists of 2 tasks. Task 1 requires you to describe visual information in at least 150 words. Task 2 requires you to write an essay in response to a point of view, argument or problem in at least 250 words.</p>
+                    </div>
                 </div>
                 
                 <div class="writing-tasks">
                     <!-- Task 1 -->
                     <div class="writing-task">
-                        <h3>Task 1 (80-100 words)</h3>
+                        <h3>Task 1 (150 words minimum)</h3>
                         <div class="task-header">
-                            <p class="task-instruction" id="task1-instruction">Your friend plans to visit your city. Write an email recommending two places to see and one local food to try. Give reasons.</p>
+                            <p class="task-instruction" id="task1-instruction">The chart below shows the percentage of households in owned and rented accommodation in England and Wales between 1918 and 2011. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.</p>
                             <button class="translate-btn writing-translate-btn" data-task="1" title="Translate instruction to Vietnamese">
                                 <i class="fas fa-language"></i>
                                 <span>Translate</span>
@@ -303,8 +273,32 @@
                             <p class="translation-label">Vietnamese Translation:</p>
                             <p class="translation-text" id="task1-translation-text">Translating...</p>
                         </div>
+
+                        <!-- Chart -->
+                        <div class="chart-container">
+                            <h4>Percentage of households in owned and rented accommodation in England and Wales (1918-2011)</h4>
+                            <div class="bar-chart">
+                                <div class="chart-bar">
+                                    <div class="bar-label">Owned accommodation</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="width: 23%">
+                                            <span class="bar-value">23%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-label">Rented accommodation</div>
+                                    <div class="bar-wrapper">
+                                        <div class="bar" style="width: 77%">
+                                            <span class="bar-value">77%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="writing-area">
-                            <textarea id="writing-task1" placeholder="Write your email here..." rows="8"></textarea>
+                            <textarea id="writing-task1" placeholder="Write your response here (minimum 150 words)..." rows="8"></textarea>
                             <div class="word-count">
                                 <span id="word-count-1">0</span> words
                             </div>
@@ -320,9 +314,9 @@
 
                     <!-- Task 2 -->
                     <div class="writing-task">
-                        <h3>Task 2 (100-120 words)</h3>
+                        <h3>Task 2 (250 words minimum)</h3>
                         <div class="task-header">
-                            <p class="task-instruction" id="task2-instruction">"Learning English online is better than in a classroom." Do you agree or disagree? Give one advantage and one disadvantage.</p>
+                            <p class="task-instruction" id="task2-instruction">Some people believe that technology has made our lives more complicated, while others argue that it has simplified our daily routines. Discuss both views and give your own opinion.</p>
                             <button class="translate-btn writing-translate-btn" data-task="2" title="Translate instruction to Vietnamese">
                                 <i class="fas fa-language"></i>
                                 <span>Translate</span>
@@ -333,7 +327,7 @@
                             <p class="translation-text" id="task2-translation-text">Translating...</p>
                         </div>
                         <div class="writing-area">
-                            <textarea id="writing-task2" placeholder="Write your essay here..." rows="10"></textarea>
+                            <textarea id="writing-task2" placeholder="Write your essay here (minimum 250 words)..." rows="12"></textarea>
                             <div class="word-count">
                                 <span id="word-count-2">0</span> words
                             </div>
@@ -346,67 +340,13 @@
                         </div>
                         <div class="writing-feedback" id="writing-feedback-2" style="display: none;"></div>
                     </div>
+                </div>
+            </section>
 
-                    <!-- Task 3 -->
-                    <div class="writing-task">
-                        <h3>Task 3 (120-140 words)</h3>
-                        <div class="task-header">
-                            <p class="task-instruction" id="task3-instruction">Describe the data in the chart below and make one comparison.</p>
-                            <button class="translate-btn writing-translate-btn" data-task="3" title="Translate instruction to Vietnamese">
-                                <i class="fas fa-language"></i>
-                                <span>Translate</span>
-                            </button>
-                        </div>
-                        <div class="task-translation" id="task3-translation" style="display: none;">
-                            <p class="translation-label">Vietnamese Translation:</p>
-                            <p class="translation-text" id="task3-translation-text">Translating...</p>
-                        </div>
-
-                        <!-- Chart -->
-                        <div class="chart-container">
-                            <h4>Study Methods Used by 100 Language Learners</h4>
-                            <div class="bar-chart">
-                                <div class="chart-bar">
-                                    <div class="bar-label">Watching YouTube lessons</div>
-                                    <div class="bar-wrapper">
-                                        <div class="bar" style="width: 60%">
-                                            <span class="bar-value">60</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="chart-bar">
-                                    <div class="bar-label">Using mobile apps</div>
-                                    <div class="bar-wrapper">
-                                        <div class="bar" style="width: 50%">
-                                            <span class="bar-value">50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="chart-bar">
-                                    <div class="bar-label">Attending evening classes</div>
-                                    <div class="bar-wrapper">
-                                        <div class="bar" style="width: 30%">
-                                            <span class="bar-value">30</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="writing-area">
-                            <textarea id="writing-task3" placeholder="Describe the chart data here..." rows="12"></textarea>
-                            <div class="word-count">
-                                <span id="word-count-3">0</span> words
-                            </div>
-                        </div>
-                        <div class="writing-actions">
-                            <button class="btn btn-secondary writing-check-btn" data-task="3">
-                                <i class="fas fa-check-circle"></i>
-                                Check Writing
-                            </button>
-                        </div>
-                        <div class="writing-feedback" id="writing-feedback-3" style="display: none;"></div>
-                    </div>
+            <!-- Grammar Section -->
+            <section id="grammar" class="test-section">
+                <div id="grammar-questions">
+                    <!-- Grammar questions will be rendered here by grammar.js -->
                 </div>
             </section>
         </main>
@@ -425,6 +365,10 @@
                     <button class="btn btn-primary" id="next-btn">
                         Next
                         <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="btn btn-primary" id="submit-test-btn">
+                        <i class="fas fa-check-circle"></i>
+                        Submit Test
                     </button>
                 </div>
             </div>
@@ -448,28 +392,36 @@
                 <h3>Test Results</h3>
                 <div class="results-summary">
                     <div class="result-item">
-                        <span class="result-label">Grammar & Vocabulary:</span>
-                        <span class="result-score" id="grammar-score">0/30</span>
+                        <span class="result-label">Listening:</span>
+                        <span class="result-score" id="listening-score">0/40</span>
+                        <span class="band-score" id="listening-band">Band 0.0</span>
                     </div>
                     <div class="result-item">
                         <span class="result-label">Reading:</span>
-                        <span class="result-score" id="reading-score">0/20</span>
-                    </div>
-                    <div class="result-item">
-                        <span class="result-label">Listening:</span>
-                        <span class="result-score" id="listening-score">0/35</span>
+                        <span class="result-score" id="reading-score">0/40</span>
+                        <span class="band-score" id="reading-band">Band 0.0</span>
                     </div>
                     <div class="result-item">
                         <span class="result-label">Writing:</span>
-                        <span class="result-score" id="writing-score">0/15</span>
+                        <span class="result-score" id="writing-score">0/20</span>
+                        <span class="band-score" id="writing-band">Band 0.0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Grammar:</span>
+                        <span class="result-score" id="grammar-score">0/20</span>
+                        <span class="band-score" id="grammar-band">Band 0.0</span>
                     </div>
                     <div class="result-item penalty" id="penalty-item" style="display: none;">
                         <span class="result-label">Translation Penalty:</span>
                         <span class="result-score penalty-score" id="penalty-score">-0</span>
                     </div>
                     <div class="result-item total">
-                        <span class="result-label">Total Score:</span>
-                        <span class="result-score" id="total-score">0/100</span>
+                        <span class="result-label">Overall IELTS Band Score:</span>
+                        <span class="result-score overall-band" id="overall-band">0.0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Raw Score:</span>
+                        <span class="result-score" id="total-score">0/120</span>
                     </div>
                 </div>
                 <div class="modal-actions">
@@ -478,6 +430,7 @@
                         <i class="fas fa-download"></i>
                         Download PDF
                     </a>
+                    <button class="btn btn-info" id="view-history">📊 View History</button>
                     <button class="btn btn-secondary" id="new-test">New Test</button>
                 </div>
             </div>
@@ -488,7 +441,7 @@
         // Simple script loading without complex cache busting
         (function() {
             const script = document.createElement('script');
-            script.src = 'script.js?v=' + Date.now();
+            script.src = 'js/main.js?v=' + Date.now();
             script.onload = function() {
                 console.log('Script loaded successfully');
                 // Test if the application class is available
@@ -501,11 +454,12 @@
             script.onerror = function() {
                 console.error('Failed to load script, trying fallback');
                 const fallbackScript = document.createElement('script');
-                fallbackScript.src = 'script.js';
+                fallbackScript.src = 'js/main.js';
                 document.body.appendChild(fallbackScript);
             };
             document.body.appendChild(script);
         })();
     </script>
 </body>
+</html> 
 </html> 

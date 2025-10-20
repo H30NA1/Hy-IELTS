@@ -4,7 +4,9 @@
   "description": "IELTS Starter 1.0 Practice Test System",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node start-with-tts.js",
+    "start:simple": "node server.js",
+    "tts": "python tts_server.py",
     "dev": "nodemon server.js",
     "dev:fast": "node fast-dev.js",
     "dev:watch": "nodemon --watch server.js --watch public --ext js,json,html,css server.js",
