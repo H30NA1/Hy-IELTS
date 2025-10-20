@@ -1,0 +1,105 @@
+{
+  "id": "mg89wmdber9z0r6ngpj",
+  "timestamp": "2025-10-01T17:41:35.423Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-10-01T17:41:38.053Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "grammar": {
+      "1": 0,
+      "2": 0,
+      "3": 1,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 1,
+      "8": 1,
+      "9": 2,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 2,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 3,
+      "24": 0,
+      "25": 1,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0
+    },
+    "reading": {
+      "31": 0,
+      "32": 0,
+      "33": 0,
+      "34": 0,
+      "35": 0,
+      "36": 0,
+      "37": 0,
+      "38": 0,
+      "39": 0,
+      "40": 0,
+      "41": 1,
+      "42": 0,
+      "43": 0,
+      "44": 1,
+      "45": 0,
+      "46": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0,
+      "50": 0
+    },
+    "listening": {},
+    "writing": {
+      "task1": "Dear Team\nTimeline: token merge at 17:40 UTC, regression reported at 20:05, revert completed at 20:22. Immediate mitigations included revert, temporary font-weight and focus outline, and rollout pause if >5% users affected. Contrast failure impacted up to Y% of active users. Please confirm if package ID X-UIKIT-2025-09-30-77 was used and provide batch numbers. Contractual action: hold invoice until conformity is confirmed; invoke supplier indemnity if non-conforming",
+      "task2": "I agree that product organisations should prioritise governance and accessibility even if releases slow down. A governance-heavy release may increase merge time by about 9%, but it can cut CSS regressions by 78% and halve repair time, while a speed-first launch ships faster but risks excluding users and causing complaints. The ethical-ROI is clear: lost revenue, legal risk, and brand damage outweigh short delays. Risk-tiered rules, remediation budgets, and vendor accountability help balance speed with inclusion\n",
+      "task3": "For a mid-sized company with strong brand sensitivity, Policy G is preferable: although it raises time-to-merge by ~9% and adds ~3% overhead, it cuts median regressions from 6.5 to 1.8 per release, avoiding roughly $38,000 in costs each cycle. Policy S saves short-term cost but risks reputational damage. A suitable KPI is “expected monthly regression cost with 90% CI.” In this Monte Carlo context, medians represent the most typical outcome, while confidence intervals show the plausible range"
+    },
+    "translatedQuestions": [
+      16,
+      "16",
+      18,
+      "18"
+    ],
+    "translationPenalties": {
+      "question-16": -0.5,
+      "question-18": -0.5,
+      "transcript-1": -1,
+      "transcript-2": -1,
+      "writing-task-1": -0.5,
+      "writing-task-2": -0.5,
+      "writing-task-3": -0.5
+    }
+  },
+  "results": {
+    "grammar": 20.5,
+    "reading": 10,
+    "listening": 0,
+    "writing": 7.5,
+    "total": 38,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -2.5
+  },
+  "timeSpent": "11:58",
+  "testData": {
+    "testId": "IELTS_4_2_DESIGNER_2025_10_02",
+    "testDate": "2025-10-02",
+    "testTitle": "IELTS 4.2 — Design & Product Systems Focus — Practice Test (EN–VI)"
+  }
+}

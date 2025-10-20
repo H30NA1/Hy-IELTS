@@ -1,0 +1,98 @@
+{
+  "id": "mg7nn1pm2ws43gc8rec",
+  "timestamp": "2025-10-01T07:18:17.194Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-10-01T07:18:17.893Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "grammar": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 1,
+      "9": 0,
+      "10": 2,
+      "11": 1,
+      "12": 0,
+      "13": 1,
+      "14": 0,
+      "15": 0,
+      "16": 1,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 2,
+      "21": 0,
+      "22": 0,
+      "23": 3,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0
+    },
+    "reading": {
+      "31": 1,
+      "32": 2,
+      "33": 0,
+      "34": 0,
+      "35": 1,
+      "36": 0,
+      "37": 0,
+      "38": 3,
+      "39": 0,
+      "40": 0,
+      "41": 1,
+      "42": 1,
+      "43": 1,
+      "44": 1,
+      "45": 1,
+      "46": 1,
+      "47": 0,
+      "48": 0,
+      "49": 0,
+      "50": 1
+    },
+    "listening": {},
+    "writing": {
+      "task1": "Here’s what happened: At 13:10 UTC we got notice of a prop redesign. By 15:00 UTC the fly-load check showed a 6% imbalance. At 15:20 UTC the call was made to delay re-calibration, and by 19:45 UTC we had an unscheduled hold. We rescheduled the audience, asked for one extra hire day ($X), and called supplier SLA. This raised chain-of-custody and insurance questions. Going forward: we need a mandatory day re-check and a clear re-calibration window before any evening cue-to-cue. Cost and reputation both at risk",
+      "task2": "I agree that all staged intimate work should require a certified intimacy coordinator and clear consent records. One case study showed productions with coordinators cut reported incidents by 60% while only adding about 3% rehearsal time. Some argue cost and artistic control, but safety and legal protection outweigh this. Small houses can use short accreditation and call-and-sign forms. Budget lines should cover this, as reduced risk and stronger actor trust save more than the small extra spend",
+      "task3": "Policy L saves more money (12%) but has higher replan risk (26%) and about 1.6 extra hire days, which can hurt reputation. Policy B saves less (4%) but risk is lower (6%) and only 0.2 extra days. For a company with tight budget but medium risk tolerance, Policy B is safer overall, as reputation loss is harder to fix than small savings. A good KPI is “weekly replan probability with 90% CI.” In Monte Carlo terms, median shows the most likely outcome, while CI shows the safe range of possible results"
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {
+      "transcript-1": -1,
+      "transcript-2": -1,
+      "writing-task-1": -0.5,
+      "writing-task-2": -0.5,
+      "writing-task-3": -0.5
+    }
+  },
+  "results": {
+    "grammar": 20,
+    "reading": 10,
+    "listening": 0,
+    "writing": 12.5,
+    "total": 42.5,
+    "grammarTotal": 30,
+    "readingTotal": 20,
+    "listeningTotal": 10,
+    "writingTotal": 15,
+    "translationPenalty": -2.5
+  },
+  "timeSpent": "21:28",
+  "testData": {
+    "testId": "IELTS_4_1_ACTING_2025_10_01",
+    "testDate": "2025-10-01",
+    "testTitle": "IELTS 4.1 — Advanced Acting & Production Operations — Practice Test (EN–VI)"
+  }
+}
