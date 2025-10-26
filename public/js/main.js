@@ -42,6 +42,9 @@ async function initializeApplication() {
         const app = new IELTSCore();
         await app.initialize();
         
+        // Make it available as IELTSTest for backward compatibility
+        window.IELTSTest = app;
+        
         // Show the name input modal
         app.showNameModal();
         

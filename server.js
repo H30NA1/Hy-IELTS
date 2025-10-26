@@ -1248,15 +1248,25 @@ function convertToIELTSBand(rawScore, section, totalQuestions) {
             if (percentage >= 40) return 4.0;
             return 3.0;
             
+        case 'grammar':
+            // Grammar: 20 questions total
+            if (percentage >= 90) return 9.0;
+            if (percentage >= 80) return 8.0;
+            if (percentage >= 70) return 7.0;
+            if (percentage >= 60) return 6.0;
+            if (percentage >= 50) return 5.0;
+            if (percentage >= 40) return 4.0;
+            return 3.0;
+            
         default:
             return 0.0;
     }
 }
 
-function calculateOverallBandScore(listeningBand, readingBand, writingBand, speakingBand) {
+function calculateOverallBandScore(listeningBand, readingBand, writingBand, speakingBand, grammarBand) {
     // Calculate overall band score (average of all sections)
-    const total = listeningBand + readingBand + writingBand + speakingBand;
-    const average = total / 4;
+    const total = listeningBand + readingBand + writingBand + speakingBand + grammarBand;
+    const average = total / 5;
     
     // Round to nearest 0.5
     return Math.round(average * 2) / 2;
@@ -1281,11 +1291,23 @@ function calculateResults(answers) {
     
     // Calculate listening score (40 questions - 1 point per question)
     if (answers.listening) {
+        // Get all listening questions from all parts
+        const listeningSection = testData.sections.find(s => s.id === 'listening');
+        const allListeningQuestions = [];
+        if (listeningSection && listeningSection.parts) {
+            listeningSection.parts.forEach(part => {
+                if (part.questions) {
+                    allListeningQuestions.push(...part.questions);
+                }
+            });
+        }
+        
         Object.entries(answers.listening).forEach(([questionId, selectedOption]) => {
-            const question = testData.sections.listening.questions.find(q => q.id === parseInt(questionId));
+            const question = allListeningQuestions.find(q => q.id === questionId);
+            console.log(`Listening Q${questionId}: selected=${selectedOption}, correct=${question?.correctAnswer}, match=${question ? (selectedOption === question.correctAnswer) : 'NO QUESTION FOUND'}`);
             if (question) {
-                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(parseInt(questionId));
-                const isCorrect = selectedOption === question.correct;
+                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(questionId);
+                const isCorrect = selectedOption === question.correctAnswer;
                 
                 if (isTranslated) {
                     // Translation used: 0.5 penalty, then 0.5 for wrong answer
@@ -1307,18 +1329,25 @@ function calculateResults(answers) {
         });
     }
     
-    // Calculate reading score (40 questions - 1 point per question)
+    // Calculate reading score (30 questions - 1 point per question)
     if (answers.reading) {
-        const allReadingQuestions = [
-            ...testData.sections.reading.passages[0].questions,
-            ...testData.sections.reading.passages[1].questions,
-            ...testData.sections.reading.passages[2].questions
-        ];
+        // Get all reading questions from all passages
+        const readingSection = testData.sections.find(s => s.id === 'reading');
+        const allReadingQuestions = [];
+        if (readingSection && readingSection.passages) {
+            readingSection.passages.forEach(passage => {
+                if (passage.questions) {
+                    allReadingQuestions.push(...passage.questions);
+                }
+            });
+        }
+        
         Object.entries(answers.reading).forEach(([questionId, selectedOption]) => {
-            const question = allReadingQuestions.find(q => q.id === parseInt(questionId));
+            const question = allReadingQuestions.find(q => q.id === questionId);
+            console.log(`Reading Q${questionId}: selected=${selectedOption}, correct=${question?.correctAnswer}, match=${question ? (selectedOption === question.correctAnswer) : 'NO QUESTION FOUND'}`);
             if (question) {
-                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(parseInt(questionId));
-                const isCorrect = selectedOption === question.correct;
+                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(questionId);
+                const isCorrect = selectedOption === question.correctAnswer;
                 
                 if (isTranslated) {
                     // Translation used: 0.5 penalty, then 0.5 for wrong answer
@@ -1429,6 +1458,39 @@ function calculateResults(answers) {
         });
     }
     
+    // Calculate grammar score (20 questions - 1 point per question)
+    let grammarScore = 0;
+    if (answers.grammar) {
+        // Get grammar questions
+        const grammarSection = testData.sections.find(s => s.id === 'grammar');
+        const grammarQuestions = grammarSection ? grammarSection.questions : [];
+        
+        Object.entries(answers.grammar).forEach(([questionId, selectedOption]) => {
+            const question = grammarQuestions.find(q => q.id === questionId);
+            console.log(`Grammar Q${questionId}: selected=${selectedOption}, correct=${question?.correctAnswer}, match=${question ? (selectedOption === question.correctAnswer) : 'NO QUESTION FOUND'}`);
+            if (question) {
+                const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(questionId);
+                const isCorrect = selectedOption === question.correctAnswer;
+                
+                if (isTranslated) {
+                    // Translation used: 0.5 penalty, then 0.5 for wrong answer
+                    if (isCorrect) {
+                        grammarScore += 0.5; // 1 point - 0.5 translation penalty
+                    } else {
+                        grammarScore += 0; // 0 points - 0.5 translation penalty - 0.5 wrong answer
+                    }
+                    translationPenalty += 0.5;
+                } else {
+                    // No translation: 1 point for correct, 0 for wrong
+                    if (isCorrect) {
+                        grammarScore += 1;
+                    } else {
+                        grammarScore += 0;
+                    }
+                }
+            }
+        });
+    }
     
     // Calculate total translation penalty
     if (answers.translationPenalties) {
@@ -1439,29 +1501,33 @@ function calculateResults(answers) {
     
     // Calculate IELTS Band Scores
     const listeningBand = convertToIELTSBand(listeningScore, 40, 'listening');
-    const readingBand = convertToIELTSBand(readingScore, 40, 'reading');
+    const readingBand = convertToIELTSBand(readingScore, 30, 'reading');
     const writingBand = convertToIELTSBand(writingScore, 20, 'writing');
     const speakingBand = convertToIELTSBand(speakingScore, 20, 'speaking');
-    const overallBand = calculateOverallBandScore(listeningBand, readingBand, writingBand, speakingBand);
+    const grammarBand = convertToIELTSBand(grammarScore, 20, 'grammar');
+    const overallBand = calculateOverallBandScore(listeningBand, readingBand, writingBand, speakingBand, grammarBand);
     
-    const totalScore = listeningScore + readingScore + writingScore + speakingScore;
+    const totalScore = listeningScore + readingScore + writingScore + speakingScore + grammarScore;
     
     return {
         listening: Math.round(listeningScore * 100) / 100,
         reading: Math.round(readingScore * 100) / 100,
         writing: Math.round(writingScore * 100) / 100,
         speaking: Math.round(speakingScore * 100) / 100,
+        grammar: Math.round(grammarScore * 100) / 100,
         total: Math.max(0, Math.round(totalScore * 100) / 100), // Ensure total doesn't go below 0
         listeningTotal: 40, // 40 listening questions
-        readingTotal: 40, // 40 reading questions
+        readingTotal: 30, // 30 reading questions
         writingTotal: 20, // 20 writing points (10 per task)
         speakingTotal: 20, // 20 speaking points (based on content quality)
+        grammarTotal: 20, // 20 grammar questions
         translationPenalty: Math.round(translationPenalty * 100) / 100,
         bands: {
             listening: listeningBand,
             reading: readingBand,
             writing: writingBand,
             speaking: speakingBand,
+            grammar: grammarBand,
             overall: overallBand
         }
     };
@@ -1515,6 +1581,10 @@ async function generatePDF(submission, userName, timestamp) {
 function generatePDFHTML(submission) {
     const { results, answers, testData: submissionTestData } = submission;
     
+    // Debug logging
+    console.log('PDF Generation - submission:', JSON.stringify(submission, null, 2));
+    console.log('PDF Generation - results:', JSON.stringify(results, null, 2));
+    
     // Load the current test data for PDF generation
     const currentTestData = testData;
     
@@ -1563,27 +1633,27 @@ function generatePDFHTML(submission) {
             <h2>Test Summary</h2>
             <div class="result-item">
                 <span>Grammar & Vocabulary:</span>
-                <span>${results.grammar}/${results.grammarTotal} (Band ${results.bands.grammar})</span>
+                <span>${results.grammar || 0}/${results.grammarTotal || 20} (Band ${results.bands?.grammar || 0})</span>
             </div>
             <div class="result-item">
                 <span>Reading:</span>
-                <span>${results.reading}/${results.readingTotal} (Band ${results.bands.reading})</span>
+                <span>${results.reading || 0}/${results.readingTotal || 30} (Band ${results.bands?.reading || 0})</span>
             </div>
             <div class="result-item">
                 <span>Listening:</span>
-                <span>${results.listening}/${results.listeningTotal} (Band ${results.bands.listening})</span>
+                <span>${results.listening || 0}/${results.listeningTotal || 40} (Band ${results.bands?.listening || 0})</span>
             </div>
             <div class="result-item">
                 <span>Writing:</span>
-                <span>${results.writing}/${results.writingTotal} (Band ${results.bands.writing})</span>
+                <span>${results.writing || 0}/${results.writingTotal || 20} (Band ${results.bands?.writing || 0})</span>
             </div>
             <div class="result-item total">
                 <span>Overall IELTS Band Score:</span>
-                <span>${results.bands.overall}</span>
+                <span>${results.bands?.overall || 0}</span>
             </div>
             <div class="result-item">
                 <span>Total Raw Score:</span>
-                <span>${results.total}/${results.grammarTotal + results.readingTotal + results.listeningTotal + results.writingTotal}</span>
+                <span>${results.total || 0}/${(results.grammarTotal || 20) + (results.readingTotal || 30) + (results.listeningTotal || 40) + (results.writingTotal || 20)}</span>
             </div>
             <div class="result-item">
                 <span>Time Spent:</span>

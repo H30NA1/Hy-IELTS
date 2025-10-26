@@ -2445,31 +2445,37 @@ textarea:focus {
     box-shadow: var(--shadow-sm);
 }
 
-/* Word count styles - Positioned in bottom-right corner, very subtle */
+/* Word count styles - Enhanced visibility and positioning */
 .word-count {
-    position: absolute;
-    bottom: 0.25rem;
-    right: 0.25rem;
-    font-size: 0.7rem;
-    font-weight: 400;
-    padding: 0.15rem 0.3rem;
-    border-radius: var(--border-radius-sm);
-    display: inline-flex;
-    align-items: center;
-    gap: 0.2rem;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: var(--text-secondary);
-    transition: all 0.3s ease;
-    z-index: 5;
-    opacity: 0;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-    max-width: 70px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    pointer-events: none;
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    background: #f8f9fa !important;
+    border: 2px solid #dee2e6 !important;
+    color: #495057 !important;
+    transition: all 0.3s ease !important;
+    z-index: 10 !important;
+    opacity: 1 !important;
+    backdrop-filter: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    max-width: none !important;
+    width: 100% !important;
+    min-height: 60px !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    white-space: normal !important;
+    pointer-events: auto !important;
+    margin: 8px 0 !important;
+    text-align: center !important;
 }
 
 .word-count::before {
@@ -2482,34 +2488,34 @@ textarea:focus {
     flex-shrink: 0;
 }
 
-.word-count.low {
-    background: rgba(254, 243, 199, 0.9);
-    border-color: #f59e0b;
-    color: #92400e;
+.word-count.poor {
+    background: #f8d7da !important;
+    border-color: #dc3545 !important;
+    color: #721c24 !important;
 }
 
-.word-count.low::before {
-    background: #f59e0b;
+.word-count.poor::before {
+    background: #dc3545 !important;
+}
+
+.word-count.warning {
+    background: #fff3cd !important;
+    border-color: #ffc107 !important;
+    color: #856404 !important;
+}
+
+.word-count.warning::before {
+    background: #ffc107 !important;
 }
 
 .word-count.good {
-    background: rgba(209, 250, 229, 0.9);
-    border-color: #10b981;
-    color: #065f46;
+    background: #d4edda !important;
+    border-color: #28a745 !important;
+    color: #155724 !important;
 }
 
 .word-count.good::before {
-    background: #10b981;
-}
-
-.word-count.high {
-    background: rgba(254, 226, 226, 0.9);
-    border-color: #ef4444;
-    color: #991b1b;
-}
-
-.word-count.high::before {
-    background: #ef4444;
+    background: #28a745 !important;
 }
 
 /* Show word count when there's content or when textarea is focused */

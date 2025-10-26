@@ -36,12 +36,33 @@ class IELTSReading {
             return;
         }
 
-        // Render each passage with its questions
+        // Render each passage with its content and questions
         readingSection.passages.forEach((passage, index) => {
             const passageNumber = index + 1;
             const containerId = `reading-passage${passageNumber}-questions`;
+            const contentId = `reading-passage${passageNumber}-content`;
+            
+            // Load passage content
+            this.loadPassageContent(passage, contentId);
+            
+            // Render questions
             this.renderPassageFromData(passage, containerId, passageNumber);
         });
+    }
+
+    loadPassageContent(passageData, contentId) {
+        const contentElement = document.getElementById(contentId);
+        if (!contentElement) {
+            console.error(`Content element not found: ${contentId}`);
+            return;
+        }
+
+        if (passageData.content) {
+            contentElement.innerHTML = `<p>${passageData.content}</p>`;
+            console.log(`Loaded passage content for ${contentId}:`, passageData.content.substring(0, 100) + '...');
+        } else {
+            console.error(`No content found for passage:`, passageData);
+        }
     }
 
     renderPassageFromData(passageData, containerId, passageNumber) {
@@ -69,19 +90,19 @@ class IELTSReading {
         const options = questionData.options || ["Option A", "Option B", "Option C", "Option D"];
         const translation = questionData.translation || "";
         
-        // Create options HTML
+        // Create options HTML with PROPER RADIO BUTTONS
         let optionsHTML = '';
         options.forEach((option, index) => {
             const optionLetter = String.fromCharCode(65 + index); // A, B, C, D
             optionsHTML += `
-                <div class="option" data-question="${questionData.id}" data-option="${index}">
+                <label class="option">
+                    <input type="radio" 
+                           name="reading-${questionData.id}" 
+                           value="${optionLetter}"
+                           id="${questionData.id}-${optionLetter}">
                     <div class="option-label">${optionLetter}</div>
-                    <div class="option-text" id="option-text-${questionData.id}-${index}">${option}</div>
-                    <div class="option-translation" id="option-translation-${questionData.id}-${index}" style="display: none;">
-                        <p class="translation-label">Vietnamese Translation:</p>
-                        <p class="translation-text" id="option-translation-text-${questionData.id}-${index}">Translating...</p>
-                    </div>
-                </div>
+                    <div class="option-text">${option}</div>
+                </label>
             `;
         });
         
@@ -136,7 +157,7 @@ class IELTSReading {
         // Radio button changes for reading questions
         document.addEventListener('change', (e) => {
             if (e.target.type === 'radio' && e.target.name.startsWith('reading-')) {
-                const questionId = e.target.name;
+                const questionId = e.target.name.replace('reading-', '');
                 const selectedValue = e.target.value;
                 this.saveReadingAnswer(questionId, selectedValue);
             }

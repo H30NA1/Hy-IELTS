@@ -3,11 +3,63 @@ class IELTSWriting {
     constructor() {
         this.tasks = [];
         this.wordCounts = {};
+        this.testData = null;
     }
 
-    initialize() {
+    async initialize() {
+        await this.loadTestData();
+        this.renderWritingTasks();
         this.setupEventListeners();
         this.initializeWordCountTracking();
+    }
+
+    async loadTestData() {
+        try {
+            const response = await fetch('/api/test-data');
+            const data = await response.json();
+            this.testData = data;
+            console.log('Writing module loaded test data:', data);
+        } catch (error) {
+            console.error('Error loading test data for writing:', error);
+        }
+    }
+
+    renderWritingTasks() {
+        if (!this.testData || !this.testData.sections) {
+            console.error('No test data available for writing tasks');
+            return;
+        }
+
+        const writingSection = this.testData.sections.find(section => section.id === 'writing');
+        if (!writingSection || !writingSection.tasks) {
+            console.error('No writing section or tasks found in test data');
+            return;
+        }
+
+        // Load writing tasks from JSON data
+        writingSection.tasks.forEach((task, index) => {
+            const taskNumber = index + 1;
+            this.loadWritingTask(task, taskNumber);
+        });
+    }
+
+    loadWritingTask(taskData, taskNumber) {
+        // Update task instruction
+        const instructionElement = document.getElementById(`task${taskNumber}-instruction`);
+        if (instructionElement && taskData.instructions) {
+            instructionElement.textContent = taskData.instructions;
+            console.log(`Loaded writing task ${taskNumber} instruction:`, taskData.instructions.substring(0, 100) + '...');
+        }
+
+        // Update word count requirements
+        if (taskData.wordCountMin) {
+            const textarea = document.getElementById(`writing-task${taskNumber}`);
+            if (textarea) {
+                const placeholder = textarea.placeholder;
+                const newPlaceholder = placeholder.replace(/\d+ words/, `${taskData.wordCountMin} words`);
+                textarea.placeholder = newPlaceholder;
+            }
+        }
     }
 
     setupEventListeners() {
@@ -77,31 +129,52 @@ class IELTSWriting {
         const wordCountElement = document.getElementById(`word-count-${taskNumber}`);
         
         if (wordCountElement) {
-            wordCountElement.textContent = `${wordCount} words`;
+            // More detailed word count display
+            const minWords = taskNumber === '1' ? 150 : 250;
+            const remaining = Math.max(0, minWords - wordCount);
             
-            // Update word count styling based on requirements
-            if (taskNumber === '1') {
-                // Task 1: 150 words minimum
-                if (wordCount >= 150) {
-                    wordCountElement.className = 'word-count good';
-                } else if (wordCount >= 100) {
-                    wordCountElement.className = 'word-count warning';
-                } else {
-                    wordCountElement.className = 'word-count poor';
-                }
-            } else if (taskNumber === '2') {
-                // Task 2: 250 words minimum
-                if (wordCount >= 250) {
-                    wordCountElement.className = 'word-count good';
-                } else if (wordCount >= 200) {
-                    wordCountElement.className = 'word-count warning';
-                } else {
-                    wordCountElement.className = 'word-count poor';
-                }
+            // Update the span content
+            if (wordCount >= minWords) {
+                wordCountElement.innerHTML = `
+                    <span style="color: #28a745; font-weight: bold; font-size: 16px;">✅ ${wordCount} words</span>
+                    <br><small style="color: #28a745; font-size: 12px;">Minimum requirement met!</small>
+                `;
+            } else if (wordCount >= minWords * 0.8) {
+                wordCountElement.innerHTML = `
+                    <span style="color: #ffc107; font-weight: bold; font-size: 16px;">⚠️ ${wordCount} words</span>
+                    <br><small style="color: #ffc107; font-size: 12px;">${remaining} more words needed</small>
+                `;
+            } else {
+                wordCountElement.innerHTML = `
+                    <span style="color: #dc3545; font-weight: bold; font-size: 16px;">❌ ${wordCount} words</span>
+                    <br><small style="color: #dc3545; font-size: 12px;">${remaining} more words needed (min: ${minWords})</small>
+                `;
+            }
+            
+            // Update the parent div styling
+            const parentDiv = wordCountElement.closest('.word-count');
+            if (parentDiv) {
+                parentDiv.style.cssText = `
+                    background: ${wordCount >= minWords ? '#d4edda' : wordCount >= minWords * 0.8 ? '#fff3cd' : '#f8d7da'} !important;
+                    border: 2px solid ${wordCount >= minWords ? '#28a745' : wordCount >= minWords * 0.8 ? '#ffc107' : '#dc3545'} !important;
+                    border-radius: 8px !important;
+                    padding: 12px 16px !important;
+                    margin: 8px 0 !important;
+                    font-size: 14px !important;
+                    text-align: center !important;
+                    min-height: 60px !important;
+                    display: flex !important;
+                    flex-direction: column !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                `;
             }
         }
         
         this.wordCounts[textareaId] = wordCount;
+        console.log(`Updated word count for ${textareaId}: ${wordCount} words`);
     }
 
     saveAnswer(textareaId, text) {
