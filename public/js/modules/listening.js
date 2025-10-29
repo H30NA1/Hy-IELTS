@@ -649,21 +649,65 @@ Now listen carefully and answer the questions.`;
     createQuestionElementFromData(questionData, partNumber) {
         const questionDiv = IELTSUtils.createElement('div', 'question');
         
-        // Safety check: ensure options exists and is an array
-        const options = questionData.options || [];
-        
+        // Handle different question types
+        if (questionData.type === 'form' || questionData.type === 'completion' || questionData.type === 'fill-in') {
+            // Form completion or fill-in-the-blank question
         questionDiv.innerHTML = `
-            <h4>Question ${questionData.id.replace('listening-q', '')}</h4>
-            <p>${questionData.questionText}</p>
-            <div class="options">
-                ${options.map(option => `
-                    <label>
-                        <input type="radio" name="${questionData.id}" value="${option.charAt(0)}">
-                        ${option}
-                    </label>
-                `).join('')}
-            </div>
-        `;
+                <div class="question-header">
+                    <div class="question-header-top">
+                        <span class="question-number">Question ${questionData.id.replace('listening-q', '').replace('q', '')}</span>
+                        <button class="translate-btn" data-question="${questionData.id}" title="Translate to Vietnamese (0.5 grade penalty)">
+                            <i class="fas fa-language"></i>
+                            <span>Translate</span>
+                        </button>
+                    </div>
+                    <div class="question-text" id="question-text-${questionData.id}">${questionData.questionText}</div>
+                    <div class="question-translation" id="question-translation-${questionData.id}" style="display: none;">
+                        <p class="translation-label">Vietnamese Translation:</p>
+                        <p class="translation-text" id="translation-text-${questionData.id}">Translating...</p>
+                    </div>
+                </div>
+                <div class="answer-input">
+                    <input type="text" 
+                           id="answer-${questionData.id}" 
+                           name="${questionData.id}" 
+                           placeholder="Type your answer here..."
+                           class="form-answer-input">
+                </div>
+            `;
+        } else {
+            // Multiple choice question - CREATE PROPER RADIO BUTTONS
+            const options = questionData.options || [];
+            
+            questionDiv.innerHTML = `
+                <div class="question-header">
+                    <div class="question-header-top">
+                        <span class="question-number">Question ${questionData.id.replace('listening-q', '').replace('q', '')}</span>
+                        <button class="translate-btn" data-question="${questionData.id}" title="Translate to Vietnamese (0.5 grade penalty)">
+                            <i class="fas fa-language"></i>
+                            <span>Translate</span>
+                        </button>
+                    </div>
+                    <div class="question-text" id="question-text-${questionData.id}">${questionData.questionText}</div>
+                    <div class="question-translation" id="question-translation-${questionData.id}" style="display: none;">
+                        <p class="translation-label">Vietnamese Translation:</p>
+                        <p class="translation-text" id="translation-text-${questionData.id}">Translating...</p>
+                    </div>
+                </div>
+                <div class="options">
+                    ${options.map((option, index) => `
+                        <label class="option">
+                            <input type="radio" 
+                                   name="listening-${questionData.id}" 
+                                   value="${String.fromCharCode(65 + index)}"
+                                   id="${questionData.id}-${String.fromCharCode(65 + index)}">
+                            <div class="option-label">${String.fromCharCode(65 + index)}</div>
+                            <div class="option-text">${option.replace(/^[A-D]\)\s*/, '')}</div>
+                        </label>
+                    `).join('')}
+                </div>
+            `;
+        }
         
         return questionDiv;
     }
@@ -830,9 +874,18 @@ Now listen carefully and answer the questions.`;
         // Radio button changes for listening questions
         document.addEventListener('change', (e) => {
             if (e.target.type === 'radio' && e.target.name.startsWith('listening-')) {
-                const questionId = e.target.name;
+                const questionId = e.target.name.replace('listening-', '');
                 const selectedValue = e.target.value;
                 this.saveListeningAnswer(questionId, selectedValue);
+            }
+        });
+
+        // Text input changes for form-completion questions
+        document.addEventListener('input', (e) => {
+            if (e.target.classList.contains('form-answer-input')) {
+                const questionId = e.target.name;
+                const answer = e.target.value;
+                this.saveListeningAnswer(questionId, answer);
             }
         });
         

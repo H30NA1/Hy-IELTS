@@ -1,0 +1,1686 @@
+{
+  "userName": "Test User",
+  "timestamp": "2025-10-26T05:46:00.784Z",
+  "results": {
+    "listening": 39,
+    "reading": 30,
+    "writing": 20,
+    "speaking": 0,
+    "total": 89,
+    "listeningTotal": 40,
+    "readingTotal": 40,
+    "writingTotal": 20,
+    "speakingTotal": 20,
+    "translationPenalty": 0,
+    "bands": {
+      "listening": 9,
+      "reading": 4.5,
+      "writing": 9,
+      "speaking": 0,
+      "overall": 5.5
+    }
+  },
+  "answers": {
+    "listening": {
+      "listening-q1": "A",
+      "listening-q2": "B",
+      "listening-q3": "B",
+      "listening-q4": "C",
+      "listening-q5": "B",
+      "listening-q6": "A",
+      "listening-q7": "A",
+      "listening-q8": "B",
+      "listening-q9": "B",
+      "listening-q10": "C",
+      "listening-q11": "B",
+      "listening-q12": "D",
+      "listening-q13": "C",
+      "listening-q14": "B",
+      "listening-q15": "B",
+      "listening-q16": "B",
+      "listening-q17": "C",
+      "listening-q18": "C",
+      "listening-q19": "B",
+      "listening-q20": "B",
+      "listening-q21": "B",
+      "listening-q22": "C",
+      "listening-q24": "B",
+      "listening-q23": "B",
+      "listening-q25": "C",
+      "listening-q26": "B",
+      "listening-q27": "C",
+      "listening-q28": "B",
+      "listening-q29": "C",
+      "listening-q30": "C",
+      "listening-q31": "C",
+      "listening-q32": "B",
+      "listening-q33": "B",
+      "listening-q34": "B",
+      "listening-q35": "C",
+      "listening-q36": "B",
+      "listening-q37": "B",
+      "listening-q38": "C",
+      "listening-q39": "B",
+      "listening-q40": "C"
+    },
+    "reading": {
+      "reading-q1": "B",
+      "reading-q2": "B",
+      "reading-q3": "C",
+      "reading-q4": "B",
+      "reading-q5": "D",
+      "reading-q6": "B",
+      "reading-q7": "A",
+      "reading-q8": "A",
+      "reading-q9": "B",
+      "reading-q10": "B",
+      "reading-q11": "B",
+      "reading-q12": "B",
+      "reading-q13": "C",
+      "reading-q14": "C",
+      "reading-q15": "B",
+      "reading-q16": "B",
+      "reading-q17": "A",
+      "reading-q18": "C",
+      "reading-q19": "C",
+      "reading-q20": "B",
+      "reading-q21": "B",
+      "reading-q22": "B",
+      "reading-q23": "C",
+      "reading-q24": "C",
+      "reading-q25": "C",
+      "reading-q26": "B",
+      "reading-q27": "B",
+      "reading-q28": "C",
+      "reading-q29": "B",
+      "reading-q30": "B"
+    },
+    "grammar": {
+      "grammar-q1": "C",
+      "grammar-q2": "C",
+      "grammar-q3": "A",
+      "grammar-q4": "A",
+      "grammar-q5": "B",
+      "grammar-q6": "A",
+      "grammar-q7": "B",
+      "grammar-q8": "A",
+      "grammar-q9": "B",
+      "grammar-q10": "B",
+      "grammar-q11": "B",
+      "grammar-q12": "B",
+      "grammar-q13": "C",
+      "grammar-q14": "B",
+      "grammar-q15": "C",
+      "grammar-q16": "B",
+      "grammar-q17": "B",
+      "grammar-q18": "A",
+      "grammar-q19": "A",
+      "grammar-q20": "B"
+    },
+    "writing": {
+      "task1": "The chart illustrates the percentage of theater attendance by age group in London from 2010 to 2020. Overall, there are significant variations in attendance patterns across different age groups, with some groups showing notable changes over the decade.\n\nThe highest attendance rates are consistently found among the 45-54 age group, which maintained approximately 35% attendance throughout the period. This group appears to be the most engaged demographic for theater performances in London.\n\nThe 35-44 age group shows the second highest attendance, starting at around 30% in 2010 and experiencing a slight increase to approximately 32% by 2020. This suggests a growing interest in theater among middle-aged adults.\n\nYounger age groups (18-24 and 25-34) demonstrate lower but relatively stable attendance rates, hovering around 20-25% throughout the decade. Interestingly, the 18-24 age group shows a slight upward trend, increasing from about 20% to 23% over the period.\n\nThe oldest age group (65+) shows the most significant change, with attendance dropping from approximately 28% in 2010 to about 22% in 2020. This decline may reflect changing preferences or accessibility issues for older theater-goers.\n\nIn conclusion, while middle-aged adults remain the most frequent theater attendees, there are encouraging signs of growing interest among younger demographics, though older audiences appear to be declining.",
+      "task2": "The debate over whether acting is an innate talent or a skill that can be developed through training has long divided opinions in the entertainment industry. While some argue that exceptional acting ability is purely natural, others maintain that proper training and practice can cultivate acting skills in anyone. This essay will examine both perspectives and present a balanced view.\n\nProponents of the natural talent theory argue that truly great actors possess an inherent ability to connect with audiences and embody characters authentically. They point to child actors who demonstrate remarkable emotional depth and presence without formal training, suggesting that some individuals are simply born with the gift of performance. Furthermore, they contend that while technique can be taught, the raw emotional intelligence and charisma that distinguish exceptional actors cannot be learned.\n\nHowever, supporters of the training approach emphasize that acting is fundamentally a craft that requires systematic development. They argue that even naturally talented individuals benefit significantly from formal training, which teaches essential skills such as voice projection, movement, script analysis, and character development. Many successful actors, including Meryl Streep and Daniel Day-Lewis, have undergone extensive training despite possessing natural ability. Additionally, acting schools and workshops have produced countless professional actors who lacked initial natural talent but developed their skills through dedicated practice.\n\nIn my opinion, the most effective approach combines both perspectives. While natural talent provides a foundation, it is training and practice that refine and develop this potential into professional competence. The entertainment industry is filled with examples of actors who began with modest abilities but achieved greatness through rigorous training and persistent practice. Conversely, even naturally gifted actors often struggle without proper technique and discipline.\n\nIn conclusion, while natural talent may provide an initial advantage, acting is ultimately a skill that can be developed through proper training and practice. The most successful actors typically combine innate ability with dedicated study and continuous improvement, demonstrating that both elements are essential for excellence in the craft."
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {}
+  },
+  "testData": {
+    "testId": "IELTS-ACTING-THEME-2025-10-05",
+    "testDate": "2025-10-05",
+    "testTitle": "IELTS Acting and Theater Practice Test",
+    "totalQuestions": 110,
+    "sections": [
+      {
+        "id": "listening",
+        "title": "Listening",
+        "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+        "parts": [
+          {
+            "partNumber": 1,
+            "title": "Part 1: Conversation about drama course enrollment",
+            "instructions": "Listen to the conversation and answer questions 1-10.",
+            "voiceProfiles": {
+              "male": {
+                "pitch": 0.4,
+                "rate": 0.9,
+                "volume": 0.8,
+                "name": "Student",
+                "variation": 0.15,
+                "accent": "casual",
+                "emotion": "interested",
+                "speakingType": "conversational"
+              },
+              "female": {
+                "pitch": 1.5,
+                "rate": 1.2,
+                "volume": 0.9,
+                "name": "Course Coordinator",
+                "variation": 0.12,
+                "accent": "professional",
+                "emotion": "helpful",
+                "speakingType": "service"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Good morning, this is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between a student and a drama course coordinator. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Good morning, Royal Academy of Dramatic Arts. How can I help you?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "Hello, I'm interested in enrolling in your acting course for beginners."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Certainly! Our beginner's course runs for eight weeks, starting on September 15th."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Perfect. What's the schedule like?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "Classes are every Tuesday and Thursday from 6 PM to 9 PM. The course fee is £480, which includes all materials."
+                },
+                {
+                  "speaker": "male",
+                  "text": "That sounds reasonable. Could you tell me what the course covers?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "Yes, we focus on voice projection, character development, improvisation, and basic stage techniques. The final week includes a small performance for friends and family."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Wonderful! My name is James Wilson, that's J-A-M-E-S W-I-L-S-O-N."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Thank you, Mr. Wilson. And your phone number?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "It's 0798 765 4321."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Got it. The instructor is Sarah Johnson - she's been teaching here for five years. You'll need to bring comfortable clothing and a notebook."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Are there any age restrictions?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "Participants must be at least 16 years old. The maximum class size is 15 students."
+                },
+                {
+                  "speaker": "male",
+                  "text": "That's great. I'll definitely enroll. Thank you for your help."
+                },
+                {
+                  "speaker": "female",
+                  "text": "You're welcome, Mr. Wilson. We look forward to seeing you in class."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q1",
+                "type": "multiple-choice",
+                "questionText": "What is the man's name?",
+                "options": [
+                  "A) James Wilson",
+                  "B) John Williamson",
+                  "C) Jason Williams",
+                  "D) Jacob Watson"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tên của người đàn ông là gì?"
+              },
+              {
+                "id": "listening-q2",
+                "type": "multiple-choice",
+                "questionText": "Where is the conversation taking place?",
+                "options": [
+                  "A) At a theater",
+                  "B) At a drama school",
+                  "C) At a university",
+                  "D) At a community center"
+                ],
+                "correctAnswer": "B",
+                "translation": "Cuộc hội thoại diễn ra ở đâu?"
+              },
+              {
+                "id": "listening-q3",
+                "type": "multiple-choice",
+                "questionText": "How long does the course last?",
+                "options": [
+                  "A) 6 weeks",
+                  "B) 8 weeks",
+                  "C) 10 weeks",
+                  "D) 12 weeks"
+                ],
+                "correctAnswer": "B",
+                "translation": "Khóa học kéo dài bao lâu?"
+              },
+              {
+                "id": "listening-q4",
+                "type": "multiple-choice",
+                "questionText": "What is the course fee?",
+                "options": [
+                  "A) £400",
+                  "B) £450",
+                  "C) £480",
+                  "D) £500"
+                ],
+                "correctAnswer": "C",
+                "translation": "Học phí khóa học là bao nhiêu?"
+              },
+              {
+                "id": "listening-q5",
+                "type": "multiple-choice",
+                "questionText": "Which skill is NOT mentioned in the course?",
+                "options": [
+                  "A) Voice projection",
+                  "B) Stage combat",
+                  "C) Character development",
+                  "D) Improvisation"
+                ],
+                "correctAnswer": "B",
+                "translation": "Kỹ năng nào KHÔNG được đề cập trong khóa học?"
+              },
+              {
+                "id": "listening-q6",
+                "type": "multiple-choice",
+                "questionText": "What is the phone number?",
+                "options": [
+                  "A) 0798 765 4321",
+                  "B) 0798 654 3210",
+                  "C) 0789 654 3210",
+                  "D) 0789 765 4321"
+                ],
+                "correctAnswer": "A",
+                "translation": "Số điện thoại là gì?"
+              },
+              {
+                "id": "listening-q7",
+                "type": "multiple-choice",
+                "questionText": "Who is the instructor?",
+                "options": [
+                  "A) Sarah Johnson",
+                  "B) Susan Jackson",
+                  "C) Sandra Jameson",
+                  "D) Samantha Jefferson"
+                ],
+                "correctAnswer": "A",
+                "translation": "Ai là người hướng dẫn?"
+              },
+              {
+                "id": "listening-q8",
+                "type": "multiple-choice",
+                "questionText": "What must students bring?",
+                "options": [
+                  "A) Scripts and costumes",
+                  "B) Comfortable clothing and notebook",
+                  "C) Textbooks and pen",
+                  "D) Water bottle and shoes"
+                ],
+                "correctAnswer": "B",
+                "translation": "Học viên phải mang theo gì?"
+              },
+              {
+                "id": "listening-q9",
+                "type": "multiple-choice",
+                "questionText": "What is the minimum age requirement?",
+                "options": [
+                  "A) 14 years",
+                  "B) 16 years",
+                  "C) 18 years",
+                  "D) 21 years"
+                ],
+                "correctAnswer": "B",
+                "translation": "Yêu cầu tuổi tối thiểu là bao nhiêu?"
+              },
+              {
+                "id": "listening-q10",
+                "type": "multiple-choice",
+                "questionText": "What happens in the final week?",
+                "options": [
+                  "A) Written exam",
+                  "B) Individual audition",
+                  "C) Small performance",
+                  "D) Video recording"
+                ],
+                "correctAnswer": "C",
+                "translation": "Điều gì xảy ra trong tuần cuối cùng?"
+              }
+            ]
+          },
+          {
+            "partNumber": 2,
+            "title": "Part 2: Monologue about theater history",
+            "instructions": "Listen to the monologue and answer questions 11-20.",
+            "voiceProfiles": {
+              "male": {
+                "pitch": 0.3,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Theater Historian",
+                "variation": 0.1,
+                "accent": "educated",
+                "emotion": "knowledgeable",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 2. You will hear a monologue about theater history. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+              "conversation": [
+                {
+                  "speaker": "male",
+                  "text": "Welcome to today's lecture on the history of Western theater. Theater as we know it began in ancient Greece around the 5th century BCE. The earliest surviving Greek tragedies were written by Aeschylus, Sophocles, and Euripides. These plays were performed in large outdoor amphitheaters that could seat up to 14,000 spectators. During the medieval period, theater moved to churches and town squares, with performances often depicting biblical stories. The Renaissance brought about the Elizabethan era, famous for William Shakespeare who wrote 37 plays between 1589 and 1613. The Globe Theatre in London, built in 1599, could hold 3,000 people. Modern theater developed in the 19th century with the works of Henrik Ibsen and Anton Chekhov, who introduced realism. Today's theater continues to evolve with experimental forms and digital technology."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q11",
+                "type": "multiple-choice",
+                "questionText": "When did Western theater begin?",
+                "options": [
+                  "A) 3rd century BCE",
+                  "B) 5th century BCE",
+                  "C) 1st century CE",
+                  "D) 5th century CE"
+                ],
+                "correctAnswer": "B",
+                "translation": "Kịch phương Tây bắt đầu từ khi nào?"
+              },
+              {
+                "id": "listening-q12",
+                "type": "multiple-choice",
+                "questionText": "Which playwright is NOT mentioned from ancient Greece?",
+                "options": [
+                  "A) Aeschylus",
+                  "B) Sophocles",
+                  "C) Euripides",
+                  "D) Aristophanes"
+                ],
+                "correctAnswer": "D",
+                "translation": "Nhà soạn kịch nào KHÔNG được đề cập từ Hy Lạp cổ đại?"
+              },
+              {
+                "id": "listening-q13",
+                "type": "multiple-choice",
+                "questionText": "How many people could Greek amphitheaters hold?",
+                "options": [
+                  "A) 5,000",
+                  "B) 10,000",
+                  "C) 14,000",
+                  "D) 20,000"
+                ],
+                "correctAnswer": "C",
+                "translation": "Các nhà hát hình bán nguyệt Hy Lạp có thể chứa bao nhiêu người?"
+              },
+              {
+                "id": "listening-q14",
+                "type": "multiple-choice",
+                "questionText": "Where were medieval plays performed?",
+                "options": [
+                  "A) Royal palaces",
+                  "B) Churches and town squares",
+                  "C) Private homes",
+                  "D) University halls"
+                ],
+                "correctAnswer": "B",
+                "translation": "Các vở kịch thời trung cổ được biểu diễn ở đâu?"
+              },
+              {
+                "id": "listening-q15",
+                "type": "multiple-choice",
+                "questionText": "How many plays did Shakespeare write?",
+                "options": [
+                  "A) 27",
+                  "B) 37",
+                  "C) 47",
+                  "D) 57"
+                ],
+                "correctAnswer": "B",
+                "translation": "Shakespeare đã viết bao nhiêu vở kịch?"
+              },
+              {
+                "id": "listening-q16",
+                "type": "multiple-choice",
+                "questionText": "When was the Globe Theatre built?",
+                "options": [
+                  "A) 1589",
+                  "B) 1599",
+                  "C) 1609",
+                  "D) 1613"
+                ],
+                "correctAnswer": "B",
+                "translation": "Nhà hát Globe được xây dựng khi nào?"
+              },
+              {
+                "id": "listening-q17",
+                "type": "multiple-choice",
+                "questionText": "What was the capacity of the Globe Theatre?",
+                "options": [
+                  "A) 1,500 people",
+                  "B) 2,000 people",
+                  "C) 3,000 people",
+                  "D) 4,000 people"
+                ],
+                "correctAnswer": "C",
+                "translation": "Sức chứa của Nhà hát Globe là bao nhiêu?"
+              },
+              {
+                "id": "listening-q18",
+                "type": "multiple-choice",
+                "questionText": "Which century saw the development of realism?",
+                "options": [
+                  "A) 17th century",
+                  "B) 18th century",
+                  "C) 19th century",
+                  "D) 20th century"
+                ],
+                "correctAnswer": "C",
+                "translation": "Thế kỷ nào chứng kiến sự phát triển của chủ nghĩa hiện thực?"
+              },
+              {
+                "id": "listening-q19",
+                "type": "multiple-choice",
+                "questionText": "Which playwright introduced realism?",
+                "options": [
+                  "A) Shakespeare and Marlowe",
+                  "B) Ibsen and Chekhov",
+                  "C) Beckett and Pinter",
+                  "D) Miller and Williams"
+                ],
+                "correctAnswer": "B",
+                "translation": "Nhà soạn kịch nào đã giới thiệu chủ nghĩa hiện thực?"
+              },
+              {
+                "id": "listening-q20",
+                "type": "multiple-choice",
+                "questionText": "What is mentioned about modern theater?",
+                "options": [
+                  "A) It only performs classics",
+                  "B) It uses experimental forms",
+                  "C) It is less popular",
+                  "D) It focuses on musicals"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì được đề cập về sân khấu hiện đại?"
+              }
+            ]
+          },
+          {
+            "partNumber": 3,
+            "title": "Part 3: Conversation between drama students",
+            "instructions": "Listen to the conversation and answer questions 21-30.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.6,
+                "rate": 1.3,
+                "volume": 0.8,
+                "name": "Emma",
+                "variation": 0.15,
+                "accent": "young",
+                "emotion": "enthusiastic",
+                "speakingType": "discussion"
+              },
+              "male": {
+                "pitch": 0.5,
+                "rate": 1.1,
+                "volume": 0.85,
+                "name": "Tom",
+                "variation": 0.12,
+                "accent": "casual",
+                "emotion": "thoughtful",
+                "speakingType": "conversational"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 3. You will hear a conversation between two drama students. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Tom, I'm really struggling with my character analysis for our upcoming play. How do you approach understanding your character's motivation?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "Well Emma, I always start by reading the script at least three times. The first time for the overall story, second for my character's journey, and third for specific details about their personality."
+                },
+                {
+                  "speaker": "female",
+                  "text": "That makes sense. Our professor mentioned using Stanislavski's method. Do you follow that?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "Yes, I find his system very helpful. The 'magic if' technique is particularly useful - asking yourself 'what if I were in this situation?' It helps create authentic emotional responses."
+                },
+                {
+                  "speaker": "female",
+                  "text": "I've been trying that, but I still find some scenes challenging. Like the confrontation scene in Act 2 - my character has to show anger, but I'm not naturally an angry person."
+                },
+                {
+                  "speaker": "male",
+                  "text": "For emotional recall, think of a time when you felt genuinely angry about something. It doesn't have to be the same situation, just the same intensity of emotion. The key is to find a personal connection."
+                },
+                {
+                  "speaker": "female",
+                  "text": "That's helpful. What about physicality? How important is body language in character development?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "Extremely important! About 70% of communication is non-verbal. I always work on my character's walk, posture, and gestures before I even memorize lines. It helps internalize the character."
+                },
+                {
+                  "speaker": "female",
+                  "text": "I'll try that approach. Thank you, Tom! This has been really insightful."
+                },
+                {
+                  "speaker": "male",
+                  "text": "You're welcome, Emma. Remember, acting is about truthfulness. If you believe in your character, the audience will too."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q21",
+                "type": "multiple-choice",
+                "questionText": "What is Emma struggling with?",
+                "options": [
+                  "A) Memorizing lines",
+                  "B) Character analysis",
+                  "C) Stage directions",
+                  "D) Voice projection"
+                ],
+                "correctAnswer": "B",
+                "translation": "Emma đang gặp khó khăn với điều gì?"
+              },
+              {
+                "id": "listening-q22",
+                "type": "multiple-choice",
+                "questionText": "How many times does Tom read the script initially?",
+                "options": [
+                  "A) Once",
+                  "B) Twice",
+                  "C) Three times",
+                  "D) Four times"
+                ],
+                "correctAnswer": "C",
+                "translation": "Tom đọc kịch bản bao nhiêu lần ban đầu?"
+              },
+              {
+                "id": "listening-q23",
+                "type": "multiple-choice",
+                "questionText": "Which acting method is mentioned?",
+                "options": [
+                  "A) Brecht's epic theater",
+                  "B) Stanislavski's method",
+                  "C) Meisner technique",
+                  "D) Grotowski's poor theater"
+                ],
+                "correctAnswer": "B",
+                "translation": "Phương pháp diễn xuất nào được đề cập?"
+              },
+              {
+                "id": "listening-q24",
+                "type": "multiple-choice",
+                "questionText": "What is the 'magic if' technique?",
+                "options": [
+                  "A) Imagining different endings",
+                  "B) Asking 'what if I were in this situation'",
+                  "C) Visualizing success",
+                  "D) Creating alternative characters"
+                ],
+                "correctAnswer": "B",
+                "translation": "Kỹ thuật 'phép màu nếu' là gì?"
+              },
+              {
+                "id": "listening-q25",
+                "type": "multiple-choice",
+                "questionText": "Which scene does Emma find challenging?",
+                "options": [
+                  "A) The opening scene",
+                  "B) The romantic scene",
+                  "C) The confrontation scene",
+                  "D) The final scene"
+                ],
+                "correctAnswer": "C",
+                "translation": "Cảnh nào Emma thấy thách thức?"
+              },
+              {
+                "id": "listening-q26",
+                "type": "multiple-choice",
+                "questionText": "What does Tom suggest for emotional recall?",
+                "options": [
+                  "A) Watch other actors",
+                  "B) Think of personal experiences",
+                  "C) Read psychology books",
+                  "D) Practice facial expressions"
+                ],
+                "correctAnswer": "B",
+                "translation": "Tom đề xuất gì cho việc hồi tưởng cảm xúc?"
+              },
+              {
+                "id": "listening-q27",
+                "type": "multiple-choice",
+                "questionText": "What percentage of communication is non-verbal according to Tom?",
+                "options": [
+                  "A) 50%",
+                  "B) 60%",
+                  "C) 70%",
+                  "D) 80%"
+                ],
+                "correctAnswer": "C",
+                "translation": "Theo Tom, bao nhiêu phần trăm giao tiếp là phi ngôn ngữ?"
+              },
+              {
+                "id": "listening-q28",
+                "type": "multiple-choice",
+                "questionText": "What does Tom work on before memorizing lines?",
+                "options": [
+                  "A) Costume design",
+                  "B) Character's physicality",
+                  "C) Vocal warm-ups",
+                  "D) Scene transitions"
+                ],
+                "correctAnswer": "B",
+                "translation": "Tom làm việc trên cái gì trước khi ghi nhớ lời thoại?"
+              },
+              {
+                "id": "listening-q29",
+                "type": "multiple-choice",
+                "questionText": "What is the key to believable acting according to Tom?",
+                "options": [
+                  "A) Perfect technique",
+                  "B) Loud voice",
+                  "C) Truthfulness",
+                  "D) Dramatic gestures"
+                ],
+                "correctAnswer": "C",
+                "translation": "Theo Tom, chìa khóa cho diễn xuất đáng tin cậy là gì?"
+              },
+              {
+                "id": "listening-q30",
+                "type": "multiple-choice",
+                "questionText": "How does Emma feel about Tom's advice?",
+                "options": [
+                  "A) Confused",
+                  "B) Disappointed",
+                  "C) Insightful",
+                  "D) Overwhelmed"
+                ],
+                "correctAnswer": "C",
+                "translation": "Emma cảm thấy thế nào về lời khuyên của Tom?"
+              }
+            ]
+          },
+          {
+            "partNumber": 4,
+            "title": "Part 4: Lecture on acting techniques",
+            "instructions": "Listen to the lecture and answer questions 31-40.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.4,
+                "rate": 1,
+                "volume": 0.9,
+                "name": "Drama Professor",
+                "variation": 0.08,
+                "accent": "academic",
+                "emotion": "authoritative",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 4. You will hear a lecture on acting techniques. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Today we'll explore three major approaches to acting that have shaped modern theater and film. First, the Stanislavski System, developed by Russian actor Konstantin Stanislavski in the early 20th century. This method emphasizes psychological realism and emotional truth. Actors use techniques like emotional memory and the 'magic if' to create believable characters. Second, we have Bertolt Brecht's Epic Theater, which emerged in Germany during the 1920s. Unlike Stanislavski, Brecht wanted to create distance between the audience and the performance through techniques like direct address and placards. His goal was to make audiences think critically about social issues rather than emotionally identify with characters. Finally, the Meisner Technique, developed by American actor Sanford Meisner in the 1930s, focuses on spontaneous reaction and 'living truthfully under imaginary circumstances.' Meisner emphasized listening and responding authentically to other actors rather than pre-planning reactions. Each approach offers valuable tools, and many contemporary actors blend elements from multiple techniques to create their unique acting style."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q31",
+                "type": "multiple-choice",
+                "questionText": "How many acting approaches are discussed?",
+                "options": [
+                  "A) Two",
+                  "B) Three",
+                  "C) Four",
+                  "D) Five"
+                ],
+                "correctAnswer": "B",
+                "translation": "Có bao nhiêu phương pháp diễn xuất được thảo luận?"
+              },
+              {
+                "id": "listening-q32",
+                "type": "multiple-choice",
+                "questionText": "Who developed the Stanislavski System?",
+                "options": [
+                  "A) A German director",
+                  "B) A Russian actor",
+                  "C) An American teacher",
+                  "D) A British playwright"
+                ],
+                "correctAnswer": "B",
+                "translation": "Ai đã phát triển Hệ thống Stanislavski?"
+              },
+              {
+                "id": "listening-q33",
+                "type": "multiple-choice",
+                "questionText": "What does the Stanislavski System emphasize?",
+                "options": [
+                  "A) Physical comedy",
+                  "B) Psychological realism",
+                  "C) Political messages",
+                  "D) Vocal technique"
+                ],
+                "correctAnswer": "B",
+                "translation": "Hệ thống Stanislavski nhấn mạnh điều gì?"
+              },
+              {
+                "id": "listening-q34",
+                "type": "multiple-choice",
+                "questionText": "Which technique uses emotional memory?",
+                "options": [
+                  "A) Brecht's method",
+                  "B) Stanislavski's system",
+                  "C) Meisner technique",
+                  "D) Classical acting"
+                ],
+                "correctAnswer": "B",
+                "translation": "Kỹ thuật nào sử dụng trí nhớ cảm xúc?"
+              },
+              {
+                "id": "listening-q35",
+                "type": "multiple-choice",
+                "questionText": "Where did Epic Theater originate?",
+                "options": [
+                  "A) Russia",
+                  "B) United States",
+                  "C) Germany",
+                  "D) France"
+                ],
+                "correctAnswer": "C",
+                "translation": "Kịch Epic bắt nguồn từ đâu?"
+              },
+              {
+                "id": "listening-q36",
+                "type": "multiple-choice",
+                "questionText": "What was Brecht's main goal?",
+                "options": [
+                  "A) Emotional identification",
+                  "B) Critical thinking",
+                  "C) Entertainment",
+                  "D) Technical perfection"
+                ],
+                "correctAnswer": "B",
+                "translation": "Mục tiêu chính của Brecht là gì?"
+              },
+              {
+                "id": "listening-q37",
+                "type": "multiple-choice",
+                "questionText": "Which technique uses direct address to the audience?",
+                "options": [
+                  "A) Stanislavski System",
+                  "B) Epic Theater",
+                  "C) Meisner Technique",
+                  "D) Method Acting"
+                ],
+                "correctAnswer": "B",
+                "translation": "Kỹ thuật nào sử dụng việc nói chuyện trực tiếp với khán giả?"
+              },
+              {
+                "id": "listening-q38",
+                "type": "multiple-choice",
+                "questionText": "Who developed the Meisner Technique?",
+                "options": [
+                  "A) A Russian director",
+                  "B) A German playwright",
+                  "C) An American actor",
+                  "D) A British teacher"
+                ],
+                "correctAnswer": "C",
+                "translation": "Ai đã phát triển Kỹ thuật Meisner?"
+              },
+              {
+                "id": "listening-q39",
+                "type": "multiple-choice",
+                "questionText": "What does the Meisner Technique focus on?",
+                "options": [
+                  "A) Pre-planned reactions",
+                  "B) Spontaneous response",
+                  "C) Vocal projection",
+                  "D) Historical accuracy"
+                ],
+                "correctAnswer": "B",
+                "translation": "Kỹ thuật Meisner tập trung vào điều gì?"
+              },
+              {
+                "id": "listening-q40",
+                "type": "multiple-choice",
+                "questionText": "What do contemporary actors often do?",
+                "options": [
+                  "A) Stick to one method",
+                  "B) Avoid all techniques",
+                  "C) Blend multiple techniques",
+                  "D) Create new techniques"
+                ],
+                "correctAnswer": "C",
+                "translation": "Các diễn viên đương đại thường làm gì?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Reading",
+        "description": "40 questions • 60 minutes",
+        "passages": [
+          {
+            "id": "reading-passage1",
+            "title": "Passage 1: The History of Method Acting",
+            "content": "Method acting is a range of training and rehearsal techniques that seek to encourage sincere and emotionally expressive performances. It was first popularized by the Group Theatre in the 1930s and later developed by Lee Strasberg at the Actors Studio in New York. The approach draws from the system developed by Russian theatre practitioner Konstantin Stanislavski. Strasberg's method requires actors to draw upon their own emotions and memories to connect with their characters. This technique became famous through actors like Marlon Brando, James Dean, and Marilyn Monroe. While some critics argue that method acting can be psychologically damaging, its proponents believe it creates unparalleled authenticity. The technique involves extensive character research, emotional memory exercises, and sometimes extreme physical transformations. Many contemporary acting schools continue to teach variations of method acting, though often with modifications to address concerns about actors' mental health. The legacy of method acting continues to influence film and theater worldwide, with many award-winning performances attributed to this approach.",
+            "questions": [
+              {
+                "id": "reading-q1",
+                "type": "multiple-choice",
+                "questionText": "Where was method acting first popularized?",
+                "options": [
+                  "A) Actors Studio",
+                  "B) Group Theatre",
+                  "C) Moscow Art Theatre",
+                  "D) Royal Academy"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q2",
+                "type": "multiple-choice",
+                "questionText": "Who further developed method acting at the Actors Studio?",
+                "options": [
+                  "A) Konstantin Stanislavski",
+                  "B) Lee Strasberg",
+                  "C) Marlon Brando",
+                  "D) Stella Adler"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q3",
+                "type": "multiple-choice",
+                "questionText": "Which Russian practitioner influenced method acting?",
+                "options": [
+                  "A) Anton Chekhov",
+                  "B) Vsevolod Meyerhold",
+                  "C) Konstantin Stanislavski",
+                  "D) Mikhail Bulgakov"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q4",
+                "type": "multiple-choice",
+                "questionText": "What does method acting require actors to draw upon?",
+                "options": [
+                  "A) Other performances",
+                  "B) Their own emotions and memories",
+                  "C) Historical research",
+                  "D) Vocal techniques"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q5",
+                "type": "multiple-choice",
+                "questionText": "Which actor is NOT mentioned as famous for method acting?",
+                "options": [
+                  "A) Marlon Brando",
+                  "B) James Dean",
+                  "C) Marilyn Monroe",
+                  "D) Robert De Niro"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q6",
+                "type": "multiple-choice",
+                "questionText": "What concern do some critics have about method acting?",
+                "options": [
+                  "A) It's too expensive",
+                  "B) It's psychologically damaging",
+                  "C) It's too technical",
+                  "D) It's outdated"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q7",
+                "type": "multiple-choice",
+                "questionText": "What do proponents believe about method acting?",
+                "options": [
+                  "A) It creates authenticity",
+                  "B) It's easy to learn",
+                  "C) It's only for film",
+                  "D) It requires no training"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q8",
+                "type": "multiple-choice",
+                "questionText": "What does method acting sometimes involve?",
+                "options": [
+                  "A) Extreme physical transformations",
+                  "B) Improvisation only",
+                  "C) Classical training",
+                  "D) Dance lessons"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q9",
+                "type": "multiple-choice",
+                "questionText": "How do contemporary acting schools often teach method acting?",
+                "options": [
+                  "A) Without modifications",
+                  "B) With modifications for mental health",
+                  "C) Only for advanced students",
+                  "D) Only for theater"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q10",
+                "type": "multiple-choice",
+                "questionText": "What continues to be influenced by method acting?",
+                "options": [
+                  "A) Only American theater",
+                  "B) Film and theater worldwide",
+                  "C) Only classical acting",
+                  "D) Television commercials"
+                ],
+                "correctAnswer": "B"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage2",
+            "title": "Passage 2: Shakespeare's Globe Theatre",
+            "content": "The Globe Theatre was a theatre in London associated with William Shakespeare. It was built in 1599 by Shakespeare's playing company, the Lord Chamberlain's Men, and was destroyed by fire on 29 June 1613. A second Globe Theatre was built on the same site by June 1614 and closed in 1642. The modern reconstruction, named 'Shakespeare's Globe', opened in 1997 approximately 230 meters from the original site. The original Globe could accommodate up to 3,000 spectators and was famous for its circular shape and open-air design. Plays were performed in the afternoon to take advantage of natural light. The theatre had three levels of seating and a yard where 'groundlings' (commoners) stood for a penny. The stage extended into the yard, creating an intimate relationship between actors and audience. Sound effects were created using cannons, bells, and other props, which ironically caused the fire that destroyed the first Globe when a cannon misfired during a performance of Henry VIII. Today, Shakespeare's Globe attracts visitors from around the world and continues to stage productions using original practices, including period costumes and minimal sets.",
+            "questions": [
+              {
+                "id": "reading-q11",
+                "type": "multiple-choice",
+                "questionText": "When was the original Globe Theatre built?",
+                "options": [
+                  "A) 1589",
+                  "B) 1599",
+                  "C) 1609",
+                  "D) 1613"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q12",
+                "type": "multiple-choice",
+                "questionText": "What destroyed the first Globe Theatre?",
+                "options": [
+                  "A) Demolition",
+                  "B) Fire",
+                  "C) Storm",
+                  "D) Earthquake"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q13",
+                "type": "multiple-choice",
+                "questionText": "When did the modern reconstruction open?",
+                "options": [
+                  "A) 1977",
+                  "B) 1987",
+                  "C) 1997",
+                  "D) 2007"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q14",
+                "type": "multiple-choice",
+                "questionText": "How many spectators could the original Globe accommodate?",
+                "options": [
+                  "A) 1,500",
+                  "B) 2,000",
+                  "C) 3,000",
+                  "D) 4,000"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q15",
+                "type": "multiple-choice",
+                "questionText": "Why were plays performed in the afternoon?",
+                "options": [
+                  "A) To avoid heat",
+                  "B) To use natural light",
+                  "C) For matinee prices",
+                  "D) Actor availability"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q16",
+                "type": "multiple-choice",
+                "questionText": "What were 'groundlings'?",
+                "options": [
+                  "A) Actors",
+                  "B) Commoners who stood",
+                  "C) Stage hands",
+                  "D) Playwrights"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q17",
+                "type": "multiple-choice",
+                "questionText": "How much did groundlings pay?",
+                "options": [
+                  "A) One penny",
+                  "B) Two pence",
+                  "C) Three pence",
+                  "D] Five pence"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q18",
+                "type": "multiple-choice",
+                "questionText": "What caused the fire that destroyed the first Globe?",
+                "options": [
+                  "A) Lightning strike",
+                  "B) Candle accident",
+                  "C) Cannon misfire",
+                  "D] Arson"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q19",
+                "type": "multiple-choice",
+                "questionText": "During which play did the fire occur?",
+                "options": [
+                  "A) Hamlet",
+                  "B) Macbeth",
+                  "C) Henry VIII",
+                  "D] Romeo and Juliet"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q20",
+                "type": "multiple-choice",
+                "questionText": "What does the modern Globe continue to use?",
+                "options": [
+                  "A) Electric lighting",
+                  "B) Original practices",
+                  "C] Modern costumes",
+                  "D] Digital effects"
+                ],
+                "correctAnswer": "B"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage3",
+            "title": "Passage 3: The Evolution of Women in Theater",
+            "content": "The role of women in theater has evolved significantly throughout history. In ancient Greek theater, all roles were played by men, including female characters who were portrayed by male actors wearing masks. During the Renaissance, women were still banned from the stage in England, leading to young boys playing female roles in Shakespeare's plays. The first professional actresses appeared in Italy during the 16th century in commedia dell'arte troupes. In England, women finally began appearing on stage after the Restoration of Charles II in 1660, with Margaret Hughes often credited as the first professional actress on the English stage. The 19th century saw the rise of famous actresses like Sarah Bernhardt, known as 'the divine Sarah,' who achieved international stardom. The 20th century brought further progress with women not only acting but also writing, directing, and producing plays. Playwrights like Lillian Hellman and Caryl Churchill broke barriers with powerful works addressing social issues. Today, women hold prominent positions across all aspects of theater, though gender inequality and representation issues persist. Contemporary movements continue to advocate for equal opportunities and diverse representation both on stage and behind the scenes in theaters worldwide.",
+            "questions": [
+              {
+                "id": "reading-q21",
+                "type": "multiple-choice",
+                "questionText": "Who played female roles in ancient Greek theater?",
+                "options": [
+                  "A) Women",
+                  "B) Male actors",
+                  "C) Children",
+                  "D] No female roles"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q22",
+                "type": "multiple-choice",
+                "questionText": "Who played female roles in Shakespeare's time?",
+                "options": [
+                  "A) Women",
+                  "B) Young boys",
+                  "C] Old men",
+                  "D] No female roles"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q23",
+                "type": "multiple-choice",
+                "questionText": "Where did the first professional actresses appear?",
+                "options": [
+                  "A) England",
+                  "B) France",
+                  "C) Italy",
+                  "D] Greece"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q24",
+                "type": "multiple-choice",
+                "questionText": "When did women begin appearing on stage in England?",
+                "options": [
+                  "A) 1560",
+                  "B) 1610",
+                  "C) 1660",
+                  "D] 1710"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q25",
+                "type": "multiple-choice",
+                "questionText": "Who is often credited as the first professional English actress?",
+                "options": [
+                  "A) Sarah Bernhardt",
+                  "B) Nell Gwynn",
+                  "C) Margaret Hughes",
+                  "D] Lillian Hellman"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q26",
+                "type": "multiple-choice",
+                "questionText": "Which 19th century actress was known as 'the divine Sarah'?",
+                "options": [
+                  "A) Sarah Siddons",
+                  "B) Sarah Bernhardt",
+                  "C] Sarah Kane",
+                  "D] Sarah Hughes"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q27",
+                "type": "multiple-choice",
+                "questionText": "What additional roles did women take in the 20th century?",
+                "options": [
+                  "A) Only acting",
+                  "B) Writing and directing",
+                  "C] Stage design only",
+                  "D] Costume design only"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q28",
+                "type": "multiple-choice",
+                "questionText": "Which playwright is mentioned as breaking barriers?",
+                "options": [
+                  "A) Tennessee Williams",
+                  "B) Arthur Miller",
+                  "C] Lillian Hellman",
+                  "D] Samuel Beckett"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q29",
+                "type": "multiple-choice",
+                "questionText": "What issues still persist today according to the passage?",
+                "options": [
+                  "A) No women in theater",
+                  "B) Gender inequality",
+                  "C] No female playwrights",
+                  "D] No female directors"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q30",
+                "type": "multiple-choice",
+                "questionText": "What do contemporary movements advocate for?",
+                "options": [
+                  "A) Fewer women in theater",
+                  "B] Equal opportunities",
+                  "C] Traditional roles only",
+                  "D] Male-dominated theater"
+                ],
+                "correctAnswer": "B"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "title": "Writing",
+        "description": "60 minutes",
+        "tasks": [
+          {
+            "id": "writing-task1",
+            "title": "Writing Task 1",
+            "instructions": "You should spend about 20 minutes on this task. The chart below shows the percentage of theater attendance by age group in London between 2010 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+            "taskType": "Academic",
+            "wordCountMin": 150,
+            "timeLimit": 20,
+            "description": "You will be presented with a graph, table, chart or diagram and asked to describe, summarize or explain the information in your own words. You may be asked to describe and explain data, describe the stages of a process, how something works or describe an object or event.",
+            "sampleData": {
+              "type": "line-graph",
+              "title": "Theater Attendance by Age Group in London (2010-2020)",
+              "data": {
+                "18-25": {
+                  "2010": 35,
+                  "2015": 42,
+                  "2020": 38
+                },
+                "26-35": {
+                  "2010": 45,
+                  "2015": 48,
+                  "2020": 52
+                },
+                "36-50": {
+                  "2010": 55,
+                  "2015": 58,
+                  "2020": 62
+                },
+                "51-65": {
+                  "2010": 65,
+                  "2015": 62,
+                  "2020": 58
+                },
+                "65+": {
+                  "2010": 48,
+                  "2015": 45,
+                  "2020": 42
+                }
+              },
+              "units": "Percentage (%)"
+            },
+            "assessmentCriteria": [
+              "Task Achievement",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          },
+          {
+            "id": "writing-task2",
+            "title": "Writing Task 2",
+            "instructions": "You should spend about 40 minutes on this task. Some people believe that acting is a natural talent that cannot be taught, while others argue that acting can be learned through proper training and practice. Discuss both these views and give your own opinion. Write at least 250 words.",
+            "taskType": "Essay",
+            "wordCountMin": 250,
+            "timeLimit": 40,
+            "description": "You will be presented with a point of view, argument or problem. You need to write a discursive essay in response. This means you must discuss the topic from different perspectives and include your own opinion.",
+            "essayType": "Discussion",
+            "topics": [
+              "Acting as natural talent",
+              "Acting as learned skill",
+              "Role of training in acting"
+            ],
+            "keyPoints": [
+              "Arguments for natural talent in acting",
+              "Arguments for acting as a learned skill",
+              "Personal opinion with justification"
+            ],
+            "assessmentCriteria": [
+              "Task Response",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "title": "Grammar & Language Use",
+        "description": "20 questions • Approximately 15 minutes",
+        "questions": [
+          {
+            "id": "grammar-q1",
+            "type": "multiple-choice",
+            "questionText": "The actor _____ his lines perfectly in yesterday's rehearsal.",
+            "options": [
+              "A) deliver",
+              "B) delivers",
+              "C) delivered",
+              "D) delivering"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Past simple for completed action in the past",
+            "translation": "Diễn viên đã đọc lời thoại hoàn hảo trong buổi diễn tập hôm qua."
+          },
+          {
+            "id": "grammar-q2",
+            "type": "multiple-choice",
+            "questionText": "If I _____ a famous actor, I would work in Hollywood.",
+            "options": [
+              "A) am",
+              "B) was",
+              "C) were",
+              "D) be"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Second conditional uses 'were' for all subjects",
+            "translation": "Nếu tôi là một diễn viên nổi tiếng, tôi sẽ làm việc ở Hollywood."
+          },
+          {
+            "id": "grammar-q3",
+            "type": "multiple-choice",
+            "questionText": "She _____ acting classes for two years now.",
+            "options": [
+              "A) has been taking",
+              "B) has took",
+              "C) is taking",
+              "D) took"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Present perfect continuous for ongoing action",
+            "translation": "Cô ấy đã tham gia lớp học diễn xuất được hai năm rồi."
+          },
+          {
+            "id": "grammar-q4",
+            "type": "multiple-choice",
+            "questionText": "The play must _____ by 8 PM sharp.",
+            "options": [
+              "A) start",
+              "B) be started",
+              "C) starting",
+              "D) started"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Passive voice with modal verb",
+            "translation": "Vở kịch phải được bắt đầu lúc 8 giờ tối chính xác."
+          },
+          {
+            "id": "grammar-q5",
+            "type": "multiple-choice",
+            "questionText": "I wish I _____ more confidence on stage.",
+            "options": [
+              "A) have",
+              "B) had",
+              "C) has",
+              "D) having"
+            ],
+            "correctAnswer": "B",
+            "explanation": "'I wish' + past simple for present unreal situations",
+            "translation": "Tôi ước tôi có nhiều tự tin hơn trên sân khấu."
+          },
+          {
+            "id": "grammar-q6",
+            "type": "multiple-choice",
+            "questionText": "_____ is your favorite Shakespeare play?",
+            "options": [
+              "A) What",
+              "B) Which",
+              "C) Who",
+              "D) Where"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Use 'What' for open questions about things",
+            "translation": "Vở kịch Shakespeare yêu thích của bạn là gì?"
+          },
+          {
+            "id": "grammar-q7",
+            "type": "multiple-choice",
+            "questionText": "The director told us that the audition _____ postponed.",
+            "options": [
+              "A) has been",
+              "B) had been",
+              "C) is",
+              "D] was"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Past perfect in reported speech",
+            "translation": "Đạo diễn nói với chúng tôi rằng buổi thử vai đã bị hoãn."
+          },
+          {
+            "id": "grammar-q8",
+            "type": "multiple-choice",
+            "questionText": "Neither of the actors _____ available for the matinee.",
+            "options": [
+              "A) is",
+              "B) are",
+              "C) be",
+              "D] being"
+            ],
+            "correctAnswer": "A",
+            "explanation": "'Neither' is singular and takes singular verb",
+            "translation": "Không diễn viên nào có mặt cho buổi biểu diễn chiều."
+          },
+          {
+            "id": "grammar-q9",
+            "type": "multiple-choice",
+            "questionText": "She suggested _____ the scene one more time.",
+            "options": [
+              "A) rehearse",
+              "B) to rehearse",
+              "C) rehearsing",
+              "D] rehearsed"
+            ],
+            "correctAnswer": "C",
+            "explanation": "'Suggest' is followed by gerund (-ing form)",
+            "translation": "Cô ấy đề nghị diễn tập cảnh đó thêm một lần nữa."
+          },
+          {
+            "id": "grammar-q10",
+            "type": "multiple-choice",
+            "questionText": "The theater, _____ was built in 1920, needs renovation.",
+            "options": [
+              "A) who",
+              "B) which",
+              "C) whose",
+              "D] where"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Use 'which' for things in non-defining relative clauses",
+            "translation": "Nhà hát, cái được xây dựng năm 1920, cần được tu sửa."
+          },
+          {
+            "id": "grammar-q11",
+            "type": "multiple-choice",
+            "questionText": "By next month, we _____ this play for six months.",
+            "options": [
+              "A) will rehearse",
+              "B) will have rehearsed",
+              "C) rehearse",
+              "D] rehearsed"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Future perfect for actions completed before a future time",
+            "translation": "Đến tháng sau, chúng tôi sẽ diễn tập vở kịch này được sáu tháng."
+          },
+          {
+            "id": "grammar-q12",
+            "type": "multiple-choice",
+            "questionText": "The lead actor rarely _____ his cues.",
+            "options": [
+              "A) miss",
+              "B) misses",
+              "C) missing",
+              "D] missed"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Present simple with frequency adverbs",
+            "translation": "Diễn viên chính hiếm khi bỏ lỡ các điểm nhấn của mình."
+          },
+          {
+            "id": "grammar-q13",
+            "type": "multiple-choice",
+            "questionText": "Would you mind _____ your voice a little?",
+            "options": [
+              "A] lower",
+              "B] to lower",
+              "C] lowering",
+              "D] lowered"
+            ],
+            "correctAnswer": "C",
+            "explanation": "'Would you mind' + gerund (-ing)",
+            "translation": "Bạn có phiền hạ giọng một chút không?"
+          },
+          {
+            "id": "grammar-q14",
+            "type": "multiple-choice",
+            "questionText": "The understudy was made _____ the lead role.",
+            "options": [
+              "A] perform",
+              "B] to perform",
+              "C] performing",
+              "D] performed"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Passive causative 'be made' + to infinitive",
+            "translation": "Diễn viên dự bị bị buộc phải đóng vai chính."
+          },
+          {
+            "id": "grammar-q15",
+            "type": "multiple-choice",
+            "questionText": "Despite _____ ill, she performed brilliantly.",
+            "options": [
+              "A] be",
+              "B] to be",
+              "C] being",
+              "D] been"
+            ],
+            "correctAnswer": "C",
+            "explanation": "'Despite' is followed by gerund or noun",
+            "translation": "Mặc dù bị ốm, cô ấy đã biểu diễn xuất sắc."
+          },
+          {
+            "id": "grammar-q16",
+            "type": "multiple-choice",
+            "questionText": "The stage _____ we performed was very small.",
+            "options": [
+              "A] which",
+              "B] where",
+              "C] who",
+              "D] when"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Use 'where' for places in relative clauses",
+            "translation": "Sân khấu nơi chúng tôi biểu diễn rất nhỏ."
+          },
+          {
+            "id": "grammar-q17",
+            "type": "multiple-choice",
+            "questionText": "No sooner had the curtain risen _____ the lights went out.",
+            "options": [
+              "A] when",
+              "B] than",
+              "C] then",
+              "D] as"
+            ],
+            "correctAnswer": "B",
+            "explanation": "'No sooner... than' for immediate sequence",
+            "translation": "Ngay sau khi màn kéo lên thì đèn tắt."
+          },
+          {
+            "id": "grammar-q18",
+            "type": "multiple-choice",
+            "questionText": "She acts _____ than anyone else in the cast.",
+            "options": [
+              "A] more convincingly",
+              "B] most convincingly",
+              "C] convincing",
+              "D] convincingly"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Comparative adverbs for comparing two things",
+            "translation": "Cô ấy diễn xuất thuyết phục hơn bất kỳ ai khác trong dàn diễn viên."
+          },
+          {
+            "id": "grammar-q19",
+            "type": "multiple-choice",
+            "questionText": "I would rather _____ comedy than tragedy.",
+            "options": [
+              "A] perform",
+              "B] to perform",
+              "C] performing",
+              "D] performed"
+            ],
+            "correctAnswer": "A",
+            "explanation": "'Would rather' + base form of verb",
+            "translation": "Tôi thà diễn hài kịch hơn là bi kịch."
+          },
+          {
+            "id": "grammar-q20",
+            "type": "multiple-choice",
+            "questionText": "It is high time you _____ your audition piece.",
+            "options": [
+              "A] choose",
+              "B] chose",
+              "C] chosen",
+              "D] choosing"
+            ],
+            "correctAnswer": "B",
+            "explanation": "'It is high time' + past simple",
+            "translation": "Đã đến lúc bạn chọn phần thử vai của mình."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "version": "1.0",
+      "author": "IELTS Practice System",
+      "notes": "IELTS test with acting and theater theme covering Listening (4 parts, 40 questions), Reading (3 passages, 30 questions), Writing (2 tasks), and Grammar (20 questions)."
+    }
+  }
+}

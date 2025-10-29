@@ -3,13 +3,25 @@ class IELTSGrammar {
     constructor() {
         this.currentQuestion = 1;
         this.totalQuestions = 20;
-        this.questions = this.generateGrammarQuestions();
+        this.questions = [];
+        this.testData = null;
     }
 
-    initialize() {
-        console.log('Grammar module initialized');
+    async initialize() {
+        await this.loadTestData();
         this.renderQuestions();
         this.setupEventListeners();
+    }
+
+    async loadTestData() {
+        try {
+            const response = await fetch('/api/test-data');
+            const data = await response.json();
+            this.testData = data;
+            console.log('Grammar module loaded test data:', data);
+        } catch (error) {
+            console.error('Error loading test data for grammar:', error);
+        }
     }
 
     generateGrammarQuestions() {
@@ -201,6 +213,9 @@ class IELTSGrammar {
         const container = document.getElementById('grammar-questions');
         if (!container) return;
 
+        // Load questions from JSON data
+        this.loadQuestionsFromData();
+
         let html = `
             <div class="section-intro">
                 <h2>Section 4: Grammar and Language Use</h2>
@@ -237,6 +252,26 @@ class IELTSGrammar {
 
         html += '</div>';
         container.innerHTML = html;
+    }
+
+    loadQuestionsFromData() {
+        if (!this.testData || !this.testData.sections) {
+            console.error('No test data available for grammar questions');
+            // Fallback to hardcoded questions
+            this.questions = this.generateGrammarQuestions();
+            return;
+        }
+
+        const grammarSection = this.testData.sections.find(section => section.id === 'grammar');
+        if (!grammarSection || !grammarSection.questions) {
+            console.error('No grammar section or questions found in test data');
+            // Fallback to hardcoded questions
+            this.questions = this.generateGrammarQuestions();
+            return;
+        }
+
+        this.questions = grammarSection.questions;
+        console.log(`Loaded ${this.questions.length} grammar questions from JSON data`);
     }
 
     setupEventListeners() {

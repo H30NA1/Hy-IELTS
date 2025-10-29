@@ -1,924 +1,692 @@
 {
-  "testId": "IELTS-ACTING-2025-10-19",
-  "testDate": "2025-10-19",
-  "testTitle": "IELTS Practice Test - Acting & Performance Arts",
-  "totalQuestions": 100,
+  "testId": "IELTS-ACTING-THEME-2025-10-05",
+  "testDate": "2025-10-05",
+  "testTitle": "IELTS Acting and Theater Practice Test",
+  "totalQuestions": 110,
   "sections": [
     {
       "id": "listening",
       "title": "Listening",
-      "duration": 30,
+      "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
       "parts": [
         {
           "partNumber": 1,
-          "title": "Part 1 - Conversation about Drama School Enrollment",
-          "context": "A student calling a drama school to inquire about acting courses",
-          "questionsRange": "1-10",
-          "audioScript": {
-            "narrator": "You will hear a conversation between a student and an administrator at the London Academy of Dramatic Arts. First, you have some time to look at questions 1 to 10. [Pause] Now listen carefully and answer questions 1 to 10.",
+          "title": "Part 1: Conversation about drama course enrollment",
+          "instructions": "Listen to the conversation and answer questions 1-10.",
+          "voiceProfiles": {
+            "male": {
+              "pitch": 0.4, "rate": 0.9, "volume": 0.8, "name": "Student",
+              "variation": 0.15, "accent": "casual", "emotion": "interested", "speakingType": "conversational"
+            },
+            "female": {
+              "pitch": 1.5, "rate": 1.2, "volume": 0.9, "name": "Course Coordinator",
+              "variation": 0.12, "accent": "professional", "emotion": "helpful", "speakingType": "service"
+            },
+            "narrator": {
+              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+            }
+          },
+          "script": {
+            "narrator": "Good morning, this is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between a student and a drama course coordinator. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
             "conversation": [
-              {
-                "speaker": "female",
-                "text": "Good morning, London Academy of Dramatic Arts. How may I help you?"
-              },
-              {
-                "speaker": "male",
-                "text": "Hello, I'm interested in enrolling in your acting courses. Could you tell me more about the programs you offer?"
-              },
-              {
-                "speaker": "female",
-                "text": "Of course! We have several options. Our most popular is the Foundation Certificate in Acting, which runs for twelve weeks. We also offer a Professional Diploma that lasts six months, and our Advanced Masterclass program runs for three months."
-              },
-              {
-                "speaker": "male",
-                "text": "The Foundation Certificate sounds interesting. When does the next course start?"
-              },
-              {
-                "speaker": "female",
-                "text": "The next intake begins on September the fifteenth. Classes are held Monday through Friday from nine thirty in the morning until three o'clock in the afternoon."
-              },
-              {
-                "speaker": "male",
-                "text": "And what's included in the course?"
-              },
-              {
-                "speaker": "female",
-                "text": "You'll study voice training, movement and physicality, script analysis, and improvisation. There's also a module on audition techniques. At the end, you'll perform in a showcase production for industry professionals."
-              },
-              {
-                "speaker": "male",
-                "text": "That sounds comprehensive. What about the cost?"
-              },
-              {
-                "speaker": "female",
-                "text": "The Foundation Certificate is two thousand four hundred and fifty pounds. That includes all materials and your showcase performance. We do offer a payment plan where you can pay in three installments of eight hundred and fifty pounds."
-              },
-              {
-                "speaker": "male",
-                "text": "Are there any prerequisites? I don't have formal training."
-              },
-              {
-                "speaker": "female",
-                "text": "No formal training is required for the Foundation course. However, you will need to attend an audition. We ask you to prepare two contrasting monologues - one classical piece, perhaps Shakespeare, and one contemporary piece from the last twenty years."
-              },
-              {
-                "speaker": "male",
-                "text": "When are auditions held?"
-              },
-              {
-                "speaker": "female",
-                "text": "We hold auditions every Saturday in August. Each audition slot is thirty minutes. I can book you in if you'd like?"
-              },
-              {
-                "speaker": "male",
-                "text": "Yes, please. I'd prefer the morning if possible."
-              },
-              {
-                "speaker": "female",
-                "text": "Perfect. Can I take your name and contact details?"
-              },
-              {
-                "speaker": "male",
-                "text": "It's James Patterson. That's P-A-T-T-E-R-S-O-N. My phone number is oh-seven-nine-one-five-double-four-three-eight-two-six."
-              },
-              {
-                "speaker": "female",
-                "text": "Lovely. And your email address?"
-              },
-              {
-                "speaker": "male",
-                "text": "It's james dot patterson at email dot com."
-              },
-              {
-                "speaker": "female",
-                "text": "Excellent. I've scheduled you for Saturday, August the tenth at ten o'clock. You'll receive a confirmation email with all the details and a list of suggested monologues."
-              },
-              {
-                "speaker": "male",
-                "text": "Thank you so much for your help!"
-              }
+              { "speaker": "female", "text": "Good morning, Royal Academy of Dramatic Arts. How can I help you?" },
+              { "speaker": "male", "text": "Hello, I'm interested in enrolling in your acting course for beginners." },
+              { "speaker": "female", "text": "Certainly! Our beginner's course runs for eight weeks, starting on September 15th." },
+              { "speaker": "male", "text": "Perfect. What's the schedule like?" },
+              { "speaker": "female", "text": "Classes are every Tuesday and Thursday from 6 PM to 9 PM. The course fee is £480, which includes all materials." },
+              { "speaker": "male", "text": "That sounds reasonable. Could you tell me what the course covers?" },
+              { "speaker": "female", "text": "Yes, we focus on voice projection, character development, improvisation, and basic stage techniques. The final week includes a small performance for friends and family." },
+              { "speaker": "male", "text": "Wonderful! My name is James Wilson, that's J-A-M-E-S W-I-L-S-O-N." },
+              { "speaker": "female", "text": "Thank you, Mr. Wilson. And your phone number?" },
+              { "speaker": "male", "text": "It's 0798 765 4321." },
+              { "speaker": "female", "text": "Got it. The instructor is Sarah Johnson - she's been teaching here for five years. You'll need to bring comfortable clothing and a notebook." },
+              { "speaker": "male", "text": "Are there any age restrictions?" },
+              { "speaker": "female", "text": "Participants must be at least 16 years old. The maximum class size is 15 students." },
+              { "speaker": "male", "text": "That's great. I'll definitely enroll. Thank you for your help." },
+              { "speaker": "female", "text": "You're welcome, Mr. Wilson. We look forward to seeing you in class." }
             ]
           },
           "questions": [
             {
-              "id": "q1",
-              "type": "form",
-              "questionText": "Duration of Foundation Certificate:",
-              "correctAnswer": "twelve weeks",
-              "acceptableAnswers": ["12 weeks", "twelve weeks", "12 wks"]
+              "id": "listening-q1",
+              "type": "multiple-choice",
+              "questionText": "What is the man's name?",
+              "options": ["A) James Wilson", "B) John Williamson", "C) Jason Williams", "D) Jacob Watson"],
+              "correctAnswer": "A",
+              "translation": "Tên của người đàn ông là gì?"
             },
             {
-              "id": "q2",
-              "type": "form",
-              "questionText": "Next course starts on:",
-              "correctAnswer": "September 15",
-              "acceptableAnswers": ["September 15", "15 September", "Sept 15", "15th September"]
+              "id": "listening-q2",
+              "type": "multiple-choice",
+              "questionText": "Where is the conversation taking place?",
+              "options": ["A) At a theater", "B) At a drama school", "C) At a university", "D) At a community center"],
+              "correctAnswer": "B",
+              "translation": "Cuộc hội thoại diễn ra ở đâu?"
             },
             {
-              "id": "q3",
-              "type": "form",
-              "questionText": "Daily class time ends at:",
-              "correctAnswer": "3 pm",
-              "acceptableAnswers": ["3 pm", "3:00 pm", "three pm", "15:00", "3 o'clock"]
+              "id": "listening-q3",
+              "type": "multiple-choice",
+              "questionText": "How long does the course last?",
+              "options": ["A) 6 weeks", "B) 8 weeks", "C) 10 weeks", "D) 12 weeks"],
+              "correctAnswer": "B",
+              "translation": "Khóa học kéo dài bao lâu?"
             },
             {
-              "id": "q4",
-              "type": "form",
-              "questionText": "Course includes training in voice, movement, and:",
-              "correctAnswer": "script analysis",
-              "acceptableAnswers": ["script analysis", "analyzing scripts"]
+              "id": "listening-q4",
+              "type": "multiple-choice",
+              "questionText": "What is the course fee?",
+              "options": ["A) £400", "B) £450", "C) £480", "D) £500"],
+              "correctAnswer": "C",
+              "translation": "Học phí khóa học là bao nhiêu?"
             },
             {
-              "id": "q5",
-              "type": "form",
-              "questionText": "Total course fee:",
-              "correctAnswer": "£2,450",
-              "acceptableAnswers": ["£2450", "2450 pounds", "2,450 pounds", "two thousand four hundred and fifty pounds"]
+              "id": "listening-q5",
+              "type": "multiple-choice",
+              "questionText": "Which skill is NOT mentioned in the course?",
+              "options": ["A) Voice projection", "B) Stage combat", "C) Character development", "D) Improvisation"],
+              "correctAnswer": "B",
+              "translation": "Kỹ năng nào KHÔNG được đề cập trong khóa học?"
             },
             {
-              "id": "q6",
-              "type": "form",
-              "questionText": "Each installment costs:",
-              "correctAnswer": "£850",
-              "acceptableAnswers": ["£850", "850 pounds", "eight hundred and fifty pounds"]
+              "id": "listening-q6",
+              "type": "multiple-choice",
+              "questionText": "What is the phone number?",
+              "options": ["A) 0798 765 4321", "B) 0798 654 3210", "C) 0789 654 3210", "D) 0789 765 4321"],
+              "correctAnswer": "A",
+              "translation": "Số điện thoại là gì?"
             },
             {
-              "id": "q7",
-              "type": "form",
-              "questionText": "Number of monologues required:",
-              "correctAnswer": "two",
-              "acceptableAnswers": ["2", "two"]
+              "id": "listening-q7",
+              "type": "multiple-choice",
+              "questionText": "Who is the instructor?",
+              "options": ["A) Sarah Johnson", "B) Susan Jackson", "C) Sandra Jameson", "D) Samantha Jefferson"],
+              "correctAnswer": "A",
+              "translation": "Ai là người hướng dẫn?"
             },
             {
-              "id": "q8",
-              "type": "form",
-              "questionText": "Contemporary piece must be from the last _____ years:",
-              "correctAnswer": "twenty",
-              "acceptableAnswers": ["20", "twenty"]
+              "id": "listening-q8",
+              "type": "multiple-choice",
+              "questionText": "What must students bring?",
+              "options": ["A) Scripts and costumes", "B) Comfortable clothing and notebook", "C) Textbooks and pen", "D) Water bottle and shoes"],
+              "correctAnswer": "B",
+              "translation": "Học viên phải mang theo gì?"
             },
             {
-              "id": "q9",
-              "type": "form",
-              "questionText": "Student's surname:",
-              "correctAnswer": "Patterson",
-              "acceptableAnswers": ["Patterson"]
+              "id": "listening-q9",
+              "type": "multiple-choice",
+              "questionText": "What is the minimum age requirement?",
+              "options": ["A) 14 years", "B) 16 years", "C) 18 years", "D) 21 years"],
+              "correctAnswer": "B",
+              "translation": "Yêu cầu tuổi tối thiểu là bao nhiêu?"
             },
             {
-              "id": "q10",
-              "type": "form",
-              "questionText": "Audition date:",
-              "correctAnswer": "August 10",
-              "acceptableAnswers": ["August 10", "10 August", "Aug 10", "10th August"]
+              "id": "listening-q10",
+              "type": "multiple-choice",
+              "questionText": "What happens in the final week?",
+              "options": ["A) Written exam", "B) Individual audition", "C) Small performance", "D) Video recording"],
+              "correctAnswer": "C",
+              "translation": "Điều gì xảy ra trong tuần cuối cùng?"
             }
-          ],
-          "voiceProfiles": {
-            "male": {
-              "name": "Student (James)",
-              "rate": 0.95,
-              "pitch": 1.0,
-              "volume": 1.0
-            },
-            "female": {
-              "name": "Administrator",
-              "rate": 0.9,
-              "pitch": 1.05,
-              "volume": 1.0
-            },
-            "narrator": {
-              "name": "IELTS Narrator",
-              "rate": 0.85,
-              "pitch": 1.0,
-              "volume": 1.0
-            }
-          }
+          ]
         },
         {
           "partNumber": 2,
-          "title": "Part 2 - Talk about Theatre Careers",
-          "context": "A careers advisor talking to students about working in theatre",
-          "questionsRange": "11-20",
-          "audioScript": {
-            "narrator": "You will hear a careers advisor giving a talk about working in the theatre industry. First, you have some time to look at questions 11 to 20. [Pause] Now listen carefully and answer questions 11 to 20.",
+          "title": "Part 2: Monologue about theater history",
+          "instructions": "Listen to the monologue and answer questions 11-20.",
+          "voiceProfiles": {
+            "male": {
+              "pitch": 0.3, "rate": 1.1, "volume": 0.9, "name": "Theater Historian",
+              "variation": 0.10, "accent": "educated", "emotion": "knowledgeable", "speakingType": "lecture"
+            },
+            "narrator": {
+              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 2. You will hear a monologue about theater history. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
             "conversation": [
-              {
-                "speaker": "female",
-                "text": "Good afternoon, everyone. Today I'm going to talk about careers in the theatre industry. Many people think acting is the only career option, but there are actually numerous roles behind the scenes that are equally important. Let me start with technical theatre. Lighting designers create the mood and atmosphere of a production. They work closely with directors to enhance the storytelling through light. A typical salary for an experienced lighting designer ranges from thirty-five to fifty thousand pounds annually. Then we have sound designers who are responsible for all audio elements - from background music to special effects. They need both creative and technical skills, particularly in digital audio software. Stage managers are the backbone of any production. They coordinate everything from rehearsals to performances, ensuring every cue happens at precisely the right moment. This role requires exceptional organizational skills and the ability to stay calm under pressure. Another crucial role is the costume designer. They research historical periods, create sketches, and oversee the construction of all costumes. It's not just about making things look beautiful - costumes must also allow actors to move freely and withstand the demands of eight shows per week. Set designers work with directors to create the visual world of the play. They produce detailed drawings and scale models, considering sightlines from every seat in the theatre. Many set designers start as assistants and work their way up over five to seven years. Let's not forget dramaturgs - these are the researchers who help directors and actors understand the context of a play. They're particularly important for classical works or plays dealing with unfamiliar cultural themes. The casting director is responsible for finding the right actors for each role. They attend hundreds of auditions and maintain relationships with talent agents across the country. Most casting directors have worked in theatre themselves, either as actors or directors. Theatre marketing managers promote productions and sell tickets. In today's digital age, they need expertise in social media, content creation, and data analytics. Finally, there are theatre educators who run workshops and outreach programs, bringing drama to schools and communities. These roles typically require teaching qualifications alongside theatre experience. The theatre industry offers diverse opportunities for passionate individuals. While competition is intense and the hours can be demanding, many find it an incredibly rewarding career path."
-              }
+              { "speaker": "male", "text": "Welcome to today's lecture on the history of Western theater. Theater as we know it began in ancient Greece around the 5th century BCE. The earliest surviving Greek tragedies were written by Aeschylus, Sophocles, and Euripides. These plays were performed in large outdoor amphitheaters that could seat up to 14,000 spectators. During the medieval period, theater moved to churches and town squares, with performances often depicting biblical stories. The Renaissance brought about the Elizabethan era, famous for William Shakespeare who wrote 37 plays between 1589 and 1613. The Globe Theatre in London, built in 1599, could hold 3,000 people. Modern theater developed in the 19th century with the works of Henrik Ibsen and Anton Chekhov, who introduced realism. Today's theater continues to evolve with experimental forms and digital technology." }
             ]
           },
           "questions": [
             {
-              "id": "q11",
+              "id": "listening-q11",
               "type": "multiple-choice",
-              "questionText": "What does the speaker say about careers in theatre?",
-              "options": [
-                "A) Acting is the most important role",
-                "B) There are many roles beyond acting",
-                "C) Behind-the-scenes jobs are better paid",
-                "D) Technical roles require no creativity"
-              ],
-              "correctAnswer": "B"
+              "questionText": "When did Western theater begin?",
+              "options": ["A) 3rd century BCE", "B) 5th century BCE", "C) 1st century CE", "D) 5th century CE"],
+              "correctAnswer": "B",
+              "translation": "Kịch phương Tây bắt đầu từ khi nào?"
             },
             {
-              "id": "q12",
-              "type": "form",
-              "questionText": "Lighting designers work with directors to enhance:",
-              "correctAnswer": "storytelling",
-              "acceptableAnswers": ["storytelling", "the storytelling", "story telling"]
-            },
-            {
-              "id": "q13",
-              "type": "form",
-              "questionText": "Maximum salary for experienced lighting designers: £_____ thousand",
-              "correctAnswer": "50",
-              "acceptableAnswers": ["50", "fifty"]
-            },
-            {
-              "id": "q14",
-              "type": "form",
-              "questionText": "Sound designers need skills in digital _____ software:",
-              "correctAnswer": "audio",
-              "acceptableAnswers": ["audio"]
-            },
-            {
-              "id": "q15",
+              "id": "listening-q12",
               "type": "multiple-choice",
-              "questionText": "What quality is most important for stage managers?",
-              "options": [
-                "A) Artistic vision",
-                "B) Technical knowledge",
-                "C) Staying calm under pressure",
-                "D) Physical fitness"
-              ],
-              "correctAnswer": "C"
+              "questionText": "Which playwright is NOT mentioned from ancient Greece?",
+              "options": ["A) Aeschylus", "B) Sophocles", "C) Euripides", "D) Aristophanes"],
+              "correctAnswer": "D",
+              "translation": "Nhà soạn kịch nào KHÔNG được đề cập từ Hy Lạp cổ đại?"
             },
             {
-              "id": "q16",
-              "type": "form",
-              "questionText": "Costumes must withstand _____ shows per week:",
-              "correctAnswer": "eight",
-              "acceptableAnswers": ["8", "eight"]
-            },
-            {
-              "id": "q17",
-              "type": "form",
-              "questionText": "Set designers typically take _____ to _____ years to progress:",
-              "correctAnswer": "five to seven",
-              "acceptableAnswers": ["5 to 7", "five to seven", "5-7", "five-seven"]
-            },
-            {
-              "id": "q18",
-              "type": "form",
-              "questionText": "Dramaturgs help with understanding the _____ of a play:",
-              "correctAnswer": "context",
-              "acceptableAnswers": ["context"]
-            },
-            {
-              "id": "q19",
+              "id": "listening-q13",
               "type": "multiple-choice",
-              "questionText": "What background do most casting directors have?",
-              "options": [
-                "A) Marketing experience",
-                "B) Academic qualifications",
-                "C) Theatre performance or directing experience",
-                "D) Business management training"
-              ],
-              "correctAnswer": "C"
+              "questionText": "How many people could Greek amphitheaters hold?",
+              "options": ["A) 5,000", "B) 10,000", "C) 14,000", "D) 20,000"],
+              "correctAnswer": "C",
+              "translation": "Các nhà hát hình bán nguyệt Hy Lạp có thể chứa bao nhiêu người?"
             },
             {
-              "id": "q20",
-              "type": "form",
-              "questionText": "Theatre educators typically need both theatre experience and _____ qualifications:",
-              "correctAnswer": "teaching",
-              "acceptableAnswers": ["teaching", "education", "teacher"]
+              "id": "listening-q14",
+              "type": "multiple-choice",
+              "questionText": "Where were medieval plays performed?",
+              "options": ["A) Royal palaces", "B) Churches and town squares", "C) Private homes", "D) University halls"],
+              "correctAnswer": "B",
+              "translation": "Các vở kịch thời trung cổ được biểu diễn ở đâu?"
+            },
+            {
+              "id": "listening-q15",
+              "type": "multiple-choice",
+              "questionText": "How many plays did Shakespeare write?",
+              "options": ["A) 27", "B) 37", "C) 47", "D) 57"],
+              "correctAnswer": "B",
+              "translation": "Shakespeare đã viết bao nhiêu vở kịch?"
+            },
+            {
+              "id": "listening-q16",
+              "type": "multiple-choice",
+              "questionText": "When was the Globe Theatre built?",
+              "options": ["A) 1589", "B) 1599", "C) 1609", "D) 1613"],
+              "correctAnswer": "B",
+              "translation": "Nhà hát Globe được xây dựng khi nào?"
+            },
+            {
+              "id": "listening-q17",
+              "type": "multiple-choice",
+              "questionText": "What was the capacity of the Globe Theatre?",
+              "options": ["A) 1,500 people", "B) 2,000 people", "C) 3,000 people", "D) 4,000 people"],
+              "correctAnswer": "C",
+              "translation": "Sức chứa của Nhà hát Globe là bao nhiêu?"
+            },
+            {
+              "id": "listening-q18",
+              "type": "multiple-choice",
+              "questionText": "Which century saw the development of realism?",
+              "options": ["A) 17th century", "B) 18th century", "C) 19th century", "D) 20th century"],
+              "correctAnswer": "C",
+              "translation": "Thế kỷ nào chứng kiến sự phát triển của chủ nghĩa hiện thực?"
+            },
+            {
+              "id": "listening-q19",
+              "type": "multiple-choice",
+              "questionText": "Which playwright introduced realism?",
+              "options": ["A) Shakespeare and Marlowe", "B) Ibsen and Chekhov", "C) Beckett and Pinter", "D) Miller and Williams"],
+              "correctAnswer": "B",
+              "translation": "Nhà soạn kịch nào đã giới thiệu chủ nghĩa hiện thực?"
+            },
+            {
+              "id": "listening-q20",
+              "type": "multiple-choice",
+              "questionText": "What is mentioned about modern theater?",
+              "options": ["A) It only performs classics", "B) It uses experimental forms", "C) It is less popular", "D) It focuses on musicals"],
+              "correctAnswer": "B",
+              "translation": "Điều gì được đề cập về sân khấu hiện đại?"
             }
-          ],
-          "voiceProfiles": {
-            "female": {
-              "name": "Careers Advisor",
-              "rate": 0.88,
-              "pitch": 1.02,
-              "volume": 1.0
-            },
-            "narrator": {
-              "name": "IELTS Narrator",
-              "rate": 0.85,
-              "pitch": 1.0,
-              "volume": 1.0
-            }
-          }
+          ]
         },
         {
           "partNumber": 3,
-          "title": "Part 3 - Discussion about Method Acting",
-          "context": "Two drama students and their tutor discussing method acting techniques",
-          "questionsRange": "21-30",
-          "audioScript": {
-            "narrator": "You will hear two drama students, Sarah and Tom, discussing method acting with their tutor, Dr. Martinez. First, you have some time to look at questions 21 to 30. [Pause] Now listen carefully and answer questions 21 to 30.",
+          "title": "Part 3: Conversation between drama students",
+          "instructions": "Listen to the conversation and answer questions 21-30.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.6, "rate": 1.3, "volume": 0.8, "name": "Emma",
+              "variation": 0.15, "accent": "young", "emotion": "enthusiastic", "speakingType": "discussion"
+            },
+            "male": {
+              "pitch": 0.5, "rate": 1.1, "volume": 0.85, "name": "Tom",
+              "variation": 0.12, "accent": "casual", "emotion": "thoughtful", "speakingType": "conversational"
+            },
+            "narrator": {
+              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 3. You will hear a conversation between two drama students. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
             "conversation": [
-              {
-                "speaker": "female",
-                "text": "Dr. Martinez, we've been reading about method acting for our assignment, and I'm finding it quite controversial. Some actors swear by it, while others think it's unnecessarily extreme."
-              },
-              {
-                "speaker": "male",
-                "text": "That's an excellent observation, Sarah. Method acting, developed by Lee Strasberg based on Stanislavski's system, asks actors to draw on their own emotional memories to create authentic performances. It can be incredibly powerful, but as you've noted, it's not without its critics."
-              },
-              {
-                "speaker": "male",
-                "text": "I've heard stories about actors staying in character between takes for months. That seems excessive, doesn't it?"
-              },
-              {
-                "speaker": "male",
-                "text": "Good point, Tom. That level of immersion isn't what Strasberg originally advocated. He believed actors should use personal experiences as a tool, not lose themselves entirely in a role. The confusion arose when some actors took the technique to extremes."
-              },
-              {
-                "speaker": "female",
-                "text": "What about the risks? I read about actors experiencing psychological distress after playing traumatic roles."
-              },
-              {
-                "speaker": "male",
-                "text": "That's a valid concern. Modern training programs now emphasize psychological safety. Actors learn techniques to 'step out' of character and separate their personal identity from the role. It's about finding a balance - accessing genuine emotion without compromising mental health."
-              },
-              {
-                "speaker": "male",
-                "text": "Are there specific exercises we should know about?"
-              },
-              {
-                "speaker": "male",
-                "text": "Absolutely. Emotional recall is fundamental - actors remember a personal experience that mirrors the scene's emotional content. Sense memory involves recreating physical sensations, like the warmth of sunshine or the taste of coffee. There's also substitution, where you replace the other character with someone from your own life to make the interaction more personal."
-              },
-              {
-                "speaker": "female",
-                "text": "How does this compare to other techniques, like the British classical approach?"
-              },
-              {
-                "speaker": "male",
-                "text": "British classical training, exemplified by RADA and LAMDA, emphasizes external technique - voice, movement, and text analysis. Actors build character from the outside in, rather than inside out. Many successful actors actually blend both approaches, using classical technique for technical precision and method techniques for emotional depth."
-              },
-              {
-                "speaker": "male",
-                "text": "Which approach do you think works better for screen acting versus theatre?"
-              },
-              {
-                "speaker": "male",
-                "text": "That's perceptive, Tom. Method acting often translates well to film because the camera captures subtle, internal emotions. Theatre, with its larger spaces, sometimes requires more external projection. However, I'd argue the best actors adapt their technique to suit the medium and the specific demands of each role."
-              },
-              {
-                "speaker": "female",
-                "text": "What about actors who don't use method techniques at all? Laurence Olivier famously questioned it."
-              },
-              {
-                "speaker": "male",
-                "text": "Yes, there's a famous anecdote about Olivier and Dustin Hoffman on the set of Marathon Man. Hoffman had stayed awake for days to look exhausted, and Olivier reportedly said, 'Why don't you just try acting?' It highlights a fundamental difference in philosophy. Some actors believe in technical skill and imagination over personal experience."
-              },
-              {
-                "speaker": "male",
-                "text": "So there's no single 'correct' approach?"
-              },
-              {
-                "speaker": "male",
-                "text": "Exactly. The key is developing a toolkit of techniques you can draw upon. Some scenes might benefit from method work, others from classical technique. Professional actors are adaptable. They serve the story, not a particular methodology."
-              }
+              { "speaker": "female", "text": "Tom, I'm really struggling with my character analysis for our upcoming play. How do you approach understanding your character's motivation?" },
+              { "speaker": "male", "text": "Well Emma, I always start by reading the script at least three times. The first time for the overall story, second for my character's journey, and third for specific details about their personality." },
+              { "speaker": "female", "text": "That makes sense. Our professor mentioned using Stanislavski's method. Do you follow that?" },
+              { "speaker": "male", "text": "Yes, I find his system very helpful. The 'magic if' technique is particularly useful - asking yourself 'what if I were in this situation?' It helps create authentic emotional responses." },
+              { "speaker": "female", "text": "I've been trying that, but I still find some scenes challenging. Like the confrontation scene in Act 2 - my character has to show anger, but I'm not naturally an angry person." },
+              { "speaker": "male", "text": "For emotional recall, think of a time when you felt genuinely angry about something. It doesn't have to be the same situation, just the same intensity of emotion. The key is to find a personal connection." },
+              { "speaker": "female", "text": "That's helpful. What about physicality? How important is body language in character development?" },
+              { "speaker": "male", "text": "Extremely important! About 70% of communication is non-verbal. I always work on my character's walk, posture, and gestures before I even memorize lines. It helps internalize the character." },
+              { "speaker": "female", "text": "I'll try that approach. Thank you, Tom! This has been really insightful." },
+              { "speaker": "male", "text": "You're welcome, Emma. Remember, acting is about truthfulness. If you believe in your character, the audience will too." }
             ]
           },
           "questions": [
             {
-              "id": "q21",
+              "id": "listening-q21",
               "type": "multiple-choice",
-              "questionText": "What does Sarah say about method acting?",
-              "options": [
-                "A) It's universally accepted",
-                "B) It's controversial and divides opinion",
-                "C) It's outdated",
-                "D) It's only used in film"
-              ],
-              "correctAnswer": "B"
+              "questionText": "What is Emma struggling with?",
+              "options": ["A) Memorizing lines", "B) Character analysis", "C) Stage directions", "D) Voice projection"],
+              "correctAnswer": "B",
+              "translation": "Emma đang gặp khó khăn với điều gì?"
             },
             {
-              "id": "q22",
-              "type": "form",
-              "questionText": "Method acting was developed by Lee Strasberg based on _____'s system:",
-              "correctAnswer": "Stanislavski",
-              "acceptableAnswers": ["Stanislavski", "Stanislavski's"]
-            },
-            {
-              "id": "q23",
+              "id": "listening-q22",
               "type": "multiple-choice",
-              "questionText": "According to Dr. Martinez, what did Strasberg NOT advocate?",
-              "options": [
-                "A) Using personal experiences",
-                "B) Losing yourself entirely in a role",
-                "C) Drawing on emotional memories",
-                "D) Creating authentic performances"
-              ],
-              "correctAnswer": "B"
+              "questionText": "How many times does Tom read the script initially?",
+              "options": ["A) Once", "B) Twice", "C) Three times", "D) Four times"],
+              "correctAnswer": "C",
+              "translation": "Tom đọc kịch bản bao nhiêu lần ban đầu?"
             },
             {
-              "id": "q24",
-              "type": "form",
-              "questionText": "Modern training programs now emphasize psychological _____:",
-              "correctAnswer": "safety",
-              "acceptableAnswers": ["safety"]
-            },
-            {
-              "id": "q25",
+              "id": "listening-q23",
               "type": "multiple-choice",
-              "questionText": "What is 'sense memory' in method acting?",
-              "options": [
-                "A) Remembering lines perfectly",
-                "B) Recreating physical sensations",
-                "C) Understanding the script's meaning",
-                "D) Memorizing blocking"
-              ],
-              "correctAnswer": "B"
+              "questionText": "Which acting method is mentioned?",
+              "options": ["A) Brecht's epic theater", "B) Stanislavski's method", "C) Meisner technique", "D) Grotowski's poor theater"],
+              "correctAnswer": "B",
+              "translation": "Phương pháp diễn xuất nào được đề cập?"
             },
             {
-              "id": "q26",
-              "type": "form",
-              "questionText": "British classical training builds character from the _____ in:",
-              "correctAnswer": "outside",
-              "acceptableAnswers": ["outside"]
-            },
-            {
-              "id": "q27",
+              "id": "listening-q24",
               "type": "multiple-choice",
-              "questionText": "Why does method acting work well for film?",
-              "options": [
-                "A) It requires less preparation",
-                "B) The camera captures subtle internal emotions",
-                "C) Film directors prefer it",
-                "D) It's easier to learn"
-              ],
-              "correctAnswer": "B"
+              "questionText": "What is the 'magic if' technique?",
+              "options": ["A) Imagining different endings", "B) Asking 'what if I were in this situation'", "C) Visualizing success", "D) Creating alternative characters"],
+              "correctAnswer": "B",
+              "translation": "Kỹ thuật 'phép màu nếu' là gì?"
             },
             {
-              "id": "q28",
-              "type": "form",
-              "questionText": "Theatre sometimes requires more external _____ due to larger spaces:",
-              "correctAnswer": "projection",
-              "acceptableAnswers": ["projection"]
-            },
-            {
-              "id": "q29",
+              "id": "listening-q25",
               "type": "multiple-choice",
-              "questionText": "What did Laurence Olivier say to Dustin Hoffman?",
-              "options": [
-                "A) 'You should sleep more'",
-                "B) 'Why don't you just try acting?'",
-                "C) 'Method acting is the best'",
-                "D) 'You need more training'"
-              ],
-              "correctAnswer": "B"
+              "questionText": "Which scene does Emma find challenging?",
+              "options": ["A) The opening scene", "B) The romantic scene", "C) The confrontation scene", "D) The final scene"],
+              "correctAnswer": "C",
+              "translation": "Cảnh nào Emma thấy thách thức?"
             },
             {
-              "id": "q30",
-              "type": "form",
-              "questionText": "Professional actors should serve the _____, not a methodology:",
-              "correctAnswer": "story",
-              "acceptableAnswers": ["story"]
+              "id": "listening-q26",
+              "type": "multiple-choice",
+              "questionText": "What does Tom suggest for emotional recall?",
+              "options": ["A) Watch other actors", "B) Think of personal experiences", "C) Read psychology books", "D) Practice facial expressions"],
+              "correctAnswer": "B",
+              "translation": "Tom đề xuất gì cho việc hồi tưởng cảm xúc?"
+            },
+            {
+              "id": "listening-q27",
+              "type": "multiple-choice",
+              "questionText": "What percentage of communication is non-verbal according to Tom?",
+              "options": ["A) 50%", "B) 60%", "C) 70%", "D) 80%"],
+              "correctAnswer": "C",
+              "translation": "Theo Tom, bao nhiêu phần trăm giao tiếp là phi ngôn ngữ?"
+            },
+            {
+              "id": "listening-q28",
+              "type": "multiple-choice",
+              "questionText": "What does Tom work on before memorizing lines?",
+              "options": ["A) Costume design", "B) Character's physicality", "C) Vocal warm-ups", "D) Scene transitions"],
+              "correctAnswer": "B",
+              "translation": "Tom làm việc trên cái gì trước khi ghi nhớ lời thoại?"
+            },
+            {
+              "id": "listening-q29",
+              "type": "multiple-choice",
+              "questionText": "What is the key to believable acting according to Tom?",
+              "options": ["A) Perfect technique", "B) Loud voice", "C) Truthfulness", "D) Dramatic gestures"],
+              "correctAnswer": "C",
+              "translation": "Theo Tom, chìa khóa cho diễn xuất đáng tin cậy là gì?"
+            },
+            {
+              "id": "listening-q30",
+              "type": "multiple-choice",
+              "questionText": "How does Emma feel about Tom's advice?",
+              "options": ["A) Confused", "B) Disappointed", "C) Insightful", "D) Overwhelmed"],
+              "correctAnswer": "C",
+              "translation": "Emma cảm thấy thế nào về lời khuyên của Tom?"
             }
-          ],
-          "voiceProfiles": {
-            "male": {
-              "name": "Dr. Martinez & Tom",
-              "rate": 0.92,
-              "pitch": 0.98,
-              "volume": 1.0
-            },
-            "female": {
-              "name": "Sarah",
-              "rate": 0.94,
-              "pitch": 1.08,
-              "volume": 1.0
-            },
-            "narrator": {
-              "name": "IELTS Narrator",
-              "rate": 0.85,
-              "pitch": 1.0,
-              "volume": 1.0
-            }
-          }
+          ]
         },
         {
           "partNumber": 4,
-          "title": "Part 4 - Lecture on Shakespearean Performance",
-          "context": "A university lecture on performing Shakespeare in the modern era",
-          "questionsRange": "31-40",
-          "audioScript": {
-            "narrator": "You will hear part of a lecture on performing Shakespeare in modern theatre. First, you have some time to look at questions 31 to 40. [Pause] Now listen carefully and answer questions 31 to 40.",
+          "title": "Part 4: Lecture on acting techniques",
+          "instructions": "Listen to the lecture and answer questions 31-40.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.4, "rate": 1.0, "volume": 0.9, "name": "Drama Professor",
+              "variation": 0.08, "accent": "academic", "emotion": "authoritative", "speakingType": "lecture"
+            },
+            "narrator": {
+              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 4. You will hear a lecture on acting techniques. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
             "conversation": [
-              {
-                "speaker": "male",
-                "text": "Good morning, everyone. Today's lecture focuses on the challenges and techniques of performing Shakespeare in contemporary theatre. Shakespeare's plays, written over four hundred years ago, remain relevant today, but presenting them to modern audiences requires careful consideration. First, let's address the language barrier. Elizabethan English can be daunting for both actors and audiences. Approximately thirty percent of Shakespeare's vocabulary is no longer in common use. Actors must not only understand the literal meaning of every word but also grasp the metaphors, cultural references, and wordplay that would have been obvious to Shakespeare's original audience. One effective technique is called 'actioning' - assigning a specific intention to every line. Rather than just reciting beautiful poetry, actors ask themselves: What am I trying to make the other person do or feel with these words? This transforms the text from historical artifact into active communication. Verse speaking is another crucial skill. Shakespeare wrote primarily in iambic pentameter - lines with ten syllables and a particular rhythm. Many modern actors struggle with this, either ignoring the rhythm entirely or becoming so mechanical that it sounds unnatural. The key is finding the balance: honoring the verse structure while maintaining conversational authenticity. This is often called 'making the verse your own.' Let's consider physicality. Shakespeare's original performances took place in daylight, in outdoor theatres where audiences surrounded three sides of the stage. There was minimal scenery and no artificial lighting. Actors had to command attention through their physical presence and vocal power alone. Today's actors must adapt this energy for different spaces - from intimate studio theatres seating fifty people to vast outdoor amphitheatres holding thousands. Character psychology presents interesting challenges. Shakespeare wrote complex, psychologically rich characters, but his era had no concept of modern psychology. Actors must avoid imposing twenty-first-century psychological frameworks onto sixteenth-century characters. For instance, we can't analyze Hamlet using Freudian theory, though many directors have attempted this. Instead, actors should find the universal human emotions - love, jealousy, ambition, grief - that transcend historical periods. Cultural adaptation is increasingly important. Traditional productions set plays in their original periods, but many modern directors relocate them. I've seen Macbeth set in Stalin's Russia, Romeo and Juliet in 1990s gang culture, and The Tempest on a desert island during World War Two. These adaptations can illuminate themes for contemporary audiences, though they risk losing textual coherence if taken too far. Gender and diversity in casting have evolved significantly. Historically, all roles were played by men, with young boys playing women. Today, companies experiment with gender-blind casting, color-blind casting, and even gender-swapped productions. The Globe Theatre recently produced an all-female Julius Caesar, which offered fascinating new perspectives on power dynamics. Audience engagement differs dramatically from Shakespeare's time. Elizabethan audiences were boisterous - eating, drinking, talking, even throwing things at bad actors. Modern theatre audiences sit quietly in darkness. Some companies now recreate the interactive atmosphere, encouraging audience participation, while others embrace the contemplative focus that modern staging allows. Finally, there's the question of 'authenticity' versus innovation. Some argue we should perform Shakespeare exactly as it was done in 1600, using original pronunciation, all-male casts, and minimal staging. Others believe each generation must reinvent Shakespeare for their own time. My view is that both approaches have value. What matters most is serving the play's themes and engaging meaningfully with audiences. Shakespeare wrote plays, not museum pieces - they were meant to be living, breathing, changing works. In conclusion, performing Shakespeare successfully requires linguistic mastery, technical skill, historical awareness, and creative courage. It's demanding work, but when done well, it proves that these four-century-old plays still have profound things to say about human nature. Your assignment for next week is to select one Shakespeare speech and prepare two interpretations - one honoring traditional approaches, one using contemporary experimental techniques. Be ready to perform both and explain your choices. That's all for today. Thank you."
-              }
+              { "speaker": "female", "text": "Today we'll explore three major approaches to acting that have shaped modern theater and film. First, the Stanislavski System, developed by Russian actor Konstantin Stanislavski in the early 20th century. This method emphasizes psychological realism and emotional truth. Actors use techniques like emotional memory and the 'magic if' to create believable characters. Second, we have Bertolt Brecht's Epic Theater, which emerged in Germany during the 1920s. Unlike Stanislavski, Brecht wanted to create distance between the audience and the performance through techniques like direct address and placards. His goal was to make audiences think critically about social issues rather than emotionally identify with characters. Finally, the Meisner Technique, developed by American actor Sanford Meisner in the 1930s, focuses on spontaneous reaction and 'living truthfully under imaginary circumstances.' Meisner emphasized listening and responding authentically to other actors rather than pre-planning reactions. Each approach offers valuable tools, and many contemporary actors blend elements from multiple techniques to create their unique acting style." }
             ]
           },
           "questions": [
             {
-              "id": "q31",
-              "type": "form",
-              "questionText": "Approximately _____% of Shakespeare's vocabulary is no longer in common use:",
-              "correctAnswer": "30",
-              "acceptableAnswers": ["30", "thirty"]
-            },
-            {
-              "id": "q32",
-              "type": "form",
-              "questionText": "The technique of assigning a specific intention to every line is called:",
-              "correctAnswer": "actioning",
-              "acceptableAnswers": ["actioning"]
-            },
-            {
-              "id": "q33",
-              "type": "form",
-              "questionText": "Shakespeare wrote primarily in iambic _____:",
-              "correctAnswer": "pentameter",
-              "acceptableAnswers": ["pentameter"]
-            },
-            {
-              "id": "q34",
+              "id": "listening-q31",
               "type": "multiple-choice",
-              "questionText": "What challenge do modern actors face with verse speaking?",
-              "options": [
-                "A) The verses are too short",
-                "B) Finding balance between rhythm and natural delivery",
-                "C) Shakespeare didn't use rhythm",
-                "D) Modern audiences don't understand rhythm"
-              ],
-              "correctAnswer": "B"
+              "questionText": "How many acting approaches are discussed?",
+              "options": ["A) Two", "B) Three", "C) Four", "D) Five"],
+              "correctAnswer": "B",
+              "translation": "Có bao nhiêu phương pháp diễn xuất được thảo luận?"
             },
             {
-              "id": "q35",
-              "type": "form",
-              "questionText": "Shakespeare's original performances had minimal scenery and no artificial _____:",
-              "correctAnswer": "lighting",
-              "acceptableAnswers": ["lighting", "lights"]
-            },
-            {
-              "id": "q36",
+              "id": "listening-q32",
               "type": "multiple-choice",
-              "questionText": "What does the lecturer say about analyzing Hamlet with Freudian theory?",
-              "options": [
-                "A) It's the best approach",
-                "B) It's commonly done but problematic",
-                "C) Shakespeare would have approved",
-                "D) It's required for understanding the play"
-              ],
-              "correctAnswer": "B"
+              "questionText": "Who developed the Stanislavski System?",
+              "options": ["A) A German director", "B) A Russian actor", "C) An American teacher", "D) A British playwright"],
+              "correctAnswer": "B",
+              "translation": "Ai đã phát triển Hệ thống Stanislavski?"
             },
             {
-              "id": "q37",
-              "type": "form",
-              "questionText": "Example given: Macbeth set in _____'s Russia:",
-              "correctAnswer": "Stalin",
-              "acceptableAnswers": ["Stalin", "Stalin's"]
-            },
-            {
-              "id": "q38",
+              "id": "listening-q33",
               "type": "multiple-choice",
-              "questionText": "How were women's roles originally performed in Shakespeare's plays?",
-              "options": [
-                "A) By adult women",
-                "B) By young boys",
-                "C) By female singers",
-                "D) They were cut from performances"
-              ],
-              "correctAnswer": "B"
+              "questionText": "What does the Stanislavski System emphasize?",
+              "options": ["A) Physical comedy", "B) Psychological realism", "C) Political messages", "D) Vocal technique"],
+              "correctAnswer": "B",
+              "translation": "Hệ thống Stanislavski nhấn mạnh điều gì?"
             },
             {
-              "id": "q39",
-              "type": "form",
-              "questionText": "The Globe Theatre recently produced an all-female production of _____:",
-              "correctAnswer": "Julius Caesar",
-              "acceptableAnswers": ["Julius Caesar", "Caesar"]
-            },
-            {
-              "id": "q40",
+              "id": "listening-q34",
               "type": "multiple-choice",
-              "questionText": "What is the lecturer's view on authenticity versus innovation?",
-              "options": [
-                "A) Only authentic performances are acceptable",
-                "B) Innovation is always better",
-                "C) Both approaches have value",
-                "D) Shakespeare should not be performed anymore"
-              ],
-              "correctAnswer": "C"
+              "questionText": "Which technique uses emotional memory?",
+              "options": ["A) Brecht's method", "B) Stanislavski's system", "C) Meisner technique", "D) Classical acting"],
+              "correctAnswer": "B",
+              "translation": "Kỹ thuật nào sử dụng trí nhớ cảm xúc?"
+            },
+            {
+              "id": "listening-q35",
+              "type": "multiple-choice",
+              "questionText": "Where did Epic Theater originate?",
+              "options": ["A) Russia", "B) United States", "C) Germany", "D) France"],
+              "correctAnswer": "C",
+              "translation": "Kịch Epic bắt nguồn từ đâu?"
+            },
+            {
+              "id": "listening-q36",
+              "type": "multiple-choice",
+              "questionText": "What was Brecht's main goal?",
+              "options": ["A) Emotional identification", "B) Critical thinking", "C) Entertainment", "D) Technical perfection"],
+              "correctAnswer": "B",
+              "translation": "Mục tiêu chính của Brecht là gì?"
+            },
+            {
+              "id": "listening-q37",
+              "type": "multiple-choice",
+              "questionText": "Which technique uses direct address to the audience?",
+              "options": ["A) Stanislavski System", "B) Epic Theater", "C) Meisner Technique", "D) Method Acting"],
+              "correctAnswer": "B",
+              "translation": "Kỹ thuật nào sử dụng việc nói chuyện trực tiếp với khán giả?"
+            },
+            {
+              "id": "listening-q38",
+              "type": "multiple-choice",
+              "questionText": "Who developed the Meisner Technique?",
+              "options": ["A) A Russian director", "B) A German playwright", "C) An American actor", "D) A British teacher"],
+              "correctAnswer": "C",
+              "translation": "Ai đã phát triển Kỹ thuật Meisner?"
+            },
+            {
+              "id": "listening-q39",
+              "type": "multiple-choice",
+              "questionText": "What does the Meisner Technique focus on?",
+              "options": ["A) Pre-planned reactions", "B) Spontaneous response", "C) Vocal projection", "D) Historical accuracy"],
+              "correctAnswer": "B",
+              "translation": "Kỹ thuật Meisner tập trung vào điều gì?"
+            },
+            {
+              "id": "listening-q40",
+              "type": "multiple-choice",
+              "questionText": "What do contemporary actors often do?",
+              "options": ["A) Stick to one method", "B) Avoid all techniques", "C) Blend multiple techniques", "D) Create new techniques"],
+              "correctAnswer": "C",
+              "translation": "Các diễn viên đương đại thường làm gì?"
             }
-          ],
-          "voiceProfiles": {
-            "male": {
-              "name": "Professor",
-              "rate": 0.87,
-              "pitch": 0.95,
-              "volume": 1.0
-            },
-            "narrator": {
-              "name": "IELTS Narrator",
-              "rate": 0.85,
-              "pitch": 1.0,
-              "volume": 1.0
-            }
-          }
+          ]
         }
       ]
     },
     {
       "id": "reading",
       "title": "Reading",
-      "duration": 60,
+      "description": "40 questions • 60 minutes",
       "passages": [
         {
-          "passageNumber": 1,
-          "title": "The Evolution of Method Acting",
-          "text": "Method acting, one of the most influential and controversial approaches to performance, emerged in the early twentieth century and fundamentally changed how actors approached their craft. The technique has its roots in the work of Russian theatre practitioner Constantin Stanislavski, who developed a systematic approach to training actors at the Moscow Art Theatre in the 1890s.\n\nStanislavski's system emphasized psychological realism. He believed actors should not merely imitate behavior but should actually experience the emotions of their characters. To achieve this, he developed exercises focusing on emotional memory, imagination, and concentration. His actors would recall personal experiences similar to their character's situation, using those genuine feelings to inform their performance.\n\nThe system crossed the Atlantic in the 1920s when several of Stanislavski's students emigrated to America. Lee Strasberg, co-founder of the Group Theatre in New York, adapted these techniques into what became known as 'The Method.' Strasberg's version was more intense and psychologically demanding than Stanislavski's original work. He emphasized affective memory - asking actors to recall traumatic personal experiences to access deep emotions.\n\nThe Actors Studio, founded in 1947, became the epicenter of Method acting in America. Under Strasberg's leadership, it produced some of the most celebrated actors of the twentieth century, including Marlon Brando, Al Pacino, Robert De Niro, and Meryl Streep. These performers brought a new level of emotional authenticity and psychological complexity to both stage and screen.\n\nHowever, Method acting has always had its critics. Some argue that the intense psychological work can be damaging to actors' mental health, particularly when playing disturbed or traumatized characters. Others contend that the technique produces self-indulgent performances where actors prioritize their own emotional journey over serving the story or connecting with fellow performers.\n\nBritish acting tradition, exemplified by institutions like the Royal Academy of Dramatic Art (RADA), has historically favored a more technical approach. British-trained actors often build characters from external elements - voice, movement, and detailed text analysis - rather than from internal psychological exploration. Laurence Olivier, one of Britain's greatest actors, famously dismissed Method techniques as unnecessary, suggesting that skilled actors should be able to 'just act' without such elaborate preparation.\n\nIn recent decades, the divide between these approaches has become less pronounced. Many contemporary actors and teachers integrate techniques from multiple traditions, recognizing that different roles and projects may benefit from different approaches. The rise of naturalistic television drama has made Method-influenced techniques increasingly relevant even in British productions.\n\nMoreover, modern training programs have developed safer protocols for psychological work. Actors learn boundary-setting techniques and are encouraged to maintain separation between their personal identity and their roles. Theatre companies now often employ counselors or therapists to support actors working with challenging material.\n\nThe debate surrounding Method acting ultimately reflects broader questions about the nature of performance itself. Is acting primarily a craft to be mastered through technical skill, or an art requiring genuine emotional experience? Can actors convincingly portray experiences they've never had, or must they draw on personal truth? These questions have no definitive answers, which is perhaps why Method acting remains both influential and controversial more than seventy years after the founding of the Actors Studio.",
-          "questionsRange": "1-10",
+          "id": "reading-passage1",
+          "title": "Passage 1: The History of Method Acting",
+          "content": "Method acting is a range of training and rehearsal techniques that seek to encourage sincere and emotionally expressive performances. It was first popularized by the Group Theatre in the 1930s and later developed by Lee Strasberg at the Actors Studio in New York. The approach draws from the system developed by Russian theatre practitioner Konstantin Stanislavski. Strasberg's method requires actors to draw upon their own emotions and memories to connect with their characters. This technique became famous through actors like Marlon Brando, James Dean, and Marilyn Monroe. While some critics argue that method acting can be psychologically damaging, its proponents believe it creates unparalleled authenticity. The technique involves extensive character research, emotional memory exercises, and sometimes extreme physical transformations. Many contemporary acting schools continue to teach variations of method acting, though often with modifications to address concerns about actors' mental health. The legacy of method acting continues to influence film and theater worldwide, with many award-winning performances attributed to this approach.",
           "questions": [
             {
-              "id": "q41",
-              "type": "true-false-notgiven",
-              "questionText": "Stanislavski developed his system in America.",
-              "correctAnswer": "FALSE",
-              "explanation": "The passage states Stanislavski developed his system at the Moscow Art Theatre in Russia in the 1890s."
-            },
-            {
-              "id": "q42",
-              "type": "true-false-notgiven",
-              "questionText": "Lee Strasberg made Stanislavski's techniques more psychologically demanding.",
-              "correctAnswer": "TRUE",
-              "explanation": "The passage states 'Strasberg's version was more intense and psychologically demanding than Stanislavski's original work.'"
-            },
-            {
-              "id": "q43",
-              "type": "true-false-notgiven",
-              "questionText": "Meryl Streep was a founding member of the Actors Studio.",
-              "correctAnswer": "NOT GIVEN",
-              "explanation": "The passage mentions Streep trained there but doesn't say she was a founding member."
-            },
-            {
-              "id": "q44",
+              "id": "reading-q1",
               "type": "multiple-choice",
-              "questionText": "What is one criticism of Method acting mentioned in the passage?",
-              "options": [
-                "A) It is too expensive",
-                "B) It can damage actors' mental health",
-                "C) It is only suitable for film",
-                "D) It requires too much time"
-              ],
-              "correctAnswer": "B",
-              "explanation": "The passage explicitly states critics argue 'the intense psychological work can be damaging to actors' mental health.'"
+              "questionText": "Where was method acting first popularized?",
+              "options": ["A) Actors Studio", "B) Group Theatre", "C) Moscow Art Theatre", "D) Royal Academy"],
+              "correctAnswer": "B"
             },
             {
-              "id": "q45",
+              "id": "reading-q2",
               "type": "multiple-choice",
-              "questionText": "How does British acting tradition differ from Method acting?",
-              "options": [
-                "A) It focuses on external elements rather than internal psychology",
-                "B) It requires more training",
-                "C) It is only used in theatre",
-                "D) It is easier to learn"
-              ],
-              "correctAnswer": "A",
-              "explanation": "The passage states British-trained actors 'build characters from external elements - voice, movement, and detailed text analysis - rather than from internal psychological exploration.'"
+              "questionText": "Who further developed method acting at the Actors Studio?",
+              "options": ["A) Konstantin Stanislavski", "B) Lee Strasberg", "C) Marlon Brando", "D) Stella Adler"],
+              "correctAnswer": "B"
             },
             {
-              "id": "q46",
-              "type": "sentence-completion",
-              "questionText": "Stanislavski believed actors should _____ the emotions of their characters, not just imitate them.",
-              "correctAnswer": "experience",
-              "acceptableAnswers": ["experience", "actually experience"]
-            },
-            {
-              "id": "q47",
-              "type": "sentence-completion",
-              "questionText": "The Actors Studio was founded in _____.",
-              "correctAnswer": "1947",
-              "acceptableAnswers": ["1947"]
-            },
-            {
-              "id": "q48",
-              "type": "sentence-completion",
-              "questionText": "Modern training programs now often employ _____ or therapists to support actors.",
-              "correctAnswer": "counselors",
-              "acceptableAnswers": ["counselors", "counsellors"]
-            },
-            {
-              "id": "q49",
-              "type": "true-false-notgiven",
-              "questionText": "The divide between Method and British approaches has become less pronounced in recent decades.",
-              "correctAnswer": "TRUE",
-              "explanation": "The passage states 'In recent decades, the divide between these approaches has become less pronounced.'"
-            },
-            {
-              "id": "q50",
+              "id": "reading-q3",
               "type": "multiple-choice",
-              "questionText": "According to the passage, why does Method acting remain controversial?",
-              "options": [
-                "A) It is too old-fashioned",
-                "B) It reflects unresolved questions about the nature of performance",
-                "C) It is too expensive to teach",
-                "D) It only works in America"
-              ],
-              "correctAnswer": "B",
-              "explanation": "The passage concludes that the debate 'reflects broader questions about the nature of performance itself' with no definitive answers."
+              "questionText": "Which Russian practitioner influenced method acting?",
+              "options": ["A) Anton Chekhov", "B) Vsevolod Meyerhold", "C) Konstantin Stanislavski", "D) Mikhail Bulgakov"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q4",
+              "type": "multiple-choice",
+              "questionText": "What does method acting require actors to draw upon?",
+              "options": ["A) Other performances", "B) Their own emotions and memories", "C) Historical research", "D) Vocal techniques"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q5",
+              "type": "multiple-choice",
+              "questionText": "Which actor is NOT mentioned as famous for method acting?",
+              "options": ["A) Marlon Brando", "B) James Dean", "C) Marilyn Monroe", "D) Robert De Niro"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q6",
+              "type": "multiple-choice",
+              "questionText": "What concern do some critics have about method acting?",
+              "options": ["A) It's too expensive", "B) It's psychologically damaging", "C) It's too technical", "D) It's outdated"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q7",
+              "type": "multiple-choice",
+              "questionText": "What do proponents believe about method acting?",
+              "options": ["A) It creates authenticity", "B) It's easy to learn", "C) It's only for film", "D) It requires no training"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q8",
+              "type": "multiple-choice",
+              "questionText": "What does method acting sometimes involve?",
+              "options": ["A) Extreme physical transformations", "B) Improvisation only", "C) Classical training", "D) Dance lessons"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q9",
+              "type": "multiple-choice",
+              "questionText": "How do contemporary acting schools often teach method acting?",
+              "options": ["A) Without modifications", "B) With modifications for mental health", "C) Only for advanced students", "D) Only for theater"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q10",
+              "type": "multiple-choice",
+              "questionText": "What continues to be influenced by method acting?",
+              "options": ["A) Only American theater", "B) Film and theater worldwide", "C) Only classical acting", "D) Television commercials"],
+              "correctAnswer": "B"
             }
           ]
         },
         {
-          "passageNumber": 2,
-          "title": "The Business of Broadway",
-          "text": "Broadway, the renowned theatre district in Manhattan, New York, represents both the artistic pinnacle and commercial heart of American theatre. The term 'Broadway' technically refers to the forty-one professional theatres with 500 or more seats located in the Theatre District and Lincoln Center. Understanding Broadway requires examining it not just as an artistic venue but as a multimillion-dollar industry with unique economic dynamics.\n\nThe financial structure of Broadway productions is complex and risky. A typical Broadway musical now costs between fifteen and twenty-five million dollars to produce, with some spectacular productions exceeding forty million. These costs cover everything from set construction and costume design to salaries, marketing, and theatre rental. Producers must raise this capital before the show opens, usually from multiple investors who receive a share of any profits.\n\nThe economics of a Broadway show follow a distinct pattern. During the initial weeks after opening, a production typically runs at a loss as it builds audience awareness and critical reputation. Reviews from major newspapers, particularly The New York Times, can make or break a show. A positive review can lead to months or years of sold-out performances; a negative one can result in immediate closure. Shows generally need to run for several months before recouping their initial investment. Even then, only about twenty percent of Broadway productions actually make a profit.\n\nTicket pricing has evolved dramatically over recent decades. Premium seats for hit musicals can now cost over five hundred dollars, making Broadway increasingly inaccessible to average families. This has led to initiatives like lottery systems and rush tickets, where a limited number of seats are sold at reduced prices on the day of performance. These programs aim to maintain Broadway's cultural relevance while acknowledging economic realities.\n\nThe creative process involves numerous collaborators. A musical typically begins with a composer, lyricist, and book writer who develop the core material. A producer then acquires the rights and assembles the creative team: director, choreographer, designers for sets, costumes, lighting, and sound. Casting directors hold auditions to find performers. During workshops and out-of-town tryouts, the show is refined based on audience reactions. By the time a musical opens on Broadway, hundreds of people have contributed to its development.\n\nTechnology has transformed Broadway productions. Modern shows utilize sophisticated lighting systems, automated scenery, and digital sound design that would have been impossible twenty years ago. 'The Lion King,' for instance, pioneered the use of elaborate puppetry and masks, while 'Hamilton' demonstrated how contemporary music genres could revitalize historical storytelling. These innovations come at a cost - technical complexity increases both production budgets and the skill level required from crew members.\n\nThe industry faces several contemporary challenges. The COVID-19 pandemic forced all Broadway theatres to close for eighteen months, the longest shutdown in history. The recovery has been gradual, with some shows struggling to rebuild audiences while others have thrived. There's also ongoing discussion about diversity and inclusion, both in casting and in the stories being told. Recent years have seen increased representation of minority creators and performers, though critics argue that progress remains insufficient.\n\nAnother significant issue is the dominance of franchises and adaptations. Many current Broadway shows are based on popular films, books, or existing intellectual property rather than original stories. Productions like 'Frozen,' 'Mean Girls,' and 'The Lion King' were adapted from Disney films. While these shows bring built-in audiences and brand recognition, some theatre professionals worry about the decline of original theatrical storytelling.\n\nTourism plays a crucial role in Broadway's economy. Approximately sixty-five percent of Broadway tickets are purchased by tourists rather than New York residents. This means Broadway's success is tied to factors beyond the quality of productions - global economic conditions, international travel trends, and New York City's overall tourism appeal all impact theatre attendance.\n\nDespite these challenges, Broadway remains culturally influential. Successful shows spawn international productions, national tours, and regional productions, spreading their cultural impact worldwide. Cast recordings become part of popular culture. Individual performances can launch or define careers - think of Lin-Manuel Miranda's rise through 'Hamilton' or Idina Menzel's star-making role in 'Wicked.'\n\nLooking forward, Broadway must balance artistic innovation with commercial viability, accessibility with profitability, and tradition with evolution. The industry's resilience through economic recessions, changing entertainment preferences, and pandemic closure suggests it will continue adapting. Whether future generations will have the same relationship with live theatre remains an open question in an increasingly digital entertainment landscape.",
-          "questionsRange": "11-20",
+          "id": "reading-passage2",
+          "title": "Passage 2: Shakespeare's Globe Theatre",
+          "content": "The Globe Theatre was a theatre in London associated with William Shakespeare. It was built in 1599 by Shakespeare's playing company, the Lord Chamberlain's Men, and was destroyed by fire on 29 June 1613. A second Globe Theatre was built on the same site by June 1614 and closed in 1642. The modern reconstruction, named 'Shakespeare's Globe', opened in 1997 approximately 230 meters from the original site. The original Globe could accommodate up to 3,000 spectators and was famous for its circular shape and open-air design. Plays were performed in the afternoon to take advantage of natural light. The theatre had three levels of seating and a yard where 'groundlings' (commoners) stood for a penny. The stage extended into the yard, creating an intimate relationship between actors and audience. Sound effects were created using cannons, bells, and other props, which ironically caused the fire that destroyed the first Globe when a cannon misfired during a performance of Henry VIII. Today, Shakespeare's Globe attracts visitors from around the world and continues to stage productions using original practices, including period costumes and minimal sets.",
           "questions": [
             {
-              "id": "q51",
-              "type": "sentence-completion",
-              "questionText": "A Broadway theatre must have at least _____ seats.",
-              "correctAnswer": "500",
-              "acceptableAnswers": ["500", "five hundred"]
-            },
-            {
-              "id": "q52",
-              "type": "sentence-completion",
-              "questionText": "A typical Broadway musical costs between _____ and _____ million dollars to produce.",
-              "correctAnswer": "15 and 25",
-              "acceptableAnswers": ["15 and 25", "fifteen and twenty-five", "$15-25"]
-            },
-            {
-              "id": "q53",
+              "id": "reading-q11",
               "type": "multiple-choice",
-              "questionText": "What percentage of Broadway productions make a profit?",
-              "options": [
-                "A) 10%",
-                "B) 20%",
-                "C) 50%",
-                "D) 80%"
-              ],
-              "correctAnswer": "B",
-              "explanation": "The passage states 'only about twenty percent of Broadway productions actually make a profit.'"
+              "questionText": "When was the original Globe Theatre built?",
+              "options": ["A) 1589", "B) 1599", "C) 1609", "D) 1613"],
+              "correctAnswer": "B"
             },
             {
-              "id": "q54",
-              "type": "true-false-notgiven",
-              "questionText": "The New York Times review is the only factor that determines a show's success.",
-              "correctAnswer": "FALSE",
-              "explanation": "While the passage says reviews can 'make or break' a show, it mentions multiple factors affecting success."
-            },
-            {
-              "id": "q55",
-              "type": "sentence-completion",
-              "questionText": "Premium seats for hit musicals can cost over _____ dollars.",
-              "correctAnswer": "500",
-              "acceptableAnswers": ["500", "five hundred", "$500"]
-            },
-            {
-              "id": "q56",
-              "type": "true-false-notgiven",
-              "questionText": "Broadway theatres were closed for eighteen months due to the COVID-19 pandemic.",
-              "correctAnswer": "TRUE",
-              "explanation": "The passage explicitly states this: 'all Broadway theatres to close for eighteen months, the longest shutdown in history.'"
-            },
-            {
-              "id": "q57",
+              "id": "reading-q12",
               "type": "multiple-choice",
-              "questionText": "What concern do some professionals have about current Broadway trends?",
-              "options": [
-                "A) Tickets are too cheap",
-                "B) Too many original stories are being produced",
-                "C) There is a decline of original theatrical storytelling",
-                "D) Theatres are too small"
-              ],
-              "correctAnswer": "C",
-              "explanation": "The passage mentions professionals worry about 'the decline of original theatrical storytelling' due to adaptations."
+              "questionText": "What destroyed the first Globe Theatre?",
+              "options": ["A) Demolition", "B) Fire", "C) Storm", "D) Earthquake"],
+              "correctAnswer": "B"
             },
             {
-              "id": "q58",
-              "type": "sentence-completion",
-              "questionText": "Approximately _____% of Broadway tickets are purchased by tourists.",
-              "correctAnswer": "65",
-              "acceptableAnswers": ["65", "sixty-five"]
-            },
-            {
-              "id": "q59",
-              "type": "true-false-notgiven",
-              "questionText": "'Hamilton' was the first show to use contemporary music genres on Broadway.",
-              "correctAnswer": "NOT GIVEN",
-              "explanation": "The passage says Hamilton 'demonstrated how contemporary music genres could revitalize historical storytelling' but doesn't say it was the first."
-            },
-            {
-              "id": "q60",
+              "id": "reading-q13",
               "type": "multiple-choice",
-              "questionText": "According to the passage, what must Broadway balance in the future?",
-              "options": [
-                "A) Only artistic innovation",
-                "B) Only commercial viability",
-                "C) Artistic innovation with commercial viability",
-                "D) Tourism with local attendance"
-              ],
-              "correctAnswer": "C",
-              "explanation": "The passage states Broadway 'must balance artistic innovation with commercial viability, accessibility with profitability, and tradition with evolution.'"
+              "questionText": "When did the modern reconstruction open?",
+              "options": ["A) 1977", "B) 1987", "C) 1997", "D) 2007"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q14",
+              "type": "multiple-choice",
+              "questionText": "How many spectators could the original Globe accommodate?",
+              "options": ["A) 1,500", "B) 2,000", "C) 3,000", "D) 4,000"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q15",
+              "type": "multiple-choice",
+              "questionText": "Why were plays performed in the afternoon?",
+              "options": ["A) To avoid heat", "B) To use natural light", "C) For matinee prices", "D) Actor availability"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q16",
+              "type": "multiple-choice",
+              "questionText": "What were 'groundlings'?",
+              "options": ["A) Actors", "B) Commoners who stood", "C) Stage hands", "D) Playwrights"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q17",
+              "type": "multiple-choice",
+              "questionText": "How much did groundlings pay?",
+              "options": ["A) One penny", "B) Two pence", "C) Three pence", "D] Five pence"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q18",
+              "type": "multiple-choice",
+              "questionText": "What caused the fire that destroyed the first Globe?",
+              "options": ["A) Lightning strike", "B) Candle accident", "C) Cannon misfire", "D] Arson"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q19",
+              "type": "multiple-choice",
+              "questionText": "During which play did the fire occur?",
+              "options": ["A) Hamlet", "B) Macbeth", "C) Henry VIII", "D] Romeo and Juliet"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q20",
+              "type": "multiple-choice",
+              "questionText": "What does the modern Globe continue to use?",
+              "options": ["A) Electric lighting", "B) Original practices", "C] Modern costumes", "D] Digital effects"],
+              "correctAnswer": "B"
             }
           ]
         },
         {
-          "passageNumber": 3,
-          "title": "The Globalization of Theatre",
-          "text": "Theatre, once bound by geography and language, has undergone remarkable globalization over the past century. This transformation has been driven by technological advances, international festivals, cultural exchange programs, and the universal human need for storytelling. However, this globalization raises complex questions about cultural authenticity, artistic integrity, and the very nature of theatrical tradition.\n\nThe movement of theatrical works across borders is not new. Shakespeare's plays were performed throughout Europe within decades of their writing. In the nineteenth century, touring companies brought productions across continents, though these were primarily one-directional flows from European capitals to colonial territories. What distinguishes contemporary theatrical globalization is its multidirectional nature and unprecedented speed.\n\nInternational theatre festivals have become crucial nodes in this global network. The Edinburgh Festival Fringe, Avignon Festival, and Singapore International Festival of Arts showcase productions from dozens of countries, creating spaces where diverse theatrical traditions encounter one another. These festivals serve multiple functions: they provide platforms for lesser-known companies, facilitate cross-cultural artistic dialogue, and function as marketplaces where productions are bought and sold for international tours.\n\nYet this festival circuit has been criticized for creating a homogenized 'international style' - productions designed to travel well across cultural boundaries may sacrifice specificity and depth. Works are often performed in English or rely heavily on physical theatre and visual spectacle to transcend language barriers. Some critics argue this results in a kind of theatrical Esperanto: universally accessible but culturally shallow.\n\nThe adaptation and translation of theatrical works present particular challenges. Direct translation of dialogue is only the beginning. Directors must decide whether to preserve cultural specifics or adapt them for new audiences. When a Norwegian playwright's work is performed in Japan, should characters retain Norwegian names and settings, or should the production be transplanted to a Japanese context? There's no consensus; different companies make different choices, each with artistic and political implications.\n\nCultural appropriation has become a contentious issue in global theatre. Western theatre companies have historically borrowed from non-Western traditions - incorporating Asian movement vocabularies, African rhythms, or Indigenous storytelling structures. While some view this as creative synthesis and mutual influence, others see it as exploitation, particularly when non-Western elements are extracted from their cultural context and used decoratively without understanding or crediting their origins.\n\nThe flow of theatrical knowledge through educational institutions has intensified globalization. Many theatre practitioners now train internationally, studying at conservatories far from their home countries. A South Korean actor might train at the Royal Central School of Speech and Drama in London, then work in New York before returning to Seoul. This creates artists with multiple cultural competencies but may also lead to the erosion of distinct national theatrical traditions.\n\nDigital technology has accelerated these trends exponentially. Productions can now be live-streamed globally - the National Theatre in London broadcasts its shows to cinemas worldwide, making productions accessible to audiences who might never visit Britain. During the COVID-19 pandemic, theatres experimented with purely digital formats, creating productions specifically designed for online viewing. While these innovations democratize access, they also raise questions about whether recorded theatre maintains the essential immediacy and communal experience that defines the art form.\n\nThe economics of theatrical globalization favor certain types of work. Large-scale musicals like 'The Phantom of the Opera' or 'Les Misérables' have played in dozens of countries, translated into multiple languages. These commercial juggernauts can justify the substantial costs of international production. Smaller, more challenging works struggle to travel internationally unless they win major awards or receive substantial subsidies.\n\nColonial legacies continue to shape global theatrical flows. English-language productions, particularly from Broadway and the West End, circulate far more widely than works in other languages. This linguistic dominance reinforces existing power structures and can marginalize theatrical traditions from regions with less economic and cultural capital. A acclaimed play from West Africa might never be seen outside its region, while a mediocre Broadway musical tours globally.\n\nSome regions have developed strategies to resist homogenization while engaging with global theatre. The Brazilian theatre company Teatro da Vertigem creates site-specific works deeply rooted in São Paulo's urban environment, making them powerful but difficult to export. Conversely, directors like Robert Lepage create works that consciously synthesize multiple cultural influences, embracing hybridity as an artistic strategy rather than viewing it as problematic.\n\nThe question of who benefits from theatrical globalization remains contested. Audiences gain access to diverse works and perspectives. Artists have unprecedented opportunities for collaboration and exposure. However, these benefits are unevenly distributed. Well-funded institutions in wealthy nations can more easily participate in international networks, while theatre-makers in the Global South often struggle to gain visibility regardless of their work's quality.\n\nLooking ahead, theatrical globalization will likely intensify, driven by continued technological development and increasing global interconnection. The challenge for the theatre community is ensuring this globalization enriches rather than diminishes cultural diversity. This requires conscious effort: supporting translation and adaptation, funding international exchange on equitable terms, critically examining power dynamics, and maintaining space for theatrical traditions that don't easily cross borders.\n\nUltimately, theatre's globalization reflects broader patterns of cultural exchange in an interconnected world. It presents both opportunities and risks, requiring ongoing negotiation between the local and global, tradition and innovation, accessibility and specificity. The art form's future vitality depends on navigating these tensions thoughtfully rather than allowing market forces alone to determine which stories are told and whose voices are heard.",
-          "questionsRange": "21-30",
+          "id": "reading-passage3",
+          "title": "Passage 3: The Evolution of Women in Theater",
+          "content": "The role of women in theater has evolved significantly throughout history. In ancient Greek theater, all roles were played by men, including female characters who were portrayed by male actors wearing masks. During the Renaissance, women were still banned from the stage in England, leading to young boys playing female roles in Shakespeare's plays. The first professional actresses appeared in Italy during the 16th century in commedia dell'arte troupes. In England, women finally began appearing on stage after the Restoration of Charles II in 1660, with Margaret Hughes often credited as the first professional actress on the English stage. The 19th century saw the rise of famous actresses like Sarah Bernhardt, known as 'the divine Sarah,' who achieved international stardom. The 20th century brought further progress with women not only acting but also writing, directing, and producing plays. Playwrights like Lillian Hellman and Caryl Churchill broke barriers with powerful works addressing social issues. Today, women hold prominent positions across all aspects of theater, though gender inequality and representation issues persist. Contemporary movements continue to advocate for equal opportunities and diverse representation both on stage and behind the scenes in theaters worldwide.",
           "questions": [
             {
-              "id": "q61",
+              "id": "reading-q21",
               "type": "multiple-choice",
-              "questionText": "What distinguishes contemporary theatrical globalization from historical practices?",
-              "options": [
-                "A) It only happens in Europe",
-                "B) It is multidirectional and faster",
-                "C) It is slower than before",
-                "D) Only Shakespeare plays travel"
-              ],
-              "correctAnswer": "B",
-              "explanation": "The passage states contemporary globalization is distinguished by its 'multidirectional nature and unprecedented speed.'"
+              "questionText": "Who played female roles in ancient Greek theater?",
+              "options": ["A) Women", "B) Male actors", "C) Children", "D] No female roles"],
+              "correctAnswer": "B"
             },
             {
-              "id": "q62",
-              "type": "true-false-notgiven",
-              "questionText": "The Edinburgh Festival Fringe only showcases British productions.",
-              "correctAnswer": "FALSE",
-              "explanation": "The passage says it showcases 'productions from dozens of countries.'"
-            },
-            {
-              "id": "q63",
-              "type": "sentence-completion",
-              "questionText": "Critics argue that the international style creates a theatrical _____ that is universally accessible but culturally shallow.",
-              "correctAnswer": "Esperanto",
-              "acceptableAnswers": ["Esperanto"]
-            },
-            {
-              "id": "q64",
-              "type": "true-false-notgiven",
-              "questionText": "There is a consensus on how to adapt theatrical works for different cultures.",
-              "correctAnswer": "FALSE",
-              "explanation": "The passage explicitly states 'There's no consensus; different companies make different choices.'"
-            },
-            {
-              "id": "q65",
+              "id": "reading-q22",
               "type": "multiple-choice",
-              "questionText": "What concern is raised about Western theatre companies borrowing from non-Western traditions?",
-              "options": [
-                "A) It improves performances",
-                "B) It could be cultural appropriation or exploitation",
-                "C) It is always respectful",
-                "D) It never happens"
-              ],
-              "correctAnswer": "B",
-              "explanation": "The passage discusses concerns about exploitation 'when non-Western elements are extracted from their cultural context.'"
+              "questionText": "Who played female roles in Shakespeare's time?",
+              "options": ["A) Women", "B) Young boys", "C] Old men", "D] No female roles"],
+              "correctAnswer": "B"
             },
             {
-              "id": "q66",
-              "type": "true-false-notgiven",
-              "questionText": "The National Theatre in London broadcasts its shows to cinemas worldwide.",
-              "correctAnswer": "TRUE",
-              "explanation": "The passage explicitly states this as an example of digital technology's impact."
-            },
-            {
-              "id": "q67",
-              "type": "sentence-completion",
-              "questionText": "___-language productions circulate far more widely than works in other languages.",
-              "correctAnswer": "English",
-              "acceptableAnswers": ["English", "English-language"]
-            },
-            {
-              "id": "q68",
+              "id": "reading-q23",
               "type": "multiple-choice",
-              "questionText": "How does Teatro da Vertigem approach globalization?",
-              "options": [
-                "A) By creating easily exportable works",
-                "B) By creating site-specific works rooted in local environment",
-                "C) By only performing in English",
-                "D) By avoiding all international contact"
-              ],
-              "correctAnswer": "B",
-              "explanation": "The passage states they 'creates site-specific works deeply rooted in São Paulo's urban environment.'"
+              "questionText": "Where did the first professional actresses appear?",
+              "options": ["A) England", "B) France", "C) Italy", "D] Greece"],
+              "correctAnswer": "C"
             },
             {
-              "id": "q69",
-              "type": "true-false-notgiven",
-              "questionText": "Benefits of theatrical globalization are evenly distributed worldwide.",
-              "correctAnswer": "FALSE",
-              "explanation": "The passage states 'these benefits are unevenly distributed' and that well-funded institutions have more advantages."
-            },
-            {
-              "id": "q70",
+              "id": "reading-q24",
               "type": "multiple-choice",
-              "questionText": "According to the passage, what does theatre's future vitality depend on?",
-              "options": [
-                "A) Only increasing ticket prices",
-                "B) Eliminating all international exchange",
-                "C) Navigating tensions between local/global and tradition/innovation thoughtfully",
-                "D) Letting market forces alone determine everything"
-              ],
-              "correctAnswer": "C",
-              "explanation": "The conclusion states vitality 'depends on navigating these tensions thoughtfully rather than allowing market forces alone to determine which stories are told.'"
+              "questionText": "When did women begin appearing on stage in England?",
+              "options": ["A) 1560", "B) 1610", "C) 1660", "D] 1710"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q25",
+              "type": "multiple-choice",
+              "questionText": "Who is often credited as the first professional English actress?",
+              "options": ["A) Sarah Bernhardt", "B) Nell Gwynn", "C) Margaret Hughes", "D] Lillian Hellman"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q26",
+              "type": "multiple-choice",
+              "questionText": "Which 19th century actress was known as 'the divine Sarah'?",
+              "options": ["A) Sarah Siddons", "B) Sarah Bernhardt", "C] Sarah Kane", "D] Sarah Hughes"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q27",
+              "type": "multiple-choice",
+              "questionText": "What additional roles did women take in the 20th century?",
+              "options": ["A) Only acting", "B) Writing and directing", "C] Stage design only", "D] Costume design only"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q28",
+              "type": "multiple-choice",
+              "questionText": "Which playwright is mentioned as breaking barriers?",
+              "options": ["A) Tennessee Williams", "B) Arthur Miller", "C] Lillian Hellman", "D] Samuel Beckett"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q29",
+              "type": "multiple-choice",
+              "questionText": "What issues still persist today according to the passage?",
+              "options": ["A) No women in theater", "B) Gender inequality", "C] No female playwrights", "D] No female directors"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q30",
+              "type": "multiple-choice",
+              "questionText": "What do contemporary movements advocate for?",
+              "options": ["A) Fewer women in theater", "B] Equal opportunities", "C] Traditional roles only", "D] Male-dominated theater"],
+              "correctAnswer": "B"
             }
           ]
         }
@@ -927,236 +695,94 @@
     {
       "id": "writing",
       "title": "Writing",
-      "duration": 60,
+      "description": "60 minutes",
       "tasks": [
         {
-          "taskNumber": 1,
-          "title": "Task 1 - Describing a Process",
-          "prompt": "The diagram below shows the process of training to become a professional actor through a drama school program.\n\nSummarize the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
-          "description": "[Imagine a flowchart showing: Initial Audition → Foundation Course (12 weeks) → Assessment → Either: Professional Diploma (6 months) OR Exit → Final Showcase → Graduate/Industry Placement]",
-          "minWords": 150,
-          "maxWords": null
+          "id": "writing-task1",
+          "title": "Writing Task 1",
+          "instructions": "You should spend about 20 minutes on this task. The chart below shows the percentage of theater attendance by age group in London between 2010 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+          "taskType": "Academic",
+          "wordCountMin": 150,
+          "timeLimit": 20,
+          "description": "You will be presented with a graph, table, chart or diagram and asked to describe, summarize or explain the information in your own words. You may be asked to describe and explain data, describe the stages of a process, how something works or describe an object or event.",
+          "sampleData": {
+            "type": "line-graph",
+            "title": "Theater Attendance by Age Group in London (2010-2020)",
+            "data": {
+              "18-25": {"2010": 35, "2015": 42, "2020": 38},
+              "26-35": {"2010": 45, "2015": 48, "2020": 52},
+              "36-50": {"2010": 55, "2015": 58, "2020": 62},
+              "51-65": {"2010": 65, "2015": 62, "2020": 58},
+              "65+": {"2010": 48, "2015": 45, "2020": 42}
+            },
+            "units": "Percentage (%)"
+          },
+          "assessmentCriteria": [
+            "Task Achievement",
+            "Coherence and Cohesion", 
+            "Lexical Resource",
+            "Grammatical Range and Accuracy"
+          ]
         },
         {
-          "taskNumber": 2,
-          "title": "Task 2 - Opinion Essay",
-          "prompt": "Some people believe that method acting, where actors use personal emotional experiences to portray characters, is essential for creating authentic performances. Others think it is unnecessarily intense and that technical acting skills are sufficient.\n\nDiscuss both views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
-          "minWords": 250,
-          "maxWords": null
+          "id": "writing-task2",
+          "title": "Writing Task 2",
+          "instructions": "You should spend about 40 minutes on this task. Some people believe that acting is a natural talent that cannot be taught, while others argue that acting can be learned through proper training and practice. Discuss both these views and give your own opinion. Write at least 250 words.",
+          "taskType": "Essay",
+          "wordCountMin": 250,
+          "timeLimit": 40,
+          "description": "You will be presented with a point of view, argument or problem. You need to write a discursive essay in response. This means you must discuss the topic from different perspectives and include your own opinion.",
+          "essayType": "Discussion",
+          "topics": [
+            "Acting as natural talent",
+            "Acting as learned skill",
+            "Role of training in acting"
+          ],
+          "keyPoints": [
+            "Arguments for natural talent in acting",
+            "Arguments for acting as a learned skill",
+            "Personal opinion with justification"
+          ],
+          "assessmentCriteria": [
+            "Task Response",
+            "Coherence and Cohesion",
+            "Lexical Resource", 
+            "Grammatical Range and Accuracy"
+          ]
         }
       ]
     },
     {
       "id": "grammar",
       "title": "Grammar & Language Use",
-      "duration": 20,
+      "description": "20 questions • Approximately 15 minutes",
       "questions": [
-        {
-          "id": "g1",
-          "questionText": "The director insisted that every actor _____ their lines perfectly before opening night.",
-          "options": ["knows", "know", "knew", "has known"],
-          "correctAnswer": "B",
-          "explanation": "After 'insisted that', we use subjunctive mood (base form of verb): 'know' not 'knows'. This is a formal grammar rule.",
-          "translation": "Giám đốc khăng khăng rằng mỗi diễn viên phải biết thoại của mình một cách hoàn hảo trước đêm ra mắt."
-        },
-        {
-          "id": "g2",
-          "questionText": "By the time the curtain falls, the actors _____ for three hours straight.",
-          "options": ["will perform", "will have been performing", "have performed", "are performing"],
-          "correctAnswer": "B",
-          "explanation": "Use future perfect continuous for an action that will be in progress before a specific future time: 'will have been performing'.",
-          "translation": "Vào thời điểm màn hạ, các diễn viên sẽ đã biểu diễn liên tục trong ba giờ."
-        },
-        {
-          "id": "g3",
-          "questionText": "_____ for the role carefully, she felt confident during the audition.",
-          "options": ["Preparing", "Having prepared", "To prepare", "Prepared"],
-          "correctAnswer": "B",
-          "explanation": "'Having prepared' (perfect participle) shows that the preparation was completed before feeling confident.",
-          "translation": "Sau khi chuẩn bị kỹ lưỡng cho vai diễn, cô ấy cảm thấy tự tin trong buổi thử giọng."
-        },
-        {
-          "id": "g4",
-          "questionText": "The play was _____ moving that many audience members were in tears.",
-          "options": ["so", "such", "too", "very"],
-          "correctAnswer": "A",
-          "explanation": "'So + adjective + that' is the correct structure: 'so moving that'. 'Such' would need a noun.",
-          "translation": "Vở kịch cảm động đến nỗi nhiều khán giả đã rơi nước mắt."
-        },
-        {
-          "id": "g5",
-          "questionText": "The theatre company, _____ reputation is internationally recognized, will perform here next month.",
-          "options": ["who's", "whose", "which", "that"],
-          "correctAnswer": "B",
-          "explanation": "'Whose' is the possessive relative pronoun used for showing possession (the company's reputation).",
-          "translation": "Đoàn kịch có danh tiếng được công nhận quốc tế sẽ biểu diễn ở đây vào tháng tới."
-        },
-        {
-          "id": "g6",
-          "questionText": "She would have gotten the lead role if she _____ to the final audition.",
-          "options": ["went", "had gone", "has gone", "goes"],
-          "correctAnswer": "B",
-          "explanation": "Third conditional: 'would have + past participle' in the main clause requires 'had + past participle' in the if-clause.",
-          "translation": "Cô ấy đã có thể nhận được vai chính nếu cô ấy đã đi dự buổi thử giọng cuối cùng."
-        },
-        {
-          "id": "g7",
-          "questionText": "Not only _____ memorize the script, but she also learned the stage directions perfectly.",
-          "options": ["she did", "did she", "she", "does she"],
-          "correctAnswer": "B",
-          "explanation": "After 'not only' at the start of a sentence, we use inversion: 'did she' (auxiliary verb + subject).",
-          "translation": "Cô ấy không chỉ thuộc lòng kịch bản mà còn học thuộc cả chỉ dẫn sân khấu một cách hoàn hảo."
-        },
-        {
-          "id": "g8",
-          "questionText": "The actors were exhausted, _____ they continued performing until the end.",
-          "options": ["yet", "so", "because", "therefore"],
-          "correctAnswer": "A",
-          "explanation": "'Yet' (meaning 'but' or 'however') shows contrast between being exhausted and continuing to perform.",
-          "translation": "Các diễn viên đã kiệt sức, nhưng họ vẫn tiếp tục biểu diễn cho đến hết."
-        },
-        {
-          "id": "g9",
-          "questionText": "_____ method acting can be psychologically demanding, many actors find it rewarding.",
-          "options": ["Despite", "Although", "However", "In spite of"],
-          "correctAnswer": "B",
-          "explanation": "'Although' + clause is correct. 'Despite' and 'in spite of' need nouns/gerunds, not full clauses.",
-          "translation": "Mặc dù diễn xuất theo phương pháp có thể đòi hỏi về mặt tâm lý, nhiều diễn viên thấy nó bổ ích."
-        },
-        {
-          "id": "g10",
-          "questionText": "The director suggested _____ the scene again with more emotion.",
-          "options": ["to rehearse", "rehearsing", "rehearse", "rehearsed"],
-          "correctAnswer": "B",
-          "explanation": "'Suggest' is followed by gerund (-ing form): 'suggested rehearsing'. Not 'suggest to + infinitive'.",
-          "translation": "Đạo diễn đề nghị tập lại cảnh đó với nhiều cảm xúc hơn."
-        },
-        {
-          "id": "g11",
-          "questionText": "Hardly _____ the theatre when the lights went out.",
-          "options": ["we entered", "had we entered", "we had entered", "did we enter"],
-          "correctAnswer": "B",
-          "explanation": "After 'hardly' at the start, we use inversion with past perfect: 'had we entered'.",
-          "translation": "Chúng tôi vừa mới vào nhà hát thì đèn tắt."
-        },
-        {
-          "id": "g12",
-          "questionText": "The script is believed _____ by Shakespeare himself.",
-          "options": ["to write", "to be writing", "to have been written", "writing"],
-          "correctAnswer": "C",
-          "explanation": "Passive infinitive perfect: 'to have been written' (the writing happened in the past).",
-          "translation": "Kịch bản được cho là đã được viết bởi chính Shakespeare."
-        },
-        {
-          "id": "g13",
-          "questionText": "_____ his nervousness, he delivered an outstanding performance.",
-          "options": ["Although", "Despite", "However", "Even"],
-          "correctAnswer": "B",
-          "explanation": "'Despite' + noun is correct. 'Although' would need a clause: 'Although he was nervous'.",
-          "translation": "Bất chấp sự lo lắng, anh ấy đã có một màn trình diễn xuất sắc."
-        },
-        {
-          "id": "g14",
-          "questionText": "The actress wishes she _____ more time to prepare for the role.",
-          "options": ["has", "had", "had had", "has had"],
-          "correctAnswer": "B",
-          "explanation": "'Wish' + past simple expresses a wish about the present: 'she had' (but she doesn't have).",
-          "translation": "Nữ diễn viên ước mình có nhiều thời gian hơn để chuẩn bị cho vai diễn."
-        },
-        {
-          "id": "g15",
-          "questionText": "_____ practice makes perfect, you should rehearse daily.",
-          "options": ["Due to", "Since", "Because of", "Owing to"],
-          "correctAnswer": "B",
-          "explanation": "'Since' + clause is correct (meaning 'because'). 'Due to', 'because of', and 'owing to' need nouns.",
-          "translation": "Vì luyện tập tạo nên sự hoàn hảo, bạn nên tập dượt hàng ngày."
-        },
-        {
-          "id": "g16",
-          "questionText": "The audience _____ impressed by the innovative staging techniques.",
-          "options": ["was", "were", "is", "being"],
-          "correctAnswer": "A",
-          "explanation": "'Audience' is a collective noun treated as singular in this context: 'was impressed'.",
-          "translation": "Khán giả đã ấn tượng bởi các kỹ thuật dàn dựng sân khấu sáng tạo."
-        },
-        {
-          "id": "g17",
-          "questionText": "Neither the actors nor the director _____ satisfied with the final rehearsal.",
-          "options": ["was", "were", "is", "are"],
-          "correctAnswer": "A",
-          "explanation": "With 'neither...nor', the verb agrees with the noun closest to it: 'the director' (singular) → 'was'.",
-          "translation": "Cả diễn viên lẫn đạo diễn đều không hài lòng với buổi tập cuối cùng."
-        },
-        {
-          "id": "g18",
-          "questionText": "_____ to the theatre regularly helps you appreciate different acting styles.",
-          "options": ["Go", "Going", "Gone", "To be going"],
-          "correctAnswer": "B",
-          "explanation": "Gerund as subject: 'Going' (to the theatre) is the subject of the sentence.",
-          "translation": "Việc đi nhà hát thường xuyên giúp bạn trân trọng các phong cách diễn xuất khác nhau."
-        },
-        {
-          "id": "g19",
-          "questionText": "The performance was _____ good that it received a standing ovation.",
-          "options": ["enough", "so", "too", "such"],
-          "correctAnswer": "B",
-          "explanation": "'So + adjective + that': 'so good that'. 'Such' would need a noun: 'such a good performance that'.",
-          "translation": "Buổi biểu diễn tốt đến mức nhận được tràng pháo tay đứng dậy."
-        },
-        {
-          "id": "g20",
-          "questionText": "Had I known about the audition earlier, I _____ better preparation.",
-          "options": ["would make", "will make", "would have made", "had made"],
-          "correctAnswer": "C",
-          "explanation": "Inverted third conditional: 'Had I known' = 'If I had known' → result clause needs 'would have + past participle'.",
-          "translation": "Nếu tôi biết về buổi thử giọng sớm hơn, tôi đã chuẩn bị tốt hơn."
-        }
-      ]
-    },
-    {
-      "id": "speaking",
-      "title": "Speaking (Optional - Not Graded)",
-      "description": "For practice only. Speaking is typically assessed in a separate face-to-face interview with an examiner.",
-      "parts": [
-        {
-          "partNumber": 1,
-          "title": "Introduction and Interview",
-          "duration": "4-5 minutes",
-          "questions": [
-            "Do you enjoy watching plays or musicals? Why or why not?",
-            "Have you ever performed in a play or on stage?",
-            "What kind of performances do people in your country enjoy?",
-            "Do you think acting is a difficult profession? Why?"
-          ]
-        },
-        {
-          "partNumber": 2,
-          "title": "Individual Long Turn",
-          "duration": "3-4 minutes",
-          "prompt": "Describe a memorable theatrical performance you have seen.\n\nYou should say:\n- What the performance was\n- Where and when you saw it\n- What made it memorable\n- And explain how it made you feel\n\nYou will have 1-2 minutes to speak. You can make notes if you wish."
-        },
-        {
-          "partNumber": 3,
-          "title": "Two-way Discussion",
-          "duration": "4-5 minutes",
-          "questions": [
-            "How has theatre changed over the last few decades?",
-            "Do you think traditional theatre will survive in the digital age?",
-            "What role does theatre play in preserving cultural heritage?",
-            "Should governments provide financial support to theatre companies?",
-            "How might virtual reality technology change theatrical performances?",
-            "Is it important for young people to experience live theatre? Why?"
-          ]
-        }
+        {"id": "grammar-q1", "type": "multiple-choice", "questionText": "The actor _____ his lines perfectly in yesterday's rehearsal.", "options": ["A) deliver", "B) delivers", "C) delivered", "D) delivering"], "correctAnswer": "C", "explanation": "Past simple for completed action in the past", "translation": "Diễn viên đã đọc lời thoại hoàn hảo trong buổi diễn tập hôm qua."},
+        {"id": "grammar-q2", "type": "multiple-choice", "questionText": "If I _____ a famous actor, I would work in Hollywood.", "options": ["A) am", "B) was", "C) were", "D) be"], "correctAnswer": "C", "explanation": "Second conditional uses 'were' for all subjects", "translation": "Nếu tôi là một diễn viên nổi tiếng, tôi sẽ làm việc ở Hollywood."},
+        {"id": "grammar-q3", "type": "multiple-choice", "questionText": "She _____ acting classes for two years now.", "options": ["A) has been taking", "B) has took", "C) is taking", "D) took"], "correctAnswer": "A", "explanation": "Present perfect continuous for ongoing action", "translation": "Cô ấy đã tham gia lớp học diễn xuất được hai năm rồi."},
+        {"id": "grammar-q4", "type": "multiple-choice", "questionText": "The play must _____ by 8 PM sharp.", "options": ["A) start", "B) be started", "C) starting", "D) started"], "correctAnswer": "B", "explanation": "Passive voice with modal verb", "translation": "Vở kịch phải được bắt đầu lúc 8 giờ tối chính xác."},
+        {"id": "grammar-q5", "type": "multiple-choice", "questionText": "I wish I _____ more confidence on stage.", "options": ["A) have", "B) had", "C) has", "D) having"], "correctAnswer": "B", "explanation": "'I wish' + past simple for present unreal situations", "translation": "Tôi ước tôi có nhiều tự tin hơn trên sân khấu."},
+        {"id": "grammar-q6", "type": "multiple-choice", "questionText": "_____ is your favorite Shakespeare play?", "options": ["A) What", "B) Which", "C) Who", "D) Where"], "correctAnswer": "A", "explanation": "Use 'What' for open questions about things", "translation": "Vở kịch Shakespeare yêu thích của bạn là gì?"},
+        {"id": "grammar-q7", "type": "multiple-choice", "questionText": "The director told us that the audition _____ postponed.", "options": ["A) has been", "B) had been", "C) is", "D] was"], "correctAnswer": "B", "explanation": "Past perfect in reported speech", "translation": "Đạo diễn nói với chúng tôi rằng buổi thử vai đã bị hoãn."},
+        {"id": "grammar-q8", "type": "multiple-choice", "questionText": "Neither of the actors _____ available for the matinee.", "options": ["A) is", "B) are", "C) be", "D] being"], "correctAnswer": "A", "explanation": "'Neither' is singular and takes singular verb", "translation": "Không diễn viên nào có mặt cho buổi biểu diễn chiều."},
+        {"id": "grammar-q9", "type": "multiple-choice", "questionText": "She suggested _____ the scene one more time.", "options": ["A) rehearse", "B) to rehearse", "C) rehearsing", "D] rehearsed"], "correctAnswer": "C", "explanation": "'Suggest' is followed by gerund (-ing form)", "translation": "Cô ấy đề nghị diễn tập cảnh đó thêm một lần nữa."},
+        {"id": "grammar-q10", "type": "multiple-choice", "questionText": "The theater, _____ was built in 1920, needs renovation.", "options": ["A) who", "B) which", "C) whose", "D] where"], "correctAnswer": "B", "explanation": "Use 'which' for things in non-defining relative clauses", "translation": "Nhà hát, cái được xây dựng năm 1920, cần được tu sửa."},
+        {"id": "grammar-q11", "type": "multiple-choice", "questionText": "By next month, we _____ this play for six months.", "options": ["A) will rehearse", "B) will have rehearsed", "C) rehearse", "D] rehearsed"], "correctAnswer": "B", "explanation": "Future perfect for actions completed before a future time", "translation": "Đến tháng sau, chúng tôi sẽ diễn tập vở kịch này được sáu tháng."},
+        {"id": "grammar-q12", "type": "multiple-choice", "questionText": "The lead actor rarely _____ his cues.", "options": ["A) miss", "B) misses", "C) missing", "D] missed"], "correctAnswer": "B", "explanation": "Present simple with frequency adverbs", "translation": "Diễn viên chính hiếm khi bỏ lỡ các điểm nhấn của mình."},
+        {"id": "grammar-q13", "type": "multiple-choice", "questionText": "Would you mind _____ your voice a little?", "options": ["A] lower", "B] to lower", "C] lowering", "D] lowered"], "correctAnswer": "C", "explanation": "'Would you mind' + gerund (-ing)", "translation": "Bạn có phiền hạ giọng một chút không?"},
+        {"id": "grammar-q14", "type": "multiple-choice", "questionText": "The understudy was made _____ the lead role.", "options": ["A] perform", "B] to perform", "C] performing", "D] performed"], "correctAnswer": "B", "explanation": "Passive causative 'be made' + to infinitive", "translation": "Diễn viên dự bị bị buộc phải đóng vai chính."},
+        {"id": "grammar-q15", "type": "multiple-choice", "questionText": "Despite _____ ill, she performed brilliantly.", "options": ["A] be", "B] to be", "C] being", "D] been"], "correctAnswer": "C", "explanation": "'Despite' is followed by gerund or noun", "translation": "Mặc dù bị ốm, cô ấy đã biểu diễn xuất sắc."},
+        {"id": "grammar-q16", "type": "multiple-choice", "questionText": "The stage _____ we performed was very small.", "options": ["A] which", "B] where", "C] who", "D] when"], "correctAnswer": "B", "explanation": "Use 'where' for places in relative clauses", "translation": "Sân khấu nơi chúng tôi biểu diễn rất nhỏ."},
+        {"id": "grammar-q17", "type": "multiple-choice", "questionText": "No sooner had the curtain risen _____ the lights went out.", "options": ["A] when", "B] than", "C] then", "D] as"], "correctAnswer": "B", "explanation": "'No sooner... than' for immediate sequence", "translation": "Ngay sau khi màn kéo lên thì đèn tắt."},
+        {"id": "grammar-q18", "type": "multiple-choice", "questionText": "She acts _____ than anyone else in the cast.", "options": ["A] more convincingly", "B] most convincingly", "C] convincing", "D] convincingly"], "correctAnswer": "A", "explanation": "Comparative adverbs for comparing two things", "translation": "Cô ấy diễn xuất thuyết phục hơn bất kỳ ai khác trong dàn diễn viên."},
+        {"id": "grammar-q19", "type": "multiple-choice", "questionText": "I would rather _____ comedy than tragedy.", "options": ["A] perform", "B] to perform", "C] performing", "D] performed"], "correctAnswer": "A", "explanation": "'Would rather' + base form of verb", "translation": "Tôi thà diễn hài kịch hơn là bi kịch."},
+        {"id": "grammar-q20", "type": "multiple-choice", "questionText": "It is high time you _____ your audition piece.", "options": ["A] choose", "B] chose", "C] chosen", "D] choosing"], "correctAnswer": "B", "explanation": "'It is high time' + past simple", "translation": "Đã đến lúc bạn chọn phần thử vai của mình."}
       ]
     }
   ],
   "metadata": {
-    "difficulty": "Academic",
-    "theme": "Acting & Performance Arts",
-    "version": "4.0",
-    "createdDate": "2025-10-19",
-    "estimatedCompletionTime": "2 hours 50 minutes"
+    "version": "1.0",
+    "author": "IELTS Practice System",
+    "notes": "IELTS test with acting and theater theme covering Listening (4 parts, 40 questions), Reading (3 passages, 30 questions), Writing (2 tasks), and Grammar (20 questions)."
   }
 }
-

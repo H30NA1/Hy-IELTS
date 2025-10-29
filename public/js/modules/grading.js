@@ -131,9 +131,9 @@ class IELTSGrading {
         return 0.0;
     }
 
-    calculateOverallBand(listeningBand, readingBand, writingBand, speakingBand) {
-        const total = listeningBand + readingBand + writingBand + speakingBand;
-        const average = total / 4;
+    calculateOverallBand(listeningBand, readingBand, writingBand, speakingBand, grammarBand) {
+        const total = listeningBand + readingBand + writingBand + speakingBand + grammarBand;
+        const average = total / 5;
         
         // Round to nearest 0.5
         return Math.round(average * 2) / 2;
@@ -300,34 +300,39 @@ class IELTSGrading {
 
     calculateResults(answers, testData) {
         const listeningResult = this.calculateSectionScore(answers, 'listening', 40, testData);
-        const readingResult = this.calculateSectionScore(answers, 'reading', 40, testData);
+        const readingResult = this.calculateSectionScore(answers, 'reading', 30, testData);
+        const grammarResult = this.calculateSectionScore(answers, 'grammar', 20, testData);
         const writingScore = this.calculateWritingScore(answers);
         const speakingScore = this.calculateSpeakingScore(answers);
         
-        const totalScore = listeningResult.score + readingResult.score + writingScore + speakingScore;
-        const totalPenalty = listeningResult.penalty + readingResult.penalty;
+        const totalScore = listeningResult.score + readingResult.score + grammarResult.score + writingScore + speakingScore;
+        const totalPenalty = listeningResult.penalty + readingResult.penalty + grammarResult.penalty;
         
         // Calculate band scores
         const listeningBand = this.convertToIELTSBand(listeningResult.score, 40, 'listening');
-        const readingBand = this.convertToIELTSBand(readingResult.score, 40, 'reading');
+        const readingBand = this.convertToIELTSBand(readingResult.score, 30, 'reading');
+        const grammarBand = this.convertToIELTSBand(grammarResult.score, 20, 'grammar');
         const writingBand = this.convertToIELTSBand(writingScore, 20, 'writing');
         const speakingBand = this.convertToIELTSBand(speakingScore, 20, 'speaking');
-        const overallBand = this.calculateOverallBand(listeningBand, readingBand, writingBand, speakingBand);
+        const overallBand = this.calculateOverallBand(listeningBand, readingBand, writingBand, speakingBand, grammarBand);
         
         return {
             listening: Math.round(listeningResult.score * 100) / 100,
             reading: Math.round(readingResult.score * 100) / 100,
+            grammar: Math.round(grammarResult.score * 100) / 100,
             writing: Math.round(writingScore * 100) / 100,
             speaking: Math.round(speakingScore * 100) / 100,
             total: Math.max(0, Math.round(totalScore * 100) / 100),
             listeningTotal: 40,
-            readingTotal: 40,
+            readingTotal: 30,
+            grammarTotal: 20,
             writingTotal: 20,
             speakingTotal: 20,
             translationPenalty: Math.round(totalPenalty * 100) / 100,
             bands: {
                 listening: listeningBand,
                 reading: readingBand,
+                grammar: grammarBand,
                 writing: writingBand,
                 speaking: speakingBand,
                 overall: overallBand

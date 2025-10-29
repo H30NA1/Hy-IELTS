@@ -17,7 +17,15 @@ class IELTSUtils {
 
     static countWords(text) {
         if (!text || text.trim().length === 0) return 0;
-        return text.trim().split(/\s+/).filter(word => word.length > 0).length;
+        
+        // More robust word counting - handles multiple spaces, newlines, etc.
+        const words = text.trim()
+            .replace(/\s+/g, ' ')  // Replace multiple spaces with single space
+            .split(' ')
+            .filter(word => word.length > 0 && word.trim() !== '');
+        
+        console.log(`Word count for text "${text.substring(0, 50)}...": ${words.length} words`);
+        return words.length;
     }
 
     static debounce(func, wait) {
