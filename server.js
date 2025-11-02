@@ -306,10 +306,10 @@ app.post('/api/submit-test', async (req, res) => {
             await loadTestData();
         }
         
-        // Calculate results
-        const results = calculateResults(answers);
+        // Calculate results (pass testData for maxBand)
+        const results = calculateResults(answers, testData);
         
-        // Create submission data
+        // Create submission data (include full testData for PDF generation)
         const submission = {
             id: generateId(),
             timestamp: new Date().toISOString(),
@@ -318,45 +318,64 @@ app.post('/api/submit-test', async (req, res) => {
             answers,
             results,
             timeSpent,
-            testData: {
-                testId: testData.testId,
-                testDate: testData.testDate,
-                testTitle: testData.testTitle
-            }
+            testData: testData // Include full testData for PDF generation
         };
         
         // Create user-specific folder structure
+        // Structure: {userName}/answers/{YYYY_MM_DD}/ (both JSON and PDF in same folder)
         const sanitizedUserName = userName ? userName.replace(/[^a-zA-Z0-9]/g, '_') : 'Anonymous';
-        const date = moment().format('YYYY-MM-DD');
+        const date = moment().format('YYYY_MM_DD'); // Use underscores for folder name (e.g., 2025_10_31)
         const userDir = path.join(dataDir, sanitizedUserName);
-        const dateDir = path.join(userDir, date);
+        const answersDir = path.join(userDir, 'answers');
+        const dateDir = path.join(answersDir, date); // Single folder for both JSON and PDF
         
         // Ensure directories exist
         await fs.ensureDir(userDir);
+        await fs.ensureDir(answersDir);
         await fs.ensureDir(dateDir);
+        console.log(`📁 Created directory structure: ${dateDir}`);
         
-        // Create filename with user name and timestamp
+        // Create filename with timestamp in Y-m-d H:i:s format (using underscores and dashes instead of space and colons for filename compatibility)
+        // Format: YYYY-MM-DD_HH-mm-ss (e.g., 2025-01-19_14-30-45)
         const timestamp = moment().format('YYYY-MM-DD_HH-mm-ss');
-        const filename = `${sanitizedUserName}_${timestamp}.json`;
-        const filepath = path.join(dateDir, filename);
+        const jsonFilename = `${timestamp}.json`;
+        const jsonFilepath = path.join(dateDir, jsonFilename);
         
         // Save to JSON file
-        await fs.writeJson(filepath, submission, { spaces: 2 });
+        await fs.writeJson(jsonFilepath, submission, { spaces: 2 });
+        console.log(`✅ JSON saved to: ${jsonFilepath}`);
         
-        // Generate PDF with user-specific naming
-        const pdfPath = await generatePDF(submission, sanitizedUserName, timestamp);
+        // Generate PDF with user-specific naming and save in same date folder
+        let pdfPath = null;
+        try {
+            pdfPath = await generatePDF(submission, sanitizedUserName, timestamp, dateDir);
+            console.log(`✅ PDF generated successfully: ${pdfPath}`);
+        } catch (pdfError) {
+            console.error('❌ Error generating PDF:', pdfError);
+            console.error('PDF Error details:', pdfError.message);
+            console.error('PDF Error stack:', pdfError.stack);
+            // Don't fail the entire submission if PDF generation fails
+            // PDF can be regenerated later
+        }
         
         res.json({
             success: true,
             submissionId: submission.id,
             results,
-            pdfUrl: `/api/download-pdf/${submission.id}`,
+            pdfUrl: pdfPath ? `/api/download-pdf/${submission.id}` : null,
+            pdfGenerated: pdfPath !== null,
             userName: sanitizedUserName
         });
         
     } catch (error) {
-        console.error('Error submitting test:', error);
-        res.status(500).json({ success: false, error: 'Failed to submit test' });
+        console.error('❌ Error submitting test:', error);
+        console.error('❌ Error message:', error.message);
+        console.error('❌ Error stack:', error.stack);
+        res.status(500).json({ 
+            success: false, 
+            error: 'Failed to submit test',
+            details: process.env.NODE_ENV === 'development' ? error.message : undefined
+        });
     }
 });
 
@@ -795,91 +814,84 @@ function generateSpeakingAnswersHTML(answers) {
 }
 
 app.post('/api/generate-pdf', async (req, res) => {
+    let browser = null;
     try {
         const { userName, results, answers, testData, timestamp } = req.body;
         
+        console.log('📄 /api/generate-pdf called with:', { 
+            userName, 
+            hasResults: !!results, 
+            hasAnswers: !!answers, 
+            hasTestData: !!testData,
+            resultsKeys: results ? Object.keys(results) : null
+        });
+        
         if (!userName || !results || !answers || !testData) {
+            console.error('❌ Missing required fields:', { userName: !!userName, results: !!results, answers: !!answers, testData: !!testData });
             return res.status(400).json({ error: 'Missing required fields' });
         }
         
         // Sanitize username for file system
-        const sanitizedUserName = userName.replace(/[^a-zA-Z0-9_-]/g, '_');
-        const testTimestamp = timestamp || new Date().toISOString().split('T')[0];
+        const sanitizedUserName = userName.replace(/[^a-zA-Z0-9]/g, '_');
+        const date = moment().format('YYYY_MM_DD'); // Folder: YYYY_MM_DD
+        const timestampStr = timestamp ? moment(timestamp).format('YYYY-MM-DD_HH-mm-ss') : moment().format('YYYY-MM-DD_HH-mm-ss');
         
-        // Create user-specific directory structure
-        const userDir = path.join(__dirname, 'user-data', sanitizedUserName);
-        const pdfsDir = path.join(userDir, 'pdfs');
+        // Create user-specific directory structure: data/{userName}/answers/{YYYY_MM_DD}/
+        const userDir = path.join(dataDir, sanitizedUserName);
         const answersDir = path.join(userDir, 'answers');
+        const dateDir = path.join(answersDir, date); // Single folder for both JSON and PDF
         
-        console.log('Creating directories:', { userDir, pdfsDir, answersDir });
+        console.log('📁 Creating directory structure:', { userDir, answersDir, dateDir });
         
-        // Create directories with more robust approach
-        try {
-            await fs.ensureDir(userDir);
-            await fs.ensureDir(pdfsDir);
-            await fs.ensureDir(answersDir);
-            
-            // Verify directories exist
-            const userDirExists = await fs.pathExists(userDir);
-            const pdfsDirExists = await fs.pathExists(pdfsDir);
-            const answersDirExists = await fs.pathExists(answersDir);
-            
-            console.log('Directory verification:', { userDirExists, pdfsDirExists, answersDirExists });
-            
-            if (!userDirExists || !pdfsDirExists || !answersDirExists) {
-                throw new Error('Failed to create required directories');
-            }
-            
-            console.log('Directories created and verified successfully');
-        } catch (dirError) {
-            console.error('Error creating directories:', dirError);
-            throw dirError;
-        }
+        // Create directories
+        await fs.ensureDir(userDir);
+        await fs.ensureDir(answersDir);
+        await fs.ensureDir(dateDir);
+        console.log('✅ Directories created successfully');
         
-        // Save answers JSON
-        const answersData = {
+        // Create submission object for consistency (include full testData for PDF generation)
+        const submission = {
+            id: generateId(),
+            timestamp: new Date().toISOString(),
+            userInfo: {},
             userName: userName,
-            timestamp: testTimestamp,
-            results: results,
-            answers: answers,
-            testData: testData
+            answers,
+            results,
+            timeSpent: 0,
+            testData: testData // Include full testData for PDF generation
         };
         
-        // Clean timestamp for filename (remove colons and special chars)
-        const cleanTimestamp = testTimestamp.replace(/[:.]/g, '-');
-        const answersFilePath = path.join(answersDir, `answers_${cleanTimestamp}.json`);
-        console.log('Writing answers to:', answersFilePath);
+        // Save answers JSON with correct filename: YYYY-MM-DD_HH-mm-ss.json
+        const jsonFilename = `${timestampStr}.json`;
+        const jsonFilePath = path.join(dateDir, jsonFilename);
+        console.log('💾 Saving JSON to:', jsonFilePath);
         
+        await fs.writeJson(jsonFilePath, submission, { spaces: 2 });
+        console.log('✅ JSON saved successfully');
+        
+        // Generate HTML content using the submission-based function
+        let htmlContent;
         try {
-            // Double-check directory exists before writing
-            const answersDirExists = await fs.pathExists(answersDir);
-            if (!answersDirExists) {
-                throw new Error(`Answers directory does not exist: ${answersDir}`);
-            }
-            
-            await fs.writeJson(answersFilePath, answersData, { spaces: 2 });
-            console.log('Answers file written successfully');
-            
-            // Verify file was written
-            const fileExists = await fs.pathExists(answersFilePath);
-            console.log('File verification:', { fileExists, filePath: answersFilePath });
-            
-        } catch (writeError) {
-            console.error('Error writing answers file:', writeError);
-            throw writeError;
+            htmlContent = generatePDFHTML(submission);
+            console.log('✅ HTML content generated');
+        } catch (htmlError) {
+            console.error('❌ Error generating HTML:', htmlError);
+            throw new Error(`Failed to generate HTML: ${htmlError.message}`);
         }
         
-        // Generate HTML content directly (server-side)
-        const htmlContent = generatePDFHTML(userName, results, answers, testData);
-        
         // Launch browser
-        const browser = await puppeteer.launch({
+        browser = await puppeteer.launch({
             headless: 'new',
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
         });
         
         const page = await browser.newPage();
-        await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
+        await page.setContent(htmlContent, { waitUntil: 'networkidle0', timeout: 30000 });
+        
+        // Generate PDF filename: YYYY-MM-DD_HH-mm-ss.pdf
+        const pdfFilename = `${timestampStr}.pdf`;
+        const pdfPath = path.join(dateDir, pdfFilename);
+        console.log('📄 Generating PDF at:', pdfPath);
         
         // Generate PDF
         const pdfBuffer = await page.pdf({
@@ -890,26 +902,45 @@ app.post('/api/generate-pdf', async (req, res) => {
                 bottom: '20mm',
                 left: '20mm'
             },
-            printBackground: true
+            printBackground: true,
+            timeout: 30000
         });
         
-        // Save PDF to user directory
-        const pdfFileName = `IELTS_Test_Results_${cleanTimestamp}.pdf`;
-        const pdfFilePath = path.join(pdfsDir, pdfFileName);
-        await fs.writeFile(pdfFilePath, pdfBuffer);
+        // Save PDF to date directory
+        await fs.writeFile(pdfPath, pdfBuffer);
+        console.log('✅ PDF saved successfully');
         
-        await browser.close();
+        // Verify PDF was created
+        const pdfExists = await fs.pathExists(pdfPath);
+        if (pdfExists) {
+            const stats = await fs.stat(pdfPath);
+            console.log(`✅ PDF verified: ${pdfPath} (${stats.size} bytes)`);
+        } else {
+            console.error(`❌ PDF was not created at: ${pdfPath}`);
+        }
         
         // Set response headers
         res.setHeader('Content-Type', 'application/pdf');
-        res.setHeader('Content-Disposition', `attachment; filename="${pdfFileName}"`);
+        res.setHeader('Content-Disposition', `attachment; filename="${pdfFilename}"`);
         
         // Send PDF buffer
         res.send(pdfBuffer);
         
     } catch (error) {
-        console.error('Error generating PDF:', error);
-        res.status(500).json({ error: 'Failed to generate PDF' });
+        console.error('❌ Error generating PDF:', error);
+        console.error('❌ Error message:', error.message);
+        console.error('❌ Error stack:', error.stack);
+        res.status(500).json({ error: 'Failed to generate PDF', details: process.env.NODE_ENV === 'development' ? error.message : undefined });
+    } finally {
+        // Always close browser
+        if (browser) {
+            try {
+                await browser.close();
+                console.log('🔒 Browser closed');
+            } catch (closeError) {
+                console.error('Error closing browser:', closeError);
+            }
+        }
     }
 });
 
@@ -1191,89 +1222,108 @@ app.get('/api/writing/sample-feedback', async (req, res) => {
 });
 
 // IELTS Band Score Conversion Functions
-function convertToIELTSBand(rawScore, section, totalQuestions) {
+function convertToIELTSBand(rawScore, section, totalQuestions, maxBand = 9) {
     const percentage = (rawScore / totalQuestions) * 100;
+    let baseBand = 0.0; // Band calculated on 0-9 scale
     
     switch (section) {
         case 'listening':
             // IELTS Listening: 40 questions total
             // Band 5: 16/40, Band 6: 23/40, Band 7: 30/40, Band 8: 35/40
-            if (percentage >= 87.5) return 9.0;
-            if (percentage >= 82.5) return 8.5;
-            if (percentage >= 77.5) return 8.0;
-            if (percentage >= 72.5) return 7.5;
-            if (percentage >= 67.5) return 7.0;
-            if (percentage >= 62.5) return 6.5;
-            if (percentage >= 57.5) return 6.0;
-            if (percentage >= 52.5) return 5.5;
-            if (percentage >= 47.5) return 5.0;
-            if (percentage >= 42.5) return 4.5;
-            if (percentage >= 37.5) return 4.0;
-            return 3.5;
+            if (percentage >= 87.5) baseBand = 9.0;
+            else if (percentage >= 82.5) baseBand = 8.5;
+            else if (percentage >= 77.5) baseBand = 8.0;
+            else if (percentage >= 72.5) baseBand = 7.5;
+            else if (percentage >= 67.5) baseBand = 7.0;
+            else if (percentage >= 62.5) baseBand = 6.5;
+            else if (percentage >= 57.5) baseBand = 6.0;
+            else if (percentage >= 52.5) baseBand = 5.5;
+            else if (percentage >= 47.5) baseBand = 5.0;
+            else if (percentage >= 42.5) baseBand = 4.5;
+            else if (percentage >= 37.5) baseBand = 4.0;
+            else baseBand = 3.5;
+            break;
             
         case 'reading':
             // IELTS Reading Academic: 40 questions total
             // Band 5: 15/40, Band 6: 23/40, Band 7: 30/40, Band 8: 35/40
-            if (percentage >= 87.5) return 9.0;
-            if (percentage >= 82.5) return 8.5;
-            if (percentage >= 77.5) return 8.0;
-            if (percentage >= 72.5) return 7.5;
-            if (percentage >= 67.5) return 7.0;
-            if (percentage >= 62.5) return 6.5;
-            if (percentage >= 57.5) return 6.0;
-            if (percentage >= 52.5) return 5.5;
-            if (percentage >= 47.5) return 5.0;
-            if (percentage >= 42.5) return 4.5;
-            if (percentage >= 37.5) return 4.0;
-            return 3.5;
+            if (percentage >= 87.5) baseBand = 9.0;
+            else if (percentage >= 82.5) baseBand = 8.5;
+            else if (percentage >= 77.5) baseBand = 8.0;
+            else if (percentage >= 72.5) baseBand = 7.5;
+            else if (percentage >= 67.5) baseBand = 7.0;
+            else if (percentage >= 62.5) baseBand = 6.5;
+            else if (percentage >= 57.5) baseBand = 6.0;
+            else if (percentage >= 52.5) baseBand = 5.5;
+            else if (percentage >= 47.5) baseBand = 5.0;
+            else if (percentage >= 42.5) baseBand = 4.5;
+            else if (percentage >= 37.5) baseBand = 4.0;
+            else baseBand = 3.5;
+            break;
             
         case 'writing':
             // IELTS Writing: Based on 4 criteria, each scored 0-9
             // Simplified conversion for our system
-            if (percentage >= 90) return 9.0;
-            if (percentage >= 80) return 8.0;
-            if (percentage >= 70) return 7.0;
-            if (percentage >= 60) return 6.0;
-            if (percentage >= 50) return 5.0;
-            if (percentage >= 40) return 4.0;
-            return 3.0;
+            if (percentage >= 90) baseBand = 9.0;
+            else if (percentage >= 80) baseBand = 8.0;
+            else if (percentage >= 70) baseBand = 7.0;
+            else if (percentage >= 60) baseBand = 6.0;
+            else if (percentage >= 50) baseBand = 5.0;
+            else if (percentage >= 40) baseBand = 4.0;
+            else baseBand = 3.0;
+            break;
             
         case 'speaking':
             // IELTS Speaking: Based on 4 criteria (fluency, coherence, lexical resource, grammar, pronunciation)
-            if (percentage >= 90) return 9.0;
-            if (percentage >= 80) return 8.0;
-            if (percentage >= 70) return 7.0;
-            if (percentage >= 60) return 6.0;
-            if (percentage >= 50) return 5.0;
-            if (percentage >= 40) return 4.0;
-            return 3.0;
+            if (percentage >= 90) baseBand = 9.0;
+            else if (percentage >= 80) baseBand = 8.0;
+            else if (percentage >= 70) baseBand = 7.0;
+            else if (percentage >= 60) baseBand = 6.0;
+            else if (percentage >= 50) baseBand = 5.0;
+            else if (percentage >= 40) baseBand = 4.0;
+            else baseBand = 3.0;
+            break;
             
         case 'grammar':
             // Grammar: 20 questions total
-            if (percentage >= 90) return 9.0;
-            if (percentage >= 80) return 8.0;
-            if (percentage >= 70) return 7.0;
-            if (percentage >= 60) return 6.0;
-            if (percentage >= 50) return 5.0;
-            if (percentage >= 40) return 4.0;
-            return 3.0;
+            if (percentage >= 90) baseBand = 9.0;
+            else if (percentage >= 80) baseBand = 8.0;
+            else if (percentage >= 70) baseBand = 7.0;
+            else if (percentage >= 60) baseBand = 6.0;
+            else if (percentage >= 50) baseBand = 5.0;
+            else if (percentage >= 40) baseBand = 4.0;
+            else baseBand = 3.0;
+            break;
             
         default:
-            return 0.0;
+            baseBand = 0.0;
     }
+    
+    // Scale the band score to the maxBand specified in JSON (e.g., if maxBand is 4, scale 9.0 to 4.0)
+    // Formula: scaledBand = (baseBand / 9.0) * maxBand
+    const scaledBand = (baseBand / 9.0) * maxBand;
+    
+    // Round to nearest 0.1 for precision (e.g., 3.5, 3.6, 3.7, 4.0)
+    return Math.round(scaledBand * 10) / 10;
 }
 
 function calculateOverallBandScore(listeningBand, readingBand, writingBand, speakingBand, grammarBand) {
-    // Calculate overall band score (average of all sections)
-    const total = listeningBand + readingBand + writingBand + speakingBand + grammarBand;
-    const average = total / 5;
+    // Calculate overall band score (average of tested sections only)
+    // Exclude speaking if it's 0 (not tested)
+    const bands = [listeningBand, readingBand, writingBand, grammarBand];
+    if (speakingBand > 0) {
+        bands.push(speakingBand);
+    }
     
-    // Round to nearest 0.5
-    return Math.round(average * 2) / 2;
+    const total = bands.reduce((sum, band) => sum + band, 0);
+    const average = total / bands.length;
+    
+    // Round to nearest 0.1 for precision (e.g., 3.5, 3.6, 3.7, 4.0)
+    return Math.round(average * 10) / 10;
 }
 
 // Helper functions
-function calculateResults(answers) {
+function calculateResults(answers, testData = null) {
     let listeningScore = 0;
     let readingScore = 0;
     let writingScore = 0;
@@ -1499,15 +1549,33 @@ function calculateResults(answers) {
         translationPenalty += penaltySum;
     }
     
-    // Calculate IELTS Band Scores
-    const listeningBand = convertToIELTSBand(listeningScore, 40, 'listening');
-    const readingBand = convertToIELTSBand(readingScore, 30, 'reading');
-    const writingBand = convertToIELTSBand(writingScore, 20, 'writing');
-    const speakingBand = convertToIELTSBand(speakingScore, 20, 'speaking');
-    const grammarBand = convertToIELTSBand(grammarScore, 20, 'grammar');
+    // Get maxBand from testData (defaults to 9 if not specified)
+    const maxBand = (testData && testData.maxBand) ? testData.maxBand : 9;
+    
+    // Calculate IELTS Band Scores (scaled to maxBand)
+    const listeningBand = convertToIELTSBand(listeningScore, 'listening', 40, maxBand);
+    const readingBand = convertToIELTSBand(readingScore, 'reading', 30, maxBand);
+    const writingBand = convertToIELTSBand(writingScore, 'writing', 20, maxBand);
+    const speakingBand = convertToIELTSBand(speakingScore, 'speaking', 20, maxBand);
+    const grammarBand = convertToIELTSBand(grammarScore, 'grammar', 20, maxBand);
     const overallBand = calculateOverallBandScore(listeningBand, readingBand, writingBand, speakingBand, grammarBand);
     
     const totalScore = listeningScore + readingScore + writingScore + speakingScore + grammarScore;
+    
+    // Define section totals (can be updated if more questions are added)
+    const listeningTotal = 40; // 40 listening questions
+    const readingTotal = 30; // 30 reading questions
+    const writingTotal = 20; // 20 writing points (10 per task)
+    const speakingTotal = 20; // 20 speaking points (based on content quality)
+    const grammarTotal = 20; // 20 grammar questions
+    
+    // Calculate maximum possible score (excluding speaking if not tested)
+    const maxPossibleScore = listeningTotal + readingTotal + writingTotal + (speakingScore > 0 ? speakingTotal : 0) + grammarTotal;
+    
+    // Normalize total score to always be out of 100
+    // This ensures that even if more questions are added later, the total will always cap at 100
+    const normalizedTotal = maxPossibleScore > 0 ? (totalScore / maxPossibleScore) * 100 : 0;
+    const cappedTotal = Math.min(100, Math.max(0, Math.round(normalizedTotal * 100) / 100)); // Cap at 100, ensure not below 0
     
     return {
         listening: Math.round(listeningScore * 100) / 100,
@@ -1515,12 +1583,12 @@ function calculateResults(answers) {
         writing: Math.round(writingScore * 100) / 100,
         speaking: Math.round(speakingScore * 100) / 100,
         grammar: Math.round(grammarScore * 100) / 100,
-        total: Math.max(0, Math.round(totalScore * 100) / 100), // Ensure total doesn't go below 0
-        listeningTotal: 40, // 40 listening questions
-        readingTotal: 30, // 30 reading questions
-        writingTotal: 20, // 20 writing points (10 per task)
-        speakingTotal: 20, // 20 speaking points (based on content quality)
-        grammarTotal: 20, // 20 grammar questions
+        total: cappedTotal, // Normalized to always be out of 100
+        listeningTotal: listeningTotal,
+        readingTotal: readingTotal,
+        writingTotal: writingTotal,
+        speakingTotal: speakingTotal,
+        grammarTotal: grammarTotal,
         translationPenalty: Math.round(translationPenalty * 100) / 100,
         bands: {
             listening: listeningBand,
@@ -1537,26 +1605,50 @@ function generateId() {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
 }
 
-async function generatePDF(submission, userName, timestamp) {
+async function generatePDF(submission, userName, timestamp, dateDir) {
+    let browser = null;
     try {
-        // Create PDFs directory
-        const pdfsDir = path.join(__dirname, 'pdfs');
+        // Use the dateDir provided (folder structure: {userName}/pdfs/{YYYY-MM-DD}/)
+        // If dateDir is not provided, fallback to old location
+        const pdfsDir = dateDir || path.join(__dirname, 'pdfs');
         await fs.ensureDir(pdfsDir);
+        console.log(`📁 PDF directory: ${pdfsDir}`);
+        
+        // Verify directory was created
+        const dirExists = await fs.pathExists(pdfsDir);
+        if (!dirExists) {
+            throw new Error(`Failed to create PDF directory: ${pdfsDir}`);
+        }
         
         // Generate HTML content
-        const htmlContent = generatePDFHTML(submission);
+        console.log('📝 Generating HTML content for PDF...');
+        let htmlContent;
+        try {
+            htmlContent = generatePDFHTML(submission);
+            console.log('✅ HTML content generated successfully');
+        } catch (htmlError) {
+            console.error('❌ Error generating HTML content:', htmlError);
+            throw new Error(`Failed to generate HTML: ${htmlError.message}`);
+        }
         
         // Launch browser
-        const browser = await puppeteer.launch({
+        console.log('🌐 Launching browser for PDF generation...');
+        browser = await puppeteer.launch({
             headless: 'new',
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
         });
         
         const page = await browser.newPage();
-        await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
+        console.log('📄 Loading HTML content into browser...');
+        await page.setContent(htmlContent, { waitUntil: 'networkidle0', timeout: 30000 });
         
-        // Generate PDF
-        const pdfPath = path.join(pdfsDir, `${userName}_${timestamp}.pdf`);
+        // Generate PDF filename in Y-m-d H:i:s format (using dashes instead of colons for Windows compatibility)
+        // Format: YYYY-MM-DD_HH-mm-ss.pdf
+        const pdfFilename = `${timestamp}.pdf`;
+        const pdfPath = path.join(pdfsDir, pdfFilename);
+        
+        console.log(`📄 Generating PDF at: ${pdfPath}`);
+        
         await page.pdf({
             path: pdfPath,
             format: 'A4',
@@ -1566,15 +1658,36 @@ async function generatePDF(submission, userName, timestamp) {
                 bottom: '20mm',
                 left: '20mm'
             },
-            printBackground: true
+            printBackground: true,
+            timeout: 30000
         });
         
-        await browser.close();
-        return pdfPath;
+        console.log('✅ PDF file created, closing browser...');
+        
+        // Verify PDF was created
+        const pdfExists = await fs.pathExists(pdfPath);
+        if (pdfExists) {
+            const stats = await fs.stat(pdfPath);
+            console.log(`✅ PDF successfully saved: ${pdfPath} (${stats.size} bytes)`);
+            return pdfPath;
+        } else {
+            throw new Error(`PDF file was not created at: ${pdfPath}`);
+        }
         
     } catch (error) {
-        console.error('Error generating PDF:', error);
+        console.error('❌ Error generating PDF:', error);
+        console.error('Error stack:', error.stack);
         throw error;
+    } finally {
+        // Always close browser
+        if (browser) {
+            try {
+                await browser.close();
+                console.log('🔒 Browser closed');
+            } catch (closeError) {
+                console.error('Error closing browser:', closeError);
+            }
+        }
     }
 }
 
@@ -1585,8 +1698,8 @@ function generatePDFHTML(submission) {
     console.log('PDF Generation - submission:', JSON.stringify(submission, null, 2));
     console.log('PDF Generation - results:', JSON.stringify(results, null, 2));
     
-    // Load the current test data for PDF generation
-    const currentTestData = testData;
+    // Use testData from submission (which now includes full testData), fallback to global testData
+    const currentTestData = submissionTestData || testData;
     
     return `
     <!DOCTYPE html>
@@ -1653,7 +1766,7 @@ function generatePDFHTML(submission) {
             </div>
             <div class="result-item">
                 <span>Total Raw Score:</span>
-                <span>${results.total || 0}/${(results.grammarTotal || 20) + (results.readingTotal || 30) + (results.listeningTotal || 40) + (results.writingTotal || 20)}</span>
+                <span>${results.total || 0}/100</span>
             </div>
             <div class="result-item">
                 <span>Time Spent:</span>
@@ -1698,9 +1811,13 @@ function generatePDFHTML(submission) {
         </div>
         
         <div class="section">
-            <h2>${currentTestData.sections.reading.title}</h2>
-            
-            ${currentTestData.sections.reading.passages.map((passage, passageIndex) => `
+            ${(() => {
+                const readingSection = currentTestData.sections.find(s => s.id === 'reading');
+                if (!readingSection || !readingSection.passages) return '';
+                
+                return `
+                    <h2>${readingSection.title}</h2>
+                    ${readingSection.passages.map((passage, passageIndex) => `
                 <div class="passage">
                     <h3>${passage.title}</h3>
                     <p>${passage.content}</p>
@@ -1708,65 +1825,85 @@ function generatePDFHTML(submission) {
                 
                 ${passage.questions.map(q => {
                     const selected = answers.reading && answers.reading[q.id];
-                    const isCorrect = selected === q.correct;
+                    const correctAnswer = q.correctAnswer;
+                    const isCorrect = selected === correctAnswer;
                     
                     return `
                         <div class="question">
                             <div class="question-number">Question ${q.id}</div>
-                            <div class="question-text">${q.question}</div>
+                            <div class="question-text">${q.questionText || q.question}</div>
                             <div class="options">
                                 ${q.options.map((option, index) => {
+                                    const optionLetter = String.fromCharCode(65 + index);
                                     let className = 'option';
-                                    if (index === q.correct) className += ' correct';
-                                    if (index === selected && !isCorrect) className += ' incorrect';
-                                    if (index === selected) className += ' selected';
+                                    if (optionLetter === correctAnswer) className += ' correct';
+                                    if (optionLetter === selected && !isCorrect) className += ' incorrect';
+                                    if (optionLetter === selected) className += ' selected';
                                     
-                                    return `<div class="${className}">${String.fromCharCode(65 + index)}) ${option}</div>`;
+                                    return `<div class="${className}">${optionLetter}) ${option}</div>`;
                                 }).join('')}
                             </div>
                         </div>
                     `;
                 }).join('')}
-            `).join('')}
+                    `).join('')}
+                `;
+            })()}
         </div>
         
         <div class="section">
-            <h2>${currentTestData.sections.listening.title}</h2>
-            
-            ${currentTestData.sections.listening.scripts.map((script, scriptIndex) => `
-                <div class="script">
-                    <h3>Script ${scriptIndex + 1}</h3>
-                    <p>${script.content}</p>
-                </div>
+            ${(() => {
+                const listeningSection = currentTestData.sections.find(s => s.id === 'listening');
+                if (!listeningSection || !listeningSection.parts) return '';
                 
-                ${script.questions.map(q => {
-                    const selected = answers.listening && answers.listening[q.id];
-                    const isCorrect = selected === q.correct;
-                    
-                    return `
-                        <div class="question">
-                            <div class="question-number">Question ${q.id}</div>
-                            <div class="question-text">${q.question}</div>
-                            <div class="options">
-                                ${q.options.map((option, index) => {
-                                    let className = 'option';
-                                    if (index === q.correct) className += ' correct';
-                                    if (index === selected && !isCorrect) className += ' incorrect';
-                                    if (index === selected) className += ' selected';
-                                    
-                                    return `<div class="${className}">${String.fromCharCode(65 + index)}) ${option}</div>`;
-                                }).join('')}
+                return `
+                    <h2>${listeningSection.title}</h2>
+                    ${listeningSection.parts.map((part, partIndex) => {
+                        if (!part.questions) return '';
+                        
+                        return `
+                            <div class="script">
+                                <h3>${part.title || `Part ${partIndex + 1}`}</h3>
+                                ${part.script ? `<p><strong>Script:</strong> ${JSON.stringify(part.script).substring(0, 200)}...</p>` : ''}
                             </div>
-                        </div>
-                    `;
-                }).join('')}
-            `).join('')}
+                            
+                            ${part.questions.map(q => {
+                                const selected = answers.listening && answers.listening[q.id];
+                                const correctAnswer = q.correctAnswer;
+                                const isCorrect = selected === correctAnswer;
+                                
+                                return `
+                                    <div class="question">
+                                        <div class="question-number">Question ${q.id}</div>
+                                        <div class="question-text">${q.questionText || q.question}</div>
+                                        <div class="options">
+                                            ${q.options.map((option, index) => {
+                                                const optionLetter = String.fromCharCode(65 + index);
+                                                let className = 'option';
+                                                if (optionLetter === correctAnswer) className += ' correct';
+                                                if (optionLetter === selected && !isCorrect) className += ' incorrect';
+                                                if (optionLetter === selected) className += ' selected';
+                                                
+                                                return `<div class="${className}">${optionLetter}) ${option}</div>`;
+                                            }).join('')}
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        `;
+                    }).join('')}
+                `;
+            })()}
         </div>
         
         <div class="section">
-            <h2>${currentTestData.sections.writing.title}</h2>
-            
-            ${currentTestData.sections.writing.tasks.map((task, index) => {
+            ${(() => {
+                const writingSection = currentTestData.sections.find(s => s.id === 'writing');
+                if (!writingSection || !writingSection.tasks) return '';
+                
+                return `
+                    <h2>${writingSection.title}</h2>
+                    ${writingSection.tasks.map((task, index) => {
                 // Get the correct task key from answers - frontend stores as 'task1', 'task2', 'task3'
                 const taskKey = `task${index + 1}`;
                 const writingAnswer = answers.writing && answers.writing[taskKey];
@@ -1799,7 +1936,9 @@ function generatePDFHTML(submission) {
                         </div>
                     </div>
                 `;
-            }).join('')}
+                    }).join('')}
+                `;
+            })()}
         </div>
     </body>
     </html>
@@ -1915,8 +2054,8 @@ app.get('/api/test-grading', (req, res) => {
             translationPenalties: { 'question-1': -0.5, 'question-31': -0.5, 'transcript-1': -1.0 }
         };
 
-        const perfectResults = calculateResults(perfectAnswers);
-        const partialResults = calculateResults(partialAnswers);
+        const perfectResults = calculateResults(perfectAnswers, testData);
+        const partialResults = calculateResults(partialAnswers, testData);
 
         // Restore original test data
         testData = originalTestData;

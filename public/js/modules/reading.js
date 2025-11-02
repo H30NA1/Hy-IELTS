@@ -97,7 +97,7 @@ class IELTSReading {
             optionsHTML += `
                 <label class="option">
                     <input type="radio" 
-                           name="reading-${questionData.id}" 
+                           name="${questionData.id}" 
                            value="${optionLetter}"
                            id="${questionData.id}-${optionLetter}">
                     <div class="option-label">${optionLetter}</div>
@@ -156,10 +156,14 @@ class IELTSReading {
 
         // Radio button changes for reading questions
         document.addEventListener('change', (e) => {
-            if (e.target.type === 'radio' && e.target.name.startsWith('reading-')) {
-                const questionId = e.target.name.replace('reading-', '');
-                const selectedValue = e.target.value;
-                this.saveReadingAnswer(questionId, selectedValue);
+            if (e.target.type === 'radio') {
+                // Check if this radio is in the reading section
+                const readingSection = e.target.closest('#reading');
+                if (readingSection) {
+                    const questionId = e.target.name; // Keep full ID (e.g., 'reading-q1')
+                    const selectedValue = e.target.value;
+                    this.saveReadingAnswer(questionId, selectedValue);
+                }
             }
         });
     }
@@ -177,8 +181,23 @@ class IELTSReading {
     }
 
     selectOption(questionId, optionIndex) {
+        // This function is for legacy option selection with data-question attributes
+        // For radio buttons, the change event handler in setupEventListeners handles answer saving
+        // This function is kept for backward compatibility but made safe
+        
+        // Try to find question container - return early if not found (prevents null reference errors)
+        const questionElement = document.querySelector(`[data-question="${questionId}"]`);
+        if (!questionElement) {
+            // Radio buttons don't use data-question, so this is expected for new format
+            return;
+        }
+        
+        const questionContainer = questionElement.closest('.question');
+        if (!questionContainer) {
+            return;
+        }
+        
         // Remove previous selection for this question
-        const questionContainer = document.querySelector(`[data-question="${questionId}"]`).closest('.question');
         const allOptions = questionContainer.querySelectorAll('.option');
         allOptions.forEach(option => option.classList.remove('selected'));
 

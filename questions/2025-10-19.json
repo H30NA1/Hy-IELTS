@@ -3,6 +3,7 @@
   "testDate": "2025-10-05",
   "testTitle": "IELTS Acting and Theater Practice Test",
   "totalQuestions": 110,
+  "maxBand": 4,
   "sections": [
     {
       "id": "listening",

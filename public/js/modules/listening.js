@@ -698,7 +698,7 @@ Now listen carefully and answer the questions.`;
                     ${options.map((option, index) => `
                         <label class="option">
                             <input type="radio" 
-                                   name="listening-${questionData.id}" 
+                                   name="${questionData.id}" 
                                    value="${String.fromCharCode(65 + index)}"
                                    id="${questionData.id}-${String.fromCharCode(65 + index)}">
                             <div class="option-label">${String.fromCharCode(65 + index)}</div>
@@ -873,10 +873,14 @@ Now listen carefully and answer the questions.`;
 
         // Radio button changes for listening questions
         document.addEventListener('change', (e) => {
-            if (e.target.type === 'radio' && e.target.name.startsWith('listening-')) {
-                const questionId = e.target.name.replace('listening-', '');
-                const selectedValue = e.target.value;
-                this.saveListeningAnswer(questionId, selectedValue);
+            if (e.target.type === 'radio') {
+                // Check if this radio is in the listening section
+                const listeningSection = e.target.closest('#listening');
+                if (listeningSection) {
+                    const questionId = e.target.name; // Keep full ID (e.g., 'listening-q1')
+                    const selectedValue = e.target.value;
+                    this.saveListeningAnswer(questionId, selectedValue);
+                }
             }
         });
 
@@ -907,8 +911,23 @@ Now listen carefully and answer the questions.`;
     }
 
     selectOption(questionId, optionIndex) {
+        // This function is for legacy option selection with data-question attributes
+        // For radio buttons, the change event handler in setupEventListeners handles answer saving
+        // This function is kept for backward compatibility but made safe
+        
+        // Try to find question container - return early if not found (prevents null reference errors)
+        const questionElement = document.querySelector(`[data-question="${questionId}"]`);
+        if (!questionElement) {
+            // Radio buttons don't use data-question, so this is expected for new format
+            return;
+        }
+        
+        const questionContainer = questionElement.closest('.question');
+        if (!questionContainer) {
+            return;
+        }
+        
         // Remove previous selection for this question
-        const questionContainer = document.querySelector(`[data-question="${questionId}"]`).closest('.question');
         const allOptions = questionContainer.querySelectorAll('.option');
         allOptions.forEach(option => option.classList.remove('selected'));
 

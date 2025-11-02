@@ -229,6 +229,13 @@ class IELTSCore {
         if (currentNavBtn) {
             currentNavBtn.classList.add('active');
         }
+        
+        // Re-apply highlighting if in review mode (with small delay to ensure DOM is ready)
+        if (this.reviewMode) {
+            setTimeout(() => {
+                this.applyReviewModeStyling();
+            }, 100);
+        }
     }
 
     previousSection() {
@@ -299,7 +306,21 @@ class IELTSCore {
     }
 
     startTimer() {
+        // Don't start timer if in review mode
+        if (this.reviewMode) {
+            return;
+        }
+        
+        // Clear any existing timer first
+        this.stopTimer();
+        
         this.timerInterval = setInterval(() => {
+            // Double-check we're not in review mode (safety check)
+            if (this.reviewMode) {
+                this.stopTimer();
+                return;
+            }
+            
             const elapsed = Math.floor((Date.now() - this.startTime) / 1000);
             const timerElement = document.getElementById('timer');
             if (timerElement) {
@@ -326,7 +347,7 @@ class IELTSCore {
         if (this.testSubmitted) return;
         
         try {
-            console.log('Submitting test...');
+            console.log('Submitting test to server...');
             this.testSubmitted = true;
             this.stopTimer();
             
@@ -340,22 +361,51 @@ class IELTSCore {
                 translationPenalties: this.translationPenalties
             };
             
-        // Calculate results
-        this.results = this.grading.calculateResults(allAnswers, this.testData);
+            // Calculate time spent
+            const timeSpent = IELTSUtils.formatTime(Math.floor((Date.now() - this.startTime) / 1000));
             
-            // Generate PDF
-            try {
-                this.pdfUrl = await this.pdf.generatePDF(this.userName, this.results, allAnswers, this.testData);
-            } catch (error) {
-                console.warn('PDF generation failed:', error);
+            // Submit to server - this will save JSON and generate PDF with correct folder structure
+            const response = await fetch('/api/submit-test', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    answers: allAnswers,
+                    timeSpent: timeSpent,
+                    userName: this.userName || 'Anonymous',
+                    userInfo: {
+                        userAgent: navigator.userAgent,
+                        timestamp: new Date().toISOString(),
+                        submittedBy: 'user'
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Server error: ${response.status}`);
             }
             
-            // Show results
-            this.showResults();
+            const result = await response.json();
+            
+            if (result.success) {
+                console.log('✅ Test submitted successfully');
+                // Use server-calculated results
+                this.results = result.results;
+                this.submissionId = result.submissionId;
+                this.pdfGenerated = result.pdfGenerated;
+                
+                // Show results
+                this.showResults();
+            } else {
+                throw new Error(result.error || 'Failed to submit test');
+            }
             
         } catch (error) {
             console.error('Error submitting test:', error);
             this.showError('Failed to submit test. Please try again.');
+            // Reset state to allow retry
+            this.testSubmitted = false;
         }
     }
 
@@ -371,6 +421,7 @@ class IELTSCore {
         if (readingScore) readingScore.textContent = `${this.results.reading}/${this.results.readingTotal}`;
         if (writingScore) writingScore.textContent = `${this.results.writing}/${this.results.writingTotal}`;
         if (grammarScore) grammarScore.textContent = `${this.results.grammar || 0}/${this.results.grammarTotal || 20}`;
+        // Total score is always normalized to be out of 100
         if (totalScore) totalScore.textContent = `${this.results.total}/100`;
         
         // Update band scores
@@ -408,11 +459,12 @@ class IELTSCore {
 
     reviewTest() {
         IELTSUtils.hideModal('results-modal');
+        
+        // Stop timer FIRST before setting review mode
+        this.stopTimer();
+        
         this.reviewMode = true;
         this.testSubmitted = false;
-        
-        // Stop timer during review mode
-        this.stopTimer();
         
         // Update navigation to allow movement between sections
         this.updateNavigation();
@@ -420,7 +472,7 @@ class IELTSCore {
         // Go to first section
         this.switchSection('listening');
         
-        // Apply review mode styling
+        // Apply review mode styling (includes highlighting)
         this.applyReviewModeStyling();
         
         console.log('Review mode enabled - timer stopped, you can now navigate between sections');
@@ -444,6 +496,9 @@ class IELTSCore {
             submitButton.style.display = 'none';
         }
         
+        // Add review mode class to body
+        document.body.classList.add('review-mode');
+        
         // Highlight answers based on correctness
         this.highlightAnswers();
     }
@@ -465,8 +520,9 @@ class IELTSCore {
         const correctAnswers = this.getCorrectAnswersFromTestData();
         console.log('🎨 Got correct answers:', correctAnswers);
         
-        // Highlight listening and reading answers
+        // Highlight listening, reading, and grammar answers
         this.highlightListeningReadingAnswers(correctAnswers);
+        this.highlightGrammarAnswers(correctAnswers);
         
         // Highlight writing and speaking (these are always "correct" if they have content)
         this.highlightWritingSpeakingAnswers();
@@ -501,6 +557,14 @@ class IELTSCore {
             });
         }
         
+        // Get grammar correct answers
+        const grammarSection = this.testData.sections.find(s => s.id === 'grammar');
+        if (grammarSection && grammarSection.questions) {
+            grammarSection.questions.forEach(question => {
+                correctAnswers[question.id] = question.correctAnswer;
+            });
+        }
+        
         return correctAnswers;
     }
 
@@ -519,8 +583,7 @@ class IELTSCore {
                             const userAnswer = this.answers.listening ? this.answers.listening[questionId] : null;
                             
                             // Always highlight the correct answer in green
-                            const radioButtonName = questionId.startsWith('listening-') ? questionId : `listening-${questionId}`;
-                            const correctRadioButton = document.querySelector(`input[name="${radioButtonName}"][value="${correctAnswer}"]`);
+                            const correctRadioButton = document.querySelector(`input[name="${questionId}"][value="${correctAnswer}"]`);
                             if (correctRadioButton) {
                                 const correctLabel = correctRadioButton.closest('label') || correctRadioButton.parentElement;
                                 if (correctLabel) {
@@ -531,7 +594,7 @@ class IELTSCore {
                             
                             // If user answered, highlight their answer (green if correct, red if wrong)
                             if (userAnswer) {
-                                const userRadioButton = document.querySelector(`input[name="${radioButtonName}"][value="${userAnswer}"]`);
+                                const userRadioButton = document.querySelector(`input[name="${questionId}"][value="${userAnswer}"]`);
                                 if (userRadioButton) {
                                     const userLabel = userRadioButton.closest('label') || userRadioButton.parentElement;
                                     if (userLabel) {
@@ -562,8 +625,7 @@ class IELTSCore {
                             const userAnswer = this.answers.reading ? this.answers.reading[questionId] : null;
                             
                             // Always highlight the correct answer in green
-                            const radioButtonName = questionId.startsWith('reading-') ? questionId : `reading-${questionId}`;
-                            const correctRadioButton = document.querySelector(`input[name="${radioButtonName}"][value="${correctAnswer}"]`);
+                            const correctRadioButton = document.querySelector(`input[name="${questionId}"][value="${correctAnswer}"]`);
                             if (correctRadioButton) {
                                 const correctLabel = correctRadioButton.closest('label') || correctRadioButton.parentElement;
                                 if (correctLabel) {
@@ -574,7 +636,7 @@ class IELTSCore {
                             
                             // If user answered, highlight their answer (green if correct, red if wrong)
                             if (userAnswer) {
-                                const userRadioButton = document.querySelector(`input[name="${radioButtonName}"][value="${userAnswer}"]`);
+                                const userRadioButton = document.querySelector(`input[name="${questionId}"][value="${userAnswer}"]`);
                                 if (userRadioButton) {
                                     const userLabel = userRadioButton.closest('label') || userRadioButton.parentElement;
                                     if (userLabel) {
@@ -588,6 +650,48 @@ class IELTSCore {
                                 }
                             }
                         });
+                    }
+                });
+            }
+        }
+    }
+
+    highlightGrammarAnswers(correctAnswers) {
+        console.log('🎨 Starting grammar highlighting process...', { correctAnswers, userAnswers: this.answers.grammar });
+        
+        // Highlight ALL grammar questions (both answered and unanswered)
+        if (this.testData && this.testData.sections) {
+            const grammarSection = this.testData.sections.find(s => s.id === 'grammar');
+            if (grammarSection && grammarSection.questions) {
+                grammarSection.questions.forEach(question => {
+                    const questionId = question.id;
+                    const correctAnswer = question.correctAnswer;
+                    const userAnswer = this.answers.grammar ? this.answers.grammar[questionId] : null;
+                    
+                    // Always highlight the correct answer in green
+                    const correctRadioButton = document.querySelector(`input[name="${questionId}"][value="${correctAnswer}"]`);
+                    if (correctRadioButton) {
+                        const correctLabel = correctRadioButton.closest('label') || correctRadioButton.parentElement;
+                        if (correctLabel) {
+                            correctLabel.classList.remove('answer-correct', 'answer-wrong', 'answer-correct-option');
+                            correctLabel.classList.add('answer-correct-option');
+                        }
+                    }
+                    
+                    // If user answered, highlight their answer (green if correct, red if wrong)
+                    if (userAnswer) {
+                        const userRadioButton = document.querySelector(`input[name="${questionId}"][value="${userAnswer}"]`);
+                        if (userRadioButton) {
+                            const userLabel = userRadioButton.closest('label') || userRadioButton.parentElement;
+                            if (userLabel) {
+                                userLabel.classList.remove('answer-correct', 'answer-wrong', 'answer-correct-option');
+                                if (userAnswer === correctAnswer) {
+                                    userLabel.classList.add('answer-correct');
+                                } else {
+                                    userLabel.classList.add('answer-wrong');
+                                }
+                            }
+                        }
                     }
                 });
             }
@@ -670,6 +774,20 @@ class IELTSCore {
     }
 
     removeReviewModeStyling() {
+        // Remove review mode class from body
+        document.body.classList.remove('review-mode');
+        
+        // Remove answer highlighting classes
+        document.querySelectorAll('.answer-correct, .answer-wrong, .answer-correct-option').forEach(el => {
+            el.classList.remove('answer-correct', 'answer-wrong', 'answer-correct-option');
+        });
+        
+        // Reset textarea styles
+        document.querySelectorAll('textarea').forEach(textarea => {
+            textarea.style.backgroundColor = '';
+            textarea.style.border = '';
+        });
+        
         // Re-enable all radio buttons and inputs
         document.querySelectorAll('input[type="radio"]').forEach(radio => {
             radio.disabled = false;

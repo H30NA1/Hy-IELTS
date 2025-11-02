@@ -43,21 +43,36 @@ class IELTSGrading {
         };
     }
 
-    convertToIELTSBand(rawScore, total, section) {
+    convertToIELTSBand(rawScore, total, section, maxBand = 9) {
         const percentage = (rawScore / total) * 100;
+        let baseBand = 0.0;
         
         switch (section) {
             case 'listening':
-                return this.getBandFromPercentage(percentage, 'listening');
+                baseBand = this.getBandFromPercentage(percentage, 'listening');
+                break;
             case 'reading':
-                return this.getBandFromPercentage(percentage, 'reading');
+                baseBand = this.getBandFromPercentage(percentage, 'reading');
+                break;
             case 'writing':
-                return this.getWritingBand(percentage);
+                baseBand = this.getWritingBand(percentage);
+                break;
             case 'grammar':
-                return this.getGrammarBand(percentage);
+                baseBand = this.getGrammarBand(percentage);
+                break;
+            case 'speaking':
+                baseBand = this.getSpeakingBand(percentage);
+                break;
             default:
-                return 0.0;
+                baseBand = 0.0;
         }
+        
+        // Scale the band score to the maxBand specified in JSON
+        // Formula: scaledBand = (baseBand / 9.0) * maxBand
+        const scaledBand = (baseBand / 9.0) * maxBand;
+        
+        // Round to nearest 0.1 for precision (e.g., 3.5, 3.6, 3.7, 4.0)
+        return Math.round(scaledBand * 10) / 10;
     }
 
     getGrammarBand(percentage) {
@@ -132,11 +147,18 @@ class IELTSGrading {
     }
 
     calculateOverallBand(listeningBand, readingBand, writingBand, speakingBand, grammarBand) {
-        const total = listeningBand + readingBand + writingBand + speakingBand + grammarBand;
-        const average = total / 5;
+        // Calculate overall band score (average of tested sections only)
+        // Exclude speaking if it's 0 (not tested)
+        const bands = [listeningBand, readingBand, writingBand, grammarBand];
+        if (speakingBand > 0) {
+            bands.push(speakingBand);
+        }
         
-        // Round to nearest 0.5
-        return Math.round(average * 2) / 2;
+        const total = bands.reduce((sum, band) => sum + band, 0);
+        const average = total / bands.length;
+        
+        // Round to nearest 0.1 for precision
+        return Math.round(average * 10) / 10;
     }
 
     calculateSectionScore(answers, section, totalQuestions, testData) {
@@ -308,12 +330,30 @@ class IELTSGrading {
         const totalScore = listeningResult.score + readingResult.score + grammarResult.score + writingScore + speakingScore;
         const totalPenalty = listeningResult.penalty + readingResult.penalty + grammarResult.penalty;
         
-        // Calculate band scores
-        const listeningBand = this.convertToIELTSBand(listeningResult.score, 40, 'listening');
-        const readingBand = this.convertToIELTSBand(readingResult.score, 30, 'reading');
-        const grammarBand = this.convertToIELTSBand(grammarResult.score, 20, 'grammar');
-        const writingBand = this.convertToIELTSBand(writingScore, 20, 'writing');
-        const speakingBand = this.convertToIELTSBand(speakingScore, 20, 'speaking');
+        // Define section totals (can be updated if more questions are added)
+        const listeningTotal = 40;
+        const readingTotal = 30;
+        const writingTotal = 20;
+        const speakingTotal = 20;
+        const grammarTotal = 20;
+        
+        // Calculate maximum possible score (excluding speaking if not tested)
+        const maxPossibleScore = listeningTotal + readingTotal + writingTotal + (speakingScore > 0 ? speakingTotal : 0) + grammarTotal;
+        
+        // Normalize total score to always be out of 100
+        // This ensures that even if more questions are added later, the total will always cap at 100
+        const normalizedTotal = maxPossibleScore > 0 ? (totalScore / maxPossibleScore) * 100 : 0;
+        const cappedTotal = Math.min(100, Math.max(0, Math.round(normalizedTotal * 100) / 100)); // Cap at 100, ensure not below 0
+        
+        // Get maxBand from testData (defaults to 9 if not specified)
+        const maxBand = (testData && testData.maxBand) ? testData.maxBand : 9;
+        
+        // Calculate band scores (scaled to maxBand)
+        const listeningBand = this.convertToIELTSBand(listeningResult.score, 40, 'listening', maxBand);
+        const readingBand = this.convertToIELTSBand(readingResult.score, 30, 'reading', maxBand);
+        const grammarBand = this.convertToIELTSBand(grammarResult.score, 20, 'grammar', maxBand);
+        const writingBand = this.convertToIELTSBand(writingScore, 20, 'writing', maxBand);
+        const speakingBand = this.convertToIELTSBand(speakingScore, 20, 'speaking', maxBand);
         const overallBand = this.calculateOverallBand(listeningBand, readingBand, writingBand, speakingBand, grammarBand);
         
         return {
@@ -322,12 +362,12 @@ class IELTSGrading {
             grammar: Math.round(grammarResult.score * 100) / 100,
             writing: Math.round(writingScore * 100) / 100,
             speaking: Math.round(speakingScore * 100) / 100,
-            total: Math.max(0, Math.round(totalScore * 100) / 100),
-            listeningTotal: 40,
-            readingTotal: 30,
-            grammarTotal: 20,
-            writingTotal: 20,
-            speakingTotal: 20,
+            total: cappedTotal, // Normalized to always be out of 100
+            listeningTotal: listeningTotal,
+            readingTotal: readingTotal,
+            grammarTotal: grammarTotal,
+            writingTotal: writingTotal,
+            speakingTotal: speakingTotal,
             translationPenalty: Math.round(totalPenalty * 100) / 100,
             bands: {
                 listening: listeningBand,

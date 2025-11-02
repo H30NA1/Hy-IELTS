@@ -1,0 +1,49 @@
+{
+  "id": "mheg396wjcsh9ck1xc",
+  "timestamp": "2025-10-31T06:01:02.024Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "timestamp": "2025-10-31T06:01:02.001Z",
+    "submittedBy": "user"
+  },
+  "userName": "PDF Test User",
+  "answers": {
+    "listening": {},
+    "reading": {},
+    "grammar": {},
+    "writing": {
+      "task1": "",
+      "task2": ""
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {}
+  },
+  "results": {
+    "listening": 0,
+    "reading": 0,
+    "writing": 0,
+    "speaking": 0,
+    "grammar": 0,
+    "total": 0,
+    "listeningTotal": 40,
+    "readingTotal": 30,
+    "writingTotal": 20,
+    "speakingTotal": 20,
+    "grammarTotal": 20,
+    "translationPenalty": 0,
+    "bands": {
+      "listening": 1.6,
+      "reading": 1.6,
+      "writing": 1.3,
+      "speaking": 1.3,
+      "grammar": 1.3,
+      "overall": 1.4
+    }
+  },
+  "timeSpent": "00:23",
+  "testData": {
+    "testId": "IELTS-ACTING-THEME-2025-10-05",
+    "testDate": "2025-10-05",
+    "testTitle": "IELTS Acting and Theater Practice Test"
+  }
+}
