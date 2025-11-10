@@ -1,0 +1,1689 @@
+{
+  "id": "mhojxrqvfp9jg9mosar",
+  "timestamp": "2025-11-07T07:46:26.359Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-11-07T07:46:25.436Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "listening": {
+      "listening-q2": "C",
+      "listening-q4": "A",
+      "listening-q5": "C",
+      "listening-q10": "B",
+      "listening-q1": "C",
+      "listening-q3": "C",
+      "listening-q6": "B",
+      "listening-q7": "A",
+      "listening-q8": "A",
+      "listening-q9": "A",
+      "listening-q11": "B",
+      "listening-q12": "A",
+      "listening-q19": "C",
+      "listening-q14": "A",
+      "listening-q15": "C",
+      "listening-q20": "A",
+      "listening-q13": "B",
+      "listening-q16": "A",
+      "listening-q17": "A",
+      "listening-q18": "A",
+      "listening-q21": "B",
+      "listening-q22": "A",
+      "listening-q23": "A",
+      "listening-q24": "A",
+      "listening-q25": "A",
+      "listening-q26": "A",
+      "listening-q27": "A",
+      "listening-q28": "A",
+      "listening-q29": "A",
+      "listening-q30": "A",
+      "listening-q31": "B",
+      "listening-q32": "A",
+      "listening-q33": "A",
+      "listening-q34": "A",
+      "listening-q35": "A",
+      "listening-q36": "A",
+      "listening-q37": "A",
+      "listening-q38": "A",
+      "listening-q39": "A",
+      "listening-q40": "A"
+    },
+    "reading": {
+      "reading-q1": "B",
+      "reading-q2": "A",
+      "reading-q3": "A",
+      "reading-q4": "A",
+      "reading-q5": "A",
+      "reading-q6": "A",
+      "reading-q7": "A",
+      "reading-q8": "A",
+      "reading-q9": "A",
+      "reading-q10": "A",
+      "reading-q11": "A",
+      "reading-q12": "A",
+      "reading-q13": "A",
+      "reading-q14": "A",
+      "reading-q15": "A",
+      "reading-q16": "A",
+      "reading-q17": "A",
+      "reading-q18": "A",
+      "reading-q19": "B",
+      "reading-q20": "B",
+      "reading-q21": "C",
+      "reading-q22": "B",
+      "reading-q23": "C",
+      "reading-q24": "D",
+      "reading-q25": "D",
+      "reading-q26": "B",
+      "reading-q27": "C",
+      "reading-q28": "A",
+      "reading-q29": "B",
+      "reading-q30": "B"
+    },
+    "grammar": {
+      "grammar-q1": "A",
+      "grammar-q2": "A",
+      "grammar-q3": "A",
+      "grammar-q4": "A",
+      "grammar-q5": "A",
+      "grammar-q6": "A",
+      "grammar-q7": "A",
+      "grammar-q8": "A",
+      "grammar-q9": "A",
+      "grammar-q11": "A",
+      "grammar-q10": "A",
+      "grammar-q12": "A",
+      "grammar-q13": "A",
+      "grammar-q14": "A",
+      "grammar-q15": "A",
+      "grammar-q16": "A",
+      "grammar-q17": "A",
+      "grammar-q18": "A",
+      "grammar-q19": "A",
+      "grammar-q20": "A"
+    },
+    "writing": {
+      "task1": "The chart shows the main sources of government revenue in 2020 for four countries: the United States, the United Kingdom, Japan, and Australia. Overall, income tax was the biggest source of revenue in most countries, while other taxes such as corporate tax and sales tax made up smaller shares. In the United States and the United Kingdom, income tax accounted for the largest part of government revenue, around one third to nearly half of the total. Japan also relied heavily on income tax, but it had a slightly higher percentage of corporate tax compared to the other countries. In Australia, income tax still made up the main source, but sales tax also contributed a noticeable portion. Other minor sources such as property tax or customs duties were much smaller in all four countries. In general, all governments depended most on income tax, while other taxes varied slightly depending on each country’s economic structure",
+      "task2": "Some people think that giving everyone a fixed amount of money every month, called universal basic income or UBI, can help solve problems like job loss from machines and unfair gaps between rich and poor. They say that when robots and computers do more work, many people lose their jobs, so having a basic income would make sure everyone has enough money for food, rent, and other needs. It can also help people feel safer, try new jobs, or learn new skills without being scared of having no income. But other people think this idea is not good. They say that if everyone gets money even without working, many people may stop trying to find jobs, and that would hurt the economy. They also worry that the government would need a lot of money to pay everyone, which could mean higher taxes. Instead, they think the government should help people find new kinds of work and teach them new skills. In my opinion, giving everyone some basic money can be a good idea if it is done carefully. It should help people when they lose jobs but should not replace the need to work. If the plan is fair and well managed, it can make life safer for everyone while still encouraging people to work and learn"
+    },
+    "translatedQuestions": [
+      null,
+      "listening-q11",
+      "listening-q38"
+    ],
+    "translationPenalties": {
+      "listening-q11": -0.5,
+      "listening-q38": -0.5
+    }
+  },
+  "results": {
+    "listening": 34,
+    "reading": 19,
+    "writing": 18,
+    "speaking": 0,
+    "grammar": 20,
+    "total": 82.73,
+    "listeningTotal": 40,
+    "readingTotal": 30,
+    "writingTotal": 20,
+    "speakingTotal": 20,
+    "grammarTotal": 20,
+    "translationPenalty": 0,
+    "bands": {
+      "listening": 8.5,
+      "reading": 6.5,
+      "writing": 9,
+      "speaking": 3,
+      "grammar": 9,
+      "overall": 7.2
+    }
+  },
+  "timeSpent": "46:35",
+  "testData": {
+    "testId": "IELTS-ECONOMICS-4.5-2025-11-05",
+    "testDate": "2025-11-05",
+    "testTitle": "IELTS Level 4.5 Advanced Economics Test",
+    "totalQuestions": 110,
+    "difficultyLevel": "Advanced",
+    "sections": [
+      {
+        "id": "listening",
+        "title": "Listening",
+        "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+        "parts": [
+          {
+            "partNumber": 1,
+            "title": "Part 1: Discussion about financial market regulations",
+            "instructions": "Listen to the conversation and answer questions 1-10.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.3,
+                "rate": 1.2,
+                "volume": 0.9,
+                "name": "Financial Regulator",
+                "variation": 0.12,
+                "accent": "British",
+                "emotion": "analytical",
+                "speakingType": "professional"
+              },
+              "male": {
+                "pitch": 0.5,
+                "rate": 1.1,
+                "volume": 0.85,
+                "name": "Banking Executive",
+                "variation": 0.1,
+                "accent": "American",
+                "emotion": "concerned",
+                "speakingType": "consultation"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Good morning. This is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between a financial regulator and a banking executive about proposed market regulations. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Mr. Davidson, we need to discuss the implications of the new Basel IV capital requirements. Our analysis suggests that systemically important banks will need to increase their tier-one capital ratios by approximately 300 basis points."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Director Williams, that assessment aligns with our internal projections. However, the phase-in period of five years seems insufficient given the current macroeconomic headwinds and compressed profit margins in the banking sector."
+                },
+                {
+                  "speaker": "female",
+                  "text": "I understand your concerns, but the Financial Stability Board insists on accelerated implementation due to emerging risks in shadow banking and the derivatives market. The leverage ratio framework also needs strengthening."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The proposed 5% leverage ratio would significantly constrain lending capacity, particularly for mortgage and small business loans. We've modeled a potential 15% reduction in credit availability if implemented as drafted."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Our counter-analysis suggests a more modest 8-10% impact, which we consider acceptable given the systemic risk reduction benefits. However, we're considering tiered implementation based on bank size and complexity."
+                },
+                {
+                  "speaker": "male",
+                  "text": "A tiered approach would be more pragmatic. For globally systemically important banks, the timeline could be extended to seven years with intermediate milestones. This would allow for orderly balance sheet restructuring."
+                },
+                {
+                  "speaker": "female",
+                  "text": "We're also proposing enhanced stress testing scenarios including simultaneous equity market corrections, real estate downturns, and cyber-attack scenarios. The reverse stress testing requirements will be particularly challenging."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The reverse stress testing paradigm represents a fundamental shift in risk management philosophy. Instead of assessing impacts of scenarios, we must identify scenarios that would cause failure. This requires much more sophisticated modeling capabilities."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Precisely. And regarding resolution planning, we're mandating that all major institutions develop credible plans for orderly resolution without taxpayer bailouts. The 'living wills' must be operational, not theoretical."
+                },
+                {
+                  "speaker": "male",
+                  "text": "This will necessitate substantial investments in data architecture and legal entity restructuring. The cost-benefit analysis shows significant upfront costs but substantial long-term financial stability benefits."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q1",
+                "type": "multiple-choice",
+                "questionText": "What is the main topic of discussion?",
+                "options": [
+                  "A) Tax reforms",
+                  "B) Financial market regulations",
+                  "C) Monetary policy",
+                  "D) Trade agreements"
+                ],
+                "correctAnswer": "B",
+                "translation": "Chủ đề thảo luận chính là gì?"
+              },
+              {
+                "id": "listening-q2",
+                "type": "multiple-choice",
+                "questionText": "How much must tier-one capital ratios increase?",
+                "options": [
+                  "A) 200 basis points",
+                  "B) 250 basis points",
+                  "C) 300 basis points",
+                  "D) 350 basis points"
+                ],
+                "correctAnswer": "C",
+                "translation": "Tỷ lệ vốn cấp một phải tăng bao nhiêu?"
+              },
+              {
+                "id": "listening-q3",
+                "type": "multiple-choice",
+                "questionText": "What is considered insufficient?",
+                "options": [
+                  "A) Capital requirements",
+                  "B) Phase-in period",
+                  "C) Supervision intensity",
+                  "D] Reporting frequency"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì được coi là không đủ?"
+              },
+              {
+                "id": "listening-q4",
+                "type": "multiple-choice",
+                "questionText": "What emerging risks are mentioned?",
+                "options": [
+                  "A) Shadow banking",
+                  "B) Currency volatility",
+                  "C) Political instability",
+                  "D] Commodity prices"
+                ],
+                "correctAnswer": "A",
+                "translation": "Những rủi ro mới nổi nào được đề cập?"
+              },
+              {
+                "id": "listening-q5",
+                "type": "multiple-choice",
+                "questionText": "What reduction in credit availability is modeled?",
+                "options": [
+                  "A) 8-10%",
+                  "B) 12-14%",
+                  "C) 15%",
+                  "D] 18%"
+                ],
+                "correctAnswer": "C",
+                "translation": "Mức giảm khả năng cung cấp tín dụng được mô hình hóa là bao nhiêu?"
+              },
+              {
+                "id": "listening-q6",
+                "type": "multiple-choice",
+                "questionText": "What approach is suggested as more pragmatic?",
+                "options": [
+                  "A) Uniform implementation",
+                  "B) Tiered approach",
+                  "C) Complete exemption",
+                  "D] Regional variation"
+                ],
+                "correctAnswer": "B",
+                "translation": "Phương pháp tiếp cận nào được đề xuất là thực tế hơn?"
+              },
+              {
+                "id": "listening-q7",
+                "type": "multiple-choice",
+                "questionText": "What new testing scenarios are proposed?",
+                "options": [
+                  "A) Enhanced stress testing",
+                  "B) Basic scenario analysis",
+                  "C) Historical simulation",
+                  "D] Monte Carlo testing"
+                ],
+                "correctAnswer": "A",
+                "translation": "Kịch bản kiểm tra mới nào được đề xuất?"
+              },
+              {
+                "id": "listening-q8",
+                "type": "multiple-choice",
+                "questionText": "What represents a fundamental shift in risk management?",
+                "options": [
+                  "A) Reverse stress testing",
+                  "B) Value at risk",
+                  "C) Sensitivity analysis",
+                  "D] Back testing"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì đại diện cho sự thay đổi cơ bản trong quản lý rủi ro?"
+              },
+              {
+                "id": "listening-q9",
+                "type": "multiple-choice",
+                "questionText": "What must 'living wills' enable?",
+                "options": [
+                  "A) Orderly resolution",
+                  "B) Rapid expansion",
+                  "C) Tax optimization",
+                  "D] Market dominance"
+                ],
+                "correctAnswer": "A",
+                "translation": "'Di chúc sống' phải cho phép điều gì?"
+              },
+              {
+                "id": "listening-q10",
+                "type": "multiple-choice",
+                "questionText": "What does cost-benefit analysis show?",
+                "options": [
+                  "A) Immediate profits",
+                  "B) Upfront costs with long-term benefits",
+                  "C) Continuous losses",
+                  "D] Uncertain outcomes"
+                ],
+                "correctAnswer": "B",
+                "translation": "Phân tích chi phí-lợi ích cho thấy điều gì?"
+              }
+            ]
+          },
+          {
+            "partNumber": 2,
+            "title": "Part 2: Lecture on sustainable finance and ESG investing",
+            "instructions": "Listen to the lecture and answer questions 11-20.",
+            "voiceProfiles": {
+              "male": {
+                "pitch": 0.4,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Sustainable Finance Expert",
+                "variation": 0.08,
+                "accent": "educated",
+                "emotion": "knowledgeable",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 2. You will hear a lecture on sustainable finance and ESG investing. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+              "conversation": [
+                {
+                  "speaker": "male",
+                  "text": "The rapid growth of sustainable finance represents one of the most significant transformations in modern financial markets. Environmental, Social, and Governance criteria have evolved from niche considerations to mainstream investment factors influencing trillions of dollars in asset allocation. The convergence of climate science, regulatory pressure, and investor demand has created powerful momentum for ESG integration. However, the field faces substantial challenges including definitional ambiguity, inconsistent reporting standards, and concerns about greenwashing. The European Union's Sustainable Finance Disclosure Regulation and Taxonomy represent ambitious attempts to create standardized frameworks, but global harmonization remains elusive. Materiality assessment poses particular difficulties—what constitutes financially material ESG factors varies significantly across industries and time horizons. The emergence of impact investing, which explicitly targets positive social and environmental outcomes alongside financial returns, further complicates the landscape. Technological solutions like blockchain for supply chain transparency and AI for ESG data analysis offer promising avenues for addressing these challenges. The fundamental question remains whether sustainable finance can genuinely reorient capital flows toward addressing pressing global challenges or whether it risks becoming another marketing exercise without substantive impact."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q11",
+                "type": "multiple-choice",
+                "questionText": "What does sustainable finance represent?",
+                "options": [
+                  "A) Minor adjustment",
+                  "B) Significant transformation",
+                  "C) Temporary trend",
+                  "D] Theoretical concept"
+                ],
+                "correctAnswer": "B",
+                "translation": "Tài chính bền vững đại diện cho điều gì?"
+              },
+              {
+                "id": "listening-q12",
+                "type": "multiple-choice",
+                "questionText": "What has ESG evolved from?",
+                "options": [
+                  "A) Government mandate",
+                  "B) Niche considerations",
+                  "C) Academic theory",
+                  "D] Consumer demand"
+                ],
+                "correctAnswer": "B",
+                "translation": "ESG đã phát triển từ đâu?"
+              },
+              {
+                "id": "listening-q13",
+                "type": "multiple-choice",
+                "questionText": "What has created momentum for ESG integration?",
+                "options": [
+                  "A) Single factor",
+                  "B) Multiple converging factors",
+                  "C) Regulatory pressure only",
+                  "D] Investor demand only"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì đã tạo ra động lực cho tích hợp ESG?"
+              },
+              {
+                "id": "listening-q14",
+                "type": "multiple-choice",
+                "questionText": "What challenges does the field face?",
+                "options": [
+                  "A) Definitional ambiguity",
+                  "B) Excessive regulation",
+                  "C) Lack of interest",
+                  "D] Technological barriers"
+                ],
+                "correctAnswer": "A",
+                "translation": "Lĩnh vực này phải đối mặt với những thách thức gì?"
+              },
+              {
+                "id": "listening-q15",
+                "type": "multiple-choice",
+                "questionText": "What remains elusive according to the speaker?",
+                "options": [
+                  "A) Investor interest",
+                  "B) Global harmonization",
+                  "C) Regulatory frameworks",
+                  "D] Scientific consensus"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì vẫn còn khó nắm bắt theo diễn giả?"
+              },
+              {
+                "id": "listening-q16",
+                "type": "multiple-choice",
+                "questionText": "What poses particular difficulties?",
+                "options": [
+                  "A) Materiality assessment",
+                  "B) Financial reporting",
+                  "C) Risk management",
+                  "D] Performance measurement"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì đặt ra những khó khăn đặc biệt?"
+              },
+              {
+                "id": "listening-q17",
+                "type": "multiple-choice",
+                "questionText": "What further complicates the landscape?",
+                "options": [
+                  "A) Impact investing",
+                  "B) Traditional investing",
+                  "C) Hedge funds",
+                  "D] Private equity"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì làm phức tạp thêm bức tranh?"
+              },
+              {
+                "id": "listening-q18",
+                "type": "multiple-choice",
+                "questionText": "What technological solutions are mentioned?",
+                "options": [
+                  "A) Blockchain and AI",
+                  "B) Cloud computing",
+                  "C) Quantum computing",
+                  "D] Internet of Things"
+                ],
+                "correctAnswer": "A",
+                "translation": "Giải pháp công nghệ nào được đề cập?"
+              },
+              {
+                "id": "listening-q19",
+                "type": "multiple-choice",
+                "questionText": "What fundamental question remains?",
+                "options": [
+                  "A) About profitability",
+                  "B) About genuine impact",
+                  "C) About regulation",
+                  "D] About measurement"
+                ],
+                "correctAnswer": "B",
+                "translation": "Câu hỏi cơ bản nào vẫn còn?"
+              },
+              {
+                "id": "listening-q20",
+                "type": "multiple-choice",
+                "questionText": "What risk is mentioned?",
+                "options": [
+                  "A) Becoming marketing without impact",
+                  "B) Excessive regulation",
+                  "C) Investor disinterest",
+                  "D] Technological failure"
+                ],
+                "correctAnswer": "A",
+                "translation": "Rủi ro nào được đề cập?"
+              }
+            ]
+          },
+          {
+            "partNumber": 3,
+            "title": "Part 3: Discussion about digital currencies and payment systems",
+            "instructions": "Listen to the discussion and answer questions 21-30.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.5,
+                "rate": 1.2,
+                "volume": 0.85,
+                "name": "Fintech Researcher",
+                "variation": 0.12,
+                "accent": "academic",
+                "emotion": "enthusiastic",
+                "speakingType": "discussion"
+              },
+              "male": {
+                "pitch": 0.6,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Central Banker",
+                "variation": 0.1,
+                "accent": "educated",
+                "emotion": "cautious",
+                "speakingType": "discussion"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 3. You will hear a discussion between a fintech researcher and a central banker about digital currencies and payment systems. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "The emergence of central bank digital currencies represents a watershed moment in monetary history. CBDCs could enhance payment system efficiency, reduce transaction costs, and improve financial inclusion, particularly in emerging economies where traditional banking penetration remains limited."
+                },
+                {
+                  "speaker": "male",
+                  "text": "While the potential benefits are significant, we must proceed with caution. The introduction of retail CBDCs could fundamentally disrupt the current two-tier banking system, potentially leading to disintermediation of commercial banks during stress periods. The financial stability implications are profound."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Those risks can be mitigated through thoughtful design choices. For instance, tiered remuneration systems or holding limits could prevent massive shifts from bank deposits to CBDCs. The technological architecture could also incorporate safeguards against rapid digital bank runs."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Design considerations extend beyond financial stability. Privacy protection is paramount—how do we balance the transparency needed for anti-money laundering with citizens' legitimate expectations of financial privacy? The surveillance potential of programmable money raises serious civil liberties concerns."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Privacy-enhancing technologies like zero-knowledge proofs offer promising solutions. They could allow verification of regulatory compliance without revealing underlying transaction details. The key is building systems that are secure, private, and compliant by design."
+                },
+                {
+                  "speaker": "male",
+                  "text": "International dimension adds another layer of complexity. Cross-border payments remain inefficient and costly. CBDCs could facilitate faster, cheaper remittances, but they also raise questions about currency substitution and monetary sovereignty, especially for smaller economies."
+                },
+                {
+                  "speaker": "female",
+                  "text": "The Bank for International Settlements' innovation hub is exploring multi-CBDC arrangements that could create new paradigms for cross-border payments. However, interoperability standards and legal frameworks need development. The geopolitical implications are also significant."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Indeed, the first-mover advantage in setting technical standards could have lasting influence. We're witnessing a new form of monetary competition where technological capability may become as important as economic fundamentals in determining currency internationalization."
+                },
+                {
+                  "speaker": "female",
+                  "text": "This technological transformation also creates opportunities for improving monetary policy transmission. Programmable money could enable more targeted fiscal transfers and potentially even implement time-varying negative interest rates, overcoming the zero lower bound constraint."
+                },
+                {
+                  "speaker": "male",
+                  "text": "These advanced capabilities require careful democratic scrutiny. The delegation of such significant economic powers to algorithmic systems demands robust governance frameworks. The transition to digital currency ecosystems must be inclusive, secure, and aligned with societal values."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q21",
+                "type": "multiple-choice",
+                "questionText": "What do CBDCs represent according to the researcher?",
+                "options": [
+                  "A) Minor innovation",
+                  "B) Watershed moment",
+                  "C) Temporary solution",
+                  "D] Theoretical concept"
+                ],
+                "correctAnswer": "B",
+                "translation": "Theo nhà nghiên cứu, CBDC đại diện cho điều gì?"
+              },
+              {
+                "id": "listening-q22",
+                "type": "multiple-choice",
+                "questionText": "What potential benefit is mentioned for emerging economies?",
+                "options": [
+                  "A) Financial inclusion",
+                  "B) Currency appreciation",
+                  "C) Tax collection",
+                  "D] Export growth"
+                ],
+                "correctAnswer": "A",
+                "translation": "Lợi ích tiềm năng nào được đề cập cho các nền kinh tế mới nổi?"
+              },
+              {
+                "id": "listening-q23",
+                "type": "multiple-choice",
+                "questionText": "What risk does the central banker emphasize?",
+                "options": [
+                  "A) Bank disintermediation",
+                  "B) Technological failure",
+                  "C) Currency volatility",
+                  "D] Inflationary pressure"
+                ],
+                "correctAnswer": "A",
+                "translation": "Nhà điều hành ngân hàng trung ương nhấn mạnh rủi ro nào?"
+              },
+              {
+                "id": "listening-q24",
+                "type": "multiple-choice",
+                "questionText": "How can risks be mitigated?",
+                "options": [
+                  "A) Through design choices",
+                  "B) Through regulation",
+                  "C) Through education",
+                  "D] Through insurance"
+                ],
+                "correctAnswer": "A",
+                "translation": "Làm thế nào rủi ro có thể được giảm thiểu?"
+              },
+              {
+                "id": "listening-q25",
+                "type": "multiple-choice",
+                "questionText": "What concern is raised about privacy?",
+                "options": [
+                  "A) Surveillance potential",
+                  "B) Data theft",
+                  "C) Identity fraud",
+                  "D] Hacking risks"
+                ],
+                "correctAnswer": "A",
+                "translation": "Mối quan tâm nào được nêu lên về quyền riêng tư?"
+              },
+              {
+                "id": "listening-q26",
+                "type": "multiple-choice",
+                "questionText": "What technology offers privacy solutions?",
+                "options": [
+                  "A) Zero-knowledge proofs",
+                  "B) Blockchain",
+                  "C) Encryption",
+                  "D] Biometrics"
+                ],
+                "correctAnswer": "A",
+                "translation": "Công nghệ nào cung cấp giải pháp bảo mật?"
+              },
+              {
+                "id": "listening-q27",
+                "type": "multiple-choice",
+                "questionText": "What international issue is mentioned?",
+                "options": [
+                  "A) Cross-border payments",
+                  "B) Trade disputes",
+                  "C) Sanctions",
+                  "D] Tax treaties"
+                ],
+                "correctAnswer": "A",
+                "translation": "Vấn đề quốc tế nào được đề cập?"
+              },
+              {
+                "id": "listening-q28",
+                "type": "multiple-choice",
+                "questionText": "What advantage is mentioned for first movers?",
+                "options": [
+                  "A) Setting technical standards",
+                  "B) Gaining market share",
+                  "C) Reducing costs",
+                  "D] Increasing profits"
+                ],
+                "correctAnswer": "A",
+                "translation": "Lợi thế nào được đề cập cho những người tiên phong?"
+              },
+              {
+                "id": "listening-q29",
+                "type": "multiple-choice",
+                "questionText": "What monetary policy constraint could be overcome?",
+                "options": [
+                  "A) Zero lower bound",
+                  "B) Inflation targeting",
+                  "C) Exchange rate stability",
+                  "D] Capital controls"
+                ],
+                "correctAnswer": "A",
+                "translation": "Ràng buộc chính sách tiền tệ nào có thể được khắc phục?"
+              },
+              {
+                "id": "listening-q30",
+                "type": "multiple-choice",
+                "questionText": "What does the transition require?",
+                "options": [
+                  "A) Robust governance",
+                  "B) Rapid implementation",
+                  "C) Minimal regulation",
+                  "D] Technical expertise"
+                ],
+                "correctAnswer": "A",
+                "translation": "Quá trình chuyển đổi yêu cầu điều gì?"
+              }
+            ]
+          },
+          {
+            "partNumber": 4,
+            "title": "Part 4: Lecture on labor economics and future of work",
+            "instructions": "Listen to the lecture and answer questions 31-40.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.3,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Labor Economist",
+                "variation": 0.07,
+                "accent": "academic",
+                "emotion": "authoritative",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 4. You will hear a lecture on labor economics and the future of work. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "The contemporary labor market is undergoing transformations more profound than any since the Industrial Revolution. Automation, demographic shifts, and globalization are simultaneously reshaping employment patterns, skill requirements, and income distribution. While technological progress has historically created more jobs than it destroyed, the current wave of AI and robotics differs in its potential to automate cognitive tasks previously considered immune to automation. The polarization of labor markets—with growth in high-skill, high-wage jobs and low-skill, low-wage jobs but decline in middle-skill occupations—poses significant challenges for social cohesion and intergenerational mobility. The gig economy and platform work create flexibility but also precariousness, raising fundamental questions about social protection systems designed for traditional employment relationships. Demographic aging in advanced economies contrasts with youth bulges in developing regions, creating complex migration pressures and global labor market interdependencies. Addressing these challenges requires rethinking education systems, social contracts, and redistribution mechanisms. The concept of lifelong learning must evolve from aspiration to operational reality, supported by innovative financing mechanisms and credentialing systems. Ultimately, the future of work will be determined not just by technological possibilities but by policy choices that balance efficiency, equity, and human dignity."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q31",
+                "type": "multiple-choice",
+                "questionText": "What is the labor market undergoing?",
+                "options": [
+                  "A) Minor adjustments",
+                  "B) Profound transformations",
+                  "C) Temporary fluctuations",
+                  "D] Cyclical changes"
+                ],
+                "correctAnswer": "B",
+                "translation": "Thị trường lao động đang trải qua điều gì?"
+              },
+              {
+                "id": "listening-q32",
+                "type": "multiple-choice",
+                "questionText": "What does current automation differ in?",
+                "options": [
+                  "A) Automating cognitive tasks",
+                  "B) Creating unemployment",
+                  "C) Reducing costs",
+                  "D] Increasing productivity"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tự động hóa hiện tại khác ở điểm nào?"
+              },
+              {
+                "id": "listening-q33",
+                "type": "multiple-choice",
+                "questionText": "What labor market phenomenon is mentioned?",
+                "options": [
+                  "A) Polarization",
+                  "B) Homogenization",
+                  "C) Specialization",
+                  "D] Globalization"
+                ],
+                "correctAnswer": "A",
+                "translation": "Hiện tượng thị trường lao động nào được đề cập?"
+              },
+              {
+                "id": "listening-q34",
+                "type": "multiple-choice",
+                "questionText": "What challenges does polarization pose?",
+                "options": [
+                  "A) Social cohesion",
+                  "B) Economic growth",
+                  "C) Technological progress",
+                  "D] Environmental sustainability"
+                ],
+                "correctAnswer": "A",
+                "translation": "Phân cực đặt ra những thách thức gì?"
+              },
+              {
+                "id": "listening-q35",
+                "type": "multiple-choice",
+                "questionText": "What does the gig economy create?",
+                "options": [
+                  "A) Flexibility and precariousness",
+                  "B) Stability and security",
+                  "C) Equality and fairness",
+                  "D] Growth and prosperity"
+                ],
+                "correctAnswer": "A",
+                "translation": "Kinh tế gig tạo ra điều gì?"
+              },
+              {
+                "id": "listening-q36",
+                "type": "multiple-choice",
+                "questionText": "What demographic contrast is mentioned?",
+                "options": [
+                  "A) Aging vs youth bulges",
+                  "B) Urban vs rural",
+                  "C) Educated vs uneducated",
+                  "D] Rich vs poor"
+                ],
+                "correctAnswer": "A",
+                "translation": "Sự tương phản nhân khẩu học nào được đề cập?"
+              },
+              {
+                "id": "listening-q37",
+                "type": "multiple-choice",
+                "questionText": "What requires rethinking?",
+                "options": [
+                  "A) Education systems",
+                  "B) Monetary policy",
+                  "C) Trade agreements",
+                  "D] Tax rates"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì cần được suy nghĩ lại?"
+              },
+              {
+                "id": "listening-q38",
+                "type": "multiple-choice",
+                "questionText": "What must evolve to operational reality?",
+                "options": [
+                  "A) Lifelong learning",
+                  "B) Universal basic income",
+                  "C) Remote work",
+                  "D] Automation"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì phải phát triển thành thực tế vận hành?"
+              },
+              {
+                "id": "listening-q39",
+                "type": "multiple-choice",
+                "questionText": "What should support lifelong learning?",
+                "options": [
+                  "A) Innovative financing",
+                  "B) Government mandates",
+                  "C) Corporate programs",
+                  "D] International standards"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì nên hỗ trợ học tập suốt đời?"
+              },
+              {
+                "id": "listening-q40",
+                "type": "multiple-choice",
+                "questionText": "What will determine the future of work?",
+                "options": [
+                  "A) Policy choices",
+                  "B) Technological inevitability",
+                  "C) Market forces",
+                  "D] Global trends"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì sẽ quyết định tương lai của công việc?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Reading",
+        "description": "30 questions • 50 minutes",
+        "passages": [
+          {
+            "id": "reading-passage1",
+            "title": "Passage 1: The Economics of Climate Change and Carbon Pricing",
+            "content": "Climate change represents the most significant market failure in human history, requiring urgent economic policy responses. The fundamental economic problem lies in the externalization of greenhouse gas emissions—the costs of climate damage are not reflected in market prices for fossil fuels and emission-intensive goods. Carbon pricing mechanisms, including carbon taxes and emissions trading systems, aim to internalize these externalities by putting a price on carbon emissions. The social cost of carbon attempts to quantify the economic damage caused by an additional ton of CO2 emissions, though estimates vary widely based on discount rates and damage functions. Well-designed carbon pricing can drive innovation in clean technologies while generating revenue that can be used to reduce distortionary taxes or fund climate adaptation. However, carbon pricing faces political economy challenges, including concerns about regressive impacts on low-income households and competitiveness concerns for emission-intensive trade-exposed industries. Border carbon adjustments have been proposed to address leakage and competitiveness issues, though they raise complex World Trade Organization compliance questions. Complementary policies like renewable energy standards, innovation subsidies, and infrastructure investments are often necessary to address market failures beyond the carbon externality. The transition to a low-carbon economy requires coordinated action across multiple policy domains, with carbon pricing serving as a central but not sufficient component of comprehensive climate policy.",
+            "questions": [
+              {
+                "id": "reading-q1",
+                "type": "multiple-choice",
+                "questionText": "What does climate change represent?",
+                "options": [
+                  "A) Market success",
+                  "B) Market failure",
+                  "C) Government failure",
+                  "D] Technological failure"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q2",
+                "type": "multiple-choice",
+                "questionText": "What is the fundamental economic problem?",
+                "options": [
+                  "A) Externalization of emissions",
+                  "B) Insufficient regulation",
+                  "C) Lack of technology",
+                  "D] Consumer behavior"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q3",
+                "type": "multiple-choice",
+                "questionText": "What do carbon pricing mechanisms aim to do?",
+                "options": [
+                  "A) Internalize externalities",
+                  "B) Increase government revenue",
+                  "C) Reduce energy consumption",
+                  "D] Promote nuclear power"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q4",
+                "type": "multiple-choice",
+                "questionText": "What attempts to quantify economic damage?",
+                "options": [
+                  "A) Social cost of carbon",
+                  "B) Carbon tax rate",
+                  "C) Emission targets",
+                  "D] Temperature rise"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q5",
+                "type": "multiple-choice",
+                "questionText": "What can carbon pricing drive?",
+                "options": [
+                  "A) Innovation in clean technologies",
+                  "B) Deforestation",
+                  "C) Fossil fuel use",
+                  "D] Economic stagnation"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q6",
+                "type": "multiple-choice",
+                "questionText": "What challenges does carbon pricing face?",
+                "options": [
+                  "A) Political economy challenges",
+                  "B) Technical feasibility",
+                  "C) Measurement problems",
+                  "D] Scientific uncertainty"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q7",
+                "type": "multiple-choice",
+                "questionText": "What has been proposed for competitiveness issues?",
+                "options": [
+                  "A) Border carbon adjustments",
+                  "B) Tariff reductions",
+                  "C) Subsidy increases",
+                  "D] Tax exemptions"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q8",
+                "type": "multiple-choice",
+                "questionText": "What questions do border adjustments raise?",
+                "options": [
+                  "A) WTO compliance",
+                  "B) UN approval",
+                  "C) EU regulations",
+                  "D] US legislation"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q9",
+                "type": "multiple-choice",
+                "questionText": "What policies are often necessary?",
+                "options": [
+                  "A) Complementary policies",
+                  "B) Alternative policies",
+                  "C) Opposing policies",
+                  "D] International policies"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q10",
+                "type": "multiple-choice",
+                "questionText": "What is carbon pricing in comprehensive policy?",
+                "options": [
+                  "A) Central but not sufficient",
+                  "B) Sufficient alone",
+                  "C) Minor component",
+                  "D] Unnecessary element"
+                ],
+                "correctAnswer": "A"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage2",
+            "title": "Passage 2: Industrial Policy in the 21st Century",
+            "content": "Industrial policy has experienced a remarkable renaissance after decades of neoliberal skepticism about government intervention in economic structure. The theoretical underpinnings of this revival draw on new understandings of market failures in innovation, coordination problems in industrial development, and the role of state capacity in economic transformation. Modern industrial policy differs significantly from its mid-20th century predecessors by emphasizing innovation ecosystems rather than individual firms, mission-oriented approaches rather than sectoral picking, and adaptive learning rather than rigid planning. The emergence of global value chains has complicated industrial targeting, as competitive advantages often reside in specific tasks rather than entire industries. Digital technologies and green transitions represent new frontiers for industrial policy, with governments worldwide implementing strategies to capture leadership positions in artificial intelligence, renewable energy, and electric vehicles. However, contemporary industrial policy faces legitimate concerns about rent-seeking, government failure, and international trade tensions. The challenge lies in designing governance mechanisms that enable productive state intervention while minimizing capture by special interests. Experimental approaches, including independent technical agencies, sunset clauses, and rigorous evaluation, offer promising directions for addressing these governance challenges. The success of industrial policy ultimately depends on state capacity, policy learning, and the ability to foster productive public-private collaborations that leverage comparative advantages while adapting to rapidly changing technological and market conditions.",
+            "questions": [
+              {
+                "id": "reading-q11",
+                "type": "multiple-choice",
+                "questionText": "What has industrial policy experienced?",
+                "options": [
+                  "A) Renaissance",
+                  "B) Decline",
+                  "C) Stagnation",
+                  "D] Rejection"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q12",
+                "type": "multiple-choice",
+                "questionText": "What does modern industrial policy emphasize?",
+                "options": [
+                  "A) Innovation ecosystems",
+                  "B) Individual firms",
+                  "C) Traditional industries",
+                  "D] Protectionism"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q13",
+                "type": "multiple-choice",
+                "questionText": "What has complicated industrial targeting?",
+                "options": [
+                  "A) Global value chains",
+                  "B) Labor markets",
+                  "C) Currency fluctuations",
+                  "D] Political changes"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q14",
+                "type": "multiple-choice",
+                "questionText": "Where do competitive advantages often reside?",
+                "options": [
+                  "A) Specific tasks",
+                  "B) Entire industries",
+                  "C) Natural resources",
+                  "D] Large corporations"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q15",
+                "type": "multiple-choice",
+                "questionText": "What represent new frontiers for industrial policy?",
+                "options": [
+                  "A) Digital technologies",
+                  "B) Traditional manufacturing",
+                  "C) Agriculture",
+                  "D] Textiles"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q16",
+                "type": "multiple-choice",
+                "questionText": "What concerns does industrial policy face?",
+                "options": [
+                  "A) Rent-seeking",
+                  "B) Popular support",
+                  "C) Implementation speed",
+                  "D] Cost effectiveness"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q17",
+                "type": "multiple-choice",
+                "questionText": "What is the main challenge mentioned?",
+                "options": [
+                  "A) Designing governance mechanisms",
+                  "B) Securing funding",
+                  "C) Finding experts",
+                  "D] Measuring outcomes"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q18",
+                "type": "multiple-choice",
+                "questionText": "What offers promising directions?",
+                "options": [
+                  "A) Experimental approaches",
+                  "B) Traditional methods",
+                  "C) International models",
+                  "D] Historical precedents"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q19",
+                "type": "multiple-choice",
+                "questionText": "What does success ultimately depend on?",
+                "options": [
+                  "A) State capacity",
+                  "B) Foreign investment",
+                  "C) Natural resources",
+                  "D] Market size"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q20",
+                "type": "multiple-choice",
+                "questionText": "What must collaborations do?",
+                "options": [
+                  "A) Adapt to changing conditions",
+                  "B) Follow fixed plans",
+                  "C) Avoid risks",
+                  "D] Maximize profits"
+                ],
+                "correctAnswer": "A"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage3",
+            "title": "Passage 3: The Economics of Inequality and Redistribution",
+            "content": "Rising economic inequality has emerged as a defining challenge of the 21st century, with profound implications for economic growth, social cohesion, and political stability. The drivers of inequality are multifaceted, including technological change favoring capital and high-skilled labor, globalization, changing labor market institutions, and tax policy evolution. Thomas Piketty's work highlighted the tendency for returns on capital to exceed economic growth rates, potentially leading to inherited wealth dominance. However, the relationship between inequality and growth is complex—some inequality may incentivize innovation and effort, while extreme inequality can undermine growth by limiting human capital development and creating political instability. Modern redistribution policies must navigate difficult trade-offs between efficiency and equity, while addressing new challenges like wealth concentration in the digital economy and cross-border tax avoidance. Universal basic income proposals have gained attention as potential responses to automation-induced job displacement, though their fiscal feasibility and labor market effects remain debated. Place-based policies attempt to address spatial inequalities, but face challenges of targeting and potential inefficiency. The progressivity of tax-benefit systems has declined in many countries, while new forms of digital capital create novel challenges for tax design. Addressing inequality requires comprehensive approaches that combine education and skills policies, labor market institutions, progressive taxation, and social protection systems adapted to changing work patterns and demographic realities.",
+            "questions": [
+              {
+                "id": "reading-q21",
+                "type": "multiple-choice",
+                "questionText": "What has emerged as a defining challenge?",
+                "options": [
+                  "A) Rising inequality",
+                  "B) Population decline",
+                  "C) Environmental degradation",
+                  "D] Technological stagnation"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q22",
+                "type": "multiple-choice",
+                "questionText": "What did Piketty's work highlight?",
+                "options": [
+                  "A) Capital returns exceeding growth",
+                  "B) Labor productivity decline",
+                  "C) Technological unemployment",
+                  "D] Globalization benefits"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q23",
+                "type": "multiple-choice",
+                "questionText": "What can extreme inequality undermine?",
+                "options": [
+                  "A) Economic growth",
+                  "B) Innovation",
+                  "C) Competition",
+                  "D] Entrepreneurship"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q24",
+                "type": "multiple-choice",
+                "questionText": "What trade-offs must policies navigate?",
+                "options": [
+                  "A) Efficiency and equity",
+                  "B) Growth and inflation",
+                  "C) Employment and wages",
+                  "D] Investment and consumption"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q25",
+                "type": "multiple-choice",
+                "questionText": "What new challenges are mentioned?",
+                "options": [
+                  "A) Wealth concentration in digital economy",
+                  "B) Agricultural productivity",
+                  "C) Manufacturing decline",
+                  "D] Service sector growth"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q26",
+                "type": "multiple-choice",
+                "questionText": "What has gained attention as potential response?",
+                "options": [
+                  "A) Universal basic income",
+                  "B) Higher minimum wage",
+                  "C) Lower taxes",
+                  "D] More regulation"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q27",
+                "type": "multiple-choice",
+                "questionText": "What do place-based policies attempt to address?",
+                "options": [
+                  "A) Spatial inequalities",
+                  "B) Income inequalities",
+                  "C) Educational inequalities",
+                  "D] Health inequalities"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q28",
+                "type": "multiple-choice",
+                "questionText": "What has declined in many countries?",
+                "options": [
+                  "A) Progressivity of tax systems",
+                  "B) Economic growth",
+                  "C) Population growth",
+                  "D] Inflation rates"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q29",
+                "type": "multiple-choice",
+                "questionText": "What create novel challenges for tax design?",
+                "options": [
+                  "A) Digital capital forms",
+                  "B) Traditional assets",
+                  "C) Real estate",
+                  "D] Natural resources"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q30",
+                "type": "multiple-choice",
+                "questionText": "What does addressing inequality require?",
+                "options": [
+                  "A) Comprehensive approaches",
+                  "B) Simple solutions",
+                  "C) Technological fixes",
+                  "D] Market solutions"
+                ],
+                "correctAnswer": "A"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "title": "Writing",
+        "description": "60 minutes",
+        "tasks": [
+          {
+            "id": "writing-task1",
+            "title": "Writing Task 1",
+            "instructions": "You should spend about 20 minutes on this task. The chart below shows government revenue sources as percentages of total revenue for four different countries in 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+            "taskType": "Academic",
+            "wordCountMin": 150,
+            "timeLimit": 20,
+            "description": "You will be presented with a bar chart showing economic data and asked to describe the information in your own words.",
+            "sampleData": {
+              "type": "bar-chart",
+              "title": "Government Revenue Sources as Percentage of Total Revenue (2020)",
+              "data": {
+                "Income Tax": {
+                  "USA": 45,
+                  "Germany": 35,
+                  "Japan": 28,
+                  "Norway": 25
+                },
+                "Corporate Tax": {
+                  "USA": 10,
+                  "Germany": 8,
+                  "Japan": 12,
+                  "Norway": 22
+                },
+                "VAT/Sales Tax": {
+                  "USA": 18,
+                  "Germany": 32,
+                  "Japan": 20,
+                  "Norway": 25
+                },
+                "Social Security": {
+                  "USA": 25,
+                  "Germany": 40,
+                  "Japan": 38,
+                  "Norway": 25
+                },
+                "Other": {
+                  "USA": 2,
+                  "Germany": 5,
+                  "Japan": 2,
+                  "Norway": 3
+                }
+              },
+              "units": "Percentage of Total Revenue"
+            },
+            "assessmentCriteria": [
+              "Task Achievement",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          },
+          {
+            "id": "writing-task2",
+            "title": "Writing Task 2",
+            "instructions": "You should spend about 40 minutes on this task. Some economists advocate for universal basic income as a solution to technological unemployment and inequality, while others argue it would reduce work incentives and be fiscally unsustainable. Discuss both these views and give your own opinion. Write at least 250 words.",
+            "taskType": "Essay",
+            "wordCountMin": 250,
+            "timeLimit": 40,
+            "description": "You will be presented with contrasting views on universal basic income and asked to discuss them.",
+            "essayType": "Discussion",
+            "topics": [
+              "Universal basic income pros and cons",
+              "Technological unemployment solutions",
+              "Social welfare systems"
+            ],
+            "keyPoints": [
+              "Arguments for UBI addressing technological change",
+              "Arguments against UBI regarding work incentives and costs",
+              "Synthesis and personal position"
+            ],
+            "assessmentCriteria": [
+              "Task Response",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "title": "Grammar & Language Use",
+        "description": "20 questions • Approximately 15 minutes",
+        "questions": [
+          {
+            "id": "grammar-q1",
+            "type": "multiple-choice",
+            "questionText": "_____ the complexity of modern financial systems, comprehensive regulation has become increasingly necessary.",
+            "options": [
+              "A) Given",
+              "B) Giving",
+              "C) To give",
+              "D] Having given"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Preposition meaning 'considering'",
+            "translation": "Xét đến sự phức tạp của các hệ thống tài chính hiện đại, quy định toàn diện đã trở nên ngày càng cần thiết."
+          },
+          {
+            "id": "grammar-q2",
+            "type": "multiple-choice",
+            "questionText": "The economic recovery, _____ by unprecedented fiscal stimulus, exceeded most forecasts.",
+            "options": [
+              "A) bolstered",
+              "B) bolstering",
+              "C) having bolstered",
+              "D] being bolstered"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Sự phục hồi kinh tế, được củng cố bởi kích thích tài khóa chưa từng có, đã vượt quá hầu hết các dự báo."
+          },
+          {
+            "id": "grammar-q3",
+            "type": "multiple-choice",
+            "questionText": "Not only _____ income inequality, but it also threatens social cohesion.",
+            "options": [
+              "A) does economic polarization exacerbate",
+              "B) economic polarization exacerbates",
+              "C) exacerbates economic polarization",
+              "D] has economic polarization exacerbated"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Inversion after 'not only'",
+            "translation": "Không chỉ phân cực kinh tế làm trầm trọng thêm bất bình đẳng thu nhập, mà nó còn đe dọa sự gắn kết xã hội."
+          },
+          {
+            "id": "grammar-q4",
+            "type": "multiple-choice",
+            "questionText": "The central bank insisted that emergency measures _____ immediately.",
+            "options": [
+              "A) be implemented",
+              "B) are implemented",
+              "C) were implemented",
+              "D] have been implemented"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Subjunctive after verbs of demand",
+            "translation": "Ngân hàng trung ương nhấn mạnh rằng các biện pháp khẩn cấp phải được thực hiện ngay lập tức."
+          },
+          {
+            "id": "grammar-q5",
+            "type": "multiple-choice",
+            "questionText": "_____ all the regulatory reforms, systemic risks persist in the financial sector.",
+            "options": [
+              "A) Notwithstanding",
+              "B) Besides",
+              "C) Moreover",
+              "D] Therefore"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Formal preposition meaning 'despite'",
+            "translation": "Bất chấp tất cả các cải cách quy định, rủi ro hệ thống vẫn tồn tại trong lĩnh vực tài chính."
+          },
+          {
+            "id": "grammar-q6",
+            "type": "multiple-choice",
+            "questionText": "The corporation, _____ subsidiaries operate in over sixty countries, faces complex regulatory challenges.",
+            "options": [
+              "A) whose",
+              "B) which",
+              "C) that",
+              "D] where"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Possessive relative pronoun",
+            "translation": "Tập đoàn, mà các công ty con của nó hoạt động tại hơn sáu mươi quốc gia, phải đối mặt với những thách thức quy định phức tạp."
+          },
+          {
+            "id": "grammar-q7",
+            "type": "multiple-choice",
+            "questionText": "So rapid _____ that traditional economic models struggle to capture its full impact.",
+            "options": [
+              "A) has been digital transformation",
+              "B) digital transformation has been",
+              "C) was digital transformation",
+              "D] digital transformation was"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Inversion after 'so + adjective'",
+            "translation": "Chuyển đổi kỹ thuật số nhanh đến mức các mô hình kinh tế truyền thống phải vật lộn để nắm bắt tác động đầy đủ của nó."
+          },
+          {
+            "id": "grammar-q8",
+            "type": "multiple-choice",
+            "questionText": "The policy committee recommended that environmental considerations _____ into all investment decisions.",
+            "options": [
+              "A) be integrated",
+              "B) are integrated",
+              "C) were integrated",
+              "D] have been integrated"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Subjunctive after verbs of recommendation",
+            "translation": "Ủy ban chính sách khuyến nghị rằng các cân nhắc môi trường phải được tích hợp vào tất cả các quyết định đầu tư."
+          },
+          {
+            "id": "grammar-q9",
+            "type": "multiple-choice",
+            "questionText": "_____ the detailed economic analysis, the investment decision remained controversial.",
+            "options": [
+              "A) Despite",
+              "B) Although",
+              "C) Because of",
+              "D] However"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Preposition for contrast",
+            "translation": "Bất chấp phân tích kinh tế chi tiết, quyết định đầu tư vẫn còn gây tranh cãi."
+          },
+          {
+            "id": "grammar-q10",
+            "type": "multiple-choice",
+            "questionText": "The financial regulations, _____ updated annually, struggle to keep pace with innovation.",
+            "options": [
+              "A) though",
+              "B) despite",
+              "C) because",
+              "D] whether"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Concession with reduced clause",
+            "translation": "Các quy định tài chính, mặc dù được cập nhật hàng năm, vẫn phải vật lộn để theo kịp đổi mới."
+          },
+          {
+            "id": "grammar-q11",
+            "type": "multiple-choice",
+            "questionText": "No sooner _____ the economic sanctions than currency markets reacted violently.",
+            "options": [
+              "A) had",
+              "B) did",
+              "C) was",
+              "D] has"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Past perfect in 'no sooner' construction",
+            "translation": "Ngay sau khi các lệnh trừng phạt kinh tế được áp đặt thì thị trường tiền tệ phản ứng dữ dội."
+          },
+          {
+            "id": "grammar-q12",
+            "type": "multiple-choice",
+            "questionText": "The economic partnership, _____ in 2015, has generated substantial trade benefits.",
+            "options": [
+              "A) established",
+              "B) establishing",
+              "C) having established",
+              "D] being established"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Quan hệ đối tác kinh tế, được thành lập vào năm 2015, đã tạo ra những lợi ích thương mại đáng kể."
+          },
+          {
+            "id": "grammar-q13",
+            "type": "multiple-choice",
+            "questionText": "Such _____ the scale of the infrastructure investment that economic growth accelerated significantly.",
+            "options": [
+              "A) was",
+              "B) were",
+              "C) is",
+              "D] are"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Inversion after 'such' with singular noun",
+            "translation": "Quy mô đầu tư cơ sở hạ tầng lớn đến mức tăng trưởng kinh tế tăng tốc đáng kể."
+          },
+          {
+            "id": "grammar-q14",
+            "type": "multiple-choice",
+            "questionText": "The board demanded that risk management procedures _____ immediately.",
+            "options": [
+              "A) be strengthened",
+              "B) are strengthened",
+              "C) were strengthened",
+              "D] have been strengthened"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Subjunctive after verbs of demand",
+            "translation": "Hội đồng quản trị yêu cầu rằng các thủ tục quản lý rủi ro phải được tăng cường ngay lập tức."
+          },
+          {
+            "id": "grammar-q15",
+            "type": "multiple-choice",
+            "questionText": "_____ comprehensive the regulatory framework, loopholes inevitably emerge.",
+            "options": [
+              "A) However",
+              "B) Although",
+              "C) Despite",
+              "D] Because"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Concession with adjective",
+            "translation": "Dù khuôn khổ quy định có toàn diện đến đâu, các lỗ hổng vẫn không tránh khỏi xuất hiện."
+          },
+          {
+            "id": "grammar-q16",
+            "type": "multiple-choice",
+            "questionText": "The economic forecast, _____ on sophisticated modeling, proved remarkably accurate.",
+            "options": [
+              "A) based",
+              "B) basing",
+              "C) having based",
+              "D] being based"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Dự báo kinh tế, dựa trên mô hình hóa tinh vi, đã chứng minh là chính xác đáng kể."
+          },
+          {
+            "id": "grammar-q17",
+            "type": "multiple-choice",
+            "questionText": "So significant _____ that it transformed global supply chains.",
+            "options": [
+              "A) was the technological advancement",
+              "B) the technological advancement was",
+              "C) had the technological advancement been",
+              "D] the technological advancement had been"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Inversion after 'so + adjective'",
+            "translation": "Tiến bộ công nghệ quan trọng đến mức nó đã biến đổi các chuỗi cung ứng toàn cầu."
+          },
+          {
+            "id": "grammar-q18",
+            "type": "multiple-choice",
+            "questionText": "The committee recommended that climate risk _____ in all financial decisions.",
+            "options": [
+              "A) be considered",
+              "B) is considered",
+              "C) was considered",
+              "D] has been considered"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Subjunctive after verbs of recommendation",
+            "translation": "Ủy ban khuyến nghị rằng rủi ro khí hậu phải được xem xét trong tất cả các quyết định tài chính."
+          },
+          {
+            "id": "grammar-q19",
+            "type": "multiple-choice",
+            "questionText": "_____ the economic uncertainties, innovation investment continued to grow.",
+            "options": [
+              "A) Despite",
+              "B) Although",
+              "C) Because of",
+              "D] However"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Preposition for contrast",
+            "translation": "Bất chấp những bất ổn kinh tế, đầu tư đổi mới tiếp tục tăng trưởng."
+          },
+          {
+            "id": "grammar-q20",
+            "type": "multiple-choice",
+            "questionText": "The trade agreement, _____ negotiated over five years, created new market opportunities.",
+            "options": [
+              "A) painstakingly",
+              "B) painstaking",
+              "C) painstaken",
+              "D] painstake"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Adverb modifying past participle",
+            "translation": "Hiệp định thương mại, được đàm phán tỉ mỉ trong hơn năm năm, đã tạo ra những cơ hội thị trường mới."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "version": "4.5",
+      "author": "IELTS Practice System",
+      "notes": "IELTS Level 4.5 advanced economics test covering Listening (4 parts, 40 questions), Reading (3 passages, 30 questions), Writing (2 tasks), and Grammar (20 questions). Enhanced difficulty with sophisticated economic concepts including financial regulation, sustainable finance, digital currencies, and labor economics."
+    }
+  }
+}

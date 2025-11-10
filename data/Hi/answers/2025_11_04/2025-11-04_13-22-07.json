@@ -1,0 +1,1675 @@
+{
+  "id": "mhk6lsnuj1aaf3v3n2",
+  "timestamp": "2025-11-04T06:22:07.962Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-11-04T06:22:09.257Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "listening": {
+      "listening-q1": "B",
+      "listening-q2": "B",
+      "listening-q3": "B",
+      "listening-q5": "A",
+      "listening-q6": "B",
+      "listening-q7": "D",
+      "listening-q8": "B",
+      "listening-q10": "B",
+      "listening-q4": "A",
+      "listening-q9": "C",
+      "listening-q11": "C",
+      "listening-q17": "B",
+      "listening-q12": "A",
+      "listening-q14": "B",
+      "listening-q15": "B",
+      "listening-q16": "B",
+      "listening-q19": "C",
+      "listening-q13": "B",
+      "listening-q18": "A",
+      "listening-q20": "B",
+      "listening-q22": "B",
+      "listening-q21": "A",
+      "listening-q23": "A",
+      "listening-q24": "B",
+      "listening-q25": "A",
+      "listening-q26": "B",
+      "listening-q27": "C",
+      "listening-q28": "A",
+      "listening-q29": "A",
+      "listening-q30": "A",
+      "listening-q31": "B",
+      "listening-q34": "C",
+      "listening-q37": "C",
+      "listening-q33": "D",
+      "listening-q36": "B",
+      "listening-q40": "B",
+      "listening-q39": "D",
+      "listening-q38": "A",
+      "listening-q35": "C",
+      "listening-q32": "A"
+    },
+    "reading": {
+      "reading-q1": "B",
+      "reading-q2": "C",
+      "reading-q3": "B",
+      "reading-q4": "C",
+      "reading-q5": "B",
+      "reading-q6": "B",
+      "reading-q7": "B",
+      "reading-q8": "B",
+      "reading-q9": "B",
+      "reading-q10": "B",
+      "reading-q11": "B",
+      "reading-q12": "C",
+      "reading-q13": "B",
+      "reading-q14": "C",
+      "reading-q15": "B",
+      "reading-q16": "B",
+      "reading-q17": "B",
+      "reading-q18": "A",
+      "reading-q19": "A",
+      "reading-q20": "C",
+      "reading-q21": "B",
+      "reading-q22": "B",
+      "reading-q23": "A",
+      "reading-q24": "B",
+      "reading-q25": "A",
+      "reading-q26": "A",
+      "reading-q27": "A",
+      "reading-q28": "B",
+      "reading-q29": "A",
+      "reading-q30": "B"
+    },
+    "grammar": {},
+    "writing": {
+      "task1": "The chart shows how many people attended different types of theater performances in London over five years. Overall, musicals had the highest attendance, while opera and ballet had the lowest. Musical performances attracted the most audiences throughout the period and their numbers stayed high and even increased slightly each year. Plays were also popular but their attendance was lower than musicals and showed small ups and downs over the five years. In contrast, opera and ballet had the fewest visitors. Opera attendance remained quite steady but at a low level, while ballet showed a small rise at the end of the period. In general, London audiences preferred musicals and plays much more than opera or ballet, and the gap between these categories stayed clear during the five years, showing that lighter and more entertaining performances drew larger crowds than traditional or classical ones",
+      "task2": "Some people think that traditional theater will disappear because of digital and streaming platforms, while others believe that live performance is something special that technology can never replace. Both ideas have their reasons, but I personally believe that live theater will continue to exist, even in a digital world. On one hand, digital and streaming platforms are becoming more popular and convenient. People can watch plays, musicals, or other performances anytime and anywhere with just a phone or computer. It saves time and money since there is no need to buy expensive tickets or travel to the theater. Technology also allows directors to reach a bigger audience and use special effects that might not be possible on stage. Because of this, many people think that digital theater will take over in the future. On the other hand, live theater gives people an experience that cannot be copied by a screen. The feeling of watching actors perform in front of you, the sound, the lighting, and the energy from the audience create a real human connection. Every performance is slightly different, which makes it unique and emotional. Live theater also builds a sense of community and supports local artists, something digital shows cannot"
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {}
+  },
+  "results": {
+    "listening": 24,
+    "reading": 30,
+    "writing": 15,
+    "speaking": 0,
+    "grammar": 0,
+    "total": 62.73,
+    "listeningTotal": 40,
+    "readingTotal": 30,
+    "writingTotal": 20,
+    "speakingTotal": 20,
+    "grammarTotal": 20,
+    "translationPenalty": 0,
+    "bands": {
+      "listening": 6,
+      "reading": 9,
+      "writing": 7,
+      "speaking": 3,
+      "grammar": 3,
+      "overall": 5.6
+    }
+  },
+  "timeSpent": "54:47",
+  "testData": {
+    "testId": "IELTS-ACTING-4.1-2025-11-04",
+    "testDate": "2025-11-04",
+    "testTitle": "IELTS Level 4.1 Acting and Performance Test",
+    "totalQuestions": 100,
+    "difficultyLevel": "Intermediate",
+    "sections": [
+      {
+        "id": "listening",
+        "title": "Listening",
+        "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+        "parts": [
+          {
+            "partNumber": 1,
+            "title": "Part 1: Conversation about theater audition",
+            "instructions": "Listen to the conversation and answer questions 1-10.",
+            "voiceProfiles": {
+              "male": {
+                "pitch": 0.5,
+                "rate": 1,
+                "volume": 0.9,
+                "name": "Director",
+                "variation": 0.12,
+                "accent": "professional",
+                "emotion": "authoritative",
+                "speakingType": "interview"
+              },
+              "female": {
+                "pitch": 1.5,
+                "rate": 1.1,
+                "volume": 0.8,
+                "name": "Actor",
+                "variation": 0.15,
+                "accent": "educated",
+                "emotion": "nervous",
+                "speakingType": "conversational"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Good morning. This is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between a theater director and an actor at an audition. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+              "conversation": [
+                {
+                  "speaker": "male",
+                  "text": "Good morning, thank you for coming to the audition. Could you start by telling me your name and experience?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "Good morning. My name is Emily Chen, that's E-M-I-L-Y C-H-E-N. I've been acting for about five years, mostly in university productions and local theater."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Excellent. Have you performed in any professional productions?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "Yes, I was in 'The Glass Menagerie' at the City Theater last year, playing the role of Laura. I also understudied for Juliet in 'Romeo and Juliet' at the Royal Shakespeare Company."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Impressive. What acting techniques are you most comfortable with?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "I'm trained in Stanislavski's method, but I've also studied Meisner technique. I particularly enjoy character analysis and emotional memory work."
+                },
+                {
+                  "speaker": "male",
+                  "text": "That's good to hear. For this role, we need someone available for rehearsals from March 15th to April 20th. The performances run from April 25th to May 30th. Would that work for you?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "Yes, that schedule works perfectly. I'm currently available and very interested in this project."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Wonderful. The rehearsal schedule is Monday through Friday from 6 PM to 10 PM, with weekend rehearsals from 10 AM to 4 PM. The pay is £450 per week during rehearsals and £600 per week during performances."
+                },
+                {
+                  "speaker": "female",
+                  "text": "That sounds reasonable. Could you tell me more about the character I'd be playing?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "Certainly. The character is a young teacher in her late twenties who struggles with confidence but discovers her inner strength. It's quite a transformative role."
+                },
+                {
+                  "speaker": "female",
+                  "text": "That sounds challenging but very rewarding. I'd love the opportunity to explore that character development."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Excellent. We'll be making our final decision by next Friday and will contact you regardless of the outcome. Thank you for your time today."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Thank you very much. I look forward to hearing from you."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q1",
+                "type": "multiple-choice",
+                "questionText": "What is the actor's full name?",
+                "options": [
+                  "A) Emily Chan",
+                  "B) Emily Chen",
+                  "C) Emma Chen",
+                  "D) Emma Chan"
+                ],
+                "correctAnswer": "B",
+                "translation": "Tên đầy đủ của diễn viên là gì?"
+              },
+              {
+                "id": "listening-q2",
+                "type": "multiple-choice",
+                "questionText": "How long has she been acting?",
+                "options": [
+                  "A) 3 years",
+                  "B) 5 years",
+                  "C) 7 years",
+                  "D) 10 years"
+                ],
+                "correctAnswer": "B",
+                "translation": "Cô ấy đã diễn xuất bao lâu?"
+              },
+              {
+                "id": "listening-q3",
+                "type": "multiple-choice",
+                "questionText": "Which professional production was mentioned?",
+                "options": [
+                  "A) Romeo and Juliet",
+                  "B) The Glass Menagerie",
+                  "C) Hamlet",
+                  "D) Death of a Salesman"
+                ],
+                "correctAnswer": "B",
+                "translation": "Vở diễn chuyên nghiệp nào được đề cập?"
+              },
+              {
+                "id": "listening-q4",
+                "type": "multiple-choice",
+                "questionText": "Which acting techniques does she mention?",
+                "options": [
+                  "A) Stanislavski and Brecht",
+                  "B) Stanislavski and Meisner",
+                  "C) Meisner and Chekhov",
+                  "D) Brecht and Chekhov"
+                ],
+                "correctAnswer": "B",
+                "translation": "Cô ấy đề cập đến những kỹ thuật diễn xuất nào?"
+              },
+              {
+                "id": "listening-q5",
+                "type": "multiple-choice",
+                "questionText": "When do rehearsals begin?",
+                "options": [
+                  "A) March 15th",
+                  "B) March 20th",
+                  "C) April 15th",
+                  "D) April 20th"
+                ],
+                "correctAnswer": "A",
+                "translation": "Khi nào các buổi diễn tập bắt đầu?"
+              },
+              {
+                "id": "listening-q6",
+                "type": "multiple-choice",
+                "questionText": "What are the weekend rehearsal hours?",
+                "options": [
+                  "A) 9 AM to 3 PM",
+                  "B) 10 AM to 4 PM",
+                  "C) 11 AM to 5 PM",
+                  "D) 12 PM to 6 PM"
+                ],
+                "correctAnswer": "B",
+                "translation": "Giờ diễn tập cuối tuần là bao nhiêu?"
+              },
+              {
+                "id": "listening-q7",
+                "type": "multiple-choice",
+                "questionText": "What is the weekly pay during performances?",
+                "options": [
+                  "A) £400",
+                  "B) £450",
+                  "C) £550",
+                  "D) £600"
+                ],
+                "correctAnswer": "D",
+                "translation": "Lương hàng tuần trong thời gian biểu diễn là bao nhiêu?"
+              },
+              {
+                "id": "listening-q8",
+                "type": "multiple-choice",
+                "questionText": "What is the character's profession?",
+                "options": [
+                  "A) Doctor",
+                  "B) Teacher",
+                  "C) Lawyer",
+                  "D) Artist"
+                ],
+                "correctAnswer": "B",
+                "translation": "Nghề nghiệp của nhân vật là gì?"
+              },
+              {
+                "id": "listening-q9",
+                "type": "multiple-choice",
+                "questionText": "What is the character's main struggle?",
+                "options": [
+                  "A) Financial problems",
+                  "B) Family issues",
+                  "C) Confidence",
+                  "D) Health problems"
+                ],
+                "correctAnswer": "C",
+                "translation": "Cuộc đấu tranh chính của nhân vật là gì?"
+              },
+              {
+                "id": "listening-q10",
+                "type": "multiple-choice",
+                "questionText": "When will the final decision be made?",
+                "options": [
+                  "A) This Friday",
+                  "B) Next Friday",
+                  "C) In two weeks",
+                  "D) Next month"
+                ],
+                "correctAnswer": "B",
+                "translation": "Khi nào quyết định cuối cùng sẽ được đưa ra?"
+              }
+            ]
+          },
+          {
+            "partNumber": 2,
+            "title": "Part 2: Monologue about stage production process",
+            "instructions": "Listen to the monologue and answer questions 11-20.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.4,
+                "rate": 1.2,
+                "volume": 0.9,
+                "name": "Production Manager",
+                "variation": 0.1,
+                "accent": "professional",
+                "emotion": "knowledgeable",
+                "speakingType": "presentation"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 2. You will hear a production manager explaining the theater production process. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Today I'll explain our theater production timeline, which typically spans twelve weeks. The first two weeks involve script analysis and character development, where actors deeply explore their roles. Weeks three through six are dedicated to blocking rehearsals, where we establish movement and positioning on stage. During this phase, we also begin working with the set designer to ensure the physical space supports the dramatic action. Weeks seven and eight focus on technical rehearsals, integrating lighting, sound, and special effects. This is followed by two weeks of dress rehearsals with full costumes and makeup. The final two weeks comprise the actual performances, with eight shows per week. Our budget allocation is 40% for cast salaries, 25% for technical production, 20% for marketing, and 15% for venue costs. We typically sell about 85% of available tickets, with student matinees being particularly popular."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q11",
+                "type": "multiple-choice",
+                "questionText": "How long does the entire production process take?",
+                "options": [
+                  "A) 8 weeks",
+                  "B) 10 weeks",
+                  "C) 12 weeks",
+                  "D) 14 weeks"
+                ],
+                "correctAnswer": "C",
+                "translation": "Toàn bộ quá trình sản xuất mất bao lâu?"
+              },
+              {
+                "id": "listening-q12",
+                "type": "multiple-choice",
+                "questionText": "What happens during the first two weeks?",
+                "options": [
+                  "A) Technical rehearsals",
+                  "B) Script analysis",
+                  "C) Costume fittings",
+                  "D) Marketing planning"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì xảy ra trong hai tuần đầu tiên?"
+              },
+              {
+                "id": "listening-q13",
+                "type": "multiple-choice",
+                "questionText": "When do blocking rehearsals occur?",
+                "options": [
+                  "A) Weeks 1-2",
+                  "B) Weeks 3-6",
+                  "C) Weeks 7-8",
+                  "D) Weeks 9-10"
+                ],
+                "correctAnswer": "B",
+                "translation": "Khi nào các buổi diễn tập blocking diễn ra?"
+              },
+              {
+                "id": "listening-q14",
+                "type": "multiple-choice",
+                "questionText": "Who do they work with during blocking rehearsals?",
+                "options": [
+                  "A) Costume designer",
+                  "B) Set designer",
+                  "C) Music director",
+                  "D) Marketing team"
+                ],
+                "correctAnswer": "B",
+                "translation": "Họ làm việc với ai trong các buổi diễn tập blocking?"
+              },
+              {
+                "id": "listening-q15",
+                "type": "multiple-choice",
+                "questionText": "What is integrated during technical rehearsals?",
+                "options": [
+                  "A) Costumes and makeup",
+                  "B) Lighting and sound",
+                  "C) Marketing materials",
+                  "D) Box office systems"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì được tích hợp trong các buổi diễn tập kỹ thuật?"
+              },
+              {
+                "id": "listening-q16",
+                "type": "multiple-choice",
+                "questionText": "How long do dress rehearsals last?",
+                "options": [
+                  "A) 1 week",
+                  "B) 2 weeks",
+                  "C) 3 weeks",
+                  "D) 4 weeks"
+                ],
+                "correctAnswer": "B",
+                "translation": "Các buổi diễn tập trang phục kéo dài bao lâu?"
+              },
+              {
+                "id": "listening-q17",
+                "type": "multiple-choice",
+                "questionText": "What percentage of the budget goes to cast salaries?",
+                "options": [
+                  "A) 25%",
+                  "B) 40%",
+                  "C) 50%",
+                  "D) 60%"
+                ],
+                "correctAnswer": "B",
+                "translation": "Bao nhiêu phần trăm ngân sách dành cho lương diễn viên?"
+              },
+              {
+                "id": "listening-q18",
+                "type": "multiple-choice",
+                "questionText": "What receives the smallest budget allocation?",
+                "options": [
+                  "A) Technical production",
+                  "B) Marketing",
+                  "C) Venue costs",
+                  "D) Cast salaries"
+                ],
+                "correctAnswer": "C",
+                "translation": "Cái nào nhận được phân bổ ngân sách nhỏ nhất?"
+              },
+              {
+                "id": "listening-q19",
+                "type": "multiple-choice",
+                "questionText": "What percentage of tickets are typically sold?",
+                "options": [
+                  "A) 75%",
+                  "B) 80%",
+                  "C) 85%",
+                  "D) 90%"
+                ],
+                "correctAnswer": "C",
+                "translation": "Thường bán được bao nhiêu phần trăm vé?"
+              },
+              {
+                "id": "listening-q20",
+                "type": "multiple-choice",
+                "questionText": "Which performances are particularly popular?",
+                "options": [
+                  "A) Evening shows",
+                  "B) Weekend performances",
+                  "C) Student matinees",
+                  "D) Opening night"
+                ],
+                "correctAnswer": "C",
+                "translation": "Những buổi biểu diễn nào đặc biệt phổ biến?"
+              }
+            ]
+          },
+          {
+            "partNumber": 3,
+            "title": "Part 3: Conversation between acting students",
+            "instructions": "Listen to the conversation and answer questions 21-30.",
+            "voiceProfiles": {
+              "male": {
+                "pitch": 0.6,
+                "rate": 1.1,
+                "volume": 0.85,
+                "name": "Mark",
+                "variation": 0.13,
+                "accent": "educated",
+                "emotion": "enthusiastic",
+                "speakingType": "discussion"
+              },
+              "female": {
+                "pitch": 1.6,
+                "rate": 1.3,
+                "volume": 0.8,
+                "name": "Lisa",
+                "variation": 0.15,
+                "accent": "educated",
+                "emotion": "analytical",
+                "speakingType": "discussion"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 3. You will hear a conversation between two acting students discussing different performance styles. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+              "conversation": [
+                {
+                  "speaker": "male",
+                  "text": "Lisa, I've been thinking about our discussion on naturalistic versus stylized acting. I'm really drawn to naturalistic performances because they feel so authentic and relatable."
+                },
+                {
+                  "speaker": "female",
+                  "text": "I understand what you mean, Mark, but I think stylized acting has its own merits. It allows for more creative expression and can highlight thematic elements in a way naturalism sometimes can't."
+                },
+                {
+                  "speaker": "male",
+                  "text": "That's true. When we studied Brecht's epic theater, I appreciated how he used alienation effects to make audiences think critically rather than just emotionally connect."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Exactly! And in Asian theater traditions like Kabuki or Beijing Opera, the stylization creates a beautiful symbolic language that communicates complex emotions through gesture and movement."
+                },
+                {
+                  "speaker": "male",
+                  "text": "I suppose the choice depends on the material. For contemporary dramas, naturalism works well, but for classical or experimental works, stylized approaches might be more appropriate."
+                },
+                {
+                  "speaker": "female",
+                  "text": "I agree. The director's vision and the playwright's intentions should guide our approach. What I find challenging is transitioning between different styles within the same production."
+                },
+                {
+                  "speaker": "male",
+                  "text": "That's a good point. Our professor mentioned that versatile actors need to master multiple techniques to handle diverse roles throughout their careers."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Speaking of techniques, I've been working on my vocal projection using the Linklater method. It's really helped me maintain vocal health during long performances."
+                },
+                {
+                  "speaker": "male",
+                  "text": "I should look into that. I've been focusing more on physical characterization through Laban movement analysis. It's amazing how body language can communicate so much about a character."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Both are essential skills. I think the most successful actors are those who continuously develop their craft through various training methods."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q21",
+                "type": "multiple-choice",
+                "questionText": "What is the main topic of discussion?",
+                "options": [
+                  "A) Vocal techniques",
+                  "B) Performance styles",
+                  "C) Theater history",
+                  "D) Career opportunities"
+                ],
+                "correctAnswer": "B",
+                "translation": "Chủ đề thảo luận chính là gì?"
+              },
+              {
+                "id": "listening-q22",
+                "type": "multiple-choice",
+                "questionText": "Which style does Mark prefer?",
+                "options": [
+                  "A) Stylized acting",
+                  "B) Naturalistic acting",
+                  "C) Classical acting",
+                  "D) Experimental acting"
+                ],
+                "correctAnswer": "B",
+                "translation": "Mark thích phong cách nào?"
+              },
+              {
+                "id": "listening-q23",
+                "type": "multiple-choice",
+                "questionText": "What does Lisa appreciate about stylized acting?",
+                "options": [
+                  "A) Emotional connection",
+                  "B) Creative expression",
+                  "C) Simplicity",
+                  "D) Realism"
+                ],
+                "correctAnswer": "B",
+                "translation": "Lisa đánh giá cao điều gì về diễn xuất cách điệu?"
+              },
+              {
+                "id": "listening-q24",
+                "type": "multiple-choice",
+                "questionText": "Which theater practitioner is mentioned?",
+                "options": [
+                  "A) Stanislavski",
+                  "B) Brecht",
+                  "C) Meisner",
+                  "D) Grotowski"
+                ],
+                "correctAnswer": "B",
+                "translation": "Nhà sân khấu nào được đề cập?"
+              },
+              {
+                "id": "listening-q25",
+                "type": "multiple-choice",
+                "questionText": "What does Brecht's epic theater encourage?",
+                "options": [
+                  "A) Emotional identification",
+                  "B) Critical thinking",
+                  "C) Realistic portrayal",
+                  "D) Improvisation"
+                ],
+                "correctAnswer": "B",
+                "translation": "Sân khấu epic của Brecht khuyến khích điều gì?"
+              },
+              {
+                "id": "listening-q26",
+                "type": "multiple-choice",
+                "questionText": "Which Asian theater traditions are mentioned?",
+                "options": [
+                  "A) Kabuki and Noh",
+                  "B) Beijing Opera and Kabuki",
+                  "C) Kathakali and Beijing Opera",
+                  "D) Noh and Kathakali"
+                ],
+                "correctAnswer": "B",
+                "translation": "Truyền thống sân khấu châu Á nào được đề cập?"
+              },
+              {
+                "id": "listening-q27",
+                "type": "multiple-choice",
+                "questionText": "What does Lisa find challenging?",
+                "options": [
+                  "A) Memorizing lines",
+                  "B) Transitioning between styles",
+                  "C) Vocal projection",
+                  "D) Physical characterization"
+                ],
+                "correctAnswer": "B",
+                "translation": "Lisa thấy điều gì khó khăn?"
+              },
+              {
+                "id": "listening-q28",
+                "type": "multiple-choice",
+                "questionText": "Which vocal technique is Lisa using?",
+                "options": [
+                  "A) Alexander Technique",
+                  "B) Linklater Method",
+                  "C) Fitzmaurice Voicework",
+                  "D) Rodenburg Method"
+                ],
+                "correctAnswer": "B",
+                "translation": "Lisa đang sử dụng kỹ thuật giọng nói nào?"
+              },
+              {
+                "id": "listening-q29",
+                "type": "multiple-choice",
+                "questionText": "What is Mark focusing on?",
+                "options": [
+                  "A) Vocal projection",
+                  "B) Physical characterization",
+                  "C) Emotional memory",
+                  "D) Script analysis"
+                ],
+                "correctAnswer": "B",
+                "translation": "Mark đang tập trung vào điều gì?"
+              },
+              {
+                "id": "listening-q30",
+                "type": "multiple-choice",
+                "questionText": "What do both agree is important for actors?",
+                "options": [
+                  "A) Specializing in one style",
+                  "B) Continuous skill development",
+                  "C) Focusing only on classical works",
+                  "D) Avoiding experimental theater"
+                ],
+                "correctAnswer": "B",
+                "translation": "Cả hai đồng ý điều gì là quan trọng đối với diễn viên?"
+              }
+            ]
+          },
+          {
+            "partNumber": 4,
+            "title": "Part 4: Lecture on contemporary theater trends",
+            "instructions": "Listen to the lecture and answer questions 31-40.",
+            "voiceProfiles": {
+              "male": {
+                "pitch": 0.4,
+                "rate": 1,
+                "volume": 0.9,
+                "name": "Theater Professor",
+                "variation": 0.08,
+                "accent": "academic",
+                "emotion": "authoritative",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 4. You will hear a lecture on contemporary trends in theater. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+              "conversation": [
+                {
+                  "speaker": "male",
+                  "text": "Today we'll examine three significant trends reshaping contemporary theater. First, immersive theater has gained considerable popularity, breaking the traditional fourth wall and placing audiences within the performance space. Companies like Punchdrunk have pioneered this approach, creating multi-sensory experiences where spectators move through elaborate environments. Second, digital integration has transformed theatrical storytelling. Projection mapping, virtual reality elements, and interactive media now frequently complement live performance, creating hybrid art forms. Finally, documentary theater has emerged as a powerful tool for social commentary, using verbatim testimony and real events to address pressing political and social issues. This form often involves extensive community engagement and aims to provoke dialogue rather than provide entertainment. These trends reflect theater's ongoing evolution in response to technological advances and changing audience expectations, demonstrating the art form's remarkable adaptability and continued relevance in the digital age."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q31",
+                "type": "multiple-choice",
+                "questionText": "How many trends are discussed in the lecture?",
+                "options": [
+                  "A) Two",
+                  "B) Three",
+                  "C) Four",
+                  "D) Five"
+                ],
+                "correctAnswer": "B",
+                "translation": "Có bao nhiêu xu hướng được thảo luận trong bài giảng?"
+              },
+              {
+                "id": "listening-q32",
+                "type": "multiple-choice",
+                "questionText": "What is the first trend mentioned?",
+                "options": [
+                  "A) Digital integration",
+                  "B) Documentary theater",
+                  "C) Immersive theater",
+                  "D) Classical revival"
+                ],
+                "correctAnswer": "C",
+                "translation": "Xu hướng đầu tiên được đề cập là gì?"
+              },
+              {
+                "id": "listening-q33",
+                "type": "multiple-choice",
+                "questionText": "What does immersive theater break?",
+                "options": [
+                  "A) The stage",
+                  "B) The fourth wall",
+                  "C) Traditional seating",
+                  "D) Performance rules"
+                ],
+                "correctAnswer": "B",
+                "translation": "Sân khấu immersive phá vỡ cái gì?"
+              },
+              {
+                "id": "listening-q34",
+                "type": "multiple-choice",
+                "questionText": "Which company is mentioned as pioneering immersive theater?",
+                "options": [
+                  "A) Royal Shakespeare Company",
+                  "B) National Theatre",
+                  "C) Punchdrunk",
+                  "D) Complicité"
+                ],
+                "correctAnswer": "C",
+                "translation": "Công ty nào được đề cập là tiên phong trong sân khấu immersive?"
+              },
+              {
+                "id": "listening-q35",
+                "type": "multiple-choice",
+                "questionText": "What does digital integration include?",
+                "options": [
+                  "A) Projection mapping",
+                  "B) Live music",
+                  "C) Traditional sets",
+                  "D) Manual lighting"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tích hợp kỹ thuật số bao gồm những gì?"
+              },
+              {
+                "id": "listening-q36",
+                "type": "multiple-choice",
+                "questionText": "What kind of art forms does digital integration create?",
+                "options": [
+                  "A) Pure theater",
+                  "B) Hybrid forms",
+                  "C) Classical works",
+                  "D) Experimental pieces"
+                ],
+                "correctAnswer": "B",
+                "translation": "Tích hợp kỹ thuật số tạo ra loại hình nghệ thuật nào?"
+              },
+              {
+                "id": "listening-q37",
+                "type": "multiple-choice",
+                "questionText": "What is the third trend discussed?",
+                "options": [
+                  "A) Immersive theater",
+                  "B) Digital integration",
+                  "C) Documentary theater",
+                  "D) Musical theater"
+                ],
+                "correctAnswer": "C",
+                "translation": "Xu hướng thứ ba được thảo luận là gì?"
+              },
+              {
+                "id": "listening-q38",
+                "type": "multiple-choice",
+                "questionText": "What does documentary theater use?",
+                "options": [
+                  "A) Fictional stories",
+                  "B) Verbatim testimony",
+                  "C) Improvised dialogue",
+                  "D) Classical texts"
+                ],
+                "correctAnswer": "B",
+                "translation": "Sân khấu tài liệu sử dụng cái gì?"
+              },
+              {
+                "id": "listening-q39",
+                "type": "multiple-choice",
+                "questionText": "What is the main goal of documentary theater?",
+                "options": [
+                  "A) Entertainment",
+                  "B) Profit",
+                  "C) Provoking dialogue",
+                  "D) Technical innovation"
+                ],
+                "correctAnswer": "C",
+                "translation": "Mục tiêu chính của sân khấu tài liệu là gì?"
+              },
+              {
+                "id": "listening-q40",
+                "type": "multiple-choice",
+                "questionText": "What do these trends demonstrate about theater?",
+                "options": [
+                  "A) Its decline",
+                  "B) Its adaptability",
+                  "C) Its traditionalism",
+                  "D) Its commercialization"
+                ],
+                "correctAnswer": "B",
+                "translation": "Những xu hướng này chứng minh điều gì về sân khấu?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Reading",
+        "description": "30 questions • 50 minutes",
+        "passages": [
+          {
+            "id": "reading-passage1",
+            "title": "Passage 1: The Evolution of Acting Techniques",
+            "content": "The development of acting methodologies has undergone significant transformation throughout theatrical history. In ancient Greek theater, performance was highly stylized, with actors wearing masks to represent different characters and emotions. This approach emphasized vocal projection and physical gesture over psychological realism. During the Renaissance, acting became more naturalistic, though still constrained by formal conventions. The 19th century witnessed the emergence of Konstantin Stanislavski's system, which revolutionized acting by introducing psychological realism and emotional authenticity. Stanislavski's method encouraged actors to draw upon their own experiences and emotions to create believable characters. This approach was further developed in the 20th century by practitioners like Lee Strasberg, who emphasized emotional memory, and Sanford Meisner, who focused on spontaneous reaction and truthful behavior in imaginary circumstances. Contemporary acting training often integrates elements from various techniques, recognizing that different performance contexts may require different approaches. The evolution of acting methods reflects broader cultural shifts and changing understandings of human psychology and behavior.",
+            "questions": [
+              {
+                "id": "reading-q1",
+                "type": "multiple-choice",
+                "questionText": "What was emphasized in ancient Greek theater?",
+                "options": [
+                  "A) Psychological realism",
+                  "B) Vocal projection and physical gesture",
+                  "C) Emotional memory",
+                  "D) Spontaneous reaction"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q2",
+                "type": "multiple-choice",
+                "questionText": "What did actors wear in Greek theater to represent emotions?",
+                "options": [
+                  "A) Costumes",
+                  "B) Makeup",
+                  "C) Masks",
+                  "D) Hats"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q3",
+                "type": "multiple-choice",
+                "questionText": "Which period saw acting become more naturalistic?",
+                "options": [
+                  "A) Ancient Greece",
+                  "B) Renaissance",
+                  "C) 19th century",
+                  "D) 20th century"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q4",
+                "type": "multiple-choice",
+                "questionText": "Who revolutionized acting with psychological realism?",
+                "options": [
+                  "A) Lee Strasberg",
+                  "B) Sanford Meisner",
+                  "C) Konstantin Stanislavski",
+                  "D) Bertolt Brecht"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q5",
+                "type": "multiple-choice",
+                "questionText": "What did Stanislavski encourage actors to draw upon?",
+                "options": [
+                  "A) Historical research",
+                  "B) Their own experiences",
+                  "C) Other performances",
+                  "D) Theoretical texts"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q6",
+                "type": "multiple-choice",
+                "questionText": "Which practitioner emphasized emotional memory?",
+                "options": [
+                  "A) Stanislavski",
+                  "B) Strasberg",
+                  "C) Meisner",
+                  "D) Brecht"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q7",
+                "type": "multiple-choice",
+                "questionText": "What did Meisner focus on?",
+                "options": [
+                  "A) Historical accuracy",
+                  "B) Spontaneous reaction",
+                  "C) Vocal technique",
+                  "D) Physical comedy"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q8",
+                "type": "multiple-choice",
+                "questionText": "How do contemporary acting trainings typically approach different techniques?",
+                "options": [
+                  "A) They reject older methods",
+                  "B) They integrate various elements",
+                  "C) They focus on one technique",
+                  "D) They avoid psychological approaches"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q9",
+                "type": "multiple-choice",
+                "questionText": "What does the evolution of acting methods reflect?",
+                "options": [
+                  "A) Commercial interests",
+                  "B) Broader cultural shifts",
+                  "C) Technological advances",
+                  "D) Political changes"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q10",
+                "type": "multiple-choice",
+                "questionText": "What was NOT mentioned as a constraint during the Renaissance?",
+                "options": [
+                  "A) Formal conventions",
+                  "B) Psychological realism",
+                  "C) Naturalistic approach",
+                  "D) All of these were mentioned"
+                ],
+                "correctAnswer": "B"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage2",
+            "title": "Passage 2: The Business of Theater Production",
+            "content": "Producing theater involves complex financial and logistical considerations that extend far beyond artistic creation. A typical commercial theater production requires substantial investment, with budgets often exceeding millions for West End or Broadway shows. These budgets cover numerous expenses including actor salaries, director and designer fees, venue rental, set construction, costume creation, marketing campaigns, and administrative costs. Producers must carefully balance artistic vision with commercial viability, as ticket sales alone rarely cover production expenses during initial runs. Additional revenue streams include merchandise sales, program advertisements, and potential film or streaming rights. The production timeline typically involves several distinct phases: development workshops, rehearsals, preview performances, official opening, and the main run. Successful productions may transfer to other cities or countries, while unsuccessful ones may close after only a few performances. Risk management is crucial, with producers often forming partnerships or seeking investors to distribute financial exposure. Understanding audience demographics and market trends is essential for making informed programming decisions that balance artistic integrity with financial sustainability.",
+            "questions": [
+              {
+                "id": "reading-q11",
+                "type": "multiple-choice",
+                "questionText": "What is the main topic of this passage?",
+                "options": [
+                  "A) Acting techniques",
+                  "B) Theater business aspects",
+                  "C) Playwriting methods",
+                  "D) Historical theater"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q12",
+                "type": "multiple-choice",
+                "questionText": "What do theater budgets typically cover?",
+                "options": [
+                  "A) Only actor salaries",
+                  "B) Artistic elements only",
+                  "C) Numerous expenses",
+                  "D) Marketing only"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q13",
+                "type": "multiple-choice",
+                "questionText": "What must producers balance?",
+                "options": [
+                  "A) Different acting styles",
+                  "B) Artistic vision and commercial viability",
+                  "C) Historical accuracy and modern appeal",
+                  "D) Actor egos and director visions"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q14",
+                "type": "multiple-choice",
+                "questionText": "What is mentioned as an additional revenue stream?",
+                "options": [
+                  "A) Ticket sales only",
+                  "B) Government funding",
+                  "C) Merchandise sales",
+                  "D) Private donations"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q15",
+                "type": "multiple-choice",
+                "questionText": "Which phase comes after rehearsals in the production timeline?",
+                "options": [
+                  "A) Development workshops",
+                  "B) Preview performances",
+                  "C) Official opening",
+                  "D) Main run"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q16",
+                "type": "multiple-choice",
+                "questionText": "What may successful productions do?",
+                "options": [
+                  "A) Close immediately",
+                  "B) Transfer to other locations",
+                  "C) Reduce ticket prices",
+                  "D) Change directors"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q17",
+                "type": "multiple-choice",
+                "questionText": "Why is risk management crucial?",
+                "options": [
+                  "A) To ensure artistic purity",
+                  "B) To distribute financial exposure",
+                  "C) To please critics",
+                  "D) To attract famous actors"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q18",
+                "type": "multiple-choice",
+                "questionText": "What do producers often form to manage risk?",
+                "options": [
+                  "A) Partnerships",
+                  "B) Unions",
+                  "C) Government agencies",
+                  "D) Educational programs"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q19",
+                "type": "multiple-choice",
+                "questionText": "What is essential for programming decisions?",
+                "options": [
+                  "A) Understanding audience demographics",
+                  "B) Following critic opinions",
+                  "C) Copying successful shows",
+                  "D) Avoiding risks completely"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q20",
+                "type": "multiple-choice",
+                "questionText": "What is the ultimate goal mentioned?",
+                "options": [
+                  "A) Maximum profit",
+                  "B) Critical acclaim",
+                  "C) Balancing artistic integrity and financial sustainability",
+                  "D) International fame"
+                ],
+                "correctAnswer": "C"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage3",
+            "title": "Passage 3: Cross-Cultural Influences in Contemporary Performance",
+            "content": "Globalization has significantly impacted theatrical practices, leading to increased cross-cultural exchange and hybridization of performance traditions. Contemporary theater frequently incorporates elements from diverse cultural backgrounds, creating innovative forms that challenge traditional boundaries. This intercultural exchange manifests in various ways: Western directors adapting Asian performance techniques, traditional forms incorporating modern technology, and collaborative productions involving artists from multiple countries. However, this practice raises important questions about cultural appropriation versus appreciation. Ethical intercultural work requires deep respect for source cultures, proper attribution, and often involves direct collaboration with cultural practitioners. The work of directors like Peter Brook and Ariane Mnouchkine demonstrates how cross-cultural influences can enrich theatrical language while maintaining cultural integrity. Similarly, the growing recognition of indigenous performance traditions has expanded understanding of what constitutes theater, incorporating ritual, storytelling, and community practices that differ from Western dramatic structures. This global dialogue not only creates aesthetically rich work but also fosters greater cultural understanding and challenges ethnocentric perspectives in the arts.",
+            "questions": [
+              {
+                "id": "reading-q21",
+                "type": "multiple-choice",
+                "questionText": "What has globalization impacted in theater?",
+                "options": [
+                  "A) Ticket prices",
+                  "B) Theatrical practices",
+                  "C) Building designs",
+                  "D) Acting salaries"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q22",
+                "type": "multiple-choice",
+                "questionText": "What does contemporary theater frequently incorporate?",
+                "options": [
+                  "A) Only Western traditions",
+                  "B) Diverse cultural elements",
+                  "C) Historical accuracy",
+                  "D) Classical texts only"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q23",
+                "type": "multiple-choice",
+                "questionText": "What do these hybrid forms challenge?",
+                "options": [
+                  "A) Traditional boundaries",
+                  "B) Government regulations",
+                  "C) Audience expectations",
+                  "D) Technical capabilities"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q24",
+                "type": "multiple-choice",
+                "questionText": "What important question does intercultural work raise?",
+                "options": [
+                  "A) Financial viability",
+                  "B) Cultural appropriation vs appreciation",
+                  "C) Technical complexity",
+                  "D) Language barriers"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q25",
+                "type": "multiple-choice",
+                "questionText": "What does ethical intercultural work require?",
+                "options": [
+                  "A) Deep respect for source cultures",
+                  "B) Complete transformation",
+                  "C) Financial compensation",
+                  "D) Government approval"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q26",
+                "type": "multiple-choice",
+                "questionText": "Which directors are mentioned as examples?",
+                "options": [
+                  "A) Brook and Mnouchkine",
+                  "B) Stanislavski and Brecht",
+                  "C) Strasberg and Meisner",
+                  "D) Shakespeare and Marlowe"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q27",
+                "type": "multiple-choice",
+                "questionText": "What has expanded understanding of theater?",
+                "options": [
+                  "A) Recognition of indigenous traditions",
+                  "B) Commercial success",
+                  "C) Digital technology",
+                  "D) Celebrity involvement"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q28",
+                "type": "multiple-choice",
+                "questionText": "What do indigenous traditions incorporate?",
+                "options": [
+                  "A) Only Western structures",
+                  "B) Ritual and storytelling",
+                  "C) High technology",
+                  "D) Classical texts"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q29",
+                "type": "multiple-choice",
+                "questionText": "What does global dialogue in theater foster?",
+                "options": [
+                  "A) Cultural understanding",
+                  "B) Economic competition",
+                  "C) Technical standardization",
+                  "D) Artistic isolation"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q30",
+                "type": "multiple-choice",
+                "questionText": "What perspectives does this dialogue challenge?",
+                "options": [
+                  "A) Historical",
+                  "B) Ethnocentric",
+                  "C) Political",
+                  "D) Religious"
+                ],
+                "correctAnswer": "B"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "title": "Writing",
+        "description": "60 minutes",
+        "tasks": [
+          {
+            "id": "writing-task1",
+            "title": "Writing Task 1",
+            "instructions": "You should spend about 20 minutes on this task. The chart below shows audience attendance figures for different types of theater performances in London over a five-year period. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+            "taskType": "Academic",
+            "wordCountMin": 150,
+            "timeLimit": 20,
+            "description": "You will be presented with a graph, table, chart or diagram and asked to describe, summarize or explain the information in your own words.",
+            "sampleData": {
+              "type": "line-graph",
+              "title": "Theater Attendance by Genre in London (2020-2024)",
+              "data": {
+                "Musicals": {
+                  "2020": 1200000,
+                  "2021": 900000,
+                  "2022": 1500000,
+                  "2023": 1800000,
+                  "2024": 2000000
+                },
+                "Drama": {
+                  "2020": 800000,
+                  "2021": 600000,
+                  "2022": 950000,
+                  "2023": 1100000,
+                  "2024": 1200000
+                },
+                "Comedy": {
+                  "2020": 600000,
+                  "2021": 500000,
+                  "2022": 750000,
+                  "2023": 850000,
+                  "2024": 900000
+                },
+                "Classical": {
+                  "2020": 400000,
+                  "2021": 300000,
+                  "2022": 450000,
+                  "2023": 500000,
+                  "2024": 550000
+                }
+              },
+              "units": "Number of Attendees"
+            },
+            "assessmentCriteria": [
+              "Task Achievement",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          },
+          {
+            "id": "writing-task2",
+            "title": "Writing Task 2",
+            "instructions": "You should spend about 40 minutes on this task. Some people believe that traditional theater will be replaced by digital and streaming platforms in the future. Others argue that live performance offers a unique experience that cannot be replicated digitally. Discuss both these views and give your own opinion. Write at least 250 words.",
+            "taskType": "Essay",
+            "wordCountMin": 250,
+            "timeLimit": 40,
+            "description": "You will be presented with a point of view, argument or problem. You need to write a discursive essay in response.",
+            "essayType": "Discussion",
+            "topics": [
+              "Digital vs live theater",
+              "Future of performance",
+              "Technological impact on arts"
+            ],
+            "keyPoints": [
+              "Arguments for digital replacement",
+              "Arguments for unique live experience",
+              "Personal opinion with justification"
+            ],
+            "assessmentCriteria": [
+              "Task Response",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "title": "Grammar & Language Use",
+        "description": "20 questions • Approximately 15 minutes",
+        "questions": [
+          {
+            "id": "grammar-q1",
+            "type": "multiple-choice",
+            "questionText": "The actors _____ rehearsing for three hours when the director arrived.",
+            "options": [
+              "A) had been",
+              "B) have been",
+              "C) were",
+              "D) are"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Past perfect continuous for action before another past action",
+            "translation": "Các diễn viên đã diễn tập được ba giờ khi đạo diễn đến."
+          },
+          {
+            "id": "grammar-q2",
+            "type": "multiple-choice",
+            "questionText": "If she _____ the audition, she would have gotten the part.",
+            "options": [
+              "A) prepared",
+              "B) had prepared",
+              "C) would prepare",
+              "D) prepares"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Third conditional for unreal past situation",
+            "translation": "Nếu cô ấy đã chuẩn bị cho buổi thử vai, cô ấy đã có được vai diễn."
+          },
+          {
+            "id": "grammar-q3",
+            "type": "multiple-choice",
+            "questionText": "Neither the director nor the producers _____ satisfied with the performance.",
+            "options": [
+              "A) was",
+              "B) were",
+              "C) has",
+              "D] have"
+            ],
+            "correctAnswer": "A",
+            "explanation": "'Neither/nor' takes singular verb when both subjects are singular",
+            "translation": "Cả đạo diễn và nhà sản xuất đều không hài lòng với màn trình diễn."
+          },
+          {
+            "id": "grammar-q4",
+            "type": "multiple-choice",
+            "questionText": "The script, _____ was written by a famous playwright, received critical acclaim.",
+            "options": [
+              "A) that",
+              "B) which",
+              "C) who",
+              "D] whom"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Non-defining relative clause for things",
+            "translation": "Kịch bản, cái được viết bởi một nhà soạn kịch nổi tiếng, đã nhận được sự ca ngợi từ giới phê bình."
+          },
+          {
+            "id": "grammar-q5",
+            "type": "multiple-choice",
+            "questionText": "By next month, they _____ the play for six weeks.",
+            "options": [
+              "A) will rehearse",
+              "B) will have rehearsed",
+              "C) rehearse",
+              "D] rehearsed"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Future perfect for action completed before future time",
+            "translation": "Đến tháng sau, họ sẽ diễn tập vở kịch được sáu tuần."
+          },
+          {
+            "id": "grammar-q6",
+            "type": "multiple-choice",
+            "questionText": "The audience _____ enthusiastically at the end of the performance.",
+            "options": [
+              "A) applaud",
+              "B) applauds",
+              "C) applauded",
+              "D] applauding"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Past simple for completed action",
+            "translation": "Khán giả vỗ tay nhiệt liệt vào cuối buổi biểu diễn."
+          },
+          {
+            "id": "grammar-q7",
+            "type": "multiple-choice",
+            "questionText": "She suggested _____ the scene from a different angle.",
+            "options": [
+              "A) approach",
+              "B) to approach",
+              "C) approaching",
+              "D] approached"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Gerund after 'suggest'",
+            "translation": "Cô ấy đề nghị tiếp cận cảnh đó từ một góc độ khác."
+          },
+          {
+            "id": "grammar-q8",
+            "type": "multiple-choice",
+            "questionText": "The theater _____ we performed has excellent acoustics.",
+            "options": [
+              "A) which",
+              "B) where",
+              "C) that",
+              "D] when"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Relative adverb for places",
+            "translation": "Nhà hát nơi chúng tôi biểu diễn có âm thanh tuyệt vời."
+          },
+          {
+            "id": "grammar-q9",
+            "type": "multiple-choice",
+            "questionText": "Had I known about the callback, I _____ prepared differently.",
+            "options": [
+              "A) would have",
+              "B) will have",
+              "C) would",
+              "D] will"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Inverted conditional for unreal past",
+            "translation": "Nếu tôi biết về buổi gọi lại, tôi đã chuẩn bị khác đi."
+          },
+          {
+            "id": "grammar-q10",
+            "type": "multiple-choice",
+            "questionText": "The cast members, each of _____ has extensive experience, delivered outstanding performances.",
+            "options": [
+              "A) who",
+              "B) whom",
+              "C) which",
+              "D] them"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Relative pronoun for people after preposition",
+            "translation": "Các thành viên dàn diễn viên, mỗi người trong số họ có kinh nghiệm phong phú, đã thể hiện những màn trình diễn xuất sắc."
+          },
+          {
+            "id": "grammar-q11",
+            "type": "multiple-choice",
+            "questionText": "Not only _____ talented, but she also works extremely hard.",
+            "options": [
+              "A) she is",
+              "B) is she",
+              "C) does she",
+              "D] she does"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Inversion after 'not only'",
+            "translation": "Cô ấy không chỉ tài năng mà còn làm việc cực kỳ chăm chỉ."
+          },
+          {
+            "id": "grammar-q12",
+            "type": "multiple-choice",
+            "questionText": "The production was _____ successful that it extended its run.",
+            "options": [
+              "A) so",
+              "B) such",
+              "C) too",
+              "D] very"
+            ],
+            "correctAnswer": "A",
+            "explanation": "'So' with adjective in result clause",
+            "translation": "Vở diễn thành công đến mức nó đã kéo dài thời gian diễn."
+          },
+          {
+            "id": "grammar-q13",
+            "type": "multiple-choice",
+            "questionText": "I wish I _____ more opportunities to perform Shakespeare.",
+            "options": [
+              "A) have",
+              "B) had",
+              "C) would have",
+              "D] will have"
+            ],
+            "correctAnswer": "B",
+            "explanation": "'I wish' + past simple for present unreal",
+            "translation": "Tôi ước tôi có nhiều cơ hội hơn để diễn Shakespeare."
+          },
+          {
+            "id": "grammar-q14",
+            "type": "multiple-choice",
+            "questionText": "The director made the actors _____ their lines perfectly.",
+            "options": [
+              "A) memorize",
+              "B) to memorize",
+              "C) memorizing",
+              "D] memorized"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Bare infinitive after 'make' in active voice",
+            "translation": "Đạo diễn bắt các diễn viên ghi nhớ lời thoại hoàn hảo."
+          },
+          {
+            "id": "grammar-q15",
+            "type": "multiple-choice",
+            "questionText": "_____ studying the script for hours, she still felt unprepared.",
+            "options": [
+              "A) Despite",
+              "B) Although",
+              "C) Because",
+              "D] However"
+            ],
+            "correctAnswer": "A",
+            "explanation": "'Despite' + gerund for contrast",
+            "translation": "Mặc dù nghiên cứu kịch bản hàng giờ, cô ấy vẫn cảm thấy chưa sẵn sàng."
+          },
+          {
+            "id": "grammar-q16",
+            "type": "multiple-choice",
+            "questionText": "The theater company is looking for actors _____ can sing and dance.",
+            "options": [
+              "A) which",
+              "B) who",
+              "C) whom",
+              "D] whose"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Relative pronoun for people as subject",
+            "translation": "Công ty sân khấu đang tìm kiếm các diễn viên có thể hát và nhảy."
+          },
+          {
+            "id": "grammar-q17",
+            "type": "multiple-choice",
+            "questionText": "By the time the curtain rises, everything _____ be ready.",
+            "options": [
+              "A) must",
+              "B) should",
+              "C) ought",
+              "D] would"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Modal verb for necessity",
+            "translation": "Đến khi màn kéo lên, mọi thứ phải sẵn sàng."
+          },
+          {
+            "id": "grammar-q18",
+            "type": "multiple-choice",
+            "questionText": "The performance was _____ memorable that I saw it three times.",
+            "options": [
+              "A) so",
+              "B) such",
+              "C) too",
+              "D] very"
+            ],
+            "correctAnswer": "A",
+            "explanation": "'So' with adjective in result clause",
+            "translation": "Buổi biểu diễn đáng nhớ đến mức tôi đã xem nó ba lần."
+          },
+          {
+            "id": "grammar-q19",
+            "type": "multiple-choice",
+            "questionText": "Had the reviews been better, the show _____ longer.",
+            "options": [
+              "A) would run",
+              "B) would have run",
+              "C) will run",
+              "D] will have run"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Third conditional for unreal past",
+            "translation": "Nếu các bài đánh giá tốt hơn, vở diễn đã chạy lâu hơn."
+          },
+          {
+            "id": "grammar-q20",
+            "type": "multiple-choice",
+            "questionText": "The actor, _____ performance was outstanding, received a standing ovation.",
+            "options": [
+              "A) who",
+              "B) whom",
+              "C) whose",
+              "D] which"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Possessive relative pronoun",
+            "translation": "Diễn viên, người có màn trình diễn xuất sắc, đã nhận được tràng pháo tay đứng dậy."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "version": "4.1",
+      "author": "IELTS Practice System",
+      "notes": "IELTS Level 4.1 test with acting theme covering Listening (4 parts, 40 questions), Reading (3 passages, 30 questions), Writing (2 tasks), and Grammar (20 questions). Intermediate difficulty with more complex language and concepts."
+    }
+  }
+}
