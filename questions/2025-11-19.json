@@ -1,0 +1,781 @@
+{
+  "testId": "IELTS-GOOGLE-ECOSYSTEM-4.6-2025-11-05",
+  "testDate": "2025-11-05",
+  "testTitle": "IELTS Level 4.6 Advanced Google Ecosystem Test",
+  "totalQuestions": 110,
+  "difficultyLevel": "Advanced",
+  "sections": [
+    {
+      "id": "listening",
+      "title": "Listening",
+      "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "Part 1: Discussion about Google's business model and ecosystem strategy",
+          "instructions": "Listen to the conversation and answer questions 1-10.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.4, "rate": 1.2, "volume": 0.9, "name": "Tech Analyst",
+              "variation": 0.11, "accent": "British", "emotion": "analytical", "speakingType": "academic"
+            },
+            "male": {
+              "pitch": 0.5, "rate": 1.1, "volume": 0.85, "name": "Business Strategist",
+              "variation": 0.09, "accent": "International", "emotion": "thoughtful", "speakingType": "consultation"
+            },
+            "narrator": {
+              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+            }
+          },
+          "script": {
+            "narrator": "Good morning. This is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between a tech analyst and a business strategist about Google's ecosystem. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+            "conversation": [
+              { "speaker": "female", "text": "Google's ecosystem strategy has demonstrated remarkable success in creating interconnected services that reinforce each other. Its emphasis on free services supported by advertising revenue failed to account for growing privacy concerns and regulatory challenges in various markets." },
+              { "speaker": "male", "text": "Indeed, the Android ecosystem exemplifies this approach but operates within a fundamentally open-source framework. What's needed is a more balanced strategy that recognizes the role of hardware integration, cloud services, and artificial intelligence capabilities." },
+              { "speaker": "female", "text": "Precisely. The success of Google's search-advertising model demonstrates the importance of data network effects combined with machine learning optimization. However, simply expanding this model is insufficient—each service requires context-specific monetization based on user behavior and market conditions." },
+              { "speaker": "male", "text": "The concept of 'ecosystem lock-in' provides valuable insights here. Users become increasingly dependent on Google services that seamlessly integrate with each other. This interdependence creates both customer retention benefits and antitrust concerns." },
+              { "speaker": "female", "text": "Excellent point. This underscores the importance of strategic ecosystem design rather than random service expansion. The challenge lies in maintaining open standards while building proprietary advantages through superior integration and user experience." },
+              { "speaker": "male", "text": "The AI transformation adds another layer of complexity. Google faces the dual challenge of enhancing existing services with AI while developing new AI-first products. This requires investments in both research infrastructure and product development." },
+              { "speaker": "female", "text": "Moreover, the privacy imperative necessitates new data governance approaches. The traditional model of 'collect first, ask later' is no longer viable. Services must prioritize user privacy while maintaining personalization capabilities." },
+              { "speaker": "male", "text": "This implies rethinking competitive positioning as well. Rather than competing in isolated product categories, Google must leverage its ecosystem advantages across search, cloud, mobile, and AI domains." },
+              { "speaker": "female", "text": "The role of developer relationships remains crucial but must evolve. Instead of just providing APIs, Google should create mutually beneficial partnerships that drive innovation while maintaining platform control." },
+              { "speaker": "male", "text": "Ultimately, successful ecosystem strategy must balance open innovation with platform control, user value with shareholder returns, and global scale with local adaptation." }
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q1",
+              "type": "multiple-choice",
+              "questionText": "What has demonstrated remarkable success according to the speakers?",
+              "options": ["A) Google's ecosystem strategy", "B) Apple's walled garden", "C) Microsoft's enterprise focus", "D] Amazon's marketplace"],
+              "correctAnswer": "A",
+              "translation": "Điều gì đã thể hiện thành công đáng kể theo các diễn giả?"
+            },
+            {
+              "id": "listening-q2",
+              "type": "multiple-choice",
+              "questionText": "What failed to account for privacy concerns?",
+              "options": ["A) Subscription services", "B) Hardware sales", "C) Enterprise licensing", "D] Advertising-supported model"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đã không tính đến mối quan tâm về quyền riêng tư?"
+            },
+            {
+              "id": "listening-q3",
+              "type": "multiple-choice",
+              "questionText": "What framework does Android operate within?",
+              "options": ["A) Closed proprietary system", "B) Hybrid model", "C) Licensed platform", "D] Open-source framework"],
+              "correctAnswer": "D",
+              "translation": "Android hoạt động trong khuôn khổ nào?"
+            },
+            {
+              "id": "listening-q4",
+              "type": "multiple-choice",
+              "questionText": "What demonstrates data network effects?",
+              "options": ["A) Cloud computing", "B) Mobile hardware", "C) Enterprise software", "D] Search-advertising model"],
+              "correctAnswer": "D",
+              "translation": "Điều gì chứng minh hiệu ứng mạng dữ liệu?"
+            },
+            {
+              "id": "listening-q5",
+              "type": "multiple-choice",
+              "questionText": "What concept provides insights about user dependency?",
+              "options": ["A) Ecosystem lock-in", "B) Vendor lock-in", "C) Platform switching", "D] Multi-homing"],
+              "correctAnswer": "A",
+              "translation": "Khái niệm nào cung cấp hiểu biết về sự phụ thuộc của người dùng?"
+            },
+            {
+              "id": "listening-q6",
+              "type": "multiple-choice",
+              "questionText": "What creates both benefits and concerns?",
+              "options": ["A) Market competition", "B) Price competition", "C) Feature parity", "D] Service interdependence"],
+              "correctAnswer": "D",
+              "translation": "Điều gì tạo ra cả lợi ích và mối quan tâm?"
+            },
+            {
+              "id": "listening-q7",
+              "type": "multiple-choice",
+              "questionText": "What dual challenge does Google face with AI?",
+              "options": ["A) Research and marketing", "B) Hardware and software", "C) Consumer and enterprise", "D] Enhancing services and developing new products"],
+              "correctAnswer": "D",
+              "translation": "Google phải đối mặt với thách thức kép nào với AI?"
+            },
+            {
+              "id": "listening-q8",
+              "type": "multiple-choice",
+              "questionText": "What approach is no longer viable?",
+              "options": ["A) Privacy by design", "B) User-first approach", "C) Data minimization", "D] Collect first, ask later"],
+              "correctAnswer": "D",
+              "translation": "Phương pháp nào không còn khả thi?"
+            },
+            {
+              "id": "listening-q9",
+              "type": "multiple-choice",
+              "questionText": "What should Google create with developers?",
+              "options": ["A) Mutually beneficial partnerships", "B) Exclusive contracts", "C) Competitive barriers", "D] Acquisition targets"],
+              "correctAnswer": "A",
+              "translation": "Google nên tạo ra điều gì với các nhà phát triển?"
+            },
+            {
+              "id": "listening-q10",
+              "type": "multiple-choice",
+              "questionText": "What must ecosystem strategy balance?",
+              "options": ["A) Growth and profitability", "B) Innovation and stability", "C) Quality and speed", "D] Open innovation and platform control"],
+              "correctAnswer": "D",
+              "translation": "Chiến lược hệ sinh thái phải cân bằng điều gì?"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "title": "Part 2: Lecture on Android ecosystem and mobile strategy",
+          "instructions": "Listen to the lecture and answer questions 11-20.",
+          "voiceProfiles": {
+            "male": {
+              "pitch": 0.4, "rate": 1.1, "volume": 0.9, "name": "Mobile Strategist",
+              "variation": 0.08, "accent": "educated", "emotion": "authoritative", "speakingType": "lecture"
+            },
+            "narrator": {
+              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 2. You will hear a lecture on Android ecosystem and mobile strategy. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+            "conversation": [
+              { "speaker": "male", "text": "The Android ecosystem represents one of the most successful platform strategies in technology history, creating a virtuous cycle between device manufacturers, app developers, and users. Android's open-source approach enabled rapid global adoption while Google's control over key services like Play Store and Google Mobile Services created sustainable monetization. This ecosystem generates massive data flows that fuel Google's advertising business while providing free services to users. The strategic brilliance lies in balancing openness with control—device makers can customize Android but must include Google services to access the full ecosystem. This creates both innovation diversity and quality consistency challenges. The emergence of alternative Android forks in China and other markets demonstrates the fragility of this balance. Google's response through tighter integration of services and development of proprietary hardware like Pixel phones shows the ongoing evolution of this strategy. The future of the Android ecosystem will likely involve deeper AI integration, enhanced privacy controls, and new revenue models beyond advertising as the mobile market matures and regulatory pressures increase." }
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q11",
+              "type": "multiple-choice",
+              "questionText": "What represents successful platform strategy?",
+              "options": ["A) iOS walled garden", "B) Windows platform", "C) Linux community", "D] Android ecosystem"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đại diện cho chiến lược nền tảng thành công?"
+            },
+            {
+              "id": "listening-q12",
+              "type": "multiple-choice",
+              "questionText": "What enabled rapid global adoption?",
+              "options": ["A) Open-source approach", "B) Proprietary licensing", "C) Exclusive partnerships", "D] Premium pricing"],
+              "correctAnswer": "A",
+              "translation": "Điều gì cho phép áp dụng toàn cầu nhanh chóng?"
+            },
+            {
+              "id": "listening-q13",
+              "type": "multiple-choice",
+              "questionText": "What creates sustainable monetization?",
+              "options": ["A) Device sales", "B) App store fees", "C) Advertising revenue", "D] Control over key services"],
+              "correctAnswer": "D",
+              "translation": "Điều gì tạo ra kiếm tiền bền vững?"
+            },
+            {
+              "id": "listening-q14",
+              "type": "multiple-choice",
+              "questionText": "What does the ecosystem balance?",
+              "options": ["A) Quality and cost", "B) Innovation and tradition", "C) Growth and stability", "D] Openness and control"],
+              "correctAnswer": "D",
+              "translation": "Hệ sinh thái cân bằng điều gì?"
+            },
+            {
+              "id": "listening-q15",
+              "type": "multiple-choice",
+              "questionText": "What must device makers include?",
+              "options": ["A) Custom interfaces", "B) Alternative apps", "C) Competing stores", "D] Google services"],
+              "correctAnswer": "D",
+              "translation": "Các nhà sản xuất thiết bị phải bao gồm điều gì?"
+            },
+            {
+              "id": "listening-q16",
+              "type": "multiple-choice",
+              "questionText": "What demonstrates ecosystem fragility?",
+              "options": ["A) Standard compliance", "B) Uniform experience", "C) Consistent updates", "D] Alternative Android forks"],
+              "correctAnswer": "D",
+              "translation": "Điều gì chứng minh sự mong manh của hệ sinh thái?"
+            },
+            {
+              "id": "listening-q17",
+              "type": "multiple-choice",
+              "questionText": "What shows strategy evolution?",
+              "options": ["A) Proprietary hardware development", "B) Open-source commitment", "C) Standard adherence", "D] Partner support"],
+              "correctAnswer": "A",
+              "translation": "Điều gì cho thấy sự tiến hóa chiến lược?"
+            },
+            {
+              "id": "listening-q18",
+              "type": "multiple-choice",
+              "questionText": "What will involve deeper integration?",
+              "options": ["A) Basic features", "B) Legacy systems", "C) Third-party apps", "D] AI capabilities"],
+              "correctAnswer": "D",
+              "translation": "Điều gì sẽ liên quan đến tích hợp sâu hơn?"
+            },
+            {
+              "id": "listening-q19",
+              "type": "multiple-choice",
+              "questionText": "What will be enhanced?",
+              "options": ["A) Data collection", "B) Advertising targeting", "C) User tracking", "D] Privacy controls"],
+              "correctAnswer": "D",
+              "translation": "Điều gì sẽ được nâng cao?"
+            },
+            {
+              "id": "listening-q20",
+              "type": "multiple-choice",
+              "questionText": "What will develop beyond advertising?",
+              "options": ["A) New revenue models", "B) Traditional business", "C) Existing products", "D] Current services"],
+              "correctAnswer": "A",
+              "translation": "Điều gì sẽ phát triển vượt ra ngoài quảng cáo?"
+            }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "title": "Part 3: Discussion about Google Cloud and enterprise services",
+          "instructions": "Listen to the discussion and answer questions 21-30.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.5, "rate": 1.2, "volume": 0.85, "name": "Cloud Architect",
+              "variation": 0.12, "accent": "academic", "emotion": "enthusiastic", "speakingType": "discussion"
+            },
+            "male": {
+              "pitch": 0.6, "rate": 1.1, "volume": 0.9, "name": "Enterprise Consultant",
+              "variation": 0.10, "accent": "educated", "emotion": "pragmatic", "speakingType": "discussion"
+            },
+            "narrator": {
+              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 3. You will hear a discussion between a cloud architect and an enterprise consultant about Google Cloud. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+            "conversation": [
+              { "speaker": "female", "text": "Google Cloud Platform represents Google's strategic pivot from consumer-focused services to enterprise solutions. While late to the cloud market compared to Amazon and Microsoft, Google leverages its strengths in data analytics, machine learning, and open-source technologies to differentiate its offerings." },
+              { "speaker": "male", "text": "The integration with Google's broader ecosystem is particularly compelling. Enterprises can leverage Google's AI capabilities, data processing scale, and security infrastructure that originally supported Google's own services. This operational expertise provides significant credibility." },
+              { "speaker": "female", "text": "However, the enterprise market requires different approaches than consumer services. Google must build robust sales organizations, comprehensive support systems, and industry-specific solutions that address complex regulatory and compliance requirements." },
+              { "speaker": "male", "text": "The Anthos platform exemplifies Google's multi-cloud strategy, allowing enterprises to manage workloads across different cloud environments. This addresses one of the key enterprise concerns about vendor lock-in while showcasing Google's strengths in containerization and Kubernetes." },
+              { "speaker": "female", "text": "Google's AI and machine learning services represent its most significant competitive advantage. Tools like TensorFlow, AutoML, and various pre-trained models enable enterprises to leverage advanced AI capabilities without building everything from scratch." },
+              { "speaker": "male", "text": "The challenge lies in translating technical superiority into commercial success. Google must overcome perceptions of being primarily an advertising company and demonstrate deep understanding of enterprise needs across different industries." },
+              { "speaker": "female", "text": "The Workspace integration is another strategic move. By combining Gmail, Drive, Meet, and Docs into a cohesive productivity suite, Google creates natural migration paths from consumer to enterprise usage while competing directly with Microsoft Office." },
+              { "speaker": "male", "text": "Sustainability and carbon-neutral operations represent emerging competitive advantages. Google's commitment to renewable energy and efficient data centers resonates with enterprises focusing on environmental responsibility." },
+              { "speaker": "female", "text": "The global infrastructure footprint is crucial for enterprise adoption. Google's continued investment in undersea cables, edge locations, and regional data centers ensures performance and compliance for multinational corporations." },
+              { "speaker": "male", "text": "Ultimately, Google Cloud's success depends on balancing technological innovation with enterprise readiness, leveraging consumer-scale expertise while building dedicated enterprise capabilities." }
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q21",
+              "type": "multiple-choice",
+              "questionText": "What represents Google's strategic pivot?",
+              "options": ["A) Google Cloud Platform", "B) Android ecosystem", "C) Search advertising", "D] YouTube platform"],
+              "correctAnswer": "A",
+              "translation": "Điều gì đại diện cho sự chuyển hướng chiến lược của Google?"
+            },
+            {
+              "id": "listening-q22",
+              "type": "multiple-choice",
+              "questionText": "What does Google leverage for differentiation?",
+              "options": ["A) Consumer branding", "B) Market timing", "C) Pricing advantage", "D] Data analytics strengths"],
+              "correctAnswer": "D",
+              "translation": "Google tận dụng điều gì để phân biệt?"
+            },
+            {
+              "id": "listening-q23",
+              "type": "multiple-choice",
+              "questionText": "What provides significant credibility?",
+              "options": ["A) Marketing campaigns", "B) Brand recognition", "C) Market share", "D] Operational expertise"],
+              "correctAnswer": "D",
+              "translation": "Điều gì cung cấp uy tín đáng kể?"
+            },
+            {
+              "id": "listening-q24",
+              "type": "multiple-choice",
+              "questionText": "What must Google build for enterprises?",
+              "options": ["A) Consumer apps", "B) Advertising networks", "C) Social platforms", "D] Robust sales organizations"],
+              "correctAnswer": "D",
+              "translation": "Google phải xây dựng gì cho doanh nghiệp?"
+            },
+            {
+              "id": "listening-q25",
+              "type": "multiple-choice",
+              "questionText": "What exemplifies multi-cloud strategy?",
+              "options": ["A) Anthos platform", "B) Google Search", "C) Android system", "D] Chrome browser"],
+              "correctAnswer": "A",
+              "translation": "Điều gì minh họa chiến lược đa đám mây?"
+            },
+            {
+              "id": "listening-q26",
+              "type": "multiple-choice",
+              "questionText": "What represents competitive advantage?",
+              "options": ["A) Basic computing", "B) Simple storage", "C) Traditional hosting", "D] AI and machine learning"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đại diện cho lợi thế cạnh tranh?"
+            },
+            {
+              "id": "listening-q27",
+              "type": "multiple-choice",
+              "questionText": "What must Google overcome?",
+              "options": ["A) Technical limitations", "B) Infrastructure gaps", "C) Talent shortages", "D] Advertising company perceptions"],
+              "correctAnswer": "D",
+              "translation": "Google phải vượt qua điều gì?"
+            },
+            {
+              "id": "listening-q28",
+              "type": "multiple-choice",
+              "questionText": "What creates migration paths?",
+              "options": ["A) Workspace integration", "B) Separate products", "C) Individual services", "D] Isolated tools"],
+              "correctAnswer": "A",
+              "translation": "Điều gì tạo ra đường di chuyển?"
+            },
+            {
+              "id": "listening-q29",
+              "type": "multiple-choice",
+              "questionText": "What represents emerging advantage?",
+              "options": ["A) Cost reduction", "B) Feature parity", "C) Market expansion", "D] Sustainability operations"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đại diện cho lợi thế mới nổi?"
+            },
+            {
+              "id": "listening-q30",
+              "type": "multiple-choice",
+              "questionText": "What does success depend on balancing?",
+              "options": ["A) Innovation and enterprise readiness", "B) Cost and quality", "C) Speed and stability", "D] Growth and profitability"],
+              "correctAnswer": "A",
+              "translation": "Thành công phụ thuộc vào việc cân bằng điều gì?"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "title": "Part 4: Lecture on data governance and AI ethics in Google's ecosystem",
+          "instructions": "Listen to the lecture and answer questions 31-40.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.3, "rate": 1.1, "volume": 0.9, "name": "AI Ethics Researcher",
+              "variation": 0.07, "accent": "academic", "emotion": "knowledgeable", "speakingType": "lecture"
+            },
+            "narrator": {
+              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 4. You will hear a lecture on data governance and AI ethics in Google's ecosystem. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+            "conversation": [
+              { "speaker": "female", "text": "Google's ecosystem faces unprecedented challenges in data governance and AI ethics as its services become increasingly embedded in daily life. The quality of data stewardship—defined as responsible management of user data across interconnected services—explains more of the variation in public trust than technological capabilities alone. Comprehensive privacy frameworks that implement data minimization, purpose limitation, and user control enable sustainable ecosystem growth. Conversely, data practices that prioritize advertising optimization over user protection create regulatory risks and reputational damage. The scale of Google's data collection presents fundamental ethical questions: how much data is necessary for service improvement versus what constitutes surveillance? Historical incidents like the Google Street View data collection controversy emphasize the role of transparency and accountability in maintaining public trust. The alignment of business incentives with ethical principles fundamentally influences data governance quality, as advertising revenue models create inherent tensions with privacy protection. Building trustworthy AI systems requires not just technical excellence but also ethical frameworks and diverse perspectives in development teams. The challenge of responsible innovation lies in anticipating unintended consequences and addressing them proactively rather than reactively. Understanding these dynamics is essential for creating technology ecosystems that benefit society while respecting individual rights and democratic values." }
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q31",
+              "type": "multiple-choice",
+              "questionText": "What challenges does Google's ecosystem face?",
+              "options": ["A) Data governance and AI ethics", "B) Technical performance", "C) Market competition", "D] Product features"],
+              "correctAnswer": "A",
+              "translation": "Hệ sinh thái của Google phải đối mặt với thách thức gì?"
+            },
+            {
+              "id": "listening-q32",
+              "type": "multiple-choice",
+              "questionText": "What explains variation in public trust?",
+              "options": ["A) Service speed", "B) Product variety", "C) Market share", "D] Data stewardship quality"],
+              "correctAnswer": "D",
+              "translation": "Điều gì giải thích sự thay đổi trong niềm tin công chúng?"
+            },
+            {
+              "id": "listening-q33",
+              "type": "multiple-choice",
+              "questionText": "What enables sustainable growth?",
+              "options": ["A) Data maximization", "B) Unlimited collection", "C) Minimal transparency", "D] Comprehensive privacy frameworks"],
+              "correctAnswer": "D",
+              "translation": "Điều gì cho phép tăng trưởng bền vững?"
+            },
+            {
+              "id": "listening-q34",
+              "type": "multiple-choice",
+              "questionText": "What creates regulatory risks?",
+              "options": ["A) Advertising-focused data practices", "B) User-first approaches", "C) Privacy by design", "D] Transparent policies"],
+              "correctAnswer": "A",
+              "translation": "Điều gì tạo ra rủi ro quy định?"
+            },
+            {
+              "id": "listening-q35",
+              "type": "multiple-choice",
+              "questionText": "What presents fundamental questions?",
+              "options": ["A) Service variety", "B) Market expansion", "C) Product innovation", "D] Data collection scale"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đặt ra các câu hỏi cơ bản?"
+            },
+            {
+              "id": "listening-q36",
+              "type": "multiple-choice",
+              "questionText": "What emphasizes transparency importance?",
+              "options": ["A) Current successes", "B) Future plans", "C) Technical capabilities", "D] Historical incidents"],
+              "correctAnswer": "D",
+              "translation": "Điều gì nhấn mạnh tầm quan trọng của tính minh bạch?"
+            },
+            {
+              "id": "listening-q37",
+              "type": "multiple-choice",
+              "questionText": "What fundamentally influences governance quality?",
+              "options": ["A) Technical expertise", "B) Market position", "C) Financial resources", "D] Business-ethics alignment"],
+              "correctAnswer": "D",
+              "translation": "Điều gì ảnh hưởng cơ bản đến chất lượng quản trị?"
+            },
+            {
+              "id": "listening-q38",
+              "type": "multiple-choice",
+              "questionText": "What do trustworthy AI systems require?",
+              "options": ["A) Ethical frameworks", "B) Technical skills only", "C) Market demand", "D] Competitive pressure"],
+              "correctAnswer": "A",
+              "translation": "Hệ thống AI đáng tin cậy yêu cầu điều gì?"
+            },
+            {
+              "id": "listening-q39",
+              "type": "multiple-choice",
+              "questionText": "What does responsible innovation require?",
+              "options": ["A) Reacting to problems", "B) Following trends", "C) Ignoring risks", "D] Anticipating consequences"],
+              "correctAnswer": "D",
+              "translation": "Đổi mới có trách nhiệm yêu cầu điều gì?"
+            },
+            {
+              "id": "listening-q40",
+              "type": "multiple-choice",
+              "questionText": "What is essential for beneficial ecosystems?",
+              "options": ["A) Implementing technology", "B) Maximizing profits", "C) Ignoring concerns", "D] Understanding dynamics"],
+              "correctAnswer": "D",
+              "translation": "Điều gì cần thiết cho hệ sinh thái có lợi?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "description": "30 questions • 50 minutes",
+      "passages": [
+        {
+          "id": "reading-passage1",
+          "title": "Passage 1: The Economics of Digital Platforms and Ecosystems",
+          "content": "Google's ecosystem represents a paradigm shift in understanding value creation in digital economies. Platform businesses differ from traditional pipeline companies in their emphasis on network effects, multi-sided markets, and ecosystem coordination. These characteristics create self-reinforcing cycles where more users attract more developers, which in turn attracts more users. Google's search advertising business demonstrates the power of data network effects—each query improves the algorithm, which improves future results, creating an insurmountable competitive advantage. The Android ecosystem showcases strategic openness—by making the operating system open-source, Google ensured widespread adoption while maintaining control through Google Mobile Services. This balance between openness and control creates both innovation and dependency. The emergence of cloud computing represents Google's expansion from consumer services to enterprise solutions, leveraging its infrastructure expertise while addressing new market segments. The integration of artificial intelligence across Google's services creates new capabilities while raising ethical questions about data usage and algorithmic bias. Understanding Google's ecosystem requires analyzing not just individual products but the interconnected relationships and value flows that sustain the entire system.",
+          "questions": [
+            {
+              "id": "reading-q1",
+              "type": "multiple-choice",
+              "questionText": "What represents a paradigm shift?",
+              "options": ["A) Google's ecosystem", "B) Traditional business", "C) Isolated products", "D] Single markets"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q2",
+              "type": "multiple-choice",
+              "questionText": "What characteristics create self-reinforcing cycles?",
+              "options": ["A) Individual usage", "B) Isolated services", "C) Separate markets", "D] Network effects"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q3",
+              "type": "multiple-choice",
+              "questionText": "What demonstrates data network effects?",
+              "options": ["A) Simple products", "B] Basic services", "C] Traditional business", "D] Search advertising"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q4",
+              "type": "multiple-choice",
+              "questionText": "What ensures widespread adoption?",
+              "options": ["A) Open-source approach", "B) Proprietary control", "C] Exclusive licensing", "D] High pricing"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q5",
+              "type": "multiple-choice",
+              "questionText": "What creates innovation and dependency?",
+              "options": ["A) Complete openness", "B] Total control", "C] Random approach", "D] Openness-control balance"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q6",
+              "type": "multiple-choice",
+              "questionText": "What represents market expansion?",
+              "options": ["A) Existing services", "B] Traditional products", "C] Legacy systems", "D] Cloud computing"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q7",
+              "type": "multiple-choice",
+              "questionText": "What creates new capabilities?",
+              "options": ["A) Basic features", "B] Simple tools", "C] Traditional methods", "D] AI integration"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q8",
+              "type": "multiple-choice",
+              "questionText": "What raises ethical questions?",
+              "options": ["A) Basic operations", "B] Simple processes", "C] Traditional business", "D] Data usage"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q9",
+              "type": "multiple-choice",
+              "questionText": "What requires analyzing relationships?",
+              "options": ["A) Understanding ecosystems", "B] Basic products", "C] Simple services", "D] Individual features"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q10",
+              "type": "multiple-choice",
+              "questionText": "What sustains the entire system?",
+              "options": ["A) Individual products", "B] Separate services", "C] Isolated features", "D] Value flows"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage2",
+          "title": "Passage 2: YouTube's Role in Google's Content Ecosystem",
+          "content": "YouTube represents one of Google's most strategic acquisitions, creating a dominant position in online video while generating substantial advertising revenue and valuable user data. The platform operates as a two-sided marketplace connecting content creators with viewers, with Google's sophisticated advertising technology optimizing monetization for both parties. YouTube's recommendation algorithm represents a key competitive advantage, using machine learning to maximize engagement by suggesting relevant content, though this has raised concerns about filter bubbles and radicalization. The platform's scale creates significant barriers to entry—new competitors must attract both creators and viewers simultaneously in a market where content availability drives viewership. YouTube's integration with Google's broader ecosystem provides additional advantages, including seamless authentication through Google accounts, promotion through Google Search, and data sharing for improved ad targeting. The emergence of YouTube Premium and YouTube TV represents diversification beyond advertising revenue, addressing different consumer segments and usage patterns. Content moderation presents ongoing challenges, balancing free expression with brand safety and regulatory compliance across global markets with different cultural norms and legal requirements. Understanding YouTube's strategic value requires analyzing its role in data collection, audience engagement, and ecosystem reinforcement beyond direct revenue generation.",
+          "questions": [
+            {
+              "id": "reading-q11",
+              "type": "multiple-choice",
+              "questionText": "What represents strategic acquisition?",
+              "options": ["A) YouTube platform", "B) Basic service", "C) Simple product", "D] Minor investment"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q12",
+              "type": "multiple-choice",
+              "questionText": "What operates as two-sided marketplace?",
+              "options": ["A) Google Search", "B) Gmail", "C) Android", "D] YouTube"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q13",
+              "type": "multiple-choice",
+              "questionText": "What represents key advantage?",
+              "options": ["A) Basic features", "B) Simple design", "C) Traditional approach", "D] Recommendation algorithm"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q14",
+              "type": "multiple-choice",
+              "questionText": "What creates barriers to entry?",
+              "options": ["A) Small size", "B) Limited features", "C) Narrow focus", "D] Platform scale"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q15",
+              "type": "multiple-choice",
+              "questionText": "What provides additional advantages?",
+              "options": ["A) Isolation", "B] Separation", "C] Independence", "D] Ecosystem integration"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q16",
+              "type": "multiple-choice",
+              "questionText": "What represents revenue diversification?",
+              "options": ["A) Advertising only", "B] Single model", "C] Basic approach", "D] Premium services"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q17",
+              "type": "multiple-choice",
+              "questionText": "What presents ongoing challenges?",
+              "options": ["A) Technical performance", "B] Basic operations", "C] Simple management", "D] Content moderation"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q18",
+              "type": "multiple-choice",
+              "questionText": "What requires balancing?",
+              "options": ["A) Single focus", "B] Narrow interests", "C] Limited perspectives", "D] Free expression and safety"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q19",
+              "type": "multiple-choice",
+              "questionText": "What requires strategic analysis?",
+              "options": ["A) YouTube's value", "B] Basic features", "C] Simple metrics", "D] Surface aspects"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q20",
+              "type": "multiple-choice",
+              "questionText": "What goes beyond direct revenue?",
+              "options": ["A) Simple income", "B] Basic profits", "C] Direct sales", "D] Ecosystem reinforcement"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage3",
+          "title": "Passage 3: Privacy and Competition in Google's Ecosystem",
+          "content": "Google's ecosystem dominance raises significant questions about privacy, competition, and market power in digital economies. The company's data collection practices span search queries, location history, email content, and online behavior, creating comprehensive user profiles that enable highly targeted advertising. This data advantage creates significant barriers to competition—new entrants cannot match the targeting capabilities or monetization efficiency of Google's advertising network. Regulatory scrutiny has increased globally, with antitrust cases focusing on Google's control over Android, search dominance, and advertising technology stack. Privacy regulations like GDPR and CCPA require fundamental changes to data practices, limiting tracking capabilities and increasing transparency requirements. Google's responses include enhanced privacy controls, data minimization initiatives, and differential privacy techniques that preserve utility while protecting individual data. The tension between personalized services and privacy protection represents a fundamental challenge—users expect relevant results and recommendations but increasingly demand control over their data. Competition concerns extend beyond direct rivals to include potential innovation suppression—when Google can copy successful features or acquire promising startups, it may reduce incentives for independent innovation. Understanding the future of Google's ecosystem requires analyzing the interplay between technological capabilities, business models, regulatory frameworks, and societal expectations about digital rights and market competition.",
+          "questions": [
+            {
+              "id": "reading-q21",
+              "type": "multiple-choice",
+              "questionText": "What raises significant questions?",
+              "options": ["A) Ecosystem dominance", "B) Minor presence", "C) Limited impact", "D] Small scale"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q22",
+              "type": "multiple-choice",
+              "questionText": "What creates comprehensive profiles?",
+              "options": ["A) Limited information", "B) Basic data", "C) Simple tracking", "D] Data collection practices"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q23",
+              "type": "multiple-choice",
+              "questionText": "What creates competition barriers?",
+              "options": ["A) Level playing field", "B) Equal access", "C) Fair competition", "D] Data advantage"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q24",
+              "type": "multiple-choice",
+              "questionText": "What has increased globally?",
+              "options": ["A) Market freedom", "B) Laissez-faire approach", "C) Minimal oversight", "D] Regulatory scrutiny"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q25",
+              "type": "multiple-choice",
+              "questionText": "What require fundamental changes?",
+              "options": ["A) Basic guidelines", "B) Simple rules", "C) Traditional approaches", "D] Privacy regulations"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q26",
+              "type": "multiple-choice",
+              "questionText": "What include enhanced controls?",
+              "options": ["A) Basic actions", "B) Simple measures", "C) Traditional methods", "D] Google's responses"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q27",
+              "type": "multiple-choice",
+              "questionText": "What represents fundamental challenge?",
+              "options": ["A) Simple balance", "B) Basic trade-off", "C) Minor issue", "D] Personalization-privacy tension"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q28",
+              "type": "multiple-choice",
+              "questionText": "What extend beyond direct rivals?",
+              "options": ["A) Basic issues", "B) Simple problems", "C) Limited considerations", "D] Competition concerns"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q29",
+              "type": "multiple-choice",
+              "questionText": "What may reduce innovation incentives?",
+              "options": ["A) Fair competition", "B) Market diversity", "C) Independent development", "D] Feature copying"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q30",
+              "type": "multiple-choice",
+              "questionText": "What requires analyzing interplay?",
+              "options": ["A) Basic present", "B) Simple past", "C) Limited aspects", "D] Ecosystem future"],
+              "correctAnswer": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "description": "60 minutes",
+      "tasks": [
+        {
+          "id": "writing-task1",
+          "title": "Writing Task 1",
+          "instructions": "You should spend about 20 minutes on this task. The diagram below shows Google's ecosystem structure with core services and their interrelationships. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+          "taskType": "Academic",
+          "wordCountMin": 150,
+          "timeLimit": 20,
+          "description": "You will be presented with a diagram showing Google's ecosystem and asked to describe the information in your own words.",
+          "sampleData": {
+            "type": "diagram",
+            "title": "Google Ecosystem Structure",
+            "data": {
+              "Core Services": ["Search → Advertising → Data", "Android → Play Store → Mobile Services", "YouTube → Content → Creator Economy", "Google Cloud → Enterprise → AI Services"],
+              "Integration Points": ["Single Sign-On", "Cross-Service Data Sharing", "Unified Advertising", "AI Integration"]
+            },
+            "description": "Google's interconnected service ecosystem showing core components and integration points"
+          },
+          "assessmentCriteria": [
+            "Task Achievement",
+            "Coherence and Cohesion", 
+            "Lexical Resource",
+            "Grammatical Range and Accuracy"
+          ]
+        },
+        {
+          "id": "writing-task2",
+          "title": "Writing Task 2",
+          "instructions": "You should spend about 40 minutes on this task. Some argue that Google's ecosystem creates immense user value through free services and seamless integration, while others believe it represents dangerous market concentration and privacy risks. Discuss both these views and give your own opinion. Write at least 250 words.",
+          "taskType": "Essay",
+          "wordCountMin": 250,
+          "timeLimit": 40,
+          "description": "You will be presented with contrasting views on Google's ecosystem impacts and asked to discuss them.",
+          "essayType": "Discussion",
+          "topics": [
+            "Digital ecosystem benefits",
+            "Market concentration risks",
+            "Privacy concerns"
+          ],
+          "keyPoints": [
+            "Arguments about user value and integration benefits",
+            "Arguments about market power and privacy risks",
+            "Synthesis and personal position"
+          ],
+          "assessmentCriteria": [
+            "Task Response",
+            "Coherence and Cohesion",
+            "Lexical Resource", 
+            "Grammatical Range and Accuracy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "title": "Grammar & Language Use",
+      "description": "20 questions • Approximately 15 minutes",
+      "questions": [
+        {"id": "grammar-q1", "type": "multiple-choice", "questionText": "_____ comprehensive Google's ecosystem, its sustainability depends on regulatory acceptance and user trust.", "options": ["A) However", "B) Although", "C) Despite", "D] Because"], "correctAnswer": "B", "explanation": "Concession with adjective", "translation": "Dù hệ sinh thái của Google có toàn diện đến đâu, tính bền vững của nó phụ thuộc vào sự chấp nhận quy định và niềm tin người dùng."},
+        {"id": "grammar-q2", "type": "multiple-choice", "questionText": "The Android strategy, _____ on open-source principles, has achieved remarkable market penetration.", "options": ["A) predicating", "B) predicated", "C) having predicated", "D] being predicated"], "correctAnswer": "B", "explanation": "Past participle in reduced relative clause", "translation": "Chiến lược Android, dựa trên các nguyên tắc mã nguồn mở, đã đạt được sự thâm nhập thị trường đáng kể."},
+        {"id": "grammar-q3", "type": "multiple-choice", "questionText": "So profound _____ that competitors struggle to match its capabilities.", "options": ["A) has Google's AI integration been", "B) Google's AI integration has been", "C) was Google's AI integration", "D] Google's AI integration was"], "correctAnswer": "A", "explanation": "Inversion after 'so + adjective'", "translation": "Sự tích hợp AI của Google sâu sắc đến mức các đối thủ cạnh tranh phải vật lộn để theo kịp khả năng của nó."},
+        {"id": "grammar-q4", "type": "multiple-choice", "questionText": "The ethics committee recommended that data collection practices _____ more transparent.", "options": ["A) is made", "B] be made", "C) was made", "D] has been made"], "correctAnswer": "B", "explanation": "Subjunctive after verbs of recommendation", "translation": "Ủy ban đạo đức khuyến nghị rằng các thực hành thu thập dữ liệu phải được minh bạch hơn."},
+        {"id": "grammar-q5", "type": "multiple-choice", "questionText": "_____ the complex interdependencies of digital ecosystems, service changes can have unexpected consequences.", "options": ["A) Giving", "B) To give", "C) Given", "D] Having given"], "correctAnswer": "C", "explanation": "Preposition meaning 'considering'", "translation": "Xét đến sự phụ thuộc lẫn nhau phức tạp của các hệ sinh thái kỹ thuật số, thay đổi dịch vụ có thể có hậu quả không mong đợi."},
+        {"id": "grammar-q6", "type": "multiple-choice", "questionText": "The Google ecosystem, _____ numerous interconnected services, has become essential to digital life.", "options": ["A] comprised", "B] comprising", "C] having comprised", "D] being comprised"], "correctAnswer": "B", "explanation": "Present participle in reduced relative clause", "translation": "Hệ sinh thái Google, bao gồm nhiều dịch vụ kết nối với nhau, đã trở nên thiết yếu cho cuộc sống kỹ thuật số."},
+        {"id": "grammar-q7", "type": "multiple-choice", "questionText": "So rapidly _____ that traditional companies struggle to compete.", "options": ["A] is Google's innovation cycle moving", "B] Google's innovation cycle is moving", "C] has Google's innovation cycle moved", "D] Google's innovation cycle has moved"], "correctAnswer": "C", "explanation": "Inversion after 'so + adverb'", "translation": "Chu kỳ đổi mới của Google di chuyển nhanh đến mức các công ty truyền thống phải vật lộn để cạnh tranh."},
+        {"id": "grammar-q8", "type": "multiple-choice", "questionText": "The regulatory body insisted that privacy standards _____ uniformly enforced.", "options": ["A] are", "B] be", "C] were", "D] have been"], "correctAnswer": "B", "explanation": "Subjunctive after verbs of demand", "translation": "Cơ quan quản lý nhấn mạnh rằng các tiêu chuẩn quyền riêng tư phải được thực thi thống nhất."},
+        {"id": "grammar-q9", "type": "multiple-choice", "questionText": "_____ the competitive pressures, Google's ecosystem continues to demonstrate remarkable resilience.", "options": ["A] Besides", "B] Moreover", "C] Notwithstanding", "D] Therefore"], "correctAnswer": "C", "explanation": "Formal preposition meaning 'despite'", "translation": "Bất chấp áp lực cạnh tranh, hệ sinh thái của Google tiếp tục thể hiện khả năng phục hồi đáng chú ý."},
+        {"id": "grammar-q10", "type": "multiple-choice", "questionText": "The platform strategy, _____ over two decades of iteration, has transformed digital markets.", "options": ["A] forging", "B] having forged", "C] being forged", "D] forged"], "correctAnswer": "D", "explanation": "Past participle in reduced relative clause", "translation": "Chiến lược nền tảng, được rèn giũa qua hai thập kỷ lặp lại, đã biến đổi các thị trường kỹ thuật số."},
+        {"id": "grammar-q11", "type": "multiple-choice", "questionText": "So significant _____ that it has redefined online advertising.", "options": ["A] has Google's data advantage become", "B] Google's data advantage has become", "C] was Google's data advantage", "D] Google's data advantage was"], "correctAnswer": "B", "explanation": "Inversion after 'so + adjective'", "translation": "Lợi thế dữ liệu của Google trở nên quan trọng đến mức nó đã định nghĩa lại quảng cáo trực tuyến."},
+        {"id": "grammar-q12", "type": "multiple-choice", "questionText": "The international agreement requires that competition principles _____ consistently applied.", "options": ["A] is upheld", "B] be upheld", "C] was upheld", "D] has been upheld"], "correctAnswer": "B", "explanation": "Subjunctive after verbs of requirement", "translation": "Thỏa thuận quốc tế yêu cầu rằng các nguyên tắc cạnh tranh phải được áp dụng nhất quán."},
+        {"id": "grammar-q13", "type": "multiple-choice", "questionText": "_____ the sophisticated algorithms, predicting user behavior remains challenging.", "options": ["A] Although", "B] Because of", "C] However", "D] Despite"], "correctAnswer": "D", "explanation": "Preposition for contrast", "translation": "Bất chấp các thuật toán tinh vi, dự đoán hành vi người dùng vẫn đầy thách thức."},
+        {"id": "grammar-q14", "type": "multiple-choice", "questionText": "The AI framework, _____ to enhance user experience, requires continuous refinement.", "options": ["A] designing", "B] having designed", "C] being designed", "D] designed"], "correctAnswer": "D", "explanation": "Past participle in reduced relative clause", "translation": "Khuôn khổ AI, được thiết kế để nâng cao trải nghiệm người dùng, yêu cầu tinh chỉnh liên tục."},
+        {"id": "grammar-q15", "type": "multiple-choice", "questionText": "So complex _____ that traditional business models have proven inadequate.", "options": ["A] have digital ecosystems become", "B] digital ecosystems have become", "C] became digital ecosystems", "D] digital ecosystems became"], "correctAnswer": "B", "explanation": "Inversion after 'so + adjective'", "translation": "Các hệ sinh thái kỹ thuật số trở nên phức tạp đến mức các mô hình kinh doanh truyền thống đã chứng minh là không đầy đủ."},
+        {"id": "grammar-q16", "type": "multiple-choice", "questionText": "The ecosystem strategy requires that user interests _____ consistently prioritized.", "options": ["A] are", "B] be", "C] were", "D] have been"], "correctAnswer": "B", "explanation": "Subjunctive after verbs of requirement", "translation": "Chiến lược hệ sinh thái yêu cầu rằng lợi ích người dùng phải được ưu tiên nhất quán."},
+        {"id": "grammar-q17", "type": "multiple-choice", "questionText": "_____ the detailed market analysis, competitive dynamics remain unpredictable.", "options": ["A] Besides", "B] Moreover", "C] Therefore", "D] Notwithstanding"], "correctAnswer": "D", "explanation": "Formal preposition meaning 'despite'", "translation": "Bất chấp phân tích thị trường chi tiết, động lực cạnh tranh vẫn không thể đoán trước."},
+        {"id": "grammar-q18", "type": "multiple-choice", "questionText": "The search algorithm, _____ on machine learning principles, has achieved remarkable accuracy.", "options": ["A] predicating", "B] having predicated", "C] being predicated", "D] predicated"], "correctAnswer": "D", "explanation": "Past participle in reduced relative clause", "translation": "Thuật toán tìm kiếm, dựa trên các nguyên tắc học máy, đã đạt được độ chính xác đáng kể."},
+        {"id": "grammar-q19", "type": "multiple-choice", "questionText": "So rapidly _____ that regulatory frameworks have struggled to adapt.", "options": ["A] is the platform economy evolving", "B] the platform economy is evolving", "C] has the platform economy evolved", "D] the platform economy has evolved"], "correctAnswer": "C", "explanation": "Inversion after 'so + adverb'", "translation": "Nền kinh tế nền tảng tiến hóa nhanh đến mức các khuôn khổ quy định phải vật lộn để thích nghi."},
+        {"id": "grammar-q20", "type": "multiple-choice", "questionText": "The digital policy mandates that privacy protections _____ strengthened across all services.", "options": ["A] are", "B] be", "C] were", "D] have been"], "correctAnswer": "B", "explanation": "Subjunctive after verbs of mandate", "translation": "Chính sách kỹ thuật số yêu cầu rằng các bảo vệ quyền riêng tư phải được tăng cường trên tất cả các dịch vụ."}
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "4.6",
+    "author": "IELTS Practice System",
+    "notes": "IELTS Level 4.6 advanced Google ecosystem test with properly varied correct answers. Correct answers are distributed across A, B, C, D to prevent guessing patterns while maintaining consistent scoring."
+  }
+}

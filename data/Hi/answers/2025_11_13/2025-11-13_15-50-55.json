@@ -1,0 +1,1657 @@
+{
+  "id": "mhx6vsyaf09lc0drb4m",
+  "timestamp": "2025-11-13T08:50:55.187Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-11-13T08:50:52.507Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "listening": {
+      "listening-q1": "A",
+      "listening-q2": "A",
+      "listening-q3": "A",
+      "listening-q10": "A",
+      "listening-q4": "A",
+      "listening-q5": "B",
+      "listening-q7": "A",
+      "listening-q6": "A",
+      "listening-q8": "C",
+      "listening-q9": "A",
+      "listening-q11": "A",
+      "listening-q17": "A",
+      "listening-q12": "A",
+      "listening-q13": "A",
+      "listening-q14": "A",
+      "listening-q15": "A",
+      "listening-q18": "A",
+      "listening-q16": "A",
+      "listening-q19": "A",
+      "listening-q20": "A",
+      "listening-q21": "A",
+      "listening-q22": "B",
+      "listening-q23": "A",
+      "listening-q25": "B",
+      "listening-q26": "A",
+      "listening-q27": "B",
+      "listening-q30": "B",
+      "listening-q28": "A",
+      "listening-q29": "C",
+      "listening-q31": "A",
+      "listening-q33": "A",
+      "listening-q34": "A",
+      "listening-q35": "A",
+      "listening-q36": "A",
+      "listening-q37": "A",
+      "listening-q38": "A",
+      "listening-q32": "A",
+      "listening-q39": "A",
+      "listening-q40": "A"
+    },
+    "reading": {
+      "reading-q1": "A",
+      "reading-q2": "A",
+      "reading-q3": "A",
+      "reading-q4": "A",
+      "reading-q5": "A",
+      "reading-q6": "A",
+      "reading-q7": "A",
+      "reading-q8": "A",
+      "reading-q9": "A",
+      "reading-q10": "A",
+      "reading-q11": "A",
+      "reading-q12": "A",
+      "reading-q13": "B",
+      "reading-q14": "A",
+      "reading-q15": "A",
+      "reading-q16": "A",
+      "reading-q17": "A",
+      "reading-q18": "B",
+      "reading-q19": "A",
+      "reading-q20": "A",
+      "reading-q21": "C",
+      "reading-q22": "B",
+      "reading-q23": "A",
+      "reading-q24": "A",
+      "reading-q25": "D",
+      "reading-q26": "B",
+      "reading-q27": "C",
+      "reading-q28": "B",
+      "reading-q29": "A",
+      "reading-q30": "A"
+    },
+    "grammar": {
+      "grammar-q1": "B",
+      "grammar-q20": "A",
+      "grammar-q2": "A",
+      "grammar-q3": "A",
+      "grammar-q4": "A",
+      "grammar-q5": "A",
+      "grammar-q6": "B",
+      "grammar-q7": "C",
+      "grammar-q8": "B",
+      "grammar-q9": "A",
+      "grammar-q10": "A",
+      "grammar-q11": "A",
+      "grammar-q12": "A",
+      "grammar-q13": "A",
+      "grammar-q14": "A",
+      "grammar-q15": "A",
+      "grammar-q16": "B",
+      "grammar-q17": "A",
+      "grammar-q18": "A",
+      "grammar-q19": "C"
+    },
+    "writing": {
+      "task1": "The diagram compares the periodization model of athletic training with traditional continuous training. In the traditional model, athletes train at a steady level throughout the season without major changes in intensity or focus. This approach can lead to plateaus in performance and higher risk of fatigue or overtraining. In contrast, the periodization model divides training into different phases, each with a specific goal. At the beginning, athletes build a foundation with general fitness and lower intensity. Then the training gradually increases in intensity and focuses more on sport-specific skills. Near the competition period, athletes reach peak performance, and after that comes a recovery or transition phase to rest and prevent burnout. Overall, the periodization model offers a more structured and balanced plan that helps athletes develop progressively, reach their best form at the right time, and maintain long-term performance more effectively than continuous training",
+      "task2": "Some people think that technology in sports has made things unfair and taken away the true human spirit of competition, while others believe it has helped athletes perform better and stay safer. On one hand, many argue that advanced equipment and technology such as high-tech shoes, special swimsuits, or data tracking systems give some athletes an advantage that others cannot afford. This can create inequality between rich and poor teams or countries, making success depend more on technology than on talent or hard work. They also believe that too much technology reduces the natural skill and emotion that make sports exciting and human, as decisions are now often made by machines like VAR or sensors instead of referees’ judgment. On the other hand, supporters of sports technology believe that these advancements are positive because they help athletes train more effectively, avoid injuries, and perform at their best level. For example, motion analysis and smart wearables can monitor health and prevent serious problems, while new materials in sports gear improve comfort and protection. Technology has also made competitions fairer by reducing human errors in scoring and timing. In my opinion, technology should be used carefully but not rejected. It has brought many benefits that make sports safer and more professional, but it is important to keep clear rules so that no one gains an unfair advantage. As long as it is managed fairly, technology can support rather than destroy the human spirit in sports"
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {}
+  },
+  "results": {
+    "listening": 7,
+    "reading": 8,
+    "writing": 15,
+    "speaking": 0,
+    "grammar": 6,
+    "total": 32.73,
+    "listeningTotal": 40,
+    "readingTotal": 30,
+    "writingTotal": 20,
+    "speakingTotal": 20,
+    "grammarTotal": 20,
+    "translationPenalty": 0,
+    "bands": {
+      "listening": 3.5,
+      "reading": 3.5,
+      "writing": 7,
+      "speaking": 3,
+      "grammar": 3,
+      "overall": 4
+    }
+  },
+  "timeSpent": "41:16",
+  "testData": {
+    "testId": "IELTS-SPORTS-4.6-RANDOM-2025-11-05",
+    "testDate": "2025-11-05",
+    "testTitle": "IELTS Level 4.6 Advanced Sports Science & Management Test - Randomized Answers",
+    "totalQuestions": 110,
+    "difficultyLevel": "Advanced",
+    "sections": [
+      {
+        "id": "listening",
+        "title": "Listening",
+        "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+        "parts": [
+          {
+            "partNumber": 1,
+            "title": "Part 1: Discussion about sports science and athlete performance",
+            "instructions": "Listen to the conversation and answer questions 1-10.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.4,
+                "rate": 1.2,
+                "volume": 0.9,
+                "name": "Sports Scientist",
+                "variation": 0.11,
+                "accent": "British",
+                "emotion": "analytical",
+                "speakingType": "academic"
+              },
+              "male": {
+                "pitch": 0.5,
+                "rate": 1.1,
+                "volume": 0.85,
+                "name": "Performance Coach",
+                "variation": 0.09,
+                "accent": "International",
+                "emotion": "thoughtful",
+                "speakingType": "consultation"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Good morning. This is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between a sports scientist and a performance coach about athlete development. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "The traditional approach to athlete development has demonstrated significant limitations in creating sustainable elite performance. Its emphasis on early specialization and intensive training failed to account for long-term athlete development, psychological well-being, and injury prevention strategies."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Indeed, Doctor. The modern athlete development model acknowledges these shortcomings but still operates within a fundamentally performance-driven framework. What's needed is a more holistic approach that recognizes the role of periodization, recovery management, and building robust physiological systems."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Precisely. The success of Scandinavian athletic programs demonstrates the importance of diversified early sports participation combined with delayed specialization. However, simply replicating these models is insufficient—each sport requires context-specific strategies based on its unique physical and technical demands."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The concept of 'talent transfer' developed in high-performance systems provides valuable insights here. Athletes evolve by moving to sports that closely match their existing physical capabilities and psychological attributes. This pathway creates both opportunities and constraints for performance optimization."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Excellent point. This underscores the importance of strategic athlete development rather than random talent identification. The challenge lies in identifying and developing fundamental movement skills while building complementary capabilities in technical proficiency, tactical awareness, and mental resilience."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The technological transformation adds another layer of complexity. Coaches face the dual challenge of developing traditional athletic capabilities while simultaneously integrating sports technology. This requires investments in both physical conditioning and digital literacy."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Moreover, the health imperative necessitates sustainable training practices. The traditional approach of 'train hard, recover later' is no longer viable. Athletes must pursue performance excellence while prioritizing long-term health from the outset."
+                },
+                {
+                  "speaker": "male",
+                  "text": "This implies rethinking youth sports programming as well. Rather than implementing one-size-fits-all training regimens, coaches should support athletes in developing their self-awareness and implementing individualized strategies."
+                },
+                {
+                  "speaker": "female",
+                  "text": "The role of sports science remains crucial but must evolve. Instead of focusing solely on performance metrics, sports scientists should facilitate athlete development processes, coordinate multidisciplinary support, and ensure holistic well-being. This requires building integrated support teams and combating burnout."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Ultimately, successful athlete development must balance performance excellence with personal development, technical mastery with tactical intelligence, and short-term competitive goals with long-term athletic sustainability."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q1",
+                "type": "multiple-choice",
+                "questionText": "What has demonstrated limitations according to the speakers?",
+                "options": [
+                  "A) Traditional athlete development",
+                  "B) Modern training methods",
+                  "C) Technological approaches",
+                  "D] Psychological training"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì đã thể hiện những hạn chế theo các diễn giả?"
+              },
+              {
+                "id": "listening-q2",
+                "type": "multiple-choice",
+                "questionText": "What failed to account for long-term development?",
+                "options": [
+                  "A) Early specialization",
+                  "B) Holistic approaches",
+                  "C) Diversified training",
+                  "D] Recovery strategies"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì đã không tính đến phát triển dài hạn?"
+              },
+              {
+                "id": "listening-q3",
+                "type": "multiple-choice",
+                "questionText": "What does the modern development model still operate within?",
+                "options": [
+                  "A) Performance-driven framework",
+                  "B) Health-focused framework",
+                  "C) Educational framework",
+                  "D] Recreational framework"
+                ],
+                "correctAnswer": "C",
+                "translation": "Mô hình phát triển hiện đại vẫn hoạt động trong khuôn khổ nào?"
+              },
+              {
+                "id": "listening-q4",
+                "type": "multiple-choice",
+                "questionText": "What demonstrates the importance of diversified participation?",
+                "options": [
+                  "A) Scandinavian programs",
+                  "B) American systems",
+                  "C) Asian models",
+                  "D] European approaches"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì chứng minh tầm quan trọng của tham gia đa dạng?"
+              },
+              {
+                "id": "listening-q5",
+                "type": "multiple-choice",
+                "questionText": "What concept provides insights about athlete evolution?",
+                "options": [
+                  "A) Talent transfer",
+                  "B) Genetic selection",
+                  "C) Early identification",
+                  "D] Systematic training"
+                ],
+                "correctAnswer": "D",
+                "translation": "Khái niệm nào cung cấp hiểu biết về tiến hóa vận động viên?"
+              },
+              {
+                "id": "listening-q6",
+                "type": "multiple-choice",
+                "questionText": "What creates both opportunities and constraints?",
+                "options": [
+                  "A) Development pathways",
+                  "B) Training facilities",
+                  "C) Coaching methods",
+                  "D] Competition schedules"
+                ],
+                "correctAnswer": "C",
+                "translation": "Điều gì tạo ra cả cơ hội và ràng buộc?"
+              },
+              {
+                "id": "listening-q7",
+                "type": "multiple-choice",
+                "questionText": "What dual challenge do coaches face?",
+                "options": [
+                  "A) Traditional and technological integration",
+                  "B) Physical and mental training",
+                  "C) Individual and team development",
+                  "D] Short-term and long-term planning"
+                ],
+                "correctAnswer": "B",
+                "translation": "Huấn luyện viên phải đối mặt với thách thức kép nào?"
+              },
+              {
+                "id": "listening-q8",
+                "type": "multiple-choice",
+                "questionText": "What approach is no longer viable?",
+                "options": [
+                  "A) Train hard, recover later",
+                  "B) Periodized training",
+                  "C) Balanced development",
+                  "D] Scientific approach"
+                ],
+                "correctAnswer": "D",
+                "translation": "Phương pháp nào không còn khả thi?"
+              },
+              {
+                "id": "listening-q9",
+                "type": "multiple-choice",
+                "questionText": "What should sports scientists facilitate instead of focusing on metrics?",
+                "options": [
+                  "A) Development processes",
+                  "B) Competition results",
+                  "C) Training intensity",
+                  "D] Technical skills"
+                ],
+                "correctAnswer": "C",
+                "translation": "Các nhà khoa học thể thao nên tạo điều kiện cho điều gì thay vì tập trung vào số liệu?"
+              },
+              {
+                "id": "listening-q10",
+                "type": "multiple-choice",
+                "questionText": "What must athlete development balance?",
+                "options": [
+                  "A) Performance excellence and personal development",
+                  "B) Training and competition",
+                  "C) Individual and team goals",
+                  "D] Physical and technical skills"
+                ],
+                "correctAnswer": "A",
+                "translation": "Phát triển vận động viên phải cân bằng điều gì?"
+              }
+            ]
+          },
+          {
+            "partNumber": 2,
+            "title": "Part 2: Lecture on sports technology and performance analytics",
+            "instructions": "Listen to the lecture and answer questions 11-20.",
+            "voiceProfiles": {
+              "male": {
+                "pitch": 0.4,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Sports Technologist",
+                "variation": 0.08,
+                "accent": "educated",
+                "emotion": "authoritative",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 2. You will hear a lecture on sports technology and performance analytics. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+              "conversation": [
+                {
+                  "speaker": "male",
+                  "text": "The emergence of sports technology represents one of the most significant transformations in athletic performance of our time, creating new training methodologies that challenge conventional coaching theory. Modern sports technology exhibits distinctive characteristics including real-time biometric monitoring, predictive analytics, and data-driven decision making. These features create performance optimization dynamics that can lead to rapid athletic improvement. The science of sports technology fundamentally differs from traditional coaching methods—insights are generated through data integration rather than observational analysis. This creates novel coaching challenges, as athlete assessment becomes more complex and performance dynamics operate across multiple physiological systems. Data accumulation and machine learning enable sophisticated performance prediction and personalized training regimens, raising concerns about athlete privacy and technological dependency. The ethical framework for sports technology remains underdeveloped, struggling to balance performance enhancement with athlete welfare. Traditional coaching boundaries are increasingly blurred in technological environments, requiring interdisciplinary collaboration in performance optimization. The future evolution of sports technology will likely involve greater attention to data governance, technological integration, and ethical considerations as sports organizations grapple with the implications of these powerful new training tools."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q11",
+                "type": "multiple-choice",
+                "questionText": "What represents significant transformation in sports?",
+                "options": [
+                  "A) Sports technology",
+                  "B) Traditional coaching",
+                  "C) Basic equipment",
+                  "D] Recreational sports"
+                ],
+                "correctAnswer": "C",
+                "translation": "Điều gì đại diện cho sự chuyển đổi quan trọng trong thể thao?"
+              },
+              {
+                "id": "listening-q12",
+                "type": "multiple-choice",
+                "questionText": "What distinctive characteristics does sports technology exhibit?",
+                "options": [
+                  "A) Real-time monitoring",
+                  "B) Traditional methods",
+                  "C) Basic observations",
+                  "D] Simple measurements"
+                ],
+                "correctAnswer": "B",
+                "translation": "Công nghệ thể thao thể hiện những đặc điểm khác biệt nào?"
+              },
+              {
+                "id": "listening-q13",
+                "type": "multiple-choice",
+                "questionText": "What dynamics can lead to athletic improvement?",
+                "options": [
+                  "A) Performance optimization",
+                  "B) Natural talent",
+                  "C) Basic training",
+                  "D] Traditional methods"
+                ],
+                "correctAnswer": "D",
+                "translation": "Động lực nào có thể dẫn đến cải thiện thành tích?"
+              },
+              {
+                "id": "listening-q14",
+                "type": "multiple-choice",
+                "questionText": "How does sports technology insight generation differ?",
+                "options": [
+                  "A) Data integration",
+                  "B) Observational analysis",
+                  "C) Coach intuition",
+                  "D] Athlete feedback"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tạo insight công nghệ thể thao khác biệt như thế nào?"
+              },
+              {
+                "id": "listening-q15",
+                "type": "multiple-choice",
+                "questionText": "What becomes more complex in technological assessment?",
+                "options": [
+                  "A) Athlete assessment",
+                  "B) Basic skills",
+                  "C) Simple metrics",
+                  "D] Traditional tests"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì trở nên phức tạp trong đánh giá công nghệ?"
+              },
+              {
+                "id": "listening-q16",
+                "type": "multiple-choice",
+                "questionText": "What enables sophisticated performance prediction?",
+                "options": [
+                  "A) Machine learning",
+                  "B) Coach experience",
+                  "C) Basic statistics",
+                  "D] Simple observation"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì cho phép dự đoán thành tích tinh vi?"
+              },
+              {
+                "id": "listening-q17",
+                "type": "multiple-choice",
+                "questionText": "What remains underdeveloped?",
+                "options": [
+                  "A) Ethical framework",
+                  "B) Technology itself",
+                  "C) Training methods",
+                  "D] Athlete skills"
+                ],
+                "correctAnswer": "C",
+                "translation": "Điều gì vẫn còn kém phát triển?"
+              },
+              {
+                "id": "listening-q18",
+                "type": "multiple-choice",
+                "questionText": "What are increasingly blurred?",
+                "options": [
+                  "A) Coaching boundaries",
+                  "B) Performance standards",
+                  "C) Skill levels",
+                  "D] Competition rules"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì ngày càng trở nên mờ nhạt?"
+              },
+              {
+                "id": "listening-q19",
+                "type": "multiple-choice",
+                "questionText": "What requires interdisciplinary collaboration?",
+                "options": [
+                  "A) Performance optimization",
+                  "B) Basic training",
+                  "C) Skill development",
+                  "D] Competition preparation"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì yêu cầu hợp tác đa ngành?"
+              },
+              {
+                "id": "listening-q20",
+                "type": "multiple-choice",
+                "questionText": "What will receive greater attention?",
+                "options": [
+                  "A) Data governance",
+                  "B) Basic training",
+                  "C) Traditional methods",
+                  "D] Simple equipment"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì sẽ nhận được sự quan tâm lớn hơn?"
+              }
+            ]
+          },
+          {
+            "partNumber": 3,
+            "title": "Part 3: Discussion about sports psychology and mental performance",
+            "instructions": "Listen to the discussion and answer questions 21-30.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.5,
+                "rate": 1.2,
+                "volume": 0.85,
+                "name": "Sports Psychologist",
+                "variation": 0.12,
+                "accent": "academic",
+                "emotion": "enthusiastic",
+                "speakingType": "discussion"
+              },
+              "male": {
+                "pitch": 0.6,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Mental Coach",
+                "variation": 0.1,
+                "accent": "educated",
+                "emotion": "pragmatic",
+                "speakingType": "discussion"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 3. You will hear a discussion between a sports psychologist and a mental performance coach. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "The psychology of elite performance presents fascinating paradoxes. High-level sports generate remarkable mental demands through pressure situations, competition stress, and public expectations, yet they also create opportunities for personal growth, resilience building, and peak performance states. The fundamental challenge is maximizing mental strengths while minimizing psychological vulnerabilities."
+                },
+                {
+                  "speaker": "male",
+                  "text": "This is precisely where mental skills training offers transformative potential. Visualization techniques, mindfulness practices, and cognitive restructuring can optimize mental states, reduce performance anxiety, and improve competitive focus. However, the psychological benefits must be integrated holistically to avoid creating additional performance pressure."
+                },
+                {
+                  "speaker": "female",
+                  "text": "The self-regulation mechanism is particularly important here. Athlete investments in mental training create substantial performance improvements that are often underestimated. Better mental preparation could enhance performance while reducing burnout risk."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Psychological resilience is becoming as crucial as physical conditioning. Mental toughness development is now a prerequisite for elite performance. But we must ensure that mental training doesn't create unrealistic expectations or psychological dependency."
+                },
+                {
+                  "speaker": "female",
+                  "text": "The integration dimension is critical. Mental skills require consistent practice across training and competition environments. This demands new coaching capabilities and collaborative approaches that engage athletes as active participants rather than passive recipients."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The implementation models for mental training also need rethinking. Integrated psychological support can leverage expertise and resources, but it must be structured to protect athlete autonomy and ensure long-term development rather than short-term performance gains."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Athlete identity development is another crucial consideration. Athletes must develop balanced self-concepts to withstand career transitions while maintaining the competitive identity that drives performance excellence. This requires strategic career planning."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The team dynamics of sports psychology is equally important. Leadership development, communication skills, and group cohesion can make teams more effective while creating supportive environments. The cost of psychological neglect far exceeds the cost of proactive mental training."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Finally, we must consider the cultural dimension. Successful mental preparation can't exist as isolated techniques divorced from cultural context. Cultural awareness and adaptability are essential for effective psychological support."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Ultimately, sports psychology is about using mental skills, self-awareness, and psychological principles to help athletes perform not only more successfully but also more sustainably, joyfully, and resiliently—athletes who thrive in their sports careers."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q21",
+                "type": "multiple-choice",
+                "questionText": "What paradox does elite performance present?",
+                "options": [
+                  "A) Mental demands and growth opportunities",
+                  "B) Physical and technical skills",
+                  "C) Individual and team dynamics",
+                  "D] Training and competition"
+                ],
+                "correctAnswer": "C",
+                "translation": "Thành tích elite thể hiện nghịch lý gì?"
+              },
+              {
+                "id": "listening-q22",
+                "type": "multiple-choice",
+                "questionText": "What do mental skills training optimize?",
+                "options": [
+                  "A) Mental states",
+                  "B) Physical conditioning",
+                  "C) Technical skills",
+                  "D] Tactical knowledge"
+                ],
+                "correctAnswer": "B",
+                "translation": "Đào tạo kỹ năng tâm lý tối ưu hóa điều gì?"
+              },
+              {
+                "id": "listening-q23",
+                "type": "multiple-choice",
+                "questionText": "What mechanism is important for performance enhancement?",
+                "options": [
+                  "A) Self-regulation",
+                  "B) External motivation",
+                  "C) Peer pressure",
+                  "D] Coach feedback"
+                ],
+                "correctAnswer": "D",
+                "translation": "Cơ chế nào quan trọng để nâng cao thành tích?"
+              },
+              {
+                "id": "listening-q24",
+                "type": "multiple-choice",
+                "questionText": "What is becoming as crucial as physical conditioning?",
+                "options": [
+                  "A) Psychological resilience",
+                  "B) Technical mastery",
+                  "C) Tactical intelligence",
+                  "D] Equipment quality"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì đang trở nên quan trọng như điều kiện thể chất?"
+              },
+              {
+                "id": "listening-q25",
+                "type": "multiple-choice",
+                "questionText": "What do mental skills require across environments?",
+                "options": [
+                  "A) Consistent practice",
+                  "B) Occasional training",
+                  "C) Competition focus",
+                  "D] Coach supervision"
+                ],
+                "correctAnswer": "C",
+                "translation": "Kỹ năng tâm lý yêu cầu điều gì qua các môi trường?"
+              },
+              {
+                "id": "listening-q26",
+                "type": "multiple-choice",
+                "questionText": "What must psychological support protect?",
+                "options": [
+                  "A) Athlete autonomy",
+                  "B) Coach authority",
+                  "C) Team standards",
+                  "D] Organizational goals"
+                ],
+                "correctAnswer": "B",
+                "translation": "Hỗ trợ tâm lý phải bảo vệ điều gì?"
+              },
+              {
+                "id": "listening-q27",
+                "type": "multiple-choice",
+                "questionText": "What is crucial for athlete identity?",
+                "options": [
+                  "A) Balanced self-concept",
+                  "B) Competitive focus",
+                  "C) Performance obsession",
+                  "D] Public recognition"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì quan trọng cho bản sắc vận động viên?"
+              },
+              {
+                "id": "listening-q28",
+                "type": "multiple-choice",
+                "questionText": "What can make teams more effective?",
+                "options": [
+                  "A) Group cohesion",
+                  "B) Individual talent",
+                  "C) Strict discipline",
+                  "D] Advanced tactics"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì có thể làm cho đội hiệu quả hơn?"
+              },
+              {
+                "id": "listening-q29",
+                "type": "multiple-choice",
+                "questionText": "What is essential for effective psychological support?",
+                "options": [
+                  "A) Cultural awareness",
+                  "B) Technical knowledge",
+                  "C) Scientific research",
+                  "D] Professional credentials"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì cần thiết cho hỗ trợ tâm lý hiệu quả?"
+              },
+              {
+                "id": "listening-q30",
+                "type": "multiple-choice",
+                "questionText": "What should athletes thrive in?",
+                "options": [
+                  "A) Their sports careers",
+                  "B) Individual achievements",
+                  "C) Team success",
+                  "D] Public recognition"
+                ],
+                "correctAnswer": "C",
+                "translation": "Vận động viên nên phát triển trong lĩnh vực gì?"
+              }
+            ]
+          },
+          {
+            "partNumber": 4,
+            "title": "Part 4: Lecture on sports governance and organizational management",
+            "instructions": "Listen to the lecture and answer questions 31-40.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.3,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Sports Administrator",
+                "variation": 0.07,
+                "accent": "academic",
+                "emotion": "knowledgeable",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 4. You will hear a lecture on sports governance and organizational management. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Sports governance provides crucial insights into the fundamental determinants of organizational effectiveness and integrity in sports. The quality of governance structures—defined as the formal and informal systems governing sports organizations—explains more of the variation in organizational outcomes than financial resources or technical expertise alone. Inclusive governance systems that ensure transparency, accountability, and stakeholder participation enable sustainable development. Conversely, centralized governance that concentrates power in small elites undermines organizational integrity. The persistence of governance challenges presents a central puzzle: why do sports organizations often maintain structures that impede progress? Historical analysis emphasizes the role of critical incidents and organizational culture in shaping governance evolution. The distribution of decision-making power fundamentally influences governance quality, as established interests resist reforms that would diminish their control. Building effective sports organizations requires not just administrative capacity but also leadership commitment to good governance principles. The challenge of governance reform lies in changing not just formal structures but also informal practices and cultural norms. Understanding these governance dynamics is essential for designing effective sports organizations that achieve both competitive success and organizational integrity."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q31",
+                "type": "multiple-choice",
+                "questionText": "What provides insights into organizational effectiveness?",
+                "options": [
+                  "A) Sports governance",
+                  "B) Coaching methods",
+                  "C) Training systems",
+                  "D] Athlete development"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì cung cấp hiểu biết về hiệu quả tổ chức?"
+              },
+              {
+                "id": "listening-q32",
+                "type": "multiple-choice",
+                "questionText": "What explains organizational variation better?",
+                "options": [
+                  "A) Governance quality",
+                  "B) Financial resources",
+                  "C) Athlete talent",
+                  "D] Facility quality"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì giải thích sự khác biệt tổ chức tốt hơn?"
+              },
+              {
+                "id": "listening-q33",
+                "type": "multiple-choice",
+                "questionText": "What do inclusive systems enable?",
+                "options": [
+                  "A) Sustainable development",
+                  "B) Quick results",
+                  "C) Centralized control",
+                  "D] Individual success"
+                ],
+                "correctAnswer": "C",
+                "translation": "Hệ thống bao trùm cho phép điều gì?"
+              },
+              {
+                "id": "listening-q34",
+                "type": "multiple-choice",
+                "questionText": "What does centralized governance undermine?",
+                "options": [
+                  "A) Organizational integrity",
+                  "B) Decision speed",
+                  "C) Resource allocation",
+                  "D] Performance outcomes"
+                ],
+                "correctAnswer": "A",
+                "translation": "Quản trị tập trung làm suy yếu điều gì?"
+              },
+              {
+                "id": "listening-q35",
+                "type": "multiple-choice",
+                "questionText": "What presents a central puzzle?",
+                "options": [
+                  "A) Governance challenges",
+                  "B) Performance issues",
+                  "C) Financial problems",
+                  "D] Talent development"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì đặt ra một câu đố trung tâm?"
+              },
+              {
+                "id": "listening-q36",
+                "type": "multiple-choice",
+                "questionText": "What emphasizes critical incidents?",
+                "options": [
+                  "A) Historical analysis",
+                  "B) Current practice",
+                  "C) Future planning",
+                  "D] Technical expertise"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì nhấn mạnh các sự cố quan trọng?"
+              },
+              {
+                "id": "listening-q37",
+                "type": "multiple-choice",
+                "questionText": "What fundamentally influences governance quality?",
+                "options": [
+                  "A) Decision-making power",
+                  "B) Financial resources",
+                  "C) Staff qualifications",
+                  "D] Athlete performance"
+                ],
+                "correctAnswer": "C",
+                "translation": "Điều gì ảnh hưởng cơ bản đến chất lượng quản trị?"
+              },
+              {
+                "id": "listening-q38",
+                "type": "multiple-choice",
+                "questionText": "What do effective organizations require?",
+                "options": [
+                  "A) Leadership commitment",
+                  "B) Financial investment",
+                  "C) Technical expertise",
+                  "D] Political support"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tổ chức hiệu quả yêu cầu điều gì?"
+              },
+              {
+                "id": "listening-q39",
+                "type": "multiple-choice",
+                "questionText": "What does governance reform require changing?",
+                "options": [
+                  "A) Formal and informal systems",
+                  "B) Only formal structures",
+                  "C) Only informal practices",
+                  "D] Leadership personnel"
+                ],
+                "correctAnswer": "B",
+                "translation": "Cải cách quản trị yêu cầu thay đổi điều gì?"
+              },
+              {
+                "id": "listening-q40",
+                "type": "multiple-choice",
+                "questionText": "What is essential for effective sports organizations?",
+                "options": [
+                  "A) Understanding governance dynamics",
+                  "B) Implementing technical solutions",
+                  "C) Following best practices",
+                  "D] Adopting successful models"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì cần thiết cho tổ chức thể thao hiệu quả?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Reading",
+        "description": "30 questions • 50 minutes",
+        "passages": [
+          {
+            "id": "reading-passage1",
+            "title": "Passage 1: The Science of Sports Nutrition and Recovery",
+            "content": "The science of sports nutrition represents a fundamental shift in understanding the determinants of athletic performance and recovery. Sports nutrition differs from conventional nutrition in its focus on timing, composition, and individualization of nutrient intake to support training adaptation and competition performance. These considerations create complex nutritional strategies that must address energy systems, hydration status, and micronutrient requirements. Periodized nutrition conceptualizes nutrient intake as a dynamic process aligned with training phases—building, peaking, tapering, and recovery—connected through physiological principles. The metabolic flexibility of athletes determines their ability to utilize different fuel sources efficiently, highlighting the importance of nutritional periodization and training adaptation. The timing of nutrient intake exhibits critical windows for optimization, with nutrient sensitivity varying across training contexts, explaining the importance of personalized nutrition strategies despite general guidelines. The technological transformation has created new nutritional monitoring challenges related to biometric tracking, supplement quality, and dietary adherence. Personalized nutrition and genetic testing challenge traditional dietary approaches, emphasizing individual metabolic responses and nutritional needs. The science of recovery nutrition introduces novel considerations regarding nutrient timing, supplementation efficacy, and the interaction between nutrition and sleep. Understanding sports nutrition requires analyzing not only the composition of diets but also their timing, individual response, and integration with training through comprehensive performance planning.",
+            "questions": [
+              {
+                "id": "reading-q1",
+                "type": "multiple-choice",
+                "questionText": "What represents a fundamental shift in understanding performance?",
+                "options": [
+                  "A) Science of sports nutrition",
+                  "B) Traditional nutrition",
+                  "C) Basic dietetics",
+                  "D] General health"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q2",
+                "type": "multiple-choice",
+                "questionText": "What characteristics create complex strategies?",
+                "options": [
+                  "A) Timing and composition",
+                  "B) Basic nutrients",
+                  "C) Simple guidelines",
+                  "D] General principles"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q3",
+                "type": "multiple-choice",
+                "questionText": "What conceptualizes nutrition as dynamic process?",
+                "options": [
+                  "A) Periodized nutrition",
+                  "B) Basic diet planning",
+                  "C) Standard guidelines",
+                  "D] Traditional approaches"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q4",
+                "type": "multiple-choice",
+                "questionText": "What determines ability to use fuel sources?",
+                "options": [
+                  "A) Metabolic flexibility",
+                  "B) Basic metabolism",
+                  "C) General health",
+                  "D] Training volume"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q5",
+                "type": "multiple-choice",
+                "questionText": "What exhibits critical optimization windows?",
+                "options": [
+                  "A) Nutrient timing",
+                  "B) Basic eating",
+                  "C] General nutrition",
+                  "D] Standard meals"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q6",
+                "type": "multiple-choice",
+                "questionText": "What has created new monitoring challenges?",
+                "options": [
+                  "A) Technological transformation",
+                  "B) Basic science",
+                  "C] Traditional methods",
+                  "D] Simple tracking"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q7",
+                "type": "multiple-choice",
+                "questionText": "What challenges traditional dietary approaches?",
+                "options": [
+                  "A) Personalized nutrition",
+                  "B) Standard diets",
+                  "C] Basic guidelines",
+                  "D] General recommendations"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q8",
+                "type": "multiple-choice",
+                "questionText": "What introduces novel considerations about timing?",
+                "options": [
+                  "A) Recovery nutrition science",
+                  "B] Basic nutrition",
+                  "C] Traditional eating",
+                  "D] General health"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q9",
+                "type": "multiple-choice",
+                "questionText": "What requires analyzing timing and response?",
+                "options": [
+                  "A) Understanding sports nutrition",
+                  "B] Basic diet planning",
+                  "C] General health",
+                  "D] Simple eating"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q10",
+                "type": "multiple-choice",
+                "questionText": "What integrates nutrition with training?",
+                "options": [
+                  "A) Performance planning",
+                  "B] Basic scheduling",
+                  "C] Simple programs",
+                  "D] General advice"
+                ],
+                "correctAnswer": "D"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage2",
+            "title": "Passage 2: Biomechanics and Movement Efficiency",
+            "content": "Sports biomechanics integrates insights from physics and engineering to enhance understanding of human movement in athletic contexts. Traditional coaching often relied on observational analysis and experiential knowledge, but biomechanics reveals systematic movement patterns and efficiency principles through quantitative analysis. Movement itself creates complex mechanical demands that influence performance, creating technical optimization opportunities where precise measurement and analysis can identify improvement areas. Force production and transmission determine movement efficiency, while energy conservation principles inform technical refinement. Movement preferences including individual anatomical variations and motor learning histories influence skill acquisition and technical development. Neuromuscular coordination—the integration of neural commands and muscular responses—shapes movement quality and can be optimized through targeted training, affecting technique mastery, injury prevention, and performance enhancement. Technology-based movement analysis has demonstrated success in improving technical efficiency, reducing injury risk, and enhancing performance outcomes by providing objective feedback. However, biomechanical approaches face limitations in addressing individual learning styles and psychological factors. The integration of biomechanical insights with traditional coaching offers a more comprehensive understanding of movement optimization and more effective technical instruction. This requires individualized assessment and careful attention to the interaction between technical models and individual characteristics. Sports biomechanics ultimately aims to enhance performance by working with human movement as it is, rather than as traditional models assume it should be.",
+            "questions": [
+              {
+                "id": "reading-q11",
+                "type": "multiple-choice",
+                "questionText": "What integrates insights from physics?",
+                "options": [
+                  "A) Sports biomechanics",
+                  "B) Traditional coaching",
+                  "C) Basic training",
+                  "D] General exercise"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q12",
+                "type": "multiple-choice",
+                "questionText": "What reveals systematic movement patterns?",
+                "options": [
+                  "A) Biomechanics",
+                  "B] Observation",
+                  "C] Experience",
+                  "D] Intuition"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q13",
+                "type": "multiple-choice",
+                "questionText": "What creates technical optimization opportunities?",
+                "options": [
+                  "A) Movement demands",
+                  "B] Basic skills",
+                  "C] Simple actions",
+                  "D] Natural talent"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q14",
+                "type": "multiple-choice",
+                "questionText": "What determines movement efficiency?",
+                "options": [
+                  "A) Force production",
+                  "B] Basic strength",
+                  "C] Natural ability",
+                  "D] Simple coordination"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q15",
+                "type": "multiple-choice",
+                "questionText": "What influences skill acquisition?",
+                "options": [
+                  "A) Movement preferences",
+                  "B] Basic learning",
+                  "C] Simple practice",
+                  "D] Natural progression"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q16",
+                "type": "multiple-choice",
+                "questionText": "What shapes movement quality through integration?",
+                "options": [
+                  "A) Neuromuscular coordination",
+                  "B] Basic nerves",
+                  "C] Simple muscles",
+                  "D] Natural movement"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q17",
+                "type": "multiple-choice",
+                "questionText": "What has demonstrated success in improvement?",
+                "options": [
+                  "A) Technology-based analysis",
+                  "B] Basic observation",
+                  "C] Simple feedback",
+                  "D] Natural learning"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q18",
+                "type": "multiple-choice",
+                "questionText": "What do biomechanical approaches face limitations in addressing?",
+                "options": [
+                  "A) Learning styles",
+                  "B] Basic movements",
+                  "C] Simple techniques",
+                  "D] Natural abilities"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q19",
+                "type": "multiple-choice",
+                "questionText": "What offers more comprehensive understanding?",
+                "options": [
+                  "A) Integration with coaching",
+                  "B] Basic science",
+                  "C] Simple methods",
+                  "D] Traditional approaches"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q20",
+                "type": "multiple-choice",
+                "questionText": "What does biomechanics aim to work with?",
+                "options": [
+                  "A) Human movement as it is",
+                  "B] Ideal movement",
+                  "C] Basic patterns",
+                  "D] Simple actions"
+                ],
+                "correctAnswer": "C"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage3",
+            "title": "Passage 3: Sports Economics and Business Management",
+            "content": "Sports economics examines the business dimensions of sports organizations and the economic impact of sporting events, focusing on revenue generation, cost management, and value creation in sports contexts. Sports businesses typically operate in unique market structures with media rights, sponsorship agreements, and ticketing revenues creating complex financial ecosystems. This market specialization explains the distinctive business models in sports industries. Organizational structures—where multiple stakeholders including owners, leagues, and broadcasters interact—can create both synergies and conflicts in sports business operations. Economic principles and market dynamics shape how sports organizations generate revenue and manage costs. The timing and scale of investments crucially influence financial sustainability, with major expenditures often concentrated in player acquisition and facility development when market conditions are favorable. Revenue sharing mechanisms that distribute income across organizations can enhance competitive balance, though they may reduce individual team incentives. The credibility of financial management affects organizational stability, as stakeholders may not support sports organizations if they doubt their fiscal responsibility. External factors including broadcast agreements, sponsorship markets, and economic conditions influence sports business operations but cannot substitute for sound management principles. Successful sports business strategies typically combine commercial acumen with sports understanding, building sustainable revenue streams while managing costs through efficient operations, strategic partnerships, and diversified income sources. Understanding sports economics is essential for designing viable sports organizations that achieve both competitive success and financial sustainability.",
+            "questions": [
+              {
+                "id": "reading-q21",
+                "type": "multiple-choice",
+                "questionText": "What examines business dimensions of sports?",
+                "options": [
+                  "A) Sports economics",
+                  "B] Basic business",
+                  "C] Traditional management",
+                  "D] Simple finance"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q22",
+                "type": "multiple-choice",
+                "questionText": "What problem explains distinctive business models?",
+                "options": [
+                  "A) Market specialization",
+                  "B] Basic operations",
+                  "C] Simple structures",
+                  "D] Traditional approaches"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q23",
+                "type": "multiple-choice",
+                "questionText": "What can create synergies and conflicts?",
+                "options": [
+                  "A) Organizational structures",
+                  "B] Basic management",
+                  "C] Simple operations",
+                  "D] Traditional systems"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q24",
+                "type": "multiple-choice",
+                "questionText": "What shape revenue generation?",
+                "options": [
+                  "A) Economic principles",
+                  "B] Basic rules",
+                  "C] Simple guidelines",
+                  "D] Traditional methods"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q25",
+                "type": "multiple-choice",
+                "questionText": "When are major expenditures often concentrated?",
+                "options": [
+                  "A) During favorable conditions",
+                  "B] During basic operations",
+                  "C] During simple planning",
+                  "D] During traditional cycles"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q26",
+                "type": "multiple-choice",
+                "questionText": "What can enhance competitive balance?",
+                "options": [
+                  "A) Revenue sharing",
+                  "B] Basic distribution",
+                  "C] Simple allocation",
+                  "D] Traditional sharing"
+                ],
+                "correctAnswer": "B"
+              },
+              {
+                "id": "reading-q27",
+                "type": "multiple-choice",
+                "questionText": "What affects organizational stability?",
+                "options": [
+                  "A) Financial management credibility",
+                  "B] Basic accounting",
+                  "C] Simple budgeting",
+                  "D] Traditional finance"
+                ],
+                "correctAnswer": "C"
+              },
+              {
+                "id": "reading-q28",
+                "type": "multiple-choice",
+                "questionText": "What cannot substitute for sound management?",
+                "options": [
+                  "A) External factors",
+                  "B] Basic conditions",
+                  "C] Simple elements",
+                  "D] Traditional influences"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q29",
+                "type": "multiple-choice",
+                "questionText": "What do successful strategies combine?",
+                "options": [
+                  "A) Commercial acumen and sports understanding",
+                  "B] Basic business and simple sports",
+                  "C] Traditional management and basic knowledge",
+                  "D] Simple finance and general understanding"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q30",
+                "type": "multiple-choice",
+                "questionText": "What is essential for designing viable organizations?",
+                "options": [
+                  "A) Understanding sports economics",
+                  "B] Basic business knowledge",
+                  "C] Simple management",
+                  "D] Traditional approaches"
+                ],
+                "correctAnswer": "B"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "title": "Writing",
+        "description": "60 minutes",
+        "tasks": [
+          {
+            "id": "writing-task1",
+            "title": "Writing Task 1",
+            "instructions": "You should spend about 20 minutes on this task. The diagram below shows the periodization model for athletic training compared to traditional continuous training. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+            "taskType": "Academic",
+            "wordCountMin": 150,
+            "timeLimit": 20,
+            "description": "You will be presented with a diagram showing training models and asked to describe the information in your own words.",
+            "sampleData": {
+              "type": "diagram",
+              "title": "Traditional vs Periodized Training Models",
+              "data": {
+                "Traditional Training": [
+                  "Continuous moderate intensity → Plateau → Overtraining risk"
+                ],
+                "Periodized Training": [
+                  "Preparation phase → Build phase → Peak phase → Taper phase → Competition → Active recovery"
+                ]
+              },
+              "description": "Comparison of traditional continuous training with modern periodized training approach"
+            },
+            "assessmentCriteria": [
+              "Task Achievement",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          },
+          {
+            "id": "writing-task2",
+            "title": "Writing Task 2",
+            "instructions": "You should spend about 40 minutes on this task. Some argue that technological advancements in sports have created unfair advantages and diminished human elements, while others believe they have enhanced performance and improved safety. Discuss both these views and give your own opinion. Write at least 250 words.",
+            "taskType": "Essay",
+            "wordCountMin": 250,
+            "timeLimit": 40,
+            "description": "You will be presented with contrasting views on sports technology impacts and asked to discuss them.",
+            "essayType": "Discussion",
+            "topics": [
+              "Sports technology ethics",
+              "Performance enhancement",
+              "Fair competition"
+            ],
+            "keyPoints": [
+              "Arguments about unfair advantages and diminished human elements",
+              "Arguments about performance enhancement and safety improvements",
+              "Synthesis and personal position"
+            ],
+            "assessmentCriteria": [
+              "Task Response",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "title": "Grammar & Language Use",
+        "description": "20 questions • Approximately 15 minutes",
+        "questions": [
+          {
+            "id": "grammar-q1",
+            "type": "multiple-choice",
+            "questionText": "_____ comprehensive the training program, its effectiveness ultimately depends on athlete compliance and recovery management.",
+            "options": [
+              "A) However",
+              "B) Although",
+              "C) Despite",
+              "D] Because"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Concession with adjective",
+            "translation": "Dù chương trình đào tạo có toàn diện đến đâu, hiệu quả của nó cuối cùng phụ thuộc vào sự tuân thủ của vận động viên và quản lý phục hồi."
+          },
+          {
+            "id": "grammar-q2",
+            "type": "multiple-choice",
+            "questionText": "The performance strategy, _____ on extensive physiological testing, demonstrated remarkable results during the competition season.",
+            "options": [
+              "A) predicated",
+              "B) predicating",
+              "C) having predicated",
+              "D] being predicated"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Chiến lược thành tích, dựa trên kiểm tra sinh lý học toàn diện, đã thể hiện kết quả đáng kể trong mùa thi đấu."
+          },
+          {
+            "id": "grammar-q3",
+            "type": "multiple-choice",
+            "questionText": "So profound _____ that traditional coaching methods struggle to address its implications.",
+            "options": [
+              "A) has the sports science revolution been",
+              "B) the sports science revolution has been",
+              "C) was the sports science revolution",
+              "D] the sports science revolution was"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Inversion after 'so + adjective'",
+            "translation": "Cuộc cách mạng khoa học thể thao sâu sắc đến mức các phương pháp huấn luyện truyền thống phải vật lộn để giải quyết các hàm ý của nó."
+          },
+          {
+            "id": "grammar-q4",
+            "type": "multiple-choice",
+            "questionText": "The coaching committee recommended that psychological preparation _____ integrated into all training phases.",
+            "options": [
+              "A) be placed",
+              "B] is placed",
+              "C) was placed",
+              "D] has been placed"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Subjunctive after verbs of recommendation",
+            "translation": "Ủy ban huấn luyện khuyến nghị rằng chuẩn bị tâm lý phải được tích hợp vào tất cả các giai đoạn đào tạo."
+          },
+          {
+            "id": "grammar-q5",
+            "type": "multiple-choice",
+            "questionText": "_____ the complex interdependencies of athletic performance, minor technical adjustments can have significant competitive implications.",
+            "options": [
+              "A) Given",
+              "B) Giving",
+              "C) To give",
+              "D] Having given"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Preposition meaning 'considering'",
+            "translation": "Xét đến sự phụ thuộc lẫn nhau phức tạp của thành tích thể thao, các điều chỉnh kỹ thuật nhỏ có thể có tác động cạnh tranh đáng kể."
+          },
+          {
+            "id": "grammar-q6",
+            "type": "multiple-choice",
+            "questionText": "The high-performance system, _____ multiple sports disciplines and support services, has become a model for athlete development.",
+            "options": [
+              "A] comprising",
+              "B] comprised",
+              "C] having comprised",
+              "D] being comprised"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Present participle in reduced relative clause",
+            "translation": "Hệ thống thành tích cao, bao gồm nhiều môn thể thao và dịch vụ hỗ trợ, đã trở thành mô hình cho phát triển vận động viên."
+          },
+          {
+            "id": "grammar-q7",
+            "type": "multiple-choice",
+            "questionText": "So rapidly _____ that traditional training周期 struggle to adapt.",
+            "options": [
+              "A] is sports technology advancing",
+              "B] sports technology is advancing",
+              "C] has sports technology advanced",
+              "D] sports technology has advanced"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Inversion after 'so + adverb'",
+            "translation": "Công nghệ thể thao tiến bộ nhanh đến mức các chu kỳ đào tạo truyền thống phải vật lộn để thích nghi."
+          },
+          {
+            "id": "grammar-q8",
+            "type": "multiple-choice",
+            "questionText": "The sports federation insisted that anti-doping protocols _____ strictly enforced across all competitions.",
+            "options": [
+              "A] be",
+              "B] are",
+              "C] were",
+              "D] have been"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Subjunctive after verbs of demand",
+            "translation": "Liên đoàn thể thao nhấn mạnh rằng giao thức chống doping phải được thực thi nghiêm ngặt trên tất cả các cuộc thi."
+          },
+          {
+            "id": "grammar-q9",
+            "type": "multiple-choice",
+            "questionText": "_____ the prevailing training philosophies, evidence-based practice continues to demonstrate superior outcomes.",
+            "options": [
+              "A] Notwithstanding",
+              "B] Besides",
+              "C] Moreover",
+              "D] Therefore"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Formal preposition meaning 'despite'",
+            "translation": "Bất chấp các triết lý đào tạo hiện hành, thực hành dựa trên bằng chứng tiếp tục thể hiện kết quả vượt trội."
+          },
+          {
+            "id": "grammar-q10",
+            "type": "multiple-choice",
+            "questionText": "The athletic development pathway, _____ over decades of research, has transformed talent identification systems.",
+            "options": [
+              "A] forged",
+              "B] forging",
+              "C] having forged",
+              "D] being forged"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Con đường phát triển thể thao, được xây dựng qua nhiều thập kỷ nghiên cứu, đã biến đổi các hệ thống nhận diện tài năng."
+          },
+          {
+            "id": "grammar-q11",
+            "type": "multiple-choice",
+            "questionText": "So significant _____ that it has redefined athletic preparation.",
+            "options": [
+              "A] has the advancement in recovery science been",
+              "B] the advancement in recovery science has been",
+              "C] was the advancement in recovery science",
+              "D] the advancement in recovery science was"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Inversion after 'so + adjective'",
+            "translation": "Sự tiến bộ trong khoa học phục hồi quan trọng đến mức nó đã định nghĩa lại việc chuẩn bị thể thao."
+          },
+          {
+            "id": "grammar-q12",
+            "type": "multiple-choice",
+            "questionText": "The international sports body demanded that safety standards _____ uniformly applied.",
+            "options": [
+              "A] be ensured",
+              "B] is ensured",
+              "C] was ensured",
+              "D] has been ensured"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Subjunctive after verbs of demand",
+            "translation": "Cơ quan thể thao quốc tế yêu cầu rằng tiêu chuẩn an toàn phải được áp dụng thống nhất."
+          },
+          {
+            "id": "grammar-q13",
+            "type": "multiple-choice",
+            "questionText": "_____ the sophisticated monitoring technology, predicting athletic performance remains inherently complex.",
+            "options": [
+              "A] Despite",
+              "B] Although",
+              "C] Because of",
+              "D] However"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Preposition for contrast",
+            "translation": "Bất chấp công nghệ giám sát tinh vi, dự đoán thành tích thể thao vẫn cố hữu phức tạp."
+          },
+          {
+            "id": "grammar-q14",
+            "type": "multiple-choice",
+            "questionText": "The training methodology, _____ to optimize athletic potential, requires continuous refinement.",
+            "options": [
+              "A] designed",
+              "B] designing",
+              "C] having designed",
+              "D] being designed"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Phương pháp đào tạo, được thiết kế để tối ưu hóa tiềm năng thể thao, yêu cầu tinh chỉnh liên tục."
+          },
+          {
+            "id": "grammar-q15",
+            "type": "multiple-choice",
+            "questionText": "So complex _____ that traditional coaching approaches have proven inadequate.",
+            "options": [
+              "A] have modern athletic demands become",
+              "B] modern athletic demands have become",
+              "C] became modern athletic demands",
+              "D] modern athletic demands became"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Inversion after 'so + adjective'",
+            "translation": "Các yêu cầu thể thao hiện đại trở nên phức tạp đến mức các phương pháp huấn luyện truyền thống đã chứng minh là không đầy đủ."
+          },
+          {
+            "id": "grammar-q16",
+            "type": "multiple-choice",
+            "questionText": "The sports agreement requires that ethical standards _____ consistently maintained.",
+            "options": [
+              "A] be",
+              "B] are",
+              "C] were",
+              "D] have been"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Subjunctive after verbs of requirement",
+            "translation": "Thỏa thuận thể thao yêu cầu rằng các tiêu chuẩn đạo đức phải được duy trì nhất quán."
+          },
+          {
+            "id": "grammar-q17",
+            "type": "multiple-choice",
+            "questionText": "_____ the detailed performance analysis, implementation challenges persisted.",
+            "options": [
+              "A] Notwithstanding",
+              "B] Besides",
+              "C] Moreover",
+              "D] Therefore"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Formal preposition meaning 'despite'",
+            "translation": "Bất chấp phân tích thành tích chi tiết, các thách thức triển khai vẫn tồn tại."
+          },
+          {
+            "id": "grammar-q18",
+            "type": "multiple-choice",
+            "questionText": "The coaching methodology, _____ on motor learning principles, has achieved remarkable skill acquisition.",
+            "options": [
+              "A] predicated",
+              "B] predicating",
+              "C] having predicated",
+              "D] being predicated"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Phương pháp huấn luyện, dựa trên các nguyên tắc học vận động, đã đạt được sự tiếp thu kỹ năng đáng kể."
+          },
+          {
+            "id": "grammar-q19",
+            "type": "multiple-choice",
+            "questionText": "So rapidly _____ that traditional development systems have struggled to adapt.",
+            "options": [
+              "A] is the sports landscape evolving",
+              "B] the sports landscape is evolving",
+              "C] has the sports landscape evolved",
+              "D] the sports landscape has evolved"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Inversion after 'so + adverb'",
+            "translation": "Bối cảnh thể thao tiến hóa nhanh đến mức các hệ thống phát triển truyền thống phải vật lộn để thích nghi."
+          },
+          {
+            "id": "grammar-q20",
+            "type": "multiple-choice",
+            "questionText": "The sports reform package mandates that youth development _____ prioritized across all programs.",
+            "options": [
+              "A] be",
+              "B] are",
+              "C] were",
+              "D] have been"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Subjunctive after verbs of mandate",
+            "translation": "Gói cải cách thể thao yêu cầu rằng phát triển trẻ phải được ưu tiên trên tất cả các chương trình."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "version": "4.6",
+      "author": "IELTS Practice System",
+      "notes": "IELTS Level 4.6 advanced sports science test with properly randomized answers. Correct answers are distributed across A, B, C, D to prevent guessing patterns while maintaining the original test structure."
+    }
+  }
+}

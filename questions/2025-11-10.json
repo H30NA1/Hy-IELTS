@@ -1,450 +1,352 @@
 {
-  "testId": "IELTS-ECONOMICS-4.6-2025-11-05",
+  "testId": "IELTS-BASIC-1.0-2025-11-05",
   "testDate": "2025-11-05",
-  "testTitle": "IELTS Level 4.6 Advanced Economics Test",
-  "totalQuestions": 110,
-  "difficultyLevel": "Advanced",
+  "testTitle": "IELTS Level 1.0 Basic Daily Life Test",
+  "totalQuestions": 80,
+  "difficultyLevel": "Beginner",
   "sections": [
     {
       "id": "listening",
       "title": "Listening",
-      "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+      "description": "30 questions • Approximately 25 minutes • You will hear each recording only once",
       "parts": [
         {
           "partNumber": 1,
-          "title": "Part 1: Discussion about economic development paradigms",
+          "title": "Part 1: Conversation about daily routines",
           "instructions": "Listen to the conversation and answer questions 1-10.",
           "voiceProfiles": {
             "female": {
-              "pitch": 1.4, "rate": 1.2, "volume": 0.9, "name": "Development Economist",
-              "variation": 0.11, "accent": "British", "emotion": "analytical", "speakingType": "academic"
+              "pitch": 1.2, "rate": 0.8, "volume": 0.9, "name": "Anna",
+              "variation": 0.05, "accent": "standard", "emotion": "friendly", "speakingType": "conversation"
             },
             "male": {
-              "pitch": 0.5, "rate": 1.1, "volume": 0.85, "name": "Policy Advisor",
-              "variation": 0.09, "accent": "International", "emotion": "thoughtful", "speakingType": "consultation"
+              "pitch": 0.8, "rate": 0.8, "volume": 0.85, "name": "Tom",
+              "variation": 0.04, "accent": "standard", "emotion": "friendly", "speakingType": "conversation"
             },
             "narrator": {
-              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
-              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+              "pitch": 1.0, "rate": 0.7, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.03, "accent": "clear", "emotion": "neutral", "speakingType": "instructional"
             }
           },
           "script": {
-            "narrator": "Good morning. This is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between a development economist and a policy advisor about evolving economic development paradigms. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+            "narrator": "Good morning. This is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between two friends about their daily routines. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
             "conversation": [
-              { "speaker": "female", "text": "The conventional Washington Consensus approach to development has demonstrated significant limitations in addressing the complex challenges facing emerging economies. Its emphasis on liberalization, privatization, and fiscal austerity failed to account for institutional quality, human capital development, and technological capabilities." },
-              { "speaker": "male", "text": "Indeed, Professor. The post-Washington Consensus acknowledges these shortcomings but still operates within a fundamentally neoliberal framework. What's needed is a more heterodox approach that recognizes the role of industrial policy, strategic integration into global value chains, and building domestic innovation systems." },
-              { "speaker": "female", "text": "Precisely. The success of East Asian economies demonstrates the importance of sequenced liberalization combined with active industrial policy. However, simply replicating these models is insufficient—each economy requires context-specific strategies based on its unique institutional and technological capabilities." },
-              { "speaker": "male", "text": "The concept of 'product space' developed by Hausmann and Hidalgo provides valuable insights here. Economies evolve by moving to products that are closely related to their existing productive capabilities. This path dependence creates both opportunities and constraints for structural transformation." },
-              { "speaker": "female", "text": "Excellent point. This underscores the importance of strategic diversification rather than random industrial promotion. The challenge lies in identifying and removing binding constraints while building complementary capabilities in human capital, infrastructure, and institutional governance." },
-              { "speaker": "male", "text": "The digital transformation adds another layer of complexity. Developing countries face the dual challenge of building traditional industrial capabilities while simultaneously preparing for the digital economy. This requires investments in both physical and digital infrastructure." },
-              { "speaker": "female", "text": "Moreover, the environmental imperative necessitates green industrial policies. The traditional development path of 'grow first, clean up later' is no longer viable. Countries must pursue sustainable structural transformation from the outset." },
-              { "speaker": "male", "text": "This implies rethinking international development cooperation as well. Rather than prescribing one-size-fits-all solutions, development partners should support countries in developing their own diagnostic capabilities and implementing context-appropriate strategies." },
-              { "speaker": "female", "text": "The role of the state remains crucial but must evolve. Instead of picking winners, the state should facilitate discovery processes, coordinate complementary investments, and ensure inclusive outcomes. This requires building state capacity and combating rent-seeking." },
-              { "speaker": "male", "text": "Ultimately, successful development strategies must balance global integration with domestic capability building, economic efficiency with social inclusion, and short-term pragmatism with long-term strategic vision." }
+              { "speaker": "female", "text": "Hello Tom! How are you today?" },
+              { "speaker": "male", "text": "Hi Anna! I'm good, thank you. How about you?" },
+              { "speaker": "female", "text": "I'm fine. What time do you usually wake up in the morning?" },
+              { "speaker": "male", "text": "I wake up at seven o'clock. Then I brush my teeth and take a shower." },
+              { "speaker": "female", "text": "That's early! I wake up at eight o'clock. Do you eat breakfast?" },
+              { "speaker": "male", "text": "Yes, I eat breakfast at seven thirty. I usually have bread and milk." },
+              { "speaker": "female", "text": "I eat breakfast too. I like eggs and fruit. What do you do after breakfast?" },
+              { "speaker": "male", "text": "I go to work at eight thirty. I work in an office." },
+              { "speaker": "female", "text": "I go to school at nine o'clock. I study English." },
+              { "speaker": "male", "text": "That's nice. Do you eat lunch at school?" },
+              { "speaker": "female", "text": "Yes, I eat lunch at school. The food is good." },
+              { "speaker": "male", "text": "What time do you finish school?" },
+              { "speaker": "female", "text": "I finish at three o'clock. Then I go home and rest." }
             ]
           },
           "questions": [
             {
               "id": "listening-q1",
               "type": "multiple-choice",
-              "questionText": "What has demonstrated limitations according to the speakers?",
-              "options": ["A) Washington Consensus", "B) Marxist economics", "C) Keynesian theory", "D] Behavioral economics"],
+              "questionText": "What time does Tom wake up?",
+              "options": ["A) 7:00", "B) 8:00", "C) 7:30", "D] 8:30"],
               "correctAnswer": "A",
-              "translation": "Điều gì đã thể hiện những hạn chế theo các diễn giả?"
+              "translation": "Tom thức dậy lúc mấy giờ?"
             },
             {
               "id": "listening-q2",
               "type": "multiple-choice",
-              "questionText": "What failed to account for institutional quality?",
-              "options": ["A) Conventional approach", "B) Modern theories", "C) Historical models", "D] Digital frameworks"],
+              "questionText": "What does Tom do after waking up?",
+              "options": ["A) Brush teeth and shower", "B) Eat breakfast", "C) Go to work", "D] Exercise"],
               "correctAnswer": "A",
-              "translation": "Điều gì đã không tính đến chất lượng thể chế?"
+              "translation": "Tom làm gì sau khi thức dậy?"
             },
             {
               "id": "listening-q3",
               "type": "multiple-choice",
-              "questionText": "What does the post-Washington Consensus still operate within?",
-              "options": ["A) Neoliberal framework", "B) Socialist framework", "C) Traditional framework", "D] Experimental framework"],
+              "questionText": "What time does Anna wake up?",
+              "options": ["A) 8:00", "B) 7:00", "C) 7:30", "D] 9:00"],
               "correctAnswer": "A",
-              "translation": "Đồng thuận Hậu Washington vẫn hoạt động trong khuôn khổ nào?"
+              "translation": "Anna thức dậy lúc mấy giờ?"
             },
             {
               "id": "listening-q4",
               "type": "multiple-choice",
-              "questionText": "What demonstrates the importance of sequenced liberalization?",
-              "options": ["A) East Asian success", "B) European integration", "C) African growth", "D] Latin American models"],
+              "questionText": "What does Tom eat for breakfast?",
+              "options": ["A) Bread and milk", "B) Eggs and fruit", "C) Rice and vegetables", "D] Coffee and cake"],
               "correctAnswer": "A",
-              "translation": "Điều gì chứng minh tầm quan trọng của tự do hóa theo trình tự?"
+              "translation": "Tom ăn gì cho bữa sáng?"
             },
             {
               "id": "listening-q5",
               "type": "multiple-choice",
-              "questionText": "What concept provides insights about economic evolution?",
-              "options": ["A) Product space", "B) Market efficiency", "C) Comparative advantage", "D] Factor endowments"],
+              "questionText": "What does Anna eat for breakfast?",
+              "options": ["A) Eggs and fruit", "B) Bread and milk", "C) Cereal and juice", "D] Sandwich and tea"],
               "correctAnswer": "A",
-              "translation": "Khái niệm nào cung cấp hiểu biết về tiến hóa kinh tế?"
+              "translation": "Anna ăn gì cho bữa sáng?"
             },
             {
               "id": "listening-q6",
               "type": "multiple-choice",
-              "questionText": "What creates both opportunities and constraints?",
-              "options": ["A) Path dependence", "B) Market forces", "C) Government policies", "D] International trade"],
+              "questionText": "What time does Tom go to work?",
+              "options": ["A) 8:30", "B) 9:00", "C) 7:30", "D] 8:00"],
               "correctAnswer": "A",
-              "translation": "Điều gì tạo ra cả cơ hội và ràng buộc?"
+              "translation": "Tom đi làm lúc mấy giờ?"
             },
             {
               "id": "listening-q7",
               "type": "multiple-choice",
-              "questionText": "What dual challenge do developing countries face?",
-              "options": ["A) Traditional and digital capabilities", "B) Economic and political reforms", "C) Domestic and international pressures", "D] Short-term and long-term goals"],
+              "questionText": "Where does Tom work?",
+              "options": ["A) In an office", "B) In a school", "C) In a hospital", "D] In a shop"],
               "correctAnswer": "A",
-              "translation": "Các nước đang phát triển phải đối mặt với thách thức kép nào?"
+              "translation": "Tom làm việc ở đâu?"
             },
             {
               "id": "listening-q8",
               "type": "multiple-choice",
-              "questionText": "What development path is no longer viable?",
-              "options": ["A) Grow first, clean up later", "B) Export-led growth", "C) Import substitution", "D] Balanced growth"],
+              "questionText": "What time does Anna go to school?",
+              "options": ["A) 9:00", "B) 8:30", "C) 8:00", "D] 7:30"],
               "correctAnswer": "A",
-              "translation": "Con đường phát triển nào không còn khả thi?"
+              "translation": "Anna đi học lúc mấy giờ?"
             },
             {
               "id": "listening-q9",
               "type": "multiple-choice",
-              "questionText": "What should the state facilitate instead of picking winners?",
-              "options": ["A) Discovery processes", "B) Market competition", "C) Private investment", "D] International partnerships"],
+              "questionText": "What does Anna study?",
+              "options": ["A) English", "B) Math", "C) Science", "D] History"],
               "correctAnswer": "A",
-              "translation": "Nhà nước nên tạo điều kiện cho điều gì thay vì chọn người chiến thắng?"
+              "translation": "Anna học môn gì?"
             },
             {
               "id": "listening-q10",
               "type": "multiple-choice",
-              "questionText": "What must development strategies balance?",
-              "options": ["A) Global integration and domestic capability", "B) Growth and inflation", "C) Efficiency and stability", "D] Equity and freedom"],
+              "questionText": "Where does Anna eat lunch?",
+              "options": ["A) At school", "B) At home", "C) In a restaurant", "D] At work"],
               "correctAnswer": "A",
-              "translation": "Các chiến lược phát triển phải cân bằng điều gì?"
+              "translation": "Anna ăn trưa ở đâu?"
             }
           ]
         },
         {
           "partNumber": 2,
-          "title": "Part 2: Lecture on platform economics and digital markets",
-          "instructions": "Listen to the lecture and answer questions 11-20.",
+          "title": "Part 2: Talk about family and home",
+          "instructions": "Listen to the talk and answer questions 11-20.",
           "voiceProfiles": {
-            "male": {
-              "pitch": 0.4, "rate": 1.1, "volume": 0.9, "name": "Digital Economist",
-              "variation": 0.08, "accent": "educated", "emotion": "authoritative", "speakingType": "lecture"
+            "female": {
+              "pitch": 1.1, "rate": 0.8, "volume": 0.9, "name": "Sarah",
+              "variation": 0.04, "accent": "standard", "emotion": "warm", "speakingType": "description"
             },
             "narrator": {
-              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
-              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+              "pitch": 1.0, "rate": 0.7, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.03, "accent": "clear", "emotion": "neutral", "speakingType": "instructional"
             }
           },
           "script": {
-            "narrator": "Now turn to Part 2. You will hear a lecture on platform economics and digital markets. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+            "narrator": "Now turn to Part 2. You will hear a woman talking about her family and home. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
             "conversation": [
-              { "speaker": "male", "text": "The emergence of digital platforms represents one of the most significant economic transformations of our time, creating new market structures that challenge conventional economic theory. Platform businesses exhibit distinctive characteristics including network effects, multi-sided markets, and data-driven value creation. These features create winner-take-most dynamics that can lead to rapid market concentration. The economics of platforms fundamentally differs from traditional pipeline businesses—value is created through ecosystem coordination rather than linear production. This creates novel competition policy challenges, as market definition becomes ambiguous and competitive dynamics operate across traditionally separate sectors. Data accumulation and algorithmic pricing enable sophisticated price discrimination and personalized offerings, raising concerns about consumer welfare and market fairness. The regulatory framework for digital platforms remains underdeveloped, struggling to balance innovation promotion with competition preservation. Jurisdictional boundaries are increasingly irrelevant in digital markets, requiring international coordination in competition policy. The future evolution of platform economics will likely involve greater attention to data governance, platform cooperativism, and algorithmic accountability as societies grapple with the implications of these powerful new market structures." }
+              { "speaker": "female", "text": "Hello, my name is Sarah. I want to tell you about my family. I live in a small house with my family. There are four people in my family: my father, my mother, my brother, and me. My father's name is John. He is a teacher. My mother's name is Mary. She is a nurse. My brother's name is David. He is a student. Our house has three bedrooms, one kitchen, one living room, and two bathrooms. We have a small garden with flowers. I like my family and our home very much." }
             ]
           },
           "questions": [
             {
               "id": "listening-q11",
               "type": "multiple-choice",
-              "questionText": "What represents significant economic transformation?",
-              "options": ["A) Digital platforms", "B) Traditional industries", "C) Agricultural sector", "D] Manufacturing revival"],
+              "questionText": "How many people are in Sarah's family?",
+              "options": ["A) Four", "B) Three", "C) Five", "D] Six"],
               "correctAnswer": "A",
-              "translation": "Điều gì đại diện cho sự chuyển đổi kinh tế quan trọng?"
+              "translation": "Có bao nhiêu người trong gia đình Sarah?"
             },
             {
               "id": "listening-q12",
               "type": "multiple-choice",
-              "questionText": "What distinctive characteristics do platforms exhibit?",
-              "options": ["A) Network effects", "B) Physical assets", "C) Linear production", "D] Traditional marketing"],
+              "questionText": "What is Sarah's father's name?",
+              "options": ["A) John", "B) David", "C) Mary", "D] Sarah"],
               "correctAnswer": "A",
-              "translation": "Nền tảng thể hiện những đặc điểm khác biệt nào?"
+              "translation": "Tên bố của Sarah là gì?"
             },
             {
               "id": "listening-q13",
               "type": "multiple-choice",
-              "questionText": "What dynamics can lead to market concentration?",
-              "options": ["A) Winner-take-most", "B) Perfect competition", "C) Monopolistic competition", "D] Oligopolistic coordination"],
+              "questionText": "What does Sarah's father do?",
+              "options": ["A) Teacher", "B) Nurse", "C) Student", "D] Doctor"],
               "correctAnswer": "A",
-              "translation": "Động lực nào có thể dẫn đến tập trung thị trường?"
+              "translation": "Bố của Sarah làm nghề gì?"
             },
             {
               "id": "listening-q14",
               "type": "multiple-choice",
-              "questionText": "How does platform value creation differ?",
-              "options": ["A) Ecosystem coordination", "B) Linear production", "C) Resource extraction", "D] Manufacturing efficiency"],
+              "questionText": "What is Sarah's mother's name?",
+              "options": ["A) Mary", "B) John", "C) David", "D] Sarah"],
               "correctAnswer": "A",
-              "translation": "Tạo giá trị nền tảng khác biệt như thế nào?"
+              "translation": "Tên mẹ của Sarah là gì?"
             },
             {
               "id": "listening-q15",
               "type": "multiple-choice",
-              "questionText": "What becomes ambiguous in platform competition?",
-              "options": ["A) Market definition", "B) Price levels", "C) Cost structures", "D] Profit margins"],
+              "questionText": "What does Sarah's mother do?",
+              "options": ["A) Nurse", "B) Teacher", "C) Student", "D] Engineer"],
               "correctAnswer": "A",
-              "translation": "Điều gì trở nên mơ hồ trong cạnh tranh nền tảng?"
+              "translation": "Mẹ của Sarah làm nghề gì?"
             },
             {
               "id": "listening-q16",
               "type": "multiple-choice",
-              "questionText": "What enables sophisticated price discrimination?",
-              "options": ["A) Data accumulation", "B) Traditional research", "C) Market surveys", "D] Consumer feedback"],
+              "questionText": "What is Sarah's brother's name?",
+              "options": ["A) David", "B) John", "C) Mary", "D] Sarah"],
               "correctAnswer": "A",
-              "translation": "Điều gì cho phép phân biệt giá tinh vi?"
+              "translation": "Tên anh trai của Sarah là gì?"
             },
             {
               "id": "listening-q17",
               "type": "multiple-choice",
-              "questionText": "What remains underdeveloped?",
-              "options": ["A) Regulatory framework", "B) Technological infrastructure", "C) Market size", "D] User base"],
+              "questionText": "What does Sarah's brother do?",
+              "options": ["A) Student", "B) Teacher", "C) Nurse", "D] Worker"],
               "correctAnswer": "A",
-              "translation": "Điều gì vẫn còn kém phát triển?"
+              "translation": "Anh trai của Sarah làm gì?"
             },
             {
               "id": "listening-q18",
               "type": "multiple-choice",
-              "questionText": "What are increasingly irrelevant?",
-              "options": ["A) Jurisdictional boundaries", "B) Cultural differences", "C) Language barriers", "D] Time zones"],
+              "questionText": "How many bedrooms are in their house?",
+              "options": ["A) Three", "B) Two", "C) Four", "D] One"],
               "correctAnswer": "A",
-              "translation": "Điều gì ngày càng trở nên không liên quan?"
+              "translation": "Có bao nhiêu phòng ngủ trong nhà họ?"
             },
             {
               "id": "listening-q19",
               "type": "multiple-choice",
-              "questionText": "What requires international coordination?",
-              "options": ["A) Competition policy", "B) Tax rates", "C) Interest rates", "D] Trade tariffs"],
+              "questionText": "What do they have in the garden?",
+              "options": ["A) Flowers", "B) Trees", "C) Vegetables", "D] Animals"],
               "correctAnswer": "A",
-              "translation": "Điều gì yêu cầu phối hợp quốc tế?"
+              "translation": "Họ có gì trong vườn?"
             },
             {
               "id": "listening-q20",
               "type": "multiple-choice",
-              "questionText": "What will receive greater attention?",
-              "options": ["A) Data governance", "B) Traditional regulation", "C) Physical infrastructure", "D] Industrial policy"],
+              "questionText": "How does Sarah feel about her family and home?",
+              "options": ["A) Likes very much", "B) Doesn't like", "C) Sometimes likes", "D] Not sure"],
               "correctAnswer": "A",
-              "translation": "Điều gì sẽ nhận được sự quan tâm lớn hơn?"
+              "translation": "Sarah cảm thấy thế nào về gia đình và ngôi nhà của mình?"
             }
           ]
         },
         {
           "partNumber": 3,
-          "title": "Part 3: Discussion about urban economics and smart cities",
-          "instructions": "Listen to the discussion and answer questions 21-30.",
+          "title": "Part 3: Conversation about shopping",
+          "instructions": "Listen to the conversation and answer questions 21-30.",
           "voiceProfiles": {
             "female": {
-              "pitch": 1.5, "rate": 1.2, "volume": 0.85, "name": "Urban Economist",
-              "variation": 0.12, "accent": "academic", "emotion": "enthusiastic", "speakingType": "discussion"
+              "pitch": 1.2, "rate": 0.8, "volume": 0.9, "name": "Lisa",
+              "variation": 0.05, "accent": "standard", "emotion": "friendly", "speakingType": "conversation"
             },
             "male": {
-              "pitch": 0.6, "rate": 1.1, "volume": 0.9, "name": "City Planner",
-              "variation": 0.10, "accent": "educated", "emotion": "pragmatic", "speakingType": "discussion"
+              "pitch": 0.8, "rate": 0.8, "volume": 0.85, "name": "Mike",
+              "variation": 0.04, "accent": "standard", "emotion": "helpful", "speakingType": "conversation"
             },
             "narrator": {
-              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
-              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
+              "pitch": 1.0, "rate": 0.7, "volume": 1.0, "name": "IELTS Narrator",
+              "variation": 0.03, "accent": "clear", "emotion": "neutral", "speakingType": "instructional"
             }
           },
           "script": {
-            "narrator": "Now turn to Part 3. You will hear a discussion between an urban economist and a city planner about urban economics and smart cities. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+            "narrator": "Now turn to Part 3. You will hear a conversation between a customer and a shop assistant. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
             "conversation": [
-              { "speaker": "female", "text": "The economics of urbanization presents fascinating paradoxes. Cities generate remarkable agglomeration economies through knowledge spillovers, labor market pooling, and input sharing, yet they also create congestion, pollution, and spatial inequalities. The fundamental challenge is maximizing the benefits while minimizing the costs of density." },
-              { "speaker": "male", "text": "This is precisely where smart city technologies offer transformative potential. IoT sensors, data analytics, and integrated mobility systems can optimize resource use, reduce congestion, and improve public service delivery. However, the economic benefits must be distributed equitably to avoid exacerbating existing inequalities." },
-              { "speaker": "female", "text": "The land value capture mechanism is particularly important here. Public investments in transportation and amenities create substantial land value increases that are often captured privately. Better value capture could fund infrastructure while reducing speculative bubbles." },
-              { "speaker": "male", "text": "Digital infrastructure is becoming as crucial as physical infrastructure. Universal broadband access is now a prerequisite for economic participation. But we must ensure that smart city investments don't create digital divides or surveillance concerns." },
-              { "speaker": "female", "text": "The governance dimension is critical. Smart cities require integrated planning across traditionally siloed departments. This demands new institutional capabilities and collaborative governance models that engage citizens as co-creators rather than passive recipients." },
-              { "speaker": "male", "text": "The business models for smart city investments also need rethinking. Public-private partnerships can leverage expertise and funding, but they must be structured to protect public interests and ensure long-term sustainability rather than short-term profit maximization." },
-              { "speaker": "female", "text": "Urban economic resilience is another crucial consideration. Cities must diversify their economic bases to withstand shocks while maintaining the specialization that drives agglomeration benefits. This requires strategic economic development planning." },
-              { "speaker": "male", "text": "The environmental economics of cities is equally important. Carbon pricing, circular economy principles, and green infrastructure can make cities more sustainable while creating economic opportunities. The cost of inaction far exceeds the cost of proactive investment." },
-              { "speaker": "female", "text": "Finally, we must consider the regional dimension. Successful cities can't exist as islands of prosperity surrounded by struggling hinterlands. Regional planning and fiscal transfers are essential for balanced development." },
-              { "speaker": "male", "text": "Ultimately, smart urban economics is about using technology, data, and innovative governance to create cities that are not only economically dynamic but also inclusive, sustainable, and resilient—cities that work for all their inhabitants." }
+              { "speaker": "female", "text": "Excuse me, where can I find the milk?" },
+              { "speaker": "male", "text": "The milk is in aisle three, next to the juice." },
+              { "speaker": "female", "text": "Thank you. And where are the apples?" },
+              { "speaker": "male", "text": "The apples are in the fruit section, near the entrance." },
+              { "speaker": "female", "text": "How much is the bread?" },
+              { "speaker": "male", "text": "The bread is two dollars." },
+              { "speaker": "female", "text": "Do you have any bananas?" },
+              { "speaker": "male", "text": "Yes, we have bananas. They are one dollar per kilogram." },
+              { "speaker": "female", "text": "I need some eggs too. Where are the eggs?" },
+              { "speaker": "male", "text": "The eggs are in the dairy section, next to the milk." },
+              { "speaker": "female", "text": "Thank you for your help." },
+              { "speaker": "male", "text": "You're welcome. Have a nice day!" }
             ]
           },
           "questions": [
             {
               "id": "listening-q21",
               "type": "multiple-choice",
-              "questionText": "What paradox does urbanization present?",
-              "options": ["A) Benefits and costs of density", "B) Growth and stability", "C) Tradition and modernity", "D] Planning and spontaneity"],
+              "questionText": "Where is the milk?",
+              "options": ["A) Aisle three", "B) Near entrance", "C) Aisle one", "D] Dairy section"],
               "correctAnswer": "A",
-              "translation": "Đô thị hóa thể hiện nghịch lý gì?"
+              "translation": "Sữa ở đâu?"
             },
             {
               "id": "listening-q22",
               "type": "multiple-choice",
-              "questionText": "What do smart city technologies optimize?",
-              "options": ["A) Resource use", "B) Profit margins", "C) Political control", "D] Social programs"],
+              "questionText": "What is next to the milk?",
+              "options": ["A) Juice", "B) Bread", "C) Eggs", "D] Fruit"],
               "correctAnswer": "A",
-              "translation": "Công nghệ thành phố thông minh tối ưu hóa điều gì?"
+              "translation": "Cái gì ở cạnh sữa?"
             },
             {
               "id": "listening-q23",
               "type": "multiple-choice",
-              "questionText": "What mechanism is important for funding infrastructure?",
-              "options": ["A) Land value capture", "B) Tax increases", "C) Debt financing", "D] Foreign investment"],
+              "questionText": "Where are the apples?",
+              "options": ["A) Fruit section", "B) Aisle three", "C) Dairy section", "D] Near milk"],
               "correctAnswer": "A",
-              "translation": "Cơ chế nào quan trọng để tài trợ cho cơ sở hạ tầng?"
+              "translation": "Táo ở đâu?"
             },
             {
               "id": "listening-q24",
               "type": "multiple-choice",
-              "questionText": "What is becoming as crucial as physical infrastructure?",
-              "options": ["A) Digital infrastructure", "B) Social infrastructure", "C) Financial infrastructure", "D] Institutional infrastructure"],
+              "questionText": "Where is the fruit section?",
+              "options": ["A) Near entrance", "B) Aisle three", "C) Back of store", "D] Next to milk"],
               "correctAnswer": "A",
-              "translation": "Điều gì đang trở nên quan trọng như cơ sở hạ tầng vật chất?"
+              "translation": "Khu vực trái cây ở đâu?"
             },
             {
               "id": "listening-q25",
               "type": "multiple-choice",
-              "questionText": "What do smart cities require across departments?",
-              "options": ["A) Integrated planning", "B) Separate budgets", "C) Independent operations", "D] Competitive structures"],
+              "questionText": "How much is the bread?",
+              "options": ["A) Two dollars", "B) One dollar", "C) Three dollars", "D] Four dollars"],
               "correctAnswer": "A",
-              "translation": "Thành phố thông minh yêu cầu điều gì giữa các phòng ban?"
+              "translation": "Bánh mì giá bao nhiêu?"
             },
             {
               "id": "listening-q26",
               "type": "multiple-choice",
-              "questionText": "What must public-private partnerships protect?",
-              "options": ["A) Public interests", "B) Private profits", "C) Government control", "D] Market dominance"],
+              "questionText": "Do they have bananas?",
+              "options": ["A) Yes", "B) No", "C) Sometimes", "D] Not sure"],
               "correctAnswer": "A",
-              "translation": "Quan hệ đối tác công-tư phải bảo vệ điều gì?"
+              "translation": "Họ có chuối không?"
             },
             {
               "id": "listening-q27",
               "type": "multiple-choice",
-              "questionText": "What is crucial for urban economic resilience?",
-              "options": ["A) Economic diversification", "B) Specialization", "C) Cost reduction", "D] Revenue maximization"],
+              "questionText": "How much are the bananas?",
+              "options": ["A) One dollar per kg", "B) Two dollars per kg", "C) Three dollars per kg", "D] Four dollars per kg"],
               "correctAnswer": "A",
-              "translation": "Điều gì quan trọng cho khả năng phục hồi kinh tế đô thị?"
+              "translation": "Chuối giá bao nhiêu?"
             },
             {
               "id": "listening-q28",
               "type": "multiple-choice",
-              "questionText": "What can make cities more sustainable?",
-              "options": ["A) Circular economy principles", "B) Traditional practices", "C) Historical preservation", "D] Cultural activities"],
+              "questionText": "What else does the woman need?",
+              "options": ["A) Eggs", "B) Milk", "C) Bread", "D] Juice"],
               "correctAnswer": "A",
-              "translation": "Điều gì có thể làm cho các thành phố bền vững hơn?"
+              "translation": "Người phụ nữ cần gì khác?"
             },
             {
               "id": "listening-q29",
               "type": "multiple-choice",
-              "questionText": "What is essential for balanced development?",
-              "options": ["A) Regional planning", "B) Centralized control", "C) Market forces", "D] International standards"],
+              "questionText": "Where are the eggs?",
+              "options": ["A) Dairy section", "B) Fruit section", "C) Aisle three", "D] Near entrance"],
               "correctAnswer": "A",
-              "translation": "Điều gì cần thiết cho phát triển cân bằng?"
+              "translation": "Trứng ở đâu?"
             },
             {
               "id": "listening-q30",
               "type": "multiple-choice",
-              "questionText": "What should cities work for?",
-              "options": ["A) All inhabitants", "B) Economic growth", "C) Technological advancement", "D] Global recognition"],
+              "questionText": "What is next to the eggs?",
+              "options": ["A) Milk", "B) Bread", "C) Juice", "D] Fruit"],
               "correctAnswer": "A",
-              "translation": "Thành phố nên hoạt động vì ai?"
-            }
-          ]
-        },
-        {
-          "partNumber": 4,
-          "title": "Part 4: Lecture on institutional economics and development",
-          "instructions": "Listen to the lecture and answer questions 31-40.",
-          "voiceProfiles": {
-            "female": {
-              "pitch": 1.3, "rate": 1.1, "volume": 0.9, "name": "Institutional Economist",
-              "variation": 0.07, "accent": "academic", "emotion": "knowledgeable", "speakingType": "lecture"
-            },
-            "narrator": {
-              "pitch": 1.0, "rate": 0.9, "volume": 1.0, "name": "IELTS Narrator",
-              "variation": 0.05, "accent": "formal", "emotion": "neutral", "speakingType": "instructional"
-            }
-          },
-          "script": {
-            "narrator": "Now turn to Part 4. You will hear a lecture on institutional economics and development. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
-            "conversation": [
-              { "speaker": "female", "text": "Institutional economics provides crucial insights into the fundamental determinants of long-term economic development. The quality of institutions—defined as the formal and informal rules governing economic behavior—explains more of the variation in development outcomes than factor endowments or policy choices alone. Inclusive economic institutions that secure property rights, enforce contracts, and provide access to opportunity enable innovation and investment. Conversely, extractive institutions that concentrate power and opportunity in narrow elites stifle economic dynamism. The persistence of institutional arrangements presents a central puzzle: why do societies often maintain institutions that impede development? Historical institutionalism emphasizes the role of critical junctures and path dependence in shaping institutional trajectories. The distribution of political power fundamentally influences institutional development, as elites with vested interests in the status quo resist institutional reforms that would diminish their privileges. Building developmental states requires not just technical capacity but also political settlements that align elite interests with developmental objectives. The challenge of institutional reform lies in changing not just formal rules but also informal norms and enforcement mechanisms. Understanding these institutional dynamics is essential for designing effective development strategies that address the root causes of underdevelopment rather than merely treating symptoms." }
-            ]
-          },
-          "questions": [
-            {
-              "id": "listening-q31",
-              "type": "multiple-choice",
-              "questionText": "What provides insights into development determinants?",
-              "options": ["A) Institutional economics", "B) Behavioral economics", "C) Classical economics", "D] Marxist economics"],
-              "correctAnswer": "A",
-              "translation": "Điều gì cung cấp hiểu biết về các yếu tố quyết định phát triển?"
-            },
-            {
-              "id": "listening-q32",
-              "type": "multiple-choice",
-              "questionText": "What explains development variation better?",
-              "options": ["A) Institutional quality", "B) Natural resources", "C) Geographical location", "D] Cultural factors"],
-              "correctAnswer": "A",
-              "translation": "Điều gì giải thích sự khác biệt phát triển tốt hơn?"
-            },
-            {
-              "id": "listening-q33",
-              "type": "multiple-choice",
-              "questionText": "What do inclusive institutions enable?",
-              "options": ["A) Innovation and investment", "B) Resource extraction", "C) Wealth concentration", "D] Political control"],
-              "correctAnswer": "A",
-              "translation": "Thể chế bao trùm cho phép điều gì?"
-            },
-            {
-              "id": "listening-q34",
-              "type": "multiple-choice",
-              "questionText": "What do extractive institutions stifle?",
-              "options": ["A) Economic dynamism", "B) Political stability", "C) Social harmony", "D] Cultural development"],
-              "correctAnswer": "A",
-              "translation": "Thể chế chiếm đoạt kìm hãm điều gì?"
-            },
-            {
-              "id": "listening-q35",
-              "type": "multiple-choice",
-              "questionText": "What presents a central puzzle?",
-              "options": ["A) Institutional persistence", "B) Economic growth", "C) Technological change", "D] Social evolution"],
-              "correctAnswer": "A",
-              "translation": "Điều gì đặt ra một câu đố trung tâm?"
-            },
-            {
-              "id": "listening-q36",
-              "type": "multiple-choice",
-              "questionText": "What emphasizes critical junctures?",
-              "options": ["A) Historical institutionalism", "B) Rational choice theory", "C) Behavioral economics", "D] Game theory"],
-              "correctAnswer": "A",
-              "translation": "Điều gì nhấn mạnh các thời điểm quan trọng?"
-            },
-            {
-              "id": "listening-q37",
-              "type": "multiple-choice",
-              "questionText": "What fundamentally influences institutional development?",
-              "options": ["A) Political power distribution", "B) Economic resources", "C) Cultural traditions", "D] Geographical factors"],
-              "correctAnswer": "A",
-              "translation": "Điều gì ảnh hưởng cơ bản đến phát triển thể chế?"
-            },
-            {
-              "id": "listening-q38",
-              "type": "multiple-choice",
-              "questionText": "What do developmental states require?",
-              "options": ["A) Political settlements", "B) Technical expertise", "C) Foreign investment", "D] Natural resources"],
-              "correctAnswer": "A",
-              "translation": "Các nhà nước phát triển yêu cầu điều gì?"
-            },
-            {
-              "id": "listening-q39",
-              "type": "multiple-choice",
-              "questionText": "What does institutional reform require changing?",
-              "options": ["A) Formal and informal rules", "B) Only formal rules", "C) Only informal norms", "D] Economic policies"],
-              "correctAnswer": "A",
-              "translation": "Cải cách thể chế yêu cầu thay đổi điều gì?"
-            },
-            {
-              "id": "listening-q40",
-              "type": "multiple-choice",
-              "questionText": "What is essential for effective development strategies?",
-              "options": ["A) Understanding institutional dynamics", "B) Implementing technical solutions", "C) Following international models", "D] Adopting best practices"],
-              "correctAnswer": "A",
-              "translation": "Điều gì cần thiết cho các chiến lược phát triển hiệu quả?"
+              "translation": "Cái gì ở cạnh trứng?"
             }
           ]
         }
@@ -453,236 +355,179 @@
     {
       "id": "reading",
       "title": "Reading",
-      "description": "30 questions • 50 minutes",
+      "description": "20 questions • 30 minutes",
       "passages": [
         {
           "id": "reading-passage1",
-          "title": "Passage 1: The Economics of Knowledge and Innovation Systems",
-          "content": "The economics of knowledge represents a fundamental shift in understanding the drivers of economic growth and development. Knowledge differs from conventional economic goods in its characteristics as a non-rival, partially excludable good with significant positive externalities. These characteristics create inherent market failures in knowledge production and diffusion, justifying public intervention through research funding, intellectual property rights, and innovation policies. National innovation systems conceptualize innovation as an interactive process involving multiple actors—firms, universities, research institutes, and government agencies—connected through networks and institutions. The absorptive capacity of firms and economies determines their ability to recognize, assimilate, and apply external knowledge, highlighting the importance of human capital and learning processes. The geography of innovation exhibits strong agglomeration effects, with knowledge spillovers decaying rapidly over distance, explaining the persistence of innovation clusters despite digital connectivity. The digital transformation has created new knowledge governance challenges related to data ownership, platform control, and artificial intelligence. Open science and open innovation models challenge traditional intellectual property regimes, emphasizing collaboration and knowledge sharing. The economics of artificial intelligence introduces novel considerations regarding the distribution of innovation rents, the impact on labor markets, and the governance of algorithmic decision-making. Understanding the knowledge economy requires analyzing not only the production of new knowledge but also its diffusion, absorption, and transformation into economic value through complex innovation ecosystems.",
+          "title": "Passage 1: My Daily Routine",
+          "content": "My name is Peter. I am a student. I wake up at 6:30 every morning. First, I brush my teeth and wash my face. Then I get dressed. I eat breakfast at 7:00. I usually have cereal and orange juice. After breakfast, I go to school. My school starts at 8:00. I study many subjects: English, math, science, and history. I like English the most. I eat lunch at school at 12:00. After school, I play football with my friends. I go home at 4:00. I do my homework at 5:00. I eat dinner with my family at 7:00. After dinner, I watch TV or read a book. I go to bed at 9:00.",
           "questions": [
             {
               "id": "reading-q1",
               "type": "multiple-choice",
-              "questionText": "What represents a fundamental shift in understanding growth?",
-              "options": ["A) Economics of knowledge", "B) Traditional economics", "C) Resource economics", "D] Agricultural economics"],
-              "correctAnswer": "A"
+              "questionText": "What time does Peter wake up?",
+              "options": ["A) 6:30", "B) 7:00", "C) 8:00", "D] 9:00"],
+              "correctAnswer": "A",
+              "translation": "Peter thức dậy lúc mấy giờ?"
             },
             {
               "id": "reading-q2",
               "type": "multiple-choice",
-              "questionText": "What characteristics create market failures?",
-              "options": ["A) Non-rival and excludable nature", "B) Rival and excludable nature", "C) Physical and tangible nature", "D] Private and exclusive nature"],
-              "correctAnswer": "A"
+              "questionText": "What does Peter do first after waking up?",
+              "options": ["A) Brush teeth and wash face", "B) Eat breakfast", "C) Get dressed", "D] Go to school"],
+              "correctAnswer": "A",
+              "translation": "Peter làm gì đầu tiên sau khi thức dậy?"
             },
             {
               "id": "reading-q3",
               "type": "multiple-choice",
-              "questionText": "What conceptualizes innovation as interactive process?",
-              "options": ["A) National innovation systems", "B) Traditional R&D models", "C) Corporate strategies", "D] Government policies"],
-              "correctAnswer": "A"
+              "questionText": "What does Peter eat for breakfast?",
+              "options": ["A) Cereal and orange juice", "B) Bread and milk", "C) Eggs and fruit", "D] Rice and vegetables"],
+              "correctAnswer": "A",
+              "translation": "Peter ăn gì cho bữa sáng?"
             },
             {
               "id": "reading-q4",
               "type": "multiple-choice",
-              "questionText": "What determines ability to apply external knowledge?",
-              "options": ["A) Absorptive capacity", "B) Financial resources", "C) Market size", "D] Political stability"],
-              "correctAnswer": "A"
+              "questionText": "What time does school start?",
+              "options": ["A) 8:00", "B) 7:00", "C) 9:00", "D] 12:00"],
+              "correctAnswer": "A",
+              "translation": "Trường học bắt đầu lúc mấy giờ?"
             },
             {
               "id": "reading-q5",
               "type": "multiple-choice",
-              "questionText": "What exhibits strong agglomeration effects?",
-              "options": ["A) Geography of innovation", "B) Distribution of resources", "C) Location of markets", "D] Spread of population"],
-              "correctAnswer": "A"
+              "questionText": "What subject does Peter like the most?",
+              "options": ["A) English", "B) Math", "C) Science", "D] History"],
+              "correctAnswer": "A",
+              "translation": "Peter thích môn học nào nhất?"
             },
             {
               "id": "reading-q6",
               "type": "multiple-choice",
-              "questionText": "What has created new knowledge governance challenges?",
-              "options": ["A) Digital transformation", "B) Globalization", "C) Urbanization", "D] Climate change"],
-              "correctAnswer": "A"
+              "questionText": "Where does Peter eat lunch?",
+              "options": ["A) At school", "B) At home", "C) In restaurant", "D] With friends"],
+              "correctAnswer": "A",
+              "translation": "Peter ăn trưa ở đâu?"
             },
             {
               "id": "reading-q7",
               "type": "multiple-choice",
-              "questionText": "What challenges traditional intellectual property?",
-              "options": ["A) Open science models", "B) Patent systems", "C) Copyright laws", "D] Trademark protection"],
-              "correctAnswer": "A"
+              "questionText": "What does Peter do after school?",
+              "options": ["A) Play football", "B) Do homework", "C) Watch TV", "D] Read book"],
+              "correctAnswer": "A",
+              "translation": "Peter làm gì sau giờ học?"
             },
             {
               "id": "reading-q8",
               "type": "multiple-choice",
-              "questionText": "What introduces novel considerations about innovation rents?",
-              "options": ["A) Economics of AI", "B) Traditional economics", "C) Industrial economics", "D] Development economics"],
-              "correctAnswer": "A"
+              "questionText": "What time does Peter do homework?",
+              "options": ["A) 5:00", "B) 4:00", "C) 7:00", "D] 9:00"],
+              "correctAnswer": "A",
+              "translation": "Peter làm bài tập lúc mấy giờ?"
             },
             {
               "id": "reading-q9",
               "type": "multiple-choice",
-              "questionText": "What requires analyzing diffusion and absorption?",
-              "options": ["A) Understanding knowledge economy", "B) Managing traditional economy", "C) Planning agricultural economy", "D] Developing industrial economy"],
-              "correctAnswer": "A"
+              "questionText": "Who does Peter eat dinner with?",
+              "options": ["A) Family", "B) Friends", "C) Alone", "D] Teachers"],
+              "correctAnswer": "A",
+              "translation": "Peter ăn tối với ai?"
             },
             {
               "id": "reading-q10",
               "type": "multiple-choice",
-              "questionText": "What transforms knowledge into economic value?",
-              "options": ["A) Innovation ecosystems", "B) Market mechanisms", "C) Government policies", "D] Corporate strategies"],
-              "correctAnswer": "A"
+              "questionText": "What time does Peter go to bed?",
+              "options": ["A) 9:00", "B) 8:00", "C) 10:00", "D] 11:00"],
+              "correctAnswer": "A",
+              "translation": "Peter đi ngủ lúc mấy giờ?"
             }
           ]
         },
         {
           "id": "reading-passage2",
-          "title": "Passage 2: Behavioral Development Economics",
-          "content": "Behavioral development economics integrates insights from psychology and experimental economics to enhance understanding of economic behavior in developing contexts. Traditional development economics often assumed rational, self-interested actors with stable preferences, but behavioral economics reveals systematic deviations from these assumptions due to cognitive limitations, social preferences, and mental models. Poverty itself creates cognitive burdens that impair decision-making, creating behavioral poverty traps where limited attention and mental bandwidth constrain the ability to make optimal choices. Present bias leads to underinvestment in education, health, and productive assets, while loss aversion inhibits risk-taking necessary for entrepreneurship. Social preferences including fairness concerns and conditional cooperation influence collective action problems in community development. Mental models—deeply held beliefs about how the world works—shape economic behavior and can persist even when objectively inaccurate, affecting technology adoption, financial decisions, and occupational choices. Nudge-based interventions have demonstrated success in improving savings behavior, preventive healthcare, and educational outcomes by redesigning choice architectures. However, behavioral approaches face limitations in addressing structural constraints and power imbalances. The integration of behavioral insights with traditional development economics offers a more comprehensive understanding of poverty dynamics and more effective policy design. This requires context-specific experimentation and careful attention to ethical considerations regarding paternalism and autonomy. Behavioral development economics ultimately aims to create policies that work with human psychology as it is, rather than as traditional models assume it to be.",
+          "title": "Passage 2: The Weather and Seasons",
+          "content": "There are four seasons in a year: spring, summer, autumn, and winter. Spring is from March to May. The weather is warm and flowers bloom. Summer is from June to August. The weather is hot and sunny. People go to the beach and swim in the sea. Autumn is from September to November. The weather is cool and leaves fall from trees. Winter is from December to February. The weather is cold and it snows in some places. People wear warm clothes like coats and hats. Each season has different weather and activities.",
           "questions": [
             {
               "id": "reading-q11",
               "type": "multiple-choice",
-              "questionText": "What integrates insights from psychology?",
-              "options": ["A) Behavioral development economics", "B) Traditional development economics", "C) Classical economics", "D] Marxist economics"],
-              "correctAnswer": "A"
+              "questionText": "How many seasons are there in a year?",
+              "options": ["A) Four", "B) Three", "C) Five", "D] Six"],
+              "correctAnswer": "A",
+              "translation": "Có bao nhiêu mùa trong một năm?"
             },
             {
               "id": "reading-q12",
               "type": "multiple-choice",
-              "questionText": "What reveals systematic deviations from rationality?",
-              "options": ["A) Behavioral economics", "B) Traditional economics", "C) Institutional economics", "D] Keynesian economics"],
-              "correctAnswer": "A"
+              "questionText": "When is spring?",
+              "options": ["A) March to May", "B) June to August", "C) September to November", "D] December to February"],
+              "correctAnswer": "A",
+              "translation": "Mùa xuân là khi nào?"
             },
             {
               "id": "reading-q13",
               "type": "multiple-choice",
-              "questionText": "What creates behavioral poverty traps?",
-              "options": ["A) Cognitive burdens of poverty", "B) Lack of resources", "C) Market failures", "D] Government policies"],
-              "correctAnswer": "A"
+              "questionText": "What is the weather like in spring?",
+              "options": ["A) Warm", "B) Hot", "C) Cool", "D] Cold"],
+              "correctAnswer": "A",
+              "translation": "Thời tiết mùa xuân như thế nào?"
             },
             {
               "id": "reading-q14",
               "type": "multiple-choice",
-              "questionText": "What leads to underinvestment in education?",
-              "options": ["A) Present bias", "B) Risk aversion", "C) Time preference", "D] Discount rates"],
-              "correctAnswer": "A"
+              "questionText": "When is summer?",
+              "options": ["A) June to August", "B) March to May", "C) September to November", "D] December to February"],
+              "correctAnswer": "A",
+              "translation": "Mùa hè là khi nào?"
             },
             {
               "id": "reading-q15",
               "type": "multiple-choice",
-              "questionText": "What influences collective action problems?",
-              "options": ["A) Social preferences", "B) Individual interests", "C) Market prices", "D] Government regulations"],
-              "correctAnswer": "A"
+              "questionText": "What do people do in summer?",
+              "options": ["A) Go to beach and swim", "B) Wear warm clothes", "C) See falling leaves", "D] Plant flowers"],
+              "correctAnswer": "A",
+              "translation": "Mọi người làm gì vào mùa hè?"
             },
             {
               "id": "reading-q16",
               "type": "multiple-choice",
-              "questionText": "What shape economic behavior through beliefs?",
-              "options": ["A) Mental models", "B) Cultural norms", "C) Social structures", "D] Economic systems"],
-              "correctAnswer": "A"
+              "questionText": "When is autumn?",
+              "options": ["A) September to November", "B) March to May", "C) June to August", "D] December to February"],
+              "correctAnswer": "A",
+              "translation": "Mùa thu là khi nào?"
             },
             {
               "id": "reading-q17",
               "type": "multiple-choice",
-              "questionText": "What have demonstrated success in improving outcomes?",
-              "options": ["A) Nudge-based interventions", "B) Traditional policies", "C) Market solutions", "D] Regulatory approaches"],
-              "correctAnswer": "A"
+              "questionText": "What happens in autumn?",
+              "options": ["A) Leaves fall from trees", "B) Flowers bloom", "C) It snows", "D] Weather is hot"],
+              "correctAnswer": "A",
+              "translation": "Điều gì xảy ra vào mùa thu?"
             },
             {
               "id": "reading-q18",
               "type": "multiple-choice",
-              "questionText": "What do behavioral approaches face limitations in addressing?",
-              "options": ["A) Structural constraints", "B) Individual behavior", "C) Cognitive biases", "D] Decision processes"],
-              "correctAnswer": "A"
+              "questionText": "When is winter?",
+              "options": ["A) December to February", "B) March to May", "C) June to August", "D] September to November"],
+              "correctAnswer": "A",
+              "translation": "Mùa đông là khi nào?"
             },
             {
               "id": "reading-q19",
               "type": "multiple-choice",
-              "questionText": "What offers more comprehensive understanding?",
-              "options": ["A) Integration of behavioral insights", "B) Traditional models", "C) Experimental methods", "D] Theoretical frameworks"],
-              "correctAnswer": "A"
+              "questionText": "What is the weather like in winter?",
+              "options": ["A) Cold", "B) Warm", "C) Hot", "D] Cool"],
+              "correctAnswer": "A",
+              "translation": "Thời tiết mùa đông như thế nào?"
             },
             {
               "id": "reading-q20",
               "type": "multiple-choice",
-              "questionText": "What does behavioral economics aim to work with?",
-              "options": ["A) Human psychology as it is", "B) Idealized human behavior", "C) Rational choice models", "D] Traditional assumptions"],
-              "correctAnswer": "A"
-            }
-          ]
-        },
-        {
-          "id": "reading-passage3",
-          "title": "Passage 3: The Political Economy of Reform",
-          "content": "The political economy of reform examines why economically beneficial policies are often politically difficult to implement, focusing on the distributional conflicts, institutional constraints, and ideological factors that shape policy outcomes. Economic reforms typically create winners and losers, and potential losers often organize more effectively to block changes than potential winners organize to support them. This collective action problem explains the status quo bias in economic policymaking. Institutional veto points—where multiple actors must consent to policy changes—can enable minority interests to block reforms even when they would benefit the majority. Ideological frameworks and cognitive biases shape how actors perceive their interests and the costs and benefits of reform. The timing and sequencing of reforms crucially influence their political feasibility, with reforms often more achievable during crises when the status quo becomes untenable or during political transitions when old veto players are weakened. Compensation mechanisms that mitigate losses for powerful groups can facilitate reform implementation, though they may reduce economic efficiency. The credibility of reform commitments affects their economic impact, as private actors may not respond to announced reforms if they doubt their sustainability. International factors including conditional lending, technical assistance, and peer learning can influence domestic reform processes but cannot substitute for domestic ownership. Successful reform strategies typically combine technical soundness with political savvy, building coalitions for change while managing opposition through compensation, persuasion, and strategic sequencing. Understanding the political economy of reform is essential for designing implementable policies that achieve both economic efficiency and political sustainability.",
-          "questions": [
-            {
-              "id": "reading-q21",
-              "type": "multiple-choice",
-              "questionText": "What examines why beneficial policies are difficult?",
-              "options": ["A) Political economy of reform", "B) Traditional economics", "C) Behavioral economics", "D] Development economics"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q22",
-              "type": "multiple-choice",
-              "questionText": "What problem explains status quo bias?",
-              "options": ["A) Collective action problem", "B) Coordination problem", "C) Information problem", "D] Incentive problem"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q23",
-              "type": "multiple-choice",
-              "questionText": "What can enable minority interests to block reforms?",
-              "options": ["A) Institutional veto points", "B) Democratic processes", "C) Market mechanisms", "D] International pressure"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q24",
-              "type": "multiple-choice",
-              "questionText": "What shape how actors perceive interests?",
-              "options": ["A) Ideological frameworks", "B) Economic models", "C) Statistical data", "D] Historical patterns"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q25",
-              "type": "multiple-choice",
-              "questionText": "When are reforms often more achievable?",
-              "options": ["A) During crises", "B) During stability", "C) During prosperity", "D] During elections"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q26",
-              "type": "multiple-choice",
-              "questionText": "What can facilitate reform implementation?",
-              "options": ["A) Compensation mechanisms", "B) Regulatory enforcement", "C) Market competition", "D] Public awareness"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q27",
-              "type": "multiple-choice",
-              "questionText": "What affects economic impact of reforms?",
-              "options": ["A) Credibility of commitments", "B) Speed of implementation", "C) Scope of reforms", "D] International support"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q28",
-              "type": "multiple-choice",
-              "questionText": "What cannot substitute for domestic ownership?",
-              "options": ["A) International factors", "B) Technical expertise", "C) Financial resources", "D] Political will"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q29",
-              "type": "multiple-choice",
-              "questionText": "What do successful strategies combine?",
-              "options": ["A) Technical soundness and political savvy", "B) Economic theory and practice", "C) Domestic and international approaches", "D] Short-term and long-term goals"],
-              "correctAnswer": "A"
-            },
-            {
-              "id": "reading-q30",
-              "type": "multiple-choice",
-              "questionText": "What is essential for designing implementable policies?",
-              "options": ["A) Understanding political economy", "B) Following best practices", "C) Applying economic models", "D] Implementing technical solutions"],
-              "correctAnswer": "A"
+              "questionText": "What do people wear in winter?",
+              "options": ["A) Warm clothes", "B) Light clothes", "C) Swimsuits", "D] Uniforms"],
+              "correctAnswer": "A",
+              "translation": "Mọi người mặc gì vào mùa đông?"
             }
           ]
         }
@@ -691,91 +536,147 @@
     {
       "id": "writing",
       "title": "Writing",
-      "description": "60 minutes",
+      "description": "40 minutes",
       "tasks": [
         {
           "id": "writing-task1",
           "title": "Writing Task 1",
-          "instructions": "You should spend about 20 minutes on this task. The diagram below shows the circular economy model compared to the traditional linear economy. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
-          "taskType": "Academic",
-          "wordCountMin": 150,
+          "instructions": "You should spend about 20 minutes on this task. Write about your family. Describe how many people are in your family and what they do. Write at least 50 words.",
+          "taskType": "Basic",
+          "wordCountMin": 50,
           "timeLimit": 20,
-          "description": "You will be presented with a diagram showing economic models and asked to describe the information in your own words.",
-          "sampleData": {
-            "type": "diagram",
-            "title": "Linear vs Circular Economy Models",
-            "data": {
-              "Linear Economy": ["Take → Make → Use → Dispose"],
-              "Circular Economy": ["Design → Make → Use → Reuse/Repair/Refurbish → Recycle → Back to Make"]
-            },
-            "description": "Comparison of traditional linear economic model with modern circular economy approach"
-          },
+          "description": "You will write a short paragraph describing your family members and their occupations.",
           "assessmentCriteria": [
-            "Task Achievement",
-            "Coherence and Cohesion", 
-            "Lexical Resource",
-            "Grammatical Range and Accuracy"
-          ]
+            "Task Completion",
+            "Basic Vocabulary",
+            "Simple Sentence Structure",
+            "Spelling and Punctuation"
+          ],
+          "sampleAnswer": "There are four people in my family. My father is a teacher. He works at a school. My mother is a nurse. She works in a hospital. My brother is a student. He studies at university. I am also a student. I go to high school. We live in a small house. I love my family very much.",
+          "wordCount": 58
         },
         {
           "id": "writing-task2",
           "title": "Writing Task 2",
-          "instructions": "You should spend about 40 minutes on this task. Some argue that artificial intelligence and automation will lead to widespread technological unemployment and increased inequality, while others believe they will create new job categories and boost productivity. Discuss both these views and give your own opinion. Write at least 250 words.",
-          "taskType": "Essay",
-          "wordCountMin": 250,
-          "timeLimit": 40,
-          "description": "You will be presented with contrasting views on AI and automation impacts and asked to discuss them.",
-          "essayType": "Discussion",
-          "topics": [
-            "Technological unemployment",
-            "AI and labor markets",
-            "Future of work"
-          ],
-          "keyPoints": [
-            "Arguments about job displacement and inequality",
-            "Arguments about job creation and productivity",
-            "Synthesis and personal position"
-          ],
+          "instructions": "You should spend about 20 minutes on this task. Write about your favorite season. Describe what the weather is like and what you like to do in this season. Write at least 50 words.",
+          "taskType": "Basic",
+          "wordCountMin": 50,
+          "timeLimit": 20,
+          "description": "You will write a short paragraph describing your favorite season and activities.",
           "assessmentCriteria": [
-            "Task Response",
-            "Coherence and Cohesion",
-            "Lexical Resource", 
-            "Grammatical Range and Accuracy"
-          ]
+            "Task Completion", 
+            "Basic Vocabulary",
+            "Simple Sentence Structure",
+            "Spelling and Punctuation"
+          ],
+          "sampleAnswer": "My favorite season is summer. The weather is hot and sunny. I like to go to the beach with my friends. We swim in the sea and play volleyball. Sometimes we have picnics in the park. I eat ice cream and drink cold juice. Summer is fun because there is no school. I love summer very much.",
+          "wordCount": 62
         }
       ]
     },
     {
       "id": "grammar",
-      "title": "Grammar & Language Use",
-      "description": "20 questions • Approximately 15 minutes",
+      "title": "Grammar & Vocabulary",
+      "description": "10 questions • Approximately 10 minutes",
       "questions": [
-        {"id": "grammar-q1", "type": "multiple-choice", "questionText": "_____ comprehensive the economic reforms, their success ultimately depends on institutional capacity and political will.", "options": ["A) However", "B) Although", "C) Despite", "D] Because"], "correctAnswer": "A", "explanation": "Concession with adjective", "translation": "Dù các cải cách kinh tế có toàn diện đến đâu, thành công của chúng cuối cùng phụ thuộc vào năng lực thể chế và ý chí chính trị."},
-        {"id": "grammar-q2", "type": "multiple-choice", "questionText": "The development strategy, _____ on extensive stakeholder consultation, demonstrated remarkable resilience during the economic crisis.", "options": ["A) predicated", "B) predicating", "C) having predicated", "D] being predicated"], "correctAnswer": "A", "explanation": "Past participle in reduced relative clause", "translation": "Chiến lược phát triển, dựa trên tham vấn rộng rãi các bên liên quan, đã thể hiện khả năng phục hồi đáng kể trong cuộc khủng hoảng kinh tế."},
-        {"id": "grammar-q3", "type": "multiple-choice", "questionText": "So profound _____ that traditional economic indicators fail to capture its full impact.", "options": ["A) has the digital transformation been", "B) the digital transformation has been", "C) was the digital transformation", "D] the digital transformation was"], "correctAnswer": "A", "explanation": "Inversion after 'so + adjective'", "translation": "Chuyển đổi kỹ thuật số sâu sắc đến mức các chỉ số kinh tế truyền thống không nắm bắt được tác động đầy đủ của nó."},
-        {"id": "grammar-q4", "type": "multiple-choice", "questionText": "The policy committee recommended that environmental sustainability _____ at the core of all economic planning.", "options": ["A) be placed", "B] is placed", "C) was placed", "D] has been placed"], "correctAnswer": "A", "explanation": "Subjunctive after verbs of recommendation", "translation": "Ủy ban chính sách khuyến nghị rằng tính bền vững môi trường phải được đặt ở cốt lõi của tất cả kế hoạch kinh tế."},
-        {"id": "grammar-q5", "type": "multiple-choice", "questionText": "_____ the complex interdependencies of global value chains, regional economic shocks can have worldwide repercussions.", "options": ["A) Given", "B) Giving", "C) To give", "D] Having given"], "correctAnswer": "A", "explanation": "Preposition meaning 'considering'", "translation": "Xét đến sự phụ thuộc lẫn nhau phức tạp của các chuỗi giá trị toàn cầu, các cú sốc kinh tế khu vực có thể có tác động toàn cầu."},
-        {"id": "grammar-q6", "type": "multiple-choice", "questionText": "The innovation ecosystem, _____ numerous research institutions and startups, has become a model for regional development.", "options": ["A] comprising", "B] comprised", "C] having comprised", "D] being comprised"], "correctAnswer": "A", "explanation": "Present participle in reduced relative clause", "translation": "Hệ sinh thái đổi mới, bao gồm nhiều viện nghiên cứu và startup, đã trở thành mô hình cho phát triển khu vực."},
-        {"id": "grammar-q7", "type": "multiple-choice", "questionText": "So rapidly _____ that regulatory frameworks struggle to keep pace.", "options": ["A] is financial technology evolving", "B] financial technology is evolving", "C] has financial technology evolved", "D] financial technology has evolved"], "correctAnswer": "A", "explanation": "Inversion after 'so + adverb'", "translation": "Công nghệ tài chính phát triển nhanh đến mức các khuôn khổ quy định phải vật lộn để theo kịp."},
-        {"id": "grammar-q8", "type": "multiple-choice", "questionText": "The board insisted that climate risk assessments _____ integrated into all investment decisions.", "options": ["A] be", "B] are", "C] were", "D] have been"], "correctAnswer": "A", "explanation": "Subjunctive after verbs of demand", "translation": "Hội đồng quản trị nhấn mạnh rằng đánh giá rủi ro khí hậu phải được tích hợp vào tất cả các quyết định đầu tư."},
-        {"id": "grammar-q9", "type": "multiple-choice", "questionText": "_____ the prevailing economic uncertainties, innovation investment continues to demonstrate remarkable resilience.", "options": ["A] Notwithstanding", "B] Besides", "C] Moreover", "D] Therefore"], "correctAnswer": "A", "explanation": "Formal preposition meaning 'despite'", "translation": "Bất chấp những bất ổn kinh tế hiện hành, đầu tư đổi mới tiếp tục thể hiện khả năng phục hồi đáng chú ý."},
-        {"id": "grammar-q10", "type": "multiple-choice", "questionText": "The economic partnership, _____ over a decade of negotiation, has transformed regional trade patterns.", "options": ["A] forged", "B] forging", "C] having forged", "D] being forged"], "correctAnswer": "A", "explanation": "Past participle in reduced relative clause", "translation": "Quan hệ đối tác kinh tế, được xây dựng qua hơn một thập kỷ đàm phán, đã biến đổi các mô hình thương mại khu vực."},
-        {"id": "grammar-q11", "type": "multiple-choice", "questionText": "So significant _____ that it has redefined global economic governance.", "options": ["A] has the shift in economic power been", "B] the shift in economic power has been", "C] was the shift in economic power", "D] the shift in economic power was"], "correctAnswer": "A", "explanation": "Inversion after 'so + adjective'", "translation": "Sự thay đổi quyền lực kinh tế quan trọng đến mức nó đã định nghĩa lại quản trị kinh tế toàn cầu."},
-        {"id": "grammar-q12", "type": "multiple-choice", "questionText": "The committee demanded that transparency _____ in all public procurement processes.", "options": ["A] be ensured", "B] is ensured", "C] was ensured", "D] has been ensured"], "correctAnswer": "A", "explanation": "Subjunctive after verbs of demand", "translation": "Ủy ban yêu cầu rằng tính minh bạch phải được đảm bảo trong tất cả các quy trình mua sắm công."},
-        {"id": "grammar-q13", "type": "multiple-choice", "questionText": "_____ the sophisticated economic modeling, predicting market behavior remains inherently uncertain.", "options": ["A] Despite", "B] Although", "C] Because of", "D] However"], "correctAnswer": "A", "explanation": "Preposition for contrast", "translation": "Bất chấp mô hình hóa kinh tế tinh vi, dự đoán hành vi thị trường vẫn cố hữu không chắc chắn."},
-        {"id": "grammar-q14", "type": "multiple-choice", "questionText": "The regulatory framework, _____ to address emerging digital risks, requires continuous updating.", "options": ["A] designed", "B] designing", "C] having designed", "D] being designed"], "correctAnswer": "A", "explanation": "Past participle in reduced relative clause", "translation": "Khuôn khổ quy định, được thiết kế để giải quyết các rủi ro kỹ thuật số mới nổi, yêu cầu cập nhật liên tục."},
-        {"id": "grammar-q15", "type": "multiple-choice", "questionText": "So complex _____ that traditional policy tools have proven inadequate.", "options": ["A] have modern economic challenges become", "B] modern economic challenges have become", "C] became modern economic challenges", "D] modern economic challenges became"], "correctAnswer": "A", "explanation": "Inversion after 'so + adjective'", "translation": "Các thách thức kinh tế hiện đại trở nên phức tạp đến mức các công cụ chính sách truyền thống đã chứng minh là không đầy đủ."},
-        {"id": "grammar-q16", "type": "multiple-choice", "questionText": "The international agreement requires that environmental standards _____ uniformly applied.", "options": ["A] be", "B] are", "C] were", "D] have been"], "correctAnswer": "A", "explanation": "Subjunctive after verbs of requirement", "translation": "Thỏa thuận quốc tế yêu cầu rằng các tiêu chuẩn môi trường phải được áp dụng thống nhất."},
-        {"id": "grammar-q17", "type": "multiple-choice", "questionText": "_____ the detailed economic analysis, implementation challenges persisted.", "options": ["A] Notwithstanding", "B] Besides", "C] Moreover", "D] Therefore"], "correctAnswer": "A", "explanation": "Formal preposition meaning 'despite'", "translation": "Bất chấp phân tích kinh tế chi tiết, các thách thức triển khai vẫn tồn tại."},
-        {"id": "grammar-q18", "type": "multiple-choice", "questionText": "The development model, _____ on inclusive growth principles, has achieved remarkable poverty reduction.", "options": ["A] predicated", "B] predicating", "C] having predicated", "D] being predicated"], "correctAnswer": "A", "explanation": "Past participle in reduced relative clause", "translation": "Mô hình phát triển, dựa trên các nguyên tắc tăng trưởng bao trùm, đã đạt được thành tựu giảm nghèo đáng kể."},
-        {"id": "grammar-q19", "type": "multiple-choice", "questionText": "So rapidly _____ that traditional industries have struggled to adapt.", "options": ["A] is the technological landscape changing", "B] the technological landscape is changing", "C] has the technological landscape changed", "D] the technological landscape has changed"], "correctAnswer": "A", "explanation": "Inversion after 'so + adverb'", "translation": "Bối cảnh công nghệ thay đổi nhanh đến mức các ngành công nghiệp truyền thống phải vật lộn để thích nghi."},
-        {"id": "grammar-q20", "type": "multiple-choice", "questionText": "The reform package mandates that anti-corruption measures _____ strengthened across all government agencies.", "options": ["A] be", "B] are", "C] were", "D] have been"], "correctAnswer": "A", "explanation": "Subjunctive after verbs of mandate", "translation": "Gói cải cách yêu cầu rằng các biện pháp chống tham nhũng phải được tăng cường trên tất cả các cơ quan chính phủ."}
+        {
+          "id": "grammar-q1",
+          "type": "multiple-choice",
+          "questionText": "I _____ to school every day.",
+          "options": ["A) go", "B) goes", "C) going", "D] went"],
+          "correctAnswer": "A",
+          "explanation": "Present simple for routines",
+          "translation": "Tôi đi học mỗi ngày."
+        },
+        {
+          "id": "grammar-q2",
+          "type": "multiple-choice",
+          "questionText": "She _____ a book now.",
+          "options": ["A) is reading", "B) reads", "C) read", "D] reading"],
+          "correctAnswer": "A",
+          "explanation": "Present continuous for actions happening now",
+          "translation": "Cô ấy đang đọc sách."
+        },
+        {
+          "id": "grammar-q3",
+          "type": "multiple-choice",
+          "questionText": "We _____ football yesterday.",
+          "options": ["A) played", "B) play", "C) playing", "D] plays"],
+          "correctAnswer": "A",
+          "explanation": "Past simple for completed actions",
+          "translation": "Chúng tôi đã chơi bóng đá hôm qua."
+        },
+        {
+          "id": "grammar-q4",
+          "type": "multiple-choice",
+          "questionText": "There _____ three apples on the table.",
+          "options": ["A) are", "B) is", "C) am", "D] be"],
+          "correctAnswer": "A",
+          "explanation": "Plural noun requires 'are'",
+          "translation": "Có ba quả táo trên bàn."
+        },
+        {
+          "id": "grammar-q5",
+          "type": "multiple-choice",
+          "questionText": "My brother _____ in an office.",
+          "options": ["A) works", "B) work", "C) working", "D] worked"],
+          "correctAnswer": "A",
+          "explanation": "Third person singular present simple",
+          "translation": "Anh trai tôi làm việc trong văn phòng."
+        },
+        {
+          "id": "grammar-q6",
+          "type": "multiple-choice",
+          "questionText": "They _____ to the park every Sunday.",
+          "options": ["A) go", "B) goes", "C) going", "D] went"],
+          "correctAnswer": "A",
+          "explanation": "Plural subject requires base verb",
+          "translation": "Họ đi đến công viên mỗi Chủ nhật."
+        },
+        {
+          "id": "grammar-q7",
+          "type": "multiple-choice",
+          "questionText": "I _____ my homework last night.",
+          "options": ["A) did", "B) do", "C) doing", "D] does"],
+          "correctAnswer": "A",
+          "explanation": "Past simple for completed action",
+          "translation": "Tôi đã làm bài tập tối qua."
+        },
+        {
+          "id": "grammar-q8",
+          "type": "multiple-choice",
+          "questionText": "She _____ breakfast at 7:00 every morning.",
+          "options": ["A) eats", "B) eat", "C) eating", "D] ate"],
+          "correctAnswer": "A",
+          "explanation": "Third person singular present simple",
+          "translation": "Cô ấy ăn sáng lúc 7:00 mỗi sáng."
+        },
+        {
+          "id": "grammar-q9",
+          "type": "multiple-choice",
+          "questionText": "We _____ TV right now.",
+          "options": ["A) are watching", "B) watch", "C) watched", "D] watches"],
+          "correctAnswer": "A",
+          "explanation": "Present continuous for current action",
+          "translation": "Chúng tôi đang xem TV."
+        },
+        {
+          "id": "grammar-q10",
+          "type": "multiple-choice",
+          "questionText": "He _____ to school by bus.",
+          "options": ["A) goes", "B) go", "C) going", "D] went"],
+          "correctAnswer": "A",
+          "explanation": "Third person singular present simple",
+          "translation": "Anh ấy đi học bằng xe buýt."
+        }
       ]
     }
   ],
   "metadata": {
-    "version": "4.6",
+    "version": "1.0",
     "author": "IELTS Practice System",
-    "notes": "IELTS Level 4.6 advanced economics test covering Listening (4 parts, 40 questions), Reading (3 passages, 30 questions), Writing (2 tasks), and Grammar (20 questions). Enhanced difficulty with sophisticated economic concepts including development paradigms, platform economics, urban economics, and institutional economics."
+    "notes": "IELTS Level 1.0 basic daily life test covering Listening (3 parts, 30 questions), Reading (2 passages, 20 questions), Writing (2 simple tasks), and Grammar (10 questions). Beginner level with basic vocabulary and simple sentence structures focused on daily routines, family, shopping, and weather.",
+    "theme": "Daily Life",
+    "nextLevelTheme": "Shopping and Food"
   }
 }

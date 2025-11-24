@@ -1,0 +1,1214 @@
+{
+  "id": "mht9dj886lmqxxk4tsv",
+  "timestamp": "2025-11-10T14:49:36.920Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-11-10T14:49:34.885Z",
+    "submittedBy": "user"
+  },
+  "userName": "Ung Đức Thuận",
+  "answers": {
+    "listening": {
+      "listening-q1": "D",
+      "listening-q2": "B",
+      "listening-q4": "C",
+      "listening-q5": "D",
+      "listening-q6": "A",
+      "listening-q7": "B",
+      "listening-q8": "C",
+      "listening-q9": "A",
+      "listening-q10": "A",
+      "listening-q11": "A",
+      "listening-q12": "A",
+      "listening-q13": "A",
+      "listening-q14": "A",
+      "listening-q16": "A",
+      "listening-q17": "A",
+      "listening-q20": "A",
+      "listening-q15": "A",
+      "listening-q18": "A",
+      "listening-q19": "C",
+      "listening-q21": "B",
+      "listening-q22": "D",
+      "listening-q23": "A",
+      "listening-q24": "B",
+      "listening-q28": "D",
+      "listening-q29": "B",
+      "listening-q30": "B",
+      "listening-q27": "A",
+      "listening-q26": "A",
+      "listening-q25": "A"
+    },
+    "reading": {
+      "reading-q1": "A",
+      "reading-q2": "B",
+      "reading-q3": "A",
+      "reading-q4": "A",
+      "reading-q5": "A",
+      "reading-q6": "A",
+      "reading-q7": "A",
+      "reading-q8": "A",
+      "reading-q9": "A",
+      "reading-q10": "A",
+      "reading-q11": "A",
+      "reading-q12": "A",
+      "reading-q13": "A",
+      "reading-q14": "A",
+      "reading-q15": "A",
+      "reading-q16": "A",
+      "reading-q17": "A",
+      "reading-q18": "A",
+      "reading-q19": "D",
+      "reading-q20": "A"
+    },
+    "grammar": {
+      "grammar-q1": "C",
+      "grammar-q2": "A",
+      "grammar-q3": "C",
+      "grammar-q4": "A",
+      "grammar-q5": "D",
+      "grammar-q6": "B",
+      "grammar-q10": "C",
+      "grammar-q9": "A",
+      "grammar-q8": "C",
+      "grammar-q7": "C"
+    },
+    "writing": {
+      "task1": "",
+      "task2": ""
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {}
+  },
+  "results": {
+    "listening": 16,
+    "reading": 18,
+    "writing": 0,
+    "speaking": 0,
+    "grammar": 3,
+    "total": 33.64,
+    "listeningTotal": 40,
+    "readingTotal": 30,
+    "writingTotal": 20,
+    "speakingTotal": 20,
+    "grammarTotal": 20,
+    "translationPenalty": 0,
+    "bands": {
+      "listening": 4,
+      "reading": 6,
+      "writing": 3,
+      "speaking": 3,
+      "grammar": 3,
+      "overall": 3.8
+    }
+  },
+  "timeSpent": "20:25",
+  "testData": {
+    "testId": "IELTS-BASIC-1.0-2025-11-05",
+    "testDate": "2025-11-05",
+    "testTitle": "IELTS Level 1.0 Basic Daily Life Test",
+    "totalQuestions": 80,
+    "difficultyLevel": "Beginner",
+    "sections": [
+      {
+        "id": "listening",
+        "title": "Listening",
+        "description": "30 questions • Approximately 25 minutes • You will hear each recording only once",
+        "parts": [
+          {
+            "partNumber": 1,
+            "title": "Part 1: Conversation about daily routines",
+            "instructions": "Listen to the conversation and answer questions 1-10.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.2,
+                "rate": 0.8,
+                "volume": 0.9,
+                "name": "Anna",
+                "variation": 0.05,
+                "accent": "standard",
+                "emotion": "friendly",
+                "speakingType": "conversation"
+              },
+              "male": {
+                "pitch": 0.8,
+                "rate": 0.8,
+                "volume": 0.85,
+                "name": "Tom",
+                "variation": 0.04,
+                "accent": "standard",
+                "emotion": "friendly",
+                "speakingType": "conversation"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.7,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.03,
+                "accent": "clear",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Good morning. This is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between two friends about their daily routines. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Hello Tom! How are you today?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "Hi Anna! I'm good, thank you. How about you?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "I'm fine. What time do you usually wake up in the morning?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "I wake up at seven o'clock. Then I brush my teeth and take a shower."
+                },
+                {
+                  "speaker": "female",
+                  "text": "That's early! I wake up at eight o'clock. Do you eat breakfast?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "Yes, I eat breakfast at seven thirty. I usually have bread and milk."
+                },
+                {
+                  "speaker": "female",
+                  "text": "I eat breakfast too. I like eggs and fruit. What do you do after breakfast?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "I go to work at eight thirty. I work in an office."
+                },
+                {
+                  "speaker": "female",
+                  "text": "I go to school at nine o'clock. I study English."
+                },
+                {
+                  "speaker": "male",
+                  "text": "That's nice. Do you eat lunch at school?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "Yes, I eat lunch at school. The food is good."
+                },
+                {
+                  "speaker": "male",
+                  "text": "What time do you finish school?"
+                },
+                {
+                  "speaker": "female",
+                  "text": "I finish at three o'clock. Then I go home and rest."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q1",
+                "type": "multiple-choice",
+                "questionText": "What time does Tom wake up?",
+                "options": [
+                  "A) 7:00",
+                  "B) 8:00",
+                  "C) 7:30",
+                  "D] 8:30"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tom thức dậy lúc mấy giờ?"
+              },
+              {
+                "id": "listening-q2",
+                "type": "multiple-choice",
+                "questionText": "What does Tom do after waking up?",
+                "options": [
+                  "A) Brush teeth and shower",
+                  "B) Eat breakfast",
+                  "C) Go to work",
+                  "D] Exercise"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tom làm gì sau khi thức dậy?"
+              },
+              {
+                "id": "listening-q3",
+                "type": "multiple-choice",
+                "questionText": "What time does Anna wake up?",
+                "options": [
+                  "A) 8:00",
+                  "B) 7:00",
+                  "C) 7:30",
+                  "D] 9:00"
+                ],
+                "correctAnswer": "A",
+                "translation": "Anna thức dậy lúc mấy giờ?"
+              },
+              {
+                "id": "listening-q4",
+                "type": "multiple-choice",
+                "questionText": "What does Tom eat for breakfast?",
+                "options": [
+                  "A) Bread and milk",
+                  "B) Eggs and fruit",
+                  "C) Rice and vegetables",
+                  "D] Coffee and cake"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tom ăn gì cho bữa sáng?"
+              },
+              {
+                "id": "listening-q5",
+                "type": "multiple-choice",
+                "questionText": "What does Anna eat for breakfast?",
+                "options": [
+                  "A) Eggs and fruit",
+                  "B) Bread and milk",
+                  "C) Cereal and juice",
+                  "D] Sandwich and tea"
+                ],
+                "correctAnswer": "A",
+                "translation": "Anna ăn gì cho bữa sáng?"
+              },
+              {
+                "id": "listening-q6",
+                "type": "multiple-choice",
+                "questionText": "What time does Tom go to work?",
+                "options": [
+                  "A) 8:30",
+                  "B) 9:00",
+                  "C) 7:30",
+                  "D] 8:00"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tom đi làm lúc mấy giờ?"
+              },
+              {
+                "id": "listening-q7",
+                "type": "multiple-choice",
+                "questionText": "Where does Tom work?",
+                "options": [
+                  "A) In an office",
+                  "B) In a school",
+                  "C) In a hospital",
+                  "D] In a shop"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tom làm việc ở đâu?"
+              },
+              {
+                "id": "listening-q8",
+                "type": "multiple-choice",
+                "questionText": "What time does Anna go to school?",
+                "options": [
+                  "A) 9:00",
+                  "B) 8:30",
+                  "C) 8:00",
+                  "D] 7:30"
+                ],
+                "correctAnswer": "A",
+                "translation": "Anna đi học lúc mấy giờ?"
+              },
+              {
+                "id": "listening-q9",
+                "type": "multiple-choice",
+                "questionText": "What does Anna study?",
+                "options": [
+                  "A) English",
+                  "B) Math",
+                  "C) Science",
+                  "D] History"
+                ],
+                "correctAnswer": "A",
+                "translation": "Anna học môn gì?"
+              },
+              {
+                "id": "listening-q10",
+                "type": "multiple-choice",
+                "questionText": "Where does Anna eat lunch?",
+                "options": [
+                  "A) At school",
+                  "B) At home",
+                  "C) In a restaurant",
+                  "D] At work"
+                ],
+                "correctAnswer": "A",
+                "translation": "Anna ăn trưa ở đâu?"
+              }
+            ]
+          },
+          {
+            "partNumber": 2,
+            "title": "Part 2: Talk about family and home",
+            "instructions": "Listen to the talk and answer questions 11-20.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.1,
+                "rate": 0.8,
+                "volume": 0.9,
+                "name": "Sarah",
+                "variation": 0.04,
+                "accent": "standard",
+                "emotion": "warm",
+                "speakingType": "description"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.7,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.03,
+                "accent": "clear",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 2. You will hear a woman talking about her family and home. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Hello, my name is Sarah. I want to tell you about my family. I live in a small house with my family. There are four people in my family: my father, my mother, my brother, and me. My father's name is John. He is a teacher. My mother's name is Mary. She is a nurse. My brother's name is David. He is a student. Our house has three bedrooms, one kitchen, one living room, and two bathrooms. We have a small garden with flowers. I like my family and our home very much."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q11",
+                "type": "multiple-choice",
+                "questionText": "How many people are in Sarah's family?",
+                "options": [
+                  "A) Four",
+                  "B) Three",
+                  "C) Five",
+                  "D] Six"
+                ],
+                "correctAnswer": "A",
+                "translation": "Có bao nhiêu người trong gia đình Sarah?"
+              },
+              {
+                "id": "listening-q12",
+                "type": "multiple-choice",
+                "questionText": "What is Sarah's father's name?",
+                "options": [
+                  "A) John",
+                  "B) David",
+                  "C) Mary",
+                  "D] Sarah"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tên bố của Sarah là gì?"
+              },
+              {
+                "id": "listening-q13",
+                "type": "multiple-choice",
+                "questionText": "What does Sarah's father do?",
+                "options": [
+                  "A) Teacher",
+                  "B) Nurse",
+                  "C) Student",
+                  "D] Doctor"
+                ],
+                "correctAnswer": "A",
+                "translation": "Bố của Sarah làm nghề gì?"
+              },
+              {
+                "id": "listening-q14",
+                "type": "multiple-choice",
+                "questionText": "What is Sarah's mother's name?",
+                "options": [
+                  "A) Mary",
+                  "B) John",
+                  "C) David",
+                  "D] Sarah"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tên mẹ của Sarah là gì?"
+              },
+              {
+                "id": "listening-q15",
+                "type": "multiple-choice",
+                "questionText": "What does Sarah's mother do?",
+                "options": [
+                  "A) Nurse",
+                  "B) Teacher",
+                  "C) Student",
+                  "D] Engineer"
+                ],
+                "correctAnswer": "A",
+                "translation": "Mẹ của Sarah làm nghề gì?"
+              },
+              {
+                "id": "listening-q16",
+                "type": "multiple-choice",
+                "questionText": "What is Sarah's brother's name?",
+                "options": [
+                  "A) David",
+                  "B) John",
+                  "C) Mary",
+                  "D] Sarah"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tên anh trai của Sarah là gì?"
+              },
+              {
+                "id": "listening-q17",
+                "type": "multiple-choice",
+                "questionText": "What does Sarah's brother do?",
+                "options": [
+                  "A) Student",
+                  "B) Teacher",
+                  "C) Nurse",
+                  "D] Worker"
+                ],
+                "correctAnswer": "A",
+                "translation": "Anh trai của Sarah làm gì?"
+              },
+              {
+                "id": "listening-q18",
+                "type": "multiple-choice",
+                "questionText": "How many bedrooms are in their house?",
+                "options": [
+                  "A) Three",
+                  "B) Two",
+                  "C) Four",
+                  "D] One"
+                ],
+                "correctAnswer": "A",
+                "translation": "Có bao nhiêu phòng ngủ trong nhà họ?"
+              },
+              {
+                "id": "listening-q19",
+                "type": "multiple-choice",
+                "questionText": "What do they have in the garden?",
+                "options": [
+                  "A) Flowers",
+                  "B) Trees",
+                  "C) Vegetables",
+                  "D] Animals"
+                ],
+                "correctAnswer": "A",
+                "translation": "Họ có gì trong vườn?"
+              },
+              {
+                "id": "listening-q20",
+                "type": "multiple-choice",
+                "questionText": "How does Sarah feel about her family and home?",
+                "options": [
+                  "A) Likes very much",
+                  "B) Doesn't like",
+                  "C) Sometimes likes",
+                  "D] Not sure"
+                ],
+                "correctAnswer": "A",
+                "translation": "Sarah cảm thấy thế nào về gia đình và ngôi nhà của mình?"
+              }
+            ]
+          },
+          {
+            "partNumber": 3,
+            "title": "Part 3: Conversation about shopping",
+            "instructions": "Listen to the conversation and answer questions 21-30.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.2,
+                "rate": 0.8,
+                "volume": 0.9,
+                "name": "Lisa",
+                "variation": 0.05,
+                "accent": "standard",
+                "emotion": "friendly",
+                "speakingType": "conversation"
+              },
+              "male": {
+                "pitch": 0.8,
+                "rate": 0.8,
+                "volume": 0.85,
+                "name": "Mike",
+                "variation": 0.04,
+                "accent": "standard",
+                "emotion": "helpful",
+                "speakingType": "conversation"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.7,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.03,
+                "accent": "clear",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 3. You will hear a conversation between a customer and a shop assistant. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Excuse me, where can I find the milk?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "The milk is in aisle three, next to the juice."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Thank you. And where are the apples?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "The apples are in the fruit section, near the entrance."
+                },
+                {
+                  "speaker": "female",
+                  "text": "How much is the bread?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "The bread is two dollars."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Do you have any bananas?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "Yes, we have bananas. They are one dollar per kilogram."
+                },
+                {
+                  "speaker": "female",
+                  "text": "I need some eggs too. Where are the eggs?"
+                },
+                {
+                  "speaker": "male",
+                  "text": "The eggs are in the dairy section, next to the milk."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Thank you for your help."
+                },
+                {
+                  "speaker": "male",
+                  "text": "You're welcome. Have a nice day!"
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q21",
+                "type": "multiple-choice",
+                "questionText": "Where is the milk?",
+                "options": [
+                  "A) Aisle three",
+                  "B) Near entrance",
+                  "C) Aisle one",
+                  "D] Dairy section"
+                ],
+                "correctAnswer": "A",
+                "translation": "Sữa ở đâu?"
+              },
+              {
+                "id": "listening-q22",
+                "type": "multiple-choice",
+                "questionText": "What is next to the milk?",
+                "options": [
+                  "A) Juice",
+                  "B) Bread",
+                  "C) Eggs",
+                  "D] Fruit"
+                ],
+                "correctAnswer": "A",
+                "translation": "Cái gì ở cạnh sữa?"
+              },
+              {
+                "id": "listening-q23",
+                "type": "multiple-choice",
+                "questionText": "Where are the apples?",
+                "options": [
+                  "A) Fruit section",
+                  "B) Aisle three",
+                  "C) Dairy section",
+                  "D] Near milk"
+                ],
+                "correctAnswer": "A",
+                "translation": "Táo ở đâu?"
+              },
+              {
+                "id": "listening-q24",
+                "type": "multiple-choice",
+                "questionText": "Where is the fruit section?",
+                "options": [
+                  "A) Near entrance",
+                  "B) Aisle three",
+                  "C) Back of store",
+                  "D] Next to milk"
+                ],
+                "correctAnswer": "A",
+                "translation": "Khu vực trái cây ở đâu?"
+              },
+              {
+                "id": "listening-q25",
+                "type": "multiple-choice",
+                "questionText": "How much is the bread?",
+                "options": [
+                  "A) Two dollars",
+                  "B) One dollar",
+                  "C) Three dollars",
+                  "D] Four dollars"
+                ],
+                "correctAnswer": "A",
+                "translation": "Bánh mì giá bao nhiêu?"
+              },
+              {
+                "id": "listening-q26",
+                "type": "multiple-choice",
+                "questionText": "Do they have bananas?",
+                "options": [
+                  "A) Yes",
+                  "B) No",
+                  "C) Sometimes",
+                  "D] Not sure"
+                ],
+                "correctAnswer": "A",
+                "translation": "Họ có chuối không?"
+              },
+              {
+                "id": "listening-q27",
+                "type": "multiple-choice",
+                "questionText": "How much are the bananas?",
+                "options": [
+                  "A) One dollar per kg",
+                  "B) Two dollars per kg",
+                  "C) Three dollars per kg",
+                  "D] Four dollars per kg"
+                ],
+                "correctAnswer": "A",
+                "translation": "Chuối giá bao nhiêu?"
+              },
+              {
+                "id": "listening-q28",
+                "type": "multiple-choice",
+                "questionText": "What else does the woman need?",
+                "options": [
+                  "A) Eggs",
+                  "B) Milk",
+                  "C) Bread",
+                  "D] Juice"
+                ],
+                "correctAnswer": "A",
+                "translation": "Người phụ nữ cần gì khác?"
+              },
+              {
+                "id": "listening-q29",
+                "type": "multiple-choice",
+                "questionText": "Where are the eggs?",
+                "options": [
+                  "A) Dairy section",
+                  "B) Fruit section",
+                  "C) Aisle three",
+                  "D] Near entrance"
+                ],
+                "correctAnswer": "A",
+                "translation": "Trứng ở đâu?"
+              },
+              {
+                "id": "listening-q30",
+                "type": "multiple-choice",
+                "questionText": "What is next to the eggs?",
+                "options": [
+                  "A) Milk",
+                  "B) Bread",
+                  "C) Juice",
+                  "D] Fruit"
+                ],
+                "correctAnswer": "A",
+                "translation": "Cái gì ở cạnh trứng?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Reading",
+        "description": "20 questions • 30 minutes",
+        "passages": [
+          {
+            "id": "reading-passage1",
+            "title": "Passage 1: My Daily Routine",
+            "content": "My name is Peter. I am a student. I wake up at 6:30 every morning. First, I brush my teeth and wash my face. Then I get dressed. I eat breakfast at 7:00. I usually have cereal and orange juice. After breakfast, I go to school. My school starts at 8:00. I study many subjects: English, math, science, and history. I like English the most. I eat lunch at school at 12:00. After school, I play football with my friends. I go home at 4:00. I do my homework at 5:00. I eat dinner with my family at 7:00. After dinner, I watch TV or read a book. I go to bed at 9:00.",
+            "questions": [
+              {
+                "id": "reading-q1",
+                "type": "multiple-choice",
+                "questionText": "What time does Peter wake up?",
+                "options": [
+                  "A) 6:30",
+                  "B) 7:00",
+                  "C) 8:00",
+                  "D] 9:00"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter thức dậy lúc mấy giờ?"
+              },
+              {
+                "id": "reading-q2",
+                "type": "multiple-choice",
+                "questionText": "What does Peter do first after waking up?",
+                "options": [
+                  "A) Brush teeth and wash face",
+                  "B) Eat breakfast",
+                  "C) Get dressed",
+                  "D] Go to school"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter làm gì đầu tiên sau khi thức dậy?"
+              },
+              {
+                "id": "reading-q3",
+                "type": "multiple-choice",
+                "questionText": "What does Peter eat for breakfast?",
+                "options": [
+                  "A) Cereal and orange juice",
+                  "B) Bread and milk",
+                  "C) Eggs and fruit",
+                  "D] Rice and vegetables"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter ăn gì cho bữa sáng?"
+              },
+              {
+                "id": "reading-q4",
+                "type": "multiple-choice",
+                "questionText": "What time does school start?",
+                "options": [
+                  "A) 8:00",
+                  "B) 7:00",
+                  "C) 9:00",
+                  "D] 12:00"
+                ],
+                "correctAnswer": "A",
+                "translation": "Trường học bắt đầu lúc mấy giờ?"
+              },
+              {
+                "id": "reading-q5",
+                "type": "multiple-choice",
+                "questionText": "What subject does Peter like the most?",
+                "options": [
+                  "A) English",
+                  "B) Math",
+                  "C) Science",
+                  "D] History"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter thích môn học nào nhất?"
+              },
+              {
+                "id": "reading-q6",
+                "type": "multiple-choice",
+                "questionText": "Where does Peter eat lunch?",
+                "options": [
+                  "A) At school",
+                  "B) At home",
+                  "C) In restaurant",
+                  "D] With friends"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter ăn trưa ở đâu?"
+              },
+              {
+                "id": "reading-q7",
+                "type": "multiple-choice",
+                "questionText": "What does Peter do after school?",
+                "options": [
+                  "A) Play football",
+                  "B) Do homework",
+                  "C) Watch TV",
+                  "D] Read book"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter làm gì sau giờ học?"
+              },
+              {
+                "id": "reading-q8",
+                "type": "multiple-choice",
+                "questionText": "What time does Peter do homework?",
+                "options": [
+                  "A) 5:00",
+                  "B) 4:00",
+                  "C) 7:00",
+                  "D] 9:00"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter làm bài tập lúc mấy giờ?"
+              },
+              {
+                "id": "reading-q9",
+                "type": "multiple-choice",
+                "questionText": "Who does Peter eat dinner with?",
+                "options": [
+                  "A) Family",
+                  "B) Friends",
+                  "C) Alone",
+                  "D] Teachers"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter ăn tối với ai?"
+              },
+              {
+                "id": "reading-q10",
+                "type": "multiple-choice",
+                "questionText": "What time does Peter go to bed?",
+                "options": [
+                  "A) 9:00",
+                  "B) 8:00",
+                  "C) 10:00",
+                  "D] 11:00"
+                ],
+                "correctAnswer": "A",
+                "translation": "Peter đi ngủ lúc mấy giờ?"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage2",
+            "title": "Passage 2: The Weather and Seasons",
+            "content": "There are four seasons in a year: spring, summer, autumn, and winter. Spring is from March to May. The weather is warm and flowers bloom. Summer is from June to August. The weather is hot and sunny. People go to the beach and swim in the sea. Autumn is from September to November. The weather is cool and leaves fall from trees. Winter is from December to February. The weather is cold and it snows in some places. People wear warm clothes like coats and hats. Each season has different weather and activities.",
+            "questions": [
+              {
+                "id": "reading-q11",
+                "type": "multiple-choice",
+                "questionText": "How many seasons are there in a year?",
+                "options": [
+                  "A) Four",
+                  "B) Three",
+                  "C) Five",
+                  "D] Six"
+                ],
+                "correctAnswer": "A",
+                "translation": "Có bao nhiêu mùa trong một năm?"
+              },
+              {
+                "id": "reading-q12",
+                "type": "multiple-choice",
+                "questionText": "When is spring?",
+                "options": [
+                  "A) March to May",
+                  "B) June to August",
+                  "C) September to November",
+                  "D] December to February"
+                ],
+                "correctAnswer": "A",
+                "translation": "Mùa xuân là khi nào?"
+              },
+              {
+                "id": "reading-q13",
+                "type": "multiple-choice",
+                "questionText": "What is the weather like in spring?",
+                "options": [
+                  "A) Warm",
+                  "B) Hot",
+                  "C) Cool",
+                  "D] Cold"
+                ],
+                "correctAnswer": "A",
+                "translation": "Thời tiết mùa xuân như thế nào?"
+              },
+              {
+                "id": "reading-q14",
+                "type": "multiple-choice",
+                "questionText": "When is summer?",
+                "options": [
+                  "A) June to August",
+                  "B) March to May",
+                  "C) September to November",
+                  "D] December to February"
+                ],
+                "correctAnswer": "A",
+                "translation": "Mùa hè là khi nào?"
+              },
+              {
+                "id": "reading-q15",
+                "type": "multiple-choice",
+                "questionText": "What do people do in summer?",
+                "options": [
+                  "A) Go to beach and swim",
+                  "B) Wear warm clothes",
+                  "C) See falling leaves",
+                  "D] Plant flowers"
+                ],
+                "correctAnswer": "A",
+                "translation": "Mọi người làm gì vào mùa hè?"
+              },
+              {
+                "id": "reading-q16",
+                "type": "multiple-choice",
+                "questionText": "When is autumn?",
+                "options": [
+                  "A) September to November",
+                  "B) March to May",
+                  "C) June to August",
+                  "D] December to February"
+                ],
+                "correctAnswer": "A",
+                "translation": "Mùa thu là khi nào?"
+              },
+              {
+                "id": "reading-q17",
+                "type": "multiple-choice",
+                "questionText": "What happens in autumn?",
+                "options": [
+                  "A) Leaves fall from trees",
+                  "B) Flowers bloom",
+                  "C) It snows",
+                  "D] Weather is hot"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì xảy ra vào mùa thu?"
+              },
+              {
+                "id": "reading-q18",
+                "type": "multiple-choice",
+                "questionText": "When is winter?",
+                "options": [
+                  "A) December to February",
+                  "B) March to May",
+                  "C) June to August",
+                  "D] September to November"
+                ],
+                "correctAnswer": "A",
+                "translation": "Mùa đông là khi nào?"
+              },
+              {
+                "id": "reading-q19",
+                "type": "multiple-choice",
+                "questionText": "What is the weather like in winter?",
+                "options": [
+                  "A) Cold",
+                  "B) Warm",
+                  "C) Hot",
+                  "D] Cool"
+                ],
+                "correctAnswer": "A",
+                "translation": "Thời tiết mùa đông như thế nào?"
+              },
+              {
+                "id": "reading-q20",
+                "type": "multiple-choice",
+                "questionText": "What do people wear in winter?",
+                "options": [
+                  "A) Warm clothes",
+                  "B) Light clothes",
+                  "C) Swimsuits",
+                  "D] Uniforms"
+                ],
+                "correctAnswer": "A",
+                "translation": "Mọi người mặc gì vào mùa đông?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "title": "Writing",
+        "description": "40 minutes",
+        "tasks": [
+          {
+            "id": "writing-task1",
+            "title": "Writing Task 1",
+            "instructions": "You should spend about 20 minutes on this task. Write about your family. Describe how many people are in your family and what they do. Write at least 50 words.",
+            "taskType": "Basic",
+            "wordCountMin": 50,
+            "timeLimit": 20,
+            "description": "You will write a short paragraph describing your family members and their occupations.",
+            "assessmentCriteria": [
+              "Task Completion",
+              "Basic Vocabulary",
+              "Simple Sentence Structure",
+              "Spelling and Punctuation"
+            ],
+            "sampleAnswer": "There are four people in my family. My father is a teacher. He works at a school. My mother is a nurse. She works in a hospital. My brother is a student. He studies at university. I am also a student. I go to high school. We live in a small house. I love my family very much.",
+            "wordCount": 58
+          },
+          {
+            "id": "writing-task2",
+            "title": "Writing Task 2",
+            "instructions": "You should spend about 20 minutes on this task. Write about your favorite season. Describe what the weather is like and what you like to do in this season. Write at least 50 words.",
+            "taskType": "Basic",
+            "wordCountMin": 50,
+            "timeLimit": 20,
+            "description": "You will write a short paragraph describing your favorite season and activities.",
+            "assessmentCriteria": [
+              "Task Completion",
+              "Basic Vocabulary",
+              "Simple Sentence Structure",
+              "Spelling and Punctuation"
+            ],
+            "sampleAnswer": "My favorite season is summer. The weather is hot and sunny. I like to go to the beach with my friends. We swim in the sea and play volleyball. Sometimes we have picnics in the park. I eat ice cream and drink cold juice. Summer is fun because there is no school. I love summer very much.",
+            "wordCount": 62
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "title": "Grammar & Vocabulary",
+        "description": "10 questions • Approximately 10 minutes",
+        "questions": [
+          {
+            "id": "grammar-q1",
+            "type": "multiple-choice",
+            "questionText": "I _____ to school every day.",
+            "options": [
+              "A) go",
+              "B) goes",
+              "C) going",
+              "D] went"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Present simple for routines",
+            "translation": "Tôi đi học mỗi ngày."
+          },
+          {
+            "id": "grammar-q2",
+            "type": "multiple-choice",
+            "questionText": "She _____ a book now.",
+            "options": [
+              "A) is reading",
+              "B) reads",
+              "C) read",
+              "D] reading"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Present continuous for actions happening now",
+            "translation": "Cô ấy đang đọc sách."
+          },
+          {
+            "id": "grammar-q3",
+            "type": "multiple-choice",
+            "questionText": "We _____ football yesterday.",
+            "options": [
+              "A) played",
+              "B) play",
+              "C) playing",
+              "D] plays"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Past simple for completed actions",
+            "translation": "Chúng tôi đã chơi bóng đá hôm qua."
+          },
+          {
+            "id": "grammar-q4",
+            "type": "multiple-choice",
+            "questionText": "There _____ three apples on the table.",
+            "options": [
+              "A) are",
+              "B) is",
+              "C) am",
+              "D] be"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Plural noun requires 'are'",
+            "translation": "Có ba quả táo trên bàn."
+          },
+          {
+            "id": "grammar-q5",
+            "type": "multiple-choice",
+            "questionText": "My brother _____ in an office.",
+            "options": [
+              "A) works",
+              "B) work",
+              "C) working",
+              "D] worked"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Third person singular present simple",
+            "translation": "Anh trai tôi làm việc trong văn phòng."
+          },
+          {
+            "id": "grammar-q6",
+            "type": "multiple-choice",
+            "questionText": "They _____ to the park every Sunday.",
+            "options": [
+              "A) go",
+              "B) goes",
+              "C) going",
+              "D] went"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Plural subject requires base verb",
+            "translation": "Họ đi đến công viên mỗi Chủ nhật."
+          },
+          {
+            "id": "grammar-q7",
+            "type": "multiple-choice",
+            "questionText": "I _____ my homework last night.",
+            "options": [
+              "A) did",
+              "B) do",
+              "C) doing",
+              "D] does"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Past simple for completed action",
+            "translation": "Tôi đã làm bài tập tối qua."
+          },
+          {
+            "id": "grammar-q8",
+            "type": "multiple-choice",
+            "questionText": "She _____ breakfast at 7:00 every morning.",
+            "options": [
+              "A) eats",
+              "B) eat",
+              "C) eating",
+              "D] ate"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Third person singular present simple",
+            "translation": "Cô ấy ăn sáng lúc 7:00 mỗi sáng."
+          },
+          {
+            "id": "grammar-q9",
+            "type": "multiple-choice",
+            "questionText": "We _____ TV right now.",
+            "options": [
+              "A) are watching",
+              "B) watch",
+              "C) watched",
+              "D] watches"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Present continuous for current action",
+            "translation": "Chúng tôi đang xem TV."
+          },
+          {
+            "id": "grammar-q10",
+            "type": "multiple-choice",
+            "questionText": "He _____ to school by bus.",
+            "options": [
+              "A) goes",
+              "B) go",
+              "C) going",
+              "D] went"
+            ],
+            "correctAnswer": "A",
+            "explanation": "Third person singular present simple",
+            "translation": "Anh ấy đi học bằng xe buýt."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "version": "1.0",
+      "author": "IELTS Practice System",
+      "notes": "IELTS Level 1.0 basic daily life test covering Listening (3 parts, 30 questions), Reading (2 passages, 20 questions), Writing (2 simple tasks), and Grammar (10 questions). Beginner level with basic vocabulary and simple sentence structures focused on daily routines, family, shopping, and weather.",
+      "theme": "Daily Life",
+      "nextLevelTheme": "Shopping and Food"
+    }
+  }
+}

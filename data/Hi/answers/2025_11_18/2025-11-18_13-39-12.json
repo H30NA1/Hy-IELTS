@@ -1,0 +1,1658 @@
+{
+  "id": "mi47doeu4gt0gprp11c",
+  "timestamp": "2025-11-18T06:39:12.342Z",
+  "userInfo": {
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Mobile/15E148 Safari/604.1",
+    "timestamp": "2025-11-18T06:39:12.614Z",
+    "submittedBy": "user"
+  },
+  "userName": "Hi",
+  "answers": {
+    "listening": {
+      "listening-q1": "A",
+      "listening-q2": "B",
+      "listening-q3": "A",
+      "listening-q4": "D",
+      "listening-q5": "A",
+      "listening-q6": "D",
+      "listening-q7": "D",
+      "listening-q8": "D",
+      "listening-q9": "A",
+      "listening-q10": "D",
+      "listening-q11": "D",
+      "listening-q12": "A",
+      "listening-q13": "D",
+      "listening-q14": "D",
+      "listening-q15": "D",
+      "listening-q16": "A",
+      "listening-q17": "A",
+      "listening-q18": "A",
+      "listening-q19": "D",
+      "listening-q20": "A",
+      "listening-q21": "A",
+      "listening-q22": "D",
+      "listening-q23": "D",
+      "listening-q24": "A",
+      "listening-q25": "D",
+      "listening-q26": "D",
+      "listening-q27": "D",
+      "listening-q28": "A",
+      "listening-q29": "D",
+      "listening-q30": "D",
+      "listening-q31": "A",
+      "listening-q32": "B",
+      "listening-q33": "D",
+      "listening-q34": "A",
+      "listening-q35": "B",
+      "listening-q36": "D",
+      "listening-q37": "A",
+      "listening-q38": "A",
+      "listening-q39": "D",
+      "listening-q40": "D"
+    },
+    "reading": {
+      "reading-q1": "A",
+      "reading-q2": "D",
+      "reading-q3": "D",
+      "reading-q4": "A",
+      "reading-q5": "D",
+      "reading-q6": "D",
+      "reading-q7": "B",
+      "reading-q8": "A",
+      "reading-q9": "A",
+      "reading-q10": "A",
+      "reading-q11": "A",
+      "reading-q12": "D",
+      "reading-q13": "D",
+      "reading-q14": "A",
+      "reading-q15": "D",
+      "reading-q16": "D",
+      "reading-q17": "D",
+      "reading-q18": "D",
+      "reading-q19": "D",
+      "reading-q20": "D",
+      "reading-q21": "A",
+      "reading-q22": "D",
+      "reading-q23": "D",
+      "reading-q24": "A",
+      "reading-q25": "D",
+      "reading-q26": "D",
+      "reading-q27": "A",
+      "reading-q28": "B",
+      "reading-q29": "C",
+      "reading-q30": "B"
+    },
+    "grammar": {
+      "grammar-q1": "B",
+      "grammar-q2": "B",
+      "grammar-q3": "A",
+      "grammar-q4": "B",
+      "grammar-q5": "C",
+      "grammar-q7": "B",
+      "grammar-q8": "A",
+      "grammar-q9": "B",
+      "grammar-q10": "C",
+      "grammar-q11": "D",
+      "grammar-q6": "B",
+      "grammar-q12": "B",
+      "grammar-q13": "D",
+      "grammar-q14": "D",
+      "grammar-q15": "A",
+      "grammar-q16": "B",
+      "grammar-q17": "D",
+      "grammar-q18": "B",
+      "grammar-q19": "A",
+      "grammar-q20": "D"
+    },
+    "writing": {
+      "task1": "The diagram compares how a traditional banking model works with how a modern digital banking ecosystem operates. In the traditional model, customers interact directly with physical branches for services such as deposits, withdrawals, loans and account management. All processes move through a central branch system, which means customers depend heavily on in-person transactions and limited opening hours. In contrast, the digital banking ecosystem removes most physical steps by allowing customers to access services through mobile apps, online platforms and automated systems. Instead of branches, digital banks connect customers to a network of technologies like cloud computing, data analytics and fintech partners. These tools help process payments, support online lending and provide real-time financial services. The digital model is faster, more flexible and available at any time, while the traditional model is slower and relies on manual work. Overall, the digital ecosystem offers broader reach, greater convenience and more efficient operations compared to the traditional branch-based approach",
+      "task2": "Some people believe that cryptocurrency and blockchain technology will change the financial system in a positive way. They argue that these tools make money transfers faster, cheaper and open to anyone with a phone or the internet. In many places where people do not have access to banks, crypto can give them a new way to save or receive money. Supporters also say that blockchain is transparent because every transaction is recorded, so it can reduce corruption and build trust. However, others think that cryptocurrency brings serious risks. Its value can rise and fall very quickly, which makes it unsafe for normal users and can harm the stability of financial markets. Because crypto transactions can be hard to trace, criminals may use it for money laundering, scams or illegal trading. Many people also lose money due to hacked exchanges or weak security. In my view, cryptocurrency and blockchain have real potential, but they should not replace the traditional financial system completely. Instead, they should be used together with strong rules and clear protections. With proper regulation, people can enjoy the benefits of cheaper and faster transactions while reducing the risks linked to crime and market volatility. This balanced approach is more realistic and safer for the future"
+    },
+    "translatedQuestions": [],
+    "translationPenalties": {}
+  },
+  "results": {
+    "listening": 33,
+    "reading": 22,
+    "writing": 18,
+    "speaking": 0,
+    "grammar": 10,
+    "total": 75.45,
+    "listeningTotal": 40,
+    "readingTotal": 30,
+    "writingTotal": 20,
+    "speakingTotal": 20,
+    "grammarTotal": 20,
+    "translationPenalty": 0,
+    "bands": {
+      "listening": 8.5,
+      "reading": 7.5,
+      "writing": 9,
+      "speaking": 3,
+      "grammar": 5,
+      "overall": 6.6
+    }
+  },
+  "timeSpent": "25:24",
+  "testData": {
+    "testId": "IELTS-FINANCE-4.6-RANDOM-2025-11-05",
+    "testDate": "2025-11-05",
+    "testTitle": "IELTS Level 4.6 Advanced Finance & Banking Test - Varied Answers",
+    "totalQuestions": 110,
+    "difficultyLevel": "Advanced",
+    "sections": [
+      {
+        "id": "listening",
+        "title": "Listening",
+        "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+        "parts": [
+          {
+            "partNumber": 1,
+            "title": "Part 1: Discussion about financial technology and digital banking",
+            "instructions": "Listen to the conversation and answer questions 1-10.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.4,
+                "rate": 1.2,
+                "volume": 0.9,
+                "name": "Fintech Analyst",
+                "variation": 0.11,
+                "accent": "British",
+                "emotion": "analytical",
+                "speakingType": "academic"
+              },
+              "male": {
+                "pitch": 0.5,
+                "rate": 1.1,
+                "volume": 0.85,
+                "name": "Banking Executive",
+                "variation": 0.09,
+                "accent": "International",
+                "emotion": "thoughtful",
+                "speakingType": "consultation"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Good morning. This is the International English Language Testing System, IELTS. You will hear a number of different recordings and you will have to answer questions on what you hear. There will be time for you to read the instructions and questions and you will have a chance to check your work. All the recordings will be played once only. The test is in four parts. At the end of the test you will be given ten minutes to transfer your answers to an answer sheet.\n\nNow turn to Part 1. You will hear a conversation between a fintech analyst and a banking executive about digital transformation in finance. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "The traditional banking model has demonstrated significant limitations in meeting evolving customer expectations. Its emphasis on physical branches and standardized products failed to account for digital convenience, personalized services, and real-time transaction processing."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Indeed, the digital banking revolution acknowledges these shortcomings but still operates within a fundamentally regulated framework. What's needed is a more innovative approach that recognizes the role of blockchain technology, artificial intelligence, and seamless customer experiences."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Precisely. The success of digital-only banks demonstrates the importance of mobile-first design combined with data-driven personalization. However, simply replicating these models is insufficient—each market requires context-specific strategies based on its unique regulatory environment and customer behavior."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The concept of 'open banking' developed in European markets provides valuable insights here. Financial services evolve by integrating third-party providers that enhance existing banking capabilities. This interoperability creates both opportunities and challenges for traditional institutions."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Excellent point. This underscores the importance of strategic partnerships rather than isolated innovation. The challenge lies in maintaining security standards while enabling data sharing through APIs and building complementary capabilities in cybersecurity and user experience."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The regulatory transformation adds another layer of complexity. Banks face the dual challenge of complying with traditional regulations while adapting to new digital frameworks. This requires investments in both compliance systems and innovation labs."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Moreover, the cybersecurity imperative necessitates robust protection measures. The traditional approach of 'security as an afterthought' is no longer viable. Financial institutions must embed security considerations from the initial design phase."
+                },
+                {
+                  "speaker": "male",
+                  "text": "This implies rethinking customer relationships as well. Rather than offering one-size-fits-all products, banks should use data analytics to provide personalized financial advice and proactive service recommendations."
+                },
+                {
+                  "speaker": "female",
+                  "text": "The role of human expertise remains crucial but must evolve. Instead of routine transactions, bank staff should focus on complex advisory services, relationship management, and financial education. This requires reskilling programs and cultural transformation."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Ultimately, successful digital transformation must balance technological innovation with customer trust, operational efficiency with regulatory compliance, and short-term profitability with long-term strategic positioning."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q1",
+                "type": "multiple-choice",
+                "questionText": "What has demonstrated limitations according to the speakers?",
+                "options": [
+                  "A) Traditional banking model",
+                  "B) Digital banking",
+                  "C) Investment banking",
+                  "D] Central banking"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì đã thể hiện những hạn chế theo các diễn giả?"
+              },
+              {
+                "id": "listening-q2",
+                "type": "multiple-choice",
+                "questionText": "What failed to account for digital convenience?",
+                "options": [
+                  "A) Mobile apps",
+                  "B) Physical branches",
+                  "C) Online platforms",
+                  "D] ATM networks"
+                ],
+                "correctAnswer": "B",
+                "translation": "Điều gì đã không tính đến sự tiện lợi kỹ thuật số?"
+              },
+              {
+                "id": "listening-q3",
+                "type": "multiple-choice",
+                "questionText": "What does digital banking still operate within?",
+                "options": [
+                  "A) Regulated framework",
+                  "B) Unregulated space",
+                  "C) Experimental zone",
+                  "D] Traditional system"
+                ],
+                "correctAnswer": "C",
+                "translation": "Ngân hàng số vẫn hoạt động trong khuôn khổ nào?"
+              },
+              {
+                "id": "listening-q4",
+                "type": "multiple-choice",
+                "questionText": "What demonstrates the importance of mobile-first design?",
+                "options": [
+                  "A) Traditional banks",
+                  "B) Credit unions",
+                  "C) Investment firms",
+                  "D] Digital-only banks"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì chứng minh tầm quan trọng của thiết kế ưu tiên di động?"
+              },
+              {
+                "id": "listening-q5",
+                "type": "multiple-choice",
+                "questionText": "What concept provides insights about financial evolution?",
+                "options": [
+                  "A) Open banking",
+                  "B) Closed banking",
+                  "C) Private banking",
+                  "D] Retail banking"
+                ],
+                "correctAnswer": "A",
+                "translation": "Khái niệm nào cung cấp hiểu biết về tiến hóa tài chính?"
+              },
+              {
+                "id": "listening-q6",
+                "type": "multiple-choice",
+                "questionText": "What creates both opportunities and challenges?",
+                "options": [
+                  "A) Isolation",
+                  "B) Competition",
+                  "C) Regulation",
+                  "D] Interoperability"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì tạo ra cả cơ hội và thách thức?"
+              },
+              {
+                "id": "listening-q7",
+                "type": "multiple-choice",
+                "questionText": "What dual challenge do banks face?",
+                "options": [
+                  "A) Traditional and digital compliance",
+                  "B) Profit and social responsibility",
+                  "C) Growth and stability",
+                  "D] Innovation and security"
+                ],
+                "correctAnswer": "D",
+                "translation": "Ngân hàng phải đối mặt với thách thức kép nào?"
+              },
+              {
+                "id": "listening-q8",
+                "type": "multiple-choice",
+                "questionText": "What approach is no longer viable?",
+                "options": [
+                  "A) Customer-first approach",
+                  "B) Technology-driven strategy",
+                  "C) Regulation-focused model",
+                  "D] Security as afterthought"
+                ],
+                "correctAnswer": "D",
+                "translation": "Phương pháp nào không còn khả thi?"
+              },
+              {
+                "id": "listening-q9",
+                "type": "multiple-choice",
+                "questionText": "What should bank staff focus on instead of routine transactions?",
+                "options": [
+                  "A) Advisory services",
+                  "B) Sales targets",
+                  "C) Administrative work",
+                  "D] Technical support"
+                ],
+                "correctAnswer": "A",
+                "translation": "Nhân viên ngân hàng nên tập trung vào điều gì thay vì giao dịch thường lệ?"
+              },
+              {
+                "id": "listening-q10",
+                "type": "multiple-choice",
+                "questionText": "What must digital transformation balance?",
+                "options": [
+                  "A) Cost and revenue",
+                  "B) Risk and return",
+                  "C) Growth and market share",
+                  "D] Innovation and customer trust"
+                ],
+                "correctAnswer": "D",
+                "translation": "Chuyển đổi số phải cân bằng điều gì?"
+              }
+            ]
+          },
+          {
+            "partNumber": 2,
+            "title": "Part 2: Lecture on investment strategies and portfolio management",
+            "instructions": "Listen to the lecture and answer questions 11-20.",
+            "voiceProfiles": {
+              "male": {
+                "pitch": 0.4,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Investment Manager",
+                "variation": 0.08,
+                "accent": "educated",
+                "emotion": "authoritative",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 2. You will hear a lecture on investment strategies and portfolio management. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+              "conversation": [
+                {
+                  "speaker": "male",
+                  "text": "The evolution of investment management represents one of the most significant transformations in modern finance, creating new portfolio strategies that challenge conventional financial theory. Modern investment approaches exhibit distinctive characteristics including factor-based investing, ESG integration, and quantitative analysis. These features create sophisticated risk-return dynamics that can lead to enhanced portfolio performance. The science of portfolio management fundamentally differs from traditional stock picking—value is created through systematic diversification rather than individual security selection. This creates novel regulatory challenges, as investment product classification becomes more complex and risk management operates across multiple asset classes. Data analytics and machine learning enable sophisticated risk modeling and personalized investment solutions, raising concerns about algorithmic bias and systemic risk. The regulatory framework for modern investment strategies remains underdeveloped, struggling to balance innovation promotion with investor protection. Traditional asset class boundaries are increasingly blurred in multi-asset portfolios, requiring integrated risk management approaches. The future evolution of investment management will likely involve greater attention to sustainable investing, digital assets, and behavioral finance as investors grapple with the implications of these sophisticated new investment approaches."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q11",
+                "type": "multiple-choice",
+                "questionText": "What represents significant transformation in finance?",
+                "options": [
+                  "A) Traditional banking",
+                  "B) Basic savings",
+                  "C) Simple accounting",
+                  "D] Investment management evolution"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì đại diện cho sự chuyển đổi quan trọng trong tài chính?"
+              },
+              {
+                "id": "listening-q12",
+                "type": "multiple-choice",
+                "questionText": "What distinctive characteristics do modern investments exhibit?",
+                "options": [
+                  "A) Factor-based investing",
+                  "B) Simple stock picking",
+                  "C) Basic diversification",
+                  "D] Traditional analysis"
+                ],
+                "correctAnswer": "A",
+                "translation": "Đầu tư hiện đại thể hiện những đặc điểm khác biệt nào?"
+              },
+              {
+                "id": "listening-q13",
+                "type": "multiple-choice",
+                "questionText": "What dynamics can lead to enhanced performance?",
+                "options": [
+                  "A) Simple growth",
+                  "B) Basic income",
+                  "C) Traditional returns",
+                  "D] Risk-return optimization"
+                ],
+                "correctAnswer": "D",
+                "translation": "Động lực nào có thể dẫn đến hiệu suất được cải thiện?"
+              },
+              {
+                "id": "listening-q14",
+                "type": "multiple-choice",
+                "questionText": "How does portfolio value creation differ?",
+                "options": [
+                  "A) Individual stock picking",
+                  "B) Market timing",
+                  "C) Security analysis",
+                  "D] Systematic diversification"
+                ],
+                "correctAnswer": "D",
+                "translation": "Tạo giá trị danh mục khác biệt như thế nào?"
+              },
+              {
+                "id": "listening-q15",
+                "type": "multiple-choice",
+                "questionText": "What becomes more complex in modern investing?",
+                "options": [
+                  "A) Product classification",
+                  "B) Basic investing",
+                  "C) Simple products",
+                  "D] Traditional categories"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì trở nên phức tạp hơn trong đầu tư hiện đại?"
+              },
+              {
+                "id": "listening-q16",
+                "type": "multiple-choice",
+                "questionText": "What enables sophisticated risk modeling?",
+                "options": [
+                  "A) Machine learning",
+                  "B) Basic statistics",
+                  "C) Simple calculations",
+                  "D] Traditional methods"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì cho phép mô hình hóa rủi ro tinh vi?"
+              },
+              {
+                "id": "listening-q17",
+                "type": "multiple-choice",
+                "questionText": "What remains underdeveloped?",
+                "options": [
+                  "A) Technology infrastructure",
+                  "B) Market depth",
+                  "C) Investor knowledge",
+                  "D] Regulatory framework"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì vẫn còn kém phát triển?"
+              },
+              {
+                "id": "listening-q18",
+                "type": "multiple-choice",
+                "questionText": "What are increasingly blurred?",
+                "options": [
+                  "A) Risk categories",
+                  "B) Return expectations",
+                  "C) Investment goals",
+                  "D] Asset class boundaries"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì ngày càng trở nên mờ nhạt?"
+              },
+              {
+                "id": "listening-q19",
+                "type": "multiple-choice",
+                "questionText": "What requires integrated approaches?",
+                "options": [
+                  "A) Basic planning",
+                  "B) Simple strategies",
+                  "C) Traditional methods",
+                  "D] Risk management"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì yêu cầu cách tiếp cận tích hợp?"
+              },
+              {
+                "id": "listening-q20",
+                "type": "multiple-choice",
+                "questionText": "What will receive greater attention?",
+                "options": [
+                  "A) Sustainable investing",
+                  "B) Traditional assets",
+                  "C) Basic strategies",
+                  "D] Simple products"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì sẽ nhận được sự quan tâm lớn hơn?"
+              }
+            ]
+          },
+          {
+            "partNumber": 3,
+            "title": "Part 3: Discussion about risk management and financial regulation",
+            "instructions": "Listen to the discussion and answer questions 21-30.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.5,
+                "rate": 1.2,
+                "volume": 0.85,
+                "name": "Risk Manager",
+                "variation": 0.12,
+                "accent": "academic",
+                "emotion": "enthusiastic",
+                "speakingType": "discussion"
+              },
+              "male": {
+                "pitch": 0.6,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Regulatory Expert",
+                "variation": 0.1,
+                "accent": "educated",
+                "emotion": "pragmatic",
+                "speakingType": "discussion"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 3. You will hear a discussion between a risk manager and a regulatory expert about financial risk management. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "The landscape of financial risk management presents fascinating complexities. Modern financial systems generate interconnected risks through global markets, derivative instruments, and digital platforms, yet they also create sophisticated hedging opportunities, diversification benefits, and risk transfer mechanisms. The fundamental challenge is maximizing risk-adjusted returns while minimizing systemic vulnerabilities."
+                },
+                {
+                  "speaker": "male",
+                  "text": "This is precisely where advanced analytics offers transformative potential. Stress testing, scenario analysis, and real-time monitoring can optimize risk exposure, reduce unexpected losses, and improve capital allocation. However, the risk management benefits must be balanced against compliance costs to avoid creating excessive regulatory burden."
+                },
+                {
+                  "speaker": "female",
+                  "text": "The capital adequacy mechanism is particularly important here. Regulatory investments in risk management create substantial stability benefits that are often underestimated. Better capital planning could enhance financial resilience while reducing bailout risks."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Cybersecurity risk is becoming as crucial as traditional credit risk. Digital protection measures are now a prerequisite for financial operations. But we must ensure that security protocols don't create operational bottlenecks or customer inconvenience."
+                },
+                {
+                  "speaker": "female",
+                  "text": "The governance dimension is critical. Effective risk management requires integrated oversight across traditionally siloed departments. This demands new organizational capabilities and collaborative frameworks that engage all stakeholders as risk owners rather than passive observers."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The implementation models for regulatory compliance also need rethinking. Principles-based regulation can leverage market discipline and innovation, but it must be structured to protect systemic stability and ensure consistent enforcement rather than creating regulatory arbitrage."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Financial innovation risk is another crucial consideration. Institutions must balance product innovation with risk control while maintaining the competitive edge that drives market leadership. This requires strategic risk appetite frameworks."
+                },
+                {
+                  "speaker": "male",
+                  "text": "The international coordination of financial regulation is equally important. Cross-border supervision, information sharing, and harmonized standards can make global finance more stable while creating level playing fields. The cost of regulatory fragmentation far exceeds the cost of coordinated oversight."
+                },
+                {
+                  "speaker": "female",
+                  "text": "Finally, we must consider the behavioral dimension. Successful risk management can't exist as purely quantitative models divorced from human psychology. Behavioral economics and organizational culture are essential for effective risk governance."
+                },
+                {
+                  "speaker": "male",
+                  "text": "Ultimately, modern risk management is about using data, technology, and governance principles to create financial systems that are not only profitable and innovative but also resilient, transparent, and trustworthy—systems that serve economic growth while protecting financial stability."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q21",
+                "type": "multiple-choice",
+                "questionText": "What complexity does financial risk present?",
+                "options": [
+                  "A) Interconnected risks and opportunities",
+                  "B) Simple risks and returns",
+                  "C) Basic calculations",
+                  "D] Traditional methods"
+                ],
+                "correctAnswer": "A",
+                "translation": "Rủi ro tài chính thể hiện sự phức tạp gì?"
+              },
+              {
+                "id": "listening-q22",
+                "type": "multiple-choice",
+                "questionText": "What do advanced analytics optimize?",
+                "options": [
+                  "A) Profit margins",
+                  "B) Market share",
+                  "C) Customer base",
+                  "D] Risk exposure"
+                ],
+                "correctAnswer": "D",
+                "translation": "Phân tích nâng cao tối ưu hóa điều gì?"
+              },
+              {
+                "id": "listening-q23",
+                "type": "multiple-choice",
+                "questionText": "What mechanism is important for financial resilience?",
+                "options": [
+                  "A) Revenue growth",
+                  "B) Cost reduction",
+                  "C) Market expansion",
+                  "D] Capital adequacy"
+                ],
+                "correctAnswer": "D",
+                "translation": "Cơ chế nào quan trọng cho khả năng phục hồi tài chính?"
+              },
+              {
+                "id": "listening-q24",
+                "type": "multiple-choice",
+                "questionText": "What is becoming as crucial as credit risk?",
+                "options": [
+                  "A) Cybersecurity risk",
+                  "B) Market risk",
+                  "C) Operational risk",
+                  "D] Liquidity risk"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì đang trở nên quan trọng như rủi ro tín dụng?"
+              },
+              {
+                "id": "listening-q25",
+                "type": "multiple-choice",
+                "questionText": "What does risk management require across departments?",
+                "options": [
+                  "A) Separate reporting",
+                  "B] Independent operations",
+                  "C] Competitive structures",
+                  "D] Integrated oversight"
+                ],
+                "correctAnswer": "D",
+                "translation": "Quản lý rủi ro yêu cầu điều gì giữa các phòng ban?"
+              },
+              {
+                "id": "listening-q26",
+                "type": "multiple-choice",
+                "questionText": "What must principles-based regulation protect?",
+                "options": [
+                  "A) Individual profits",
+                  "B) Market dominance",
+                  "C) Regulatory flexibility",
+                  "D] Systemic stability"
+                ],
+                "correctAnswer": "D",
+                "translation": "Quy định dựa trên nguyên tắc phải bảo vệ điều gì?"
+              },
+              {
+                "id": "listening-q27",
+                "type": "multiple-choice",
+                "questionText": "What is crucial for financial innovation?",
+                "options": [
+                  "A) Unlimited growth",
+                  "B] Maximum profits",
+                  "C] Market leadership",
+                  "D] Risk control balance"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì quan trọng cho đổi mới tài chính?"
+              },
+              {
+                "id": "listening-q28",
+                "type": "multiple-choice",
+                "questionText": "What can make global finance more stable?",
+                "options": [
+                  "A) Cross-border supervision",
+                  "B) National policies",
+                  "C] Local regulations",
+                  "D] Individual actions"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì có thể làm cho tài chính toàn cầu ổn định hơn?"
+              },
+              {
+                "id": "listening-q29",
+                "type": "multiple-choice",
+                "questionText": "What is essential for effective risk governance?",
+                "options": [
+                  "A) Technical models",
+                  "B] Mathematical formulas",
+                  "C] Statistical analysis",
+                  "D] Behavioral economics"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì cần thiết cho quản trị rủi ro hiệu quả?"
+              },
+              {
+                "id": "listening-q30",
+                "type": "multiple-choice",
+                "questionText": "What should financial systems serve?",
+                "options": [
+                  "A) Maximum profits",
+                  "B] Shareholder value",
+                  "C] Market dominance",
+                  "D] Economic growth and stability"
+                ],
+                "correctAnswer": "D",
+                "translation": "Hệ thống tài chính nên phục vụ điều gì?"
+              }
+            ]
+          },
+          {
+            "partNumber": 4,
+            "title": "Part 4: Lecture on sustainable finance and ESG investing",
+            "instructions": "Listen to the lecture and answer questions 31-40.",
+            "voiceProfiles": {
+              "female": {
+                "pitch": 1.3,
+                "rate": 1.1,
+                "volume": 0.9,
+                "name": "Sustainable Finance Expert",
+                "variation": 0.07,
+                "accent": "academic",
+                "emotion": "knowledgeable",
+                "speakingType": "lecture"
+              },
+              "narrator": {
+                "pitch": 1,
+                "rate": 0.9,
+                "volume": 1,
+                "name": "IELTS Narrator",
+                "variation": 0.05,
+                "accent": "formal",
+                "emotion": "neutral",
+                "speakingType": "instructional"
+              }
+            },
+            "script": {
+              "narrator": "Now turn to Part 4. You will hear a lecture on sustainable finance and ESG investing. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+              "conversation": [
+                {
+                  "speaker": "female",
+                  "text": "Sustainable finance provides crucial insights into the integration of environmental, social, and governance factors into investment decision-making. The quality of ESG integration—defined as the systematic consideration of sustainability criteria in financial analysis—explains more of the variation in long-term investment outcomes than traditional financial metrics alone. Comprehensive ESG frameworks that assess climate risk, social impact, and governance quality enable resilient portfolios. Conversely, narrow financial analysis that ignores sustainability factors exposes investors to transition risks and reputational damage. The persistence of short-term investment horizons presents a central challenge: why do many investors still prioritize quarterly returns over sustainable value creation? Historical performance analysis emphasizes the role of regulatory changes and stakeholder pressure in driving ESG adoption. The alignment of financial incentives fundamentally influences sustainable investment flows, as asset managers respond to client demands for responsible investing. Building effective ESG integration requires not just data analysis but also cultural commitment to long-term thinking. The challenge of sustainable finance lies in changing not just investment processes but also performance measurement and compensation structures. Understanding these dynamics is essential for designing investment strategies that achieve both financial returns and positive societal impact."
+                }
+              ]
+            },
+            "questions": [
+              {
+                "id": "listening-q31",
+                "type": "multiple-choice",
+                "questionText": "What provides insights into ESG integration?",
+                "options": [
+                  "A) Sustainable finance",
+                  "B) Traditional finance",
+                  "C) Behavioral finance",
+                  "D] Technical analysis"
+                ],
+                "correctAnswer": "A",
+                "translation": "Điều gì cung cấp hiểu biết về tích hợp ESG?"
+              },
+              {
+                "id": "listening-q32",
+                "type": "multiple-choice",
+                "questionText": "What explains long-term outcomes better?",
+                "options": [
+                  "A) Short-term returns",
+                  "B) Market timing",
+                  "C) Technical indicators",
+                  "D] ESG integration quality"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì giải thích kết quả dài hạn tốt hơn?"
+              },
+              {
+                "id": "listening-q33",
+                "type": "multiple-choice",
+                "questionText": "What do comprehensive frameworks enable?",
+                "options": [
+                  "A) Maximum returns",
+                  "B) Quick profits",
+                  "C) Market outperformance",
+                  "D] Resilient portfolios"
+                ],
+                "correctAnswer": "D",
+                "translation": "Khuôn khổ toàn diện cho phép điều gì?"
+              },
+              {
+                "id": "listening-q34",
+                "type": "multiple-choice",
+                "questionText": "What does narrow analysis expose investors to?",
+                "options": [
+                  "A) Transition risks",
+                  "B) Market opportunities",
+                  "C) Growth potential",
+                  "D] Innovation prospects"
+                ],
+                "correctAnswer": "A",
+                "translation": "Phân tích hẹp làm lộ diện nhà đầu tư với điều gì?"
+              },
+              {
+                "id": "listening-q35",
+                "type": "multiple-choice",
+                "questionText": "What presents a central challenge?",
+                "options": [
+                  "A) Long-term planning",
+                  "B) Market volatility",
+                  "C) Regulatory changes",
+                  "D] Short-term horizons"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì đặt ra một thách thức trung tâm?"
+              },
+              {
+                "id": "listening-q36",
+                "type": "multiple-choice",
+                "questionText": "What emphasizes regulatory changes?",
+                "options": [
+                  "A) Historical data",
+                  "B) Current trends",
+                  "C) Future projections",
+                  "D] Performance analysis"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì nhấn mạnh thay đổi quy định?"
+              },
+              {
+                "id": "listening-q37",
+                "type": "multiple-choice",
+                "questionText": "What fundamentally influences investment flows?",
+                "options": [
+                  "A) Market sentiment",
+                  "B) Economic growth",
+                  "C) Interest rates",
+                  "D] Financial incentives"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì ảnh hưởng cơ bản đến dòng đầu tư?"
+              },
+              {
+                "id": "listening-q38",
+                "type": "multiple-choice",
+                "questionText": "What does ESG integration require?",
+                "options": [
+                  "A) Cultural commitment",
+                  "B) Technical skills",
+                  "C) Financial resources",
+                  "D] Market access"
+                ],
+                "correctAnswer": "A",
+                "translation": "Tích hợp ESG yêu cầu điều gì?"
+              },
+              {
+                "id": "listening-q39",
+                "type": "multiple-choice",
+                "questionText": "What does sustainable finance require changing?",
+                "options": [
+                  "A) Only processes",
+                  "B) Only structures",
+                  "C) Investment targets",
+                  "D] Processes and structures"
+                ],
+                "correctAnswer": "D",
+                "translation": "Tài chính bền vững yêu cầu thay đổi điều gì?"
+              },
+              {
+                "id": "listening-q40",
+                "type": "multiple-choice",
+                "questionText": "What is essential for dual-objective strategies?",
+                "options": [
+                  "A) Implementing technology",
+                  "B) Following trends",
+                  "C) Adopting standards",
+                  "D] Understanding dynamics"
+                ],
+                "correctAnswer": "D",
+                "translation": "Điều gì cần thiết cho chiến lược mục tiêu kép?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "reading",
+        "title": "Reading",
+        "description": "30 questions • 50 minutes",
+        "passages": [
+          {
+            "id": "reading-passage1",
+            "title": "Passage 1: The Evolution of Central Banking and Monetary Policy",
+            "content": "The evolution of central banking represents a fundamental transformation in understanding the role of monetary authorities in economic stability. Modern central banking differs from traditional approaches in its emphasis on inflation targeting, financial stability, and unconventional policy tools. These developments create complex policy frameworks that must address economic cycles, financial markets, and global interdependencies. Forward guidance conceptualizes monetary policy as a communication strategy influencing market expectations—connected through credibility and transparency. The independence of central banks determines their ability to make unpopular but necessary decisions, highlighting the importance of institutional design and political insulation. The implementation of monetary policy exhibits sophisticated transmission mechanisms, with policy effects varying across economic sectors, explaining the importance of targeted interventions despite general tools. The digital transformation has created new monetary policy challenges related to digital currencies, payment systems, and financial innovation. Quantitative easing and negative interest rates challenge traditional monetary theory, emphasizing balance sheet management and policy innovation. The integration of macroprudential policy introduces novel considerations regarding financial stability, systemic risk, and the interaction between monetary and regulatory functions. Understanding modern central banking requires analyzing not only interest rate decisions but also communication strategies, financial stability measures, and international coordination through comprehensive policy frameworks.",
+            "questions": [
+              {
+                "id": "reading-q1",
+                "type": "multiple-choice",
+                "questionText": "What represents fundamental transformation?",
+                "options": [
+                  "A) Central banking evolution",
+                  "B) Traditional banking",
+                  "C) Commercial banking",
+                  "D] Investment banking"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q2",
+                "type": "multiple-choice",
+                "questionText": "What characteristics create complex frameworks?",
+                "options": [
+                  "A) Simple rules",
+                  "B) Basic tools",
+                  "C) Traditional approaches",
+                  "D] Multiple policy objectives"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q3",
+                "type": "multiple-choice",
+                "questionText": "What conceptualizes policy as communication?",
+                "options": [
+                  "A) Traditional policy",
+                  "B) Basic communication",
+                  "C) Simple announcements",
+                  "D] Forward guidance"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q4",
+                "type": "multiple-choice",
+                "questionText": "What determines decision-making ability?",
+                "options": [
+                  "A) Central bank independence",
+                  "B) Government control",
+                  "C) Market pressure",
+                  "D] Political influence"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q5",
+                "type": "multiple-choice",
+                "questionText": "What exhibits sophisticated transmission?",
+                "options": [
+                  "A) Basic policy",
+                  "B] Simple tools",
+                  "C] Traditional methods",
+                  "D] Monetary policy implementation"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q6",
+                "type": "multiple-choice",
+                "questionText": "What has created new challenges?",
+                "options": [
+                  "A) Traditional systems",
+                  "B] Basic technology",
+                  "C] Simple innovations",
+                  "D] Digital transformation"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q7",
+                "type": "multiple-choice",
+                "questionText": "What challenges traditional theory?",
+                "options": [
+                  "A) Standard policy",
+                  "B] Basic interest rates",
+                  "C] Traditional tools",
+                  "D] Quantitative easing"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q8",
+                "type": "multiple-choice",
+                "questionText": "What introduces novel stability considerations?",
+                "options": [
+                  "A) Basic regulation",
+                  "B] Simple rules",
+                  "C] Traditional approaches",
+                  "D] Macroprudential policy"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q9",
+                "type": "multiple-choice",
+                "questionText": "What requires analyzing multiple dimensions?",
+                "options": [
+                  "A) Understanding modern central banking",
+                  "B] Basic banking",
+                  "C] Traditional finance",
+                  "D] Simple economics"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q10",
+                "type": "multiple-choice",
+                "questionText": "What coordinates through comprehensive frameworks?",
+                "options": [
+                  "A) Basic agreements",
+                  "B] Simple coordination",
+                  "C] Traditional systems",
+                  "D] International policy"
+                ],
+                "correctAnswer": "D"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage2",
+            "title": "Passage 2: Behavioral Finance and Market Psychology",
+            "content": "Behavioral finance integrates insights from psychology and neuroscience to enhance understanding of financial decision-making. Traditional finance often assumed rational, utility-maximizing investors with efficient markets, but behavioral finance reveals systematic cognitive biases and emotional influences that create market anomalies. Investor psychology itself creates market dynamics that deviate from fundamental values, creating behavioral patterns where herding, overconfidence, and loss aversion drive price movements. Present bias leads to short-term trading and speculation, while disposition effect causes investors to hold losing positions too long. Social influences including media sentiment and peer behavior impact market trends and bubble formations. Mental accounting—the psychological categorization of money—shapes investment behavior and can persist despite financial optimization principles, affecting portfolio construction, risk tolerance, and trading frequency. Nudge-based interventions have demonstrated success in improving retirement savings, investment diversification, and financial literacy by redesigning choice architectures. However, behavioral approaches face limitations in addressing market efficiency and institutional constraints. The integration of behavioral insights with traditional finance offers a more comprehensive understanding of market dynamics and more effective investment strategies. This requires context-specific applications and careful attention to ethical considerations regarding investor protection and market manipulation. Behavioral finance ultimately aims to create investment approaches that work with human psychology as it is, rather than as traditional models assume it to be.",
+            "questions": [
+              {
+                "id": "reading-q11",
+                "type": "multiple-choice",
+                "questionText": "What integrates insights from psychology?",
+                "options": [
+                  "A) Behavioral finance",
+                  "B) Traditional finance",
+                  "C) Technical analysis",
+                  "D] Fundamental analysis"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q12",
+                "type": "multiple-choice",
+                "questionText": "What reveals systematic cognitive biases?",
+                "options": [
+                  "A) Efficient market theory",
+                  "B) Rational expectations",
+                  "C) Modern portfolio theory",
+                  "D] Behavioral finance"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q13",
+                "type": "multiple-choice",
+                "questionText": "What creates behavioral market patterns?",
+                "options": [
+                  "A) Fundamental values",
+                  "B) Economic data",
+                  "C) Corporate earnings",
+                  "D] Investor psychology"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q14",
+                "type": "multiple-choice",
+                "questionText": "What leads to short-term trading?",
+                "options": [
+                  "A) Present bias",
+                  "B) Long-term focus",
+                  "C) Value investing",
+                  "D] Patient capital"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q15",
+                "type": "multiple-choice",
+                "questionText": "What impacts market trends?",
+                "options": [
+                  "A) Individual analysis",
+                  "B) Rational decisions",
+                  "C) Objective data",
+                  "D] Social influences"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q16",
+                "type": "multiple-choice",
+                "questionText": "What shapes investment through categorization?",
+                "options": [
+                  "A) Financial planning",
+                  "B) Budget analysis",
+                  "C) Cost accounting",
+                  "D] Mental accounting"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q17",
+                "type": "multiple-choice",
+                "questionText": "What have demonstrated success in improvement?",
+                "options": [
+                  "A) Traditional advice",
+                  "B) Regulatory changes",
+                  "C) Market reforms",
+                  "D] Nudge interventions"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q18",
+                "type": "multiple-choice",
+                "questionText": "What do behavioral approaches face limitations in addressing?",
+                "options": [
+                  "A) Market efficiency",
+                  "B) Individual behavior",
+                  "C) Cognitive biases",
+                  "D] Emotional factors"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q19",
+                "type": "multiple-choice",
+                "questionText": "What offers more comprehensive understanding?",
+                "options": [
+                  "A) Pure behavioral models",
+                  "B) Technical analysis",
+                  "C) Fundamental analysis",
+                  "D] Integration with traditional finance"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q20",
+                "type": "multiple-choice",
+                "questionText": "What does behavioral finance aim to work with?",
+                "options": [
+                  "A) Rational investors",
+                  "B) Efficient markets",
+                  "C) Perfect information",
+                  "D] Human psychology as it is"
+                ],
+                "correctAnswer": "D"
+              }
+            ]
+          },
+          {
+            "id": "reading-passage3",
+            "title": "Passage 3: Corporate Finance and Strategic Financial Management",
+            "content": "Corporate finance examines the financial decisions of businesses and the creation of shareholder value, focusing on capital allocation, funding strategies, and financial risk management. Corporate financial decisions typically involve complex trade-offs between risk and return, with capital structure, dividend policy, and investment choices creating interconnected financial outcomes. This strategic integration explains the holistic nature of corporate financial management. Financial planning processes—where multiple stakeholders including management, investors, and creditors interact—can create both value creation opportunities and agency conflicts. Economic value principles and market conditions shape how companies allocate resources and structure financing. The timing and sequencing of financial decisions crucially influence corporate value, with major investments often coordinated with financing arrangements when market windows are favorable. Risk management strategies that identify and mitigate financial exposures can enhance corporate resilience, though they may involve hedging costs and complexity. The credibility of financial reporting affects corporate valuation, as investors may discount company shares if they question accounting quality. External factors including interest rates, economic cycles, and industry dynamics influence corporate financial decisions but cannot substitute for sound financial governance. Successful corporate financial strategies typically combine financial expertise with strategic vision, creating sustainable value while managing risks through prudent capital management, optimal financing mix, and strategic investments. Understanding corporate finance is essential for designing financial policies that achieve both operational excellence and shareholder value creation.",
+            "questions": [
+              {
+                "id": "reading-q21",
+                "type": "multiple-choice",
+                "questionText": "What examines corporate financial decisions?",
+                "options": [
+                  "A) Corporate finance",
+                  "B) Personal finance",
+                  "C) Public finance",
+                  "D] International finance"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q22",
+                "type": "multiple-choice",
+                "questionText": "What problem explains holistic management?",
+                "options": [
+                  "A) Separate functions",
+                  "B) Departmental focus",
+                  "C) Specialized approaches",
+                  "D] Strategic integration"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q23",
+                "type": "multiple-choice",
+                "questionText": "What can create value and conflicts?",
+                "options": [
+                  "A) Simple decisions",
+                  "B] Basic operations",
+                  "C] Routine activities",
+                  "D] Planning processes"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q24",
+                "type": "multiple-choice",
+                "questionText": "What shape resource allocation?",
+                "options": [
+                  "A) Economic principles",
+                  "B] Simple rules",
+                  "C] Basic guidelines",
+                  "D] Traditional methods"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q25",
+                "type": "multiple-choice",
+                "questionText": "When are major investments coordinated?",
+                "options": [
+                  "A) During basic planning",
+                  "B] During simple cycles",
+                  "C] During traditional periods",
+                  "D] During favorable windows"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q26",
+                "type": "multiple-choice",
+                "questionText": "What can enhance corporate resilience?",
+                "options": [
+                  "A) Basic planning",
+                  "B] Simple approaches",
+                  "C] Traditional methods",
+                  "D] Risk management strategies"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q27",
+                "type": "multiple-choice",
+                "questionText": "What affects corporate valuation?",
+                "options": [
+                  "A) Basic accounting",
+                  "B] Simple reporting",
+                  "C] Traditional books",
+                  "D] Financial reporting credibility"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q28",
+                "type": "multiple-choice",
+                "questionText": "What cannot substitute for sound governance?",
+                "options": [
+                  "A) External factors",
+                  "B] Basic conditions",
+                  "C] Simple elements",
+                  "D] Traditional influences"
+                ],
+                "correctAnswer": "A"
+              },
+              {
+                "id": "reading-q29",
+                "type": "multiple-choice",
+                "questionText": "What do successful strategies combine?",
+                "options": [
+                  "A) Basic skills and simple goals",
+                  "B] Traditional knowledge and routine planning",
+                  "C] Simple finance and general management",
+                  "D] Financial expertise and strategic vision"
+                ],
+                "correctAnswer": "D"
+              },
+              {
+                "id": "reading-q30",
+                "type": "multiple-choice",
+                "questionText": "What is essential for designing financial policies?",
+                "options": [
+                  "A) Basic accounting",
+                  "B] Simple math",
+                  "C] Traditional bookkeeping",
+                  "D] Understanding corporate finance"
+                ],
+                "correctAnswer": "D"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "writing",
+        "title": "Writing",
+        "description": "60 minutes",
+        "tasks": [
+          {
+            "id": "writing-task1",
+            "title": "Writing Task 1",
+            "instructions": "You should spend about 20 minutes on this task. The diagram below shows the traditional banking model compared to the digital banking ecosystem. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+            "taskType": "Academic",
+            "wordCountMin": 150,
+            "timeLimit": 20,
+            "description": "You will be presented with a diagram showing banking models and asked to describe the information in your own words.",
+            "sampleData": {
+              "type": "diagram",
+              "title": "Traditional vs Digital Banking Models",
+              "data": {
+                "Traditional Banking": [
+                  "Physical branches → Paper processes → Limited hours → Standardized products"
+                ],
+                "Digital Banking": [
+                  "Mobile apps → Automated processes → 24/7 access → Personalized services → API integrations"
+                ]
+              },
+              "description": "Comparison of traditional branch-based banking with modern digital banking ecosystem"
+            },
+            "assessmentCriteria": [
+              "Task Achievement",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          },
+          {
+            "id": "writing-task2",
+            "title": "Writing Task 2",
+            "instructions": "You should spend about 40 minutes on this task. Some argue that cryptocurrency and blockchain technology will disrupt traditional financial systems and increase financial inclusion, while others believe they pose significant risks to financial stability and enable illicit activities. Discuss both these views and give your own opinion. Write at least 250 words.",
+            "taskType": "Essay",
+            "wordCountMin": 250,
+            "timeLimit": 40,
+            "description": "You will be presented with contrasting views on cryptocurrency impacts and asked to discuss them.",
+            "essayType": "Discussion",
+            "topics": [
+              "Cryptocurrency disruption",
+              "Blockchain technology",
+              "Financial inclusion"
+            ],
+            "keyPoints": [
+              "Arguments about financial disruption and inclusion",
+              "Arguments about stability risks and illicit activities",
+              "Synthesis and personal position"
+            ],
+            "assessmentCriteria": [
+              "Task Response",
+              "Coherence and Cohesion",
+              "Lexical Resource",
+              "Grammatical Range and Accuracy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "grammar",
+        "title": "Grammar & Language Use",
+        "description": "20 questions • Approximately 15 minutes",
+        "questions": [
+          {
+            "id": "grammar-q1",
+            "type": "multiple-choice",
+            "questionText": "_____ comprehensive the financial regulations, their effectiveness ultimately depends on enforcement capacity and market compliance.",
+            "options": [
+              "A) However",
+              "B) Although",
+              "C) Despite",
+              "D] Because"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Concession with adjective",
+            "translation": "Dù các quy định tài chính có toàn diện đến đâu, hiệu quả của chúng cuối cùng phụ thuộc vào năng lực thực thi và tuân thủ thị trường."
+          },
+          {
+            "id": "grammar-q2",
+            "type": "multiple-choice",
+            "questionText": "The investment strategy, _____ on sophisticated risk modeling, demonstrated remarkable resilience during market volatility.",
+            "options": [
+              "A) predicating",
+              "B) predicated",
+              "C) having predicated",
+              "D] being predicated"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Chiến lược đầu tư, dựa trên mô hình hóa rủi ro tinh vi, đã thể hiện khả năng phục hồi đáng kể trong thời kỳ biến động thị trường."
+          },
+          {
+            "id": "grammar-q3",
+            "type": "multiple-choice",
+            "questionText": "So profound _____ that traditional banking models struggle to adapt.",
+            "options": [
+              "A) has the fintech disruption been",
+              "B) the fintech disruption has been",
+              "C) was the fintech disruption",
+              "D] the fintech disruption was"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Inversion after 'so + adjective'",
+            "translation": "Sự gián đoạn fintech sâu sắc đến mức các mô hình ngân hàng truyền thống phải vật lộn để thích nghi."
+          },
+          {
+            "id": "grammar-q4",
+            "type": "multiple-choice",
+            "questionText": "The regulatory committee recommended that cybersecurity measures _____ integrated into all financial operations.",
+            "options": [
+              "A) is placed",
+              "B] be placed",
+              "C) was placed",
+              "D] has been placed"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Subjunctive after verbs of recommendation",
+            "translation": "Ủy ban quản lý khuyến nghị rằng các biện pháp an ninh mạng phải được tích hợp vào tất cả hoạt động tài chính."
+          },
+          {
+            "id": "grammar-q5",
+            "type": "multiple-choice",
+            "questionText": "_____ the complex interdependencies of global markets, local economic policies can have international repercussions.",
+            "options": [
+              "A) Giving",
+              "B) To give",
+              "C) Given",
+              "D] Having given"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Preposition meaning 'considering'",
+            "translation": "Xét đến sự phụ thuộc lẫn nhau phức tạp của thị trường toàn cầu, các chính sách kinh tế địa phương có thể có tác động quốc tế."
+          },
+          {
+            "id": "grammar-q6",
+            "type": "multiple-choice",
+            "questionText": "The financial ecosystem, _____ numerous institutions and technologies, has become increasingly interconnected.",
+            "options": [
+              "A] comprised",
+              "B] comprising",
+              "C] having comprised",
+              "D] being comprised"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Present participle in reduced relative clause",
+            "translation": "Hệ sinh thái tài chính, bao gồm nhiều tổ chức và công nghệ, đã trở nên ngày càng kết nối với nhau."
+          },
+          {
+            "id": "grammar-q7",
+            "type": "multiple-choice",
+            "questionText": "So rapidly _____ that regulatory frameworks struggle to keep pace.",
+            "options": [
+              "A] is financial innovation evolving",
+              "B] financial innovation is evolving",
+              "C] has financial innovation evolved",
+              "D] financial innovation has evolved"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Inversion after 'so + adverb'",
+            "translation": "Đổi mới tài chính phát triển nhanh đến mức các khuôn khổ quy định phải vật lộn để theo kịp."
+          },
+          {
+            "id": "grammar-q8",
+            "type": "multiple-choice",
+            "questionText": "The central bank insisted that inflation targets _____ consistently maintained.",
+            "options": [
+              "A] are",
+              "B] be",
+              "C] were",
+              "D] have been"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Subjunctive after verbs of demand",
+            "translation": "Ngân hàng trung ương nhấn mạnh rằng mục tiêu lạm phát phải được duy trì nhất quán."
+          },
+          {
+            "id": "grammar-q9",
+            "type": "multiple-choice",
+            "questionText": "_____ the prevailing market uncertainties, sustainable investments continue to demonstrate resilience.",
+            "options": [
+              "A] Besides",
+              "B] Moreover",
+              "C] Notwithstanding",
+              "D] Therefore"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Formal preposition meaning 'despite'",
+            "translation": "Bất chấp những bất ổn thị trường hiện hành, đầu tư bền vững tiếp tục thể hiện khả năng phục hồi."
+          },
+          {
+            "id": "grammar-q10",
+            "type": "multiple-choice",
+            "questionText": "The financial system, _____ over centuries of development, faces unprecedented digital challenges.",
+            "options": [
+              "A] forging",
+              "B] having forged",
+              "C] being forged",
+              "D] forged"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Hệ thống tài chính, được xây dựng qua nhiều thế kỷ phát triển, đối mặt với những thách thức kỹ thuật số chưa từng có."
+          },
+          {
+            "id": "grammar-q11",
+            "type": "multiple-choice",
+            "questionText": "So significant _____ that it has transformed global capital flows.",
+            "options": [
+              "A] has the rise of emerging markets been",
+              "B] the rise of emerging markets has been",
+              "C] was the rise of emerging markets",
+              "D] the rise of emerging markets was"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Inversion after 'so + adjective'",
+            "translation": "Sự trỗi dậy của các thị trường mới nổi quan trọng đến mức nó đã biến đổi dòng vốn toàn cầu."
+          },
+          {
+            "id": "grammar-q12",
+            "type": "multiple-choice",
+            "questionText": "The international agreement requires that transparency standards _____ uniformly applied.",
+            "options": [
+              "A] is ensured",
+              "B] be ensured",
+              "C] was ensured",
+              "D] has been ensured"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Subjunctive after verbs of requirement",
+            "translation": "Thỏa thuận quốc tế yêu cầu rằng các tiêu chuẩn minh bạch phải được áp dụng thống nhất."
+          },
+          {
+            "id": "grammar-q13",
+            "type": "multiple-choice",
+            "questionText": "_____ the sophisticated risk models, predicting market behavior remains challenging.",
+            "options": [
+              "A] Although",
+              "B] Because of",
+              "C] However",
+              "D] Despite"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Preposition for contrast",
+            "translation": "Bất chấp các mô hình rủi ro tinh vi, dự đoán hành vi thị trường vẫn đầy thách thức."
+          },
+          {
+            "id": "grammar-q14",
+            "type": "multiple-choice",
+            "questionText": "The regulatory framework, _____ to address systemic risks, requires continuous updating.",
+            "options": [
+              "A] designing",
+              "B] having designed",
+              "C] being designed",
+              "D] designed"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Khuôn khổ quy định, được thiết kế để giải quyết rủi ro hệ thống, yêu cầu cập nhật liên tục."
+          },
+          {
+            "id": "grammar-q15",
+            "type": "multiple-choice",
+            "questionText": "So complex _____ that traditional financial analysis has proven inadequate.",
+            "options": [
+              "A] have modern markets become",
+              "B] modern markets have become",
+              "C] became modern markets",
+              "D] modern markets became"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Inversion after 'so + adjective'",
+            "translation": "Các thị trường hiện đại trở nên phức tạp đến mức phân tích tài chính truyền thống đã chứng minh là không đầy đủ."
+          },
+          {
+            "id": "grammar-q16",
+            "type": "multiple-choice",
+            "questionText": "The financial reform requires that governance standards _____ consistently enforced.",
+            "options": [
+              "A] are",
+              "B] be",
+              "C] were",
+              "D] have been"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Subjunctive after verbs of requirement",
+            "translation": "Cải cách tài chính yêu cầu rằng các tiêu chuẩn quản trị phải được thực thi nhất quán."
+          },
+          {
+            "id": "grammar-q17",
+            "type": "multiple-choice",
+            "questionText": "_____ the detailed market analysis, investment decisions involve uncertainty.",
+            "options": [
+              "A] Besides",
+              "B] Moreover",
+              "C] Therefore",
+              "D] Notwithstanding"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Formal preposition meaning 'despite'",
+            "translation": "Bất chấp phân tích thị trường chi tiết, quyết định đầu tư vẫn liên quan đến sự không chắc chắn."
+          },
+          {
+            "id": "grammar-q18",
+            "type": "multiple-choice",
+            "questionText": "The banking model, _____ on customer-centric principles, has achieved remarkable adoption.",
+            "options": [
+              "A] predicating",
+              "B] having predicated",
+              "C] being predicated",
+              "D] predicated"
+            ],
+            "correctAnswer": "D",
+            "explanation": "Past participle in reduced relative clause",
+            "translation": "Mô hình ngân hàng, dựa trên các nguyên tắc lấy khách hàng làm trung tâm, đã đạt được mức độ chấp nhận đáng kể."
+          },
+          {
+            "id": "grammar-q19",
+            "type": "multiple-choice",
+            "questionText": "So rapidly _____ that traditional institutions have struggled to adapt.",
+            "options": [
+              "A] is the payment landscape changing",
+              "B] the payment landscape is changing",
+              "C] has the payment landscape changed",
+              "D] the payment landscape has changed"
+            ],
+            "correctAnswer": "C",
+            "explanation": "Inversion after 'so + adverb'",
+            "translation": "Bối cảnh thanh toán thay đổi nhanh đến mức các tổ chức truyền thống phải vật lộn để thích nghi."
+          },
+          {
+            "id": "grammar-q20",
+            "type": "multiple-choice",
+            "questionText": "The financial policy mandates that stability measures _____ prioritized during crises.",
+            "options": [
+              "A] are",
+              "B] be",
+              "C] were",
+              "D] have been"
+            ],
+            "correctAnswer": "B",
+            "explanation": "Subjunctive after verbs of mandate",
+            "translation": "Chính sách tài chính yêu cầu rằng các biện pháp ổn định phải được ưu tiên trong khủng hoảng."
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "version": "4.6",
+      "author": "IELTS Practice System",
+      "notes": "IELTS Level 4.6 advanced finance test with properly varied correct answers. Correct answers are distributed across A, B, C, D to prevent guessing patterns while maintaining consistent scoring."
+    }
+  }
+}

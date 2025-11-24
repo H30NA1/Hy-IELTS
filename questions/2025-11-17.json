@@ -1,0 +1,767 @@
+{
+  "testId": "IELTS-SPORTS-4.6-ADVANCED-2025-11-05",
+  "testDate": "2025-11-05",
+  "testTitle": "IELTS Level 4.6 Advanced Sports Science & Management Test",
+  "totalQuestions": 110,
+  "difficultyLevel": "Advanced",
+  "sections": [
+    {
+      "id": "listening",
+      "title": "Listening",
+      "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "Part 1: Discussion about sports medicine and injury prevention",
+          "instructions": "Listen to the conversation and answer questions 1-10.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.4, "rate": 1.2, "volume": 0.9, "name": "Sports Physician",
+              "variation": 0.11, "accent": "British", "emotion": "analytical", "speakingType": "academic"
+            },
+            "male": {
+              "pitch": 0.5, "rate": 1.1, "volume": 0.85, "name": "Rehabilitation Specialist",
+              "variation": 0.09, "accent": "International", "emotion": "thoughtful", "speakingType": "consultation"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 1. You will hear a conversation between a sports physician and a rehabilitation specialist. Look at questions 1 to 10. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+            "conversation": [
+              { "speaker": "female", "text": "Contemporary approaches to sports injury management have moved significantly beyond traditional rehabilitation methods. The conventional focus on isolated treatment and passive recovery has demonstrated clear limitations in facilitating optimal return to sport outcomes." },
+              { "speaker": "male", "text": "Absolutely. Modern sports medicine emphasizes active rehabilitation protocols that integrate neuromuscular retraining, proprioceptive development, and sport-specific progressions. This paradigm shift recognizes that healing tissue alone is insufficient for performance restoration." },
+              { "speaker": "female", "text": "The biopsychosocial model has been particularly transformative. We now understand that psychological factors, including fear of re-injury and confidence levels, significantly influence rehabilitation outcomes alongside physical recovery." },
+              { "speaker": "male", "text": "Prevention strategies have evolved equally dramatically. Prehabilitation programs that address identified risk factors before injury occurs have demonstrated remarkable effectiveness in reducing injury incidence across multiple sports." },
+              { "speaker": "female", "text": "Load management represents another critical advancement. Sophisticated monitoring of training volume and intensity, combined with individual athlete response tracking, enables more precise injury risk mitigation." },
+              { "speaker": "male", "text": "The integration of technology has accelerated these developments significantly. Wearable sensors and motion capture systems provide objective data that enhances both prevention and rehabilitation decision-making." },
+              { "speaker": "female", "text": "Return-to-play criteria have become increasingly evidence-based. Multidisciplinary teams now utilize standardized testing batteries and clinical decision rules rather than relying solely on time-based protocols." },
+              { "speaker": "male", "text": "Long-term athlete health has gained appropriate emphasis. We're shifting from short-term performance focus to career-spanning health preservation, recognizing that today's management decisions impact decades of future well-being." },
+              { "speaker": "female", "text": "The economic implications are substantial too. Effective injury prevention and management significantly reduce healthcare costs and lost performance time, delivering clear value to sports organizations." },
+              { "speaker": "male", "text": "Ultimately, the field continues evolving toward increasingly personalized, proactive, and holistic approaches that balance performance optimization with sustainable athlete health." }
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q1",
+              "type": "multiple-choice",
+              "questionText": "What has moved beyond traditional rehabilitation methods?",
+              "options": ["A) Contemporary injury management", "B) Basic first aid", "C) Traditional massage", "D] Simple exercises"],
+              "correctAnswer": "A",
+              "translation": "Điều gì đã vượt qua các phương pháp phục hồi chức năng truyền thống?"
+            },
+            {
+              "id": "listening-q2",
+              "type": "multiple-choice",
+              "questionText": "What has demonstrated limitations in return to sport?",
+              "options": ["A) Comprehensive rehabilitation", "B) Isolated treatment approach", "C) Advanced technology", "D] Team-based care"],
+              "correctAnswer": "B",
+              "translation": "Điều gì đã thể hiện hạn chế trong việc trở lại thể thao?"
+            },
+            {
+              "id": "listening-q3",
+              "type": "multiple-choice",
+              "questionText": "What does modern sports medicine emphasize?",
+              "options": ["A) Active rehabilitation protocols", "B) Passive recovery methods", "C) Rest periods only", "D] Medication focus"],
+              "correctAnswer": "A",
+              "translation": "Y học thể thao hiện đại nhấn mạnh điều gì?"
+            },
+            {
+              "id": "listening-q4",
+              "type": "multiple-choice",
+              "questionText": "What model has been transformative?",
+              "options": ["A) Traditional medical model", "B) Biopsychosocial model", "C) Simple biological model", "D] Isolated treatment model"],
+              "correctAnswer": "B",
+              "translation": "Mô hình nào đã mang tính chuyển đổi?"
+            },
+            {
+              "id": "listening-q5",
+              "type": "multiple-choice",
+              "questionText": "What significantly influences rehabilitation outcomes?",
+              "options": ["A) Only physical healing", "B) Medication types", "C) Psychological factors", "D] Equipment quality"],
+              "correctAnswer": "C",
+              "translation": "Điều gì ảnh hưởng đáng kể đến kết quả phục hồi chức năng?"
+            },
+            {
+              "id": "listening-q6",
+              "type": "multiple-choice",
+              "questionText": "What programs address risk factors before injury?",
+              "options": ["A) Basic training", "B) Recovery protocols", "C) Prehabilitation programs", "D] Surgical interventions"],
+              "correctAnswer": "C",
+              "translation": "Chương trình nào giải quyết các yếu tố rủi ro trước khi chấn thương?"
+            },
+            {
+              "id": "listening-q7",
+              "type": "multiple-choice",
+              "questionText": "What represents a critical advancement in injury risk?",
+              "options": ["A) Random training", "B) Intensity only", "C) Load management", "D] Volume focus"],
+              "correctAnswer": "C",
+              "translation": "Điều gì đại diện cho tiến bộ quan trọng trong rủi ro chấn thương?"
+            },
+            {
+              "id": "listening-q8",
+              "type": "multiple-choice",
+              "questionText": "What provides objective data for decision-making?",
+              "options": ["A) Coach opinions", "B) Athlete feelings", "C) Basic observations", "D] Wearable sensors"],
+              "correctAnswer": "D",
+              "translation": "Điều gì cung cấp dữ liệu khách quan cho việc ra quyết định?"
+            },
+            {
+              "id": "listening-q9",
+              "type": "multiple-choice",
+              "questionText": "What do multidisciplinary teams utilize?",
+              "options": ["A) Guesswork", "B) Time only", "C) Individual opinions", "D] Standardized testing"],
+              "correctAnswer": "D",
+              "translation": "Các nhóm đa ngành sử dụng điều gì?"
+            },
+            {
+              "id": "listening-q10",
+              "type": "multiple-choice",
+              "questionText": "What has gained appropriate emphasis?",
+              "options": ["A) Short-term wins", "B) Immediate performance", "C) Competition results", "D] Long-term athlete health"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đã nhận được sự nhấn mạnh thích hợp?"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "title": "Part 2: Lecture on sports marketing and fan engagement",
+          "instructions": "Listen to the lecture and answer questions 11-20.",
+          "voiceProfiles": {
+            "male": {
+              "pitch": 0.4, "rate": 1.1, "volume": 0.9, "name": "Sports Marketer",
+              "variation": 0.08, "accent": "educated", "emotion": "authoritative", "speakingType": "lecture"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 2. You will hear a lecture on sports marketing and fan engagement. Look at questions 11 to 20. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+            "conversation": [
+              { "speaker": "male", "text": "The landscape of sports marketing has undergone revolutionary changes in the digital age, fundamentally altering how sports organizations connect with fans and generate revenue. Traditional broadcast models are being supplemented, and in some cases supplanted, by digital streaming platforms and social media engagement. The modern sports fan expects immersive, interactive experiences that extend far beyond passive viewing. Personalization has become paramount, with data analytics enabling tailored content delivery and customized fan experiences. Sponsorship models have evolved from simple logo placement to integrated partnership ecosystems that create mutual value for brands and sports properties. The emergence of esports and virtual sports has created entirely new marketing paradigms and audience segments. Stadium experiences are being reimagined as technology-enabled entertainment hubs rather than mere venues for watching live sports. Social responsibility and community engagement have become integral to sports marketing strategies, with fans increasingly favoring organizations that demonstrate authentic commitment to social causes. The globalization of sports continues to create new market opportunities, while also intensifying competition for fan attention. Data privacy and ethical marketing practices have emerged as critical considerations in an era of increased digital surveillance and personalized targeting. Successful sports marketing now requires sophisticated integration of technology, data analytics, creative content, and authentic community building." }
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q11",
+              "type": "multiple-choice",
+              "questionText": "What has undergone revolutionary changes?",
+              "options": ["A) Sports marketing landscape", "B) Basic sports rules", "C) Traditional training", "D] Simple equipment"],
+              "correctAnswer": "A",
+              "translation": "Điều gì đã trải qua những thay đổi mang tính cách mạng?"
+            },
+            {
+              "id": "listening-q12",
+              "type": "multiple-choice",
+              "questionText": "What are traditional models being supplemented by?",
+              "options": ["A) Radio broadcasts", "B) Digital streaming platforms", "C) Print media", "D] Word of mouth"],
+              "correctAnswer": "B",
+              "translation": "Các mô hình truyền thống đang được bổ sung bởi điều gì?"
+            },
+            {
+              "id": "listening-q13",
+              "type": "multiple-choice",
+              "questionText": "What do modern sports fans expect?",
+              "options": ["A) Basic viewing", "B) Simple updates", "C) Immersive experiences", "D] Traditional coverage"],
+              "correctAnswer": "C",
+              "translation": "Người hâm mộ thể thao hiện đại mong đợi điều gì?"
+            },
+            {
+              "id": "listening-q14",
+              "type": "multiple-choice",
+              "questionText": "What has become paramount in fan engagement?",
+              "options": ["A) Standardization", "B) Generalization", "C) Traditional methods", "D] Personalization"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đã trở nên tối quan trọng trong thu hút người hâm mộ?"
+            },
+            {
+              "id": "listening-q15",
+              "type": "multiple-choice",
+              "questionText": "What enables tailored content delivery?",
+              "options": ["A) Guesswork", "B) Random selection", "C) Basic intuition", "D] Data analytics"],
+              "correctAnswer": "D",
+              "translation": "Điều gì cho phép phân phối nội dung được điều chỉnh?"
+            },
+            {
+              "id": "listening-q16",
+              "type": "multiple-choice",
+              "questionText": "What have sponsorship models evolved into?",
+              "options": ["A) Simple logos", "B) Basic advertisements", "C) Traditional signs", "D] Integrated partnerships"],
+              "correctAnswer": "D",
+              "translation": "Các mô hình tài trợ đã phát triển thành gì?"
+            },
+            {
+              "id": "listening-q17",
+              "type": "multiple-choice",
+              "questionText": "What has created new marketing paradigms?",
+              "options": ["A) Traditional sports", "B) Basic games", "C) Esports emergence", "D] Simple competitions"],
+              "correctAnswer": "C",
+              "translation": "Điều gì đã tạo ra các mô hình tiếp thị mới?"
+            },
+            {
+              "id": "listening-q18",
+              "type": "multiple-choice",
+              "questionText": "How are stadium experiences being reimagined?",
+              "options": ["A) As basic venues", "B) As simple stands", "C) As traditional fields", "D] As technology hubs"],
+              "correctAnswer": "D",
+              "translation": "Trải nghiệm sân vận động đang được tái tưởng tượng như thế nào?"
+            },
+            {
+              "id": "listening-q19",
+              "type": "multiple-choice",
+              "questionText": "What has become integral to marketing strategies?",
+              "options": ["A) Profit only", "B) Basic advertising", "C) Simple promotions", "D] Social responsibility"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đã trở thành không thể thiếu trong chiến lược tiếp thị?"
+            },
+            {
+              "id": "listening-q20",
+              "type": "multiple-choice",
+              "questionText": "What has emerged as critical considerations?",
+              "options": ["A) Basic marketing", "B) Simple advertising", "C) Traditional methods", "D] Data privacy ethics"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đã nổi lên như các cân nhắc quan trọng?"
+            }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "title": "Part 3: Discussion about sports sociology and cultural impact",
+          "instructions": "Listen to the discussion and answer questions 21-30.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.5, "rate": 1.2, "volume": 0.85, "name": "Sports Sociologist",
+              "variation": 0.12, "accent": "academic", "emotion": "enthusiastic", "speakingType": "discussion"
+            },
+            "male": {
+              "pitch": 0.6, "rate": 1.1, "volume": 0.9, "name": "Cultural Analyst",
+              "variation": 0.10, "accent": "educated", "emotion": "pragmatic", "speakingType": "discussion"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 3. You will hear a discussion between a sports sociologist and a cultural analyst. Look at questions 21 to 30. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+            "conversation": [
+              { "speaker": "female", "text": "The sociological dimensions of sport reveal profound insights about contemporary society. Sports function as microcosms of broader social structures, reflecting and sometimes challenging prevailing power dynamics, gender norms, and racial hierarchies." },
+              { "speaker": "male", "text": "Indeed, the commercialization of sport has created complex intersections with capitalism, where athletic achievement becomes commodified and athletes transform into brands. This economic transformation raises important questions about labor rights, wealth distribution, and the very nature of sportsmanship." },
+              { "speaker": "female", "text": "Globalization has dramatically altered sports landscapes. Traditional local sporting cultures increasingly interact with global media markets and transnational corporate interests, creating both homogenizing pressures and opportunities for cultural exchange." },
+              { "speaker": "male", "text": "The digital revolution has amplified these dynamics exponentially. Social media platforms have democratized sports commentary while also creating new forms of celebrity and influence. Athletes now navigate complex digital identities alongside their sporting careers." },
+              { "speaker": "female", "text": "Sports continue to serve as powerful platforms for social change. From civil rights advocacy to gender equality movements, athletes and sports organizations have historically played crucial roles in advancing social justice agendas." },
+              { "speaker": "male", "text": "Yet significant challenges persist. Racial discrimination, gender inequity, and economic barriers continue to limit participation and opportunity in many sports contexts. The gap between rhetoric and reality in sports inclusion remains substantial." },
+              { "speaker": "female", "text": "The psychology of fandom represents another fascinating area. Sports affiliations provide identity anchors and community connections for millions, yet can also manifest as exclusionary tribalism and sometimes dangerous nationalism." },
+              { "speaker": "male", "text": "Urban development and sports infrastructure create tangible social impacts. Major sporting events and facilities can drive economic development but also frequently displace communities and prioritize corporate interests over local needs." },
+              { "speaker": "female", "text": "Educational systems and youth sports intersect in crucial ways. The professionalization of youth sports creates both opportunities and risks, with early specialization potentially undermining broader developmental objectives." },
+              { "speaker": "male", "text": "Ultimately, understanding sports requires examining these multidimensional social contexts. The games themselves represent only the visible surface of much deeper cultural, economic, and political currents that shape and are shaped by athletic practices." }
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q21",
+              "type": "multiple-choice",
+              "questionText": "What do sports function as in society?",
+              "options": ["A) Social microcosms", "B) Simple games", "C) Basic entertainment", "D] Isolated activities"],
+              "correctAnswer": "A",
+              "translation": "Thể thao hoạt động như gì trong xã hội?"
+            },
+            {
+              "id": "listening-q22",
+              "type": "multiple-choice",
+              "questionText": "What has commercialization created intersections with?",
+              "options": ["A) Simple economics", "B) Basic trade", "C) Traditional markets", "D] Capitalism systems"],
+              "correctAnswer": "D",
+              "translation": "Thương mại hóa đã tạo ra giao điểm với điều gì?"
+            },
+            {
+              "id": "listening-q23",
+              "type": "multiple-choice",
+              "questionText": "What becomes commodified in modern sports?",
+              "options": ["A) Basic skills", "B) Simple playing", "C) Athletic achievement", "D] Traditional values"],
+              "correctAnswer": "C",
+              "translation": "Điều gì trở thành hàng hóa trong thể thao hiện đại?"
+            },
+            {
+              "id": "listening-q24",
+              "type": "multiple-choice",
+              "questionText": "What has dramatically altered sports landscapes?",
+              "options": ["A) Local traditions", "B) Basic rules", "C) Simple changes", "D] Globalization forces"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đã thay đổi mạnh mẽ cảnh quan thể thao?"
+            },
+            {
+              "id": "listening-q25",
+              "type": "multiple-choice",
+              "questionText": "What has the digital revolution amplified?",
+              "options": ["A) Basic communication", "B) Simple messaging", "C) Traditional media", "D] Social dynamics"],
+              "correctAnswer": "D",
+              "translation": "Cách mạng kỹ thuật số đã khuếch đại điều gì?"
+            },
+            {
+              "id": "listening-q26",
+              "type": "multiple-choice",
+              "questionText": "What do sports serve as for social change?",
+              "options": ["A) Simple tools", "B) Basic methods", "C) Traditional approaches", "D] Powerful platforms"],
+              "correctAnswer": "D",
+              "translation": "Thể thao phục vụ như gì cho thay đổi xã hội?"
+            },
+            {
+              "id": "listening-q27",
+              "type": "multiple-choice",
+              "questionText": "What significant challenges persist in sports?",
+              "options": ["A) Basic rules", "B) Simple equipment", "C) Traditional methods", "D] Racial discrimination"],
+              "correctAnswer": "D",
+              "translation": "Những thách thức quan trọng nào vẫn tồn tại trong thể thao?"
+            },
+            {
+              "id": "listening-q28",
+              "type": "multiple-choice",
+              "questionText": "What does sports psychology study about fandom?",
+              "options": ["A) Basic watching", "B] Simple cheering", "C] Traditional support", "D] Identity and community"],
+              "correctAnswer": "D",
+              "translation": "Tâm lý học thể thao nghiên cứu điều gì về người hâm mộ?"
+            },
+            {
+              "id": "listening-q29",
+              "type": "multiple-choice",
+              "questionText": "What can major sporting events drive?",
+              "options": ["A] Basic activities", "B] Simple gatherings", "C] Traditional meetings", "D] Economic development"],
+              "correctAnswer": "D",
+              "translation": "Sự kiện thể thao lớn có thể thúc đẩy điều gì?"
+            },
+            {
+              "id": "listening-q30",
+              "type": "multiple-choice",
+              "questionText": "What does understanding sports require examining?",
+              "options": ["A] Basic rules", "B] Simple games", "C] Traditional plays", "D] Social contexts"],
+              "correctAnswer": "D",
+              "translation": "Hiểu thể thao yêu cầu xem xét điều gì?"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "title": "Part 4: Lecture on sports technology and innovation",
+          "instructions": "Listen to the lecture and answer questions 31-40.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.3, "rate": 1.1, "volume": 0.9, "name": "Sports Technologist",
+              "variation": 0.07, "accent": "academic", "emotion": "knowledgeable", "speakingType": "lecture"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 4. You will hear a lecture on sports technology and innovation. Look at questions 31 to 40. You now have some time to look at the questions.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+            "conversation": [
+              { "speaker": "female", "text": "Technological innovation continues to reshape sports performance, training methodologies, and fan experiences at an accelerating pace. The integration of artificial intelligence and machine learning represents the current frontier in sports technology, enabling predictive analytics, personalized training prescriptions, and real-time performance optimization. Wearable technology has evolved from basic activity tracking to sophisticated biometric monitoring systems that capture comprehensive physiological data. Virtual and augmented reality technologies are transforming both training environments and spectator experiences, creating immersive simulations and enhanced viewing options. Materials science advancements continue to produce equipment with improved performance characteristics, from aerodynamic sportswear to impact-reducing protective gear. Data analytics platforms have become indispensable for talent identification, opponent analysis, and strategic decision-making across all sports domains. The Internet of Things connects various monitoring systems, creating integrated ecosystems that provide holistic views of athlete readiness and performance capacity. Biotechnology interventions, including genetic testing and personalized nutrition, offer new frontiers for performance optimization while raising important ethical considerations. Environmental technology addresses sustainability concerns in sports facilities and event management. Cybersecurity has emerged as a critical concern as sports organizations become increasingly digital and data-dependent. The ongoing challenge lies in balancing technological advancement with preserving the fundamental human elements that define sporting excellence and enjoyment." }
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q31",
+              "type": "multiple-choice",
+              "questionText": "What continues to reshape sports performance?",
+              "options": ["A) Technological innovation", "B) Basic training", "C) Simple methods", "D] Traditional approaches"],
+              "correctAnswer": "A",
+              "translation": "Điều gì tiếp tục định hình lại thành tích thể thao?"
+            },
+            {
+              "id": "listening-q32",
+              "type": "multiple-choice",
+              "questionText": "What represents the current frontier in sports technology?",
+              "options": ["A) Basic computers", "B] Simple devices", "C] Traditional tools", "D] Artificial intelligence"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đại diện cho biên giới hiện tại trong công nghệ thể thao?"
+            },
+            {
+              "id": "listening-q33",
+              "type": "multiple-choice",
+              "questionText": "What does AI enable in sports?",
+              "options": ["A) Basic calculations", "B] Simple counting", "C] Traditional measurements", "D] Predictive analytics"],
+              "correctAnswer": "D",
+              "translation": "AI cho phép điều gì trong thể thao?"
+            },
+            {
+              "id": "listening-q34",
+              "type": "multiple-choice",
+              "questionText": "What has wearable technology evolved into?",
+              "options": ["A) Basic trackers", "B] Simple watches", "C] Traditional pedometers", "D] Biometric monitoring systems"],
+              "correctAnswer": "D",
+              "translation": "Công nghệ đeo được đã phát triển thành gì?"
+            },
+            {
+              "id": "listening-q35",
+              "type": "multiple-choice",
+              "questionText": "What are virtual reality technologies transforming?",
+              "options": ["A] Basic exercises", "B] Simple practices", "C] Traditional methods", "D] Training environments"],
+              "correctAnswer": "D",
+              "translation": "Công nghệ thực tế ảo đang chuyển đổi điều gì?"
+            },
+            {
+              "id": "listening-q36",
+              "type": "multiple-choice",
+              "questionText": "What do materials science advancements produce?",
+              "options": ["A] Basic gear", "B] Simple tools", "C] Traditional items", "D] Improved equipment"],
+              "correctAnswer": "D",
+              "translation": "Những tiến bộ khoa học vật liệu tạo ra gì?"
+            },
+            {
+              "id": "listening-q37",
+              "type": "multiple-choice",
+              "questionText": "What have data analytics platforms become for talent identification?",
+              "options": ["A] Basic helpers", "B] Simple aids", "C] Traditional methods", "D] Indispensable tools"],
+              "correctAnswer": "D",
+              "translation": "Nền tảng phân tích dữ liệu đã trở thành gì cho việc xác định tài năng?"
+            },
+            {
+              "id": "listening-q38",
+              "type": "multiple-choice",
+              "questionText": "What does the Internet of Things connect?",
+              "options": ["A] Basic devices", "B] Simple tools", "C] Traditional equipment", "D] Monitoring systems"],
+              "correctAnswer": "D",
+              "translation": "Internet of Things kết nối điều gì?"
+            },
+            {
+              "id": "listening-q39",
+              "type": "multiple-choice",
+              "questionText": "What do biotechnology interventions offer?",
+              "options": ["A] Basic improvements", "B] Simple changes", "C] Traditional benefits", "D] Performance optimization"],
+              "correctAnswer": "D",
+              "translation": "Can thiệp công nghệ sinh học cung cấp điều gì?"
+            },
+            {
+              "id": "listening-q40",
+              "type": "multiple-choice",
+              "questionText": "What has emerged as a critical concern?",
+              "options": ["A] Basic safety", "B] Simple security", "C] Traditional protection", "D] Cybersecurity issues"],
+              "correctAnswer": "D",
+              "translation": "Điều gì đã nổi lên như một mối quan tâm quan trọng?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "description": "30 questions • 50 minutes",
+      "passages": [
+        {
+          "id": "reading-passage1",
+          "title": "Passage 1: The Physiology of Endurance Sports",
+          "content": "Endurance sports physiology represents a complex interplay of cardiovascular, respiratory, metabolic, and neuromuscular systems working in concert to sustain prolonged physical activity. The human body's capacity for endurance exercise hinges critically on oxygen delivery and utilization efficiency. VO2 max, the maximum rate of oxygen consumption during incremental exercise, serves as the primary benchmark for cardiovascular fitness, though its predictive value for performance varies across sports disciplines. Lactate threshold, the exercise intensity at which blood lactate concentration begins exponential rise, often proves more practically significant for endurance athletes, demarcating sustainable from unsustainable effort levels. Fuel substrate utilization evolves during prolonged exercise, with glycogen stores depleting and fat metabolism increasing proportionally. Thermoregulatory mechanisms maintain core temperature within narrow limits despite substantial heat production, with sweating and cutaneous blood flow serving as primary cooling strategies. Hydration status profoundly influences cardiovascular function, thermoregulation, and metabolic efficiency, with even modest dehydration impairing performance. Altitude training stimulates erythropoiesis through hypoxic exposure, enhancing oxygen-carrying capacity upon return to sea level. Overtraining syndrome represents the pathological extreme of inadequate recovery, characterized by performance decrements, mood disturbances, and immunological compromise. The gut plays increasingly recognized roles in endurance performance, influencing fuel availability, hydration, and immune function. Technological advances continue to refine our understanding of these physiological processes, enabling more precise training prescriptions and performance predictions.",
+          "questions": [
+            {
+              "id": "reading-q1",
+              "type": "multiple-choice",
+              "questionText": "What does endurance sports physiology represent?",
+              "options": ["A) Complex system interplay", "B) Simple body functions", "C) Basic muscle work", "D] Single system operation"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q2",
+              "type": "multiple-choice",
+              "questionText": "What hinges on oxygen delivery efficiency?",
+              "options": ["A) Basic strength", "B) Endurance capacity", "C) Simple speed", "D] Traditional skills"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q3",
+              "type": "multiple-choice",
+              "questionText": "What serves as the primary fitness benchmark?",
+              "options": ["A) Basic heart rate", "B] Simple breathing", "C] Traditional tests", "D] VO2 max measurement"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q4",
+              "type": "multiple-choice",
+              "questionText": "What proves practically significant for athletes?",
+              "options": ["A) Maximum speed", "B] Basic strength", "C] Simple endurance", "D] Lactate threshold"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q5",
+              "type": "multiple-choice",
+              "questionText": "What evolves during prolonged exercise?",
+              "options": ["A) Basic metabolism", "B] Simple digestion", "C] Traditional eating", "D] Fuel substrate use"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q6",
+              "type": "multiple-choice",
+              "questionText": "What maintains core temperature?",
+              "options": ["A) Basic cooling", "B] Simple sweating", "C] Traditional methods", "D] Thermoregulatory mechanisms"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q7",
+              "type": "multiple-choice",
+              "questionText": "What influences cardiovascular function significantly?",
+              "options": ["A) Basic drinking", "B] Simple fluids", "C] Traditional water", "D] Hydration status"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q8",
+              "type": "multiple-choice",
+              "questionText": "What does altitude training stimulate?",
+              "options": ["A) Basic adaptation", "B] Simple adjustment", "C] Traditional change", "D] Erythropoiesis process"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q9",
+              "type": "multiple-choice",
+              "questionText": "What represents pathological recovery inadequacy?",
+              "options": ["A) Basic tiredness", "B] Simple fatigue", "C] Traditional exhaustion", "D] Overtraining syndrome"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q10",
+              "type": "multiple-choice",
+              "questionText": "What plays roles in endurance performance?",
+              "options": ["A) Basic digestion", "B] Simple stomach", "C] Traditional eating", "D] Gut function"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage2",
+          "title": "Passage 2: Sports Law and Regulatory Frameworks",
+          "content": "Sports law encompasses diverse legal domains intersecting with athletic competition, administration, and participation. Contract law governs athlete-team relationships, sponsorship agreements, and endorsement deals, with specialized considerations for unique sports industry dynamics. Intellectual property rights protect sports brands, broadcasting content, and athlete likenesses, generating substantial economic value in the sports ecosystem. Anti-doping regulations constitute a particularly complex international legal framework, with the World Anti-Doping Agency setting global standards that national organizations must implement. Athlete eligibility rules address nationality, age, and transfer regulations, balancing competitive fairness with mobility rights. Dispute resolution mechanisms, including arbitration and specialized sports tribunals, provide alternatives to conventional litigation for resolving sports-related conflicts. Liability issues arise regarding participant safety, spectator protection, and facility management, with negligence standards applying differently across sporting contexts. Employment law considerations include collective bargaining, free agency rights, and workplace safety standards tailored to athletic professions. Broadcasting rights agreements represent major revenue sources, involving complex negotiations over territorial exclusivity and digital distribution rights. Gambling regulations attempt to balance economic opportunities with integrity protection, addressing match-fixing risks and consumer protection concerns. Data protection laws gain increasing relevance with extensive athlete biometric monitoring and fan data collection. International sports governance involves complex jurisdictional questions as sports organizations operate across national boundaries while maintaining autonomous regulatory authority.",
+          "questions": [
+            {
+              "id": "reading-q11",
+              "type": "multiple-choice",
+              "questionText": "What does sports law encompass?",
+              "options": ["A) Diverse legal domains", "B) Simple rules", "C] Basic regulations", "D] Traditional laws"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q12",
+              "type": "multiple-choice",
+              "questionText": "What governs athlete-team relationships?",
+              "options": ["A) Basic agreements", "B] Simple deals", "C] Traditional handshakes", "D] Contract law principles"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q13",
+              "type": "multiple-choice",
+              "questionText": "What protects sports brands economically?",
+              "options": ["A) Basic trademarks", "B] Simple logos", "C] Traditional names", "D] Intellectual property rights"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q14",
+              "type": "multiple-choice",
+              "questionText": "What sets global anti-doping standards?",
+              "options": ["A) Basic organizations", "B] Simple committees", "C] Traditional groups", "D] World Anti-Doping Agency"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q15",
+              "type": "multiple-choice",
+              "questionText": "What do athlete eligibility rules address?",
+              "options": ["A) Basic skills", "B] Simple abilities", "C] Traditional training", "D] Nationality and age"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q16",
+              "type": "multiple-choice",
+              "questionText": "What provides alternative dispute resolution?",
+              "options": ["A) Basic courts", "B] Simple judges", "C] Traditional lawyers", "D] Arbitration systems"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q17",
+              "type": "multiple-choice",
+              "questionText": "What issues arise regarding safety?",
+              "options": ["A) Basic risks", "B] Simple dangers", "C] Traditional hazards", "D] Liability concerns"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q18",
+              "type": "multiple-choice",
+              "questionText": "What includes collective bargaining?",
+              "options": ["A) Basic agreements", "B] Simple deals", "C] Traditional contracts", "D] Employment law considerations"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q19",
+              "type": "multiple-choice",
+              "questionText": "What represent major revenue sources?",
+              "options": ["A) Basic tickets", "B] Simple sales", "C] Traditional income", "D] Broadcasting rights"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q20",
+              "type": "multiple-choice",
+              "questionText": "What attempts to balance opportunities with integrity?",
+              "options": ["A) Basic rules", "B] Simple laws", "C] Traditional standards", "D] Gambling regulations"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage3",
+          "title": "Passage 3: Motor Learning and Skill Acquisition",
+          "content": "Motor learning science investigates the processes through which humans acquire and refine movement skills, with profound implications for sports coaching and athletic development. The distinction between performance and learning represents a fundamental principle—observable execution during practice reflects temporary performance, while relatively permanent capability changes constitute learning. Skill acquisition typically progresses through cognitive, associative, and autonomous stages, each characterized by distinct attention demands and error patterns. Practice structure significantly influences learning efficiency, with variable practice enhancing long-term retention compared to constant repetition. Contextual interference, introducing skill variations within practice sessions, initially impedes performance but ultimately strengthens learning through enhanced cognitive processing. Feedback mechanisms guide skill refinement, with bandwidth feedback proving more effective than constant correction for developing error detection capabilities. Observational learning enables skill acquisition through modeling, with expert demonstrations providing cognitive blueprints for movement execution. Mental practice activates similar neural pathways as physical execution, facilitating skill development without physical fatigue. The challenge point framework suggests optimal learning occurs when task difficulty appropriately challenges current capability levels. Dynamic systems theory emphasizes the interaction between organism, task, and environment constraints in shaping movement solutions. Differential learning approaches exploit movement variability rather than seeking perfect repetition, recognizing that optimal technique emerges through exploration. Technology-enhanced learning tools, including video analysis and biofeedback systems, provide augmented information for accelerated skill acquisition. Understanding these motor learning principles enables coaches to design more effective training interventions that optimize long-term skill development.",
+          "questions": [
+            {
+              "id": "reading-q21",
+              "type": "multiple-choice",
+              "questionText": "What does motor learning science investigate?",
+              "options": ["A) Skill acquisition processes", "B) Basic movements", "C] Simple actions", "D] Traditional exercises"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q22",
+              "type": "multiple-choice",
+              "questionText": "What represents a fundamental principle?",
+              "options": ["A) Basic practice", "B] Simple training", "C] Traditional methods", "D] Performance vs learning distinction"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q23",
+              "type": "multiple-choice",
+              "questionText": "How does skill acquisition typically progress?",
+              "options": ["A) Through basic steps", "B] Through simple phases", "C] Through traditional levels", "D] Through defined stages"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q24",
+              "type": "multiple-choice",
+              "questionText": "What influences learning efficiency significantly?",
+              "options": ["A) Basic repetition", "B] Simple copying", "C] Traditional following", "D] Practice structure design"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q25",
+              "type": "multiple-choice",
+              "questionText": "What initially impedes but strengthens learning?",
+              "options": ["A) Basic difficulty", "B] Simple challenges", "C] Traditional obstacles", "D] Contextual interference"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q26",
+              "type": "multiple-choice",
+              "questionText": "What guides skill refinement effectively?",
+              "options": ["A) Basic correction", "B] Simple advice", "C] Traditional instruction", "D] Feedback mechanisms"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q27",
+              "type": "multiple-choice",
+              "questionText": "What enables acquisition through modeling?",
+              "options": ["A) Basic watching", "B] Simple viewing", "C] Traditional seeing", "D] Observational learning"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q28",
+              "type": "multiple-choice",
+              "questionText": "What activates similar neural pathways?",
+              "options": ["A) Basic thinking", "B] Simple imagination", "C] Traditional visualization", "D] Mental practice sessions"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q29",
+              "type": "multiple-choice",
+              "questionText": "What suggests optimal learning conditions?",
+              "options": ["A) Basic difficulty", "B] Simple challenge", "C] Traditional standards", "D] Challenge point framework"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q30",
+              "type": "multiple-choice",
+              "questionText": "What emphasizes organism-task-environment interaction?",
+              "options": ["A) Basic principles", "B] Simple concepts", "C] Traditional ideas", "D] Dynamic systems theory"],
+              "correctAnswer": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "description": "60 minutes",
+      "tasks": [
+        {
+          "id": "writing-task1",
+          "title": "Writing Task 1",
+          "instructions": "You should spend about 20 minutes on this task. The chart below shows the relationship between training load, recovery time, and injury risk in elite athletes. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+          "taskType": "Academic",
+          "wordCountMin": 150,
+          "timeLimit": 20,
+          "description": "You will be presented with a chart showing sports science data and asked to describe the information in your own words.",
+          "sampleData": {
+            "type": "chart",
+            "title": "Training Load vs Injury Risk Relationship",
+            "data": {
+              "Low Load + Adequate Recovery": ["5% injury risk", "Optimal adaptation"],
+              "High Load + Adequate Recovery": ["15% injury risk", "Supercompensation possible"],
+              "Moderate Load + Inadequate Recovery": ["25% injury risk", "Overtraining risk"],
+              "High Load + Inadequate Recovery": ["45% injury risk", "High injury probability"]
+            },
+            "description": "Analysis of how training load and recovery interact to influence injury risk in athletes"
+          },
+          "assessmentCriteria": [
+            "Task Achievement",
+            "Coherence and Cohesion", 
+            "Lexical Resource",
+            "Grammatical Range and Accuracy"
+          ]
+        },
+        {
+          "id": "writing-task2",
+          "title": "Writing Task 2",
+          "instructions": "You should spend about 40 minutes on this task. Some argue that professional sports have become overly commercialized, losing their original spirit and community values, while others believe commercialization has improved sports quality and accessibility. Discuss both these views and give your own opinion. Write at least 250 words.",
+          "taskType": "Essay",
+          "wordCountMin": 250,
+          "timeLimit": 40,
+          "description": "You will be presented with contrasting views on sports commercialization and asked to discuss them.",
+          "essayType": "Discussion",
+          "topics": [
+            "Sports commercialization",
+            "Professional sports ethics",
+            "Community values in sports"
+          ],
+          "keyPoints": [
+            "Arguments about lost spirit and community values",
+            "Arguments about improved quality and accessibility", 
+            "Synthesis and personal position"
+          ],
+          "assessmentCriteria": [
+            "Task Response",
+            "Coherence and Cohesion",
+            "Lexical Resource", 
+            "Grammatical Range and Accuracy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar",
+      "title": "Grammar & Language Use",
+      "description": "20 questions • Approximately 15 minutes",
+      "questions": [
+        {"id": "grammar-q1", "type": "multiple-choice", "questionText": "_____ sophisticated the sports technology, its effectiveness ultimately depends on proper implementation and athlete adherence.", "options": ["A) However", "B) Although", "C) Despite", "D] Because"], "correctAnswer": "B", "explanation": "Concession with adjective", "translation": "Dù công nghệ thể thao có tinh vi đến đâu, hiệu quả của nó cuối cùng phụ thuộc vào việc triển khai đúng và sự tuân thủ của vận động viên."},
+        {"id": "grammar-q2", "type": "multiple-choice", "questionText": "The rehabilitation protocol, _____ on extensive research evidence, demonstrated excellent recovery outcomes.", "options": ["A) predicating", "B) predicated", "C) having predicated", "D] being predicated"], "correctAnswer": "B", "explanation": "Past participle in reduced relative clause", "translation": "Giao thức phục hồi chức năng, dựa trên bằng chứng nghiên cứu toàn diện, đã thể hiện kết quả phục hồi xuất sắc."},
+        {"id": "grammar-q3", "type": "multiple-choice", "questionText": "So profound _____ that traditional coaching methodologies require substantial adaptation.", "options": ["A) has the sports science advancement been", "B) the sports science advancement has been", "C) was the sports science advancement", "D] the sports science advancement was"], "correctAnswer": "B", "explanation": "Inversion after 'so + adjective'", "translation": "Sự tiến bộ khoa học thể thao sâu sắc đến mức các phương pháp huấn luyện truyền thống yêu cầu sự thích ứng đáng kể."},
+        {"id": "grammar-q4", "type": "multiple-choice", "questionText": "The medical team recommended that concussion protocols _____ strictly followed in all contact sports.", "options": ["A) is", "B] be", "C) was", "D] has been"], "correctAnswer": "B", "explanation": "Subjunctive after verbs of recommendation", "translation": "Đội ngũ y tế khuyến nghị rằng giao thức chấn động phải được tuân thủ nghiêm ngặt trong tất cả các môn thể thao tiếp xúc."},
+        {"id": "grammar-q5", "type": "multiple-choice", "questionText": "_____ the complex physiological demands of elite sport, recovery strategies must be individually tailored.", "options": ["A) Giving", "B) To give", "C) Given", "D] Having given"], "correctAnswer": "C", "explanation": "Preposition meaning 'considering'", "translation": "Xét đến các yêu cầu sinh lý phức tạp của thể thao đỉnh cao, chiến lược phục hồi phải được điều chỉnh riêng cho từng cá nhân."},
+        {"id": "grammar-q6", "type": "multiple-choice", "questionText": "The performance analysis system, _____ multiple data streams and algorithms, has revolutionized talent identification.", "options": ["A] comprised", "B] comprising", "C] having comprised", "D] being comprised"], "correctAnswer": "B", "explanation": "Present participle in reduced relative clause", "translation": "Hệ thống phân tích thành tích, bao gồm nhiều luồng dữ liệu và thuật toán, đã cách mạng hóa việc xác định tài năng."},
+        {"id": "grammar-q7", "type": "multiple-choice", "questionText": "So rapidly _____ that traditional development pathways require complete restructuring.", "options": ["A] is sports technology evolving", "B] sports technology is evolving", "C] has sports technology evolved", "D] sports technology has evolved"], "correctAnswer": "C", "explanation": "Inversion after 'so + adverb'", "translation": "Công nghệ thể thao tiến hóa nhanh đến mức các con đường phát triển truyền thống yêu cầu tái cấu trúc hoàn toàn."},
+        {"id": "grammar-q8", "type": "multiple-choice", "questionText": "The sports federation insisted that ethical guidelines _____ rigorously applied across all programs.", "options": ["A] are", "B] be", "C] were", "D] have been"], "correctAnswer": "B", "explanation": "Subjunctive after verbs of demand", "translation": "Liên đoàn thể thao nhấn mạnh rằng hướng dẫn đạo đức phải được áp dụng nghiêm ngặt trên tất cả các chương trình."},
+        {"id": "grammar-q9", "type": "multiple-choice", "questionText": "_____ the significant financial investments, sports technology adoption continues to demonstrate substantial returns.", "options": ["A] Besides", "B] Moreover", "C] Notwithstanding", "D] Therefore"], "correctAnswer": "C", "explanation": "Formal preposition meaning 'despite'", "translation": "Bất chấp các khoản đầu tư tài chính đáng kể, việc áp dụng công nghệ thể thao tiếp tục thể hiện lợi nhuận đáng kể."},
+        {"id": "grammar-q10", "type": "multiple-choice", "questionText": "The athlete development framework, _____ through international research collaboration, has transformed training methodologies.", "options": ["A] forging", "B] having forged", "C] being forged", "D] forged"], "correctAnswer": "D", "explanation": "Past participle in reduced relative clause", "translation": "Khung phát triển vận động viên, được xây dựng thông qua hợp tác nghiên cứu quốc tế, đã chuyển đổi các phương pháp đào tạo."},
+        {"id": "grammar-q11", "type": "multiple-choice", "questionText": "So significant _____ that it has redefined sports performance boundaries.", "options": ["A] has the advancement in sports medicine been", "B] the advancement in sports medicine has been", "C] was the advancement in sports medicine", "D] the advancement in sports medicine was"], "correctAnswer": "B", "explanation": "Inversion after 'so + adjective'", "translation": "Sự tiến bộ trong y học thể thao quan trọng đến mức nó đã định nghĩa lại ranh giới thành tích thể thao."},
+        {"id": "grammar-q12", "type": "multiple-choice", "questionText": "The international committee demanded that safety standards _____ universally implemented.", "options": ["A] be", "B] is", "C] was", "D] has been"], "correctAnswer": "A", "explanation": "Subjunctive after verbs of demand", "translation": "Ủy ban quốc tế yêu cầu rằng tiêu chuẩn an toàn phải được thực hiện phổ quát."},
+        {"id": "grammar-q13", "type": "multiple-choice", "questionText": "_____ the advanced monitoring systems, predicting athletic potential remains challenging.", "options": ["A] Although", "B] Because of", "C] However", "D] Despite"], "correctAnswer": "D", "explanation": "Preposition for contrast", "translation": "Bất chấp các hệ thống giám sát tiên tiến, dự đoán tiềm năng thể thao vẫn đầy thách thức."},
+        {"id": "grammar-q14", "type": "multiple-choice", "questionText": "The training methodology, _____ to maximize athletic potential, requires continuous scientific validation.", "options": ["A] designing", "B] having designed", "C] being designed", "D] designed"], "correctAnswer": "D", "explanation": "Past participle in reduced relative clause", "translation": "Phương pháp đào tạo, được thiết kế để tối đa hóa tiềm năng thể thao, yêu cầu xác nhận khoa học liên tục."},
+        {"id": "grammar-q15", "type": "multiple-choice", "questionText": "So complex _____ that traditional coaching methods have proven insufficient.", "options": ["A] have modern athletic demands become", "B] modern athletic demands have become", "C] became modern athletic demands", "D] modern athletic demands became"], "correctAnswer": "B", "explanation": "Inversion after 'so + adjective'", "translation": "Các yêu cầu thể thao hiện đại trở nên phức tạp đến mức các phương pháp huấn luyện truyền thống đã chứng minh là không đủ."},
+        {"id": "grammar-q16", "type": "multiple-choice", "questionText": "The sports agreement requires that ethical standards _____ consistently maintained.", "options": ["A] be", "B] are", "C] were", "D] have been"], "correctAnswer": "A", "explanation": "Subjunctive after verbs of requirement", "translation": "Thỏa thuận thể thao yêu cầu rằng các tiêu chuẩn đạo đức phải được duy trì nhất quán."},
+        {"id": "grammar-q17", "type": "multiple-choice", "questionText": "_____ the detailed performance analytics, implementation challenges remain significant.", "options": ["A] Besides", "B] Moreover", "C] Therefore", "D] Notwithstanding"], "correctAnswer": "D", "explanation": "Formal preposition meaning 'despite'", "translation": "Bất chấp phân tích thành tích chi tiết, các thách thức triển khai vẫn đáng kể."},
+        {"id": "grammar-q18", "type": "multiple-choice", "questionText": "The coaching framework, _____ on motor learning principles, has achieved exceptional skill development.", "options": ["A] predicating", "B] having predicated", "C] being predicated", "D] predicated"], "correctAnswer": "D", "explanation": "Past participle in reduced relative clause", "translation": "Khung huấn luyện, dựa trên các nguyên tắc học vận động, đã đạt được sự phát triển kỹ năng xuất sắc."},
+        {"id": "grammar-q19", "type": "multiple-choice", "questionText": "So rapidly _____ that traditional development systems struggle to keep pace.", "options": ["A] is the sports technology landscape changing", "B] the sports technology landscape is changing", "C] has the sports technology landscape changed", "D] the sports technology landscape has changed"], "correctAnswer": "C", "explanation": "Inversion after 'so + adverb'", "translation": "Cảnh quan công nghệ thể thao thay đổi nhanh đến mức các hệ thống phát triển truyền thống phải vật lộn để theo kịp."},
+        {"id": "grammar-q20", "type": "multiple-choice", "questionText": "The sports innovation mandate requires that research applications _____ immediately implemented.", "options": ["A] be", "B] are", "C] were", "D] have been"], "correctAnswer": "A", "explanation": "Subjunctive after verbs of mandate", "translation": "Nhiệm vụ đổi mới thể thao yêu cầu rằng các ứng dụng nghiên cứu phải được thực hiện ngay lập tức."}
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "4.6",
+    "author": "IELTS Practice System",
+    "notes": "IELTS Level 4.6 advanced sports science test with properly distributed correct answers. Correct answers are varied across A, B, C, D to prevent guessing patterns while maintaining appropriate difficulty level."
+  }
+}
