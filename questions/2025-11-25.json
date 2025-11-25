@@ -1,0 +1,772 @@
+{
+  "testId": "IELTS-ACADEMIC-5.0-01-12-2024",
+  "testDate": "2024-12-01",
+  "testTitle": "IELTS Academic Test - 01 December 2024",
+  "totalQuestions": 110,
+  "difficultyLevel": "Academic 5.0",
+  "sections": [
+    {
+      "id": "listening",
+      "title": "Listening",
+      "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "Part 1: Conversation about joining a sports club",
+          "instructions": "Listen to the conversation and answer questions 1-10.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.3, "rate": 1.1, "volume": 0.9, "name": "Sports Club Manager",
+              "variation": 0.08, "accent": "British", "emotion": "friendly", "speakingType": "conversational"
+            },
+            "male": {
+              "pitch": 0.6, "rate": 1.0, "volume": 0.85, "name": "New Member",
+              "variation": 0.07, "accent": "International", "emotion": "interested", "speakingType": "conversational"
+            }
+          },
+          "script": {
+            "narrator": "You will hear a conversation between a sports club manager and a man who wants to join the club. First, you have some time to look at questions 1 to 10.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+            "conversation": [
+              {"speaker": "female", "text": "Good morning, City Sports Club. How can I help you?"},
+              {"speaker": "male", "text": "Hello, I'm interested in joining the club. Could you tell me about the membership options?"},
+              {"speaker": "female", "text": "Certainly. We have three main types of membership. The basic membership is £35 per month, which gives you access to the gym and swimming pool."},
+              {"speaker": "male", "text": "What about classes? I'm particularly interested in yoga and tennis."},
+              {"speaker": "female", "text": "For classes, you'd need our premium membership at £50 per month. That includes all group classes and court bookings."},
+              {"speaker": "male", "text": "Is there a student discount available?"},
+              {"speaker": "female", "text": "Yes, students get 20% off all memberships. You'll need to show your student ID when you register."},
+              {"speaker": "male", "text": "Great. What are your opening hours?"},
+              {"speaker": "female", "text": "We're open from 6am to 10pm on weekdays, and 8am to 8pm on weekends. The swimming pool closes one hour earlier for cleaning."},
+              {"speaker": "male", "text": "Do you have parking facilities?"},
+              {"speaker": "female", "text": "Yes, we have a car park with 150 spaces. It's free for members for up to three hours."},
+              {"speaker": "male", "text": "What about public transport? I don't have a car."},
+              {"speaker": "female", "text": "The number 25 bus stops right outside, and the nearest train station is about 10 minutes walk away."},
+              {"speaker": "male", "text": "Can I try the facilities before joining?"},
+              {"speaker": "female", "text": "Of course. We offer a free one-day trial pass. You can use all the facilities and even join one group class."},
+              {"speaker": "male", "text": "That sounds perfect. How do I arrange that?"},
+              {"speaker": "female", "text": "Just come to reception with some ID, and we'll set it up for you. What's your name?"},
+              {"speaker": "male", "text": "It's David Chen."},
+              {"speaker": "female", "text": "Okay David, I'll make a note. We look forward to seeing you."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q1",
+              "type": "multiple-choice",
+              "questionText": "How much is the basic membership?",
+              "options": ["A) £25 per month", "B) £35 per month", "C) £45 per month", "D] £50 per month"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "listening-q2",
+              "type": "multiple-choice",
+              "questionText": "Which membership includes group classes?",
+              "options": ["A) Basic membership", "B) Student membership", "C) Family membership", "D] Premium membership"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q3",
+              "type": "multiple-choice",
+              "questionText": "What discount do students receive?",
+              "options": ["A) 10%", "B) 15%", "C) 20%", "D] 25%"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "listening-q4",
+              "type": "multiple-choice",
+              "questionText": "When does the club close on weekdays?",
+              "options": ["A) 9pm", "B) 11pm", "C) Midnight", "D] 10pm"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q5",
+              "type": "multiple-choice",
+              "questionText": "What closes one hour earlier?",
+              "options": ["A) Gym", "B) Tennis courts", "C) Reception", "D] Swimming pool"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q6",
+              "type": "multiple-choice",
+              "questionText": "How many parking spaces are available?",
+              "options": ["A) 100", "B) 120", "C) 200", "D] 150"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q7",
+              "type": "multiple-choice",
+              "questionText": "Which bus stops outside the club?",
+              "options": ["A) Number 52", "B) Number 15", "C) Number 20", "D] Number 25"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q8",
+              "type": "multiple-choice",
+              "questionText": "What is offered for free?",
+              "options": ["A) One-week membership", "B) Personal training session", "C) Tennis lesson", "D] One-day trial"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q9",
+              "type": "multiple-choice",
+              "questionText": "What is needed for the trial?",
+              "options": ["A) Student card", "B) Payment", "C) Medical certificate", "D] ID"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q10",
+              "type": "multiple-choice",
+              "questionText": "What is the man's name?",
+              "options": ["A) Daniel Chen", "B) David Chan", "C) Daniel Chan", "D] David Chen"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "title": "Part 2: Talk about a museum exhibition",
+          "instructions": "Listen to the talk and answer questions 11-20.",
+          "voiceProfiles": {
+            "male": {
+              "pitch": 0.5, "rate": 1.0, "volume": 0.9, "name": "Museum Guide",
+              "variation": 0.06, "accent": "British", "emotion": "enthusiastic", "speakingType": "monologue"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 2. You will hear a guide talking about a museum exhibition. Look at questions 11 to 20.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+            "conversation": [
+              {"speaker": "male", "text": "Good afternoon everyone and welcome to the City Museum. I'm here to tell you about our special exhibition 'Ancient Civilizations' which runs from November until March next year. This exhibition features artifacts from three ancient cultures: Egypt, Rome, and China. Let me start with the Egyptian section, which includes real mummies, jewellery, and pottery dating back over 3,000 years. The Roman section displays coins, weapons, and household items from the Roman Empire. Finally, the Chinese section shows beautiful silk textiles, bronze vessels, and early porcelain. The exhibition is open daily from 9am to 5pm, with extended hours until 7pm on Fridays. Admission is £12 for adults, £8 for students and seniors, and free for children under 12. We recommend allowing at least two hours to see everything properly. Guided tours are available at 11am and 2pm daily, and these are included in the admission price. There's also an audio guide available in five languages: English, Spanish, French, German, and Mandarin. The museum shop has replica artifacts and books about ancient history. Photography is allowed but without flash. The nearest car park is on Queen Street, about five minutes walk away. Alternatively, the museum is easily reached by bus or underground. The nearest tube station is Museum Station on the Central Line. Are there any questions before we begin our tour?"}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q11",
+              "type": "multiple-choice",
+              "questionText": "How long does the exhibition run?",
+              "options": ["A) Until April", "B) Until May", "C) Until June", "D] Until March"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q12",
+              "type": "multiple-choice",
+              "questionText": "Which ancient civilization is NOT mentioned?",
+              "options": ["A) Egypt", "B) Rome", "C) China", "D] Greece"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q13",
+              "type": "multiple-choice",
+              "questionText": "What does the Egyptian section include?",
+              "options": ["A) Coins and weapons", "B) Silk and porcelain", "C) Paintings and statues", "D] Mummies and jewellery"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q14",
+              "type": "multiple-choice",
+              "questionText": "When are extended opening hours?",
+              "options": ["A) Saturdays", "B) Sundays", "C) Mondays", "D] Fridays"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q15",
+              "type": "multiple-choice",
+              "questionText": "How much is student admission?",
+              "options": ["A) £10", "B) £12", "C) £15", "D] £8"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q16",
+              "type": "multiple-choice",
+              "questionText": "How long does the guide recommend for visiting?",
+              "options": ["A) 3 hours", "B) 4 hours", "C) 5 hours", "D] 2 hours"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q17",
+              "type": "multiple-choice",
+              "questionText": "What languages are available for audio guides?",
+              "options": ["A) 6 languages", "B) 7 languages", "C) 8 languages", "D] 5 languages"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q18",
+              "type": "multiple-choice",
+              "questionText": "Where is the nearest car park?",
+              "options": ["A) King Street", "B) Museum Road", "C) Central Avenue", "D] Queen Street"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q19",
+              "type": "multiple-choice",
+              "questionText": "Which tube line serves Museum Station?",
+              "options": ["A) Northern Line", "B) Piccadilly Line", "C) District Line", "D] Central Line"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q20",
+              "type": "multiple-choice",
+              "questionText": "What is restricted in photography?",
+              "options": ["A) Taking videos", "B) Using tripods", "C) Photographing artifacts", "D] Using flash"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "title": "Part 3: Discussion between students about a presentation",
+          "instructions": "Listen to the discussion and answer questions 21-30.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.3, "rate": 1.1, "volume": 0.85, "name": "Sarah",
+              "variation": 0.09, "accent": "British", "emotion": "concerned", "speakingType": "discussion"
+            },
+            "male": {
+              "pitch": 0.7, "rate": 1.0, "volume": 0.9, "name": "James",
+              "variation": 0.08, "accent": "British", "emotion": "helpful", "speakingType": "discussion"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 3. You will hear two students discussing a group presentation. Look at questions 21 to 30.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+            "conversation": [
+              {"speaker": "female", "text": "Hi James, I'm worried about our history presentation next week. Have you started preparing yet?"},
+              {"speaker": "male", "text": "I've done some research, Sarah. Our topic is the Industrial Revolution, right? I found some good information about the textile industry."},
+              {"speaker": "female", "text": "Yes, that's correct. I was thinking we should focus on three main areas: technological changes, social impacts, and economic effects."},
+              {"speaker": "male", "text": "That sounds good. How about we divide the research? I can cover the technological changes and you research the social impacts. Then we can both work on the economic effects."},
+              {"speaker": "female", "text": "Okay, that works for me. When should we meet to combine our research?"},
+              {"speaker": "male", "text": "How about Thursday afternoon? That gives us two days to do individual research first."},
+              {"speaker": "female", "text": "Thursday is good for me. Should we meet in the library or the student common room?"},
+              {"speaker": "male", "text": "Let's meet in the library study room. It's quieter there. I'll book room 3B for 2pm."},
+              {"speaker": "female", "text": "Perfect. What about visual aids for the presentation? Do you think we should use PowerPoint or posters?"},
+              {"speaker": "male", "text": "I think PowerPoint would be better. We can include historical images and graphs. I'm good with PowerPoint, so I can create the slides."},
+              {"speaker": "female", "text": "Great. How long does the presentation need to be?"},
+              {"speaker": "male", "text": "Dr. Brown said 15 minutes, plus 5 minutes for questions. So we should prepare about 12-13 slides."},
+              {"speaker": "female", "text": "Should we practice together before the actual presentation?"},
+              {"speaker": "male", "text": "Definitely. How about we practice on Monday afternoon? That gives us time to make changes if needed."},
+              {"speaker": "female", "text": "Monday works for me. Where should we practice?"},
+              {"speaker": "male", "text": "We can use the empty classroom on the second floor. I'll check if it's available."},
+              {"speaker": "female", "text": "Okay, thanks James. I feel better now that we have a plan."},
+              {"speaker": "male", "text": "No problem. Don't worry, we'll do fine. Just make sure to bring your notes on Thursday."},
+              {"speaker": "female", "text": "I will. See you then!"}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q21",
+              "type": "multiple-choice",
+              "questionText": "What subject is the presentation for?",
+              "options": ["A) Economics", "B) Technology", "C) Social studies", "D] History"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q22",
+              "type": "multiple-choice",
+              "questionText": "What is the specific topic?",
+              "options": ["A) French Revolution", "B) Agricultural Revolution", "C) Digital Revolution", "D] Industrial Revolution"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q23",
+              "type": "multiple-choice",
+              "questionText": "What three areas will they cover?",
+              "options": ["A) Political, cultural, environmental", "B) Scientific, artistic, religious", "C) Military, educational, medical", "D] Technology, social, economic"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q24",
+              "type": "multiple-choice",
+              "questionText": "What part will James research?",
+              "options": ["A) Social impacts", "B) Economic effects", "C) Political consequences", "D] Technological changes"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q25",
+              "type": "multiple-choice",
+              "questionText": "When will they meet to combine research?",
+              "options": ["A) Friday", "B) Monday", "C) Tuesday", "D] Thursday"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q26",
+              "type": "multiple-choice",
+              "questionText": "Where will they meet?",
+              "options": ["A) Student common room", "B) University cafe", "C) Empty classroom", "D] Library study room"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q27",
+              "type": "multiple-choice",
+              "questionText": "What visual aid will they use?",
+              "options": ["A) Posters", "B) Whiteboard", "C) Handouts", "D] PowerPoint"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q28",
+              "type": "multiple-choice",
+              "questionText": "How long should the presentation be?",
+              "options": ["A) 20 minutes", "B) 25 minutes", "C) 30 minutes", "D] 15 minutes"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q29",
+              "type": "multiple-choice",
+              "questionText": "When will they practice?",
+              "options": ["A) Tuesday", "B) Wednesday", "C) Thursday", "D] Monday"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q30",
+              "type": "multiple-choice",
+              "questionText": "Where will they practice?",
+              "options": ["A) Library", "B) Common room", "C) Lecture hall", "D] Empty classroom"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "title": "Part 4: Lecture on climate change",
+          "instructions": "Listen to the lecture and answer questions 31-40.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.2, "rate": 1.0, "volume": 0.9, "name": "Professor",
+              "variation": 0.07, "accent": "British", "emotion": "serious", "speakingType": "lecture"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 4. You will hear a lecture on climate change. Look at questions 31 to 40.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+            "conversation": [
+              {"speaker": "female", "text": "Good morning. Today we're going to discuss the main causes and effects of climate change. Climate change refers to long-term shifts in temperatures and weather patterns. While these shifts can be natural, since the 1800s, human activities have been the main driver of climate change. The primary cause is the burning of fossil fuels like coal, oil, and gas. This produces greenhouse gases that trap heat in the atmosphere. The main greenhouse gas is carbon dioxide, but methane and nitrous oxide are also significant contributors. Deforestation is another major cause, as trees absorb carbon dioxide and their removal increases atmospheric CO2 levels. The effects of climate change are widespread. We're seeing rising sea levels due to melting ice caps and glaciers. Extreme weather events like hurricanes and droughts are becoming more frequent and intense. Agriculture is affected through changes in growing seasons and water availability. Biodiversity is threatened as species struggle to adapt to changing conditions. To address climate change, we need to transition to renewable energy sources like solar and wind power. Energy efficiency improvements and changes in transportation systems are also crucial. International cooperation is essential, as shown by agreements like the Paris Agreement. Individuals can contribute by reducing energy consumption, using public transport, and supporting sustainable products. In our next lecture, we'll examine specific climate change solutions in more detail."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q31",
+              "type": "multiple-choice",
+              "questionText": "What is the main topic of the lecture?",
+              "options": ["A) Climate change", "B) Renewable energy", "C) Biodiversity", "D] International agreements"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q32",
+              "type": "multiple-choice",
+              "questionText": "Since when have humans been the main cause of climate change?",
+              "options": ["A) 1900s", "B) 1700s", "C) 2000s", "D] 1800s"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q33",
+              "type": "multiple-choice",
+              "questionText": "What is the primary cause mentioned?",
+              "options": ["A) Deforestation", "B) Agriculture", "C) Industrial waste", "D] Burning fossil fuels"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q34",
+              "type": "multiple-choice",
+              "questionText": "What is the main greenhouse gas?",
+              "options": ["A) Methane", "B) Nitrous oxide", "C) Water vapour", "D] Carbon dioxide"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q35",
+              "type": "multiple-choice",
+              "questionText": "What is mentioned as another major cause?",
+              "options": ["A) Urbanization", "B) Population growth", "C) Manufacturing", "D] Deforestation"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q36",
+              "type": "multiple-choice",
+              "questionText": "Why are sea levels rising?",
+              "options": ["A) Heavy rainfall", "B) Earthquakes", "C) Coastal erosion", "D] Melting ice"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q37",
+              "type": "multiple-choice",
+              "questionText": "What extreme weather events are mentioned?",
+              "options": ["A) Floods and earthquakes", "B) Tornadoes and tsunamis", "C) Blizzards and heatwaves", "D] Hurricanes and droughts"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q38",
+              "type": "multiple-choice",
+              "questionText": "What renewable energy sources are suggested?",
+              "options": ["A) Hydro and nuclear", "B) Geothermal and tidal", "C) Biomass and hydrogen", "D] Solar and wind"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q39",
+              "type": "multiple-choice",
+              "questionText": "What international agreement is mentioned?",
+              "options": ["A) Kyoto Protocol", "B) Copenhagen Accord", "C) Montreal Protocol", "D] Paris Agreement"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "listening-q40",
+              "type": "multiple-choice",
+              "questionText": "What will the next lecture cover?",
+              "options": ["A) Historical climate data", "B) Economic impacts", "C) Political challenges", "D] Climate change solutions"],
+              "correctAnswer": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "description": "40 questions • 60 minutes",
+      "passages": [
+        {
+          "id": "reading-passage1",
+          "title": "Passage 1: The Benefits of Cycling",
+          "content": "Cycling is becoming increasingly popular in cities around the world. Many people are choosing bicycles as their main mode of transport for several reasons.\n\nOne major benefit of cycling is improved health. Regular cycling strengthens muscles, improves cardiovascular fitness, and helps maintain a healthy weight. It's a low-impact exercise that's suitable for people of all ages. Studies show that people who cycle regularly have lower risks of heart disease, diabetes, and some types of cancer.\n\nCycling is also good for the environment. Unlike cars, bicycles don't produce air pollution or greenhouse gases. They require much less energy to manufacture than cars and don't need fossil fuels to operate. By choosing to cycle instead of drive, individuals can significantly reduce their carbon footprint.\n\nFrom an economic perspective, cycling is much cheaper than driving a car or using public transport. The initial cost of a bicycle is relatively low, and maintenance costs are minimal. Cyclists don't need to pay for fuel, insurance, or parking fees. Many employers now offer cycle-to-work schemes that provide tax benefits for people who commute by bicycle.\n\nUrban planning has begun to reflect the growing popularity of cycling. Many cities are investing in cycle lanes, secure parking facilities, and bike-sharing programs. These improvements make cycling safer and more convenient, encouraging even more people to take up cycling.\n\nDespite these benefits, some challenges remain. Safety concerns deter many potential cyclists, especially in cities with heavy traffic and inadequate cycling infrastructure. Weather conditions can also be a barrier in some regions. However, with proper safety equipment and clothing, these challenges can be overcome.\n\nOverall, the growth of cycling represents a positive trend for public health, the environment, and urban living. As cities continue to develop cycling infrastructure, this trend is likely to continue.",
+          "questions": [
+            {
+              "id": "reading-q1",
+              "type": "multiple-choice",
+              "questionText": "What is the main topic of the passage?",
+              "options": ["A) Urban transport systems", "B) Environmental protection", "C) Public health issues", "D] Benefits of cycling"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q2",
+              "type": "multiple-choice",
+              "questionText": "What health benefit is NOT mentioned?",
+              "options": ["A) Stronger muscles", "B) Better cardiovascular fitness", "C) Healthy weight maintenance", "D] Improved eyesight"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q3",
+              "type": "multiple-choice",
+              "questionText": "Why is cycling good for the environment?",
+              "options": ["A) Less traffic noise", "B) Smaller roads needed", "C) Fewer accidents", "D] No air pollution"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q4",
+              "type": "multiple-choice",
+              "questionText": "What economic advantage is mentioned?",
+              "options": ["A) High resale value", "B) Government subsidies", "C) Free maintenance", "D] Low costs"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q5",
+              "type": "multiple-choice",
+              "questionText": "What are cities investing in?",
+              "options": ["A) Car-free zones", "B) Electric buses", "C) Pedestrian bridges", "D] Cycle lanes"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q6",
+              "type": "multiple-choice",
+              "questionText": "What deters potential cyclists?",
+              "options": ["A) High costs", "B) Lack of skills", "C) Social stigma", "D] Safety concerns"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q7",
+              "type": "multiple-choice",
+              "questionText": "What can help overcome weather challenges?",
+              "options": ["A) Indoor cycling", "B) Public transport", "C) Car sharing", "D] Proper clothing"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q8",
+              "type": "multiple-choice",
+              "questionText": "What do employers offer?",
+              "options": ["A) Free bicycles", "B) Shower facilities", "C) Safety training", "D] Cycle-to-work schemes"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q9",
+              "type": "multiple-choice",
+              "questionText": "What is the author's overall view?",
+              "options": ["A) Concerned about safety", "B) Neutral about benefits", "C) Critical of infrastructure", "D] Positive about cycling growth"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q10",
+              "type": "multiple-choice",
+              "questionText": "What trend is likely to continue?",
+              "options": ["A) Car manufacturing", "B) Public transport use", "C) Urban population growth", "D] Growth of cycling"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage2",
+          "title": "Passage 2: The History of Coffee",
+          "content": "Coffee is one of the most popular beverages in the world, with a history dating back centuries. The origins of coffee are believed to be in Ethiopia, where legend says a goat herder discovered the energizing effects of coffee beans.\n\nFrom Ethiopia, coffee spread to the Arabian Peninsula. By the 15th century, coffee was being grown in Yemen and traded throughout the Middle East. Coffee houses became important social centers where people gathered to discuss politics, business, and culture. These establishments were sometimes called 'schools of the wise' because of the intellectual conversations that took place there.\n\nCoffee reached Europe in the 17th century through trade with the Ottoman Empire. Initially, there was some opposition from religious leaders who called it the 'bitter invention of Satan.' However, after Pope Clement VIII tasted coffee and approved it, its popularity grew rapidly. The first European coffee house opened in Venice in 1645.\n\nIn the 18th century, coffee cultivation spread to the Americas. The French brought coffee plants to Martinique, and from there, coffee growing expanded throughout Central and South America. Brazil eventually became the world's largest coffee producer, a position it still holds today.\n\nThe industrial revolution brought significant changes to coffee production and consumption. Instant coffee was invented in the early 20th century, making preparation quicker and easier. The invention of vacuum packaging helped preserve freshness, allowing coffee to be transported over long distances.\n\nToday, coffee is a global industry worth billions of dollars. Specialty coffee shops have become ubiquitous in cities worldwide. There's growing interest in sustainable and fair trade coffee, which ensures better conditions for coffee farmers.\n\nDespite its long history, coffee continues to evolve. New brewing methods and coffee varieties are constantly being developed. The story of coffee demonstrates how a simple beverage can have a profound impact on global culture and economy.",
+          "questions": [
+            {
+              "id": "reading-q11",
+              "type": "multiple-choice",
+              "questionText": "Where did coffee originate?",
+              "options": ["A) Yemen", "B) Turkey", "C) Brazil", "D] Ethiopia"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q12",
+              "type": "multiple-choice",
+              "questionText": "What were coffee houses called?",
+              "options": ["A) Houses of knowledge", "B) Centers of learning", "C) Places of discussion", "D] Schools of the wise"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q13",
+              "type": "multiple-choice",
+              "questionText": "How did coffee reach Europe?",
+              "options": ["A) Through explorers", "B) Through colonists", "C) Through missionaries", "D] Through Ottoman trade"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q14",
+              "type": "multiple-choice",
+              "questionText": "Who approved coffee for Christians?",
+              "options": ["A) The French king", "B) Venetian merchants", "C) English nobles", "D] Pope Clement VIII"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q15",
+              "type": "multiple-choice",
+              "questionText": "Where was the first European coffee house?",
+              "options": ["A) Paris", "B) London", "C) Vienna", "D] Venice"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q16",
+              "type": "multiple-choice",
+              "questionText": "Which country is the largest coffee producer?",
+              "options": ["A) Colombia", "B) Vietnam", "C) Indonesia", "D] Brazil"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q17",
+              "type": "multiple-choice",
+              "questionText": "What was invented in the 20th century?",
+              "options": ["A) Espresso machine", "B) Coffee filter", "C) Coffee maker", "D] Instant coffee"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q18",
+              "type": "multiple-choice",
+              "questionText": "What helped preserve coffee during transport?",
+              "options": ["A) Refrigeration", "B) Chemical additives", "C) Glass containers", "D] Vacuum packaging"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q19",
+              "type": "multiple-choice",
+              "questionText": "What type of coffee is growing in popularity?",
+              "options": ["A) Organic coffee", "B) Decaffeinated coffee", "C) Flavoured coffee", "D] Fair trade coffee"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q20",
+              "type": "multiple-choice",
+              "questionText": "What does coffee's story demonstrate?",
+              "options": ["A) Importance in religion", "B) Role in colonialism", "C) Effect on health", "D] Impact on global culture"],
+              "correctAnswer": "D"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage3",
+          "title": "Passage 3: The Importance of Sleep",
+          "content": "Sleep is essential for good health and well-being. Despite this, many people don't get enough quality sleep. Understanding the importance of sleep can help people prioritize this vital activity.\n\nSleep plays a crucial role in physical health. During sleep, the body repairs tissues, builds bone and muscle, and strengthens the immune system. Lack of sleep has been linked to various health problems, including obesity, heart disease, and diabetes. Adults typically need 7-9 hours of sleep per night for optimal health.\n\nMental health is also closely connected to sleep. Sleep helps process emotions and consolidate memories. People who get adequate sleep tend to have better concentration, problem-solving skills, and creativity. Chronic sleep deprivation can contribute to anxiety, depression, and other mental health issues.\n\nThere are several stages of sleep, each with different functions. Light sleep helps with memory and learning. Deep sleep is important for physical restoration. REM (Rapid Eye Movement) sleep, when most dreaming occurs, is crucial for emotional regulation and creative thinking.\n\nModern lifestyle factors often interfere with sleep. The use of electronic devices before bed can disrupt natural sleep patterns because of the blue light they emit. Irregular work schedules, stress, and poor sleep environments also contribute to sleep problems.\n\nImproving sleep quality involves developing good sleep habits. Maintaining a consistent sleep schedule, even on weekends, helps regulate the body's internal clock. Creating a comfortable sleep environment - cool, dark, and quiet - promotes better sleep. Avoiding caffeine and heavy meals before bedtime can also help.\n\nFor those with persistent sleep problems, professional help may be necessary. Sleep disorders like insomnia and sleep apnea require medical treatment. However, for most people, simple lifestyle changes can significantly improve sleep quality.\n\nPrioritizing sleep is one of the most effective ways to improve overall health and quality of life. As research continues to reveal the extensive benefits of sleep, its importance becomes increasingly clear.",
+          "questions": [
+            {
+              "id": "reading-q21",
+              "type": "multiple-choice",
+              "questionText": "What is the main topic of the passage?",
+              "options": ["A) Sleep disorders", "B) Dream analysis", "C) Mental health", "D] Importance of sleep"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q22",
+              "type": "multiple-choice",
+              "questionText": "How much sleep do adults typically need?",
+              "options": ["A) 6-8 hours", "B) 8-10 hours", "C) 5-7 hours", "D] 7-9 hours"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q23",
+              "type": "multiple-choice",
+              "questionText": "What physical health problem is linked to lack of sleep?",
+              "options": ["A) Cancer", "B) Arthritis", "C) Asthma", "D] Obesity"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q24",
+              "type": "multiple-choice",
+              "questionText": "What mental benefit comes from adequate sleep?",
+              "options": ["A) Faster learning", "B) Improved language skills", "C) Enhanced social skills", "D] Better concentration"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q25",
+              "type": "multiple-choice",
+              "questionText": "Which sleep stage is for physical restoration?",
+              "options": ["A) Light sleep", "B) REM sleep", "C) All stages", "D] Deep sleep"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q26",
+              "type": "multiple-choice",
+              "questionText": "What disrupts natural sleep patterns?",
+              "options": ["A) Reading books", "B) Warm rooms", "C) Quiet environments", "D] Electronic devices"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q27",
+              "type": "multiple-choice",
+              "questionText": "What helps regulate the body clock?",
+              "options": ["A) Sleeping pills", "B) Daytime naps", "C) Exercise", "D] Consistent sleep schedule"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q28",
+              "type": "multiple-choice",
+              "questionText": "What should be avoided before bedtime?",
+              "options": ["A) Water", "B) Reading", "C) Meditation", "D] Caffeine"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q29",
+              "type": "multiple-choice",
+              "questionText": "What requires medical treatment?",
+              "options": ["A) Occasional insomnia", "B) Bad dreams", "C) Snoring", "D] Sleep disorders"],
+              "correctAnswer": "D"
+            },
+            {
+              "id": "reading-q30",
+              "type": "multiple-choice",
+              "questionText": "What is one of the most effective health improvements?",
+              "options": ["A) Healthy eating", "B) Regular exercise", "C) Stress management", "D] Prioritizing sleep"],
+              "correctAnswer": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "description": "60 minutes",
+      "tasks": [
+        {
+          "id": "writing-task1",
+          "title": "Writing Task 1",
+          "instructions": "You should spend about 20 minutes on this task. The table below shows the percentage of students choosing different university subjects in a European country in 1990 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+          "taskType": "Academic",
+          "wordCountMin": 150,
+          "timeLimit": 20,
+          "description": "You will be presented with a table showing student subject choices over time.",
+          "sampleData": {
+            "type": "table",
+            "title": "University Subject Choices (1990 vs 2020)",
+            "data": {
+              "Subjects": ["Business", "Engineering", "Arts", "Science", "Medicine"],
+              "1990": ["15%", "20%", "25%", "18%", "22%"],
+              "2020": ["28%", "22%", "15%", "20%", "15%"]
+            },
+            "description": "Table showing changes in percentage of students choosing different university subjects between 1990 and 2020"
+          },
+          "assessmentCriteria": [
+            "Task Achievement",
+            "Coherence and Cohesion", 
+            "Lexical Resource",
+            "Grammatical Range and Accuracy"
+          ]
+        },
+        {
+          "id": "writing-task2",
+          "title": "Writing Task 2",
+          "instructions": "You should spend about 40 minutes on this task. Some people think that children should start learning a foreign language at primary school, while others believe it is better to wait until secondary school. Discuss both views and give your own opinion. Write at least 250 words.",
+          "taskType": "Essay",
+          "wordCountMin": 250,
+          "timeLimit": 40,
+          "description": "You will be presented with contrasting views on language learning age and asked to discuss them.",
+          "essayType": "Discussion",
+          "topics": [
+            "Language learning",
+            "Primary education",
+            "Child development"
+          ],
+          "keyPoints": [
+            "Arguments for starting foreign languages early",
+            "Arguments for waiting until secondary school",
+            "Synthesis and personal opinion"
+          ],
+          "assessmentCriteria": [
+            "Task Response",
+            "Coherence and Cohesion",
+            "Lexical Resource", 
+            "Grammatical Range and Accuracy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speaking",
+      "title": "Speaking",
+      "description": "11-14 minutes",
+      "parts": [
+        {
+          "id": "speaking-part1",
+          "title": "Part 1: Introduction and Interview",
+          "instructions": "The examiner will ask you questions about yourself and familiar topics.",
+          "topics": [
+            "Your home",
+            "Daily routine", 
+            "Food and cooking",
+            "Leisure activities"
+          ],
+          "sampleQuestions": [
+            "Where do you live?",
+            "What do you like about your home?",
+            "What is your typical daily routine?",
+            "Do you enjoy cooking?",
+            "What kind of food do you like?",
+            "How do you usually spend your free time?"
+          ],
+          "timeLimit": "4-5 minutes"
+        },
+        {
+          "id": "speaking-part2",
+          "title": "Part 2: Individual Long Turn",
+          "instructions": "You will be given a topic and have one minute to prepare before speaking for 1-2 minutes.",
+          "taskCard": {
+            "topic": "Describe a book you recently read.",
+            "points": [
+              "What the book is about",
+              "Why you chose to read it", 
+              "What you liked about it",
+              "Whether you would recommend it to others"
+            ]
+          },
+          "timeLimit": "3-4 minutes"
+        },
+        {
+          "id": "speaking-part3",
+          "title": "Part 3: Two-way Discussion",
+          "instructions": "The examiner will ask further questions connected to the topic in Part 2.",
+          "sampleQuestions": [
+            "How popular is reading in your country?",
+            "Do you think people read more or less than in the past?",
+            "What are the benefits of reading?",
+            "How has technology affected reading habits?",
+            "Do you think printed books will disappear in the future?"
+          ],
+          "timeLimit": "4-5 minutes"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "5.0",
+    "author": "IELTS Academic Testing System",
+    "notes": "IELTS Academic Test for 01 December 2024 with realistic questions and common topics. This test includes typical IELTS themes like health, environment, education, and daily life, suitable for band 5.0 candidates."
+  }
+}
