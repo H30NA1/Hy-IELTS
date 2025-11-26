@@ -1,8 +1,8 @@
 {
-  "testId": "IELTS-ACADEMIC-5.0-01-12-2024",
-  "testDate": "2024-12-01",
-  "testTitle": "IELTS Academic Test - 01 December 2024",
-  "totalQuestions": 110,
+  "testId": "IELTS-ACADEMIC-5.0-26-11-2025",
+  "testDate": "2025-11-26",
+  "testTitle": "IELTS Academic Test - 26 November 2025",
+  "totalQuestions": 120,
   "difficultyLevel": "Academic 5.0",
   "sections": [
     {
@@ -12,399 +12,400 @@
       "parts": [
         {
           "partNumber": 1,
-          "title": "Part 1: Conversation about renting a flat",
+          "title": "Part 1: Conversation about joining a sports club",
           "instructions": "Listen to the conversation and answer questions 1-10.",
           "voiceProfiles": {
             "female": {
-              "pitch": 1.3, "rate": 1.1, "volume": 0.9, "name": "Estate Agent",
-              "variation": 0.08, "accent": "British", "emotion": "professional", "speakingType": "conversational"
+              "pitch": 1.3, "rate": 1.1, "volume": 0.9, "name": "Sports Club Manager",
+              "variation": 0.08, "accent": "British", "emotion": "friendly", "speakingType": "conversational"
             },
             "male": {
-              "pitch": 0.6, "rate": 1.0, "volume": 0.85, "name": "Student",
+              "pitch": 0.6, "rate": 1.0, "volume": 0.85, "name": "New Member",
               "variation": 0.07, "accent": "International", "emotion": "interested", "speakingType": "conversational"
             }
           },
           "script": {
-            "narrator": "You will hear a conversation between a student and an estate agent about renting a flat. First, you have some time to look at questions 1 to 10.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+            "narrator": "You will hear a conversation between a sports club manager and a man who wants to join the club. First, you have some time to look at questions 1 to 10.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
             "conversation": [
-              {"speaker": "female", "text": "Good morning, City Estates. How can I help you?"},
-              {"speaker": "male", "text": "Hello, I'm looking for a one-bedroom flat to rent near the university."},
-              {"speaker": "female", "text": "Certainly. We have several properties available. What's your budget?"},
-              {"speaker": "male", "text": "I can pay up to £800 per month, including bills."},
-              {"speaker": "female", "text": "That should be fine. We have a nice flat on Garden Street for £750 per month. It's about 15 minutes walk from the university."},
-              {"speaker": "male", "text": "What's included in the rent?"},
-              {"speaker": "female", "text": "Water and council tax are included, but you'll need to pay for electricity and internet separately."},
-              {"speaker": "male", "text": "Is the flat furnished?"},
-              {"speaker": "female", "text": "Yes, it comes with a bed, desk, sofa, and kitchen appliances. There's also a washing machine in the kitchen."},
-              {"speaker": "male", "text": "That sounds good. Can I see it today?"},
-              {"speaker": "female", "text": "I have a viewing available at 2pm this afternoon, or tomorrow morning at 10am."},
-              {"speaker": "male", "text": "2pm today is perfect. What's the address?"},
-              {"speaker": "female", "text": "It's 25 Garden Street, flat number 4. The postcode is GL12 8PQ."},
-              {"speaker": "male", "text": "Great. Do I need to bring anything?"},
-              {"speaker": "female", "text": "Just some ID, and if you like the flat, we'll need one month's rent as deposit and the first month's rent in advance."},
-              {"speaker": "male", "text": "How much is the deposit?"},
-              {"speaker": "female", "text": "It's £750, the same as one month's rent. You'll get it back when you move out, if there's no damage."},
-              {"speaker": "male", "text": "Okay, thank you. I'll see you at 2pm."},
-              {"speaker": "female", "text": "Perfect. My name is Sarah, by the way. See you then."}
+              {"speaker": "female", "text": "Good morning, City Sports Club. How can I help you?"},
+              {"speaker": "male", "text": "Hello, I'm interested in joining the club. Could you tell me about the membership options?"},
+              {"speaker": "female", "text": "Certainly. We have three main types of membership. The basic membership is £35 per month, which gives you access to the gym and swimming pool."},
+              {"speaker": "male", "text": "What about classes? I'm particularly interested in yoga and tennis."},
+              {"speaker": "female", "text": "For classes, you'd need our premium membership at £50 per month. That includes all group classes and court bookings."},
+              {"speaker": "male", "text": "Is there a student discount available?"},
+              {"speaker": "female", "text": "Yes, students get 20% off all memberships. You'll need to show your student ID when you register."},
+              {"speaker": "male", "text": "Great. What are your opening hours?"},
+              {"speaker": "female", "text": "We're open from 6am to 10pm on weekdays, and 8am to 8pm on weekends. The swimming pool closes one hour earlier for cleaning."},
+              {"speaker": "male", "text": "Do you have parking facilities?"},
+              {"speaker": "female", "text": "Yes, we have a car park with 150 spaces. It's free for members for up to three hours."},
+              {"speaker": "male", "text": "What about public transport? I don't have a car."},
+              {"speaker": "female", "text": "The number 25 bus stops right outside, and the nearest train station is about 10 minutes walk away."},
+              {"speaker": "male", "text": "Can I try the facilities before joining?"},
+              {"speaker": "female", "text": "Of course. We offer a free one-day trial pass. You can use all the facilities and even join one group class."},
+              {"speaker": "male", "text": "That sounds perfect. How do I arrange that?"},
+              {"speaker": "female", "text": "Just come to reception with some ID, and we'll set it up for you. What's your name?"},
+              {"speaker": "male", "text": "It's David Chen."},
+              {"speaker": "female", "text": "Okay David, I'll make a note. We look forward to seeing you."}
             ]
           },
           "questions": [
             {
               "id": "listening-q1",
               "type": "multiple-choice",
-              "questionText": "What type of property is the student looking for?",
-              "options": ["A) One-bedroom flat", "B) Two-bedroom flat", "C) Studio apartment", "D] Shared house"],
-              "correctAnswer": "A"
+              "questionText": "How much is the basic membership?",
+              "options": ["A) £25 per month", "B) £35 per month", "C) £45 per month", "D) £50 per month"],
+              "correctAnswer": "B"
             },
             {
               "id": "listening-q2",
               "type": "multiple-choice",
-              "questionText": "What is the maximum budget?",
-              "options": ["A) £800 per month", "B) £750 per month", "C) £700 per month", "D] £850 per month"],
+              "questionText": "Which membership includes group classes?",
+              "options": ["A) Premium membership", "B) Basic membership", "C) Student membership", "D) Family membership"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q3",
               "type": "multiple-choice",
-              "questionText": "How far is the flat from the university?",
-              "options": ["A) 15 minutes walk", "B) 10 minutes walk", "C) 20 minutes walk", "D] 5 minutes walk"],
-              "correctAnswer": "A"
+              "questionText": "What discount do students receive?",
+              "options": ["A) 10%", "B) 15%", "C) 20%", "D) 25%"],
+              "correctAnswer": "C"
             },
             {
               "id": "listening-q4",
               "type": "multiple-choice",
-              "questionText": "What is included in the rent?",
-              "options": ["A) Water and council tax", "B) Electricity and internet", "C) All bills", "D] Only water"],
-              "correctAnswer": "A"
+              "questionText": "When does the club close on weekdays?",
+              "options": ["A) 9pm", "B) 10pm", "C) 11pm", "D) Midnight"],
+              "correctAnswer": "B"
             },
             {
               "id": "listening-q5",
               "type": "multiple-choice",
-              "questionText": "What furniture is mentioned?",
-              "options": ["A) Bed, desk, sofa", "B) Table, chairs, wardrobe", "C) Bed, table, chairs", "D] Sofa, table, wardrobe"],
+              "questionText": "What closes one hour earlier?",
+              "options": ["A) Swimming pool", "B) Gym", "C) Tennis courts", "D) Reception"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q6",
               "type": "multiple-choice",
-              "questionText": "When is the viewing appointment?",
-              "options": ["A) 2pm today", "B) 10am tomorrow", "C) 4pm today", "D] 11am tomorrow"],
-              "correctAnswer": "A"
+              "questionText": "How many parking spaces are available?",
+              "options": ["A) 100", "B) 120", "C) 150", "D) 200"],
+              "correctAnswer": "C"
             },
             {
               "id": "listening-q7",
               "type": "multiple-choice",
-              "questionText": "What is the flat number?",
-              "options": ["A) Flat 4", "B) Flat 2", "C) Flat 5", "D] Flat 3"],
+              "questionText": "Which bus stops outside the club?",
+              "options": ["A) Number 25", "B) Number 52", "C) Number 15", "D) Number 20"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q8",
               "type": "multiple-choice",
-              "questionText": "What should the student bring?",
-              "options": ["A) ID", "B) Deposit money", "C) Reference letter", "D] Bank statement"],
+              "questionText": "What is offered for free?",
+              "options": ["A) One-day trial", "B) One-week membership", "C) Personal training session", "D) Tennis lesson"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q9",
               "type": "multiple-choice",
-              "questionText": "How much is the deposit?",
-              "options": ["A) £750", "B) £800", "C) £700", "D] £500"],
+              "questionText": "What is needed for the trial?",
+              "options": ["A) ID", "B) Student card", "C) Payment", "D) Medical certificate"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q10",
               "type": "multiple-choice",
-              "questionText": "What is the estate agent's name?",
-              "options": ["A) Sarah", "B) Susan", "C) Sandra", "D] Sophia"],
+              "questionText": "What is the man's name?",
+              "options": ["A) David Chen", "B) Daniel Chen", "C) David Chan", "D) Daniel Chan"],
               "correctAnswer": "A"
             }
           ]
         },
         {
           "partNumber": 2,
-          "title": "Part 2: Talk about student services",
+          "title": "Part 2: Talk about a museum exhibition",
           "instructions": "Listen to the talk and answer questions 11-20.",
           "voiceProfiles": {
-            "female": {
-              "pitch": 1.2, "rate": 1.0, "volume": 0.9, "name": "Student Advisor",
-              "variation": 0.06, "accent": "British", "emotion": "helpful", "speakingType": "monologue"
+            "male": {
+              "pitch": 0.5, "rate": 1.0, "volume": 0.9, "name": "Museum Guide",
+              "variation": 0.06, "accent": "British", "emotion": "enthusiastic", "speakingType": "monologue"
             }
           },
           "script": {
-            "narrator": "Now turn to Part 2. You will hear a student advisor talking about university services. Look at questions 11 to 20.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+            "narrator": "Now turn to Part 2. You will hear a guide talking about a museum exhibition. Look at questions 11 to 20.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
             "conversation": [
-              {"speaker": "female", "text": "Good morning everyone. I'm here to tell you about the support services available at the university. First, the Student Support Office is located on the ground floor of the Main Building, room G15. We're open from 9am to 5pm, Monday to Friday. We can help with accommodation issues, financial advice, and personal problems. For academic help, the Learning Centre offers free workshops on study skills, essay writing, and exam preparation. These run every Tuesday and Thursday at 2pm in room L42. The university medical centre is next to the sports hall. You need to register with them to use their services. For mental health support, we have counsellors available every weekday. Appointments can be made online or at the Student Support Office. The careers service helps with CV writing, job applications, and interview practice. They're located in the Business School building, room B207. Finally, the Students' Union organizes social events and clubs. Their office is in the Student Union building, open until 6pm daily. Remember, all these services are free for registered students."}
+              {"speaker": "male", "text": "Good afternoon everyone and welcome to the City Museum. I'm here to tell you about our special exhibition 'Ancient Civilizations' which runs from November until March next year. This exhibition features artifacts from three ancient cultures: Egypt, Rome, and China. Let me start with the Egyptian section, which includes real mummies, jewellery, and pottery dating back over 3,000 years. The Roman section displays coins, weapons, and household items from the Roman Empire. Finally, the Chinese section shows beautiful silk textiles, bronze vessels, and early porcelain. The exhibition is open daily from 9am to 5pm, with extended hours until 7pm on Fridays. Admission is £12 for adults, £8 for students and seniors, and free for children under 12. We recommend allowing at least two hours to see everything properly. Guided tours are available at 11am and 2pm daily, and these are included in the admission price. There's also an audio guide available in five languages: English, Spanish, French, German, and Mandarin. The museum shop has replica artifacts and books about ancient history. Photography is allowed but without flash. The nearest car park is on Queen Street, about five minutes walk away. Alternatively, the museum is easily reached by bus or underground. The nearest tube station is Museum Station on the Central Line. Are there any questions before we begin our tour?"}
             ]
           },
           "questions": [
             {
               "id": "listening-q11",
               "type": "multiple-choice",
-              "questionText": "Where is the Student Support Office?",
-              "options": ["A) Ground floor, Main Building", "B) First floor, Library", "C) Second floor, Admin Building", "D] Basement, Student Union"],
+              "questionText": "How long does the exhibition run?",
+              "options": ["A) Until March", "B) Until April", "C) Until May", "D) Until June"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q12",
               "type": "multiple-choice",
-              "questionText": "What are the opening hours?",
-              "options": ["A) 9am-5pm, Monday-Friday", "B) 8am-6pm, Monday-Friday", "C) 10am-4pm, Monday-Saturday", "D] 9am-5pm, Monday-Saturday"],
+              "questionText": "Which ancient civilization is NOT mentioned?",
+              "options": ["A) Greece", "B) Egypt", "C) Rome", "D) China"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q13",
               "type": "multiple-choice",
-              "questionText": "What help is NOT mentioned for Student Support?",
-              "options": ["A) Travel booking", "B) Accommodation", "C) Financial advice", "D] Personal problems"],
+              "questionText": "What does the Egyptian section include?",
+              "options": ["A) Mummies and jewellery", "B) Coins and weapons", "C) Silk and porcelain", "D) Paintings and statues"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q14",
               "type": "multiple-choice",
-              "questionText": "When are study skills workshops?",
-              "options": ["A) Tuesday and Thursday", "B) Monday and Wednesday", "C) Wednesday and Friday", "D] Monday and Friday"],
+              "questionText": "When are extended opening hours?",
+              "options": ["A) Fridays", "B) Saturdays", "C) Sundays", "D) Mondays"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q15",
               "type": "multiple-choice",
-              "questionText": "Where is the medical centre?",
-              "options": ["A) Next to sports hall", "B) In Main Building", "C) Near library", "D] In Student Union"],
+              "questionText": "How much is student admission?",
+              "options": ["A) £8", "B) £10", "C) £12", "D) £15"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q16",
               "type": "multiple-choice",
-              "questionText": "How can you book counselling?",
-              "options": ["A) Online or at office", "B) By phone only", "C) Email only", "D] In person only"],
+              "questionText": "How long does the guide recommend for visiting?",
+              "options": ["A) 2 hours", "B) 3 hours", "C) 4 hours", "D) 5 hours"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q17",
               "type": "multiple-choice",
-              "questionText": "Where is the careers service?",
-              "options": ["A) Business School", "B) Main Building", "C) Library", "D] Student Union"],
+              "questionText": "What languages are available for audio guides?",
+              "options": ["A) 5 languages", "B) 6 languages", "C) 7 languages", "D) 8 languages"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q18",
               "type": "multiple-choice",
-              "questionText": "What does careers service help with?",
-              "options": ["A) CV writing and interviews", "B) Academic writing", "C) Personal problems", "D] Health issues"],
+              "questionText": "Where is the nearest car park?",
+              "options": ["A) Queen Street", "B) King Street", "C) Museum Road", "D) Central Avenue"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q19",
               "type": "multiple-choice",
-              "questionText": "Where is the Students' Union office?",
-              "options": ["A) Student Union building", "B) Main Building", "C) Library", "D] Sports centre"],
+              "questionText": "Which tube line serves Museum Station?",
+              "options": ["A) Central Line", "B) Northern Line", "C) Piccadilly Line", "D) District Line"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q20",
               "type": "multiple-choice",
-              "questionText": "Are the services free?",
-              "options": ["A) Yes, for registered students", "B) No, payment required", "C) Some are free", "D] Only for first year"],
+              "questionText": "What is restricted in photography?",
+              "options": ["A) Using flash", "B) Taking videos", "C) Using tripods", "D) Photographing artifacts"],
               "correctAnswer": "A"
             }
           ]
         },
         {
           "partNumber": 3,
-          "title": "Part 3: Discussion about a research project",
+          "title": "Part 3: Discussion between students about a presentation",
           "instructions": "Listen to the discussion and answer questions 21-30.",
           "voiceProfiles": {
             "female": {
-              "pitch": 1.3, "rate": 1.1, "volume": 0.85, "name": "Lisa",
-              "variation": 0.09, "accent": "British", "emotion": "thoughtful", "speakingType": "discussion"
+              "pitch": 1.3, "rate": 1.1, "volume": 0.85, "name": "Sarah",
+              "variation": 0.09, "accent": "British", "emotion": "concerned", "speakingType": "discussion"
             },
             "male": {
-              "pitch": 0.7, "rate": 1.0, "volume": 0.9, "name": "David",
-              "variation": 0.08, "accent": "British", "emotion": "engaged", "speakingType": "discussion"
+              "pitch": 0.7, "rate": 1.0, "volume": 0.9, "name": "James",
+              "variation": 0.08, "accent": "British", "emotion": "helpful", "speakingType": "discussion"
             }
           },
           "script": {
-            "narrator": "Now turn to Part 3. You will hear two students discussing a research project. Look at questions 21 to 30.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+            "narrator": "Now turn to Part 3. You will hear two students discussing a group presentation. Look at questions 21 to 30.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
             "conversation": [
-              {"speaker": "female", "text": "Hi David, have you started the business studies research project yet?"},
-              {"speaker": "male", "text": "Not really, Lisa. I was thinking about focusing on consumer behavior in online shopping. What about you?"},
-              {"speaker": "female", "text": "That sounds interesting. I was considering social media marketing strategies. Maybe we could combine these topics?"},
-              {"speaker": "male", "text": "Good idea. How about we research how social media influences online shopping decisions?"},
-              {"speaker": "female", "text": "Perfect. We need to submit the project proposal by next Friday, right?"},
-              {"speaker": "male", "text": "Yes, and the final project is due in four weeks. We should divide the work. I can research the theoretical background."},
-              {"speaker": "female", "text": "Okay, I'll look at case studies of successful social media campaigns. We should also create a survey for data collection."},
-              {"speaker": "male", "text": "How many respondents do we need? I think Dr. Jones said at least 50."},
-              {"speaker": "female", "text": "Yes, 50 minimum. We can survey university students - that would be easy to reach."},
-              {"speaker": "male", "text": "Good plan. When should we meet to discuss progress?"},
-              {"speaker": "female", "text": "How about we meet every Wednesday afternoon in the library? That gives us time to work individually first."},
-              {"speaker": "male", "text": "Wednesday works for me. Should we use any specific software for data analysis?"},
-              {"speaker": "female", "text": "I think Excel should be sufficient for our level. We can create charts and graphs to present the findings."},
-              {"speaker": "male", "text": "Okay, and for the report, we need to follow the Harvard referencing style."},
-              {"speaker": "female", "text": "Yes, and we need at least 15 references from academic sources."},
-              {"speaker": "male", "text": "I'll start searching the library database this week. Let's meet next Wednesday at 2pm."},
-              {"speaker": "female", "text": "Perfect. I'll prepare a draft survey questionnaire by then."},
-              {"speaker": "male", "text": "Great, see you next week then."}
+              {"speaker": "female", "text": "Hi James, I'm worried about our history presentation next week. Have you started preparing yet?"},
+              {"speaker": "male", "text": "I've done some research, Sarah. Our topic is the Industrial Revolution, right? I found some good information about the textile industry."},
+              {"speaker": "female", "text": "Yes, that's correct. I was thinking we should focus on three main areas: technological changes, social impacts, and economic effects."},
+              {"speaker": "male", "text": "That sounds good. How about we divide the research? I can cover the technological changes and you research the social impacts. Then we can both work on the economic effects."},
+              {"speaker": "female", "text": "Okay, that works for me. When should we meet to combine our research?"},
+              {"speaker": "male", "text": "How about Thursday afternoon? That gives us two days to do individual research first."},
+              {"speaker": "female", "text": "Thursday is good for me. Should we meet in the library or the student common room?"},
+              {"speaker": "male", "text": "Let's meet in the library study room. It's quieter there. I'll book room 3B for 2pm."},
+              {"speaker": "female", "text": "Perfect. What about visual aids for the presentation? Do you think we should use PowerPoint or posters?"},
+              {"speaker": "male", "text": "I think PowerPoint would be better. We can include historical images and graphs. I'm good with PowerPoint, so I can create the slides."},
+              {"speaker": "female", "text": "Great. How long does the presentation need to be?"},
+              {"speaker": "male", "text": "Dr. Brown said 15 minutes, plus 5 minutes for questions. So we should prepare about 12-13 slides."},
+              {"speaker": "female", "text": "Should we practice together before the actual presentation?"},
+              {"speaker": "male", "text": "Definitely. How about we practice on Monday afternoon? That gives us time to make changes if needed."},
+              {"speaker": "female", "text": "Monday works for me. Where should we practice?"},
+              {"speaker": "male", "text": "We can use the empty classroom on the second floor. I'll check if it's available."},
+              {"speaker": "female", "text": "Okay, thanks James. I feel better now that we have a plan."},
+              {"speaker": "male", "text": "No problem. Don't worry, we'll do fine. Just make sure to bring your notes on Thursday."},
+              {"speaker": "female", "text": "I will. See you then!"}
             ]
           },
           "questions": [
             {
               "id": "listening-q21",
               "type": "multiple-choice",
-              "questionText": "What subject is the project for?",
-              "options": ["A) Business studies", "B) Marketing", "C) Psychology", "D] Sociology"],
+              "questionText": "What subject is the presentation for?",
+              "options": ["A) History", "B) Economics", "C) Technology", "D) Social studies"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q22",
               "type": "multiple-choice",
-              "questionText": "What is David's initial topic idea?",
-              "options": ["A) Online shopping behavior", "B) Social media marketing", "C) Consumer rights", "D] Advertising techniques"],
+              "questionText": "What is the specific topic?",
+              "options": ["A) Industrial Revolution", "B) French Revolution", "C) Agricultural Revolution", "D) Digital Revolution"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q23",
               "type": "multiple-choice",
-              "questionText": "What is their combined topic?",
-              "options": ["A) Social media and online shopping", "B) Traditional vs online marketing", "C) Consumer protection laws", "D] Advertising effectiveness"],
+              "questionText": "What three areas will they cover?",
+              "options": ["A) Technology, social, economic", "B) Political, cultural, environmental", "C) Scientific, artistic, religious", "D) Military, educational, medical"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q24",
               "type": "multiple-choice",
-              "questionText": "When is the proposal due?",
-              "options": ["A) Next Friday", "B) This Friday", "C) In two weeks", "D] Next month"],
+              "questionText": "What part will James research?",
+              "options": ["A) Technological changes", "B) Social impacts", "C) Economic effects", "D) Political consequences"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q25",
               "type": "multiple-choice",
-              "questionText": "What will David research?",
-              "options": ["A) Theoretical background", "B) Case studies", "C) Survey design", "D] Data analysis"],
+              "questionText": "When will they meet to combine research?",
+              "options": ["A) Thursday", "B) Friday", "C) Monday", "D) Tuesday"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q26",
               "type": "multiple-choice",
-              "questionText": "How many survey respondents are needed?",
-              "options": ["A) At least 50", "B) At least 100", "C) At least 30", "D] At least 75"],
+              "questionText": "Where will they meet?",
+              "options": ["A) Library study room", "B) Student common room", "C) University cafe", "D) Empty classroom"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q27",
               "type": "multiple-choice",
-              "questionText": "When will they meet?",
-              "options": ["A) Wednesday afternoons", "B) Monday mornings", "C) Friday afternoons", "D] Thursday mornings"],
+              "questionText": "What visual aid will they use?",
+              "options": ["A) PowerPoint", "B) Posters", "C) Whiteboard", "D) Handouts"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q28",
               "type": "multiple-choice",
-              "questionText": "What software will they use?",
-              "options": ["A) Excel", "B) SPSS", "C) Python", "D] R"],
+              "questionText": "How long should the presentation be?",
+              "options": ["A) 15 minutes", "B) 20 minutes", "C) 25 minutes", "D) 30 minutes"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q29",
               "type": "multiple-choice",
-              "questionText": "What referencing style is required?",
-              "options": ["A) Harvard", "B) APA", "C) MLA", "D] Chicago"],
+              "questionText": "When will they practice?",
+              "options": ["A) Monday", "B) Tuesday", "C) Wednesday", "D) Thursday"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q30",
               "type": "multiple-choice",
-              "questionText": "How many references are needed?",
-              "options": ["A) At least 15", "B) At least 10", "C) At least 20", "D] At least 25"],
+              "questionText": "Where will they practice?",
+              "options": ["A) Empty classroom", "B) Library", "C) Common room", "D) Lecture hall"],
               "correctAnswer": "A"
             }
           ]
         },
         {
           "partNumber": 4,
-          "title": "Part 4: Lecture on healthy eating",
+          "title": "Part 4: Lecture on climate change",
           "instructions": "Listen to the lecture and answer questions 31-40.",
           "voiceProfiles": {
-            "male": {
-              "pitch": 0.5, "rate": 1.0, "volume": 0.9, "name": "Professor",
-              "variation": 0.07, "accent": "British", "emotion": "knowledgeable", "speakingType": "lecture"
+            "female": {
+              "pitch": 1.2, "rate": 1.0, "volume": 0.9, "name": "Professor",
+              "variation": 0.07, "accent": "British", "emotion": "serious", "speakingType": "lecture"
             }
           },
           "script": {
-            "narrator": "Now turn to Part 4. You will hear a lecture on healthy eating. Look at questions 31 to 40.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+            "narrator": "Now turn to Part 4. You will hear a lecture on climate change. Look at questions 31 to 40.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
             "conversation": [
-              {"speaker": "male", "text": "Good afternoon. Today we're discussing the principles of healthy eating and their importance for overall wellbeing. A balanced diet should include carbohydrates, proteins, fats, vitamins, and minerals. Carbohydrates provide energy and should make up about 45-65% of our daily calorie intake. Proteins are essential for growth and repair of body tissues. Good sources include meat, fish, eggs, and beans. Fats are also important for energy and vitamin absorption, but we should limit saturated fats and avoid trans fats. Fruits and vegetables provide essential vitamins, minerals, and fiber. Experts recommend eating at least five portions of fruit and vegetables daily. Processed foods often contain high levels of salt, sugar, and unhealthy fats, so they should be consumed in moderation. Drinking plenty of water is crucial for hydration and bodily functions. The average adult needs about 2 liters of water per day. Regular meals help maintain stable blood sugar levels and prevent overeating. Breakfast is particularly important as it provides energy for the day ahead. Planning meals in advance can help ensure a balanced diet and save time and money. In our next lecture, we'll discuss the relationship between diet and physical activity."}
+              {"speaker": "female", "text": "Good morning. Today we're going to discuss the main causes and effects of climate change. Climate change refers to long-term shifts in temperatures and weather patterns. While these shifts can be natural, since the 1800s, human activities have been the main driver of climate change. The primary cause is the burning of fossil fuels like coal, oil, and gas. This produces greenhouse gases that trap heat in the atmosphere. The main greenhouse gas is carbon dioxide, but methane and nitrous oxide are also significant contributors. Deforestation is another major cause, as trees absorb carbon dioxide and their removal increases atmospheric CO2 levels. The effects of climate change are widespread. We're seeing rising sea levels due to melting ice caps and glaciers. Extreme weather events like hurricanes and droughts are becoming more frequent and intense. Agriculture is affected through changes in growing seasons and water availability. Biodiversity is threatened as species struggle to adapt to changing conditions. To address climate change, we need to transition to renewable energy sources like solar and wind power. Energy efficiency improvements and changes in transportation systems are also crucial. International cooperation is essential, as shown by agreements like the Paris Agreement. Individuals can contribute by reducing energy consumption, using public transport, and supporting sustainable products. In our next lecture, we'll examine specific climate change solutions in more detail."}
             ]
           },
           "questions": [
             {
               "id": "listening-q31",
               "type": "multiple-choice",
-              "questionText": "What is the main topic?",
-              "options": ["A) Healthy eating", "B) Exercise benefits", "C) Weight loss", "D] Cooking methods"],
+              "questionText": "What is the main topic of the lecture?",
+              "options": ["A) Climate change", "B) Renewable energy", "C) Biodiversity", "D) International agreements"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q32",
               "type": "multiple-choice",
-              "questionText": "What do carbohydrates provide?",
-              "options": ["A) Energy", "B) Growth", "C) Repair", "D] Hydration"],
+              "questionText": "Since when have humans been the main cause of climate change?",
+              "options": ["A) 1800s", "B) 1900s", "C) 1700s", "D) 2000s"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q33",
               "type": "multiple-choice",
-              "questionText": "What percentage of calories should be carbohydrates?",
-              "options": ["A) 45-65%", "B) 30-40%", "C) 50-70%", "D] 40-60%"],
+              "questionText": "What is the primary cause mentioned?",
+              "options": ["A) Burning fossil fuels", "B) Deforestation", "C) Agriculture", "D) Industrial waste"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q34",
               "type": "multiple-choice",
-              "questionText": "What are proteins essential for?",
-              "options": ["A) Growth and repair", "B) Energy", "C) Vitamin absorption", "D] Hydration"],
+              "questionText": "What is the main greenhouse gas?",
+              "options": ["A) Carbon dioxide", "B) Methane", "C) Nitrous oxide", "D) Water vapour"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q35",
               "type": "multiple-choice",
-              "questionText": "What should we limit in our diet?",
-              "options": ["A) Saturated fats", "B) Proteins", "C) Carbohydrates", "D] Vegetables"],
+              "questionText": "What is mentioned as another major cause?",
+              "options": ["A) Deforestation", "B) Urbanization", "C) Population growth", "D) Manufacturing"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q36",
               "type": "multiple-choice",
-              "questionText": "How many fruit and vegetable portions are recommended?",
-              "options": ["A) At least 5", "B) At least 3", "C) At least 7", "D] At least 10"],
+              "questionText": "Why are sea levels rising?",
+              "options": ["A) Melting ice", "B) Heavy rainfall", "C) Earthquakes", "D) Coastal erosion"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q37",
               "type": "multiple-choice",
-              "questionText": "How much water do adults need daily?",
-              "options": ["A) About 2 liters", "B) About 1 liter", "C) About 3 liters", "D] About 1.5 liters"],
+              "questionText": "What extreme weather events are mentioned?",
+              "options": ["A) Hurricanes and droughts", "B) Floods and earthquakes", "C) Tornadoes and tsunamis", "D) Blizzards and heatwaves"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q38",
               "type": "multiple-choice",
-              "questionText": "Why are regular meals important?",
-              "options": ["A) Stable blood sugar", "B) More energy", "C) Better sleep", "D] Weight gain"],
+              "questionText": "What renewable energy sources are suggested?",
+              "options": ["A) Solar and wind", "B) Hydro and nuclear", "C) Geothermal and tidal", "D) Biomass and hydrogen"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q39",
               "type": "multiple-choice",
-              "questionText": "Which meal is particularly important?",
-              "options": ["A) Breakfast", "B) Lunch", "C) Dinner", "D] Snacks"],
+              "questionText": "What international agreement is mentioned?",
+              "options": ["A) Paris Agreement", "B) Kyoto Protocol", "C) Copenhagen Accord", "D) Montreal Protocol"],
               "correctAnswer": "A"
             },
             {
               "id": "listening-q40",
               "type": "multiple-choice",
               "questionText": "What will the next lecture cover?",
-              "options": ["A) Diet and exercise", "B) Cooking skills", "C) Food safety", "D] Eating disorders"],
+              "options": ["A) Climate change solutions", "B) Historical climate data", "C) Economic impacts", "D) Political challenges"],
               "correctAnswer": "A"
             }
           ]
@@ -425,70 +426,70 @@
               "id": "reading-q1",
               "type": "multiple-choice",
               "questionText": "What is the main topic of the passage?",
-              "options": ["A) Benefits of cycling", "B) Urban transport systems", "C) Environmental protection", "D] Public health issues"],
+              "options": ["A) Benefits of cycling", "B) Urban transport systems", "C) Environmental protection", "D) Public health issues"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q2",
               "type": "multiple-choice",
               "questionText": "What health benefit is NOT mentioned?",
-              "options": ["A) Improved eyesight", "B) Stronger muscles", "C) Better cardiovascular fitness", "D] Healthy weight maintenance"],
+              "options": ["A) Improved eyesight", "B) Stronger muscles", "C) Better cardiovascular fitness", "D) Healthy weight maintenance"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q3",
               "type": "multiple-choice",
               "questionText": "Why is cycling good for the environment?",
-              "options": ["A) No air pollution", "B) Less traffic noise", "C) Smaller roads needed", "D] Fewer accidents"],
+              "options": ["A) No air pollution", "B) Less traffic noise", "C) Smaller roads needed", "D) Fewer accidents"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q4",
               "type": "multiple-choice",
               "questionText": "What economic advantage is mentioned?",
-              "options": ["A) Low costs", "B) High resale value", "C) Government subsidies", "D] Free maintenance"],
+              "options": ["A) Low costs", "B) High resale value", "C) Government subsidies", "D) Free maintenance"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q5",
               "type": "multiple-choice",
               "questionText": "What are cities investing in?",
-              "options": ["A) Cycle lanes", "B) Car-free zones", "C) Electric buses", "D] Pedestrian bridges"],
+              "options": ["A) Cycle lanes", "B) Car-free zones", "C) Electric buses", "D) Pedestrian bridges"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q6",
               "type": "multiple-choice",
               "questionText": "What deters potential cyclists?",
-              "options": ["A) Safety concerns", "B) High costs", "C) Lack of skills", "D] Social stigma"],
+              "options": ["A) Safety concerns", "B) High costs", "C) Lack of skills", "D) Social stigma"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q7",
               "type": "multiple-choice",
               "questionText": "What can help overcome weather challenges?",
-              "options": ["A) Proper clothing", "B) Indoor cycling", "C) Public transport", "D] Car sharing"],
+              "options": ["A) Proper clothing", "B) Indoor cycling", "C) Public transport", "D) Car sharing"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q8",
               "type": "multiple-choice",
               "questionText": "What do employers offer?",
-              "options": ["A) Cycle-to-work schemes", "B) Free bicycles", "C) Shower facilities", "D] Safety training"],
+              "options": ["A) Cycle-to-work schemes", "B) Free bicycles", "C) Shower facilities", "D) Safety training"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q9",
               "type": "multiple-choice",
               "questionText": "What is the author's overall view?",
-              "options": ["A) Positive about cycling growth", "B) Concerned about safety", "C) Neutral about benefits", "D] Critical of infrastructure"],
+              "options": ["A) Positive about cycling growth", "B) Concerned about safety", "C) Neutral about benefits", "D) Critical of infrastructure"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q10",
               "type": "multiple-choice",
               "questionText": "What trend is likely to continue?",
-              "options": ["A) Growth of cycling", "B) Car manufacturing", "C) Public transport use", "D] Urban population growth"],
+              "options": ["A) Growth of cycling", "B) Car manufacturing", "C) Public transport use", "D) Urban population growth"],
               "correctAnswer": "A"
             }
           ]
@@ -502,70 +503,70 @@
               "id": "reading-q11",
               "type": "multiple-choice",
               "questionText": "Where did coffee originate?",
-              "options": ["A) Ethiopia", "B) Yemen", "C) Turkey", "D] Brazil"],
+              "options": ["A) Ethiopia", "B) Yemen", "C) Turkey", "D) Brazil"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q12",
               "type": "multiple-choice",
               "questionText": "What were coffee houses called?",
-              "options": ["A) Schools of the wise", "B) Houses of knowledge", "C) Centers of learning", "D] Places of discussion"],
+              "options": ["A) Schools of the wise", "B) Houses of knowledge", "C) Centers of learning", "D) Places of discussion"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q13",
               "type": "multiple-choice",
               "questionText": "How did coffee reach Europe?",
-              "options": ["A) Through Ottoman trade", "B) Through explorers", "C) Through colonists", "D] Through missionaries"],
+              "options": ["A) Through Ottoman trade", "B) Through explorers", "C) Through colonists", "D) Through missionaries"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q14",
               "type": "multiple-choice",
               "questionText": "Who approved coffee for Christians?",
-              "options": ["A) Pope Clement VIII", "B) The French king", "C) Venetian merchants", "D] English nobles"],
+              "options": ["A) Pope Clement VIII", "B) The French king", "C) Venetian merchants", "D) English nobles"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q15",
               "type": "multiple-choice",
               "questionText": "Where was the first European coffee house?",
-              "options": ["A) Venice", "B) Paris", "C) London", "D] Vienna"],
+              "options": ["A) Venice", "B) Paris", "C) London", "D) Vienna"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q16",
               "type": "multiple-choice",
               "questionText": "Which country is the largest coffee producer?",
-              "options": ["A) Brazil", "B) Colombia", "C) Vietnam", "D] Indonesia"],
+              "options": ["A) Brazil", "B) Colombia", "C) Vietnam", "D) Indonesia"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q17",
               "type": "multiple-choice",
               "questionText": "What was invented in the 20th century?",
-              "options": ["A) Instant coffee", "B) Espresso machine", "C) Coffee filter", "D] Coffee maker"],
+              "options": ["A) Instant coffee", "B) Espresso machine", "C) Coffee filter", "D) Coffee maker"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q18",
               "type": "multiple-choice",
               "questionText": "What helped preserve coffee during transport?",
-              "options": ["A) Vacuum packaging", "B) Refrigeration", "C) Chemical additives", "D] Glass containers"],
+              "options": ["A) Vacuum packaging", "B) Refrigeration", "C) Chemical additives", "D) Glass containers"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q19",
               "type": "multiple-choice",
               "questionText": "What type of coffee is growing in popularity?",
-              "options": ["A) Fair trade coffee", "B) Organic coffee", "C) Decaffeinated coffee", "D] Flavoured coffee"],
+              "options": ["A) Fair trade coffee", "B) Organic coffee", "C) Decaffeinated coffee", "D) Flavoured coffee"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q20",
               "type": "multiple-choice",
               "questionText": "What does coffee's story demonstrate?",
-              "options": ["A) Impact on global culture", "B) Importance in religion", "C) Role in colonialism", "D] Effect on health"],
+              "options": ["A) Impact on global culture", "B) Importance in religion", "C) Role in colonialism", "D) Effect on health"],
               "correctAnswer": "A"
             }
           ]
@@ -579,70 +580,70 @@
               "id": "reading-q21",
               "type": "multiple-choice",
               "questionText": "What is the main topic of the passage?",
-              "options": ["A) Importance of sleep", "B) Sleep disorders", "C) Dream analysis", "D] Mental health"],
+              "options": ["A) Importance of sleep", "B) Sleep disorders", "C) Dream analysis", "D) Mental health"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q22",
               "type": "multiple-choice",
               "questionText": "How much sleep do adults typically need?",
-              "options": ["A) 7-9 hours", "B) 6-8 hours", "C) 8-10 hours", "D] 5-7 hours"],
+              "options": ["A) 7-9 hours", "B) 6-8 hours", "C) 8-10 hours", "D) 5-7 hours"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q23",
               "type": "multiple-choice",
               "questionText": "What physical health problem is linked to lack of sleep?",
-              "options": ["A) Obesity", "B) Cancer", "C) Arthritis", "D] Asthma"],
+              "options": ["A) Obesity", "B) Cancer", "C) Arthritis", "D) Asthma"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q24",
               "type": "multiple-choice",
               "questionText": "What mental benefit comes from adequate sleep?",
-              "options": ["A) Better concentration", "B) Faster learning", "C) Improved language skills", "D] Enhanced social skills"],
+              "options": ["A) Better concentration", "B) Faster learning", "C) Improved language skills", "D) Enhanced social skills"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q25",
               "type": "multiple-choice",
               "questionText": "Which sleep stage is for physical restoration?",
-              "options": ["A) Deep sleep", "B) Light sleep", "C) REM sleep", "D] All stages"],
+              "options": ["A) Deep sleep", "B) Light sleep", "C) REM sleep", "D) All stages"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q26",
               "type": "multiple-choice",
               "questionText": "What disrupts natural sleep patterns?",
-              "options": ["A) Electronic devices", "B) Reading books", "C) Warm rooms", "D] Quiet environments"],
+              "options": ["A) Electronic devices", "B) Reading books", "C) Warm rooms", "D) Quiet environments"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q27",
               "type": "multiple-choice",
               "questionText": "What helps regulate the body clock?",
-              "options": ["A) Consistent sleep schedule", "B) Sleeping pills", "C) Daytime naps", "D] Exercise"],
+              "options": ["A) Consistent sleep schedule", "B) Sleeping pills", "C) Daytime naps", "D) Exercise"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q28",
               "type": "multiple-choice",
               "questionText": "What should be avoided before bedtime?",
-              "options": ["A) Caffeine", "B) Water", "C) Reading", "D] Meditation"],
+              "options": ["A) Caffeine", "B) Water", "C) Reading", "D) Meditation"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q29",
               "type": "multiple-choice",
               "questionText": "What requires medical treatment?",
-              "options": ["A) Sleep disorders", "B) Occasional insomnia", "C) Bad dreams", "D] Snoring"],
+              "options": ["A) Sleep disorders", "B) Occasional insomnia", "C) Bad dreams", "D) Snoring"],
               "correctAnswer": "A"
             },
             {
               "id": "reading-q30",
               "type": "multiple-choice",
               "questionText": "What is one of the most effective health improvements?",
-              "options": ["A) Prioritizing sleep", "B) Healthy eating", "C) Regular exercise", "D] Stress management"],
+              "options": ["A) Prioritizing sleep", "B) Healthy eating", "C) Regular exercise", "D) Stress management"],
               "correctAnswer": "A"
             }
           ]
@@ -708,57 +709,317 @@
       ]
     },
     {
-      "id": "speaking",
-      "title": "Speaking",
-      "description": "11-14 minutes",
+      "id": "grammar",
+      "title": "Grammar",
+      "description": "40 questions • 30 minutes",
       "parts": [
         {
-          "id": "speaking-part1",
-          "title": "Part 1: Introduction and Interview",
-          "instructions": "The examiner will ask you questions about yourself and familiar topics.",
-          "topics": [
-            "Your home",
-            "Daily routine", 
-            "Food and cooking",
-            "Leisure activities"
-          ],
-          "sampleQuestions": [
-            "Where do you live?",
-            "What do you like about your home?",
-            "What is your typical daily routine?",
-            "Do you enjoy cooking?",
-            "What kind of food do you like?",
-            "How do you usually spend your free time?"
-          ],
-          "timeLimit": "4-5 minutes"
+          "partNumber": 1,
+          "title": "Part 1: Verb Tenses and Forms",
+          "instructions": "Choose the correct verb form to complete each sentence.",
+          "questions": [
+            {
+              "id": "grammar-q1",
+              "type": "multiple-choice",
+              "questionText": "If I ______ more time, I would travel more.",
+              "options": ["A) have", "B) had", "C) will have", "D) would have"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q2",
+              "type": "multiple-choice",
+              "questionText": "She has lived in London ______ ten years.",
+              "options": ["A) since", "B) for", "C) from", "D) during"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q3",
+              "type": "multiple-choice",
+              "questionText": "By this time next year, I ______ university.",
+              "options": ["A) will finish", "B) will have finished", "C) finish", "D) am finishing"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q4",
+              "type": "multiple-choice",
+              "questionText": "When I arrived, they ______ already ______ dinner.",
+              "options": ["A) had, eaten", "B) have, eaten", "C) were, eating", "D) are, eating"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q5",
+              "type": "multiple-choice",
+              "questionText": "I look forward to ______ from you soon.",
+              "options": ["A) hear", "B) hearing", "C) heard", "D) will hear"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q6",
+              "type": "multiple-choice",
+              "questionText": "The number of students in the class ______ increased this year.",
+              "options": ["A) have", "B) has", "C) is", "D) are"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q7",
+              "type": "multiple-choice",
+              "questionText": "If it ______ tomorrow, we'll cancel the picnic.",
+              "options": ["A) rains", "B) will rain", "C) rained", "D) would rain"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q8",
+              "type": "multiple-choice",
+              "questionText": "He ______ to the gym every day last week.",
+              "options": ["A) goes", "B) went", "C) has gone", "D) had gone"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q9",
+              "type": "multiple-choice",
+              "questionText": "By the time she arrives, we ______ waiting for two hours.",
+              "options": ["A) will be", "B) will have been", "C) are", "D) have been"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q10",
+              "type": "multiple-choice",
+              "questionText": "I wish I ______ speak French fluently.",
+              "options": ["A) can", "B) could", "C) will", "D) would"],
+              "correctAnswer": "B"
+            }
+          ]
         },
         {
-          "id": "speaking-part2",
-          "title": "Part 2: Individual Long Turn",
-          "instructions": "You will be given a topic and have one minute to prepare before speaking for 1-2 minutes.",
-          "taskCard": {
-            "topic": "Describe a book you recently read.",
-            "points": [
-              "What the book is about",
-              "Why you chose to read it", 
-              "What you liked about it",
-              "Whether you would recommend it to others"
-            ]
-          },
-          "timeLimit": "3-4 minutes"
+          "partNumber": 2,
+          "title": "Part 2: Prepositions and Articles",
+          "instructions": "Choose the correct preposition or article to complete each sentence.",
+          "questions": [
+            {
+              "id": "grammar-q11",
+              "type": "multiple-choice",
+              "questionText": "I'm interested ______ learning more about this topic.",
+              "options": ["A) in", "B) on", "C) at", "D) for"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q12",
+              "type": "multiple-choice",
+              "questionText": "She arrived ______ the airport just in time.",
+              "options": ["A) at", "B) in", "C) on", "D) to"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q13",
+              "type": "multiple-choice",
+              "questionText": "Could you pass me ______ salt, please?",
+              "options": ["A) the", "B) a", "C) an", "D) -"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q14",
+              "type": "multiple-choice",
+              "questionText": "He's been working here ______ 2015.",
+              "options": ["A) since", "B) for", "C) from", "D) during"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q15",
+              "type": "multiple-choice",
+              "questionText": "I'm not very good ______ mathematics.",
+              "options": ["A) at", "B) in", "C) on", "D) for"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q16",
+              "type": "multiple-choice",
+              "questionText": "We're looking forward ______ our holiday.",
+              "options": ["A) to", "B) for", "C) at", "D) in"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q17",
+              "type": "multiple-choice",
+              "questionText": "She was born ______ a small village.",
+              "options": ["A) in", "B) at", "C) on", "D) to"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q18",
+              "type": "multiple-choice",
+              "questionText": "I'll see you ______ Monday morning.",
+              "options": ["A) on", "B) in", "C) at", "D) by"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q19",
+              "type": "multiple-choice",
+              "questionText": "He apologized ______ being late.",
+              "options": ["A) for", "B) about", "C) of", "D) to"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q20",
+              "type": "multiple-choice",
+              "questionText": "This is ______ interesting book.",
+              "options": ["A) an", "B) a", "C) the", "D) -"],
+              "correctAnswer": "A"
+            }
+          ]
         },
         {
-          "id": "speaking-part3",
-          "title": "Part 3: Two-way Discussion",
-          "instructions": "The examiner will ask further questions connected to the topic in Part 2.",
-          "sampleQuestions": [
-            "How popular is reading in your country?",
-            "Do you think people read more or less than in the past?",
-            "What are the benefits of reading?",
-            "How has technology affected reading habits?",
-            "Do you think printed books will disappear in the future?"
-          ],
-          "timeLimit": "4-5 minutes"
+          "partNumber": 3,
+          "title": "Part 3: Sentence Structure and Word Order",
+          "instructions": "Choose the sentence with the correct word order and structure.",
+          "questions": [
+            {
+              "id": "grammar-q21",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) She always is late for meetings.", "B) She is late always for meetings.", "C) She is always late for meetings.", "D) Always she is late for meetings."],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "grammar-q22",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) I yesterday went to the cinema.", "B) I went to the cinema yesterday.", "C) I went yesterday to the cinema.", "D) Yesterday I went to the cinema."],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q23",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) He can speak very well English.", "B) He can speak English very well.", "C) He can very well speak English.", "D) Very well he can speak English."],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q24",
+              "type": "multiple-choice",
+              "questionText": "Which question is correct?",
+              "options": ["A) You like do Chinese food?", "B) Do you like Chinese food?", "C) Like you Chinese food?", "D) You do like Chinese food?"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q25",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) They have often dinner at 7pm.", "B) They often have dinner at 7pm.", "C) Often they have dinner at 7pm.", "D) They have dinner often at 7pm."],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q26",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) I'm not understanding the question.", "B) I don't understand the question.", "C) I'm not understand the question.", "D) I don't understanding the question."],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q27",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) She told me that she will come tomorrow.", "B) She told me that she would come tomorrow.", "C) She told me that she comes tomorrow.", "D) She told me that she came tomorrow."],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q28",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) The book who I read was interesting.", "B) The book that I read was interesting.", "C) The book what I read was interesting.", "D) The book which I read it was interesting."],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q29",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) Despite it was raining, we went out.", "B) Despite the rain, we went out.", "C) Despite of the rain, we went out.", "D) Despite raining, we went out."],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "grammar-q30",
+              "type": "multiple-choice",
+              "questionText": "Which sentence is correct?",
+              "options": ["A) I have visited Paris last year.", "B) I visited Paris last year.", "C) I was visiting Paris last year.", "D) I had visited Paris last year."],
+              "correctAnswer": "B"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "title": "Part 4: Vocabulary and Word Choice",
+          "instructions": "Choose the word or phrase that best completes each sentence.",
+          "questions": [
+            {
+              "id": "grammar-q31",
+              "type": "multiple-choice",
+              "questionText": "The government should invest ______ in public transport.",
+              "options": ["A) heavily", "B) heavy", "C) heaviness", "D) heavied"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q32",
+              "type": "multiple-choice",
+              "questionText": "It was a ______ difficult exam, but I passed.",
+              "options": ["A) fairly", "B) fair", "C) fairness", "D) fairing"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q33",
+              "type": "multiple-choice",
+              "questionText": "The company made a ______ last year.",
+              "options": ["A) profit", "B) profitable", "C) profited", "D) profitably"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q34",
+              "type": "multiple-choice",
+              "questionText": "She speaks English ______.",
+              "options": ["A) fluently", "B) fluent", "C) fluency", "D) fluented"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q35",
+              "type": "multiple-choice",
+              "questionText": "We need to find a ______ to this problem.",
+              "options": ["A) solution", "B) solve", "C) solver", "D) solvable"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q36",
+              "type": "multiple-choice",
+              "questionText": "The weather was ______, so we stayed inside.",
+              "options": ["A) terrible", "B) terribly", "C) terror", "D) terrified"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q37",
+              "type": "multiple-choice",
+              "questionText": "He's ______ in science and technology.",
+              "options": ["A) interested", "B) interesting", "C) interest", "D) interestingly"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q38",
+              "type": "multiple-choice",
+              "questionText": "The movie was ______ boring that I fell asleep.",
+              "options": ["A) so", "B) such", "C) very", "D) too"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q39",
+              "type": "multiple-choice",
+              "questionText": "We had a ______ discussion about the environment.",
+              "options": ["A) lengthy", "B) length", "C) lengthen", "D) lengthily"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "grammar-q40",
+              "type": "multiple-choice",
+              "questionText": "The results were ______ better than we expected.",
+              "options": ["A) much", "B) many", "C) more", "D) most"],
+              "correctAnswer": "A"
+            }
+          ]
         }
       ]
     }
@@ -766,6 +1027,6 @@
   "metadata": {
     "version": "5.0",
     "author": "IELTS Academic Testing System",
-    "notes": "IELTS Academic Test for 01 December 2024 with realistic questions and common topics. This test includes typical IELTS themes like health, environment, education, and daily life, suitable for band 5.0 candidates."
+    "notes": "IELTS Academic Test for 26 November 2025 with realistic questions and common topics. This test includes typical IELTS themes like health, environment, education, and daily life, suitable for band 5.0 candidates. The speaking section has been replaced with grammar to focus on the user's identified weakness."
   }
 }
