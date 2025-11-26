@@ -1,0 +1,771 @@
+{
+  "testId": "IELTS-ACADEMIC-5.0-01-12-2024",
+  "testDate": "2024-12-01",
+  "testTitle": "IELTS Academic Test - 01 December 2024",
+  "totalQuestions": 110,
+  "difficultyLevel": "Academic 5.0",
+  "sections": [
+    {
+      "id": "listening",
+      "title": "Listening",
+      "description": "40 questions • Approximately 30 minutes • You will hear each recording only once",
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "Part 1: Conversation about renting a flat",
+          "instructions": "Listen to the conversation and answer questions 1-10.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.3, "rate": 1.1, "volume": 0.9, "name": "Estate Agent",
+              "variation": 0.08, "accent": "British", "emotion": "professional", "speakingType": "conversational"
+            },
+            "male": {
+              "pitch": 0.6, "rate": 1.0, "volume": 0.85, "name": "Student",
+              "variation": 0.07, "accent": "International", "emotion": "interested", "speakingType": "conversational"
+            }
+          },
+          "script": {
+            "narrator": "You will hear a conversation between a student and an estate agent about renting a flat. First, you have some time to look at questions 1 to 10.\n\n[Pause]\n\nNow listen carefully and answer questions 1 to 10.",
+            "conversation": [
+              {"speaker": "female", "text": "Good morning, City Estates. How can I help you?"},
+              {"speaker": "male", "text": "Hello, I'm looking for a one-bedroom flat to rent near the university."},
+              {"speaker": "female", "text": "Certainly. We have several properties available. What's your budget?"},
+              {"speaker": "male", "text": "I can pay up to £800 per month, including bills."},
+              {"speaker": "female", "text": "That should be fine. We have a nice flat on Garden Street for £750 per month. It's about 15 minutes walk from the university."},
+              {"speaker": "male", "text": "What's included in the rent?"},
+              {"speaker": "female", "text": "Water and council tax are included, but you'll need to pay for electricity and internet separately."},
+              {"speaker": "male", "text": "Is the flat furnished?"},
+              {"speaker": "female", "text": "Yes, it comes with a bed, desk, sofa, and kitchen appliances. There's also a washing machine in the kitchen."},
+              {"speaker": "male", "text": "That sounds good. Can I see it today?"},
+              {"speaker": "female", "text": "I have a viewing available at 2pm this afternoon, or tomorrow morning at 10am."},
+              {"speaker": "male", "text": "2pm today is perfect. What's the address?"},
+              {"speaker": "female", "text": "It's 25 Garden Street, flat number 4. The postcode is GL12 8PQ."},
+              {"speaker": "male", "text": "Great. Do I need to bring anything?"},
+              {"speaker": "female", "text": "Just some ID, and if you like the flat, we'll need one month's rent as deposit and the first month's rent in advance."},
+              {"speaker": "male", "text": "How much is the deposit?"},
+              {"speaker": "female", "text": "It's £750, the same as one month's rent. You'll get it back when you move out, if there's no damage."},
+              {"speaker": "male", "text": "Okay, thank you. I'll see you at 2pm."},
+              {"speaker": "female", "text": "Perfect. My name is Sarah, by the way. See you then."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q1",
+              "type": "multiple-choice",
+              "questionText": "What type of property is the student looking for?",
+              "options": ["A) One-bedroom flat", "B) Two-bedroom flat", "C) Studio apartment", "D] Shared house"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q2",
+              "type": "multiple-choice",
+              "questionText": "What is the maximum budget?",
+              "options": ["A) £800 per month", "B) £750 per month", "C) £700 per month", "D] £850 per month"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q3",
+              "type": "multiple-choice",
+              "questionText": "How far is the flat from the university?",
+              "options": ["A) 15 minutes walk", "B) 10 minutes walk", "C) 20 minutes walk", "D] 5 minutes walk"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q4",
+              "type": "multiple-choice",
+              "questionText": "What is included in the rent?",
+              "options": ["A) Water and council tax", "B) Electricity and internet", "C) All bills", "D] Only water"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q5",
+              "type": "multiple-choice",
+              "questionText": "What furniture is mentioned?",
+              "options": ["A) Bed, desk, sofa", "B) Table, chairs, wardrobe", "C) Bed, table, chairs", "D] Sofa, table, wardrobe"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q6",
+              "type": "multiple-choice",
+              "questionText": "When is the viewing appointment?",
+              "options": ["A) 2pm today", "B) 10am tomorrow", "C) 4pm today", "D] 11am tomorrow"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q7",
+              "type": "multiple-choice",
+              "questionText": "What is the flat number?",
+              "options": ["A) Flat 4", "B) Flat 2", "C) Flat 5", "D] Flat 3"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q8",
+              "type": "multiple-choice",
+              "questionText": "What should the student bring?",
+              "options": ["A) ID", "B) Deposit money", "C) Reference letter", "D] Bank statement"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q9",
+              "type": "multiple-choice",
+              "questionText": "How much is the deposit?",
+              "options": ["A) £750", "B) £800", "C) £700", "D] £500"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q10",
+              "type": "multiple-choice",
+              "questionText": "What is the estate agent's name?",
+              "options": ["A) Sarah", "B) Susan", "C) Sandra", "D] Sophia"],
+              "correctAnswer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "title": "Part 2: Talk about student services",
+          "instructions": "Listen to the talk and answer questions 11-20.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.2, "rate": 1.0, "volume": 0.9, "name": "Student Advisor",
+              "variation": 0.06, "accent": "British", "emotion": "helpful", "speakingType": "monologue"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 2. You will hear a student advisor talking about university services. Look at questions 11 to 20.\n\n[Pause]\n\nNow listen carefully and answer questions 11 to 20.",
+            "conversation": [
+              {"speaker": "female", "text": "Good morning everyone. I'm here to tell you about the support services available at the university. First, the Student Support Office is located on the ground floor of the Main Building, room G15. We're open from 9am to 5pm, Monday to Friday. We can help with accommodation issues, financial advice, and personal problems. For academic help, the Learning Centre offers free workshops on study skills, essay writing, and exam preparation. These run every Tuesday and Thursday at 2pm in room L42. The university medical centre is next to the sports hall. You need to register with them to use their services. For mental health support, we have counsellors available every weekday. Appointments can be made online or at the Student Support Office. The careers service helps with CV writing, job applications, and interview practice. They're located in the Business School building, room B207. Finally, the Students' Union organizes social events and clubs. Their office is in the Student Union building, open until 6pm daily. Remember, all these services are free for registered students."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q11",
+              "type": "multiple-choice",
+              "questionText": "Where is the Student Support Office?",
+              "options": ["A) Ground floor, Main Building", "B) First floor, Library", "C) Second floor, Admin Building", "D] Basement, Student Union"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q12",
+              "type": "multiple-choice",
+              "questionText": "What are the opening hours?",
+              "options": ["A) 9am-5pm, Monday-Friday", "B) 8am-6pm, Monday-Friday", "C) 10am-4pm, Monday-Saturday", "D] 9am-5pm, Monday-Saturday"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q13",
+              "type": "multiple-choice",
+              "questionText": "What help is NOT mentioned for Student Support?",
+              "options": ["A) Travel booking", "B) Accommodation", "C) Financial advice", "D] Personal problems"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q14",
+              "type": "multiple-choice",
+              "questionText": "When are study skills workshops?",
+              "options": ["A) Tuesday and Thursday", "B) Monday and Wednesday", "C) Wednesday and Friday", "D] Monday and Friday"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q15",
+              "type": "multiple-choice",
+              "questionText": "Where is the medical centre?",
+              "options": ["A) Next to sports hall", "B) In Main Building", "C) Near library", "D] In Student Union"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q16",
+              "type": "multiple-choice",
+              "questionText": "How can you book counselling?",
+              "options": ["A) Online or at office", "B) By phone only", "C) Email only", "D] In person only"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q17",
+              "type": "multiple-choice",
+              "questionText": "Where is the careers service?",
+              "options": ["A) Business School", "B) Main Building", "C) Library", "D] Student Union"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q18",
+              "type": "multiple-choice",
+              "questionText": "What does careers service help with?",
+              "options": ["A) CV writing and interviews", "B) Academic writing", "C) Personal problems", "D] Health issues"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q19",
+              "type": "multiple-choice",
+              "questionText": "Where is the Students' Union office?",
+              "options": ["A) Student Union building", "B) Main Building", "C) Library", "D] Sports centre"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q20",
+              "type": "multiple-choice",
+              "questionText": "Are the services free?",
+              "options": ["A) Yes, for registered students", "B) No, payment required", "C) Some are free", "D] Only for first year"],
+              "correctAnswer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "title": "Part 3: Discussion about a research project",
+          "instructions": "Listen to the discussion and answer questions 21-30.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.3, "rate": 1.1, "volume": 0.85, "name": "Lisa",
+              "variation": 0.09, "accent": "British", "emotion": "thoughtful", "speakingType": "discussion"
+            },
+            "male": {
+              "pitch": 0.7, "rate": 1.0, "volume": 0.9, "name": "David",
+              "variation": 0.08, "accent": "British", "emotion": "engaged", "speakingType": "discussion"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 3. You will hear two students discussing a research project. Look at questions 21 to 30.\n\n[Pause]\n\nNow listen carefully and answer questions 21 to 30.",
+            "conversation": [
+              {"speaker": "female", "text": "Hi David, have you started the business studies research project yet?"},
+              {"speaker": "male", "text": "Not really, Lisa. I was thinking about focusing on consumer behavior in online shopping. What about you?"},
+              {"speaker": "female", "text": "That sounds interesting. I was considering social media marketing strategies. Maybe we could combine these topics?"},
+              {"speaker": "male", "text": "Good idea. How about we research how social media influences online shopping decisions?"},
+              {"speaker": "female", "text": "Perfect. We need to submit the project proposal by next Friday, right?"},
+              {"speaker": "male", "text": "Yes, and the final project is due in four weeks. We should divide the work. I can research the theoretical background."},
+              {"speaker": "female", "text": "Okay, I'll look at case studies of successful social media campaigns. We should also create a survey for data collection."},
+              {"speaker": "male", "text": "How many respondents do we need? I think Dr. Jones said at least 50."},
+              {"speaker": "female", "text": "Yes, 50 minimum. We can survey university students - that would be easy to reach."},
+              {"speaker": "male", "text": "Good plan. When should we meet to discuss progress?"},
+              {"speaker": "female", "text": "How about we meet every Wednesday afternoon in the library? That gives us time to work individually first."},
+              {"speaker": "male", "text": "Wednesday works for me. Should we use any specific software for data analysis?"},
+              {"speaker": "female", "text": "I think Excel should be sufficient for our level. We can create charts and graphs to present the findings."},
+              {"speaker": "male", "text": "Okay, and for the report, we need to follow the Harvard referencing style."},
+              {"speaker": "female", "text": "Yes, and we need at least 15 references from academic sources."},
+              {"speaker": "male", "text": "I'll start searching the library database this week. Let's meet next Wednesday at 2pm."},
+              {"speaker": "female", "text": "Perfect. I'll prepare a draft survey questionnaire by then."},
+              {"speaker": "male", "text": "Great, see you next week then."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q21",
+              "type": "multiple-choice",
+              "questionText": "What subject is the project for?",
+              "options": ["A) Business studies", "B) Marketing", "C) Psychology", "D] Sociology"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q22",
+              "type": "multiple-choice",
+              "questionText": "What is David's initial topic idea?",
+              "options": ["A) Online shopping behavior", "B) Social media marketing", "C) Consumer rights", "D] Advertising techniques"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q23",
+              "type": "multiple-choice",
+              "questionText": "What is their combined topic?",
+              "options": ["A) Social media and online shopping", "B) Traditional vs online marketing", "C) Consumer protection laws", "D] Advertising effectiveness"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q24",
+              "type": "multiple-choice",
+              "questionText": "When is the proposal due?",
+              "options": ["A) Next Friday", "B) This Friday", "C) In two weeks", "D] Next month"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q25",
+              "type": "multiple-choice",
+              "questionText": "What will David research?",
+              "options": ["A) Theoretical background", "B) Case studies", "C) Survey design", "D] Data analysis"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q26",
+              "type": "multiple-choice",
+              "questionText": "How many survey respondents are needed?",
+              "options": ["A) At least 50", "B) At least 100", "C) At least 30", "D] At least 75"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q27",
+              "type": "multiple-choice",
+              "questionText": "When will they meet?",
+              "options": ["A) Wednesday afternoons", "B) Monday mornings", "C) Friday afternoons", "D] Thursday mornings"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q28",
+              "type": "multiple-choice",
+              "questionText": "What software will they use?",
+              "options": ["A) Excel", "B) SPSS", "C) Python", "D] R"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q29",
+              "type": "multiple-choice",
+              "questionText": "What referencing style is required?",
+              "options": ["A) Harvard", "B) APA", "C) MLA", "D] Chicago"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q30",
+              "type": "multiple-choice",
+              "questionText": "How many references are needed?",
+              "options": ["A) At least 15", "B) At least 10", "C) At least 20", "D] At least 25"],
+              "correctAnswer": "A"
+            }
+          ]
+        },
+        {
+          "partNumber": 4,
+          "title": "Part 4: Lecture on healthy eating",
+          "instructions": "Listen to the lecture and answer questions 31-40.",
+          "voiceProfiles": {
+            "male": {
+              "pitch": 0.5, "rate": 1.0, "volume": 0.9, "name": "Professor",
+              "variation": 0.07, "accent": "British", "emotion": "knowledgeable", "speakingType": "lecture"
+            }
+          },
+          "script": {
+            "narrator": "Now turn to Part 4. You will hear a lecture on healthy eating. Look at questions 31 to 40.\n\n[Pause]\n\nNow listen carefully and answer questions 31 to 40.",
+            "conversation": [
+              {"speaker": "male", "text": "Good afternoon. Today we're discussing the principles of healthy eating and their importance for overall wellbeing. A balanced diet should include carbohydrates, proteins, fats, vitamins, and minerals. Carbohydrates provide energy and should make up about 45-65% of our daily calorie intake. Proteins are essential for growth and repair of body tissues. Good sources include meat, fish, eggs, and beans. Fats are also important for energy and vitamin absorption, but we should limit saturated fats and avoid trans fats. Fruits and vegetables provide essential vitamins, minerals, and fiber. Experts recommend eating at least five portions of fruit and vegetables daily. Processed foods often contain high levels of salt, sugar, and unhealthy fats, so they should be consumed in moderation. Drinking plenty of water is crucial for hydration and bodily functions. The average adult needs about 2 liters of water per day. Regular meals help maintain stable blood sugar levels and prevent overeating. Breakfast is particularly important as it provides energy for the day ahead. Planning meals in advance can help ensure a balanced diet and save time and money. In our next lecture, we'll discuss the relationship between diet and physical activity."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q31",
+              "type": "multiple-choice",
+              "questionText": "What is the main topic?",
+              "options": ["A) Healthy eating", "B) Exercise benefits", "C) Weight loss", "D] Cooking methods"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q32",
+              "type": "multiple-choice",
+              "questionText": "What do carbohydrates provide?",
+              "options": ["A) Energy", "B) Growth", "C) Repair", "D] Hydration"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q33",
+              "type": "multiple-choice",
+              "questionText": "What percentage of calories should be carbohydrates?",
+              "options": ["A) 45-65%", "B) 30-40%", "C) 50-70%", "D] 40-60%"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q34",
+              "type": "multiple-choice",
+              "questionText": "What are proteins essential for?",
+              "options": ["A) Growth and repair", "B) Energy", "C) Vitamin absorption", "D] Hydration"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q35",
+              "type": "multiple-choice",
+              "questionText": "What should we limit in our diet?",
+              "options": ["A) Saturated fats", "B) Proteins", "C) Carbohydrates", "D] Vegetables"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q36",
+              "type": "multiple-choice",
+              "questionText": "How many fruit and vegetable portions are recommended?",
+              "options": ["A) At least 5", "B) At least 3", "C) At least 7", "D] At least 10"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q37",
+              "type": "multiple-choice",
+              "questionText": "How much water do adults need daily?",
+              "options": ["A) About 2 liters", "B) About 1 liter", "C) About 3 liters", "D] About 1.5 liters"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q38",
+              "type": "multiple-choice",
+              "questionText": "Why are regular meals important?",
+              "options": ["A) Stable blood sugar", "B) More energy", "C) Better sleep", "D] Weight gain"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q39",
+              "type": "multiple-choice",
+              "questionText": "Which meal is particularly important?",
+              "options": ["A) Breakfast", "B) Lunch", "C) Dinner", "D] Snacks"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "listening-q40",
+              "type": "multiple-choice",
+              "questionText": "What will the next lecture cover?",
+              "options": ["A) Diet and exercise", "B) Cooking skills", "C) Food safety", "D] Eating disorders"],
+              "correctAnswer": "A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "description": "40 questions • 60 minutes",
+      "passages": [
+        {
+          "id": "reading-passage1",
+          "title": "Passage 1: The Benefits of Cycling",
+          "content": "Cycling is becoming increasingly popular in cities around the world. Many people are choosing bicycles as their main mode of transport for several reasons.\n\nOne major benefit of cycling is improved health. Regular cycling strengthens muscles, improves cardiovascular fitness, and helps maintain a healthy weight. It's a low-impact exercise that's suitable for people of all ages. Studies show that people who cycle regularly have lower risks of heart disease, diabetes, and some types of cancer.\n\nCycling is also good for the environment. Unlike cars, bicycles don't produce air pollution or greenhouse gases. They require much less energy to manufacture than cars and don't need fossil fuels to operate. By choosing to cycle instead of drive, individuals can significantly reduce their carbon footprint.\n\nFrom an economic perspective, cycling is much cheaper than driving a car or using public transport. The initial cost of a bicycle is relatively low, and maintenance costs are minimal. Cyclists don't need to pay for fuel, insurance, or parking fees. Many employers now offer cycle-to-work schemes that provide tax benefits for people who commute by bicycle.\n\nUrban planning has begun to reflect the growing popularity of cycling. Many cities are investing in cycle lanes, secure parking facilities, and bike-sharing programs. These improvements make cycling safer and more convenient, encouraging even more people to take up cycling.\n\nDespite these benefits, some challenges remain. Safety concerns deter many potential cyclists, especially in cities with heavy traffic and inadequate cycling infrastructure. Weather conditions can also be a barrier in some regions. However, with proper safety equipment and clothing, these challenges can be overcome.\n\nOverall, the growth of cycling represents a positive trend for public health, the environment, and urban living. As cities continue to develop cycling infrastructure, this trend is likely to continue.",
+          "questions": [
+            {
+              "id": "reading-q1",
+              "type": "multiple-choice",
+              "questionText": "What is the main topic of the passage?",
+              "options": ["A) Benefits of cycling", "B) Urban transport systems", "C) Environmental protection", "D] Public health issues"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q2",
+              "type": "multiple-choice",
+              "questionText": "What health benefit is NOT mentioned?",
+              "options": ["A) Improved eyesight", "B) Stronger muscles", "C) Better cardiovascular fitness", "D] Healthy weight maintenance"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q3",
+              "type": "multiple-choice",
+              "questionText": "Why is cycling good for the environment?",
+              "options": ["A) No air pollution", "B) Less traffic noise", "C) Smaller roads needed", "D] Fewer accidents"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q4",
+              "type": "multiple-choice",
+              "questionText": "What economic advantage is mentioned?",
+              "options": ["A) Low costs", "B) High resale value", "C) Government subsidies", "D] Free maintenance"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q5",
+              "type": "multiple-choice",
+              "questionText": "What are cities investing in?",
+              "options": ["A) Cycle lanes", "B) Car-free zones", "C) Electric buses", "D] Pedestrian bridges"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q6",
+              "type": "multiple-choice",
+              "questionText": "What deters potential cyclists?",
+              "options": ["A) Safety concerns", "B) High costs", "C) Lack of skills", "D] Social stigma"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q7",
+              "type": "multiple-choice",
+              "questionText": "What can help overcome weather challenges?",
+              "options": ["A) Proper clothing", "B) Indoor cycling", "C) Public transport", "D] Car sharing"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q8",
+              "type": "multiple-choice",
+              "questionText": "What do employers offer?",
+              "options": ["A) Cycle-to-work schemes", "B) Free bicycles", "C) Shower facilities", "D] Safety training"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q9",
+              "type": "multiple-choice",
+              "questionText": "What is the author's overall view?",
+              "options": ["A) Positive about cycling growth", "B) Concerned about safety", "C) Neutral about benefits", "D] Critical of infrastructure"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q10",
+              "type": "multiple-choice",
+              "questionText": "What trend is likely to continue?",
+              "options": ["A) Growth of cycling", "B) Car manufacturing", "C) Public transport use", "D] Urban population growth"],
+              "correctAnswer": "A"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage2",
+          "title": "Passage 2: The History of Coffee",
+          "content": "Coffee is one of the most popular beverages in the world, with a history dating back centuries. The origins of coffee are believed to be in Ethiopia, where legend says a goat herder discovered the energizing effects of coffee beans.\n\nFrom Ethiopia, coffee spread to the Arabian Peninsula. By the 15th century, coffee was being grown in Yemen and traded throughout the Middle East. Coffee houses became important social centers where people gathered to discuss politics, business, and culture. These establishments were sometimes called 'schools of the wise' because of the intellectual conversations that took place there.\n\nCoffee reached Europe in the 17th century through trade with the Ottoman Empire. Initially, there was some opposition from religious leaders who called it the 'bitter invention of Satan.' However, after Pope Clement VIII tasted coffee and approved it, its popularity grew rapidly. The first European coffee house opened in Venice in 1645.\n\nIn the 18th century, coffee cultivation spread to the Americas. The French brought coffee plants to Martinique, and from there, coffee growing expanded throughout Central and South America. Brazil eventually became the world's largest coffee producer, a position it still holds today.\n\nThe industrial revolution brought significant changes to coffee production and consumption. Instant coffee was invented in the early 20th century, making preparation quicker and easier. The invention of vacuum packaging helped preserve freshness, allowing coffee to be transported over long distances.\n\nToday, coffee is a global industry worth billions of dollars. Specialty coffee shops have become ubiquitous in cities worldwide. There's growing interest in sustainable and fair trade coffee, which ensures better conditions for coffee farmers.\n\nDespite its long history, coffee continues to evolve. New brewing methods and coffee varieties are constantly being developed. The story of coffee demonstrates how a simple beverage can have a profound impact on global culture and economy.",
+          "questions": [
+            {
+              "id": "reading-q11",
+              "type": "multiple-choice",
+              "questionText": "Where did coffee originate?",
+              "options": ["A) Ethiopia", "B) Yemen", "C) Turkey", "D] Brazil"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q12",
+              "type": "multiple-choice",
+              "questionText": "What were coffee houses called?",
+              "options": ["A) Schools of the wise", "B) Houses of knowledge", "C) Centers of learning", "D] Places of discussion"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q13",
+              "type": "multiple-choice",
+              "questionText": "How did coffee reach Europe?",
+              "options": ["A) Through Ottoman trade", "B) Through explorers", "C) Through colonists", "D] Through missionaries"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q14",
+              "type": "multiple-choice",
+              "questionText": "Who approved coffee for Christians?",
+              "options": ["A) Pope Clement VIII", "B) The French king", "C) Venetian merchants", "D] English nobles"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q15",
+              "type": "multiple-choice",
+              "questionText": "Where was the first European coffee house?",
+              "options": ["A) Venice", "B) Paris", "C) London", "D] Vienna"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q16",
+              "type": "multiple-choice",
+              "questionText": "Which country is the largest coffee producer?",
+              "options": ["A) Brazil", "B) Colombia", "C) Vietnam", "D] Indonesia"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q17",
+              "type": "multiple-choice",
+              "questionText": "What was invented in the 20th century?",
+              "options": ["A) Instant coffee", "B) Espresso machine", "C) Coffee filter", "D] Coffee maker"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q18",
+              "type": "multiple-choice",
+              "questionText": "What helped preserve coffee during transport?",
+              "options": ["A) Vacuum packaging", "B) Refrigeration", "C) Chemical additives", "D] Glass containers"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q19",
+              "type": "multiple-choice",
+              "questionText": "What type of coffee is growing in popularity?",
+              "options": ["A) Fair trade coffee", "B) Organic coffee", "C) Decaffeinated coffee", "D] Flavoured coffee"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q20",
+              "type": "multiple-choice",
+              "questionText": "What does coffee's story demonstrate?",
+              "options": ["A) Impact on global culture", "B) Importance in religion", "C) Role in colonialism", "D] Effect on health"],
+              "correctAnswer": "A"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage3",
+          "title": "Passage 3: The Importance of Sleep",
+          "content": "Sleep is essential for good health and well-being. Despite this, many people don't get enough quality sleep. Understanding the importance of sleep can help people prioritize this vital activity.\n\nSleep plays a crucial role in physical health. During sleep, the body repairs tissues, builds bone and muscle, and strengthens the immune system. Lack of sleep has been linked to various health problems, including obesity, heart disease, and diabetes. Adults typically need 7-9 hours of sleep per night for optimal health.\n\nMental health is also closely connected to sleep. Sleep helps process emotions and consolidate memories. People who get adequate sleep tend to have better concentration, problem-solving skills, and creativity. Chronic sleep deprivation can contribute to anxiety, depression, and other mental health issues.\n\nThere are several stages of sleep, each with different functions. Light sleep helps with memory and learning. Deep sleep is important for physical restoration. REM (Rapid Eye Movement) sleep, when most dreaming occurs, is crucial for emotional regulation and creative thinking.\n\nModern lifestyle factors often interfere with sleep. The use of electronic devices before bed can disrupt natural sleep patterns because of the blue light they emit. Irregular work schedules, stress, and poor sleep environments also contribute to sleep problems.\n\nImproving sleep quality involves developing good sleep habits. Maintaining a consistent sleep schedule, even on weekends, helps regulate the body's internal clock. Creating a comfortable sleep environment - cool, dark, and quiet - promotes better sleep. Avoiding caffeine and heavy meals before bedtime can also help.\n\nFor those with persistent sleep problems, professional help may be necessary. Sleep disorders like insomnia and sleep apnea require medical treatment. However, for most people, simple lifestyle changes can significantly improve sleep quality.\n\nPrioritizing sleep is one of the most effective ways to improve overall health and quality of life. As research continues to reveal the extensive benefits of sleep, its importance becomes increasingly clear.",
+          "questions": [
+            {
+              "id": "reading-q21",
+              "type": "multiple-choice",
+              "questionText": "What is the main topic of the passage?",
+              "options": ["A) Importance of sleep", "B) Sleep disorders", "C) Dream analysis", "D] Mental health"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q22",
+              "type": "multiple-choice",
+              "questionText": "How much sleep do adults typically need?",
+              "options": ["A) 7-9 hours", "B) 6-8 hours", "C) 8-10 hours", "D] 5-7 hours"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q23",
+              "type": "multiple-choice",
+              "questionText": "What physical health problem is linked to lack of sleep?",
+              "options": ["A) Obesity", "B) Cancer", "C) Arthritis", "D] Asthma"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q24",
+              "type": "multiple-choice",
+              "questionText": "What mental benefit comes from adequate sleep?",
+              "options": ["A) Better concentration", "B) Faster learning", "C) Improved language skills", "D] Enhanced social skills"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q25",
+              "type": "multiple-choice",
+              "questionText": "Which sleep stage is for physical restoration?",
+              "options": ["A) Deep sleep", "B) Light sleep", "C) REM sleep", "D] All stages"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q26",
+              "type": "multiple-choice",
+              "questionText": "What disrupts natural sleep patterns?",
+              "options": ["A) Electronic devices", "B) Reading books", "C) Warm rooms", "D] Quiet environments"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q27",
+              "type": "multiple-choice",
+              "questionText": "What helps regulate the body clock?",
+              "options": ["A) Consistent sleep schedule", "B) Sleeping pills", "C) Daytime naps", "D] Exercise"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q28",
+              "type": "multiple-choice",
+              "questionText": "What should be avoided before bedtime?",
+              "options": ["A) Caffeine", "B) Water", "C) Reading", "D] Meditation"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q29",
+              "type": "multiple-choice",
+              "questionText": "What requires medical treatment?",
+              "options": ["A) Sleep disorders", "B) Occasional insomnia", "C) Bad dreams", "D] Snoring"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q30",
+              "type": "multiple-choice",
+              "questionText": "What is one of the most effective health improvements?",
+              "options": ["A) Prioritizing sleep", "B) Healthy eating", "C) Regular exercise", "D] Stress management"],
+              "correctAnswer": "A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "description": "60 minutes",
+      "tasks": [
+        {
+          "id": "writing-task1",
+          "title": "Writing Task 1",
+          "instructions": "You should spend about 20 minutes on this task. The table below shows the percentage of students choosing different university subjects in a European country in 1990 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+          "taskType": "Academic",
+          "wordCountMin": 150,
+          "timeLimit": 20,
+          "description": "You will be presented with a table showing student subject choices over time.",
+          "sampleData": {
+            "type": "table",
+            "title": "University Subject Choices (1990 vs 2020)",
+            "data": {
+              "Subjects": ["Business", "Engineering", "Arts", "Science", "Medicine"],
+              "1990": ["15%", "20%", "25%", "18%", "22%"],
+              "2020": ["28%", "22%", "15%", "20%", "15%"]
+            },
+            "description": "Table showing changes in percentage of students choosing different university subjects between 1990 and 2020"
+          },
+          "assessmentCriteria": [
+            "Task Achievement",
+            "Coherence and Cohesion", 
+            "Lexical Resource",
+            "Grammatical Range and Accuracy"
+          ]
+        },
+        {
+          "id": "writing-task2",
+          "title": "Writing Task 2",
+          "instructions": "You should spend about 40 minutes on this task. Some people think that children should start learning a foreign language at primary school, while others believe it is better to wait until secondary school. Discuss both views and give your own opinion. Write at least 250 words.",
+          "taskType": "Essay",
+          "wordCountMin": 250,
+          "timeLimit": 40,
+          "description": "You will be presented with contrasting views on language learning age and asked to discuss them.",
+          "essayType": "Discussion",
+          "topics": [
+            "Language learning",
+            "Primary education",
+            "Child development"
+          ],
+          "keyPoints": [
+            "Arguments for starting foreign languages early",
+            "Arguments for waiting until secondary school",
+            "Synthesis and personal opinion"
+          ],
+          "assessmentCriteria": [
+            "Task Response",
+            "Coherence and Cohesion",
+            "Lexical Resource", 
+            "Grammatical Range and Accuracy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speaking",
+      "title": "Speaking",
+      "description": "11-14 minutes",
+      "parts": [
+        {
+          "id": "speaking-part1",
+          "title": "Part 1: Introduction and Interview",
+          "instructions": "The examiner will ask you questions about yourself and familiar topics.",
+          "topics": [
+            "Your home",
+            "Daily routine", 
+            "Food and cooking",
+            "Leisure activities"
+          ],
+          "sampleQuestions": [
+            "Where do you live?",
+            "What do you like about your home?",
+            "What is your typical daily routine?",
+            "Do you enjoy cooking?",
+            "What kind of food do you like?",
+            "How do you usually spend your free time?"
+          ],
+          "timeLimit": "4-5 minutes"
+        },
+        {
+          "id": "speaking-part2",
+          "title": "Part 2: Individual Long Turn",
+          "instructions": "You will be given a topic and have one minute to prepare before speaking for 1-2 minutes.",
+          "taskCard": {
+            "topic": "Describe a book you recently read.",
+            "points": [
+              "What the book is about",
+              "Why you chose to read it", 
+              "What you liked about it",
+              "Whether you would recommend it to others"
+            ]
+          },
+          "timeLimit": "3-4 minutes"
+        },
+        {
+          "id": "speaking-part3",
+          "title": "Part 3: Two-way Discussion",
+          "instructions": "The examiner will ask further questions connected to the topic in Part 2.",
+          "sampleQuestions": [
+            "How popular is reading in your country?",
+            "Do you think people read more or less than in the past?",
+            "What are the benefits of reading?",
+            "How has technology affected reading habits?",
+            "Do you think printed books will disappear in the future?"
+          ],
+          "timeLimit": "4-5 minutes"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "5.0",
+    "author": "IELTS Academic Testing System",
+    "notes": "IELTS Academic Test for 01 December 2024 with realistic questions and common topics. This test includes typical IELTS themes like health, environment, education, and daily life, suitable for band 5.0 candidates."
+  }
+}
