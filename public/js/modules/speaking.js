@@ -1,191 +1,235 @@
-// IELTS Speaking Module
-class IELTSSpeaking {
-    constructor() {
-        this.parts = [];
-        this.wordCounts = {};
-    }
+import state from '../utils/state.js';
+import { SpeechRecognizer } from '../utils/speech-recognizer.js';
 
-    initialize() {
-        this.setupEventListeners();
-        this.initializeWordCountTracking();
-    }
+export const speaking = {
+    recognizer: new SpeechRecognizer(),
+    currentPart: 1,
+    isRecording: false,
 
-    setupEventListeners() {
-        // Speaking word count tracking
-        ['speaking-part1', 'speaking-part2', 'speaking-part3'].forEach(id => {
-            const textarea = document.getElementById(id);
-            if (textarea) {
-                // Initialize word count for existing content
-                this.updateWordCount(id, textarea.value);
-                
-                textarea.addEventListener('input', (e) => {
-                    console.log(`Speaking textarea input detected: ${id}, value length: ${e.target.value.length}`);
-                    this.updateWordCount(e.target.id, e.target.value);
-                    this.saveAnswer(e.target.id, e.target.value);
-                    this.updateActivity();
-                });
-                
-                // Also listen for paste events
-                textarea.addEventListener('paste', (e) => {
-                    setTimeout(() => {
-                        this.updateWordCount(id, textarea.value);
-                        this.saveAnswer(id, textarea.value);
-                        this.updateActivity();
-                    }, 10);
-                });
-            } else {
-                console.warn(`Speaking textarea with id ${id} not found`);
-            }
-        });
-    }
-
-    initializeWordCountTracking() {
-        ['speaking-part1', 'speaking-part2', 'speaking-part3'].forEach(id => {
-            const textarea = document.getElementById(id);
-            if (textarea) {
-                this.updateWordCount(id, textarea.value);
-            }
-        });
-    }
-
-    updateWordCount(textareaId, text) {
-        const wordCount = IELTSUtils.countWords(text);
-        const partNumber = textareaId.replace('speaking-part', '');
-        const wordCountElement = document.getElementById(`speaking-count-${partNumber}`);
-        
-        if (wordCountElement) {
-            wordCountElement.textContent = `${wordCount} words`;
-            
-            // Update word count styling based on speaking requirements
-            if (partNumber === '1') {
-                // Part 1: Short answers (15-50 words typical)
-                if (wordCount >= 30) {
-                    wordCountElement.className = 'word-count good';
-                } else if (wordCount >= 15) {
-                    wordCountElement.className = 'word-count warning';
-                } else {
-                    wordCountElement.className = 'word-count poor';
-                }
-            } else if (partNumber === '2') {
-                // Part 2: Long turn (100-200 words typical for 1-2 minutes)
-                if (wordCount >= 150) {
-                    wordCountElement.className = 'word-count good';
-                } else if (wordCount >= 100) {
-                    wordCountElement.className = 'word-count warning';
-                } else {
-                    wordCountElement.className = 'word-count poor';
-                }
-            } else if (partNumber === '3') {
-                // Part 3: Discussion (50-150 words typical)
-                if (wordCount >= 100) {
-                    wordCountElement.className = 'word-count good';
-                } else if (wordCount >= 50) {
-                    wordCountElement.className = 'word-count warning';
-                } else {
-                    wordCountElement.className = 'word-count poor';
-                }
-            }
-        }
-        
-        this.wordCounts[textareaId] = wordCount;
-    }
-
-    saveAnswer(textareaId, text) {
-        if (window.ieltsTest) {
-            const partKey = textareaId.replace('speaking-', '');
-            if (!window.ieltsTest.answers.speaking) {
-                window.ieltsTest.answers.speaking = {};
-            }
-            window.ieltsTest.answers.speaking[partKey] = text;
-        }
-    }
-
-    updateActivity() {
-        if (window.ieltsTest && window.ieltsTest.updateActivity) {
-            window.ieltsTest.updateActivity();
-        }
-    }
-
-    getAnswers() {
-        const answers = {};
-        ['speaking-part1', 'speaking-part2', 'speaking-part3'].forEach(id => {
-            const textarea = document.getElementById(id);
-            if (textarea) {
-                const partKey = id.replace('speaking-', '');
-                answers[partKey] = textarea.value;
-            }
-        });
-        return answers;
-    }
-
-    reset() {
-        ['speaking-part1', 'speaking-part2', 'speaking-part3'].forEach(id => {
-            const textarea = document.getElementById(id);
-            if (textarea) {
-                textarea.value = '';
-                this.updateWordCount(id, '');
-            }
-        });
-    }
-
-    // Speaking-specific methods
-    startRecording(partNumber) {
-        // This would integrate with Web Speech API or other recording functionality
-        console.log(`Starting recording for Part ${partNumber}`);
-        // Implementation would go here
-    }
-
-    stopRecording(partNumber) {
-        // This would stop recording and process the audio
-        console.log(`Stopping recording for Part ${partNumber}`);
-        // Implementation would go here
-    }
-
-    playSampleAudio(partNumber) {
-        // This would play sample audio for the speaking part
-        console.log(`Playing sample audio for Part ${partNumber}`);
-        // Implementation would go here
-    }
-
-    getSpeakingTips(partNumber) {
-        const tips = {
-            1: [
-                "Keep your answers short and to the point",
-                "Use personal examples when possible",
-                "Don't memorize answers - be natural",
-                "Practice common topics like work, studies, hobbies"
-            ],
-            2: [
-                "Use the 1-minute preparation time wisely",
-                "Structure your talk: introduction, main points, conclusion",
-                "Speak for the full 1-2 minutes",
-                "Use linking words to connect ideas",
-                "Include personal examples and details"
-            ],
-            3: [
-                "Give detailed answers with examples",
-                "Express and justify your opinions",
-                "Compare and contrast different ideas",
-                "Use a range of vocabulary and grammar",
-                "Think about the question before answering"
+    mockQuestions: {
+        1: {
+            title: "Part 1: Introduction",
+            questions: [
+                "What is your full name?",
+                "Do you work or are you a student?",
+                "What do you like to do in your free time?"
             ]
-        };
+        },
+        2: {
+            title: "Part 2: Cue Card",
+            topic: "Describe a memorable journey you have taken.",
+            bullets: [
+                "Where you went",
+                "How you traveled",
+                "Who you went with",
+                "And explain why this journey was memorable to you"
+            ]
+        },
+        3: {
+            title: "Part 3: Discussion",
+            questions: [
+                "Do you think people travel enough these days?",
+                "How has travel changed compared to the past?",
+                "What are the benefits of traveling to foreign countries?"
+            ]
+        }
+    },
 
-        return tips[partNumber] || [];
+    render() {
+        const container = document.getElementById('speaking');
+        if (!container) return;
+
+        if (!this.currentPart) this.currentPart = 1;
+
+        container.innerHTML = `
+            <div id="speaking-container" class="speaking-layout">
+                ${this.renderSidebar()}
+                ${this.renderMainContent()}
+            </div>
+        `;
+
+        this.attachListeners();
+        this.updateZoneHeader();
+    },
+
+    renderSidebar() {
+        return `
+            <div class="speaking-sidebar">
+                <div class="part-nav">
+                    ${[1, 2, 3].map(p => `
+                        <button class="part-btn ${p === this.currentPart ? 'active' : ''}" data-part="${p}">
+                            Part ${p}
+                        </button>
+                    `).join('')}
+                </div>
+                <div class="speaking-tips">
+                    <h4><i class="fas fa-lightbulb"></i> Tips</h4>
+                    <p>Speak clearly and naturally.</p>
+                    <p>Don't worry about minor mistakes.</p>
+                    <p>Keep going even if you hesitate.</p>
+                </div>
+            </div>
+        `;
+    },
+
+    renderMainContent() {
+        const data = this.mockQuestions[this.currentPart];
+        let content = '';
+
+        if (this.currentPart === 2) {
+            content = `
+                <div class="cue-card">
+                    <h3>${data.topic}</h3>
+                    <p>You should say:</p>
+                    <ul>
+                        ${data.bullets.map(b => `<li>${b}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+        } else {
+            content = `
+                <div class="questions-list">
+                    ${data.questions.map((q, i) => `
+                        <div class="speaking-q">
+                            <span class="q-num">${i + 1}</span>
+                            <span class="q-text">${q}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        const savedTranscript = state.answers.speaking?.[`part${this.currentPart}`] || '';
+
+        return `
+            <div class="speaking-main">
+                <div class="speaking-header">
+                    <h2>${data.title}</h2>
+                </div>
+                
+                <div class="speaking-content">
+                    ${content}
+                </div>
+
+                <div class="recording-area">
+                    <div class="transcript-box">
+                        <label>Your Answer (Transcript)</label>
+                        <textarea id="speaking-transcript" placeholder="Press record and start speaking..." readonly>${savedTranscript}</textarea>
+                    </div>
+
+                    <div class="controls">
+                        <button id="record-btn" class="record-btn ${this.isRecording ? 'recording' : ''}">
+                            <div class="pulse-ring"></div>
+                            <i class="fas ${this.isRecording ? 'fa-stop' : 'fa-microphone'}"></i>
+                            <span>${this.isRecording ? 'Stop Recording' : 'Start Recording'}</span>
+                        </button>
+                        <div class="status-text" id="recording-status">
+                            ${this.isRecording ? 'Listening...' : 'Ready to record'}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    },
+
+    attachListeners() {
+        const container = document.getElementById('speaking-container');
+        if (!container) return;
+
+        container.querySelectorAll('.part-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const p = parseInt(btn.dataset.part);
+                if (p !== this.currentPart) {
+                    this.stopRecording();
+                    this.currentPart = p;
+                    this.render();
+                }
+            });
+        });
+
+        const recordBtn = document.getElementById('record-btn');
+        if (recordBtn) {
+            recordBtn.addEventListener('click', () => {
+                this.toggleRecording();
+            });
+        }
+    },
+
+    toggleRecording() {
+        if (this.isRecording) {
+            this.stopRecording();
+        } else {
+            this.startRecording();
+        }
+    },
+
+    startRecording() {
+        if (!this.recognizer.isSupported()) {
+            alert('Speech recognition is not supported in this browser.');
+            return;
+        }
+
+        const textarea = document.getElementById('speaking-transcript');
+        if (textarea) textarea.value = '';
+        this.saveTranscript('');
+
+        this.isRecording = true;
+        this.updateUIState();
+
+        this.recognizer.start(
+            (result) => {
+                if (textarea) {
+                    textarea.value = result.full;
+                    textarea.scrollTop = textarea.scrollHeight;
+                    this.saveTranscript(result.full);
+                }
+            },
+            (error) => {
+                console.error('Speech error:', error);
+                this.stopRecording();
+                document.getElementById('recording-status').textContent = 'Error: ' + error;
+            },
+            () => {
+                if (this.isRecording) {
+                    this.stopRecording();
+                }
+            }
+        );
+    },
+
+    stopRecording() {
+        this.isRecording = false;
+        this.recognizer.stop();
+        this.updateUIState();
+    },
+
+    updateUIState() {
+        const btn = document.getElementById('record-btn');
+        const status = document.getElementById('recording-status');
+
+        if (btn) {
+            if (this.isRecording) {
+                btn.classList.add('recording');
+                btn.querySelector('i').className = 'fas fa-stop';
+                btn.querySelector('span').textContent = 'Stop Recording';
+                status.textContent = 'Listening...';
+                status.classList.add('active');
+            } else {
+                btn.classList.remove('recording');
+                btn.querySelector('i').className = 'fas fa-microphone';
+                btn.querySelector('span').textContent = 'Start Recording';
+                status.textContent = 'Ready to record';
+                status.classList.remove('active');
+            }
+        }
+    },
+
+    saveTranscript(text) {
+        state.setAnswer('speaking', `part${this.currentPart}`, text);
+    },
+
+    updateZoneHeader() {
+        document.getElementById('question-indicator').textContent = `Speaking Section`;
+        document.getElementById('section-progress-fill').style.width = '0%';
     }
-
-    showSpeakingTips(partNumber) {
-        const tips = this.getSpeakingTips(partNumber);
-        const tipsHtml = tips.map(tip => `<li>${tip}</li>`).join('');
-        
-        IELTSUtils.showNotification(`
-            <strong>Speaking Tips for Part ${partNumber}:</strong>
-            <ul>${tipsHtml}</ul>
-        `, 'info');
-    }
-}
-
-// Export for module usage
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = IELTSSpeaking;
-}
+};

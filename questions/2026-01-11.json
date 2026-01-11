@@ -1,0 +1,2262 @@
+{
+    "testId": "IELTS-FULL-0.3-2026-01-11",
+    "testDate": "2026-01-11",
+    "testTitle": "IELTS Full Practice Test - 2026 Complete",
+    "totalQuestions": 175,
+    "difficultyLevel": "Mixed (A2-B1 Level)",
+    "sections": [
+        {
+            "id": "grammar",
+            "title": "Grammar & Vocabulary",
+            "description": "100 questions • 40 minutes",
+            "questions": [
+                {
+                    "id": "g_mc_1",
+                    "type": "multiple-choice",
+                    "number": 1,
+                    "subtype": "standard",
+                    "question": "I _____ to the park yesterday.",
+                    "options": [
+                        "go",
+                        "went",
+                        "gone",
+                        "going"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_2",
+                    "type": "multiple-choice",
+                    "number": 2,
+                    "subtype": "standard",
+                    "question": "She _____ play the piano very well.",
+                    "options": [
+                        "can",
+                        "do",
+                        "is",
+                        "have"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "id": "g_mc_3",
+                    "type": "multiple-choice",
+                    "number": 3,
+                    "subtype": "standard",
+                    "question": "They _____ watching TV now.",
+                    "options": [
+                        "is",
+                        "am",
+                        "are",
+                        "be"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "id": "g_mc_4",
+                    "type": "multiple-choice",
+                    "number": 4,
+                    "subtype": "standard",
+                    "question": "We usually _____ dinner at 7pm.",
+                    "options": [
+                        "eat",
+                        "eats",
+                        "eating",
+                        "ate"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "id": "g_mc_5",
+                    "type": "multiple-choice",
+                    "number": 5,
+                    "subtype": "standard",
+                    "question": "He _____ not like coffee.",
+                    "options": [
+                        "do",
+                        "does",
+                        "is",
+                        "has"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_6",
+                    "type": "multiple-choice",
+                    "number": 6,
+                    "subtype": "standard",
+                    "question": "Look! It _____ raining.",
+                    "options": [
+                        "is",
+                        "are",
+                        "was",
+                        "were"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "id": "g_mc_7",
+                    "type": "multiple-choice",
+                    "number": 7,
+                    "subtype": "standard",
+                    "question": "I have _____ been to London.",
+                    "options": [
+                        "ever",
+                        "never",
+                        "yet",
+                        "since"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_8",
+                    "type": "multiple-choice",
+                    "number": 8,
+                    "subtype": "standard",
+                    "question": "This book is _____ than that one.",
+                    "options": [
+                        "big",
+                        "bigger",
+                        "biggest",
+                        "more big"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_9",
+                    "type": "multiple-choice",
+                    "number": 9,
+                    "subtype": "standard",
+                    "question": "She is the _____ student in class.",
+                    "options": [
+                        "smart",
+                        "smarter",
+                        "smartest",
+                        "most smart"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "id": "g_mc_10",
+                    "type": "multiple-choice",
+                    "number": 10,
+                    "subtype": "standard",
+                    "question": "I would like _____ apple, please.",
+                    "options": [
+                        "a",
+                        "an",
+                        "the",
+                        "some"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_11",
+                    "type": "multiple-choice",
+                    "number": 11,
+                    "subtype": "standard",
+                    "question": "There aren't _____ eggs in the fridge.",
+                    "options": [
+                        "some",
+                        "any",
+                        "no",
+                        "much"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_12",
+                    "type": "multiple-choice",
+                    "number": 12,
+                    "subtype": "standard",
+                    "question": "How _____ water do you drink?",
+                    "options": [
+                        "many",
+                        "much",
+                        "some",
+                        "any"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_13",
+                    "type": "multiple-choice",
+                    "number": 13,
+                    "subtype": "standard",
+                    "question": "I saw him _____ the bus stop.",
+                    "options": [
+                        "in",
+                        "on",
+                        "at",
+                        "to"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "id": "g_mc_14",
+                    "type": "multiple-choice",
+                    "number": 14,
+                    "subtype": "standard",
+                    "question": "My birthday is _____ July.",
+                    "options": [
+                        "in",
+                        "on",
+                        "at",
+                        "for"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "id": "g_mc_15",
+                    "type": "multiple-choice",
+                    "number": 15,
+                    "subtype": "standard",
+                    "question": "We went there _____ foot.",
+                    "options": [
+                        "by",
+                        "in",
+                        "on",
+                        "with"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "id": "g_mc_16",
+                    "type": "multiple-choice",
+                    "number": 16,
+                    "subtype": "standard",
+                    "question": "If it rains, I _____ stay home.",
+                    "options": [
+                        "will",
+                        "would",
+                        "am",
+                        "do"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "id": "g_mc_17",
+                    "type": "multiple-choice",
+                    "number": 17,
+                    "subtype": "standard",
+                    "question": "I enjoy _____ movies.",
+                    "options": [
+                        "watch",
+                        "to watch",
+                        "watching",
+                        "watched"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "id": "g_mc_18",
+                    "type": "multiple-choice",
+                    "number": 18,
+                    "subtype": "standard",
+                    "question": "He decided _____ a new car.",
+                    "options": [
+                        "buy",
+                        "to buy",
+                        "buying",
+                        "bought"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_19",
+                    "type": "multiple-choice",
+                    "number": 19,
+                    "subtype": "standard",
+                    "question": "The letter was _____ by me.",
+                    "options": [
+                        "write",
+                        "wrote",
+                        "written",
+                        "writing"
+                    ],
+                    "correctAnswer": "C"
+                },
+                {
+                    "id": "g_mc_20",
+                    "type": "multiple-choice",
+                    "number": 20,
+                    "subtype": "standard",
+                    "question": "I haven't seen her _____ 2020.",
+                    "options": [
+                        "for",
+                        "since",
+                        "ago",
+                        "before"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_21",
+                    "type": "multiple-choice",
+                    "number": 21,
+                    "subtype": "true-false",
+                    "question": "Is this correct? 'He don't like cats.'",
+                    "options": [
+                        "Correct",
+                        "Incorrect"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_22",
+                    "type": "multiple-choice",
+                    "number": 22,
+                    "subtype": "true-false",
+                    "question": "Is this correct? 'They are playing football.'",
+                    "options": [
+                        "Correct",
+                        "Incorrect"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "id": "g_mc_23",
+                    "type": "multiple-choice",
+                    "number": 23,
+                    "subtype": "true-false",
+                    "question": "Is this correct? 'She has went home.'",
+                    "options": [
+                        "Correct",
+                        "Incorrect"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_mc_24",
+                    "type": "multiple-choice",
+                    "number": 24,
+                    "subtype": "true-false",
+                    "question": "Is this correct? 'Where do you live?'",
+                    "options": [
+                        "Correct",
+                        "Incorrect"
+                    ],
+                    "correctAnswer": "A"
+                },
+                {
+                    "id": "g_mc_25",
+                    "type": "multiple-choice",
+                    "number": 25,
+                    "subtype": "true-false",
+                    "question": "Is this correct? 'I am studying English for two years.'",
+                    "options": [
+                        "Correct",
+                        "Incorrect"
+                    ],
+                    "correctAnswer": "B"
+                },
+                {
+                    "id": "g_fib_26",
+                    "type": "fill-in-blanks",
+                    "number": 26,
+                    "subtype": "single",
+                    "question": "I _____ (be) a student.",
+                    "correctAnswer": "am"
+                },
+                {
+                    "id": "g_fib_27",
+                    "type": "fill-in-blanks",
+                    "number": 27,
+                    "subtype": "single",
+                    "question": "She _____ (work) in a bank.",
+                    "correctAnswer": "works"
+                },
+                {
+                    "id": "g_fib_28",
+                    "type": "fill-in-blanks",
+                    "number": 28,
+                    "subtype": "single",
+                    "question": "We _____ (watch) a movie last night.",
+                    "correctAnswer": "watched"
+                },
+                {
+                    "id": "g_fib_29",
+                    "type": "fill-in-blanks",
+                    "number": 29,
+                    "subtype": "single",
+                    "question": "They _____ (not/like) spicy food.",
+                    "correctAnswer": "don't like"
+                },
+                {
+                    "id": "g_fib_30",
+                    "type": "fill-in-blanks",
+                    "number": 30,
+                    "subtype": "single",
+                    "question": "He _____ (sleep) right now.",
+                    "correctAnswer": "is sleeping"
+                },
+                {
+                    "id": "g_fib_31",
+                    "type": "fill-in-blanks",
+                    "number": 31,
+                    "subtype": "single",
+                    "question": "I _____ (study) English since 2010.",
+                    "correctAnswer": "have studied"
+                },
+                {
+                    "id": "g_fib_32",
+                    "type": "fill-in-blanks",
+                    "number": 32,
+                    "subtype": "single",
+                    "question": "When I arrived, they _____ (eat) dinner.",
+                    "correctAnswer": "were eating"
+                },
+                {
+                    "id": "g_fib_33",
+                    "type": "fill-in-blanks",
+                    "number": 33,
+                    "subtype": "single",
+                    "question": "If I study hard, I _____ (pass) the exam.",
+                    "correctAnswer": "will pass"
+                },
+                {
+                    "id": "g_fib_34",
+                    "type": "fill-in-blanks",
+                    "number": 34,
+                    "subtype": "single",
+                    "question": "She asked me where I _____ (live).",
+                    "correctAnswer": "lived"
+                },
+                {
+                    "id": "g_fib_35",
+                    "type": "fill-in-blanks",
+                    "number": 35,
+                    "subtype": "single",
+                    "question": "The car _____ (repair) tomorrow.",
+                    "correctAnswer": "will be repaired"
+                },
+                {
+                    "id": "g_fib_36",
+                    "type": "fill-in-blanks",
+                    "number": 36,
+                    "subtype": "dropdown",
+                    "question": "I am interested _____ learning German.",
+                    "dropdownOptions": [
+                        "in",
+                        "on",
+                        "at",
+                        "for"
+                    ],
+                    "correctAnswer": "in"
+                },
+                {
+                    "id": "g_fib_37",
+                    "type": "fill-in-blanks",
+                    "number": 37,
+                    "subtype": "dropdown",
+                    "question": "She is good _____ math.",
+                    "dropdownOptions": [
+                        "in",
+                        "on",
+                        "at",
+                        "for"
+                    ],
+                    "correctAnswer": "at"
+                },
+                {
+                    "id": "g_fib_38",
+                    "type": "fill-in-blanks",
+                    "number": 38,
+                    "subtype": "dropdown",
+                    "question": "I am afraid _____ spiders.",
+                    "dropdownOptions": [
+                        "of",
+                        "for",
+                        "with",
+                        "about"
+                    ],
+                    "correctAnswer": "of"
+                },
+                {
+                    "id": "g_fib_39",
+                    "type": "fill-in-blanks",
+                    "number": 39,
+                    "subtype": "dropdown",
+                    "question": "He is responsible _____ the project.",
+                    "dropdownOptions": [
+                        "to",
+                        "for",
+                        "with",
+                        "of"
+                    ],
+                    "correctAnswer": "for"
+                },
+                {
+                    "id": "g_fib_40",
+                    "type": "fill-in-blanks",
+                    "number": 40,
+                    "subtype": "dropdown",
+                    "question": "We agreed _____ the plan.",
+                    "dropdownOptions": [
+                        "to",
+                        "on",
+                        "with",
+                        "about"
+                    ],
+                    "correctAnswer": "on"
+                },
+                {
+                    "id": "g_fib_41",
+                    "type": "fill-in-blanks",
+                    "number": 41,
+                    "subtype": "multiple",
+                    "question": "I _____ (go) to Paris _____ (last/next) year.",
+                    "blanks": 2,
+                    "correctAnswer": "went, last"
+                },
+                {
+                    "id": "g_fib_42",
+                    "type": "fill-in-blanks",
+                    "number": 42,
+                    "subtype": "multiple",
+                    "question": "She _____ (have) _____ (two/too) brothers.",
+                    "blanks": 2,
+                    "correctAnswer": "has, two"
+                },
+                {
+                    "id": "g_fib_43",
+                    "type": "fill-in-blanks",
+                    "number": 43,
+                    "subtype": "multiple",
+                    "question": "They _____ (be) _____ (good/well) friends.",
+                    "blanks": 2,
+                    "correctAnswer": "are, good"
+                },
+                {
+                    "id": "g_fib_44",
+                    "type": "fill-in-blanks",
+                    "number": 44,
+                    "subtype": "multiple",
+                    "question": "He _____ (play) _____ (good/well).",
+                    "blanks": 2,
+                    "correctAnswer": "plays, well"
+                },
+                {
+                    "id": "g_fib_45",
+                    "type": "fill-in-blanks",
+                    "number": 45,
+                    "subtype": "multiple",
+                    "question": "We _____ (study) _____ (hard/hardly).",
+                    "blanks": 2,
+                    "correctAnswer": "study, hard"
+                },
+                {
+                    "id": "g_fib_46",
+                    "type": "fill-in-blanks",
+                    "number": 46,
+                    "subtype": "single",
+                    "question": "Plural of 'child':",
+                    "correctAnswer": "children"
+                },
+                {
+                    "id": "g_fib_47",
+                    "type": "fill-in-blanks",
+                    "number": 47,
+                    "subtype": "single",
+                    "question": "Past tense of 'go':",
+                    "correctAnswer": "went"
+                },
+                {
+                    "id": "g_fib_48",
+                    "type": "fill-in-blanks",
+                    "number": 48,
+                    "subtype": "single",
+                    "question": "Opposite of 'hot':",
+                    "correctAnswer": "cold"
+                },
+                {
+                    "id": "g_fib_49",
+                    "type": "fill-in-blanks",
+                    "number": 49,
+                    "subtype": "single",
+                    "question": "Comparative of 'good':",
+                    "correctAnswer": "better"
+                },
+                {
+                    "id": "g_fib_50",
+                    "type": "fill-in-blanks",
+                    "number": 50,
+                    "subtype": "single",
+                    "question": "Superlative of 'bad':",
+                    "correctAnswer": "worst"
+                },
+                {
+                    "id": "g_match_51",
+                    "type": "matching",
+                    "number": 51,
+                    "matchingType": "dropdown",
+                    "question": "Match the tenses:",
+                    "pairs": [
+                        {
+                            "left": "I play",
+                            "right": "Present Simple"
+                        },
+                        {
+                            "left": "I played",
+                            "right": "Past Simple"
+                        },
+                        {
+                            "left": "I am playing",
+                            "right": "Present Continuous"
+                        },
+                        {
+                            "left": "I have played",
+                            "right": "Present Perfect"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "Present Simple",
+                        "Past Simple",
+                        "Present Continuous",
+                        "Present Perfect"
+                    ]
+                },
+                {
+                    "id": "g_match_52",
+                    "type": "matching",
+                    "number": 52,
+                    "matchingType": "dropdown",
+                    "question": "Match the opposites:",
+                    "pairs": [
+                        {
+                            "left": "Big",
+                            "right": "Small"
+                        },
+                        {
+                            "left": "Fast",
+                            "right": "Slow"
+                        },
+                        {
+                            "left": "Happy",
+                            "right": "Sad"
+                        },
+                        {
+                            "left": "Rich",
+                            "right": "Poor"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "Small",
+                        "Slow",
+                        "Sad",
+                        "Poor"
+                    ]
+                },
+                {
+                    "id": "g_match_53",
+                    "type": "matching",
+                    "number": 53,
+                    "matchingType": "dropdown",
+                    "question": "Match the animals to their babies:",
+                    "pairs": [
+                        {
+                            "left": "Cat",
+                            "right": "Kitten"
+                        },
+                        {
+                            "left": "Dog",
+                            "right": "Puppy"
+                        },
+                        {
+                            "left": "Cow",
+                            "right": "Calf"
+                        },
+                        {
+                            "left": "Sheep",
+                            "right": "Lamb"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "Kitten",
+                        "Puppy",
+                        "Calf",
+                        "Lamb"
+                    ]
+                },
+                {
+                    "id": "g_match_54",
+                    "type": "matching",
+                    "number": 54,
+                    "matchingType": "dropdown",
+                    "question": "Match the verbs to nouns:",
+                    "pairs": [
+                        {
+                            "left": "Play",
+                            "right": "Tennis"
+                        },
+                        {
+                            "left": "Read",
+                            "right": "A Book"
+                        },
+                        {
+                            "left": "Drive",
+                            "right": "A Car"
+                        },
+                        {
+                            "left": "Ride",
+                            "right": "A Bike"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "Tennis",
+                        "A Book",
+                        "A Car",
+                        "A Bike"
+                    ]
+                },
+                {
+                    "id": "g_match_55",
+                    "type": "matching",
+                    "number": 55,
+                    "matchingType": "dropdown",
+                    "question": "Match country to language:",
+                    "pairs": [
+                        {
+                            "left": "France",
+                            "right": "French"
+                        },
+                        {
+                            "left": "Spain",
+                            "right": "Spanish"
+                        },
+                        {
+                            "left": "Japan",
+                            "right": "Japanese"
+                        },
+                        {
+                            "left": "China",
+                            "right": "Chinese"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "French",
+                        "Spanish",
+                        "Japanese",
+                        "Chinese"
+                    ]
+                },
+                {
+                    "id": "g_match_56",
+                    "type": "matching",
+                    "number": 56,
+                    "matchingType": "click-connect",
+                    "question": "Match words:",
+                    "pairs": [
+                        {
+                            "left": "One",
+                            "right": "1"
+                        },
+                        {
+                            "left": "Two",
+                            "right": "2"
+                        },
+                        {
+                            "left": "Three",
+                            "right": "3"
+                        },
+                        {
+                            "left": "Four",
+                            "right": "4"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ]
+                },
+                {
+                    "id": "g_match_57",
+                    "type": "matching",
+                    "number": 57,
+                    "matchingType": "click-connect",
+                    "question": "Match colors:",
+                    "pairs": [
+                        {
+                            "left": "Red",
+                            "right": "Apple"
+                        },
+                        {
+                            "left": "Yellow",
+                            "right": "Banana"
+                        },
+                        {
+                            "left": "Green",
+                            "right": "Grass"
+                        },
+                        {
+                            "left": "Blue",
+                            "right": "Sky"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "Apple",
+                        "Banana",
+                        "Grass",
+                        "Sky"
+                    ]
+                },
+                {
+                    "id": "g_match_58",
+                    "type": "matching",
+                    "number": 58,
+                    "matchingType": "click-connect",
+                    "question": "Match forms:",
+                    "pairs": [
+                        {
+                            "left": "Be",
+                            "right": "Was"
+                        },
+                        {
+                            "left": "Go",
+                            "right": "Went"
+                        },
+                        {
+                            "left": "See",
+                            "right": "Saw"
+                        },
+                        {
+                            "left": "Make",
+                            "right": "Made"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "Was",
+                        "Went",
+                        "Saw",
+                        "Made"
+                    ]
+                },
+                {
+                    "id": "g_match_59",
+                    "type": "matching",
+                    "number": 59,
+                    "matchingType": "click-connect",
+                    "question": "Match synonyms:",
+                    "pairs": [
+                        {
+                            "left": "Start",
+                            "right": "Begin"
+                        },
+                        {
+                            "left": "End",
+                            "right": "Finish"
+                        },
+                        {
+                            "left": "Big",
+                            "right": "Large"
+                        },
+                        {
+                            "left": "Small",
+                            "right": "Little"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "Begin",
+                        "Finish",
+                        "Large",
+                        "Little"
+                    ]
+                },
+                {
+                    "id": "g_match_60",
+                    "type": "matching",
+                    "number": 60,
+                    "matchingType": "click-connect",
+                    "question": "Match jobs:",
+                    "pairs": [
+                        {
+                            "left": "Teacher",
+                            "right": "School"
+                        },
+                        {
+                            "left": "Doctor",
+                            "right": "Hospital"
+                        },
+                        {
+                            "left": "Chef",
+                            "right": "Restaurant"
+                        },
+                        {
+                            "left": "Pilot",
+                            "right": "Airplane"
+                        }
+                    ],
+                    "correctAnswers": [
+                        "School",
+                        "Hospital",
+                        "Restaurant",
+                        "Airplane"
+                    ]
+                },
+                {
+                    "id": "g_match_61",
+                    "type": "matching",
+                    "number": 61,
+                    "matchingType": "sort",
+                    "question": "Order the sentence:",
+                    "items": [
+                        "I",
+                        "love",
+                        "playing",
+                        "football"
+                    ],
+                    "correctOrder": [
+                        "I",
+                        "love",
+                        "playing",
+                        "football"
+                    ]
+                },
+                {
+                    "id": "g_match_62",
+                    "type": "matching",
+                    "number": 62,
+                    "matchingType": "sort",
+                    "question": "Order the sentence:",
+                    "items": [
+                        "She",
+                        "is",
+                        "my",
+                        "best",
+                        "friend"
+                    ],
+                    "correctOrder": [
+                        "She",
+                        "is",
+                        "my",
+                        "best",
+                        "friend"
+                    ]
+                },
+                {
+                    "id": "g_match_63",
+                    "type": "matching",
+                    "number": 63,
+                    "matchingType": "sort",
+                    "question": "Order the sentence:",
+                    "items": [
+                        "They",
+                        "went",
+                        "to",
+                        "the",
+                        "cinema"
+                    ],
+                    "correctOrder": [
+                        "They",
+                        "went",
+                        "to",
+                        "the",
+                        "cinema"
+                    ]
+                },
+                {
+                    "id": "g_match_64",
+                    "type": "matching",
+                    "number": 64,
+                    "matchingType": "sort",
+                    "question": "Order the sentence:",
+                    "items": [
+                        "What",
+                        "is",
+                        "your",
+                        "name",
+                        "?"
+                    ],
+                    "correctOrder": [
+                        "What",
+                        "is",
+                        "your",
+                        "name",
+                        "?"
+                    ]
+                },
+                {
+                    "id": "g_match_65",
+                    "type": "matching",
+                    "number": 65,
+                    "matchingType": "sort",
+                    "question": "Order the sentence:",
+                    "items": [
+                        "I",
+                        "have",
+                        "never",
+                        "been",
+                        "there"
+                    ],
+                    "correctOrder": [
+                        "I",
+                        "have",
+                        "never",
+                        "been",
+                        "there"
+                    ]
+                },
+                {
+                    "id": "g_match_66",
+                    "type": "matching",
+                    "number": 66,
+                    "matchingType": "drag-box",
+                    "question": "Group the words:",
+                    "groups": {
+                        "Nouns": [
+                            "Table",
+                            "Car",
+                            "Dog"
+                        ],
+                        "Verbs": [
+                            "Run",
+                            "Eat",
+                            "Sleep"
+                        ]
+                    },
+                    "correctAnswers": {
+                        "Nouns": [
+                            "Table",
+                            "Car",
+                            "Dog"
+                        ],
+                        "Verbs": [
+                            "Run",
+                            "Eat",
+                            "Sleep"
+                        ]
+                    }
+                },
+                {
+                    "id": "g_match_67",
+                    "type": "matching",
+                    "number": 67,
+                    "matchingType": "drag-box",
+                    "question": "Group the words:",
+                    "groups": {
+                        "Fruits": [
+                            "Apple",
+                            "Banana"
+                        ],
+                        "Vegetables": [
+                            "Carrot",
+                            "Potato"
+                        ]
+                    },
+                    "correctAnswers": {
+                        "Fruits": [
+                            "Apple",
+                            "Banana"
+                        ],
+                        "Vegetables": [
+                            "Carrot",
+                            "Potato"
+                        ]
+                    }
+                },
+                {
+                    "id": "g_match_68",
+                    "type": "matching",
+                    "number": 68,
+                    "matchingType": "drag-box",
+                    "question": "Group the words:",
+                    "groups": {
+                        "Positive": [
+                            "Happy",
+                            "Good"
+                        ],
+                        "Negative": [
+                            "Sad",
+                            "Bad"
+                        ]
+                    },
+                    "correctAnswers": {
+                        "Positive": [
+                            "Happy",
+                            "Good"
+                        ],
+                        "Negative": [
+                            "Sad",
+                            "Bad"
+                        ]
+                    }
+                },
+                {
+                    "id": "g_match_69",
+                    "type": "matching",
+                    "number": 69,
+                    "matchingType": "drag-box",
+                    "question": "Group the words:",
+                    "groups": {
+                        "Past": [
+                            "Yesterday",
+                            "Last year"
+                        ],
+                        "Future": [
+                            "Tomorrow",
+                            "Next week"
+                        ]
+                    },
+                    "correctAnswers": {
+                        "Past": [
+                            "Yesterday",
+                            "Last year"
+                        ],
+                        "Future": [
+                            "Tomorrow",
+                            "Next week"
+                        ]
+                    }
+                },
+                {
+                    "id": "g_match_70",
+                    "type": "matching",
+                    "number": 70,
+                    "matchingType": "drag-box",
+                    "question": "Group the words:",
+                    "groups": {
+                        "Hot": [
+                            "Summer",
+                            "Fire"
+                        ],
+                        "Cold": [
+                            "Winter",
+                            "Ice"
+                        ]
+                    },
+                    "correctAnswers": {
+                        "Hot": [
+                            "Summer",
+                            "Fire"
+                        ],
+                        "Cold": [
+                            "Winter",
+                            "Ice"
+                        ]
+                    }
+                },
+                {
+                    "id": "g_match_71",
+                    "type": "matching",
+                    "number": 71,
+                    "matchingType": "sort",
+                    "question": "Alphabetical order:",
+                    "items": [
+                        "Apple",
+                        "Banana",
+                        "Cherry",
+                        "Date"
+                    ],
+                    "correctOrder": [
+                        "Apple",
+                        "Banana",
+                        "Cherry",
+                        "Date"
+                    ]
+                },
+                {
+                    "id": "g_match_72",
+                    "type": "matching",
+                    "number": 72,
+                    "matchingType": "sort",
+                    "question": "Number order:",
+                    "items": [
+                        "One",
+                        "Two",
+                        "Three",
+                        "Four"
+                    ],
+                    "correctOrder": [
+                        "One",
+                        "Two",
+                        "Three",
+                        "Four"
+                    ]
+                },
+                {
+                    "id": "g_match_73",
+                    "type": "matching",
+                    "number": 73,
+                    "matchingType": "sort",
+                    "question": "Days of week:",
+                    "items": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday"
+                    ],
+                    "correctOrder": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday"
+                    ]
+                },
+                {
+                    "id": "g_match_74",
+                    "type": "matching",
+                    "number": 74,
+                    "matchingType": "sort",
+                    "question": "Months:",
+                    "items": [
+                        "January",
+                        "February",
+                        "March",
+                        "April"
+                    ],
+                    "correctOrder": [
+                        "January",
+                        "February",
+                        "March",
+                        "April"
+                    ]
+                },
+                {
+                    "id": "g_match_75",
+                    "type": "matching",
+                    "number": 75,
+                    "matchingType": "sort",
+                    "question": "Size order:",
+                    "items": [
+                        "Small",
+                        "Medium",
+                        "Large",
+                        "Extra Large"
+                    ],
+                    "correctOrder": [
+                        "Small",
+                        "Medium",
+                        "Large",
+                        "Extra Large"
+                    ]
+                },
+                {
+                    "id": "g_err_76",
+                    "type": "error-correction",
+                    "number": 76,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "He",
+                        "don't",
+                        "like",
+                        "music"
+                    ],
+                    "correctAnswer": "don't"
+                },
+                {
+                    "id": "g_err_77",
+                    "type": "error-correction",
+                    "number": 77,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "She",
+                        "can",
+                        "sings",
+                        "well"
+                    ],
+                    "correctAnswer": "sings"
+                },
+                {
+                    "id": "g_err_78",
+                    "type": "error-correction",
+                    "number": 78,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "They",
+                        "was",
+                        "happy",
+                        "yesterday"
+                    ],
+                    "correctAnswer": "was"
+                },
+                {
+                    "id": "g_err_79",
+                    "type": "error-correction",
+                    "number": 79,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "I",
+                        "have",
+                        "see",
+                        "him"
+                    ],
+                    "correctAnswer": "see"
+                },
+                {
+                    "id": "g_err_80",
+                    "type": "error-correction",
+                    "number": 80,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "We",
+                        "go",
+                        "to",
+                        "home"
+                    ],
+                    "correctAnswer": "to"
+                },
+                {
+                    "id": "g_err_81",
+                    "type": "error-correction",
+                    "number": 81,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "He",
+                        "is",
+                        "more",
+                        "tall"
+                    ],
+                    "correctAnswer": "more"
+                },
+                {
+                    "id": "g_err_82",
+                    "type": "error-correction",
+                    "number": 82,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "She",
+                        "like",
+                        "ice",
+                        "cream"
+                    ],
+                    "correctAnswer": "like"
+                },
+                {
+                    "id": "g_err_83",
+                    "type": "error-correction",
+                    "number": 83,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "I",
+                        "am",
+                        "live",
+                        "here"
+                    ],
+                    "correctAnswer": "am"
+                },
+                {
+                    "id": "g_err_84",
+                    "type": "error-correction",
+                    "number": 84,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "Where",
+                        "you",
+                        "are",
+                        "going"
+                    ],
+                    "correctAnswer": "you"
+                },
+                {
+                    "id": "g_err_85",
+                    "type": "error-correction",
+                    "number": 85,
+                    "subtype": "identify",
+                    "question": "Identify the error:",
+                    "errorWords": [
+                        "How",
+                        "much",
+                        "friends",
+                        "have"
+                    ],
+                    "correctAnswer": "much"
+                },
+                {
+                    "id": "g_err_86",
+                    "type": "error-correction",
+                    "number": 86,
+                    "subtype": "correct",
+                    "question": "Correct the error: He <u>don't</u> know.",
+                    "incorrectWord": "don't",
+                    "correctAnswer": "doesn't"
+                },
+                {
+                    "id": "g_err_87",
+                    "type": "error-correction",
+                    "number": 87,
+                    "subtype": "correct",
+                    "question": "Correct the error: She <u>have</u> a car.",
+                    "incorrectWord": "have",
+                    "correctAnswer": "has"
+                },
+                {
+                    "id": "g_err_88",
+                    "type": "error-correction",
+                    "number": 88,
+                    "subtype": "correct",
+                    "question": "Correct the error: They <u>was</u> here.",
+                    "incorrectWord": "was",
+                    "correctAnswer": "were"
+                },
+                {
+                    "id": "g_err_89",
+                    "type": "error-correction",
+                    "number": 89,
+                    "subtype": "correct",
+                    "question": "Correct the error: I <u>seen</u> it.",
+                    "incorrectWord": "seen",
+                    "correctAnswer": "saw"
+                },
+                {
+                    "id": "g_err_90",
+                    "type": "error-correction",
+                    "number": 90,
+                    "subtype": "correct",
+                    "question": "Correct the error: He run <u>fastly</u>.",
+                    "incorrectWord": "fastly",
+                    "correctAnswer": "fast"
+                },
+                {
+                    "id": "g_err_91",
+                    "type": "error-correction",
+                    "number": 91,
+                    "subtype": "correct",
+                    "question": "Correct the error: She is <u>gooder</u>.",
+                    "incorrectWord": "gooder",
+                    "correctAnswer": "better"
+                },
+                {
+                    "id": "g_err_92",
+                    "type": "error-correction",
+                    "number": 92,
+                    "subtype": "correct",
+                    "question": "Correct the error: I <u>must to</u> go.",
+                    "incorrectWord": "must to",
+                    "correctAnswer": "must"
+                },
+                {
+                    "id": "g_err_93",
+                    "type": "error-correction",
+                    "number": 93,
+                    "subtype": "correct",
+                    "question": "Correct the error: It <u>depend</u> on.",
+                    "incorrectWord": "depend",
+                    "correctAnswer": "depends"
+                },
+                {
+                    "id": "g_err_94",
+                    "type": "error-correction",
+                    "number": 94,
+                    "subtype": "correct",
+                    "question": "Correct the error: I am <u>boring</u>.",
+                    "incorrectWord": "boring",
+                    "correctAnswer": "bored"
+                },
+                {
+                    "id": "g_err_95",
+                    "type": "error-correction",
+                    "number": 95,
+                    "subtype": "correct",
+                    "question": "Correct the error: Use <u>an</u> pen.",
+                    "incorrectWord": "an",
+                    "correctAnswer": "a"
+                },
+                {
+                    "id": "g_err_96",
+                    "type": "error-correction",
+                    "number": 96,
+                    "subtype": "rewrite",
+                    "question": "Rewrite correctly: him likes pizza",
+                    "incorrectSentence": "him likes pizza",
+                    "correctAnswer": "He likes pizza."
+                },
+                {
+                    "id": "g_err_97",
+                    "type": "error-correction",
+                    "number": 97,
+                    "subtype": "rewrite",
+                    "question": "Rewrite correctly: i no have money",
+                    "incorrectSentence": "i no have money",
+                    "correctAnswer": "I don't have money."
+                },
+                {
+                    "id": "g_err_98",
+                    "type": "error-correction",
+                    "number": 98,
+                    "subtype": "rewrite",
+                    "question": "Rewrite correctly: where she goes?",
+                    "incorrectSentence": "where she goes?",
+                    "correctAnswer": "Where is she going?"
+                },
+                {
+                    "id": "g_err_99",
+                    "type": "error-correction",
+                    "number": 99,
+                    "subtype": "rewrite",
+                    "question": "Rewrite correctly: he study english yesterday",
+                    "incorrectSentence": "he study english yesterday",
+                    "correctAnswer": "He studied English yesterday."
+                },
+                {
+                    "id": "g_err_100",
+                    "type": "error-correction",
+                    "number": 100,
+                    "subtype": "rewrite",
+                    "question": "Rewrite correctly: me and tom is friends",
+                    "incorrectSentence": "me and tom is friends",
+                    "correctAnswer": "Tom and I are friends."
+                }
+            ]
+        },
+        {
+            "id": "listening",
+            "title": "Listening",
+            "description": "40 questions • Approximately 30 minutes",
+            "parts": [
+                {
+                    "partNumber": 1,
+                    "title": "Part 1: Social Context",
+                    "instructions": "Listen to the conversation and answer questions 1-10.",
+                    "voiceProfiles": {
+                        "female": {
+                            "name": "Receptionist"
+                        }
+                    },
+                    "script": {
+                        "narrator": "Part 1. You will hear a conversation...",
+                        "conversation": [
+                            {
+                                "speaker": "female",
+                                "text": "Good morning, Gym reception."
+                            }
+                        ]
+                    },
+                    "questions": [
+                        {
+                            "id": "l_q1",
+                            "type": "fill-in-blanks",
+                            "questionText": "Name: John _____",
+                            "correctAnswer": "Smith"
+                        },
+                        {
+                            "id": "l_q2",
+                            "type": "fill-in-blanks",
+                            "questionText": "Address: 14 _____ Street",
+                            "correctAnswer": "Oak"
+                        },
+                        {
+                            "id": "l_q3",
+                            "type": "fill-in-blanks",
+                            "questionText": "Phone: 077 _____ 456",
+                            "correctAnswer": "123"
+                        },
+                        {
+                            "id": "l_q4",
+                            "type": "multiple-choice",
+                            "questionText": "Membership type:",
+                            "options": [
+                                "Gold",
+                                "Silver",
+                                "Bronze"
+                            ],
+                            "correctAnswer": "A"
+                        },
+                        {
+                            "id": "l_q5",
+                            "type": "multiple-choice",
+                            "questionText": "Payment method:",
+                            "options": [
+                                "Cash",
+                                "Card",
+                                "Cheque"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "l_q6",
+                            "type": "multiple-choice",
+                            "questionText": "Visit frequency:",
+                            "options": [
+                                "Daily",
+                                "Weekly",
+                                "Monthly"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "l_q7",
+                            "type": "fill-in-blanks",
+                            "questionText": "Reason: To get _____",
+                            "correctAnswer": "fit"
+                        },
+                        {
+                            "id": "l_q8",
+                            "type": "fill-in-blanks",
+                            "questionText": "Start date: _____ May",
+                            "correctAnswer": "1st"
+                        },
+                        {
+                            "id": "l_q9",
+                            "type": "fill-in-blanks",
+                            "questionText": "Trainer name: _____",
+                            "correctAnswer": "Mike"
+                        },
+                        {
+                            "id": "l_q10",
+                            "type": "fill-in-blanks",
+                            "questionText": "Bring: _____",
+                            "correctAnswer": "towel"
+                        }
+                    ]
+                },
+                {
+                    "partNumber": 2,
+                    "title": "Part 2: Monologue",
+                    "instructions": "Listen to the guide talking about the museum.",
+                    "voiceProfiles": {
+                        "male": {
+                            "name": "Guide"
+                        }
+                    },
+                    "script": {
+                        "narrator": "Part 2...",
+                        "conversation": [
+                            {
+                                "speaker": "male",
+                                "text": "Welcome to the museum..."
+                            }
+                        ]
+                    },
+                    "questions": [
+                        {
+                            "id": "l_q11",
+                            "type": "multiple-choice",
+                            "questionText": "The museum opened in:",
+                            "options": [
+                                "1990",
+                                "1995",
+                                "2000"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "l_q12",
+                            "type": "multiple-choice",
+                            "questionText": "Closing time is:",
+                            "options": [
+                                "5pm",
+                                "6pm",
+                                "7pm"
+                            ],
+                            "correctAnswer": "A"
+                        },
+                        {
+                            "id": "l_q13",
+                            "type": "multiple-choice",
+                            "questionText": "Tickets cost:",
+                            "options": [
+                                "$5",
+                                "$10",
+                                "$15"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "l_q14",
+                            "type": "matching",
+                            "leftColumn": [
+                                "A",
+                                "B",
+                                "C"
+                            ],
+                            "rightColumn": [
+                                "Cafe",
+                                "Shop",
+                                "Toilet"
+                            ],
+                            "correctAnswers": [
+                                "B",
+                                "C",
+                                "A"
+                            ],
+                            "questionText": "Match rooms map."
+                        },
+                        {
+                            "id": "l_q15",
+                            "type": "fill-in-blanks",
+                            "questionText": "No _____ allowed.",
+                            "correctAnswer": "photos"
+                        },
+                        {
+                            "id": "l_q16",
+                            "type": "fill-in-blanks",
+                            "questionText": "Leave bags in _____",
+                            "correctAnswer": "lockers"
+                        },
+                        {
+                            "id": "l_q17",
+                            "type": "fill-in-blanks",
+                            "questionText": "Special exhibition: _____",
+                            "correctAnswer": "dinosaurs"
+                        },
+                        {
+                            "id": "l_q18",
+                            "type": "fill-in-blanks",
+                            "questionText": "Meeting point: _____",
+                            "correctAnswer": "entrance"
+                        },
+                        {
+                            "id": "l_q19",
+                            "type": "fill-in-blanks",
+                            "questionText": "Tour length: _____ mins",
+                            "correctAnswer": "45"
+                        },
+                        {
+                            "id": "l_q20",
+                            "type": "fill-in-blanks",
+                            "questionText": "Group size: _____",
+                            "correctAnswer": "15"
+                        }
+                    ]
+                },
+                {
+                    "partNumber": 3,
+                    "title": "Part 3: Academic Discussion",
+                    "instructions": "Listen to two students discussing a project.",
+                    "voiceProfiles": {
+                        "female": {
+                            "name": "Alice"
+                        },
+                        "male": {
+                            "name": "Bob"
+                        }
+                    },
+                    "script": {
+                        "narrator": "Part 3...",
+                        "conversation": [
+                            {
+                                "speaker": "female",
+                                "text": "Hi Bob..."
+                            }
+                        ]
+                    },
+                    "questions": [
+                        {
+                            "id": "l_q21",
+                            "type": "multiple-choice",
+                            "questionText": "Project topic is:",
+                            "options": [
+                                "History",
+                                "Geography",
+                                "Science"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "l_q22",
+                            "type": "multiple-choice",
+                            "questionText": "Deadline:",
+                            "options": [
+                                "Monday",
+                                "Friday",
+                                "Wednesday"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "l_q23",
+                            "type": "multiple-choice",
+                            "questionText": "They need to interview:",
+                            "options": [
+                                "Teacher",
+                                "Students",
+                                "Parents"
+                            ],
+                            "correctAnswer": "A"
+                        },
+                        {
+                            "id": "l_q24",
+                            "type": "multiple-choice",
+                            "questionText": "Presentation length:",
+                            "options": [
+                                "5 mins",
+                                "10 mins",
+                                "15 mins"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "l_q25",
+                            "type": "multiple-choice",
+                            "questionText": "Bob will do:",
+                            "options": [
+                                "Research",
+                                "Slides",
+                                "Speaking"
+                            ],
+                            "correctAnswer": "A"
+                        },
+                        {
+                            "id": "l_q26",
+                            "type": "multiple-choice",
+                            "questionText": "Alice will do:",
+                            "options": [
+                                "Research",
+                                "Slides",
+                                "Speaking"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "l_q27",
+                            "type": "matching",
+                            "leftColumn": [
+                                "Smith",
+                                "Jones",
+                                "Brown"
+                            ],
+                            "rightColumn": [
+                                "Strict",
+                                "Funny",
+                                "Boring"
+                            ],
+                            "correctAnswers": [
+                                "A",
+                                "C",
+                                "B"
+                            ],
+                            "questionText": "Match teacher traits."
+                        },
+                        {
+                            "id": "l_q28",
+                            "type": "fill-in-blanks",
+                            "questionText": "They need a _____",
+                            "correctAnswer": "laptop"
+                        },
+                        {
+                            "id": "l_q29",
+                            "type": "fill-in-blanks",
+                            "questionText": "Meet next at: _____",
+                            "correctAnswer": "library"
+                        },
+                        {
+                            "id": "l_q30",
+                            "type": "fill-in-blanks",
+                            "questionText": "Time: _____",
+                            "correctAnswer": "2pm"
+                        }
+                    ]
+                },
+                {
+                    "partNumber": 4,
+                    "title": "Part 4: Lecture",
+                    "instructions": "Listen to a lecture about Bees.",
+                    "voiceProfiles": {
+                        "male": {
+                            "name": "Professor"
+                        }
+                    },
+                    "script": {
+                        "narrator": "Part 4...",
+                        "conversation": [
+                            {
+                                "speaker": "male",
+                                "text": "Today we talk about bees..."
+                            }
+                        ]
+                    },
+                    "questions": [
+                        {
+                            "id": "l_q31",
+                            "type": "fill-in-blanks",
+                            "questionText": "Bees live in _____",
+                            "correctAnswer": "hives"
+                        },
+                        {
+                            "id": "l_q32",
+                            "type": "fill-in-blanks",
+                            "questionText": "They make _____",
+                            "correctAnswer": "honey"
+                        },
+                        {
+                            "id": "l_q33",
+                            "type": "fill-in-blanks",
+                            "questionText": "Queen bee lays _____",
+                            "correctAnswer": "eggs"
+                        },
+                        {
+                            "id": "l_q34",
+                            "type": "fill-in-blanks",
+                            "questionText": "Worker bees are _____",
+                            "correctAnswer": "female"
+                        },
+                        {
+                            "id": "l_q35",
+                            "type": "fill-in-blanks",
+                            "questionText": "Drones are _____",
+                            "correctAnswer": "male"
+                        },
+                        {
+                            "id": "l_q36",
+                            "type": "fill-in-blanks",
+                            "questionText": "Bees communicate by _____",
+                            "correctAnswer": "dancing"
+                        },
+                        {
+                            "id": "l_q37",
+                            "type": "fill-in-blanks",
+                            "questionText": "They collect _____",
+                            "correctAnswer": "nectar"
+                        },
+                        {
+                            "id": "l_q38",
+                            "type": "fill-in-blanks",
+                            "questionText": "Important for _____",
+                            "correctAnswer": "pollination"
+                        },
+                        {
+                            "id": "l_q39",
+                            "type": "fill-in-blanks",
+                            "questionText": "Population is _____",
+                            "correctAnswer": "declining"
+                        },
+                        {
+                            "id": "l_q40",
+                            "type": "fill-in-blanks",
+                            "questionText": "We must _____ them.",
+                            "correctAnswer": "protect"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "reading",
+            "title": "Reading",
+            "description": "30 questions • 60 minutes",
+            "passages": [
+                {
+                    "id": "r_p1",
+                    "title": "The History of Chocolate",
+                    "content": "Chocolate comes from the cacao tree. It grows in tropical places. The Mayans used it first. They made a drink. It was bitter. Later, Europeans added sugar. Now we love chocolate. It is sweet and delicious. Dark chocolate is healthy.",
+                    "questions": [
+                        {
+                            "id": "r_q1",
+                            "type": "multiple-choice",
+                            "questionText": "Where does cacao grow?",
+                            "options": [
+                                "Cold places",
+                                "Tropical places",
+                                "Deserts",
+                                "Cities"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "r_q2",
+                            "type": "multiple-choice",
+                            "questionText": "Who used it first?",
+                            "options": [
+                                "Romans",
+                                "Greeks",
+                                "Mayans",
+                                "British"
+                            ],
+                            "correctAnswer": "C"
+                        },
+                        {
+                            "id": "r_q3",
+                            "type": "multiple-choice",
+                            "questionText": "The Mayan drink was:",
+                            "options": [
+                                "Sweet",
+                                "Bitter",
+                                "Salty",
+                                "Spicy"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "r_q4",
+                            "type": "multiple-choice",
+                            "questionText": "Europeans added:",
+                            "options": [
+                                "Salt",
+                                "Pepper",
+                                "Sugar",
+                                "Milk"
+                            ],
+                            "correctAnswer": "C"
+                        },
+                        {
+                            "id": "r_q5",
+                            "type": "true-false",
+                            "questionText": "Dark chocolate is healthy.",
+                            "correctAnswer": "true"
+                        },
+                        {
+                            "id": "r_q6",
+                            "type": "true-false",
+                            "questionText": "Cacao grows in Europe.",
+                            "correctAnswer": "false"
+                        },
+                        {
+                            "id": "r_q7",
+                            "type": "true-false",
+                            "questionText": "Chocolate is now sweet.",
+                            "correctAnswer": "true"
+                        },
+                        {
+                            "id": "r_q8",
+                            "type": "fill-in-blanks",
+                            "questionText": "Tree name: _____",
+                            "correctAnswer": "cacao"
+                        },
+                        {
+                            "id": "r_q9",
+                            "type": "fill-in-blanks",
+                            "questionText": "First users: _____",
+                            "correctAnswer": "Mayans"
+                        },
+                        {
+                            "id": "r_q10",
+                            "type": "fill-in-blanks",
+                            "questionText": "Taste now: _____",
+                            "correctAnswer": "sweet"
+                        }
+                    ]
+                },
+                {
+                    "id": "r_p2",
+                    "title": "Space Travel",
+                    "content": "Humans have traveled to space. Yuri Gagarin was the first. Neil Armstrong walked on the moon. Now we have a space station. Astronauts live there. It is hard work. They do experiments. Mars is the next goal. It is far away.",
+                    "questions": [
+                        {
+                            "id": "r_q11",
+                            "type": "multiple-choice",
+                            "questionText": "First man in space?",
+                            "options": [
+                                "Armstrong",
+                                "Gagarin",
+                                "Aldrin",
+                                "Smith"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "r_q12",
+                            "type": "multiple-choice",
+                            "questionText": "First man on moon?",
+                            "options": [
+                                "Armstrong",
+                                "Gagarin",
+                                "Aldrin",
+                                "Smith"
+                            ],
+                            "correctAnswer": "A"
+                        },
+                        {
+                            "id": "r_q13",
+                            "type": "multiple-choice",
+                            "questionText": "Where do astronauts live?",
+                            "options": [
+                                "Mars",
+                                "Moon",
+                                "Space Station",
+                                "Rocket"
+                            ],
+                            "correctAnswer": "C"
+                        },
+                        {
+                            "id": "r_q14",
+                            "type": "multiple-choice",
+                            "questionText": "Next goal?",
+                            "options": [
+                                "Venus",
+                                "Mars",
+                                "Sun",
+                                "Jupiter"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "r_q15",
+                            "type": "true-false",
+                            "questionText": "Space travel is easy.",
+                            "correctAnswer": "false"
+                        },
+                        {
+                            "id": "r_q16",
+                            "type": "true-false",
+                            "questionText": "They do experiments.",
+                            "correctAnswer": "true"
+                        },
+                        {
+                            "id": "r_q17",
+                            "type": "true-false",
+                            "questionText": "Mars is near.",
+                            "correctAnswer": "false"
+                        },
+                        {
+                            "id": "r_q18",
+                            "type": "fill-in-blanks",
+                            "questionText": "Armstrong walked on _____",
+                            "correctAnswer": "moon"
+                        },
+                        {
+                            "id": "r_q19",
+                            "type": "fill-in-blanks",
+                            "questionText": "Gagarin was _____",
+                            "correctAnswer": "first"
+                        },
+                        {
+                            "id": "r_q20",
+                            "type": "fill-in-blanks",
+                            "questionText": "Station is for _____",
+                            "correctAnswer": "astronauts"
+                        }
+                    ]
+                },
+                {
+                    "id": "r_p3",
+                    "title": "Renewable Energy",
+                    "content": "We need clean energy. Solar power comes from the sun. Wind power uses turbines. Water power uses rivers. Fossil fuels are bad. They cause pollution. Climate change is a big problem. We must act now. Green energy is the future.",
+                    "questions": [
+                        {
+                            "id": "r_q21",
+                            "type": "multiple-choice",
+                            "questionText": "Solar power source?",
+                            "options": [
+                                "Wind",
+                                "Water",
+                                "Sun",
+                                "Coal"
+                            ],
+                            "correctAnswer": "C"
+                        },
+                        {
+                            "id": "r_q22",
+                            "type": "multiple-choice",
+                            "questionText": "Wind power uses?",
+                            "options": [
+                                "Panels",
+                                "Turbines",
+                                "Dams",
+                                "Fire"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "r_q23",
+                            "type": "multiple-choice",
+                            "questionText": "Fossil fuels cause?",
+                            "options": [
+                                "Clean air",
+                                "Pollution",
+                                "Rain",
+                                "Snow"
+                            ],
+                            "correctAnswer": "B"
+                        },
+                        {
+                            "id": "r_q24",
+                            "type": "multiple-choice",
+                            "questionText": "What is the future?",
+                            "options": [
+                                "Oil",
+                                "Gas",
+                                "Green Energy",
+                                "Coal"
+                            ],
+                            "correctAnswer": "C"
+                        },
+                        {
+                            "id": "r_q25",
+                            "type": "true-false",
+                            "questionText": "We need dirty energy.",
+                            "correctAnswer": "false"
+                        },
+                        {
+                            "id": "r_q26",
+                            "type": "true-false",
+                            "questionText": "Climate change is small.",
+                            "correctAnswer": "false"
+                        },
+                        {
+                            "id": "r_q27",
+                            "type": "true-false",
+                            "questionText": "Water power uses rivers.",
+                            "correctAnswer": "true"
+                        },
+                        {
+                            "id": "r_q28",
+                            "type": "fill-in-blanks",
+                            "questionText": "Energy from sun: _____",
+                            "correctAnswer": "solar"
+                        },
+                        {
+                            "id": "r_q29",
+                            "type": "fill-in-blanks",
+                            "questionText": "Energy from wind: _____",
+                            "correctAnswer": "wind"
+                        },
+                        {
+                            "id": "r_q30",
+                            "type": "fill-in-blanks",
+                            "questionText": "Problem: Climate _____",
+                            "correctAnswer": "change"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "writing",
+            "title": "Writing",
+            "description": "2 Tasks • 60 minutes",
+            "tasks": [
+                {
+                    "id": "writing-task1",
+                    "title": "Task 1: Report",
+                    "instructions": "Describe the chart showing internet usage.",
+                    "minChars": 150
+                },
+                {
+                    "id": "writing-task2",
+                    "title": "Task 2: Essay",
+                    "instructions": "Computers are essential. Do you agree or disagree?",
+                    "minChars": 250
+                }
+            ]
+        },
+        {
+            "id": "speaking",
+            "title": "Speaking",
+            "description": "3 Parts • 11-14 minutes",
+            "parts": [
+                {
+                    "id": "speaking-part1",
+                    "title": "Part 1: Introduction",
+                    "instructions": "Answer questions about yourself."
+                },
+                {
+                    "id": "speaking-part2",
+                    "title": "Part 2: Long Turn",
+                    "instructions": "Describe a memorable journey you made."
+                },
+                {
+                    "id": "speaking-part3",
+                    "title": "Part 3: Discussion",
+                    "instructions": "Discuss travel and transport topic."
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "version": "0.3",
+        "author": "IELTS Full Generator",
+        "notes": "Generated extensive test set for 2026-01-11 with 100 grammar questions.",
+        "cefrLevel": "B1"
+    }
+}

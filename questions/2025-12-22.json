@@ -1,0 +1,360 @@
+{
+  "testId": "IELTS-KIDS-BEGINNER-0.1-2024-12-01",
+  "testDate": "2024-12-01",
+  "testTitle": "IELTS for Kids - Beginner Level 0.1",
+  "totalQuestions": 40,
+  "difficultyLevel": "Beginner (A1 Level)",
+  "sections": [
+    {
+      "id": "listening",
+      "title": "Listening",
+      "description": "15 questions • Approximately 15 minutes • You will hear each recording twice",
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "Part 1: Numbers and Colors",
+          "instructions": "Listen and choose the correct picture. You will hear each recording twice.",
+          "voiceProfiles": {
+            "female": {
+              "pitch": 1.2, "rate": 0.8, "volume": 0.9, "name": "Teacher",
+              "variation": 0.05, "accent": "clear", "emotion": "friendly", "speakingType": "educational"
+            }
+          },
+          "script": {
+            "narrator": "Hello children! Let's listen carefully. Look at the pictures and choose the correct one. You will hear each sentence twice.",
+            "conversation": [
+              {"speaker": "female", "text": "Number one. I see three red apples."},
+              {"speaker": "female", "text": "Number two. The cat is under the table."},
+              {"speaker": "female", "text": "Number three. My brother has a blue ball."},
+              {"speaker": "female", "text": "Number four. There are five yellow birds."},
+              {"speaker": "female", "text": "Number five. The girl is reading a book."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q1",
+              "type": "picture-choice",
+              "questionText": "Listen: I see three red apples.",
+              "options": [
+                {"image": "option1.png", "description": "Two green apples"},
+                {"image": "option2.png", "description": "Three red apples"},
+                {"image": "option3.png", "description": "Four yellow apples"}
+              ],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "listening-q2",
+              "type": "picture-choice",
+              "questionText": "Listen: The cat is under the table.",
+              "options": [
+                {"image": "option1.png", "description": "Cat on the table"},
+                {"image": "option2.png", "description": "Cat under the table"},
+                {"image": "option3.png", "description": "Cat next to the table"}
+              ],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "listening-q3",
+              "type": "picture-choice",
+              "questionText": "Listen: My brother has a blue ball.",
+              "options": [
+                {"image": "option1.png", "description": "Red ball"},
+                {"image": "option2.png", "description": "Blue ball"},
+                {"image": "option3.png", "description": "Green ball"}
+              ],
+              "correctAnswer": "B"
+            }
+          ]
+        },
+        {
+          "partNumber": 2,
+          "title": "Part 2: Animals and Actions",
+          "instructions": "Listen and match the animal with what it is doing.",
+          "voiceProfiles": {
+            "male": {
+              "pitch": 1.0, "rate": 0.8, "volume": 0.9, "name": "Teacher",
+              "variation": 0.05, "accent": "clear", "emotion": "friendly", "speakingType": "educational"
+            }
+          },
+          "script": {
+            "narrator": "Now let's match the animals with their actions. Listen carefully.",
+            "conversation": [
+              {"speaker": "male", "text": "The dog is running."},
+              {"speaker": "male", "text": "The bird is flying."},
+              {"speaker": "male", "text": "The fish is swimming."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q4",
+              "type": "matching",
+              "questionText": "Match the animals with their actions.",
+              "leftColumn": ["Dog", "Bird", "Fish"],
+              "rightColumn": ["Flying", "Swimming", "Running"],
+              "correctAnswers": ["C", "A", "B"]
+            }
+          ]
+        },
+        {
+          "partNumber": 3,
+          "title": "Part 3: Daily Routine",
+          "instructions": "Listen to Tom talking about his day. Circle yes or no.",
+          "voiceProfiles": {
+            "child": {
+              "pitch": 1.4, "rate": 0.9, "volume": 0.85, "name": "Tom",
+              "variation": 0.06, "accent": "clear", "emotion": "happy", "speakingType": "conversational"
+            }
+          },
+          "script": {
+            "narrator": "Listen to Tom. Is each sentence yes or no?",
+            "conversation": [
+              {"speaker": "child", "text": "Hello! My name is Tom. I am eight years old. I get up at seven o'clock. I eat breakfast at seven thirty. I go to school at eight o'clock. I like my school. I have lunch at twelve o'clock. After school, I play football. I do my homework at five o'clock. I go to bed at nine o'clock."}
+            ]
+          },
+          "questions": [
+            {
+              "id": "listening-q5",
+              "type": "true-false",
+              "questionText": "Tom is seven years old.",
+              "correctAnswer": "false"
+            },
+            {
+              "id": "listening-q6",
+              "type": "true-false",
+              "questionText": "Tom gets up at seven o'clock.",
+              "correctAnswer": "true"
+            },
+            {
+              "id": "listening-q7",
+              "type": "true-false",
+              "questionText": "Tom plays basketball after school.",
+              "correctAnswer": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "description": "15 questions • 20 minutes",
+      "passages": [
+        {
+          "id": "reading-passage1",
+          "title": "My Family",
+          "content": "Hello! My name is Lily. I have a family. My family has four people. My father's name is John. He is tall. He is a teacher. My mother's name is Mary. She is kind. She is a doctor. I have one brother. His name is Ben. Ben is six years old. He likes cars. I am eight years old. I like books. We have a cat. The cat's name is Snow. Snow is white. We love our family.",
+          "questions": [
+            {
+              "id": "reading-q1",
+              "type": "multiple-choice",
+              "questionText": "How many people are in Lily's family?",
+              "options": ["A) Three", "B) Four", "C) Five", "D] Six"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q2",
+              "type": "multiple-choice",
+              "questionText": "What is Lily's father's job?",
+              "options": ["A) Doctor", "B) Teacher", "C) Driver", "D] Cook"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q3",
+              "type": "multiple-choice",
+              "questionText": "How old is Ben?",
+              "options": ["A) Six", "B) Seven", "C) Eight", "D] Nine"],
+              "correctAnswer": "A"
+            },
+            {
+              "id": "reading-q4",
+              "type": "multiple-choice",
+              "questionText": "What is the cat's name?",
+              "options": ["A) White", "B) Snow", "C) Fluffy", "D] Kitty"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q5",
+              "type": "multiple-choice",
+              "questionText": "What does Lily like?",
+              "options": ["A) Cars", "B) Books", "C) Games", "D] Food"],
+              "correctAnswer": "B"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage2",
+          "title": "At the Park",
+          "content": "Look at the picture. This is a park. The sun is shining. There are trees and flowers. I can see children playing. One boy is riding a bike. Two girls are jumping rope. A man is walking his dog. The dog is brown. There is a bench. An old woman is sitting on the bench. She is reading a book. There are birds in the sky. The birds are flying. I like the park.",
+          "questions": [
+            {
+              "id": "reading-q6",
+              "type": "picture-based",
+              "questionText": "Look at the picture. What is the boy doing?",
+              "options": ["A) Running", "B) Riding a bike", "C) Playing football", "D] Swimming"],
+              "correctAnswer": "B"
+            },
+            {
+              "id": "reading-q7",
+              "type": "picture-based",
+              "questionText": "What color is the dog?",
+              "options": ["A) Black", "B) White", "C) Brown", "D] Yellow"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q8",
+              "type": "picture-based",
+              "questionText": "What is the old woman doing?",
+              "options": ["A) Sleeping", "B) Eating", "C) Reading a book", "D] Talking"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q9",
+              "type": "picture-based",
+              "questionText": "How many girls are jumping rope?",
+              "options": ["A) One", "B) Two", "C) Three", "D] Four"],
+              "correctAnswer": "B"
+            }
+          ]
+        },
+        {
+          "id": "reading-passage3",
+          "title": "Animals",
+          "content": "Animals are interesting. Dogs can run fast. Cats can climb trees. Birds can fly high. Fish can swim in water. Elephants are big. Mice are small. Lions are strong. Rabbits are soft. Monkeys are funny. Penguins cannot fly but they can swim. Bears sleep in winter. We should be kind to animals.",
+          "questions": [
+            {
+              "id": "reading-q10",
+              "type": "multiple-choice",
+              "questionText": "What can birds do?",
+              "options": ["A) Run fast", "B) Climb trees", "C) Fly high", "D] Swim"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q11",
+              "type": "multiple-choice",
+              "questionText": "Which animal is big?",
+              "options": ["A) Mouse", "B) Rabbit", "C) Elephant", "D] Bird"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q12",
+              "type": "multiple-choice",
+              "questionText": "Which animal sleeps in winter?",
+              "options": ["A) Lion", "B) Monkey", "C) Bear", "D] Fish"],
+              "correctAnswer": "C"
+            },
+            {
+              "id": "reading-q13",
+              "type": "true-false",
+              "questionText": "Penguins can fly.",
+              "correctAnswer": "false"
+            },
+            {
+              "id": "reading-q14",
+              "type": "true-false",
+              "questionText": "We should be kind to animals.",
+              "correctAnswer": "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "description": "10 questions • 15 minutes",
+      "tasks": [
+        {
+          "id": "writing-task1",
+          "title": "Task 1: Copy the sentences",
+          "instructions": "Copy these sentences neatly. Be careful with capital letters and full stops.",
+          "taskType": "Handwriting",
+          "sentences": [
+            "My name is Sam.",
+            "I have a red ball.",
+            "The cat is sleeping.",
+            "I like to play games."
+          ],
+          "assessmentCriteria": [
+            "Neat handwriting",
+            "Correct capital letters",
+            "Correct full stops"
+          ]
+        },
+        {
+          "id": "writing-task2",
+          "title": "Task 2: Write about yourself",
+          "instructions": "Answer these questions in full sentences.",
+          "taskType": "Short answers",
+          "questions": [
+            "What is your name?",
+            "How old are you?",
+            "What is your favorite color?",
+            "What is your favorite animal?",
+            "What do you like to do?"
+          ],
+          "wordCountMin": 15,
+          "assessmentCriteria": [
+            "Complete sentences",
+            "Correct spelling of simple words",
+            "Capital letters and full stops"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speaking",
+      "title": "Speaking",
+      "description": "5-7 minutes",
+      "parts": [
+        {
+          "id": "speaking-part1",
+          "title": "Part 1: About You",
+          "instructions": "The teacher will ask you some questions about yourself.",
+          "sampleQuestions": [
+            "What is your name?",
+            "How old are you?",
+            "Where do you live?",
+            "Do you have brothers or sisters?",
+            "What is your favorite color?",
+            "What is your favorite food?"
+          ],
+          "timeLimit": "2-3 minutes"
+        },
+        {
+          "id": "speaking-part2",
+          "title": "Part 2: Talk about a picture",
+          "instructions": "Look at this picture. Tell me what you see.",
+          "pictureDescription": "A picture of a family having a picnic in a park. There are parents, two children, a dog, food on a blanket, and trees.",
+          "prompts": [
+            "Where are they?",
+            "What are they doing?",
+            "What can you see in the picture?",
+            "How many people are there?"
+          ],
+          "timeLimit": "1-2 minutes"
+        },
+        {
+          "id": "speaking-part3",
+          "title": "Part 3: Simple Questions",
+          "instructions": "The teacher will ask you some more questions.",
+          "sampleQuestions": [
+            "What games do you like to play?",
+            "Do you have a pet?",
+            "What is your favorite subject in school?",
+            "What do you do on weekends?",
+            "Can you tell me about your best friend?"
+          ],
+          "timeLimit": "2-3 minutes"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "0.1",
+    "author": "IELTS for Kids",
+    "notes": "Beginner level IELTS-style test for children aged 6-10. This test uses simple vocabulary, familiar topics, and basic sentence structures appropriate for A1 level English learners.",
+    "recommendedAge": "6-10 years",
+    "cefrLevel": "A1",
+    "scoring": "Star-based scoring (1-5 stars) instead of band scores"
+  }
+}

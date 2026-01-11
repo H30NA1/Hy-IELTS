@@ -1,266 +1,209 @@
-// IELTS Reading Module
-class IELTSReading {
-    constructor() {
-        this.passages = [];
-        this.questions = [];
-        this.testData = null;
-    }
+import state from '../utils/state.js';
 
-    async initialize() {
-        await this.loadTestData();
-        this.renderPassages();
-        this.renderQuestions();
-        this.setupEventListeners();
-    }
-
-    async loadTestData() {
-        try {
-            const response = await fetch('/api/test-data');
-            const data = await response.json();
-            this.testData = data;
-            console.log('Reading module loaded test data:', data);
-        } catch (error) {
-            console.error('Error loading test data for reading:', error);
-        }
-    }
-
-    renderPassages() {
-        if (!this.testData || !this.testData.sections) {
-            console.error('No test data available for reading passages');
-            return;
+export const reading = {
+    render() {
+        if (state.testData && state.testData.sections) {
+            const section = state.testData.sections.find(s => s.id === 'reading');
+            if (section && section.passages) {
+                // Flatten passages into questions array
+                this.questions = [];
+                section.passages.forEach((p, idx) => {
+                    const pQuestions = p.questions || [];
+                    pQuestions.forEach(q => {
+                        this.questions.push({ ...q, passage: idx + 1, passageContent: p.content });
+                    });
+                });
+            }
         }
 
-        const readingSection = this.testData.sections.find(section => section.id === 'reading');
-        if (!readingSection || !readingSection.passages) {
-            console.error('No reading section or passages found in test data');
-            return;
+        if (!this.questions || this.questions.length === 0) {
+            console.warn('Reading: No test data found, generating mocks.');
+            this.questions = this.generateMockQuestions();
         }
 
-        // Render each passage with its content and questions
-        readingSection.passages.forEach((passage, index) => {
-            const passageNumber = index + 1;
-            const containerId = `reading-passage${passageNumber}-questions`;
-            const contentId = `reading-passage${passageNumber}-content`;
-            
-            // Load passage content
-            this.loadPassageContent(passage, contentId);
-            
-            // Render questions
-            this.renderPassageFromData(passage, containerId, passageNumber);
-        });
-    }
+        const sectionContainer = document.getElementById('reading');
+        if (!sectionContainer) return;
 
-    loadPassageContent(passageData, contentId) {
-        const contentElement = document.getElementById(contentId);
-        if (!contentElement) {
-            console.error(`Content element not found: ${contentId}`);
-            return;
-        }
+        if (!this.currentPassage) this.currentPassage = 1;
 
-        if (passageData.content) {
-            contentElement.innerHTML = `<p>${passageData.content}</p>`;
-            console.log(`Loaded passage content for ${contentId}:`, passageData.content.substring(0, 100) + '...');
-        } else {
-            console.error(`No content found for passage:`, passageData);
-        }
-    }
+        sectionContainer.innerHTML = '<div id="reading-container"></div>';
 
-    renderPassageFromData(passageData, containerId, passageNumber) {
-        const container = document.getElementById(containerId);
-        if (!container) return;
+        this.renderLayout();
+    },
 
-        container.innerHTML = '';
-        
-        if (passageData.questions && Array.isArray(passageData.questions)) {
-            passageData.questions.forEach((questionData, index) => {
-                const questionDiv = this.createQuestionElementFromData(questionData, passageNumber, index + 1);
-                container.appendChild(questionDiv);
-            });
-        }
-    }
-
-    renderQuestions() {
-        // Questions are rendered in renderPassages method
-    }
-
-    createQuestionElementFromData(questionData, passageNumber, questionNumber) {
-        const questionDiv = IELTSUtils.createElement('div', 'question');
-        
-        const questionText = questionData.questionText || `Question ${questionNumber}`;
-        const options = questionData.options || ["Option A", "Option B", "Option C", "Option D"];
-        const translation = questionData.translation || "";
-        
-        // Create options HTML with PROPER RADIO BUTTONS
-        let optionsHTML = '';
-        options.forEach((option, index) => {
-            const optionLetter = String.fromCharCode(65 + index); // A, B, C, D
-            optionsHTML += `
-                <label class="option">
-                    <input type="radio" 
-                           name="${questionData.id}" 
-                           value="${optionLetter}"
-                           id="${questionData.id}-${optionLetter}">
-                    <div class="option-label">${optionLetter}</div>
-                    <div class="option-text">${option}</div>
-                </label>
+    generateMockQuestions() {
+        // Mock data logic retained...
+        const questions = [];
+        for (let pass = 1; pass <= 3; pass++) {
+            let content = `
+                <h2 style="margin-top:0; color:#1e293b;">Passage ${pass} Title</h2>
+                <h4 style="color:#64748b; font-weight:normal; margin-bottom:1.5rem;">Subtitle or Introduction to the topic of Passage ${pass}</h4>
+                <div style="font-size:1.05rem; line-height:1.8; color:#334155;">
+                    <p><strong>Paragraph A</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p><strong>Paragraph B</strong></p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>This paragraph contains specific details for Passage ${pass} questions.</p>
+                    <p>[More text specific to Passage ${pass}...]</p>
+                </div>
             `;
-        });
-        
-        questionDiv.innerHTML = `
-            <div class="question-header">
-                <div class="question-header-top">
-                    <span class="question-number">Question ${questionNumber}</span>
-                    <button class="translate-btn" data-question="${questionData.id}" title="Translate to Vietnamese (0.5 grade penalty)">
-                        <i class="fas fa-language"></i>
-                        <span>Translate</span>
+
+            for (let q = 1; q <= 10; q++) {
+                const id = (pass - 1) * 10 + q;
+                questions.push({
+                    id: `reading-q${id}`,
+                    passage: pass,
+                    number: id,
+                    instruction: `Passage ${pass}: Read and answer.`,
+                    passageContent: content,
+                    question: `Question ${id}: Reading comprehension check for Passage ${pass}.`,
+                    options: ["True", "False", "Not Given"],
+                    correctAnswer: "True"
+                });
+            }
+        }
+        return questions;
+    },
+
+    renderLayout() {
+        const container = document.getElementById('reading-container');
+
+        // 1. Render Tabs
+        const tabsHtml = `
+            <div class="category-tabs">
+                ${[1, 2, 3].map(p => `
+                    <button class="tab-btn ${p === this.currentPassage ? 'active' : ''}" data-pass="${p}">
+                        Passage ${p}
                     </button>
-                </div>
-                <div class="question-text" id="question-text-${questionData.id}">${questionText}</div>
-                <div class="question-translation" id="question-translation-${questionData.id}" style="display: none;">
-                    <p class="translation-label">Vietnamese Translation:</p>
-                    <p class="translation-text" id="translation-text-${questionData.id}">${translation}</p>
-                </div>
-            </div>
-            <div class="options">
-                ${optionsHTML}
+                `).join('')}
             </div>
         `;
 
-        return questionDiv;
-    }
+        // 2. Render Active Content
+        const passQs = this.questions.filter(q => q.passage === this.currentPassage);
+        const content = passQs[0].passageContent;
 
-    setupEventListeners() {
-        // Option selection (only for reading section)
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('.option')) {
-                const option = e.target.closest('.option');
-                // Only process if this option is in the reading section
-                const readingSection = option.closest('#reading');
-                if (!readingSection) return;
-                
-                const questionId = option.dataset.question;
-                const optionIndex = option.dataset.option;
-                
-                this.selectOption(questionId, optionIndex);
-            }
-        });
+        const questionsListHtml = passQs.map(q => this.renderQuestionItem(q)).join('');
 
-        // Translation buttons
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('.translate-btn')) {
-                const btn = e.target.closest('.translate-btn');
-                const questionId = btn.dataset.question;
-                this.translateQuestion(questionId);
-            }
-        });
+        const contentHtml = `
+            <div class="inner-split-layout">
+                <div class="content-side">
+                    <div style="font-size:0.9rem; color:#64748b; margin-bottom:1rem; text-transform:uppercase; letter-spacing:0.05em; font-weight:600;">
+                        Reading Passage ${this.currentPassage}
+                    </div>
+                    <div class="passage-text" style="background:#f8fafc; padding:2rem; border-radius:12px; border:1px solid #e2e8f0;">
+                        ${content}
+                    </div>
+                </div>
+                <div class="questions-side">
+                    ${questionsListHtml}
+                </div>
+            </div>
+        `;
 
-        // Radio button changes for reading questions
-        document.addEventListener('change', (e) => {
-            if (e.target.type === 'radio') {
-                // Check if this radio is in the reading section
-                const readingSection = e.target.closest('#reading');
-                if (readingSection) {
-                    const questionId = e.target.name; // Keep full ID (e.g., 'reading-q1')
-                    const selectedValue = e.target.value;
-                    this.saveReadingAnswer(questionId, selectedValue);
+        container.innerHTML = tabsHtml + contentHtml;
+        this.attachListeners(container);
+        this.updateZoneHeader();
+    },
+
+    attachListeners(container) {
+        // Tab Listeners
+        container.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const p = parseInt(btn.dataset.pass);
+                if (p !== this.currentPassage) {
+                    this.currentPassage = p;
+                    this.renderLayout();
                 }
-            }
+            });
         });
-    }
 
-    saveReadingAnswer(questionId, selectedValue) {
-        // Store answer in the core module
-        if (window.ieltsTest) {
-            if (!window.ieltsTest.answers.reading) {
-                window.ieltsTest.answers.reading = {};
-            }
-            window.ieltsTest.answers.reading[questionId] = selectedValue;
-            window.ieltsTest.updateActivity();
-            console.log(`📖 Saved reading answer: ${questionId} = ${selectedValue}`);
-        }
-    }
+        // Question Listeners
+        container.querySelectorAll('.option-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const qid = card.dataset.qid;
+                const val = card.dataset.val;
 
-    selectOption(questionId, optionIndex) {
-        // This function is for legacy option selection with data-question attributes
-        // For radio buttons, the change event handler in setupEventListeners handles answer saving
-        // This function is kept for backward compatibility but made safe
-        
-        // Try to find question container - return early if not found (prevents null reference errors)
-        const questionElement = document.querySelector(`[data-question="${questionId}"]`);
-        if (!questionElement) {
-            // Radio buttons don't use data-question, so this is expected for new format
-            return;
-        }
-        
-        const questionContainer = questionElement.closest('.question');
-        if (!questionContainer) {
-            return;
-        }
-        
-        // Remove previous selection for this question
-        const allOptions = questionContainer.querySelectorAll('.option');
-        allOptions.forEach(option => option.classList.remove('selected'));
+                const parent = card.closest('.options-grid');
+                parent.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
 
-        // Select new option
-        const selectedOption = document.querySelector(`[data-question="${questionId}"][data-option="${optionIndex}"]`);
-        if (selectedOption) {
-            selectedOption.classList.add('selected');
-        }
+                state.setAnswer('reading', qid, val);
+            });
+        });
 
-        // Store answer
-        if (window.ieltsTest) {
-            if (!window.ieltsTest.answers.reading) {
-                window.ieltsTest.answers.reading = {};
-            }
-            window.ieltsTest.answers.reading[questionId] = optionIndex;
-            window.ieltsTest.updateActivity();
-        }
-    }
+        // Nav Buttons
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
 
-    translateQuestion(questionId) {
-        const translationDiv = document.getElementById(`question-translation-${questionId}`);
-        
-        if (!translationDiv) {
-            console.warn(`Translation div not found for question: ${questionId}`);
-            return;
-        }
+        prevBtn.onclick = () => {
+            if (this.currentPassage > 1) { this.currentPassage--; this.renderLayout(); window.scrollTo(0, 0); }
+        };
+        nextBtn.onclick = () => {
+            if (this.currentPassage < 3) { this.currentPassage++; this.renderLayout(); window.scrollTo(0, 0); }
+        };
+        prevBtn.disabled = this.currentPassage === 1;
+        nextBtn.disabled = this.currentPassage === 3;
+    },
 
-        // Toggle translation visibility (translation text is already in HTML)
-        if (translationDiv.style.display === 'none' || !translationDiv.style.display) {
-            translationDiv.style.display = 'block';
+    renderQuestionItem(q) {
+        const saved = state.answers.reading[q.id] || '';
 
-            // Add translation penalty
-            if (window.ieltsTest) {
-                window.ieltsTest.addTranslationPenalty();
-            }
+        let innerContent = '';
+
+        // Handle Fill in Blanks
+        if (q.type === 'fill-in-blanks') {
+            innerContent = `
+                <div class="input-group" style="margin-top:10px;">
+                    <input type="text" 
+                        class="form-control" 
+                        data-qid="${q.id}" 
+                        value="${saved}"
+                        placeholder="Answer..."
+                        style="width:100%; padding:10px; border:2px solid #e2e8f0; border-radius:8px; font-size:1rem;"
+                        onchange="state.setAnswer('reading', '${q.id}', this.value)"
+                    />
+                </div>
+            `;
         } else {
-            translationDiv.style.display = 'none';
+            // Handle MC / True-False
+            let options = q.options;
+            // Auto-generate options for T/F if missing
+            if (!options && (q.type === 'true-false' || q.type === 'yes-no')) {
+                options = ['True', 'False', 'Not Given'];
+            }
+            if (!options) options = ['A', 'B', 'C', 'D'];
+
+            innerContent = `
+            <div class="options-grid single-col">
+                ${options.map((opt, i) => {
+                const val = String.fromCharCode(65 + i);
+                const isSelected = saved === val ? 'selected' : '';
+                return `
+                    <div class="option-card ${isSelected}" data-qid="${q.id}" data-val="${val}" style="padding:1rem; border:2px solid #e2e8f0; border-radius:8px; margin-bottom:0.5rem; cursor:pointer; transition:all 0.2s;">
+                        <div class="option-indicator" style="width:28px; height:28px; font-weight:bold;">${val}</div>
+                        <div class="option-text" style="font-size:1rem;">${opt}</div>
+                    </div>
+                    `;
+            }).join('')}
+            </div>
+            `;
         }
+
+        return `
+        <div class="question-item component-card" id="q-item-${q.number}" style="margin-bottom: 2rem;">
+            <div class="question-header" style="font-weight:600; margin-bottom:1rem; font-size: 1.1rem; color:#1e293b;">
+                <span style="background:#2563eb; color:white; padding:4px 10px; border-radius:6px; font-size:0.9em; margin-right:10px;">${q.number}</span>
+                ${q.question || q.questionText || 'Question'}
+            </div>
+            ${innerContent}
+        </div>
+        `;
+    },
+
+    updateZoneHeader() {
+        document.getElementById('question-indicator').textContent = `Reading Passage ${this.currentPassage} / 3`;
+        const pct = ((this.currentPassage) / 3) * 100;
+        document.getElementById('section-progress-fill').style.width = `${pct}%`;
     }
-
-    getAnswers() {
-        const answers = {};
-        const selectedOptions = document.querySelectorAll('.option.selected');
-        
-        selectedOptions.forEach(option => {
-            const questionId = option.dataset.question;
-            const optionIndex = option.dataset.option;
-            answers[questionId] = optionIndex;
-        });
-
-        return answers;
-    }
-
-    reset() {
-        const allOptions = document.querySelectorAll('.option');
-        allOptions.forEach(option => option.classList.remove('selected'));
-        
-        const allTranslations = document.querySelectorAll('.question-translation');
-        allTranslations.forEach(translation => translation.style.display = 'none');
-    }
-}
-
-// Export for module usage
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = IELTSReading;
-}
+};
