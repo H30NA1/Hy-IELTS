@@ -196,7 +196,7 @@ class App {
             const resultsModal = document.getElementById('results-modal');
             if (resultsModal) {
                 resultsModal.classList.add('active');
-                document.getElementById('overall-band').textContent = result.results?.overallBand || "7.5";
+                document.getElementById('overall-band').textContent = result.results?.overallCEFR || result.results?.overallBand || "7.5";
             }
 
         } catch (e) {

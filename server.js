@@ -594,7 +594,8 @@ function generatePDFHTML(userName, results, answers, testData) {
 
             <div class="overall-score">
                 <h2>Overall IELTS Band Score</h2>
-                <div class="band-score">${results.overallBand}</div>
+                <div class="band-score">${results.overallCEFR ? results.overallCEFR : results.overallBand}</div>
+                ${results.overallCEFR ? '<p style="color:#667eea; font-weight:bold;">CEFR Level</p>' : ''}
                 <p>Total Raw Score: ${results.totalRawScore}/120</p>
             </div>
 
@@ -1597,37 +1598,74 @@ function calculateResults(answers, testData = null) {
     const listeningTotal = 40; // 40 listening questions
     const readingTotal = 30; // 30 reading questions
     const writingTotal = 20; // 20 writing points (10 per task)
-    const speakingTotal = 20; // 20 speaking points (based on content quality)
-    const grammarTotal = 20; // 20 grammar questions
+    const speakingTotal = 20; // 20 speaking points
+    const grammarTotal = 20; // 20 grammar questions [ASSUMPTION based on convertToIELTSBand]
 
-    // Calculate maximum possible score (excluding speaking if not tested)
-    const maxPossibleScore = listeningTotal + readingTotal + writingTotal + (speakingScore > 0 ? speakingTotal : 0) + grammarTotal;
+    // Calculate Overall Percentage (for CEFR)
+    const totalQuestions = listeningTotal + readingTotal + writingTotal + speakingTotal + grammarTotal;
+    // Note: totalQuestions above is a mix of question counts and max scores. 
+    // Ideally we should sum the raw scores and max possible raw scores.
 
-    // Normalize total score to always be out of 100
-    // This ensures that even if more questions are added later, the total will always cap at 100
-    const normalizedTotal = maxPossibleScore > 0 ? (totalScore / maxPossibleScore) * 100 : 0;
-    const cappedTotal = Math.min(100, Math.max(0, Math.round(normalizedTotal * 100) / 100)); // Cap at 100, ensure not below 0
+    const maxRawScore = listeningTotal + readingTotal + writingTotal + speakingTotal + grammarTotal;
+    const totalPercentage = (totalScore / maxRawScore) * 100;
+
+    let overallCEFR = null;
+    let sectionCEFR = {};
+
+    if (testData && testData.cefrLevel) {
+        const targetLevel = testData.cefrLevel;
+
+        // internal helper for CEFR
+        const getCefr = (pct, target) => {
+            if (target === 'B1') {
+                if (pct >= 85) return 'B1';
+                if (pct >= 50) return 'A2';
+                return 'A1';
+            }
+            if (target === 'A2') {
+                if (pct >= 80) return 'A2';
+                return 'A1';
+            }
+            return null;
+        };
+
+        overallCEFR = getCefr(totalPercentage, targetLevel);
+        sectionCEFR = {
+            listening: getCefr((listeningScore / listeningTotal) * 100, targetLevel),
+            reading: getCefr((readingScore / readingTotal) * 100, targetLevel),
+            writing: getCefr((writingScore / writingTotal) * 100, targetLevel),
+            speaking: getCefr((speakingScore / speakingTotal) * 100, targetLevel),
+            grammar: getCefr((grammarScore / grammarTotal) * 100, targetLevel),
+        };
+    }
+
+    const cappedTotal = Math.min(100, Math.max(0, Math.round(totalPercentage * 100) / 100));
 
     return {
-        listening: Math.round(listeningScore * 100) / 100,
-        reading: Math.round(readingScore * 100) / 100,
-        writing: Math.round(writingScore * 100) / 100,
-        speaking: Math.round(speakingScore * 100) / 100,
-        grammar: Math.round(grammarScore * 100) / 100,
-        total: cappedTotal, // Normalized to always be out of 100
+        listening: { score: Math.round(listeningScore * 100) / 100, band: listeningBand, cefr: sectionCEFR.listening },
+        reading: { score: Math.round(readingScore * 100) / 100, band: readingBand, cefr: sectionCEFR.reading },
+        writing: { score: Math.round(writingScore * 100) / 100, band: writingBand, cefr: sectionCEFR.writing },
+        speaking: { score: Math.round(speakingScore * 100) / 100, band: speakingBand, cefr: sectionCEFR.speaking },
+        grammar: { score: Math.round(grammarScore * 100) / 100, band: grammarBand, cefr: sectionCEFR.grammar },
+        total: cappedTotal,
+        totalRawScore: totalScore,
         listeningTotal: listeningTotal,
         readingTotal: readingTotal,
         writingTotal: writingTotal,
         speakingTotal: speakingTotal,
         grammarTotal: grammarTotal,
         translationPenalty: Math.round(translationPenalty * 100) / 100,
+        overallBand: overallBand,
+        overallCEFR: overallCEFR,
         bands: {
             listening: listeningBand,
             reading: readingBand,
             writing: writingBand,
             speaking: speakingBand,
             grammar: grammarBand,
-            overall: overallBand
+            overall: overallBand,
+            overallCEFR: overallCEFR,
+            sectionCEFR: sectionCEFR
         }
     };
 }
