@@ -1167,4 +1167,44 @@ select {
 .check-btn:disabled {
     opacity: 0.7;
     cursor: not-allowed;
+}@charset " UTF-8\;
+
+/* Review Mode Styles */
+.review-mode-banner {
+ background: var(--primary-color);
+ color: white;
+ padding: 15px;
+ text-align: center;
+ font-weight: bold;
+ position: sticky;
+ top: 80px;
+ z-index: 1001;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+
+.review-mode-banner button {
+ background: white;
+ color: var(--primary-color);
+ border: none;
+ padding: 8px 20px;
+ border-radius: 6px;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.2s;
+}
+
+.review-mode-banner button:hover {
+ background: #f8fafc;
+ transform: translateY(-1px);
+}
+
+input:disabled, textarea:disabled, select:disabled {
+ cursor: not-allowed;
+ opacity: 0.9;
+ color: var(--text-primary);
+ background-color: var(--surface-secondary) !important;
 }

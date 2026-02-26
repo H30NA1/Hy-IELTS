@@ -46,7 +46,7 @@ class IELTSGrading {
     convertToIELTSBand(rawScore, total, section, maxBand = 9) {
         const percentage = (rawScore / total) * 100;
         let baseBand = 0.0;
-        
+
         switch (section) {
             case 'listening':
                 baseBand = this.getBandFromPercentage(percentage, 'listening');
@@ -66,11 +66,11 @@ class IELTSGrading {
             default:
                 baseBand = 0.0;
         }
-        
+
         // Scale the band score to the maxBand specified in JSON
         // Formula: scaledBand = (baseBand / 9.0) * maxBand
         const scaledBand = (baseBand / 9.0) * maxBand;
-        
+
         // Round to nearest 0.1 for precision (e.g., 3.5, 3.6, 3.7, 4.0)
         return Math.round(scaledBand * 10) / 10;
     }
@@ -153,10 +153,10 @@ class IELTSGrading {
         if (speakingBand > 0) {
             bands.push(speakingBand);
         }
-        
+
         const total = bands.reduce((sum, band) => sum + band, 0);
         const average = total / bands.length;
-        
+
         // Round to nearest 0.1 for precision
         return Math.round(average * 10) / 10;
     }
@@ -169,15 +169,15 @@ class IELTSGrading {
 
         // Get the correct answers from test data
         const correctAnswers = this.getCorrectAnswers(section, testData);
-        
+
         Object.entries(answers[section]).forEach(([questionId, selectedOption]) => {
-            const isTranslated = answers.translatedQuestions && 
+            const isTranslated = answers.translatedQuestions &&
                 answers.translatedQuestions.includes(parseInt(questionId));
-            
+
             // Check if the answer is correct
             const correctAnswer = correctAnswers[questionId];
             const isCorrect = this.isAnswerCorrect(selectedOption, correctAnswer);
-            
+
             if (isCorrect) {
                 if (isTranslated) {
                     translationPenalty += 0.5;
@@ -189,25 +189,25 @@ class IELTSGrading {
             // No points for incorrect answers
         });
 
-        return { 
-            score: Math.min(score, totalQuestions), 
-            penalty: translationPenalty 
+        return {
+            score: Math.min(score, totalQuestions),
+            penalty: translationPenalty
         };
     }
 
     getCorrectAnswers(section, testData) {
         const correctAnswers = {};
-        
+
         if (!testData || !testData.sections) return correctAnswers;
-        
+
         const sectionData = testData.sections.find(s => s.id === section);
         if (!sectionData) return correctAnswers;
-        
+
         if (section === 'listening' && sectionData.parts) {
             sectionData.parts.forEach(part => {
                 if (part.questions) {
                     part.questions.forEach(question => {
-                        correctAnswers[question.id] = question.correctAnswer;
+                        correctAnswers[question.id] = question.correctAnswers || question.correctAnswer || question.correctOrder;
                     });
                 }
             });
@@ -215,36 +215,76 @@ class IELTSGrading {
             sectionData.passages.forEach(passage => {
                 if (passage.questions) {
                     passage.questions.forEach(question => {
-                        correctAnswers[question.id] = question.correctAnswer;
+                        correctAnswers[question.id] = question.correctAnswers || question.correctAnswer || question.correctOrder;
                     });
                 }
             });
         } else if (section === 'grammar' && sectionData.questions) {
             sectionData.questions.forEach(question => {
-                correctAnswers[question.id] = question.correctAnswer;
+                correctAnswers[question.id] = question.correctAnswers || question.correctAnswer || question.correctOrder;
             });
         }
-        
+
         return correctAnswers;
     }
 
-    isAnswerCorrect(selectedOption, correctAnswer) {
-        if (!correctAnswer) return false;
-        
-        // selectedOption is already a letter (A, B, C, D), no conversion needed
-        return selectedOption === correctAnswer;
+    isAnswerCorrect(selected, correct) {
+        if (correct === undefined || correct === null) return false;
+
+        // Case: Drag-box / Grouping (Object of arrays)
+        if (typeof correct === 'object' && correct !== null && !Array.isArray(correct)) {
+            if (typeof selected !== 'object' || selected === null) return false;
+            const groups = Object.keys(correct);
+            if (groups.length === 0) return false;
+            return groups.every(groupName => {
+                const cArr = correct[groupName] || [];
+                const sArr = selected[groupName] || [];
+                if (cArr.length !== sArr.length) return false;
+                const s1 = [...cArr].map(s => String(s).toLowerCase()).sort();
+                const s2 = [...sArr].map(s => String(s).toLowerCase()).sort();
+                return s1.every((val, i) => val === s2[i]);
+            });
+        }
+
+        // Case: Sort / Ordering (Both are Arrays)
+        if (Array.isArray(correct) && Array.isArray(selected)) {
+            if (selected.length !== correct.length) return false;
+            return correct.every((val, i) => String(selected[i]).trim().toLowerCase() === String(val).trim().toLowerCase());
+        }
+
+        // Case: Standard Matching (Dropdown/Click-Connect) - Correct is Array, Selected is Object mapping idx to val
+        if (Array.isArray(correct)) {
+            if (typeof selected !== 'object' || selected === null) return false;
+            return correct.every((val, idx) => {
+                const userVal = selected[idx];
+                return String(userVal || '').trim().toLowerCase() === String(val).trim().toLowerCase();
+            });
+        }
+
+        // Case: Multi-answer strings (Correct: "A, B", Selected: {0:"A", 1:"B"})
+        if (typeof correct === 'string' && correct.includes(',')) {
+            const correctParts = correct.split(',').map(s => s.trim().toLowerCase());
+            if (typeof selected !== 'object' || selected === null) return false;
+            return correctParts.every((val, idx) => {
+                const userVal = selected[idx];
+                return String(userVal || '').trim().toLowerCase() === val;
+            });
+        }
+
+        // Case: Standard string comparison
+        return String(selected).trim().toLowerCase() === String(correct).trim().toLowerCase();
     }
 
     calculateWritingScore(answers) {
         let totalScore = 0;
-        
+
         if (!answers.writing) return totalScore;
 
         Object.entries(answers.writing).forEach(([taskKey, text]) => {
             if (text && text.trim().length > 0) {
                 const wordCount = IELTSUtils.countWords(text);
                 let taskScore = 0;
-                
+
                 if (taskKey === 'task1') {
                     // Task 1: 150 words minimum
                     if (wordCount >= 150) {
@@ -266,7 +306,7 @@ class IELTSGrading {
                         taskScore = 4; // Some points for 100-149 words
                     }
                 }
-                
+
                 totalScore += taskScore;
             }
         });
@@ -276,14 +316,14 @@ class IELTSGrading {
 
     calculateSpeakingScore(answers) {
         let totalScore = 0;
-        
+
         if (!answers.speaking) return totalScore;
 
         Object.entries(answers.speaking).forEach(([partKey, text]) => {
             if (text && text.trim().length > 0) {
                 const wordCount = IELTSUtils.countWords(text);
                 let partScore = 0;
-                
+
                 if (partKey === 'part1') {
                     // Part 1: Short answers
                     if (wordCount >= 50) {
@@ -312,7 +352,7 @@ class IELTSGrading {
                         partScore = 2; // Basic discussion
                     }
                 }
-                
+
                 totalScore += partScore;
             }
         });
@@ -326,28 +366,28 @@ class IELTSGrading {
         const grammarResult = this.calculateSectionScore(answers, 'grammar', 20, testData);
         const writingScore = this.calculateWritingScore(answers);
         const speakingScore = this.calculateSpeakingScore(answers);
-        
+
         const totalScore = listeningResult.score + readingResult.score + grammarResult.score + writingScore + speakingScore;
         const totalPenalty = listeningResult.penalty + readingResult.penalty + grammarResult.penalty;
-        
+
         // Define section totals (can be updated if more questions are added)
         const listeningTotal = 40;
         const readingTotal = 30;
         const writingTotal = 20;
         const speakingTotal = 20;
         const grammarTotal = 20;
-        
+
         // Calculate maximum possible score (excluding speaking if not tested)
         const maxPossibleScore = listeningTotal + readingTotal + writingTotal + (speakingScore > 0 ? speakingTotal : 0) + grammarTotal;
-        
+
         // Normalize total score to always be out of 100
         // This ensures that even if more questions are added later, the total will always cap at 100
         const normalizedTotal = maxPossibleScore > 0 ? (totalScore / maxPossibleScore) * 100 : 0;
         const cappedTotal = Math.min(100, Math.max(0, Math.round(normalizedTotal * 100) / 100)); // Cap at 100, ensure not below 0
-        
+
         // Get maxBand from testData (defaults to 9 if not specified)
         const maxBand = (testData && testData.maxBand) ? testData.maxBand : 9;
-        
+
         // Calculate band scores (scaled to maxBand)
         const listeningBand = this.convertToIELTSBand(listeningResult.score, 40, 'listening', maxBand);
         const readingBand = this.convertToIELTSBand(readingResult.score, 30, 'reading', maxBand);
@@ -355,7 +395,7 @@ class IELTSGrading {
         const writingBand = this.convertToIELTSBand(writingScore, 20, 'writing', maxBand);
         const speakingBand = this.convertToIELTSBand(speakingScore, 20, 'speaking', maxBand);
         const overallBand = this.calculateOverallBand(listeningBand, readingBand, writingBand, speakingBand, grammarBand);
-        
+
         return {
             listening: Math.round(listeningResult.score * 100) / 100,
             reading: Math.round(readingResult.score * 100) / 100,

@@ -145,8 +145,29 @@ export const grammar = {
         const renderer = renderers[q.type];
         const inner = renderer ? renderer.render(q, saved) : '';
 
+        let reviewHtml = '';
+        if (state.reviewMode) {
+            const correctAnswer = q.correctAnswers || q.correctAnswer || q.correctOrder;
+
+            // Basic evaluation logic for display
+            // We use the same logic as server but simplified for display
+            const isCorrect = this.checkCorrectness(saved, q);
+
+            reviewHtml = `
+                <div style="margin-top:15px; padding:12px; border-radius:6px; background:${isCorrect ? '#dcfce7' : '#fee2e2'}; border-left:4px solid ${isCorrect ? '#10b981' : '#ef4444'};">
+                    <div style="font-weight:700; color:${isCorrect ? '#166534' : '#991b1b'}; margin-bottom:5px;">
+                        ${isCorrect ? '<i class="fas fa-check-circle"></i> Correct' : '<i class="fas fa-times-circle"></i> Incorrect'}
+                    </div>
+                    <div style="font-size:0.9em; color:#475569;">
+                        <strong>Correct Answer:</strong> ${this.formatAnswerForDisplay(correctAnswer)}
+                    </div>
+                    ${q.explanation ? `<div style="font-size:0.85em; margin-top:8px; font-style:italic;">${q.explanation}</div>` : ''}
+                </div>
+            `;
+        }
+
         return `
-            <div class="question-item component-card" style="padding:1.5rem; border-radius:8px;">
+            <div class="question-item component-card" style="padding:1.5rem; border-radius:8px; border: ${state.reviewMode ? '2px solid #e2e8f0' : 'none'}">
                 <div class="question-header" style="font-weight:600; margin-bottom:1rem;">
                     <span style="background:var(--primary-color); color:white; padding:4px 10px; border-radius:6px; font-size:0.9em; margin-right:10px;">${q.number}</span>
                     <span style="font-size:0.75em; color:var(--text-tertiary); text-transform:uppercase; margin-right:10px;">${q.subtype || q.matchingType || 'standard'}</span>
@@ -154,8 +175,49 @@ export const grammar = {
                     <span style="margin-top:8px; display:inline-block;">${q.question}</span>
                 </div>
                 ${inner}
+                ${reviewHtml}
             </div>
         `;
+    },
+
+    checkCorrectness(selected, q) {
+        const correct = q.correctAnswers || q.correctAnswer || q.correctOrder;
+        if (!correct) return false;
+
+        // Comma separated strings (FIB)
+        if (typeof correct === 'string' && correct.includes(',')) {
+            const cArr = correct.split(',').map(s => s.trim().toLowerCase());
+            if (typeof selected !== 'object' || selected === null) return false;
+            return cArr.every((val, idx) => String(selected[idx] || '').trim().toLowerCase() === val);
+        }
+
+        // Drag-box
+        if (q.matchingType === 'drag-box' || q.groups) {
+            if (typeof selected !== 'object' || selected === null) return false;
+            return Object.keys(correct).every(group => {
+                const c = (correct[group] || []).map(s => s.toLowerCase()).sort();
+                const s = (selected[group] || []).map(s => s.toLowerCase()).sort();
+                return c.length === s.length && c.every((v, i) => v === s[i]);
+            });
+        }
+
+        // Object mapping (Matching / Sort)
+        if (typeof selected === 'object' && selected !== null) {
+            if (Array.isArray(correct)) {
+                return correct.every((val, idx) => String(selected[idx] || '').trim().toLowerCase() === String(val).toLowerCase());
+            }
+        }
+
+        // Basic
+        return String(selected || '').trim().toLowerCase() === String(correct).toLowerCase();
+    },
+
+    formatAnswerForDisplay(ans) {
+        if (Array.isArray(ans)) return ans.join(', ');
+        if (typeof ans === 'object' && ans !== null) {
+            return Object.entries(ans).map(([k, v]) => `${k}: ${Array.isArray(v) ? v.join(', ') : v}`).join(' | ');
+        }
+        return String(ans);
     },
 
     attachListeners(container, types) {

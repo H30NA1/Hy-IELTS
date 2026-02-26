@@ -197,6 +197,41 @@ class App {
             if (resultsModal) {
                 resultsModal.classList.add('active');
                 document.getElementById('overall-band').textContent = result.results?.overallCEFR || result.results?.overallBand || "7.5";
+
+                // Update PDF link
+                const pdfLink = document.getElementById('download-pdf-link');
+                if (pdfLink) {
+                    if (result.pdfUrl) {
+                        pdfLink.href = result.pdfUrl;
+                        pdfLink.style.display = 'flex';
+                    } else {
+                        pdfLink.style.display = 'none';
+                    }
+                }
+
+                // Setup Review button
+                const reviewBtn = document.getElementById('review-answers-btn');
+                if (reviewBtn) {
+                    reviewBtn.onclick = () => {
+                        state.reviewMode = true;
+                        resultsModal.classList.remove('active');
+                        // Reset to first section to start review
+                        const firstBtn = document.querySelector('.nav-btn');
+                        if (firstBtn) firstBtn.click();
+
+                        // Disable inputs to prevent changing answers in review
+                        document.querySelectorAll('input, select, textarea').forEach(el => el.disabled = true);
+                        // Add review banner
+                        const banner = document.createElement('div');
+                        banner.innerHTML = `
+                            <div style="background:#2563eb; color:white; padding:15px; text-align:center; font-weight:bold; position:sticky; top:80px; z-index:900; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
+                                <i class="fas fa-search"></i> REVIEW MODE - Reviewing your answers
+                                <button onclick="location.reload()" style="margin-left:20px; background:white; color:#2563eb; border:none; padding:5px 15px; border-radius:4px; cursor:pointer;">Exit Review</button>
+                            </div>
+                        `;
+                        document.body.prepend(banner);
+                    };
+                }
             }
 
         } catch (e) {

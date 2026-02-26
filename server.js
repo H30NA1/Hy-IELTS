@@ -376,11 +376,17 @@ app.post('/api/submit-test', async (req, res) => {
         await fs.writeJson(jsonFilepath, submission, { spaces: 2 });
         console.log(`✅ JSON saved to: ${jsonFilepath}`);
 
-        // Generate PDF with user-specific naming and save in same date folder
+        // Generate PDF in common folder for easy download access
         let pdfPath = null;
         try {
-            pdfPath = await generatePDF(submission, sanitizedUserName, timestamp, dateDir);
-            console.log(`✅ PDF generated successfully: ${pdfPath}`);
+            const commonPdfsDir = path.join(__dirname, 'pdfs');
+            pdfPath = await generatePDF(submission, sanitizedUserName, submission.id, commonPdfsDir);
+
+            // Also copy to user-specific folder for archival
+            const archivalPdfPath = path.join(dateDir, `${timestamp}.pdf`);
+            await fs.copy(pdfPath, archivalPdfPath);
+
+            console.log(`✅ PDF generated and archived: ${archivalPdfPath}`);
         } catch (pdfError) {
             console.error('❌ Error generating PDF:', pdfError);
             console.error('PDF Error details:', pdfError.message);
@@ -1371,6 +1377,59 @@ function calculateResults(answers, testData = null) {
         };
     }
 
+    // Helper for robust answer comparison
+    const isAnswerCorrect = (selected, q) => {
+        if (!q) return false;
+
+        // Priority to specific answer fields
+        const correct = q.correctAnswers || q.correctAnswer || q.correctOrder;
+        if (correct === undefined || correct === null) return false;
+
+        // Case: Drag-box / Grouping (Object of arrays)
+        if (q.matchingType === 'drag-box' || q.groups) {
+            if (typeof selected !== 'object' || selected === null) return false;
+            const groups = Object.keys(correct);
+            if (groups.length === 0) return false;
+            return groups.every(groupName => {
+                const cArr = correct[groupName] || [];
+                const sArr = selected[groupName] || [];
+                if (cArr.length !== sArr.length) return false;
+                const s1 = [...cArr].map(s => String(s).toLowerCase()).sort();
+                const s2 = [...sArr].map(s => String(s).toLowerCase()).sort();
+                return s1.every((val, i) => val === s2[i]);
+            });
+        }
+
+        // Case: Sort / Ordering (Both are Arrays)
+        if (q.matchingType === 'sort' || (Array.isArray(correct) && Array.isArray(selected))) {
+            if (!Array.isArray(selected) || !Array.isArray(correct)) return false;
+            if (selected.length !== correct.length) return false;
+            return correct.every((val, i) => String(selected[i]).trim().toLowerCase() === String(val).trim().toLowerCase());
+        }
+
+        // Case: Standard Matching (Dropdown/Click-Connect) - Correct is Array, Selected is Object mapping idx to val
+        if (Array.isArray(correct)) {
+            if (typeof selected !== 'object' || selected === null) return false;
+            return correct.every((val, idx) => {
+                const userVal = selected[idx];
+                return String(userVal || '').trim().toLowerCase() === String(val).trim().toLowerCase();
+            });
+        }
+
+        // Case: Fill-in-blanks Multiple (Correct is a comma-separated string, Selected is an object)
+        if (typeof correct === 'string' && correct.includes(',') && (q.type === 'fill-in-blanks' || q.subtype === 'multiple')) {
+            const correctParts = correct.split(',').map(s => s.trim().toLowerCase());
+            if (typeof selected !== 'object' || selected === null) return false;
+            return correctParts.every((val, idx) => {
+                const userVal = selected[idx];
+                return String(userVal || '').trim().toLowerCase() === val;
+            });
+        }
+
+        // Case: Standard string comparison (MC, Single FIB, etc.)
+        return String(selected).trim().toLowerCase() === String(correct).trim().toLowerCase();
+    };
+
     // Calculate listening score (40 questions - 1 point per question)
     if (answers.listening) {
         // Get all listening questions from all parts
@@ -1386,26 +1445,17 @@ function calculateResults(answers, testData = null) {
 
         Object.entries(answers.listening).forEach(([questionId, selectedOption]) => {
             const question = allListeningQuestions.find(q => q.id === questionId);
-            console.log(`Listening Q${questionId}: selected=${selectedOption}, correct=${question?.correctAnswer}, match=${question ? (selectedOption === question.correctAnswer) : 'NO QUESTION FOUND'}`);
             if (question) {
                 const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(questionId);
-                const isCorrect = selectedOption === question.correctAnswer;
+                const isCorrect = isAnswerCorrect(selectedOption, question);
+
+                console.log(`Listening Q${questionId}: match=${isCorrect}`);
 
                 if (isTranslated) {
-                    // Translation used: 0.5 penalty, then 0.5 for wrong answer
-                    if (isCorrect) {
-                        listeningScore += 0.5; // 1 point - 0.5 translation penalty
-                    } else {
-                        listeningScore += 0; // 0 points - 0.5 translation penalty - 0.5 wrong answer
-                    }
+                    if (isCorrect) listeningScore += 0.5;
                     translationPenalty += 0.5;
                 } else {
-                    // No translation: 1 point for correct, 0 for wrong
-                    if (isCorrect) {
-                        listeningScore += 1;
-                    } else {
-                        listeningScore += 0;
-                    }
+                    if (isCorrect) listeningScore += 1;
                 }
             }
         });
@@ -1413,7 +1463,6 @@ function calculateResults(answers, testData = null) {
 
     // Calculate reading score (30 questions - 1 point per question)
     if (answers.reading) {
-        // Get all reading questions from all passages
         const readingSection = testData.sections.find(s => s.id === 'reading');
         const allReadingQuestions = [];
         if (readingSection && readingSection.passages) {
@@ -1426,26 +1475,17 @@ function calculateResults(answers, testData = null) {
 
         Object.entries(answers.reading).forEach(([questionId, selectedOption]) => {
             const question = allReadingQuestions.find(q => q.id === questionId);
-            console.log(`Reading Q${questionId}: selected=${selectedOption}, correct=${question?.correctAnswer}, match=${question ? (selectedOption === question.correctAnswer) : 'NO QUESTION FOUND'}`);
             if (question) {
                 const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(questionId);
-                const isCorrect = selectedOption === question.correctAnswer;
+                const isCorrect = isAnswerCorrect(selectedOption, question);
+
+                console.log(`Reading Q${questionId}: match=${isCorrect}`);
 
                 if (isTranslated) {
-                    // Translation used: 0.5 penalty, then 0.5 for wrong answer
-                    if (isCorrect) {
-                        readingScore += 0.5; // 1 point - 0.5 translation penalty
-                    } else {
-                        readingScore += 0; // 0 points - 0.5 translation penalty - 0.5 wrong answer
-                    }
+                    if (isCorrect) readingScore += 0.5;
                     translationPenalty += 0.5;
                 } else {
-                    // No translation: 1 point for correct, 0 for wrong
-                    if (isCorrect) {
-                        readingScore += 1;
-                    } else {
-                        readingScore += 0;
-                    }
+                    if (isCorrect) readingScore += 1;
                 }
             }
         });
@@ -1458,83 +1498,43 @@ function calculateResults(answers, testData = null) {
                 const words = text.trim().split(/\s+/).filter(word => word.length > 0);
                 const wordCount = words.length;
 
-                // Word count scoring for IELTS Writing
                 let taskScore = 0;
                 if (taskKey === 'task1') {
-                    // Task 1: 150 words minimum
-                    if (wordCount >= 150) {
-                        taskScore = 10; // Full points for 150+ words
-                    } else if (wordCount >= 100) {
-                        taskScore = 7; // Partial points for 100-149 words
-                    } else if (wordCount >= 50) {
-                        taskScore = 4; // Some points for 50-99 words
-                    } else {
-                        taskScore = 0; // No points for less than 50 words
-                    }
+                    if (wordCount >= 150) taskScore = 10;
+                    else if (wordCount >= 100) taskScore = 7;
+                    else if (wordCount >= 50) taskScore = 4;
                 } else if (taskKey === 'task2') {
-                    // Task 2: 250 words minimum
-                    if (wordCount >= 250) {
-                        taskScore = 10; // Full points for 250+ words
-                    } else if (wordCount >= 200) {
-                        taskScore = 8; // Good points for 200-249 words
-                    } else if (wordCount >= 150) {
-                        taskScore = 6; // Partial points for 150-199 words
-                    } else if (wordCount >= 100) {
-                        taskScore = 4; // Some points for 100-149 words
-                    } else {
-                        taskScore = 0; // No points for less than 100 words
-                    }
+                    if (wordCount >= 250) taskScore = 10;
+                    else if (wordCount >= 200) taskScore = 8;
+                    else if (wordCount >= 150) taskScore = 6;
+                    else if (wordCount >= 100) taskScore = 4;
                 }
-
                 writingScore += taskScore;
             }
         });
     }
 
-    // Calculate speaking score (3 parts - based on content quality)
+    // Calculate speaking score (3 parts)
     if (answers.speaking) {
         Object.entries(answers.speaking).forEach(([partKey, text]) => {
             if (text && text.trim().length > 0) {
                 const words = text.trim().split(/\s+/).filter(word => word.length > 0);
                 const wordCount = words.length;
 
-                // Speaking scoring based on content length and quality
                 let partScore = 0;
                 if (partKey === 'part1') {
-                    // Part 1: Short answers
-                    if (wordCount >= 50) {
-                        partScore = 7; // Good response
-                    } else if (wordCount >= 30) {
-                        partScore = 5; // Adequate response
-                    } else if (wordCount >= 15) {
-                        partScore = 3; // Basic response
-                    } else {
-                        partScore = 0; // Insufficient response
-                    }
+                    if (wordCount >= 50) partScore = 7;
+                    else if (wordCount >= 30) partScore = 5;
+                    else if (wordCount >= 15) partScore = 3;
                 } else if (partKey === 'part2') {
-                    // Part 2: Long turn (1-2 minutes)
-                    if (wordCount >= 200) {
-                        partScore = 7; // Excellent long turn
-                    } else if (wordCount >= 150) {
-                        partScore = 5; // Good long turn
-                    } else if (wordCount >= 100) {
-                        partScore = 3; // Adequate long turn
-                    } else {
-                        partScore = 0; // Insufficient long turn
-                    }
+                    if (wordCount >= 200) partScore = 7;
+                    else if (wordCount >= 150) partScore = 5;
+                    else if (wordCount >= 100) partScore = 3;
                 } else if (partKey === 'part3') {
-                    // Part 3: Discussion
-                    if (wordCount >= 150) {
-                        partScore = 6; // Good discussion
-                    } else if (wordCount >= 100) {
-                        partScore = 4; // Adequate discussion
-                    } else if (wordCount >= 50) {
-                        partScore = 2; // Basic discussion
-                    } else {
-                        partScore = 0; // Insufficient discussion
-                    }
+                    if (wordCount >= 150) partScore = 6;
+                    else if (wordCount >= 100) partScore = 4;
+                    else if (wordCount >= 50) partScore = 2;
                 }
-
                 speakingScore += partScore;
             }
         });
@@ -1543,32 +1543,22 @@ function calculateResults(answers, testData = null) {
     // Calculate grammar score (20 questions - 1 point per question)
     let grammarScore = 0;
     if (answers.grammar) {
-        // Get grammar questions
         const grammarSection = testData.sections.find(s => s.id === 'grammar');
         const grammarQuestions = grammarSection ? grammarSection.questions : [];
 
         Object.entries(answers.grammar).forEach(([questionId, selectedOption]) => {
             const question = grammarQuestions.find(q => q.id === questionId);
-            console.log(`Grammar Q${questionId}: selected=${selectedOption}, correct=${question?.correctAnswer}, match=${question ? (selectedOption === question.correctAnswer) : 'NO QUESTION FOUND'}`);
             if (question) {
                 const isTranslated = answers.translatedQuestions && answers.translatedQuestions.includes(questionId);
-                const isCorrect = selectedOption === question.correctAnswer;
+                const isCorrect = isAnswerCorrect(selectedOption, question);
+
+                console.log(`Grammar Q${questionId}: match=${isCorrect}`);
 
                 if (isTranslated) {
-                    // Translation used: 0.5 penalty, then 0.5 for wrong answer
-                    if (isCorrect) {
-                        grammarScore += 0.5; // 1 point - 0.5 translation penalty
-                    } else {
-                        grammarScore += 0; // 0 points - 0.5 translation penalty - 0.5 wrong answer
-                    }
+                    if (isCorrect) grammarScore += 0.5;
                     translationPenalty += 0.5;
                 } else {
-                    // No translation: 1 point for correct, 0 for wrong
-                    if (isCorrect) {
-                        grammarScore += 1;
-                    } else {
-                        grammarScore += 0;
-                    }
+                    if (isCorrect) grammarScore += 1;
                 }
             }
         });

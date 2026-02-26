@@ -69,12 +69,34 @@
 
         <!-- Results Modal -->
         <div class="modal" id="results-modal">
-            <div class="modal-content" style="text-align:center;">
-                <h3><i class="fas fa-trophy"></i> Test Completed!</h3>
-                <p>Your Overall Band Score:</p>
-                <div style="font-size:3rem; font-weight:bold; color:#2563eb; margin:1rem 0;" id="overall-band">7.5</div>
-                <p>Detailed results have been saved.</p>
-                <button class="btn btn-primary" onclick="location.reload()">Close</button>
+            <div class="modal-content" style="text-align:center; max-width: 500px;">
+                <div
+                    style="background: var(--primary-color); color: white; padding: 20px; margin: -30px -30px 20px -30px; border-radius: 12px 12px 0 0;">
+                    <h3><i class="fas fa-trophy"></i> Test Completed!</h3>
+                    <div style="font-size:3.5rem; font-weight:bold;" id="overall-band">7.5</div>
+                    <div style="text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px;">Overall Band Score
+                    </div>
+                </div>
+
+                <p style="color: var(--text-secondary); margin-bottom: 25px;">Your detailed results have been saved and
+                    the report is ready.</p>
+
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <button class="btn btn-primary" id="review-answers-btn"
+                        style="width: 100%; padding: 15px; font-weight: 600;">
+                        <i class="fas fa-search"></i> Review All Answers
+                    </button>
+
+                    <a id="download-pdf-link" href="#" target="_blank" class="btn"
+                        style="width: 100%; padding: 15px; font-weight: 600; background: #059669; color: white; display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; border-radius: 8px;">
+                        <i class="fas fa-file-pdf"></i> Download PDF Report
+                    </a>
+
+                    <button class="btn btn-secondary" onclick="location.reload()"
+                        style="width: 100%; padding: 12px; margin-top: 10px;">
+                        <i class="fas fa-redo"></i> Start New Test
+                    </button>
+                </div>
             </div>
         </div>
 

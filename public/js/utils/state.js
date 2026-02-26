@@ -29,6 +29,7 @@ const state = {
     remainingTimeSeconds: 9600,
     testSubmitted: false,
     rulesAcknowledged: false,
+    reviewMode: false,
 
     // Observers for state changes
     observers: [],

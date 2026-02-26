@@ -316,13 +316,31 @@ export const listening = {
             `;
         }
 
+        let reviewHtml = '';
+        if (state.reviewMode) {
+            const correctAnswer = q.correctAnswers || q.correctAnswer;
+            const isCorrect = String(saved).trim().toLowerCase() === String(correctAnswer).toLowerCase();
+
+            reviewHtml = `
+                <div style="margin-top:15px; padding:12px; border-radius:6px; background:${isCorrect ? '#dcfce7' : '#fee2e2'}; border-left:4px solid ${isCorrect ? '#10b981' : '#ef4444'};">
+                    <div style="font-weight:700; color:${isCorrect ? '#166534' : '#991b1b'}; margin-bottom:5px;">
+                        ${isCorrect ? '<i class="fas fa-check-circle"></i> Correct' : '<i class="fas fa-times-circle"></i> Incorrect'}
+                    </div>
+                    <div style="font-size:0.9em; color:#475569;">
+                        <strong>Correct Answer:</strong> ${correctAnswer}
+                    </div>
+                </div>
+            `;
+        }
+
         return `
-        <div class="question-item component-card" id="q-item-${q.number}" style="margin-bottom: 2rem;">
+        <div class="question-item component-card" id="q-item-${q.number}" style="margin-bottom: 2rem; border: ${state.reviewMode ? '2px solid #e2e8f0' : 'none'}">
             <div class="question-header" style="font-weight:600; margin-bottom:1rem; font-size: 1.1rem; color:#1e293b;">
                 <span style="background:#2563eb; color:white; padding:4px 10px; border-radius:6px; font-size:0.9em; margin-right:10px;">${q.number}</span>
                 ${q.question || q.questionText || 'Question'}
             </div>
             ${innerContent}
+            ${reviewHtml}
         </div>
         `;
     },
