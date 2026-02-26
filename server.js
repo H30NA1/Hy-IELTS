@@ -1607,16 +1607,46 @@ function calculateResults(answers, testData = null) {
 
         // internal helper for CEFR
         const getCefr = (pct, target) => {
+            // Target is the intended difficulty of the test (e.g., A2, B1, B2)
+            if (target === 'C2') {
+                if (pct >= 85) return 'C2';
+                if (pct >= 60) return 'C1';
+                if (pct >= 40) return 'B2';
+                return 'B1';
+            }
+            if (target === 'C1') {
+                if (pct >= 85) return 'C2';
+                if (pct >= 60) return 'C1';
+                if (pct >= 40) return 'B2';
+                return 'B1';
+            }
+            if (target === 'B2') {
+                if (pct >= 85) return 'C1';
+                if (pct >= 60) return 'B2';
+                if (pct >= 40) return 'B1';
+                return 'A2';
+            }
             if (target === 'B1') {
-                if (pct >= 85) return 'B1';
-                if (pct >= 50) return 'A2';
+                if (pct >= 85) return 'B2';
+                if (pct >= 60) return 'B1';
+                if (pct >= 40) return 'A2';
                 return 'A1';
             }
             if (target === 'A2') {
-                if (pct >= 80) return 'A2';
+                if (pct >= 85) return 'B1';
+                if (pct >= 60) return 'A2';
                 return 'A1';
             }
-            return null;
+            if (target === 'A1') {
+                if (pct >= 60) return 'A1';
+                return 'Below A1';
+            }
+            // Fallback if target is something else or 'Mixed'
+            if (pct >= 90) return 'C1';
+            if (pct >= 75) return 'B2';
+            if (pct >= 60) return 'B1';
+            if (pct >= 40) return 'A2';
+            return 'A1';
         };
 
         overallCEFR = getCefr(totalPercentage, targetLevel);
