@@ -2226,4 +2226,10 @@ async function startServer() {
     }
 }
 
-startServer();
+// Only start the server if we're not running in a Serverless environment
+if (!process.env.VERCEL) {
+    startServer();
+}
+
+// Export for Vercel
+module.exports = app;
